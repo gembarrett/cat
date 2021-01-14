@@ -1,5 +1,5 @@
-// update current SOAP version here
-var soapv = "1.2.0";
+// update current CAT version here
+var catv = "1.0.0";
 var thisEnv = window.location.origin;
 
 var templates = {};

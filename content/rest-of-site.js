@@ -1,41 +1,46 @@
 var ros = [
   {
-    "head":"The free and simple tool that enables civil society organizations to build better security policies.",
-    "subhead":"To get started, enter your organization's name (or an alias):",
+    "head":"The free and simple tool that enables civil society organizations to be better at security.",
+    "subhead":"Click the button below to get started.",
     "what":[
       {
-        "head":"What is SOAP?",
-        "subhead":"SOAP is a free, online security policy generator. It helps you to:",
+        "head":"What is this tool?",
+        "subhead":"This tool is a free, online thing. It helps you to:",
         "list": [
           {
             "type": "ul",
-            "content": ["Design customized security policies for your organization","Make informed decisions about your organization’s security plan","Successfully implement and maintain your organization’s security policy"],
+            "content": ["point 1","point 2","point 3"],
           }
         ],
-        "more": ["The acronym stands for Securing Organizations with Automated Policymaking—reflecting the need to \"clean up\" standard organizational security policies, which all-too-often are unread, irrelevant, or ignored. Thanks to SOAP, organizations can now customize their own unique security policies. Say goodbye to the one-size-fits-all approaches of the past! And along the way, SOAP provides support and implementation tips to ensure the entire process is as easy as possible."],
+        "more": [],
         "links":[]
       }
     ],
     "who":[
       {
-        "head":"Who should use SOAP?",
-        "subhead":"Almost any organization that needs or uses a security policy! In particular, SOAP is geared towards helping civil society organizations (“CSOs”) and other mission-driven groups increase their digital resilience by building an organizational security policy that works for their specific situation.",
-        "list":"",
-        "more":["Research indicates nearly half of all CSOs don’t have a security policy. These organizations instead rely on informal guidelines and “trust” to manage their security. In today’s world, that’s not enough. Although such flexibility allows organizations to adapt quickly to new threats, it makes it much harder to ensure workers are operating under the same security standard. And new members are often left unprepared for even the most basic security incidents. SOAP provides a set of security rules that everyone can work with—all totally customizable to your organization’s specific needs.","So whether your organization needs to update an existing policy, create an entirely new one, or is just preparing to work with a security consultant, SOAP can help!"],
+        "head":"Who made this tool?",
+        "subhead":"This tool was made by the following team of experts:",
+        "list": [
+          {
+            "type": "ul",
+            "content": ["person 1","person 2","person 3"],
+          }
+        ],
+        "more": [],
         "links":[]
       }
     ],
     "how":[
       {
-        "head":"How does SOAP work?",
-        "subhead":"",
+        "head":"How does it work?",
+        "subhead":"There are 3 steps to using this tool:",
         "list":[
           {
             "type":"ol",
-            "content":["SOAP asks questions about your organizational security practices.","Your answers help SOAP to build a policy","Your policy is presented to you at the end of the process"]
+            "content":["step 1","step 2","step 3"]
           }
         ],
-        "more":["You can preview your policy at any point, and each question is accompanied by information to help you fully understand, research, and implement the associated practices. SOAP’s unique process focuses on key areas commonly included in policies, like devices or travel security.","Each section is preceded by a hypothetical—but common—security incident to help orient the questions within the context of a realistic threat."],
+        "more":[],
         "links":[]
       }
     ],

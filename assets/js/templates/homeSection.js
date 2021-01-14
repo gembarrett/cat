@@ -16,10 +16,7 @@ templates.homeSection = function(data){
     <h3>`+text.head+`</h3>
     <div class="homeSectionOverview"><p>`+text.subhead+`</p>`
     +list+
-    `<details>
-    <summary title="Click or press Space (while focused) to view more information">More</summary>
-      <p>`+moreText+`</p>
-    </details>
+    `<p>`+moreText+`</p>
     </div>
   </div>`;
   return content;

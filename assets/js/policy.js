@@ -226,9 +226,9 @@ function compileDoc(p,a){
       doc.html += '<h2>Everyday practices</h2><ul><li>' + routineDoc.join('</li><li>')+'</li></ul>';
     }
   }
-  doc.plain += '\n\nPlease note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization. \n\nBuilt with SOAP v.'+soapv;
-  doc.markdown += '\n\n#### *Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.* \n\n##### Built with SOAP v.'+soapv;
-  doc.html += '<h4>Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.</h4><h5>Built with SOAP v. '+soapv+'</h5></body></html>';
+  doc.plain += '\n\nPlease note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization. \n\nBuilt with SOAP v.'+catv;
+  doc.markdown += '\n\n#### *Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.* \n\n##### Built with SOAP v.'+catv;
+  doc.html += '<h4>Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.</h4><h5>Built with SOAP v. '+catv+'</h5></body></html>';
 
   var teamPolicies = [];
   // for each of the teams in teamContent
