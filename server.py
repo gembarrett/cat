@@ -1,38 +1,49 @@
 #!/usr/bin/env python
-"""
-Modification of `python -m SimpleHTTPServer` with a fallback to /index.html
-on requests for non-existing files.
 
-This is useful when serving a static single page application using the HTML5
-history API.
-"""
-
+'''
+https://gist.github.com/faelp22/36c9bfca83780d3da73f07d66a7ec2ae
+'''
 
 import os
-import sys
-import urlparse
-import SimpleHTTPServer
-import BaseHTTPServer
+from http.server import HTTPServer, SimpleHTTPRequestHandler
+from urllib.parse import urlparse
 
 
-class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
+PORT = 8000
+INDEXFILE = 'index.html'
+
+class HandleRewrite(SimpleHTTPRequestHandler):
+
     def do_GET(self):
-        urlparts = urlparse.urlparse(self.path)
-        request_file_path = urlparts.path.strip('/')
 
-        if not os.path.exists(request_file_path):
-            self.path = 'index.html'
+        # Parse query data to find out what was requested
+        parsedParams = urlparse(self.path)
 
-        return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+        # See if the file requested exists
+        if os.access('.' + os.sep + parsedParams.path, os.R_OK):
+            # File exists, serve it up
+            SimpleHTTPRequestHandler.do_GET(self)
 
+        # send index.html, but don't redirect
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/html')
+        self.end_headers()
+        with open(INDEXFILE, 'rb') as fin:
+            self.copyfile(fin, self.wfile)
 
-host = '127.0.0.1'
-try:
-    port = int(sys.argv[1])
-except IndexError:
-    port = 8000
-httpd = BaseHTTPServer.HTTPServer((host, port), Handler)
+def server():
+    httpd = HTTPServer(("0.0.0.0", PORT), HandleRewrite)
+    print("HTTP Server run at port", PORT)
+    httpd.serve_forever()
 
+def main():
 
-print 'Serving HTTP on %s port %d ...' % (host, port)
-httpd.serve_forever()
+    try:
+        server()
+    except OSError:
+        print("\nError check if the PORT:[%s] address is already in use!\n" %PORT)
+    except KeyboardInterrupt:
+        print("\nServer down.\n")
+
+if __name__ == "__main__":
+    main()
