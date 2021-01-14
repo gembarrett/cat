@@ -3,18 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOAP: Securing Organizations with Automated Policymaking</title>
-    <meta name="keywords" content="soap, security policy, security policy generator, security policy template, security plan builder, organizational security tool">
-    <meta name="description" content="SOAP is a free online security policy generator that helps civil society organizations build better security policies.">
+    <title>CAT</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="CAT is cool">
     <script src="content/rest-of-site.js"></script>
     <script src="content/section-0.js"></script>
     <script src="content/section-1.js"></script>
     <script src="content/section-2.js"></script>
     <script src="content/section-3.js"></script>
-    <script src="content/section-4.js"></script>
-    <script src="content/section-5.js"></script>
-    <script src="content/section-6.js"></script>
-    <script src="content/section-7.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
     <link href="assets/css/all.css" rel="stylesheet">
@@ -23,7 +19,6 @@
     <!-- these may need to be moved further down or refactored -->
     <script src="assets/js/start.js"></script>
     <script src="assets/js/keyboard.js"></script>
-    <script src="assets/js/overlay.js"></script>
     <script src="assets/js/edit.js"></script>
     <script src="assets/js/policy.js"></script>
     <script src="assets/js/subpolicies.js"></script>
@@ -35,12 +30,12 @@
   <body>
     <div id="head" class="nav-start contain">
       <a href="/" title="Go to the home page" id="homeLink">
-        <img id="logo" alt="SOAP logo" src="assets/images/soapLogoW.png" />
+        <img id="logo" alt="CAT logo" src="assets/images/soapLogoW.png" />
       </a>
 
       <div class="header-menu">
         <ul id="menu" class="links">
-          <li><a id="bu" href="/#build" title="Build an organizational security policy">Build policy</a></li>
+          <li><a id="bu" href="/#build" title="Use tool">Use the tool</a></li>
           <li id="editBtn" class="disabled" tabindex="0" title="Click or press E to edit your answers">EDIT</li>
         </ul>
       </div>
@@ -53,30 +48,11 @@
         <p>If your threat model requires you to keep Javascript disabled, you can instead go to <a href="https://github.com/gembarrett/soap" title="View the open-source SOAP code at GitHub">SOAP's GitHub repository</a> and grab the code to run the whole website offline on your local computer.</p>
       </div>
     </div>
-    <div id="feedback" class="modal closed">
-      <button id="closeFeedback" class="xIcon">
-        <i class="fas fa-plus-circle"></i>
-      </button>
-      <div id="inner-feedback" class="modalScrollbox">
-        <h3>Have your say!</h3>
-        <p>Take a quick survey and tell us how you rate SOAP. If you've spotted a problem with the site, including typos or bugs, please raise an issue on GitHub (account required). Alternatively, you can email about your experience - and feel free to <a href="https://keys.openpgp.org/search?q=feedback%40usesoap.app" target="_blank" title="Get the PGP public key">download the PGP key</a> to send encrypted.</p>
-        <div class="text-buttons-wrap">
-          <a href='https://feedback024968.typeform.com/to/ykpDnElo' class='btn btn-seco' target="_blank" title="Take a short survey on Typeform">Take a survey</a>
-          <a href='https://github.com/gembarrett/soap/issues' class='btn btn-seco' target="_blank" title="Go to the issues on the GitHub code repository">Report an issue</a>
-          <a id="updateLink" href='mailto:feedback@usesoap.app?subject=Suggested%20change' class="btn btn-seco" title="Send an email to SOAP feedback">Send an email</a>
-        </div>
-      </div>
-    </div>
-    <div id="overlay-feedback" class="modalOverlay closed"></div>
-    <div id="spinner"><img src="assets/images/spin.gif" alt="Spinning circle - the page is loading"><p>LOADING</p></div>
     <div id="foot" class="footer nav-start contain">
       <ul class="links">
         <!-- github, report download, contact, build, more info -->
-        <li><a href="https://github.com/gembarrett/soap" target="_blank" title="View the open-source SOAP code at GitHub">Code</a></li>
-        <li><a href="/assets/SecuringCivilSociety-report.pdf" target="_blank" title="Open the PDF research report Securing Civil Society">Research</a></li>
-        <li id="feedbackBtn" class="prompt" tabindex="0" title="Click to send feedback on SOAP by survey, email or GitHub issue">Feedback</li>
-        <li><a href="https://twitter.com/@thatSOAPapp" target="_blank" title="Click to get updates via Twitter">@thatSOAPapp</a></li>
-        <li><a href="/#build" title="Build an organizational security policy">Build policy</a></li>
+        <li><a href="https://github.com/gembarrett/cat" target="_blank" title="View the open-source CAT code at GitHub">Code</a></li>
+        <li><a href="/#build" title="Use tool">Use the tool</a></li>
       </ul>
     </div>
     <script src="assets/js/templates/homeSection.js"></script>
