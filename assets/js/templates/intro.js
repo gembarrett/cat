@@ -2,13 +2,10 @@ templates.intro = function(data){
   var text = ros[0];
   var content = `
     <div id="intro" class="nav-start contain">
-      <div id="logoContainer">
-        <div><img id="logoBig" alt="SOAP logo" src="assets/images/soapLogoW.png" /></div>
         <h1>`+text.head+`</h1>
-      </div>
       <h2>`+text.subhead+`</h2>
       <div class="btn-wrap wrap-c">
-        <button class="btn btn-prim" id="submit-home-q1" onclick="getNameFromHome()">Let's go!</button>
+        <a id="bu" class="btn btn-prim" href="/#build" title="Use tool">Let's go!</a>
         </div>
       </div>
     </div>

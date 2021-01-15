@@ -1,25 +1,3 @@
-/* Colors
-Oxford blue
-#1b263b
-rgb(27,38,59)
-
-Sapphire blue
-#066493
-rgb(6,100,147)
-
-Alabaster
-#F2EEE2
-rgb(242,238,226)
-
-Light Steel Blue
-#A9BCD0
-rgb(169,188,208)
-
-Amaranth
-#893168
-rgb(137,49,104)
-*/
-
 /* Structural styles */
 html, body {
   height:100%;
@@ -41,37 +19,21 @@ a.btn:hover {
 }
 
 
-@font-face {
-  font-family: 'SinkinSansLight';
-  src: url('webfonts/SinkinSans-300Light.otf');
-}
-@font-face {
-  font-family: 'SinkinSansMedium';
-  src: url('webfonts/SinkinSans-500Medium.otf');
-}
-@font-face {
-  font-family: 'SinkinSansMediumItalic';
-  src: url('webfonts/SinkinSans-500MediumItalic.otf');
-}
-@font-face {
-  font-family: 'SinkinSansBold';
-  src: url('webfonts/SinkinSans-700Bold.otf');
-}
 body {
-  font-family: "SinkinSansMedium", "Helvetica", "OpenSans", sans-serif;
+  font-family: "Helvetica", "OpenSans", sans-serif;
   margin: 0;
   font-size: 16px;
-  color: #066493;
+  color: #333;
   line-height: 1.75em;
   display: flex;
   flex-direction: column;
   overflow: scroll;
   overflow-x:hidden;
-  background: #1b263b;
+  background: #ccc;
 }
 
 p {
-  font-family: "SinkinSansLight", "Helvetica", "OpenSans", sans-serif;
+  font-family: "Helvetica", "OpenSans", sans-serif;
 }
 
 #head {
@@ -102,12 +64,8 @@ body.buildPage #head.nav-start {
 }
 body.buildPage #page {
   padding-top:4em;
-  background: linear-gradient(to right bottom, #1b263b, #066493);
 }
-.nav-start {
-  background-color: transparent;
-  color: #f2eee2;
-}
+
 #head.nav-start {
   opacity:0;
 }
@@ -148,7 +106,6 @@ body.buildPage #page {
 
 #foot {
   flex-shrink: 0;
-  background: #1b263b;
 }
 .wrapper {
   width: 75%;
@@ -492,7 +449,7 @@ color: #A9bcd0;
 .homeSectionOverview{
   padding: 0 0 2em 3em;
   font-size: 1em;
-  font-family: "SinkinSansLight", "Helvetica", "OpenSans", sans-serif;
+  font-family: "Helvetica", "OpenSans", sans-serif;
   width:100%;
 }
 .homeSectionOverview li {
@@ -551,7 +508,6 @@ details a {
 }
 
 #intro {
-  background: linear-gradient(to right bottom, #1b263b, #066493, #b93168);
   padding: 5em 4em 8em;
 }
 
@@ -563,7 +519,6 @@ details a {
   font-size: 2.4em;
   line-height: 1.5em;
   margin: 2em 0;
-  width:80%;
 }
 
 #intro h2 {
@@ -571,16 +526,6 @@ details a {
   font-size: 1em;
   text-align: center;
   padding-bottom: 1em;
-}
-
-#intro input {
-  background: #f2eee2;
-  background:transparent;
-  margin: 0 auto;
-}
-
-#intro .btn {
-  margin-top:3em;
 }
 
 #intro .wrap-c {
@@ -602,16 +547,6 @@ details a {
   margin-top: 4em;
 }
 
-.window h3 {
-  font-family: 'SinkinSansBold';
-  text-transform: uppercase;
-  font-size: 5em;
-  line-height: 1.5em;
-  margin: 0;
-  background: #1b263b;
-  color: #f2eee2;
-  flex: 0 0 40%;
-}
 .dlBtnWrapper {
   display: flex;
   flex-direction: column;
@@ -660,7 +595,6 @@ details a {
 .btn {
   border:2px solid;
   padding: 0.75em;
-  font-family: SinkinSansMedium;
   margin: 10px;
   min-width:10em;
   text-align: center;
@@ -774,7 +708,6 @@ small {
   display:inline;
   font-size: 1.1em;
   line-height: 2em;
-  color: #f2eee2;
 }
 .form-el label[contenteditable="true"] {
   border-style: dotted;
@@ -790,11 +723,9 @@ input[type=text], textarea{
   display:block;
   padding: 2em;
   text-align: center;
-  color: #A9BCD0;
   background: transparent;
   border:none;
   border-bottom-style: dotted;
-  font-family: SinkinSansMedium;
   font-size: 1em;
 }
 
@@ -817,8 +748,6 @@ form input[type='checkbox'] + label {
     padding:1em;
     display:block;
     border: 2px solid #b93168;
-    color: #a9bcd0;
-    font-family: SinkinSansMedium;
 }
 
 form input[type='radio'] + label{
@@ -1063,13 +992,6 @@ summary::marker {
 .btn-wrap.wrap-r p {
   color:#a9bcd0;
 }
-#teamContentCols{
-  display:flex;
-  justify-content: space-around;
-}
-#teams {
-  text-align: center;
-}
 #expectedOutput{
   color: #F2EEE2;
   margin-top: 4em;
@@ -1077,5 +999,4 @@ summary::marker {
 label span {
   display: block;
   font-size: 0.8em;
-  font-family: "SinkinSansMediumItalic";
 }

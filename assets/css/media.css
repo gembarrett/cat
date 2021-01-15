@@ -127,9 +127,6 @@
   #intro .btn-wrap.wrap-c {
     padding-top: 0;
   }
-  .window h3 {
-    font-size: 3em;
-  }
   .buildPage .window {
     margin-top: 1em;
     margin-bottom: 4em;
@@ -490,8 +487,5 @@
   .question-panel div {
     flex-direction: column;
     padding: 1em 0;
-  }
-  #teamContentCols {
-    flex-direction: column;
   }
 }

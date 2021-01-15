@@ -12,7 +12,7 @@ templates.homeSection = function(data){
   }
   var moreText = text.more.join('\n');
   var content = `
-  <div class="window pink-border-glow">
+  <div class="window">
     <h3>`+text.head+`</h3>
     <div class="homeSectionOverview"><p>`+text.subhead+`</p>`
     +list+
