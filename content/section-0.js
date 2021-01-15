@@ -5,16 +5,16 @@ var section0 = [
     "title": "",
     "steps":[
       {
-        "title":"Plan",
-        "text":"The first set of questions is all about understanding your organization's unique context.  The following five sections present common security incidents and then ask questions that explore preventative tactics and inform your policy's content. Each section ends with an opportunity for you to specify any incident response actions you would wish staff to take in the given scenario."
+        "title":"Part 1",
+        "text":"Part 1 is all about the first part. It's the beginning of the process."
       },
       {
-        "title":"Build",
-        "text":"Unsure how to answer a question? Click or tap on the question to reveal a panel with implementation tips, definitions, search terms, and other information to improve clarity. If the answers aren't quite right, many questions have an 'other' button you can double-click to edit and add your own answers."
+        "title":"Part 2",
+        "text":"Part 2 is all about the middle bit. It's the second area of the tool."
       },
       {
-        "title":"Apply",
-        "text":"When you've completed the process, you will be presented with your full organizational security policy, including a review checklist, appendix of implementation tips and an \"Everyday Practices\" reminder document. Download options are available so you can share the policy in the best way for your organization."
+        "title":"Part 3",
+        "text":"Part 3 is where the process wraps up and we all go home. It's the end bit."
       }
     ],
   },
