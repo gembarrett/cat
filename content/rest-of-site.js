@@ -46,26 +46,26 @@ var ros = [
     ],
     "background":[
       {
-        "head":"What's behind the SOAP project?",
-        "subhead":"SOAP was researched, designed, and built by Gem Barrett, with funding from the Open Technology Fund. In developing SOAP, research was conducted to understand the frustrations faced and obstacles encountered by organizations when creating, implementing, and maintaining security policies.",
+        "head":"What's behind this project?",
+        "subhead":"Stuff. Things.",
         "list":"",
-        "more":["The findings of this research and accompanying interviews are shared in the report “Securing Civil Society” (<a href='https://usesoap.app/assets/SecuringCivilSociety-report.pdf' target='_blank' title='Open \'Securing Civil Society\' PDF'>PDF currently available</a> in English, other versions coming soon). These findings, coupled with research into organizational security best practices, helped create the methodology that forms the basis of SOAP’s innovative process. For updates on SOAP's future development, follow <a href='https://twitter.com/@thatsoapapp' target='_blank' title='Get SOAP updates on Twitter'>@thatSOAPapp on Twitter</a>."],
+        "more":["Hmm."],
         "links":[
           {
-            "name":"SAFETAG by Internews",
-            "url":"https://safetag.org"
+            "name":"",
+            "url":""
           },
           {
-            "name": "Umbrella by Security First",
-            "url": "https://secfirst.org/umbrella"
+            "name": "",
+            "url": ""
           },
           {
-            "name": "LevelUp by Engine Room",
-            "url":"https://www.level-up.cc"
+            "name": "",
+            "url":""
           },
           {
-            "name":"Security Planner by Citizen Lab",
-            "url":"https://securityplanner.org"
+            "name":"",
+            "url":""
           }
         ]
       }
