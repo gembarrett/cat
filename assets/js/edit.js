@@ -109,7 +109,6 @@ function collectAnswers(isEdited){
         var inputFields = checkForInputs(questions[c]);
         // if there are input fields
         if (inputFields !== false){
-
           // get the question number and data
           qData = getQData(inputFields[0]);
           // for each of the input fields
@@ -168,33 +167,21 @@ function collectExclusions(id){
 
 function findContent(q){
   switch (true) {
-    case q < 9:
+    case q < 7:
       q = 'q'+q;
       return sections[0].find(question => question.id === q);
       break;
-    case q < 14:
+    case q < 10:
       q = 'q'+q;
       return sections[1].find(question => question.id === q);
       break;
-    case q < 21:
+    case q < 16:
       q = 'q'+q;
       return sections[2].find(question => question.id === q);
       break;
-    case q < 28:
+    case q < 22:
       q = 'q'+q;
       return sections[3].find(question => question.id === q);
-      break;
-    case q < 35:
-      q = 'q'+q;
-      return sections[4].find(question => question.id === q);
-      break;
-    case q < 43:
-      q = 'q'+q;
-      return sections[5].find(question => question.id === q);
-      break;
-    case q < 49:
-      q = 'q'+q;
-      return sections[6].find(question => question.id === q);
       break;
     default:
       console.log('Question not found');

@@ -21,39 +21,6 @@ var section0 = [
   {
     "isQuestion": true,
     "id":"q1",
-    "q":"Animi tenetur dicta et et molestiae eaque quae?",
-    "required":true,
-    "policyEntry":"",
-    "appendixEntry":"",
-    "routineEntry":"",
-    "answers":[
-      {
-        "type":"text",
-        "answerText":"",
-        "placeholder":"Example",
-        "storeAs":"[organisation-name]",
-        "excludes":[],
-        "policyEntry":"",
-        "routineEntry":"",
-        "appendixEntry": [
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
-      }
-    ],
-    "tips":[
-      {"relevance":""},
-      {"meaning":"Animi tenetur dicta et et molestiae eaque quae means animi tenetur dicta et et molestiae eaque quae."},
-      {"implementation":""},
-      {"more":""}
-    ]
-  },
-  {
-    "isQuestion": true,
-    "id":"q2",
     "q":"Reprehenderit sit iste libero nulla dolores voluptatum quod?",
     "required":true,
     "policyEntry":"",
@@ -104,22 +71,6 @@ var section0 = [
             "linksList": ""
           }
         ]
-      },
-      {
-        "type":"checkbox",
-        "editable": true,
-        "answerText":"another",
-        "storeAs": "[who-policy-applies-to]",
-        "excludes":[],
-        "policyEntry":"",
-        "routineEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
@@ -131,7 +82,7 @@ var section0 = [
   },
   {
     "isQuestion": true,
-    "id":"q3",
+    "id":"q2",
     "q":"Quis enim ratione esse aliquam itaque cum est cupiditate?",
     "required":true,
     "policyEntry":"",
@@ -193,104 +144,7 @@ var section0 = [
   },
   {
     "isQuestion": true,
-    "id":"q4",
-    "q":"Repudiandae officia vitae corporis accusamus?",
-    "required":true,
-    "policyEntry":"Repudiandae officia vitae corporis accusamus, please contact: ",
-    "appendixEntry":"",
-    "routineEntry":"Repudiandae officia vitae corporis accusamus? Ask [security-contact-name], [security-contact-role]!",
-    "answers":[
-      {
-        "type":"text",
-        "answerText":"Name",
-        "placeholder":"e.g. Alice Smith",
-        "storeAs":"[security-contact-name]",
-        "excludes":[],
-        "policyEntry":"[security-contact-name]",
-        "routineEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"Is [security-contact-name] still responsible?",
-            "tipList": "",
-            "linksList": ""
-          }
-        ],
-      },
-      {
-        "type":"text",
-        "answerText":"Job title or department",
-        "placeholder":"e.g. Security Officer",
-        "storeAs":"[security-contact-role]",
-        "excludes":[],
-        "policyEntry":"([security-contact-role]).",
-        "routineEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
-      },
-      {
-        "type":"text",
-        "answerText":"Pronouns",
-        "placeholder": "e.g. they/them",
-        "storeAs":"[security-contact-pronouns]",
-        "excludes":[],
-        "policyEntry":"Their pronouns are [security-contact-pronouns].",
-        "routineEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"Does [security-contact-name] still use [security-contact-pronouns] pronouns?",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
-      },
-      {
-        "type":"text",
-        "answerText":"Email",
-        "placeholder": "e.g. example@organization.com",
-        "storeAs":"[security-contact-email]",
-        "excludes":[],
-        "policyEntry":"Email: [security-contact-email]",
-        "routineEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"Is [security-contact-name]'s email address up-to-date?",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
-      },
-      {
-        "type":"text",
-        "answerText":"Phone",
-        "placeholder": "e.g. +1 (234) 567-890",
-        "storeAs":"[security-contact-phone]",
-        "excludes":[],
-        "policyEntry":"Phone: [security-contact-phone]",
-        "routineEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"Is [security-contact-name]'s phone number correct?",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
-      }
-    ],
-    "tips":[
-      {"relevance":""},
-      {"meaning":"Repudiandae officia vitae corporis accusamus again."},
-      {"implementation":""},
-      {"more":["lorem ipsum"]},
-    ]
-  },
-  {
-    "isQuestion": true,
-    "id":"q5",
+    "id":"q3",
     "q":"Saepe molestias at rerum commodi officiis quo quidem?",
     "required":true,
     "policyEntry":"Saepe molestias at rerum commodi officiis quo quidem by [security-contact-name] ([security-contact-role]) on a [how-often-policy-reviewed] basis.",
@@ -367,7 +221,7 @@ var section0 = [
   },
   {
     "isQuestion": true,
-    "id":"q6",
+    "id":"q4",
     "q":"Ut provident nobis quo consequuntur necessitatibus nulla non iusto?",
     "required":false,
     "policyEntry":"",
@@ -385,7 +239,7 @@ var section0 = [
           {
             "reviewList":"",
             "tipList": "",
-            "linksList": "Windows 10: https://spreadprivacy.com/windows-10-privacy-tips"
+            "linksList": "RRRR"
           }
         ]
       },
@@ -400,7 +254,7 @@ var section0 = [
           {
             "reviewList":"",
             "tipList": "",
-            "linksList": "OS X: https://spreadprivacy.com/mac-privacy-tips"
+            "linksList": "TTTT"
           }
         ]
       },
@@ -415,7 +269,7 @@ var section0 = [
           {
             "reviewList":"",
             "tipList": "",
-            "linksList": "Linux: https://spreadprivacy.com/linux-privacy-tips"
+            "linksList": "YYYY"
           }
         ]
       },
@@ -430,7 +284,7 @@ var section0 = [
           {
             "reviewList":"",
             "tipList": "",
-            "linksList": "Chrome OS: https://www.makeuseof.com/tag/privacy-settings-chrome-os-google-chrome"
+            "linksList": "UUUU"
           }
         ]
       },
@@ -445,7 +299,7 @@ var section0 = [
           {
             "reviewList":"",
             "tipList": "",
-            "linksList": "Android: https://spreadprivacy.com/android-privacy-tips"
+            "linksList": "IIII"
           }
         ]
       },
@@ -460,23 +314,7 @@ var section0 = [
           {
             "reviewList":"",
             "tipList": "",
-            "linksList": "iOS: https://spreadprivacy.com/iphone-privacy-tips"
-          }
-        ]
-      },
-      {
-        "type":"checkbox",
-        "editable": true,
-        "answerText":"another system",
-        "storeAs": "",
-        "excludes":[],
-        "policyEntry":"",
-        "routineEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
+            "linksList": "OOOO"
           }
         ]
       }
@@ -490,7 +328,7 @@ var section0 = [
   },
   {
     "isQuestion": true,
-    "id":"q7",
+    "id":"q5",
     "q":"Sint maxime id esse aut. Sunt dolorum labore odio facere?",
     "required":true,
     "policyEntry":"[organisation-name] sint maxime id esse aut. Sunt dolorum labore odio facere:",
@@ -567,7 +405,7 @@ var section0 = [
   },
   {
     "isQuestion": true,
-    "id":"q8",
+    "id":"q6",
     "q":"Fugit dolore non voluptas voluptatem dolor quos?",
     "required":false,
     "policyEntry":"[organisation-name] fugit dolore non voluptas voluptatem dolor quos [privacy-peripherals-provided] to use on your devices.",
