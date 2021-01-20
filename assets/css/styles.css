@@ -259,9 +259,6 @@ a {
 .questionContent h2 {
   width:85%;
 }
-.questionContent > h1, .questionContent > p {
-color: #A9bcd0;
-}
 
 .questionContent > .btn-tert {
   min-width:3em;
