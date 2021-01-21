@@ -1,359 +1,3 @@
-/* Structural styles */
-html, body {
-  height:100%;
-}
-/* TODO: fix so it applies just to external links
-a[href]:visited {
-  color:inherit;
-} */
-a:hover {
-  text-decoration: underline;
-}
-a.btn:hover {
-  text-decoration: none;
-}
-
-:focus {
-  border-style: solid;
-  border-width: 0.5px;
-}
-
-
-body {
-  font-family: "Helvetica", "OpenSans", sans-serif;
-  margin: 0;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.75em;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-  overflow-x:hidden;
-  background: #ccc;
-}
-
-p {
-  font-family: "Helvetica", "OpenSans", sans-serif;
-}
-
-#head {
-  position: fixed;
-  width:100%;
-  display: flex;
-  padding: 5px 4em 0 4em;
-  box-sizing: border-box;
-  background: rgba(27,38,59,0.9);
-  align-items: center;
-  z-index: 1;
-}
-#head a {
-  margin:0.5em 0;
-}
-
-#img-intro {
-  width: 75%;
-  border: 1px solid white;
-  margin: 2em 4em 0;
-  filter: drop-shadow(0px 0px 3px #eee);
-}
-.nav-scroll {
-  color: #A9BCD0;
-}
-body.buildPage #head.nav-start {
-  opacity:100;
-}
-body.buildPage #page {
-  padding-top:4em;
-}
-
-#head.nav-start {
-  opacity:0;
-}
-.nav-scroll #logo{
-  filter:brightness(0.9);
-}
-
-#page {
-  flex: 1 0 auto;
-}
-.editMode {
-  border: 3em #a9bcd0 solid;
-  border-top: 0;
-  border-bottom: 0;
-}
-.editMode .questionContent {
-  margin-bottom: 3em;
-}
-
-#editBtn.editMode {
-  border-width: 0.5em;
-}
-#editBtn {
-  color: #066493;
-  cursor: pointer;
-}
-.prompt {
-  cursor: pointer;
-}
-.prompt:hover, .prompt:focus {
-  text-decoration: underline;
-  padding:5px 20px;
-}
-
-.nav-scroll #editBtn {
-  color:#fff;
-}
-
-#foot {
-  flex-shrink: 0;
-}
-.wrapper {
-  width: 75%;
-  max-width:1000px;
-  margin: 0 auto;
-}
-
-#head h1 {
-  display:inline-block;
-}
-
-#head h2 {
-  font-size: 2rem;
-  display:inline-block;
-  padding-left: 10px;
-}
-
-#logoBig {
-  max-height: 110px;
-}
-#logoContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-#logoContainer > div {
-  margin-right: 4em;
-}
-.text-img-wrap {
-  display:flex;
-  flex-direction: row;
-}
-.text-buttons-wrap {
-  margin: 2em 4em 2em 0;
-  max-width: 25%;
-}
-#feedback .text-buttons-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: unset;
-}
-.links {
-  list-style: none;
-  margin-left: auto;
-  cursor: pointer;
-}
-
-.links a, .links a:visited, .prompt {
-  padding: 5px;
-  border:2px solid;
-  border-radius: 5%;
-  border-color: transparent;
-  color:inherit;
-}
-
-.links a:hover, .links a.active, .prompt:hover, .prompt:active {
-  border-color: #066493;
-}
-.nav-scroll .links a:hover, .nav-scroll .links a.active {
-  border-color: #066493;
-}
-
-.links li {
-  display:inline;
-  padding: 0 20px;
-}
-
-.links li:first-child {
-  padding-left: 0;
-}
-.links li:last-child {
-  background-color: #f2eee2;
-  font-weight: bold;
-  padding:1em;
-  white-space: nowrap;
-}
-.nav-start .links li:last-child a{
-  color:#066493;
-}
-
-.nav-scroll .links li:last-child {
-  background-color: #066493;
-  color: #fff;
-}
-
-#foot li {
-  font-size: 0.8rem;
-}
-
-/* Button styles */
-
-/* Actual checkboxes set to display:none. Styling the labels and then simply checking if the checkboxes are checked to show and hide the nav. */
-#menu-check {
-  display: none;
-}
-
-#menu-collapse {
-  display: none;
-}
-
-/* Style the checkbox labels.*/
-#expand {
-  cursor: pointer;
-}
-
-#collapse {
-  cursor: pointer;
-  display: none;
-}
-
-/* If menu-check is checked, set the collapse icon to display... */
-#menu-check:checked ~ #collapse {
-  display: block;
-}
-
-/* ...and if menu-check is checked, then set this icon to disappear */
-#menu-check:checked ~ #expand {
-  display: none;
-}
-
-/* ...and if collapse is checked, set expand to display again */
-#menu-collapse:checked ~ #expand {
-  display: block;
-}
-
-/* Show and hide the nav */
-#menu-check:checked ~ ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-#menu-collapse:checked ~ ul {
-  display: none;
-}
-
-/* ================== */
-/* Content styles */
-
-a {
-  text-decoration: none;
-}
-
-.questionContent {
-  display:none;
-}
-.questionContent.current {
-  display:block;
-}
-
-.questionContent h2 {
-  width:85%;
-}
-
-.questionContent > .btn-tert {
-  min-width:3em;
-}
-
-.questionContent summary {
-  width: auto;
-  color: #f2eee2;
-  background: #1b263b;
-  padding: 1em;
-  cursor: pointer;
-}
-
-#secretLink {
-  color:#fff;
-}
-
-.qContainer {
-  margin-top: -4em;
-  padding: 2em 4em;
-}
-.buildPage .qContainer {
-  margin-top:0;
-}
-
-#q0 .text-img-wrap {
-  display:flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-#q0 img {
-  width:100%;
-  border-radius: 5%;
-}
-
-#q0 section {
-  flex: 2 2 20%;
-  margin: 3em 2em;
-  background:#f2eee2;
-}
-
-#q0 section p {
-  padding: 0.5em 2em;
-}
-
-#q0 h1 {
-  font-size: 1.6em;
-}
-#q0 h2 {
-  font-size: 1.2em;
-}
-
-/* ================== */
-/* Info panel styles */
-.info-display {
-  border-top: 1px solid rgba(143,197,234,0.5);
-}
-
-.question-panel {
-  border: 1px solid currentColor;
-  padding: 1em;
-  background-color: #f2eee2;
-  display:flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.question-panel i {
-  font-size: 2em;
-  align-self: center;
-  opacity: 0.5;
-}
-
-.question-panel i:hover, .question-panel i.highlight {
-  opacity: 1;
-}
-
-.question-panel i.highlight{
-  transform: rotate(45deg);
-}
-
-.question-panel div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.question-panel span{
-  font-size: 2em;
-  padding-right: 0.5em;
-  min-width: 30px;
-}
-
-/* ================== */
 /* Preview styles */
 
 #previewPolicy:disabled, #editBtn.disabled {
@@ -600,8 +244,8 @@ details a {
 }
 
 .btn-prim {
-  background-color: #b93168;
-  border-color: #b93168;
+  background-color: #bbb;
+  border-color: #333;
   color:#f2eee2;
   font-weight: bold;
 }
@@ -623,13 +267,11 @@ details a {
 }
 
 .btn-tert:hover {
-  background-color: #8FC5EA;
-  filter: drop-shadow(0px 0px 3px #fff);
+  background-color: #bbb;
 }
 
 .btn-tert.highlight {
-  background-color: #8FC5EA;
-  filter: drop-shadow(0px 0px 3px #fff);
+  background-color: #bbb;
 }
 
 .btn-wrap {
@@ -649,7 +291,6 @@ details a {
 progress {
   width:100%;
   opacity: 0.5;
-  border: 1px solid #B93168;
   background: #1b263b;
   border: 0;
   display: block;
@@ -744,7 +385,7 @@ form input[type='checkbox'] + label {
     cursor: pointer;
     padding:1em;
     display:block;
-    border: 2px solid #b93168;
+    border: 2px solid #333;
 }
 
 form input[type='radio'] + label{
@@ -755,10 +396,7 @@ form input[type='checkbox'] + label {
 }
 
 form input:checked + label {
-  background-color: #a9bcd0;
-  color: #1b263b;
-  box-shadow: 0px 0px 1em #b93168;
-  border-color: #b93168;
+  background-color: #aaa;
 }
 .form-el input + label:hover {
   opacity:0.6;
@@ -790,10 +428,6 @@ span.q0-only {
   align-items: center;
 }
 
-#bgContainer .text-img-wrap {
-  flex-direction: column;
-  flex: 1 1 90%;
-}
 #bgContainer section > div > p {
   flex: 1 2 52%;
 }
@@ -867,10 +501,6 @@ span.q0-only {
   flex: 1 1 60%;
   margin: 1em;
 }
-#img-intro {
-  width:100%;
-  margin:0;
-}
 
 .nav-start .btn.btn-seco {
   color: #fff;
@@ -891,23 +521,16 @@ textarea[placeholder] {
 }
 
 /* styles for highlighting current element in focus */
-.pink-border-glow,
-:focus,
+/* :focus,
 form input[type="radio"]:focus + label,
 form input[type="checkbox"]:focus + label,
 input[type="text"]:focus,
-textarea:focus,
-#homeLink:focus > img,
-.modalScrollbox {
-  box-shadow: 0px 0px 1em #b93168;
-  border-color: #b93168;
-}
+textarea:focus {
+  border-color: #bbb;
+} */
 
-/* reset style on logo link */
 #homeLink:focus {
-  box-shadow: initial;
   border: initial;
-  outline: none;
 }
 button::-moz-focus-inner {
   outline: none;
@@ -968,7 +591,7 @@ summary::marker {
   margin-left: 0;
 }
 .fa-copy{
-  color:#f2eee2;
+  color:#aaa;
   font-size: 2em;
   cursor: pointer;
   opacity: 0.8;

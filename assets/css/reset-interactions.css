@@ -1,0 +1,90 @@
+/* TODO: fix so it applies just to external links
+a[href]:visited {
+  color:inherit;
+} */
+/* links styles */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.btn:hover {
+  text-decoration: none;
+}
+:focus {
+  border-style: solid;
+  border-width: 0.5px;
+}
+#head a {
+  margin:0.5em 0;
+}
+.links {
+  list-style: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.links a, .links a:visited {
+  padding: 5px;
+  border:2px solid;
+  border-radius: 5%;
+  border-color: transparent;
+  color:inherit;
+}
+
+.links a:hover, .links a.active {
+  border-color: #066493;
+}
+.nav-scroll .links a:hover, .nav-scroll .links a.active {
+  border-color: #066493;
+}
+
+.links li {
+  display:inline;
+  padding: 0 20px;
+}
+
+.links li:first-child {
+  padding-left: 0;
+}
+.links li:last-child {
+  background-color: #f2eee2;
+  font-weight: bold;
+  padding:1em;
+  white-space: nowrap;
+}
+
+.nav-start .links li:last-child a{
+  color:#066493;
+}
+
+.nav-scroll .links li:last-child {
+  background-color: #066493;
+  color: #fff;
+}
+
+.question-panel {
+  border: 1px solid currentColor;
+  padding: 1em;
+  background-color: #f2eee2;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.question-panel div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.questionContent > .btn-tert {
+  min-width:3em;
+}
+
+.questionContent summary {
+  width: auto;
+  padding: 1em;
+  cursor: pointer;
+}

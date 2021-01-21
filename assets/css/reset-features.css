@@ -1,0 +1,33 @@
+/* everything to do with the scroll effect on heading */
+.nav-scroll {
+  color: #A9BCD0;
+}
+body.buildPage #head.nav-start {
+  opacity:100;
+}
+body.buildPage #page {
+  padding-top:4em;
+}
+#head.nav-start {
+  opacity:0;
+}
+.nav-scroll #editBtn {
+  color:#fff;
+}
+
+/* editing mode */
+.editMode {
+  border: 3em #a9bcd0 solid;
+  border-top: 0;
+  border-bottom: 0;
+}
+.editMode .questionContent {
+  margin-bottom: 3em;
+}
+#editBtn.editMode {
+  border-width: 0.5em;
+}
+#editBtn {
+  color: #066493;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+/* basic text styles */
+#head h1 {
+  display:inline-block;
+}
+
+#head h2 {
+  font-size: 2rem;
+  display:inline-block;
+  padding-left: 10px;
+}
+
+p {
+  font-family: "Helvetica", "OpenSans", sans-serif;
+}
+
+#q0 section p {
+  padding: 0.5em 2em;
+}
+
+#q0 h1 {
+  font-size: 1.6em;
+}
+#q0 h2 {
+  font-size: 1.2em;
+}
+
+.questionContent h2 {
+  width:85%;
+}
+
+.question-panel span{
+  font-size: 2em;
+  padding-right: 0.5em;
+  min-width: 30px;
+}

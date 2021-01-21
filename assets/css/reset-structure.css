@@ -1,0 +1,65 @@
+/* Structural styles */
+html, body {
+  height:100%;
+}
+
+body {
+  font-family: "Helvetica", "OpenSans", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.75em;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x:hidden;
+  background: #ccc;
+}
+
+#page {
+  flex: 1 0 auto;
+}
+
+#head {
+  position: fixed;
+  width:100%;
+  display: flex;
+  padding: 5px 4em 0 4em;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 1;
+}
+
+#foot {
+  flex-shrink: 0;
+}
+#foot li {
+  font-size: 0.8rem;
+}
+
+.wrapper {
+  width: 75%;
+  max-width:1000px;
+  margin: 0 auto;
+}
+
+.questionContent {
+  display:none;
+}
+.questionContent.current {
+  display:block;
+}
+
+.qContainer {
+  margin-top: -4em;
+  padding: 2em 4em;
+}
+.buildPage .qContainer {
+  margin-top:0;
+}
+
+#q0 section {
+  flex: 2 2 20%;
+  margin: 3em 2em;
+  background:#f2eee2;
+}
