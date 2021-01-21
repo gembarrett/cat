@@ -27,9 +27,109 @@ p {
 .questionContent h2 {
   width:85%;
 }
+.questionContent details h3{
+  text-transform: uppercase;
+  background: #1b263b;
+  color: #f2eee2;
+  padding: 1em;
+}
+
 
 .question-panel span{
   font-size: 2em;
   padding-right: 0.5em;
   min-width: 30px;
+}
+
+.homeSectionOverview li {
+  padding: 0.5em 0;
+}
+.homeSectionOverview ol, .homeSectionOverview ul {
+  margin-left: 1em;
+  padding: 0;
+}
+details > h3, details > p {
+  padding: 0 1em;
+}
+
+#intro h1, #intro h2 {
+  text-align: left;
+}
+
+#intro h1 {
+  font-size: 2.4em;
+  line-height: 1.5em;
+  margin: 2em 0;
+}
+
+#intro h2 {
+  font-weight: lighter;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.buildPage .window > :not(h3) {
+  padding: 0 2em;
+}
+.form-el label {
+  display:inline;
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+form input[type='radio'] + label,
+form input[type='checkbox'] + label {
+    /* Make look clickable because they are */
+    cursor: pointer;
+    padding:1em;
+    display:block;
+    border: 2px solid #333;
+}
+
+form input[type='radio'] + label{
+  border-radius: 2em;
+}
+form input[type='checkbox'] + label {
+  border-radius: 0.5em;
+}
+
+form input:checked + label {
+  background-color: #aaa;
+}
+.form-el input + label:hover {
+  opacity:0.6;
+}
+summary h2 {
+  display: inline;
+  line-height: 2em;
+}
+summary::marker {
+  font-size: 1.5em;
+}
+#spinner p{
+  text-align: center;
+  color:#f2eee2;
+}
+#snapshotLink {
+  padding:1em;
+  margin: 10px;
+  border-style: dotted;
+  text-align: left;
+  margin-left: 0;
+}
+.fa-copy{
+  color:#aaa;
+  font-size: 2em;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.fa-copy:hover {
+  opacity: 1;
+}
+.btn-wrap.wrap-r p {
+  color:#a9bcd0;
+}
+label span {
+  display: block;
+  font-size: 0.8em;
 }

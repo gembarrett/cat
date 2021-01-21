@@ -89,7 +89,7 @@ templates.questionsTemplate = function(data, params){
            // start the form
            content += '<div class="form-el type-'+question.answers[j].type+'">';
 
-           // if there's a textarea
+           // if there's a textarea DELETE THIS SECTION
            if (question.answers[j].type === 'textarea') {
              content += '<textarea ' +thisID+thisName+thisPlaceholder+ ' class="incidentBox" '+required+' title="'+question.answers[j].placeholder+'"></textarea>';
            }

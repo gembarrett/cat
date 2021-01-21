@@ -31,3 +31,45 @@ body.buildPage #page {
   color: #066493;
   cursor: pointer;
 }
+
+/* progress bar  */
+progress {
+  width:100%;
+  opacity: 0.5;
+  background: #1b263b;
+  border: 0;
+  display: block;
+}
+progress[value="0"] {
+  display:none;
+}
+
+/* spinner */
+#spinner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+  background: #893168;
+  padding:1em;
+}
+#spinner img {
+  max-width: 100px;
+}
+#spinner.loading{
+  display: block;
+}
+#snapshotGroup.hidden{
+  display:none !important;
+}
+#snapshotGroup{
+  display: flex;
+  flex-direction: column;
+  color: #f2eee2;
+  font-size:0.8em;
+}
+#snapshotGroup div {
+  display: flex;
+  align-items: center;
+}

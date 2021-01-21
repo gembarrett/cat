@@ -1,4 +1,5 @@
 function addChangeListeners() {
+  // DELETE THIS
   var notice = document.querySelectorAll('.q0-only');
   for  (var n = 0; n <notice.length; n++){
     notice[n].remove();
@@ -203,6 +204,7 @@ function nextQuestion(){
   document.querySelector('#snapshotGroup').classList.add('hidden');
   // if there's more questions left in this section
   if (currentState.questionP < currentState.sectionQ.length) {
+    console.log(currentState.questionP + '/' + currentState.sectionQ.length);
     // grab the next question's element and add class of current
     var nextQ = document.getElementById(currentState.questionQ);
     nextQ.classList.add("current");

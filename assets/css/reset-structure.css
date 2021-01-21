@@ -49,6 +49,9 @@ body {
 .questionContent.current {
   display:block;
 }
+.showAllQs {
+  display:block;
+}
 
 .qContainer {
   margin-top: -4em;
@@ -62,4 +65,69 @@ body {
   flex: 2 2 20%;
   margin: 3em 2em;
   background:#f2eee2;
+}
+
+#intro {
+  padding: 5em 4em 8em;
+  text-align: center;
+}
+
+.answers-container {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.answers-container > * {
+  flex: 1 28%;
+}
+
+.form-el {
+  line-height: 3em;
+  min-width: 200px;
+  text-align: center;
+  margin:2em;
+}
+
+/* .window details {
+  margin-top: 1em;
+  font-size: initial;
+} */
+.window summary {
+  background: rgba(27,38,59,0.75);
+  color: #f2eee2;
+  padding: 1em;
+  cursor: pointer;
+}
+.window {
+  margin:4em 0;
+  padding:2em;
+  background: #f2eee2;
+  display:flex;
+  flex-direction: row;
+}
+
+.window:first-child {
+  margin-top: 0;
+}
+#page > .window ~ .window {
+  margin-top: 4em;
+}
+.buildPage .window {
+  margin:4em auto;
+  padding: 2em;
+}
+#no-js.window {
+  flex-direction: column;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contain > * {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-menu{
+  margin:0;
 }
