@@ -111,15 +111,11 @@ function enableSnapshot(s){
   if (currentState.answers.length !== 0){
     // check the ids against the checkableQs
     for (count = 0; count< currentState.answers.length; count++){
-      if (isCheckableQ(parseInt(currentState.answers[count].q))){
-        // enable the snapshot button
-        s.removeAttribute('disabled');
-        s.addEventListener('click', getSnapshotURL);
-        document.querySelector('#copyBtn').addEventListener('click', copyUrl);
-        return;
-      } else {
-        console.log(currentState.answers[count].q + ' is not a question that can be snapshotted');
-      }
+      // enable the snapshot button
+      s.removeAttribute('disabled');
+      s.addEventListener('click', getSnapshotURL);
+      document.querySelector('#copyBtn').addEventListener('click', copyUrl);
+      return;
     }
   } else {
     console.log('More answers needed for snapshotting');
