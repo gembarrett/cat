@@ -18,7 +18,7 @@ var section2 = [
         "type":"radio",
         "answerText":"G",
         "storeAs":"",
-        "excludes":[16],
+        "excludes":[],
         "policyEntry":"Mauris molestie, arcu sed auctor faucibus, lorem erat ultrices erat, quis volutpat eros urna scelerisque urna [security-contact-name].",
         "routineEntry":"Aliquam interdum mollis dui eget posuere!",
         "appendixEntry":[
@@ -33,7 +33,7 @@ var section2 = [
         "type":"radio",
         "answerText":"E",
         "storeAs":"",
-        "excludes":[16],
+        "excludes":[],
         "policyEntry":"Maecenas sit amet risus velit. Vestibulum eget velit justo. Curabitur dolor ligula, interdum vel suscipit aliquam, lacinia id lorem [security-contact-name].",
         "routineEntry":"Suspendisse tempor ante a ipsum efficitur, a volutpat mi semper",
         "appendixEntry":[
@@ -48,7 +48,7 @@ var section2 = [
         "type":"radio",
         "answerText":"S",
         "storeAs":"",
-        "excludes":[16],
+        "excludes":[],
         "policyEntry":"Sed consequat augue vel nibh mollis pretium. Cras ligula ex, iaculis et consectetur quis, accumsan eget nisl [security-contact-name].",
         "routineEntry":"Mauris sed facilisis orci, vitae viverra metus!",
         "appendixEntry":[
@@ -63,7 +63,7 @@ var section2 = [
         "type":"radio",
         "answerText":"L",
         "storeAs":"",
-        "excludes":[16],
+        "excludes":[],
         "policyEntry":"Curabitur dolor ligula, interdum vel suscipit aliquam, lacinia id lorem [security-contact-name].",
         "routineEntry":"Maecenas sit amet risus velit. Vestibulum eget velit justo!",
         "appendixEntry":[
@@ -172,7 +172,7 @@ var section2 = [
         "type":"radio",
         "answerText":"S",
         "storeAs":"",
-        "excludes":[18],
+        "excludes":[],
         "policyEntry":"[organisation-name] quisque sit amet ligula ligula. Morbi ultrices est magna, ac faucibus est suscipit eget.",
         "routineEntry":"Quisque nisl risus, tincidunt quis diam ac, facilisis viverra lorem. Nunc eget augue bibendum, tristique nunc ultricies, mollis velit. Fusce sollicitudin odio erat, in efficitur eros tempus eu.",
         "appendixEntry":[

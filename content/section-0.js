@@ -93,7 +93,7 @@ var section0 = [
         "type":"radio",
         "answerText":"Yes.",
         "storeAs": "",
-        "excludes":[41],
+        "excludes":[],
         "policyEntry":"",
         "routineEntry":"",
         "appendixEntry":[
@@ -123,7 +123,7 @@ var section0 = [
         "type":"radio",
         "answerText":"No.",
         "storeAs": "",
-        "excludes":[18,24],
+        "excludes":[],
         "policyEntry":"",
         "routineEntry":"",
         "appendixEntry":[
@@ -384,7 +384,7 @@ var section0 = [
         "type":"checkbox",
         "answerText":"N",
         "storeAs": "",
-        "excludes":[7],
+        "excludes":[],
         "policyEntry":"",
         "routineEntry":"",
         "appendixEntry":[

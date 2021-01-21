@@ -98,37 +98,32 @@ function collectAnswers(isEdited){
   } else {
     // we're collecting for a policy so get all the answers available so far
     questions = document.querySelectorAll(".editable, .current");
-    // for each question, except the last one
+    // for each question
     for (var c = 0; c < questions.length; c++){
-
-      // if this question id is the same as that of the last element in questionsList then skip
-      if (questions[c].id === questionsList[questionsList.length - 1]){
-        console.log('Skip');
-      } else {
-        // get the input fields
-        var inputFields = checkForInputs(questions[c]);
-        // if there are input fields
-        if (inputFields !== false){
-          // get the question number and data
-          qData = getQData(inputFields[0]);
-          // for each of the input fields
-          for (var cc = 0; cc < inputFields.length; cc++){
-            // get the ID
-            aNum = inputFields[cc].id.split("-")[1];
-            // if the element is checked or is a type of not-empty text box
-            if (inputFields[cc].checked || (inputFields[cc].type.includes("text") && inputFields[cc].value !== "")) {
-              // grab any exclusions
-              exc = updateExc(qData.data.answers[aNum], exc);
-              // save the answer
-              dic = saveToDict(inputFields[cc], qData.data.answers[aNum], dic);
-              ans = storeThisA(ans, qData.ref, aNum);
-            } else {
-              console.log('Checked or text values only');
-            }
+      // get the input fields
+      var inputFields = checkForInputs(questions[c]);
+      // if there are input fields
+      if (inputFields !== false){
+        console.log("no of inputs: "+inputFields.length);
+        // get the question number and data
+        qData = getQData(inputFields[0]);
+        // for each of the input fields
+        for (var cc = 0; cc < inputFields.length; cc++){
+          // get the ID
+          aNum = inputFields[cc].id.split("-")[1];
+          // if the element is checked
+          if (inputFields[cc].checked) {
+            // grab any exclusions
+            exc = updateExc(qData.data.answers[aNum], exc);
+            // save the answer
+            dic = saveToDict(inputFields[cc], qData.data.answers[aNum], dic);
+            ans = storeThisA(ans, qData.ref, aNum);
+          } else {
+            console.log('Checked boxes only');
           }
-        } else {
-          console.log('Input fields only');
         }
+      } else {
+        console.log(currentState.questionQ+' has no inputs');
       }
     }
   }
@@ -184,10 +179,20 @@ function findContent(q){
       return sections[3].find(question => question.id === q);
       break;
     default:
-      console.log('Question not found');
+      console.log('Question '+q+' not found');
       break;
   }
 }
+
+// would be good to get this working so the numbers aren't hardcoded above
+function getSectionComparison(q, s) {
+  var lastID = parseInt(sections[s][sections[s].length-1].id.split("q")[1]);
+  lastID++;
+  console.log(lastID);
+  return q < lastID ? true : false;
+}
+
+
 
 function getQData(el){
   var q = {};
@@ -210,7 +215,7 @@ function saveToDict(el, a, storage){
       storage = storeThisPair(a.storeAs, storage, el.value);
     }
   } else {
-    console.log('No storing that here');
+    console.log('No storeas value for '+currentState.questionQ + '/'+a.answerText);
   }
   return storage;
 }

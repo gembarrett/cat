@@ -43,6 +43,7 @@ function toggleSkip(e){
 }
 
 function moveForward(id) {
+  console.log("we're on question "+id);
   // this increases the counter
   currentState.questionC++;
   // start looking at the next question
@@ -53,6 +54,7 @@ function moveForward(id) {
   currentState.questionP++;
   var el = document.querySelector('progress');
   el.value++;
+  console.log("we're now on question "+id);
   return id;
 }
 
@@ -63,16 +65,17 @@ function isExcludedQ(id) {
   // for each of the questions remaining
   for (var q = id; q < questionsList.length; q++) {
     // if the question isn't on the list
-    if (currentState.exclusions.indexOf(parseInt(id)) === -1) {
+    if (currentState.exclusions.indexOf(parseInt(q)) === -1) {
       // if the question is not excluded
-      // break the loop
-      console.log('not excluded: '+id);
-      // console.log('Go to next question.');
+      console.log("question "+q+" is not excluded");
     } else {
       // update everything to the next question
+      console.log("question"+q+" is excluded");
       id = moveForward(id);
     }
   }
+  console.log('checks complete, new id is '+id);
+  return id;
 }
 
 // this updates the progress bar
@@ -179,6 +182,7 @@ function handleSubmit() {
       // is the next question excluded
       // go to next question
       id = isExcludedQ(id);
+      console.log(currentState.questionC, currentState.questionQ, currentState.sectionC);
       // TODO change to Skip when skip/next is working
       document.getElementById('submitAnswers').innerText = "Next";
       nextQuestion();
@@ -212,6 +216,7 @@ function nextQuestion(){
   // if there's more sections left
   // consider whether this should happen here, before the last q, or after it
   else if (currentState.sectionC < sections.length-1) {
+    console.log(currentState.questionP + '/' + currentState.sectionQ.length);
     // increase the section counter
     currentState.sectionC++;
     // reset the position counter
