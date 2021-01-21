@@ -153,7 +153,7 @@ var section0 = [
     "answers":[
       {
         "type":"checkbox",
-        "answerText":"annual",
+        "answerText":"A",
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
@@ -168,7 +168,7 @@ var section0 = [
       },
       {
         "type":"checkbox",
-        "answerText":"6-monthly",
+        "answerText":"6",
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
@@ -183,7 +183,7 @@ var section0 = [
       },
       {
         "type":"checkbox",
-        "answerText":"quarterly",
+        "answerText":"Q",
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
@@ -198,7 +198,7 @@ var section0 = [
       },
       {
         "type":"checkbox",
-        "answerText":'"as threats arise"',
+        "answerText":'F',
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
