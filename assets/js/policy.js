@@ -70,9 +70,9 @@ function compileDoc(p,a){
     prevQ = qRef;
   }
 
-  doc.plain = 'Organizational Security Policy\n\nCreated '+dateStamp()+'\n\n'+contextP.join('\n');
-  doc.markdown = '# Organizational Security Policy \n#### Created '+dateStamp()+'\n\n'+contextP.join('\n');
-  doc.html = '<!DOCTYPE html><html><head><title>Organizational Security Policy '+dateStamp()+'</title></head><body><h1>Organizational Security Policy</h1><h4>Created '+dateStamp()+'</h4><p>'+contextP.join('</p><p>')+'</p>';
+  doc.plain = 'Report\n\nCreated '+dateStamp()+'\n\n'+contextP.join('\n');
+  doc.markdown = '# Report \n#### Created '+dateStamp()+'\n\n'+contextP.join('\n');
+  doc.html = '<!DOCTYPE html><html><head><title>Report '+dateStamp()+'</title></head><body><h1>Report</h1><h4>Created '+dateStamp()+'</h4><p>'+contextP.join('</p><p>')+'</p>';
 
   if (deviceP.length > 0){
     doc.plain += '\n\nDevice Security\n' + deviceP.join('\n');
@@ -110,9 +110,9 @@ function compileDoc(p,a){
     doc.html += '<h3>What to do if...</h3><p>' + incResP.join('</p><p>')+'</p>';
   }
 
-  doc.plain += '\n\nPlease note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization. \n\nBuilt with SOAP v.'+catv;
-  doc.markdown += '\n\n#### *Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.* \n\n##### Built with SOAP v.'+catv;
-  doc.html += '<h4>Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.</h4><h5>Built with SOAP v. '+catv+'</h5></body></html>';
+  doc.plain += '\n\nPlease note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization. \n\nBuilt with CAT v.'+catv;
+  doc.markdown += '\n\n#### *Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.* \n\n##### Built with CAT v.'+catv;
+  doc.html += '<h4>Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.</h4><h5>Built with CAT v. '+catv+'</h5></body></html>';
 
   var teamPolicies = [];
   // for each of the teams in teamContent
@@ -124,9 +124,9 @@ function compileDoc(p,a){
       areas = teamContent[t].areas;
 
       // add the contextP
-      pText = '\n\n'+teamContent[t].name + '\n\nOrganizational Security Policy\n\nCreated '+dateStamp()+'\n\n'+contextP.join('\n');
-      mText = '\n\n# '+teamContent[t].name + '\n## Organizational Security Policy \n#### Created '+dateStamp()+'\n\n'+contextP.join('\n');
-      hText = '<!DOCTYPE html><html><head><title>Organizational Security Policy '+dateStamp()+'</title></head><body><h1>'+teamContent[t].name+'</h1><h2>Organizational Security Policy</h2><h4>Created '+dateStamp()+'</h4><p>'+contextP.join('</p><p>')+'</p>';
+      pText = '\n\n'+teamContent[t].name + '\n\nReport\n\nCreated '+dateStamp()+'\n\n'+contextP.join('\n');
+      mText = '\n\n# '+teamContent[t].name + '\n## Report \n#### Created '+dateStamp()+'\n\n'+contextP.join('\n');
+      hText = '<!DOCTYPE html><html><head><title>Report '+dateStamp()+'</title></head><body><h1>'+teamContent[t].name+'</h1><h2>Report</h2><h4>Created '+dateStamp()+'</h4><p>'+contextP.join('</p><p>')+'</p>';
 
       // for each of the optional areas
       for (var a = 0; a< areas.length; a++){
@@ -268,23 +268,11 @@ function clearData(){
 // function to download data to a file
 function downloadPolicy(type, edit) {
   var data;
-  // if we're looking to download an edited policy
-  if (edit === true){
-    // grab the edited textcontent
-    var editedPolicy = document.querySelector('.policyHolder').value;
-    // store it in data
-    if (editedPolicy !== ""){
-      data = editedPolicy;
-    } else {
-      data = output[type];
-    }
-  } else {
-    // else grab the content from output as usual
-    data = output[type];
-  }
+  // else grab the content from output as usual
+  data = output[type];
 
   var format = 'text/'+type;
-  var filename = "SOAP-policy";
+  var filename = "CAT-report";
   if (type === 'markdown'){
     filename += '.md';
   } else if (type === 'plain'){
@@ -343,9 +331,4 @@ function getPolicyContent(question, previous, answer, policy, content){
     console.log(question + ' does not have an answer-specific entry');
   }
   return policy;
-}
-
-function resetChanges(){
-  // could also use textContent instead of output here
-  document.querySelector('.policyHolder').value = output.plain;
 }
