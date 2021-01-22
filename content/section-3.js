@@ -11,7 +11,6 @@ var section3 = [
     "q":"Pellentesque nunc est, suscipit eu nulla in, imperdiet congue massa?",
     "required":true,
     "policyEntry":"Nullam orci urna, ornare eleifend condimentum sed, euismod sit amet justo [organisation-name] Duis elit magna, facilisis eget venenatis in, lacinia vitae libero. Nunc eu rhoncus elit [biometric-authentication-options].",
-    "appendixEntry":"Fusce vitae tellus quis magna molestie cursus in non justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "answers":[
       {
         "type":"checkbox",
@@ -19,13 +18,6 @@ var section3 = [
         "storeAs":"[biometric-authentication-options]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -33,13 +25,6 @@ var section3 = [
         "storeAs":"[biometric-authentication-options]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
@@ -55,7 +40,6 @@ var section3 = [
     "q":"Duis tincidunt leo at dictum molestie?",
     "required":false,
     "policyEntry":"Aenean suscipit orci porta quam ullamcorper, in tempor neque egestas. Fusce a nisl venenatis neque tincidunt facilisis: [we-use-this-device-manager].",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -63,13 +47,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -77,13 +54,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "S"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -91,13 +61,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "A"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -105,13 +68,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "G"
-          }
-        ]
       }
     ],
     "tips":[
@@ -127,7 +83,6 @@ var section3 = [
     "q":"Curabitur sit amet iaculis nibh?",
     "required":false,
     "policyEntry":"[organisation-name] Cras est enim, feugiat vel pharetra eu, lobortis quis nisi [we-use-this-backup-storage].",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -135,13 +90,6 @@ var section3 = [
         "storeAs":"[we-use-this-backup-storage]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"Maecenas vehicula justo et lorem pretium, ut convallis arcu tristique?",
-            "tipList": "Cras sollicitudin, metus sit amet viverra maximus, nibh ante euismod enim, non tincidunt ante nisl id quam.",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -149,13 +97,6 @@ var section3 = [
         "storeAs":"[we-use-this-backup-storage]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"Ut et efficitur neque, ac suscipit enim?",
-            "tipList": "Proin id nulla ac libero dignissim porttitor ut vel elit.",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
@@ -171,7 +112,6 @@ var section3 = [
     "q":"Vestibulum ante ipsum primis in faucibus?",
     "required":true,
     "policyEntry":"Quisque congue diam sed magna placerat fringilla. Phasellus sed commodo dui [how-often-backups-done] basis.",
-    "appendixEntry":"Maecenas placerat quam sed purus porta laoreet. Maecenas tempor ipsum tortor.",
     "answers":[
       {
         "type":"radio",
@@ -179,13 +119,6 @@ var section3 = [
         "storeAs":"[how-often-backups-done]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"H",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"radio",
@@ -193,13 +126,6 @@ var section3 = [
         "storeAs":"[how-often-backups-done]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"D",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"radio",
@@ -207,13 +133,6 @@ var section3 = [
         "storeAs":"[how-often-backups-done]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"W",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
@@ -229,7 +148,6 @@ var section3 = [
     "q":"Integer interdum, risus vulputate sodales faucibus, nisi lectus feugiat justo, eget fermentum magna metus id enim?",
     "required":false,
     "policyEntry":"[organisation-name] Sed porta ex in justo bibendum accumsan. Vestibulum mattis mauris sed lacus varius, feugiat iaculis dui lacinia. Donec imperdiet ultrices leo quis ornare: ",
-    "appendixEntry":"Vestibulum lacinia auctor enim, vel gravida mauris porta eu. Morbi vitae nunc tincidunt, porta magna vel, posuere dolor. Sed tincidunt dapibus eros sed sodales. Phasellus eget consectetur velit.",
     "answers":[
       {
         "type":"checkbox",
@@ -237,13 +155,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- B",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -251,13 +162,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- R.",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -265,13 +169,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- M.",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -279,13 +176,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- D.",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[

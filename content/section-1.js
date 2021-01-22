@@ -11,7 +11,6 @@ var section1 = [
     "q":"Maecenas fermentum placerat quam, vitae finibus nisi laoreet ut. Orci varius natoque?",
     "required":false,
     "policyEntry":"",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"radio",
@@ -19,13 +18,6 @@ var section1 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"[organisation-name] penatibus et magnis dis parturient montes, nascetur ridiculus mus. Contact [security-contact-name].",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ],
       },
       {
         "type":"radio",
@@ -33,13 +25,6 @@ var section1 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"[organisation-name] suspendisse tempus tristique arcu ut iaculis. Curabitur ac auctor enim.",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ],
       },
       {
         "type":"radio",
@@ -47,13 +32,6 @@ var section1 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
@@ -69,7 +47,6 @@ var section1 = [
     "q":"Quisque tempor tortor elementum sem pulvinar, sed consectetur tellus vulputate?",
     "required":false,
     "policyEntry":"Quisque imperdiet ac ligula eget convallis. Duis mattis, justo at iaculis pulvinar, quam lacus vehicula purus, nec condimentum libero odio et ligula. Curabitur et finibus sem. Integer convallis volutpat felis, a fringilla mi pharetra non. Nulla placerat odio vitae tristique ornare: [use-these-browser-extensions].",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -77,13 +54,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "A"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -91,13 +61,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "F"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -105,13 +68,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "W"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -119,13 +75,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "R"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -133,13 +82,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "V"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -147,13 +89,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "N"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -161,13 +96,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "X"
-          }
-        ]
       }
     ],
     "tips":[

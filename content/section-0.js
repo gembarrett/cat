@@ -24,7 +24,6 @@ var section0 = [
     "q":"Reprehenderit sit iste libero nulla dolores voluptatum quod?",
     "required":true,
     "policyEntry":"",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -32,13 +31,6 @@ var section0 = [
         "storeAs":"[who-policy-applies-to]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -46,13 +38,6 @@ var section0 = [
         "storeAs":"[who-policy-applies-to]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -60,13 +45,6 @@ var section0 = [
         "storeAs": "[who-policy-applies-to]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
@@ -82,7 +60,6 @@ var section0 = [
     "q":"Quis enim ratione esse aliquam itaque cum est cupiditate?",
     "required":true,
     "policyEntry":"",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"radio",
@@ -90,13 +67,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ],
       },
       {
         "type":"radio",
@@ -104,13 +74,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"radio",
@@ -118,13 +81,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
     ],
     "tips":[
@@ -140,7 +96,6 @@ var section0 = [
     "q":"Saepe molestias at rerum commodi officiis quo quidem?",
     "required":true,
     "policyEntry":"Saepe molestias at rerum commodi officiis quo quidem by [security-contact-name] ([security-contact-role]) on a [how-often-policy-reviewed] basis.",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -148,13 +103,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "Recusandae alias magnam nihil. Ad nisi et eum. [date+12], [date+24], [date+36]",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -162,13 +110,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "Recusandae alias magnam nihil. Ad nisi et eum. [date+6], [date+12], [date+18]",
-            "linksList": ""
-          }
-        ],
       },
       {
         "type":"checkbox",
@@ -176,13 +117,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "Recusandae alias magnam nihil. Ad nisi et eum. [date+3], [date+6], [date+9]",
-            "linksList": ""
-          }
-        ],
       },
       {
         "type":"checkbox",
@@ -190,13 +124,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
     ],
     "tips":[
@@ -212,7 +139,6 @@ var section0 = [
     "q":"Ut provident nobis quo consequuntur necessitatibus nulla non iusto?",
     "required":false,
     "policyEntry":"",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -220,13 +146,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "RRRR"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -234,13 +153,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "TTTT"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -248,13 +160,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "YYYY"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -262,13 +167,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "UUUU"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -276,13 +174,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "IIII"
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -290,13 +181,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": "OOOO"
-          }
-        ]
       }
     ],
     "tips":[
@@ -312,7 +196,6 @@ var section0 = [
     "q":"Sint maxime id esse aut. Sunt dolorum labore odio facere?",
     "required":true,
     "policyEntry":"[organisation-name] sint maxime id esse aut. Sunt dolorum labore odio facere:",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -320,13 +203,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -334,13 +210,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"- Sint maxime id esse aut. Sunt dolorum labore odio facere [organisation-name] devices: [organisation-name] staff sint maxime id esse aut. Sunt dolorum labore odio facere.",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -348,13 +217,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -362,13 +224,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
@@ -384,7 +239,6 @@ var section0 = [
     "q":"Fugit dolore non voluptas voluptatem dolor quos?",
     "required":false,
     "policyEntry":"[organisation-name] fugit dolore non voluptas voluptatem dolor quos [privacy-peripherals-provided] to use on your devices.",
-    "appendixEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -392,13 +246,6 @@ var section0 = [
         "storeAs": "[privacy-peripherals-provided]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       },
       {
         "type":"checkbox",
@@ -406,13 +253,6 @@ var section0 = [
         "storeAs": "[privacy-peripherals-provided]",
         "excludes":[],
         "policyEntry":"",
-        "appendixEntry":[
-          {
-            "reviewList":"",
-            "tipList": "",
-            "linksList": ""
-          }
-        ]
       }
     ],
     "tips":[
