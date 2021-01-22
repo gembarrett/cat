@@ -59,7 +59,7 @@ var section2 = [
         "type":"radio",
         "answerText":"Yes",
         "storeAs":"",
-        "excludes":[],
+        "excludes":[13],
         "policyEntry":"Suspendisse bibendum lobortis odio, pellentesque semper massa posuere varius.",
       },
       {

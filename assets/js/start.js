@@ -67,7 +67,7 @@ function isExcludedQ(id) {
     // if the question isn't on the list
     if (currentState.exclusions.indexOf(parseInt(q)) === -1) {
       // if the question is not excluded
-      console.log("question "+q+" is not excluded");
+      return;
     } else {
       // update everything to the next question
       console.log("question"+q+" is excluded");

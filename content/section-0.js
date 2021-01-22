@@ -244,14 +244,14 @@ var section0 = [
         "type":"checkbox",
         "answerText":"A",
         "storeAs": "[privacy-peripherals-provided]",
-        "excludes":[],
+        "excludes":[8],
         "policyEntry":"",
       },
       {
         "type":"checkbox",
         "answerText":"S",
         "storeAs": "[privacy-peripherals-provided]",
-        "excludes":[],
+        "excludes":[8],
         "policyEntry":"",
       }
     ],

@@ -52,7 +52,7 @@ var section1 = [
         "type":"checkbox",
         "answerText":"A",
         "storeAs":"[use-these-browser-extensions]",
-        "excludes":[],
+        "excludes":[11],
         "policyEntry":"",
       },
       {
@@ -73,7 +73,7 @@ var section1 = [
         "type":"checkbox",
         "answerText":"R",
         "storeAs":"[use-these-browser-extensions]",
-        "excludes":[],
+        "excludes":[11],
         "policyEntry":"",
       },
       {
@@ -87,14 +87,14 @@ var section1 = [
         "type":"checkbox",
         "answerText":"N",
         "storeAs":"[use-these-browser-extensions]",
-        "excludes":[],
+        "excludes":[11],
         "policyEntry":"",
       },
       {
         "type":"checkbox",
         "answerText":"X",
         "storeAs":"[use-these-browser-extensions]",
-        "excludes":[],
+        "excludes":[11],
         "policyEntry":"",
       }
     ],

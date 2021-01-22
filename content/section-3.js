@@ -23,7 +23,7 @@ var section3 = [
         "type":"checkbox",
         "answerText":"R",
         "storeAs":"[biometric-authentication-options]",
-        "excludes":[],
+        "excludes":[19],
         "policyEntry":"",
       }
     ],
