@@ -44,31 +44,5 @@ var ros = [
         "links":[]
       }
     ],
-    "background":[
-      {
-        "head":"What's behind this project?",
-        "subhead":"Stuff. Things.",
-        "list":"",
-        "more":["Hmm."],
-        "links":[
-          {
-            "name":"Link 1",
-            "url":""
-          },
-          {
-            "name": "Link 2",
-            "url": ""
-          },
-          {
-            "name": "Link 3",
-            "url":""
-          },
-          {
-            "name":"Link 4",
-            "url":""
-          }
-        ]
-      }
-    ]
   }
 ]
