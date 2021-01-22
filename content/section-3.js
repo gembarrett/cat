@@ -12,7 +12,6 @@ var section3 = [
     "required":true,
     "policyEntry":"Nullam orci urna, ornare eleifend condimentum sed, euismod sit amet justo [organisation-name] Duis elit magna, facilisis eget venenatis in, lacinia vitae libero. Nunc eu rhoncus elit [biometric-authentication-options].",
     "appendixEntry":"Fusce vitae tellus quis magna molestie cursus in non justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -20,7 +19,6 @@ var section3 = [
         "storeAs":"[biometric-authentication-options]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -35,7 +33,6 @@ var section3 = [
         "storeAs":"[biometric-authentication-options]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -59,7 +56,6 @@ var section3 = [
     "required":false,
     "policyEntry":"Aenean suscipit orci porta quam ullamcorper, in tempor neque egestas. Fusce a nisl venenatis neque tincidunt facilisis: [we-use-this-device-manager].",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -67,7 +63,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -82,7 +77,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -97,7 +91,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -112,7 +105,6 @@ var section3 = [
         "storeAs":"[we-use-this-device-manager]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -136,7 +128,6 @@ var section3 = [
     "required":false,
     "policyEntry":"[organisation-name] Cras est enim, feugiat vel pharetra eu, lobortis quis nisi [we-use-this-backup-storage].",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -144,7 +135,6 @@ var section3 = [
         "storeAs":"[we-use-this-backup-storage]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"Maecenas vehicula justo et lorem pretium, ut convallis arcu tristique?",
@@ -159,7 +149,6 @@ var section3 = [
         "storeAs":"[we-use-this-backup-storage]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"Ut et efficitur neque, ac suscipit enim?",
@@ -183,7 +172,6 @@ var section3 = [
     "required":true,
     "policyEntry":"Quisque congue diam sed magna placerat fringilla. Phasellus sed commodo dui [how-often-backups-done] basis.",
     "appendixEntry":"Maecenas placerat quam sed purus porta laoreet. Maecenas tempor ipsum tortor.",
-    "routineEntry":"",
     "answers":[
       {
         "type":"radio",
@@ -191,7 +179,6 @@ var section3 = [
         "storeAs":"[how-often-backups-done]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"H",
@@ -206,7 +193,6 @@ var section3 = [
         "storeAs":"[how-often-backups-done]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"D",
@@ -221,7 +207,6 @@ var section3 = [
         "storeAs":"[how-often-backups-done]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"W",
@@ -245,7 +230,6 @@ var section3 = [
     "required":false,
     "policyEntry":"[organisation-name] Sed porta ex in justo bibendum accumsan. Vestibulum mattis mauris sed lacus varius, feugiat iaculis dui lacinia. Donec imperdiet ultrices leo quis ornare: ",
     "appendixEntry":"Vestibulum lacinia auctor enim, vel gravida mauris porta eu. Morbi vitae nunc tincidunt, porta magna vel, posuere dolor. Sed tincidunt dapibus eros sed sodales. Phasellus eget consectetur velit.",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -253,7 +237,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- B",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -268,7 +251,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- R.",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -283,7 +265,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- M.",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -298,7 +279,6 @@ var section3 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"- D.",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",

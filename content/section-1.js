@@ -12,7 +12,6 @@ var section1 = [
     "required":false,
     "policyEntry":"",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"radio",
@@ -20,7 +19,6 @@ var section1 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"[organisation-name] penatibus et magnis dis parturient montes, nascetur ridiculus mus. Contact [security-contact-name].",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -35,7 +33,6 @@ var section1 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"[organisation-name] suspendisse tempus tristique arcu ut iaculis. Curabitur ac auctor enim.",
-        "routineEntry":"If you have phasellus vulputate hendrerit massa information.",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -50,7 +47,6 @@ var section1 = [
         "storeAs":"",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -74,7 +70,6 @@ var section1 = [
     "required":false,
     "policyEntry":"Quisque imperdiet ac ligula eget convallis. Duis mattis, justo at iaculis pulvinar, quam lacus vehicula purus, nec condimentum libero odio et ligula. Curabitur et finibus sem. Integer convallis volutpat felis, a fringilla mi pharetra non. Nulla placerat odio vitae tristique ornare: [use-these-browser-extensions].",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -82,7 +77,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -97,7 +91,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -112,7 +105,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -127,7 +119,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -142,7 +133,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -157,7 +147,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -172,7 +161,6 @@ var section1 = [
         "storeAs":"[use-these-browser-extensions]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",

@@ -25,7 +25,6 @@ var section0 = [
     "required":true,
     "policyEntry":"",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -33,7 +32,6 @@ var section0 = [
         "storeAs":"[who-policy-applies-to]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -48,7 +46,6 @@ var section0 = [
         "storeAs":"[who-policy-applies-to]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -63,7 +60,6 @@ var section0 = [
         "storeAs": "[who-policy-applies-to]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -87,7 +83,6 @@ var section0 = [
     "required":true,
     "policyEntry":"",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"radio",
@@ -95,7 +90,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -110,7 +104,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -125,7 +118,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -149,7 +141,6 @@ var section0 = [
     "required":true,
     "policyEntry":"Saepe molestias at rerum commodi officiis quo quidem by [security-contact-name] ([security-contact-role]) on a [how-often-policy-reviewed] basis.",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -157,7 +148,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -172,7 +162,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -187,7 +176,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -202,7 +190,6 @@ var section0 = [
         "storeAs": "[how-often-policy-reviewed]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -226,7 +213,6 @@ var section0 = [
     "required":false,
     "policyEntry":"",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -234,7 +220,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -249,7 +234,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -264,7 +248,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -279,7 +262,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -294,7 +276,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -309,7 +290,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -333,7 +313,6 @@ var section0 = [
     "required":true,
     "policyEntry":"[organisation-name] sint maxime id esse aut. Sunt dolorum labore odio facere:",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -341,7 +320,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -356,7 +334,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"- Sint maxime id esse aut. Sunt dolorum labore odio facere [organisation-name] devices: [organisation-name] staff sint maxime id esse aut. Sunt dolorum labore odio facere.",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -371,7 +348,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -386,7 +362,6 @@ var section0 = [
         "storeAs": "",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -410,7 +385,6 @@ var section0 = [
     "required":false,
     "policyEntry":"[organisation-name] fugit dolore non voluptas voluptatem dolor quos [privacy-peripherals-provided] to use on your devices.",
     "appendixEntry":"",
-    "routineEntry":"",
     "answers":[
       {
         "type":"checkbox",
@@ -418,7 +392,6 @@ var section0 = [
         "storeAs": "[privacy-peripherals-provided]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
@@ -433,7 +406,6 @@ var section0 = [
         "storeAs": "[privacy-peripherals-provided]",
         "excludes":[],
         "policyEntry":"",
-        "routineEntry":"",
         "appendixEntry":[
           {
             "reviewList":"",
