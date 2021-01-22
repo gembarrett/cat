@@ -73,10 +73,6 @@
   .buildPage .window:last-child {
     margin-bottom:0;
   }
-  #preview h1 {
-    line-height: 2em;
-    font-size: 1.5em;
-  }
 }
 
 @media (max-width:768px) {
@@ -168,15 +164,6 @@
     line-height: 1em;
     font-size: 1.1em;
   }
-  #closePreview {
-    font-size: 1.5em;
-    top: -1.5em;
-    font-weight: bold;
-  }
-  #preview {
-    width:90%;
-    height:80%;
-  }
   #inner h4 {
     border-top:1px solid;
     padding-top:0.5em;
@@ -254,12 +241,6 @@
   }
   .answers-container {
     flex-direction: column;
-  }
-  #closePreview .fas {
-    font-size: 1.5em;
-  }
-  #preview h1 {
-    font-size: 1.3em;
   }
   .form-el {
     display:flex;

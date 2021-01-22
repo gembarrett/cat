@@ -81,7 +81,7 @@ textarea:focus {
 .question-panel {
   border: 1px solid currentColor;
   padding: 1em;
-  background-color: #f2eee2;
+  background-color: #eee;
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;

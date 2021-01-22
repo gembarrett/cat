@@ -28,6 +28,7 @@ body {
   box-sizing: border-box;
   align-items: center;
   z-index: 1;
+  background:#eee;
 }
 
 #foot {

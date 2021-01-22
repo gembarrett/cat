@@ -260,7 +260,6 @@ function toggleEditMode(){
   editBtn.innerText = editBtn.innerText == "EDIT" ? "DONE" : "EDIT";
 
   // if the buttons are disabled, enable them, otherwise disable them
-  document.getElementById('previewPolicy').disabled === true ? document.getElementById('previewPolicy').disabled = false : document.getElementById('previewPolicy').disabled = true;
   document.getElementById('submitAnswers').disabled === true ? document.getElementById('submitAnswers').disabled = false : document.getElementById('submitAnswers').disabled = true;
 }
 

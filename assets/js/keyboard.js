@@ -2,7 +2,7 @@
 document.addEventListener('keydown', reactToPress);
 
 function reactToPress(e){
-  var keyNavArr = ['KeyS', 'KeyE', 'KeyP', 'Enter'];
+  var keyNavArr = ['KeyS', 'KeyE', 'Enter'];
 
   // is key on the list - stop if no
   if (keyNavArr.includes(e.code)){
@@ -35,18 +35,7 @@ function simulateClick(el, key, keys){
         return false;
       }
       break;
-    case keys[2]: // preview
-      if (isThisText(el) === false){ // if it's not a text entry
-        if (document.getElementById('previewPolicy') !== null){ // if preview policy button exists
-          document.querySelector("#previewPolicy").disabled ? false : document.querySelector("#previewPolicy").click();
-        } else { // else if the button isn't on the page, do nothing
-          return false;
-        }
-      } else { // else if it's a text entry, do nothing
-        return false;
-      }
-      break;
-    case keys[3]: // next
+    case keys[2]: // next
       if (isThisText(el) === false){ // if it's not a text entry
         if (document.getElementById("submitAnswers").disabled === false){ // if the next button is enabled
           document.getElementById('submitAnswers').click();

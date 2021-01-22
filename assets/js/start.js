@@ -88,26 +88,6 @@ function toggleSpinner(){
   document.getElementById('spinner').classList.toggle('loading');
 }
 
-// if prev button is disabled then call this
-function enablePreview(p){
-  // if the section is 0
-  if (currentState.sectionC === 0){
-    // if there's text AND button answers
-    if ((currentState.answers.length !== 0) && (Object.values(dict).length !== 0)){
-      p.removeAttribute('disabled');
-    } else {
-      console.log('More answers needed for preview');
-    }
-  } else {
-    // if we're past the contextual section
-    // and there are text OR button answers
-    if ((currentState.answers.length !== 0) || (Object.values(dict).length !== 0)){
-      p.removeAttribute('disabled');
-    } else {
-      console.log('More answers needed for preview');
-    }
-  }
-}
 
 // if snapshot button is disabled then call this
 function enableSnapshot(s){
@@ -157,13 +137,8 @@ function handleSubmit() {
         match.classList.add("editable");
         collectAnswers(false);
 
-        // show the preview button if answers are available
-        prev = document.querySelector('#previewPolicy');
         snapshotBtn = document.querySelector('#snapshotPolicy');
 
-        if (prev.disabled){
-          enablePreview(prev);
-        }
         if (snapshotBtn.disabled){
           enableSnapshot(snapshotBtn);  // enable the snapshot button
         }
