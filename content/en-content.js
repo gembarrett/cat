@@ -122,4 +122,105 @@ var qs = [ // contains all question content
       },
     ]
   }
+];
+
+var rs = [ // contains all evaluation content
+  {
+    "area": "a", // which score-collection category is this
+    "why": "Explanation of this area goes here", // why is this recommended (all levels)
+    "eg": "Fictional example of this area goes here", // example scenario
+    "results": [ // contains result text for this category
+      {
+        "assess": "below", // assessed level, based on score
+        "desc": "Description of this evaluation goes here", // explanation of what this means
+        "recs": [ // contains recommendations for this level
+          {
+            "title": "Recommendation placeholder goes here", // title of this recommendation
+            "desc": "Description of this recommendation goes here" // explanation of this recommendation
+          },
+          {
+            "title": "Next recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+        ]
+      },
+      {
+        "assess": "ok",
+        "desc": "Description of this evaluation goes here",
+        "recs": [
+          {
+            "title": "Recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+          {
+            "title": "Next recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+        ]
+      },
+      {
+        "assess": "exceeds",
+        "desc": "Description of this evaluation goes here",
+        "recs": [
+          {
+            "title": "Recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+          {
+            "title": "Next recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+        ]
+      }
+    ]
+  },
+  {
+    "area": "b",
+    "why": "Explanation of this area goes here",
+    "example": "Fictional example of this area goes here",
+    "results": [
+      {
+        "assess": "below",
+        "desc": "Description of this evaluation goes here",
+        "recs": [
+          {
+            "title": "Recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+          {
+            "title": "Next recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+        ]
+      },
+      {
+        "assess": "ok",
+        "desc": "Description of this evaluation goes here",
+        "recs": [
+          {
+            "title": "Recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+          {
+            "title": "Next recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+        ]
+      },
+      {
+        "assess": "exceeds",
+        "desc": "Description of this evaluation goes here",
+        "recs": [
+          {
+            "title": "Recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+          {
+            "title": "Next recommendation placeholder goes here",
+            "desc": "Description of this recommendation goes here"
+          },
+        ]
+      }
+    ]
+  }
 ]
