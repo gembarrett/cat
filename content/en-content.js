@@ -1,14 +1,14 @@
-var qs = [
+var qs = [ // contains all question content
   {
     "level": "intro", // which of the three levels do these questions belong to
-    "questions": [
+    "questions": [ // contains this level's questions
       {
-        "q": "Question placeholder goes here",
-        "area": "a",
-        "answers": [
+        "q": "Question placeholder goes here", // what's the question text
+        "area": "a", // which category should the score be added to
+        "answers": [ // contains this question's answers
           {
-            "a": "Answer placeholder goes here",
-            "pts": 10
+            "a": "Answer placeholder goes here", // what's the answer text
+            "pts": 10 // how many points should be added to the category
           },
           {
             "a": "Next answer placeholder goes here",
