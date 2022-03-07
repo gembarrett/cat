@@ -231,12 +231,32 @@ var oc = [ // contains all other content
     "title": "",
     "content": [
       {
-        "type": "button",
-        "text": "Placeholder label goes here"
+        "type": "",
+        "text": "SAVE & RESUME LATER"
       },
       {
-        "type": "direction",
-        "text": "Placeholder instruction goes here"
+        "type": "",
+        "text": "Use this link to resume your CAT session. Copy the link below and save it in a safe place!"
+      },
+      {
+        "type": "",
+        "text": "COPY LINK"
+      },
+      {
+        "type": "",
+        "text": "Want us to email this link to you? Enter your email below."
+      },
+      {
+        "type": "",
+        "text": "YOUR EMAIL"
+      },
+      {
+        "type": "",
+        "text": "SEND LINK"
+      },
+      {
+        "type": "",
+        "text": "This CAT SESSION will expire in 30 DAYS. Without the link, the data you have entered cannot be retrieved, and you will have to start from the beginning."
       }
     ]
   },
