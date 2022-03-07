@@ -344,28 +344,28 @@ var oc = [ // contains all other content
     "title": "Legal disclaimer",
     "content": [
       {
-        "p": "Paragraph of text goes here"
+        "p": "This tool is provided for free to nonprofit organizations for informational purposes only. It is meant to be used as a starting point for organizations with limited resources to assist them in beginning to develop a cybersecurity program. Use of this tool does not guarantee compliance with federal, state or local laws. Please note that the information presented may not be applicable or appropriate for all of your nonprofit organization’s cybersecurity needs. This tool is not intended to be an exhaustive or definitive source on safeguarding your organization's information from privacy and security risks. For more information about cybersecurity assessments, visit SANS Incident Response framework, NIST Cybersecurity, and ISO 27000 series with attention to ISO 27005 risk management."
       },
       {
-        "p": "Paragraph of text goes here"
+        "p": "NOTE: The cybersecurity standards provided reflect current best practices in information technology as of the release date of this tool, which means we cannot guarantee it is accurate, up to date, or appropriate for your organization. This tool is not intended to serve as legal advice or as recommendations based on an organization's specific circumstances. We encourage organizations to seek expert advice when evaluating the use of this tool."
       },
       {
-        "p": "Paragraph of text goes here",
+        "p": "This tool is meant to help nonprofit organizations:",
         "list": [
-          "Long placeholder item 1 goes here",
-          "Long placeholder item 2 goes here",
+          "develop a general sense of the maturity of an organization's cybersecurity program, and",
+          "identify potential cybersecurity program components to consider adding or improving.",
         ]
       },
       {
-        "p": "Paragraph of text goes here",
+        "p": "The tool does not provide organizations with:",
         "list": [
-          "Long placeholder item 1 goes here",
-          "Long placeholder item 2 goes here",
-          "Long placeholder item 3 goes here",
+          "a roadmap for securing the organization against cyberattacks or other misuse of their data or systems,",
+          "a basis for determining compliance with any legal obligations, or",
+          "a definitive list of the cybersecurity program components an organization should develop.",
         ]
       },
       {
-        "p": "Paragraph of text goes here"
+        "p": "By using this tool, you confirm that you have the right to provide all information entered into this tool without violating the privacy, confidentiality or other obligations of your organization in the relevant jurisdictions. The information that you entered into this tool is stored with a third-party service provider. The Ford Foundation does not receive the information entered into this tool; however, it may receive anonymized results about the tool’s general performance to help the Foundation: (1) deliver the tool’s service; (2) ensure that the tool is working as intended and to make improvements to the tool and the content; and (3) in the furtherance of Foundation's mission to support the nonprofit sector."
       }
     ]
   }
