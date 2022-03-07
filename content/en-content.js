@@ -263,10 +263,10 @@ var oc = [ // contains all other content
     "title": "Cybersecurity Assessment Tool (CAT)",
     "content": [
       {
-        "p": "Paragraph of text goes here"
+        "p": "COVID-19 has fundamentally changed the way we live and work. During this uncertain time, we are all finding new ways to survive and continue our work. This includes using technology more than ever before, raising the already important issue of cybersecurity within civil society organizations. However, finding where to begin and understanding the best way to tackle this topic can feel daunting for even the best-resourced organizations. That’s why we have created this tool."
       },
       {
-        "p": "Paragraph of text goes here"
+        "p": "The Ford Foundation’s Cybersecurity Assessment Tool (CAT) is designed to measure the maturity, resiliency, and strength of an organization’s cybersecurity efforts. We have created this questionnaire with busy nontechnical grant makers, grantee partners, civil society organizations, and nonprofits in mind, and we hope it helps shine some light on a recommended path forward for any organization undertaking a cybersecurity journey. The tool is designed to be taken as a survey in one 30-minute sitting. However, it may require information from several members of your staff, including operations staff or decision makers. We initially created the questionnaire to help BUILD’s grantee partners, and we’re now making a beta version available for public use."
       }
     ]
   },
@@ -324,18 +324,18 @@ var oc = [ // contains all other content
     "title": "Who did we build this tool for?",
     "content": [
       {
-        "p": "Paragraph of text goes here"
+        "p": "We designed CAT to help a specific set of civil society organizations and funders around the world. These include:",
         "list": [
-          "Long placeholder item 1 goes here",
-          "Long placeholder item 2 goes here",
-          "Long placeholder item 3 goes here",
-          "Long placeholder item 4 goes here",
-          "Long placeholder item 5 goes here",
-          "Long placeholder item 6 goes here",
+          "Grantees of the Ford Foundation BUILD program",
+          "Non-governmental organizations (NGOs) or civil society organizations (CSOs) that are funded by other grantmakers or foundations",
+          "Civil society organizations using other assessment tools that would like additional information about their cybersecurity preparedness",
+          "Civil society organizations that have recently suffered a cybersecurity incident and need to determine their next steps",
+          "Grantmakers or other funders seeking to assess their grantees' cybersecurity risk level",
+          "Technical assistance providers who would like to measure their clients' cybersecurity awareness",
         ]
       },
       {
-        "p": "Paragraph of text goes here"
+        "p": "Don't see your type of organization listed above? This doesn't mean that CAT won't work for you. However, you may need to adjust some of your recommendations for your particular context."
       }
     ]
   },
