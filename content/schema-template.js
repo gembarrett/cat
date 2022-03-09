@@ -14,8 +14,8 @@
   },
   "general": {
     "what": "String",
-    "why": "String",
-    "eg": "String"
+    "why": "String", // title for each content.general.why below
+    "eg": "String" // title for each content.general.eg below
   }
 },
 "content": [
@@ -36,6 +36,10 @@
             "content": [ // explanation of this recommendation
               "String 1",
               "String 2",
+              {
+                "type": "title",
+                "heading": "String",
+              },
               {
                 "type": "ol",
                 "items": ["Item 1", "Item 2", "Item 3", "Item 4"]
