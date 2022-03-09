@@ -1,5 +1,5 @@
 "title": "Evaluation & feedback",
-"reusables": {
+"reusables": { // content that appears in multiple evaluation areas
   "below": {
     "title": "Below",
     "content": "String"
@@ -13,27 +13,27 @@
     "content": "String"
   },
   "general": {
-    "rec": "String",
+    "what": "String",
     "why": "String",
     "eg": "String"
   }
 },
 "content": [
   {
-    "area": "this-area-ref",
+    "area": "this-area-ref", // which score-collection category is this
     "title": "Title Of This Evaluation Area",
-    "score": "Your org scored [[X]] in this evaluation category",
+    "score": "Your org scored [[X]] in this evaluation category", // explanation of what this means
     "general": {
-        "why": ["String 1", "String 2"],
-        "eg": ["String 1", "String 2"]
+        "why": ["String 1", "String 2"], // explanation of what this means
+        "eg": ["String 1", "String 2"] // example scenario
     },
-    "results": [
+    "results": [ // contains result text for this category
       {
-        "assess": "below",
-        "recs": [
+        "assess": "below", // assessed level, based on score
+        "recs": [ // contains recommendations for this level
           {
-            "title": "Title string",
-            "content": [
+            "title": "Title string", // title of this recommendation
+            "content": [ // explanation of this recommendation
               "String 1",
               "String 2",
               {
