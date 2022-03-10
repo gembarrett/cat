@@ -5,6 +5,9 @@ var links = {
     },
     "matrix": {
       "en": "https://sec.eff.org/materials/threat-modeling-activity-handout-for-learners"
+    },
+    "ssd": {
+      "en": "https://ssd.eff.org/en/taxonomy/term/362/"
     }
   },
   "an": {
@@ -15,6 +18,9 @@ var links = {
   "ttech": {
     "matrices": {
       "en": "https://holistic-security.tacticaltech.org/chapters/explore/2-8-identifying-and-analysing-threats.html"
+    },
+    "detox": {
+      "en": "https://datadetoxkit.org/en/home"
     }
   },
   "nist":{
@@ -56,6 +62,71 @@ var links = {
   "prey": {
     "web": {
       "en": "https://preyproject.com/"
+    }
+  },
+  "moodle": {
+    "web": {
+      "en": "https://moodle.org/"
+    }
+  },
+  "ilias": {
+    "web": {
+      "en": "https://www.ilias.de/en/"
+    }
+  },
+  "learndash": {
+    "web": {
+      "en": "https://www.learndash.com/"
+    }
+  },
+  "docebo": {
+    "web": {
+      "en": "https://www.docebo.com/"
+    }
+  },
+  "totem": {
+    "web": {
+      "en": "https://totem-project.org/"
+    }
+  },
+  "soak": {
+    "web": {
+      "en": "https://spideroak.com/one/"
+    }
+  },
+  "tresorit": {
+    "web": {
+      "en": "https://tresorit.com/"
+    }
+  },
+  "ncloud": {
+    "web": {
+      "en": "https://nextcloud.com/"
+    }
+  },
+  "ocloud": {
+    "web": {
+      "en": "https://owncloud.com/"
+    }
+  },
+  "cmator": {
+    "web": {
+      "en": "https://cryptomator.org/"
+    }
+  },
+  "google": {
+    "cbook": {
+      "en": "https://www.google.com/chromebook/"
+    }
+  },
+  "vmware": {
+    "player": {
+      "en": "https://www.vmware.com/products/workstation-player.html"
+    }
+  },
+  "vbox": {
+    "web": {
+      "en": "https://www.virtualbox.org/"
     }
   }
 }

@@ -502,6 +502,175 @@ var rs = [
           ]
         }
       ]
+    },
+    {
+      "area": "training-support", // which score-collection category is this
+      "title": "Staff Training and Support",
+      "score": "Your organization has scored [[X]] points in the staff training and support category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Your staff may find cybersecurity intimidating or technology daunting. Alternatively, some staff members may be advanced technology users while others may be embarrassed to admit their shortcomings. Not making assumptions on the cybersecurity knowledge of your staff allows your entire staff to establish a baseline level of security knowledge before moving on to more advanced topics.",
+            "Remember that whether we are learning a new language or technical skill, we learn best with repetition, practice, and time. Incorporating these strategies into our cybersecurity training can help break complex topics down into digestible details.",
+            "While in-person training can help establish a baseline level of knowledge, your staff also needs access to information and lessons on their own schedule. Setting up a learning management system or other tool can bridge this gap while also documenting key security lessons that your organization has incorporated into your workflow."
+          ], // explanation of what this means
+          "eg": [
+            "Staff members at ADE Worldwide pride themselves on a “can-do” approach. If they don’t know the answer to a problem, they will seek out the resources necessary to solve it on their own.",
+            "As a result, they  hesitate to admit when they lack sufficient knowledge to fix a problem, including improving their security footprint. ADE managers realize the only way to ensure that everyone moves forward with needed security updates is to require all staff to meet the same level of cybersecurity training, giving them permission to ask for help as needed without embarrassment.",
+            "Once the initial training is over, there’s little time to invest on refreshers. That’s why ADE managers then start “Learning Lunches” every two weeks, when each office holds a refresher training over the lunch hour on Wednesdays. This provides staff with an interactive opportunity to practice their skills in an open, conversational setting with little pressure, but also reminds them of the importance of keeping their skills sharp.",
+            "Even with these initiatives, though, managers notice that staff are still struggling to implement some of the lessons. Since ADE has a global staff working across different time zones, it isn’t feasible to have a single point of contact to answer questions and troubleshoot. To help, ADE’s management institute a learning management system with all the content from earlier training sessions so staff can look up resources and lessons at any time of day on any device."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Set expectations for security knowledge.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff members are passionate, driven, motivated, and hard-working. They may be experts in fields such as human rights law and voting advocacy. Most likely, however, they are not cybersecurity experts. And while it’s easy to assume that most people have a basic level of experience with technology, that’s not always the case.",
+                "Instead of assuming that your staff understands the basics of cybersecurity, assume that you are starting with a blank slate. From here, you can take a series of effective steps:",
+                {
+                  "type": "title",
+                  "heading": "Familiarize yourself with cybersecurity basics.",
+                },
+                "Excellent resources to get started include the Electronic Frontier Foundation’s [Surveillance Self-Defense curriculum](links.eff.ssd) and the [Data Detox Kit](links.ttech.detox) from Tactical Tech."
+                {
+                  "type": "title",
+                  "heading": "Begin training.",
+                },
+                "Work with a cybersecurity provider, as needed, to conduct introductory “digital best practices” training for your staff.",
+                {
+                  "type": "title",
+                  "heading": "Share your organization’s security history with staff.",
+                },
+                "In fast-paced organizations, it’s easy for generational knowledge about security incidents to disappear, leaving newer staff unaware of risk. Document this history as much as possible so your staff members are fully informed.",
+                "Starting with introductory knowledge can ensure that all staff members are on an equal footing."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Introduce training in small bites.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff members are busy professionals. It’s important to remember that they will forget most of the content that they hear, read, or watch during training.",
+                "That’s why repetition of key points in “small bites” is one of the most effective learning strategies for hard-working staffs. Begin by identifying the most critical behaviors, actions, and tools you need your staff to understand and implement.",
+                "Then gradually introduce training sessions into your organization’s workflow. Perhaps an hour once a month is dedicated to reviewing cybersecurity basics, or maybe a weekly lunch break is converted into a practice session. Day-long training will disrupt workflow and lead to tired, overwhelmed staff members. Use smaller, bite-sized training sessions instead to keep material fresh and approachable."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Create a knowledge base.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "While live instruction, either in-person or online, is helpful for teaching big concepts, your organization can’t rely on training alone to enhance cybersecurity. Instead, you must create an institutionalized version of this knowledge that can be accessed by any staff member at any time.",
+                "A good interim solution can be a basic online quiz accompanied by a 2- to 3-minute recap video to test the staff’s knowledge and refresh their memories.",
+                "Alternatively, digital tools for learning—sometimes known as learning management systems, or LMS—are widely available. We like open-source options such as [Moodle](links.moodle.web) and [ILIAS](links.ilias.web) or commercial versions such as [LearnDash](links.learndash.web) (built for the content management system WordPress) or [Docebo](links.docebo.web).",
+                "You may also want to consider a third-party learning platform like [Totem Project](links.totem.web) to help your staff practice their cybersecurity skills.",
+                "You may need to work with a technical assistance provider to implement this tool, but the effort can pay dividends. A well-designed LMS can help you capture not only cybersecurity lessons but also help your staff answer time-sensitive questions without having to track down an instructor. Most LMS platforms provide a scoring mechanism, too, so you can map your staff’s progress."
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      "area": "travel-security", // which score-collection category is this
+      "title": "Travel Security",
+      "score": "Your organization has scored [[X]] points in the travel security category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Organizations that don’t plan for risks in the field leave themselves vulnerable to surprises. Having an open conversation with your staff about travel security can encourage an important dialogue about risk within your organization and may even highlight some vulnerabilities you hadn’t noticed previously. You can then use those findings to help create policies to mitigate travel risks."
+          ], // explanation of what this means
+          "eg": [
+            "ADE Worldwide now has offices in nearly every region of the world. Staff often travel to meet colleagues overseas, attend large conferences, or oversee fieldwork. While staff have a basic understanding of how to stay safe while traveling, ADE realizes it hasn’t done its due diligence regarding travel security as an organization. As a result, it institutes a series of organizational open meetings to collect feedback about travel risks, then begins the process of drafting a formal travel security policy.",
+            "One part of the new policy governs the use of work devices outside the office. Field staff at ADE Worldwide work in rural areas with farmers and agricultural workers, often in tough conditions. When headquarters staff travel into the field, they bring their work devices to take photographs, notes, and record data. After a series of devices were lost on a recent field visit, ADE management now requires all travelers to upload their data to an encrypted cloud storage provider, accessing only the files they absolutely need while on the road.",
+            "When the majority of ADE’s staff needs to work remotely full-time due to the global pandemic, they use these travel policies to govern their work devices."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Understand the risks.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Travel is an exciting opportunity for staff to advance your organization’s mission. When your staff members travel, however, they are temporarily removed from the regular security habits they use at home or the office. This poses risks when they are carrying work devices or accessing sensitive information. Even losing their personal devices can cause a threat to your organization’s work."
+              ]
+            },
+            {
+              "title": "Develop travel security policies.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "It’s important to emphasize to staff members just how vulnerable they really are when they are working away from home. Have a candid discussion about the repercussions of losing a work device while traveling, for example. Other topics you will want to cover include:",
+                {
+                  "type": "ul",
+                  "items": [
+                    "How should staff members and your organization handle the loss or theft of a work device?",
+                    "Does your organization have a device insurance policy for staff travel?",
+                    "How can staff members back up data from their device and restore it, as needed?",
+                    "What is the process for border crossings with work devices or data?",
+                    "How will you handle travel to areas with low or no Internet connectivity?",
+                    "How will you prepare for different legal requirements and expectations as you travel, particularly laws governing cybersecurity?"
+                  ]
+                },
+                "While every organization is different and risks vary greatly between countries and regions, you may want to consider establishing policies around the use of work devices when traveling. Some organizations choose to “pre-flight” a device by removing sensitive information, deleting certain apps, and using only essential services while on the road. Other organizations prohibit staff from bringing their work or personal devices while traveling at all, instead issuing them travel-specific devices.",
+                "You may want to consult with a security provider to determine the best solution for your organization."
+              ]
+            },
+            {
+              "title": "Create a checklist to maintain your travel devices.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Traveling with a digital device can often bring a higher level of risk. If your organization plans to use work devices while traveling, you should plan to take proactive steps to stay safe. Consider developing checklists to guide your staff through the necessary steps to keep their devices safe. These steps should include plans to:",
+                {
+                  "type": "ul",
+                  "items": [
+                    "Safely back up your data outside of the device",
+                    "Safely clean (or wipe) the device before and after travel",
+                    "Install and update necessary apps and software before travel",
+                    "Remove any apps or software that may be controversial or illegal in the destination country or region",
+                    "Determine what type of data is stored on the device or can be accessed from apps and accounts on the device"
+                  ]
+                },
+                "Again, you may benefit from the guidance of a security provider for your specific context and travel plans."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Incorporate cloud storage.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff members understand the risks posed by travel, and you’ve briefed them on your organization’s policies governing work travel. You may have even chosen to use dedicated travel-specific devices for your staff.",
+                "Now, you can enhance the precautions that your staff members take when they travel. One of the most effective ways to protect against device theft or damage while traveling is to store data in the cloud. While there are many cloud storage services to consider, we recommend using encrypted ones when traveling. These services include [SpiderOak One](links.soak.web), a US-based provider, and [Tresorit](links.tresorit.web), a Swiss provider. Self-hosted solutions include [NextCloud](links.ncloud.web) and [OwnCloud](links.ocloud.web). Alternatively, you may use a tool such as [Cryptomator](links.cmator.web) to encrypt your files locally and store them in your nonencrypted cloud storage service, such as Dropbox or Google Drive. (Files on Google Drive and other popular services are encrypted but can be accessed by the cloud storage provider in response to legal requests.)",
+                "You may need a security provider to help with this process and to select the right cloud service for you."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Source travel-specific devices and develop a policy for their use.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "You’ve made good progress on keeping your staff and your data safe during work-related travel. To further improve your travel security, you should consider using dedicated travel-specific devices. This will require both an investment of time and money, as well as the creation of new policies around the safe use of these devices. Used effectively, however, travel devices can greatly reduce risk, even if they fall into the wrong hands.",
+                "Rather than having staff use their personal or work devices while traveling, consider using dedicated travel devices instead.",
+                "To start, you will want to identify the types of devices that your staff members use in the field. If they typically need a laptop while traveling, consider a reliable but inexpensive alternative like a [Chromebook](links.google.cbook).",
+                "Once you’ve identified the types of devices appropriate for your organization, you will need to develop a clear policy and process for handling travel devices before, during, and after their use. This will likely include a “pre-flight” process to prepare the device and a return check-in with the staff  member who used the device to learn about any challenges they may have had in the field. You will also need to wipe the device clean before and after travel.",
+                "Each of these device management phases can be time-consuming, so they should be spelled out in detail and written down. You may want to work with a security provider to implement this process smoothly.",
+                "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [VMWare Work Station Player](links.vmware.player) (Linux/PC),  Fusion (Mac), or [VirtualBox](links.vbox.web). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a provider whether this is a good option for you."
+              ]
+            },
+          ]
+        }
+      ]
     }
   ]
 ];
