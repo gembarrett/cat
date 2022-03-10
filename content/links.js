@@ -39,5 +39,23 @@ var links = {
     "tool": {
       "en": "https://usesoap.app/"
     }
+  },
+  "sans": {
+    "templates": {
+      "en": "https://www.sans.org/information-security-policy/"
+    }
+  },
+  "carbide": {
+    "windows": {
+      "en": "https://carbidesecure.com/resources/security-best-practices-hardening-windows-10/"
+    },
+    "mac": {
+      "en": "https://carbidesecure.com/resources/our-best-practices-for-securing-your-macbook/"
+    }
+  },
+  "prey": {
+    "web": {
+      "en": "https://preyproject.com/"
+    }
   }
 }

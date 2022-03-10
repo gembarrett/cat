@@ -149,7 +149,7 @@ var rs = [
     {
       "area": "risk-threat", // which score-collection category is this
       "title": "Risk Analysis and Threat Assessment",
-      "score": "Your organization has scored X points in the risk analysis and threat assessment category.", // explanation of what this means
+      "score": "Your organization has scored [[X]] points in the risk analysis and threat assessment category.", // explanation of what this means
       "general": {
           "why": [ // text for reusables.general.why above
             "Understanding your risk is critical to keeping your organization safe. All good safety and security planning begins with a thorough understanding of the possible threats we face. Investing time and effort into better understanding your threat model will make reducing your risk much easier in the future. Remember also that threats evolve, so you may need to update your threat model as your organization and the landscape around you change.",
@@ -296,27 +296,207 @@ var rs = [
           "assess": "exceeds", // assessed level, based on score
           "recs": [ // contains recommendations for this level
             {
-              "title": "Title string", // title of this recommendation
+              "title": "Run a tabletop exercise.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "String 1",
-                "String 2",
+                "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff  doesn’t need to be physically gathered around a table to complete one. During an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
+                "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [MITRE Corp.’s guidelines on tabletop exercises](links.mitre.tabletop).",
                 {
-                  "type": "title",
-                  "heading": "String",
-                },
-                {
-                  "type": "ol",
-                  "items": ["Item 1", "Item 2", "Item 3", "Item 4"]
-                },
-                {
-                  "type": "table",
-                  "rows": [
-                    ["", "Low", "High"],
-                    ["Low", "Printer stolen", "Damage to phone"],
-                    ["High", "Cyberattack", "Phishing attack"]
+                  "type": "ul",
+                  "items": [
+                    "Determine what you would like to test (usually by choosing one of your top identified threats).",
+                    "Designate a group leader to run the exercise.",
+                    "Create a plausible storyline that includes the threat you want to test your response to.",
+                    "Gather the staff that would be responsible for managing this threat.",
+                    "Walk the staff  through the scenario and ask for their responses, step by step.",
+                    "Document gaps, concerns, and weak points in the threat response."
                   ]
                 },
-                "String 3"
+                "You can use the knowledge gained from a tabletop exercise to identify areas of concern and begin to develop strategies to reduce those risks."
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      "area": "docs-policy", // which score-collection category is this
+      "title": "Documentation and Policy",
+      "score": "Your organization has scored [[X]] points in the documentation and policy category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Before you can upgrade your security, you need to have the fundamentals in place. Putting together a security policy and road map for your organization can help you be proactive about your security while also preparing for worst-case scenarios.",
+            "Even the most well-intentioned organizations sometimes struggle to put security policies into practice on an everyday basis. That’s why it’s important to adopt a nonjudgmental, empathetic approach to helping staff become compliant. Reward the successes and manage the failures, and remember that changing behavior takes time.",
+            "Once you have a policy in place within your organization, you might be hesitant to make any changes and upset the status quo. Remember, though, that policies and road maps must adapt to changing threats to be effective. Designating certain staff members to keep these documents updated can help reduce unexpected risks in the future."
+          ], // explanation of what this means
+          "eg": [
+            "ADE Worldwide is growing quickly. What started as an organization with headquarters in Washington, DC, and a single field office in Latin America has quickly expanded to other locations around the world. Now that the organization is growing, more ADE staff members are reporting possible security challenges. Luckily, no security challenge has escalated into an incident, but management is growing concerned with the organization’s existing security policy.",
+            "To help close this gap, the executive management team conducts a policy review session. They find that their current security policy has notable gaps but accurately reflects how the majority of staff handles cybersecurity. They realize they need to do more to make security a key part of the organization’s workflow. In response, they patch the gaps by moving security goals from their road map to their policy, making these steps a reality.",
+            "Then, they take steps to ensure that more of the staff complies with the newly revised policy. These include starting every staff meeting with a recognition of staff members who have demonstrated good security practices, while asking those falling behind to take part in a tabletop exercise that will demonstrate firsthand the risks of ignoring the new policy.",
+            "When they add a new field office in Thailand, they realize their policies need to be updated to reflect this new region. The CEO of ADE creates a working group to make changes to the policy, monitor threats across the offices and update policies at least once a year."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Document your security policy and your future road map.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "As an established civil society organization, you probably have strategic documents, policies, and plans to help you reach your key goals. Now that you’re focusing on strengthening your cybersecurity, it’s time to develop a security policy and road map, too.",
+                "A security policy explains your day-to-day cybersecurity operations currently. A security road map, on the other hand, is a more aspirational document that states your medium- and long-term goals for your cybersecurity policy.",
+                "Luckily, this doesn’t have to be too daunting. While some organizations may have a series of complex security policies and plans, you can get started with something much simpler. The key steps to a successfully documenting a security policy are:",
+                {
+                  "type": "ul",
+                  "items": [
+                    "Document whatever steps more than 80 percent of your staff currently take to face cybersecurity threats.",
+                    "Conduct an honest assessment of your current approach toward cybersecurity threats.",
+                  ]
+                },
+                "The more honest your policy, the more your organization can improve. If you are fully honest, you should be able to find room for improvement within your organization. For example, you may find that only some of your staff members use a cybersecurity tool you’ve purchased. Once you’ve taken a look at your policy and identified gaps, you can start to put together a security road map.",
+                "The key steps to developing a security road map are:",
+                {
+                  "type": "ul",
+                  "items": [
+                    "Understand and define your key threats and risks (see Risk Analysis and Threat Assessment).",
+                    "Compare your existing policy against the key threats to identify what is missing in your security approach",
+                    "Document what you would like to implement in the future to improve your security approach.",
+                  ]
+                },
+                "When you’re ready to create your first security policy, you can use the highly useful [SOAP tool](links.soap.tool) or the [SANS templates](links.sans.templates) to generate a policy through a series of step-by-step questions.",
+                "Remember that your security policy is a living document—try to update it with new guidelines based on changing threats at least once per year."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Gently enforce the rules.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "You’ve invested time and resources into creating a security policy and road map for your organization. But despite your best efforts, you notice that some staff members aren’t always following the rules. This is common, especially in organizations where security isn’t a key component of staff  culture.",
+                "Don’t worry; integrating “security thinking” into an organization is possible, if time-consuming. One of the most effective ways to get the staff  thinking about security is to gradually introduce security concepts into your everyday workflow until they become part of your staff’s routine.",
+                "Here is one strategy to help your staff incorporate your security policies into their operations.",
+                {
+                  "type": "ol",
+                  "items": [
+                    "Determine an effective way to measure staff compliance in the areas that you want to improve.",
+                    "Gather your executive team and ask them to identify the weakest links in your organization (individuals who aren’t complying with much of your security policy) as well as possible challenges or roadblocks.",
+                    "Deputize those weakest links for simple tasks, such as ensuring that their colleagues are following a basic requirement of your security policy.",
+                    "Reward positive behavior change, especially among staff members who previously were not compliant, with praise and other motivators. Be empathetic.",
+                    "Don’t punish slow or lax compliance. Technology can be intimidating to many people and may have a steep learning curve. After a certain publicly announced date or time, cut off services (such as emails, logins, etc.) for users who don’t comply. Other services, such as two-factor authentication, can simply be made mandatory. Be prepared to provide additional support when this happens.",
+                    "Run a tabletop exercise with your staff so they can better understand the risks of not following policy.",
+                    "Share news and updates on other organizations that have been targets of cybersecurity attacks as teachable moments for your staff. This may require you to emphasize how similar threats could face your organization.",
+                    "Begin again with the measurement phase."
+                  ]
+                },
+                "If results are slow, don’t worry. Organizational change can sometimes take a year or more to fully take place. Keep working at this process steadily over time.",
+                "You could also consider giving different levels of access based on their security compliance, for example by giving access to sensitive data to those who have enabled two-factor authentication."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Keep your policy and road map updated.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your organization has strong security policies and procedures, and your staff members understand the importance of security in their everyday work. It’s important to remember, though, that even the strongest security policy and road map will become outdated and obsolete as technology and threats evolve.",
+                "To help, we recommend you think of your security policy and road map as ‘living” documents that need to be updated regularly to meet new risks and threats. Keeping these documents updated doesn’t require an extensive commitment, but it does require regular check-ins.",
+                "Here is one strategy to keep policies and road maps up to date by creating a governance structure for cybersecurity within your organization.",
+                {
+                  "type": "ol",
+                  "items": [
+                    "Create a working group to investigate new threats, risks, and tools as they appear. This group may want to meet as frequently as monthly or quarterly or as infrequently as once or twice a year.",
+                    "Develop criteria for including new software and systems into your workflow. Before adding a new piece of software or online tool, the working group should consider whether that decision fits with your existing security policy or road map.",
+                    "Designate a staff member to be responsible for updating the policy based on feedback from your working group.",
+                  ]
+                },
+                "Remember that outside forces should cause your security policy to change, just as your organizational goals and approaches change, to meet new challenges."
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      "area": "internal-risks", // which score-collection category is this
+      "title": "Internal Risks (Intentional or Unintentional)",
+      "score": "Your organization has scored X points in the internal risks category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Knowledge is power. By equipping your staff members with a checklist that allows them to identify cybersecurity risks, you’re empowering them to take action and increase their awareness. This step also provides you with a useful record of your staff’s overall level of cybersecurity.",
+            "Once you’ve implemented a “do it yourself” checklist, remember that even the most dedicated staff member can make a mistake. Having a technical solution that allows your organization to access work devices can create a safety net for unpredictable moments or staff accidents, but you must balance this against your staff’s right to privacy."
+          ], // explanation of what this means
+          "eg": [
+            "Whenever a new person started at ADE Worldwide, managers sent them lots of information in an employee handbook. Included in it were guidelines on how to maintain their work devices for maximum cybersecurity.",
+            "Upon closer inspection, managers found about half of the staff followed the guidelines. Busy schedules, impending deadlines, and the pressures of the work were keeping staff from taking the necessary steps to keep their devices safe.",
+            "Rather than impose penalties on their staff, ADE managers asked all staff members to conduct a check-up on their devices and discuss their results with their supervisors. This allows staff  members to tighten their security without feeling judged or censured by leadership.",
+            "Not long after adopting the checklist, ADE was able to partner with Papua Water Rights, a two-person advocacy group in Papua New Guinea. This was a major breakthrough for ADE as it has never been able to have a presence in Oceania before. While extremely effective, Papua Water Rights has fewer resources than ADE and must balance security needs with limited time and capacity. To help, they put together a detailed and mandatory checklist focused on keeping their devices safe. This is particularly important because they can’t afford to replace devices that may be compromised."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Do a check-up on your organization’s cybersecurity.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff members are vital to the mission of your organization. But sometimes, intentionally or unintentionally, their decisions and actions can put your organization at risk. This is especially true in today’s digital world, where a wrong click or a missed security setting can leave the entire staff vulnerable.",
+                "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow; such a checklist should be part of the onboarding process of any new staff member. Here are suggestions for Windows devices, and here are suggestions for Mac devices. Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can then be stored in their employee file.",
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Add clear language to employment agreements.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff members are proactive about monitoring their cybersecurity and understand the importance of complying with your organization’s security policy. They may periodically meet with supervisors to discuss their cybersecurity and complete required security checklists.",
+                "You can start to incorporate cybersecurity into their job description. This helps emphasize that security is not just a part of their workflow but also a core responsibility for them as a member of your organization.One effective way to do this is to ensure that employment agreements have language about privacy and security that is clear, truthful, and easy to understand. We recommend including language about:",
+                {
+                  "type": "title",
+                  "heading": "Data:",
+                },
+                "what responsibilities do staff members have with your organization’s data, and vice versa? Which categories of data can particular staff members access and which can they not access?",
+                {
+                  "type": "title",
+                  "heading": "Terms of use:",
+                },
+                "what legal arrangements govern your staff members’ use of technology, particularly any software, hardware, or systems that your organization owns?",
+                {
+                  "type": "title",
+                  "heading": "Acceptable use policy:",
+                },
+                "when staff members access your organization’s internal systems, what policies and guidelines must they follow?",
+                {
+                  "type": "title",
+                  "heading": "Onboarding policy:",
+                },
+                "how are staff members expected to learn about and use your organization’s technology when they join the organization?",
+                {
+                  "type": "title",
+                  "heading": "Offboarding policy:",
+                },
+                "what steps need to take place when a staff member leaves your organization?",
+                "You may want to enlist a lawyer to help you draft this language. There may also be other sections that apply directly to your situation. Just remember: the goal here is to be clear and informative, not to overwhelm your staff with legalese. Try to keep employment agreements to one page if possible, including a checklist, and make sure they are signed by the staff members and supervisors."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Consider device management systems.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff regularly checks in with management about cybersecurity risks and has read and reviewed the cybersecurity requirements in their employment agreements.",
+                "Even the most informed and engaged staff members can still make mistakes, however.That’s why we recommend finding a method for managing devices that is consistent with your organization’s values and goals. For example, software known as “device management” platforms can allow organizations to manage work devices remotely. While the convenience and increased security of device management tools is an advantage, remember that you must always balance security with a level of privacy for your staff.",
+                "Device management software includes tools such as G Suite’s Google Devices, Apple’s Mobile Device Management, and [Prey](links.prey.web), which allow tracking and remote data erasure on devices, and solutions from companies including IBM, Citrix, and VMWare.",
+                "A technical provider can also help you use these tools to force organization-owned devices to “comply” with security policies or restrict the ability for your staff to install their own software or change settings."
               ]
             },
           ]
