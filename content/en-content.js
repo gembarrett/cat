@@ -671,7 +671,210 @@ var rs = [
           ]
         }
       ]
-    }
+    },
+    {
+      "area": "data-security", // which score-collection category is this
+      "title": "Data Security",
+      "score": "Your organization has scored [[X]] points in the data security category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Like physical mail, important pieces of data can pile up in a digital corner if we don’t stay organized. This makes it much easier for an attacker to seize sensitive data simply by accessing your accounts. Undertaking a data categorization exercise helps your staff identify what information they need to access frequently and what can be stored away securely.",
+            "Staying safe always requires a balance between convenience and security. Instituting an email archive policy, for example, can remove sensitive emails from inboxes while still making them accessible in an archive. This is also a good first step as you move your organization toward routinely categorizing and storing data based on its sensitivity.",
+            "Data security isn’t only focused on preventing attacks from outside the organization. When handled properly, secure data are also a resource to keep an organization running during crises when they may be unable to access their offices or work devices."
+          ], // explanation of what this means
+          "eg": [
+            "In its early years as a young organization, ADE Worldwide worked with a lean technology setup and a shoestring budget. Now, as an established player in the agricultural development space, ADE is slowly moving beyond its old technology. This means that the staff is now moving much of the data in inboxes and online accounts into secure cloud and physical storage instead.",
+            "This is useful when ADE’s office in Puerto Rico is rattled by a sudden, unexpected earthquake. Since this office is near the epicenter, staff members aren’t able to return to it for weeks. Luckily, the central office on the mainland has access to critical data in encrypted cloud storage and is therefore able to grant the staff temporary access so they can continue operating in the aftermath of the earthquake."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Consider what’s valuable and how to protect it.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Data are the lifeblood of our digital systems. Your organization’s data contain incredible amounts of information—some trivial (such as your lunchtime calendar reminder) and some vital (such as the names and home addresses of your staff).",
+                "Many people across organizations have access to tremendous amounts of data, often more than they realistically need to do their jobs properly. An attacker, however, can do significant damage when they gain such access. One effective way to reduce your digital risk is to also reduce access to unnecessary data within your organization.",
+                "If you’re just getting started managing your data, it’s helpful to take two steps upfront."
+                {
+                  "type": "title",
+                  "heading": "Understand the connection between retention and protection.",
+                },
+                "Remember this rule of thumb when it comes to managing your data: \"if it’s not there, they can’t steal it.\" For example, if your colleague doesn’t need 10 years’ worth of tax data on their laptop, find a safer place to store that information. Consider whether everyone in your organization needs access to a decade’s worth of emails or the entire staff  directory and regularly delete data you don’t need any more. Determining which data is valuable and requires additional protection will help you take appropriate next steps.",
+                {
+                  "type": "title",
+                  "heading": "Conduct a data categorization exercise."
+                },
+                "If you are working with a technical assistance provider, you may be able to conduct this exercise on your internal system. If not, you can also conduct a tabletop version of this exercise with your staff. Consider a blunt but effective measure: list the key data sources within your organization and determine who actually needs access to them. These could include email archives, staff directories, financial records, and project details. To access this data moving forward, staff  members need to specifically request the data they need. You can then determine whether they should be granted access permanently, for a 30-day window, or even for a supervised 24-hour block of time.",
+                "While these steps may seem challenging, changing the status quo around data access within your organization can greatly reduce the risk that a genuine mistake can lead to a data breach."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Reduce the amount of data you keep and for how long.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Email is one major area in which organizations tend to neglect good data management practices. Inboxes often overflow with unread messages while sent mail folders date back years.",
+                "As a way of improving your data management policies, consider instituting a limit on the amount of email that is stored in your staff’s mailboxes. Archiving email is a relatively easy practice that does not delete or remove the email itself. Instead, this practice removes a set of emails from the active mailbox to be stored somewhere more secure. A technical assistance provider can help you with this process.",
+                "To start, consider archiving all email more than five years old in your staff  inboxes. After your staff has adjusted to this change, try changing the limit to any emails more than three years old. Some organizations may have a legal requirement to keep emails in an accessible format, so consult with a lawyer before determining the right policy for your organization.",
+                "Though this process can be time-consuming, having a limited number of emails in your organization’s accounts greatly reduces your risk if you fall victim to a data breach.",
+                "Additionally, work with a technical provider to determine how best to categorize your organization’s remaining data by sensitivity. Some data—such as financial or tax records—should be considered highly sensitive and stored in encrypted storage. Others may not require such a high level of protection.",
+                "Wherever you store your data, make sure you institute a backup policy, ensuring that a copy of your information is stored securely on a regular basis. Again, a technical assistance provider can advise you on the best backup process for your needs, although we recommend no less than every business quarter."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "Plan to keep your organization running.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "While none of us wants to experience a crisis that disrupts our organization’s work, we need a plan to maintain our operations should a challenge occur. This is a process known as “business continuity planning” and differs for every organization. For example, an investigative journalism network may have different continuity procedures than an organization that works with foreign policy.",
+                "A key element of business continuity is the ability to access your data and continue your work even when you aren’t physically in your office or on your work device. This means that your current backup policy must be robust enough to allow you to maintain your operations using your most recent backup. Ask yourself how long you could use your most recent backup to keep your operations running. If the answer is sooner than you expected, consider increasing the frequency of data backups within your organization.",
+                "If you increase the frequency of backups, you should also increase the amount of time you spend practicing restoring your backups. We recommend testing your backups at least once a year and ideally every six months. You don’t want to rely on a backup process that you have not tested.",
+                "Backups are also essential protections against ransomware threats. Ransomware is a form of malicious software that encrypts your device until you pay a fee. If you have a previous backup of your device stored separately from the device (on an external hard drive or cloud storage, for example), you can “turn back the clock” on your data prior to the ransomware attack. This allows you to regain access to the data you stored before the attack took place.",
+                "Finally, you can work with a security provider to continue the data categorization process. Now that you’ve determined which staff members need access to which data and for how long, you can go a step further and hyper-categorize access. For example, your accounting staff may need access to sensitive financial records, but only the manager of that group will be granted access to personnel records. This categorization of data by tiers can further tighten your organization’s data security."
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      "area": "web-security", // which score-collection category is this
+      "title": "Website Security",
+      "score": "Your organization has scored X points in the website security category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Securing your website can prevent everything from embarrassing defacement to harmful intrusions. Luckily, there are basic steps you can take to “harden” your site using widely available services. While these won’t prevent highly sophisticated attacks, they will make your site a more difficult target, discouraging some low-level threats.",
+            "Many organizations believe the primary threat to their website is a cyberattack. Organizations might not be as aware thatIn reality, attackers can also use the publicly available information on a website for social engineering and other threats. Social engineering occurs when an attacker targets the weakest part of an organization—the human beings who work there. An example of a social engineering attack would be an attacker impersonating a staff member to gain access to information about computer systems from a customer service department. Another example would be an attacker waiting outside a locked door with a fake delivery package until someone lets them inside.",
+            "Removing unnecessary information about your staff and projects can help limit the amount of usable details an attacker can find on your site. This, of course, asks for a difficult balance between informing the public about your mission and not sharing overly sensitive details that could put your staff or work at risk. A good way to find the appropriate balance is to assess your organization’s work alongside your risk climate. There is no right or wrong answer here; do what is best for your organization at this moment in time."
+          ], // explanation of what this means
+          "eg": [
+            "As an agricultural advocacy organization focused on responsible water usage, ADE Worldwide management didn’t believe they needed much security for their website. When they noticed some unusual traffic spikes from nations where they don’t have offices, however, they became concerned that they might be targeted for a cyberattack. To help, they implemented a few basic recommendations, including enabling HTTPs and installing a CDN, to lessen their risk of attacks.",
+            "Another threat arises when they hired a new head of their office in Indonesia. The new hire, a well-known environmental activist,  attracted some controversy for his outspoken advocacy of rural farmers. Not long after he was hired, he received a threatening note while volunteering at a local charity. ADE staff realized that the new hire had mentioned his work at the charity in his biography on the website, making it easy for an adversary to track him there. In response, the organization removed overly specific information from several staff biographies on the site."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "For many organizations, your website is both your front door and your face to the world. As a result, people who want to harm your work may target your website for defacement, hacking, or other types of attacks. Luckily, there are some basic steps you can take to strengthen your web presence. Here are three measures you can take, with assistance from a technical assistance provider, to improve your website security."
+              ]
+            },
+            {
+              "title": "Reduce your risk of DDOS attacks.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "If someone dislikes your organization’s work or wants to harm your efforts, one strategy they may use is to temporarily force your website offline. This is often accomplished through a distributed denial of service (DDOS) attack, in which attackers overwhelm your website with visits to temporarily shut it down. A qualified technical assistance provider can help you reduce your vulnerability to these attacks by installing a content delivery network (CDN). A CDN delivers the content of your website from several different locations across the web, reducing your dependence on a single point of failure that can be crippled by a DDOS attack. You can read more about these attacks in [this article by CloudFlare](links.cflare.ddos). [CloudFlare’s free Galileo](links.cflare.gal) and Google’s free [Project Shield](links.google.shield) are both ideal CDNs for civil society organizations, as is [Equalite’s Deflect](links.equalite.deflect).",
+                "String 2",
+              ]
+            },
+            {
+              "title": "Understand and implement HTTPS.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "When you visit a website, you may see the letters “http” in front of the web address. This allows the site to communicate and provide directions to your web browser. In the early years of the Internet, HTTP was the default form of communication between websites and browsers. Now, a more secure form of communication, known as HTTPS, provides greater protection for users visiting your website. This means that if they search for sensitive information or submit information to you via a form, their data are encrypted from outside eyes.",
+                "Increasingly, popular search engines such as Google are flagging sites that do not use HTTPS as insecure, which also reduces the number of people who are comfortable visiting your site. You can read more about HTTPS in [this article by CloudFlare](links.cflare.https).",
+              ]
+            },
+            {
+              "title": "Understand how Google “dorking” can harm your organization.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Despite the silly name, Google “dorking” is a serious threat to civil society organizations. The practice involves using a popular search engine, such as Google, to search for vulnerabilities within particular websites. For example, if your website includes a particular snippet of code from an outdated application, searchers can use Google to locate and attack insecure pages. Google dorking can also be used to detect the current version of your content management system, helping attackers find vulnerabilities to exploit. This practice can also reveal potentially sensitive documents that you may be storing on your site in areas that are accessible to search engines.",
+                "You can work with a technical assistance provider to identify areas of your site that need to be updated to protect against this practice.",
+              ]
+            },
+            {
+              "title": "Keep your website updated.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Many websites run on content management systems (CMS) that allow nontechnical users to easily maintain the site. As with all software, you must update your CMS when new features and security updates become available. Any plug-ins or themes (the code that provides the look and feel of your site) should also be updated to plug any vulnerabilities. A technical assistance provider can help you keep your CMS updated on a regular basis.",
+                "If you don’t have the resources to keep your site updated, consider switching to a hosted provider such as Wix, Squarespace or wordpress.com. For a monthly fee, these services update automatically and require less maintenance than a self-hosted site."
+              ]
+            },
+            {
+              "title": "Conduct a basic audit of your website security setup.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your organization, like many nonprofits, is busy pushing forward with your mission and goals. But in order to safeguard your work, you should take time to regularly audit your website security. This doesn't have to be a complex, time-consuming process. In fact, you can get started with a basic website security audit with just a few questions. Start by asking yourself these:",
+                {
+                  "type": "ul",
+                  "items": [
+                    "Is your website's content management system (CMS) updated?",
+                    "Does your website have DDOS protections? (See recommendations above)",
+                    "Who manages your website? Can you contact them easily in an emergency?",
+                    "Who owns the DNS for your website? Can you contact them easily in an emergency?"]
+                },
+                "You may need the assistance of your IT department, a technical assistance provider, or others to help answer these questions. Try to conduct this basic audit at least once per year."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "You’ve taken a series of concrete steps to help reduce vulnerabilities on your website. Now, you can turn your attention to the information you include on it. In addition to finding technical loopholes in your website, dedicated attackers will also comb the website itself, looking for valuable information. This information can include details about your organization, location, and staff that they can use for more attacks. Here are two steps to consider to reduce your risk."
+              ]
+            },
+            {
+              "title": "Understand the connection between online and physical harassment.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Though cyberbullying and doxxing (the release of private information online) may seem like digital risks, they may also be warning signs for physical harassment. Leaked information such as home addresses can put staff members at risk of physical harm, and attacks by trolls on social media can indicate increased risk of real-life harassment. Don’t assume that online attacks only stay online and consider increasing your physical security."
+              ]
+            },
+            {
+              "title": "Comb your website and social media profiles for unnecessary information.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "People who want to harm your organization will use any available information to make their attacks more effective. This includes using seemingly innocent details on your website or social media profiles. For example, sharing full names, staff photos, and biographical details on your website can allow an attacker to identify a target more easily.",
+                "Consider using a first name and last initial policy for your website and social media sites such as LinkedIn, and being careful with sharing details about work assignments and location. Document your requirements in an official organizational policy so your staff members follow the appropriate guidelines, too."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "Now that you have HTTPS and a CDN enabled, consider working with a technical assistance provider to more closely monitor how your website is being used. Here are three key steps you can take to remain watchful."
+              ]
+            },
+            {
+              "title": "Enable rate limits.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "People who want to do harm to your organization will use any available channels to slow down or hamper your operations. This can include useful features on your website, such as online contact forms or other tools, which they can overwhelm with automated requests. To help lessen this risk, you can work with a technical assistance provider to enable rate limits, which can reduce the number of attempts an individual user can make on a particular part of your website. You can read more about how rate limits can be used in [this article from Google](links.google.rlimits)."
+              ]
+            },
+            {
+              "title": "Harden your content management system.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Using a content management system (CMS) can save you time and effort when updating your website. But these systems require users to log into the website from a live login page. Unless you take proactive steps, an attacker can access this login page, determine which CMS you are using, and attempt to force their way inside.",
+                "There are steps you can take to mitigate this risk with varying degrees of technical complexity. One of the easiest steps is to enable [two-factor authentication](links.2fa.web) on your website CMS, which requires an additional step to log in. You can also work with a technical provider to enable a single-sign-on (SSO) system that allows your staff  members to use one master login across the organization. This improves both usability and security, although it can be complicated to set up. Last, you can work with a provider to limit access to the login page to only a pre-approved list of users, which would require the use of a virtual private network (VPN).",
+                "There are other steps you can take to make your CMS more difficult to attack. Many CMS platforms will support third-party applications that can help strengthen their security. For example, [WordPress](links.wfence.web), one of the world's most popular CMS platforms, supports WordFence, a third-party intrusion detection and prevention system.",
+                "Additionally, you can change the settings on your CMS to make attacks less likely. For example, many CMS platforms allow you to identify and “sleep” any user accounts that have not published any new content in a set period of time, such as 6 to 9 months. This can reduce the risk of a defunct user account being hijacked by an attacker looking for a way into your system."
+              ]
+            },
+            {
+              "title": "Monitor your analytics and traffic.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "If you’re concerned about attacks from a particular region or country, you can use analytics, the data that your website collects, to track sources of traffic. A spike in usage from a particular country may be a red flag, as well as sudden changes in the source of traffic or the sites that are referring traffic to yours.",
+                "Additionally, you should monitor search terms that bring users to your site. Negative or threatening search terms that drive traffic to your site can be an indicator of an ongoing campaign against your organization’s work or reputation. Working with a security provider, you may be able to use these search terms to identify the source of these attacks, as well. A reputable provider can also show you how to monitor particular users of your site that are linked to regions, countries, or Internet connections that you have identified as risky."
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    
   ]
 ];
 

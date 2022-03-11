@@ -117,6 +117,12 @@ var links = {
   "google": {
     "cbook": {
       "en": "https://www.google.com/chromebook/"
+    },
+    "shield": {
+      "en": "https://projectshield.withgoogle.com/landing"
+    },
+    "rlimits": {
+      "en": "https://cloud.google.com/solutions/rate-limiting-strategies-techniques"
     }
   },
   "vmware": {
@@ -127,6 +133,32 @@ var links = {
   "vbox": {
     "web": {
       "en": "https://www.virtualbox.org/"
+    }
+  },
+  "cflare": {
+    "ddos": {
+      "en": "https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/"
+    },
+    "gal": {
+      "en": "https://www.cloudflare.com/galileo/"
+    },
+    "https": {
+      "en": "https://www.cloudflare.com/learning/ssl/what-is-https/"
+    }
+  },
+  "equalite": {
+    "deflect": {
+      "en": "https://equalit.ie/portfolio/deflect/"
+    }
+  },
+  "2fa": {
+    "web": {
+      "en": "http://twofactorauth.org"
+    }
+  },
+  "wfence": {
+    "web": {
+      "en": "https://www.wordfence.com/"
     }
   }
 }
