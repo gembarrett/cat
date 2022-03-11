@@ -963,7 +963,7 @@ var rs = [
     },
     {
       "area": "messaging-collab", // which score-collection category is this
-      "title": "Title Of This Evaluation Area",
+      "title": "Messaging and Collaboration",
       "score": "Your organization has scored [[X]] points in the messaging and collaboration category.", // explanation of what this means
       "general": {
           "why": [
