@@ -8,6 +8,9 @@ var links = {
     },
     "ssd": {
       "en": "https://ssd.eff.org/en/taxonomy/term/362/"
+    },
+    "comms": {
+      "en": "https://ssd.eff.org/en/module/communicating-others"
     }
   },
   "an": {
@@ -159,6 +162,51 @@ var links = {
   "wfence": {
     "web": {
       "en": "https://www.wordfence.com/"
+    }
+  },
+  "gproj": {
+    "haven": {
+      "en": "https://guardianproject.info/apps/org.havenapp.main/"
+    }
+  },
+  "synology": {
+    "station": {
+      "en": "https://www.synology.com/en-us/surveillance"
+    }
+  },
+  "haicam": {
+    "web": {
+      "en": "https://haicam.tech/"
+    }
+  },
+  "aclu": {
+    "stingrays": {
+      "en": "https://www.aclu.org/issues/privacy-technology/surveillance-technologies/stingray-tracking-devices-whos-got-them"
+    }
+  },
+  "guardian": {
+    "ss7": {
+      "en": "https://www.theguardian.com/technology/2016/apr/19/ss7-hack-explained-mobile-phone-vulnerability-snooping-texts-calls"
+    }
+  },
+  "signal": {
+    "web": {
+      "en": "http://signal.org"
+    }
+  },
+  "wire": {
+    "web": {
+      "en": "http://wire.com"
+    }
+  },
+  "mmost": {
+    "web": {
+      "en": "http://mattermost.com"
+    }
+  },
+  "element": {
+    "web": {
+      "en": "https://element.io/communities"
     }
   }
 }

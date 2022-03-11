@@ -874,7 +874,195 @@ var rs = [
         }
       ]
     },
-    
+    {
+      "area": "office-security", // which score-collection category is this
+      "title": "Office Security",
+      "score": "Your organization has scored X points in the office security category.", // explanation of what this means
+      "general": {
+          "why": [
+            "It’s easy to overlook office security risks because, as humans, we naturally fall into patterns of behavior. If we routinely leave our laptop on our desk at the end of the day, for example, we may see this action as normal and not risky. Taking another look at our daily patterns of behavior can help us see which of these actions are actually leaving us at risk. And installing a basic security system can provide an added level of protection for moments we didn’t anticipate in our policies.",
+            "Without formal policies, busy professionals are likely to forget an important step, particularly at the end of the day. Instituting clear guidelines and posting them in public spaces (or asking staff to display them at home) can help tired staff members follow best practices.",
+            "Though digital threats are critical, it’s important not to overlook other sources of sensitive information. These can often come from unpredictable places, such as the trash your office discards or the printed documents your staff bring home. Implementing a shredding policy within your office can reduce the chance that printed materials will inadvertently leave your possession."
+          ], // explanation of what this means
+          "eg": [
+            "ADE Worldwide’s headquarters is in a busy office building in Washington, DC. Though the building requires individuals to sign a logbook for entry, there is little oversight once someone enters the offices themselves. After a report that an office is burglarized on a lower floor, ADE management institutes a clean desk policy for staff to secure valuable items at the end of the day. Anyone entering the office during the work day will also need to show ID and verify their identity with the office administrator who sits by the entrance.",
+            "Meanwhile, the ADE Worldwide offices in Kolkata, India, move to a new location near a high-traffic intersection. One weekday evening, a man on a motorbike threatens an ADE employee for their work on water rights, then speeds away. In response, ADE managers in Kolkata conduct a last person out exercise to make sure their staff is better protected when leaving the office at the end of the day. Ultimately, they put together a series of steps, including requiring staff members to exit the office in pairs.",
+            "At ADE Worldwide’s European headquarters in Berlin, the company that manages the offices promised that all documents placed in a secure lockbox would be shredded. Later, the company reports that it accidentally threw several lockboxes’ worth of material into the building’s recycling bins. To ensure more control over sensitive documents, ADE management institutes a shredding policy for the Berlin office, with the hope that they can eventually institute this policy throughout the organization."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "We don’t always make the connection between our physical security and our cybersecurity. But with our digital devices becoming more portable and our data becoming more valuable, the risk of device theft, seizure, damage, and loss is greater than ever. Here are two steps you can take to help reduce your organization’s immediate physical security risks."
+              ]
+            },
+            {
+              "title": "Establish an entrance policy.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Whether your organization has offices in secure buildings, co-working spaces, or staff members’ homes, you can implement a “last line of defense” entrance policy to control access to your office space. Implementing a mandatory identification policy can add an extra hurdle to your schedule but allows you to keep a clear record of who enters your space. While requiring proper identification won’t stop a dedicated attacker, it may deter low-level opportunistic threats or people who are testing your defenses. If your staff works outside of the office and holds in-person meetings, consider extending this policy so individuals must show an ID before a face-to-face meeting (which ideally should not take place in an employee’s home office, but rather a public space).",
+                "Make sure that all policies match the culture of your organization. Your staff and visitors are less likely to follow a policy that doesn’t match your values. For example, if you are a community-based organization with a communal office, you may want to consider an entrance policy that reflects your mission. In that case, you could assign a color code to help categorize visitors. For organizations in areas where official ID is rare, consider requiring an escort after the guest has been verified face-to-face by someone in your organization.",
+                "If you choose a more relaxed entry policy, you may want to tighten your cybersecurity policies, such as requiring office devices to screen lock after a short period of time. There may also be an area of your office that you choose to leave “off-limits” to the public, such as a storage room or internal meeting rooms."
+              ]
+            },
+            {
+              "title": "Establish a “clean desk” policy.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "At the end of a busy work day, it is tempting to leave devices, paperwork, and files on our desks for the next day. While convenient, this leaves an easy target for attackers who gain entry during off-hours. Institute a clean desk policy that requires staff members to secure their devices and paperwork in a locked space before leaving for the day. This same policy should apply across offices, even if staff members work from home. It may be useful to print a reminder checklist for staff members to leave on their desk as a visual cue."
+              ]
+            }
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "You’ve taken some important incremental steps toward increasing your organization’s physical safety. As with all aspects of security, though, physical security requires a flexible approach that adjusts as threats change. One of the most effective ways to determine whether your current policy meets your current threats is to conduct an inter-office exercise."
+              ]
+            },
+            {
+              "title": "Conduct a “last person out” exercise.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "To measure whether your organization’s clean desk policy is as effective as it could be, conduct a “last person out” exercise. If you have multiple offices, you may need to ask staff members across your different regions to help. If they work from home, they can conduct this test themselves. When the last person in the office leaves for the day, designate a staff member to enter the office shortly afterward and note what’s been left in the open and what’s been properly secured.",
+                "This exercise is not designed to “name and shame” anyone who might be neglecting the rules. Rather, it’s intended to note any missed opportunities that need to be incorporated into your clean desk policy. For example, you may need to develop special rules for the last person who leaves the office and post them prominently in a public place. For staff working remotely, they can use printouts to remind them of any necessary steps."
+              ]
+            },
+            {
+              "title": "Create a minimum viable security system.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Physical security systems can be highly complex, involving video and audio monitoring, entry cards, and visitor registration. If you don’t currently have a security system, however, you don’t need to start with the most advanced option. Instead, you can work with a security provider to implement a low-cost solution using basic equipment such as a dedicated smartphone or streaming camera. As your threat level increases or you increase your budget, you can work with a provider to install or implement a more elaborate solution.",
+                "Remember that video monitoring systems may not be appropriate for every organization. If you choose to use a video system, make sure to use systems that balance the need for security with the need for privacy, such as [Haven](links.gproj.haven) by the Guardian Project. Video feeds should be encrypted to protect your organization further. Both [Surveillance Station](links.synology.station) by Synology and [Haicam](links.haicam.web) can support encrypted video.",
+                "Organizations that use video-based security systems should remember that video surveillance has an effect on your staff and visitors. Workers should always know where cameras are placed and you should designate a \"no camera\" zone where staff can congregate without being recorded."
+              ]
+            }
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "Now that you have a tested office security policy and a basic security system, you can go a step further and make sure you have more control over the information that leaves your office. One of the most common vulnerabilities for many offices is the use of printed documents. If you’ve already secured who can enter your office and what they can access, you also need to control the printed material that leaves your office in trash or recycling containers."
+              ]
+            },
+            {
+              "title": "Make sure your staff shreds all sensitive documents.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Implementing an inter-office document shredding policy reduces the amount of printed material that an outsider can access from your operations. Using a mandatory shredding policy will help your staff incorporate the practice into their workflow. (Don’t forget to recycle non-sensitive paper.) Buy individual “cross-cut” shredding machines for each desk and station them closer to staff than trash cans. If staff members work remotely or from home, make sure they have a shredder and are complying with the policy as well."
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      "area": "messaging-collab", // which score-collection category is this
+      "title": "Title Of This Evaluation Area",
+      "score": "Your organization has scored [[X]] points in the messaging and collaboration category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Encrypted communication can help keep your organization’s messages, data, and activities more secure. Implementing encrypted messaging and collaboration tools also instills the values of compartmentalization, which helps ensure that your organization’s sensitive data are not in a single system.",
+            "Encrypted communication is most effective when users understand how best to use advanced settings such as disappearing messages and data retention. You may want to consider formally documenting your organization’s recommendations in your security policy so users can begin using these tools quickly and easily."
+          ], // explanation of what this means
+          "eg": [
+            "ADE Worldwide staff throughout Chile use unencrypted communications to reach each other in a large network of rural offices. These communications include sensitive information such as project details and login credentials for office accounts. When an influential landowner who has opposed ADE’s work takes over a national corporation, ADE managers realize they need to take added steps to keep their communication more secure. As a result, they implement an encrypted messaging service throughout the offices in the country."
+          ] // example scenario
+      },
+      "results": [ // contains result text for this category
+        {
+          "assess": "below", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "Your organization is only effective if your staff  members can communicate and work together easily. But in a busy, fast-paced, and sometimes remote work environment, it’s easy to trade security for convenience. Luckily, there are ways to incorporate safer communication and collaboration tools without slowing down your workflow."
+              ]
+            },
+            {
+              "title": "Understand the risks of unencrypted communication.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "If your staff members are unfamiliar with cybersecurity, they may have communicated only using unencrypted technology, such as their standard smartphone or email. As a result, they may not understand the amount of information that can be hacked, uncovered through surveillance, or seized through a legal or government request when using unencrypted communication. This is especially true during moments of crisis, when many governments and other groups may increase their surveillance of regular communication channels.",
+                "Educating your staff members on how encryption works is a good first start to introducing this concept. The Electronic Frontier Foundation’s \"[Communicating with Others](links.eff.comms)\" in its Surveillance Self-Defense curriculum is useful reading. If you’re using a dedicated mobile phone number for work, consider switching to a  voice-over Internet protocol (VOIP) number that connects via the Internet. You can find such numbers through services such as Google Voice or Skype, allowing you to avoid having to use a country-specific SIM card in your smartphone. Using a VOIP number can also protect you from threats including cell site simulators, also known as [Stingrays](links.aclu.stingrays), and vulnerabilities in cellular technology, such as [SS7](links.guardian.ss7) attacks.",
+              ]
+            },
+            {
+              "title": "Begin introducing encrypted alternatives.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "To help your staff become accustomed to encrypted communications, you shouldn’t expect them to use this new technology overnight. Instead, introduce encrypted platforms gradually, perhaps over 8 to 10 months, before making them mandatory. You may want to publicly praise staff members who are early adopters. Those who are resistant can become members of a working group dedicated to adopting the tools, making them more likely to use them.",
+                "At the time of writing, a few encrypted communication tools we recommend are the messenger applications [Signal](links.signal.web) and [Wire](links.wire.web). You may also want to consider a self-hosted workplace messenger like [Mattermost](links.mmost.web) or the [collaboration tool Element](links.element.web) as an alternative to popular software such as Slack. A technical assistance provider can help you enable any of these tools, or find alternatives.",
+                "If you work in a highly regulated space, such as legal advocacy, you may be required to keep records of your communications. In this case, remember to take screenshots of any encrypted messaging or collaboration tools, especially if the messages are set to disappear."
+              ]
+            },
+            {
+              "title": "Understand when to use which platform.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "At first, your staff members don’t need to use the encrypted platforms for every communication. Instead, reserve the use of encrypted tools only for your most sensitive work. This will also help staff members associate encrypted tools with a higher level of security and privacy that isn’t available with standard tools. "
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "ok", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": ""
+              "content": [
+                "You’ve already adopted an encrypted messenger such as Signal or a collaboration tool such as Element. Your staff members are incorporating these tools into their workflow and understand the distinction between encrypted and unencrypted communication. Here are three additional steps to further enhance your communication security."
+              ]
+            },
+            {
+              "title": "Try out more advanced settings.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Many encrypted tools, including Signal and Wire, have more advanced settings that allow you to choose how long your messages should exist before they auto-delete, as well as removing and archiving data you no longer need or use. Gradually begin to incorporate these more advanced settings into your everyday operations. For example, members of your staff working on a particularly sensitive topic may choose to set their encrypted messages to auto-delete every 24 hours."
+              ]
+            },
+            {
+              "title": "Create a policy for how long to keep messages.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Understand that data lingers, even when encrypted. If you don’t need to store months of messages or years of projects on your tools, both encrypted and unencrypted, consider an archiving policy. Many tools allow you to easily export messages to an archive on an alternate storage device. If you’re not sure how to do this, your technical assistance provider can help."
+              ]
+            },
+            {
+              "title": "Provide clear guidelines on communication.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Encrypted tools are only powerful when used appropriately. Not every work-related topic needs to be discussed on an encrypted tool, but some highly sensitive topics shouldn’t be discussed on unencrypted platforms. To help your staff know which platform to choose for which topic, create clear communications guidelines for your staff . They should understand when to switch from an unecrypted tool such as Mattermost or Slack to an encrypted tool such as Signal. Staff should also understand how to use each of these tools and be able to identify which are encrypted and which are not.",
+                "Additionally, guidelines should incorporate the idea of fragmentation, or spreading your communications across several different platforms. If your organization does all its work on Slack, for example, you risk significant harm if the platform is hacked, breached, or fails. Instead, try to spread your work (and risk) across several different collaboration tools."
+              ]
+            },
+          ]
+        },
+        {
+          "assess": "exceeds", // assessed level, based on score
+          "recs": [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "Your staff has widely adopted encrypted communication tools and understand when to use them appropriately. Now, you can take a step further to help improve the way they communicate and collaborate using encrypted tools."
+              ]
+            },
+            {
+              "title": "Categorize your use by sensitivity.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "You’ve already worked with your staff to understand when to use encrypted tools instead of unencrypted ones. For added security, begin to categorize their use of encrypted tools by the sensitivity of the information or project. For example, you may designate urgent and highly sensitive communications to stay on Signal, but sensitive project work to be conducted only on an encrypted collaborative platform such as Element. Preventing information from gathering in one place makes it more difficult for an adversary to access all your sensitive information at once."
+              ]
+            },
+            {
+              "title": "Try several collaborative tools.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff is already familiar with the idea of fragmentation, or spreading out their work across several different tools. When working on a highly sensitive project, they can incorporate the idea of fragmentation with encrypted tools as well. In this case, staff members conduct all work on a sensitive project within encrypted tools, but, rather than relying on a single encrypted platform, they spread their work across several collaboration tools. For example, project planning could take place in Element while project brainstorms could take place in Wire. This decreases the amount of information that an attacker could get if they gained access to your messages."
+              ]
+            },
+          ]
+        }
+      ]
+    }
+
   ]
 ];
 
