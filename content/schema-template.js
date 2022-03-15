@@ -1,3 +1,28 @@
+{
+  "level": "intro", // which of the three levels do these questions belong to
+  "questions": [ // contains this level's questions
+  {
+    "q": "Question placeholder goes here", // what's the question text
+    "area": "a", // which category should the score be added to
+    "answers": [ // contains this question's answers
+      {
+        "a": "Answer placeholder goes here", // what's the answer text
+        "pts": 10 // how many points should be added to the category
+      },
+      {
+        "a": "Next answer placeholder goes here",
+        "pts": 15
+      },
+      {
+        "a": "Last answer placeholder goes here",
+        "pts": 0,
+        "excludes": [] // does this answer render any of the subsequent questions irrelevant?
+      }
+    ]
+  },
+}
+
+
 "title": "Evaluation & feedback",
 "reusables": { // content that appears in multiple evaluation areas
   "below": {

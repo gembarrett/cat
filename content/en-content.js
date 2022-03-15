@@ -3,41 +3,546 @@ var qs = [ // contains all question content
     "level": "intro", // which of the three levels do these questions belong to
     "questions": [ // contains this level's questions
       {
-        "q": "Question placeholder goes here", // what's the question text
-        "area": "a", // which category should the score be added to
+        "q": "How would you best describe your approach to cybersecurity?", // what's the question text
+        "area": "risk-threat", // which category should the score be added to
         "answers": [ // contains this question's answers
           {
-            "a": "Answer placeholder goes here", // what's the answer text
-            "pts": 10 // how many points should be added to the category
+            "a": "We have a staff person who manages cybersecurity as part of their job.", // what's the answer text
+            "pts": 0 // how many points should be added to the category
           },
           {
-            "a": "Next answer placeholder goes here",
+            "a": "We have a third-party consultant who manages cybersecurity.",
+            "pts": 0
+          },
+          {
+            "a": "We haven’t thought about cybersecurity much within our organization.",
             "pts": 15
           },
           {
-            "a": "Last answer placeholder goes here",
+            "a": "We have a staff person who handles cybersecurity when needed.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "What is the mood when cybersecurity comes up in conversation?",
+        "area": "risk-threat",
+        "answers": [
+          {
+            "a": "We are excited.",
+            "pts": 0
+          },
+          {
+            "a": "We are stressed and worried/anxious.",
+            "pts": 0
+          },
+          {
+            "a": "We are confused.",
+            "pts": 0
+          },
+          {
+            "a": "We are bored.",
+            "pts": 0
+          },
+          {
+            "a": "We never talk about cybersecurity.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "On average, how interested are your staff members in keeping your organization secure?",
+        "area": "risk-threat",
+        "answers": [
+          {
+            "a": "We are very interested.",
+            "pts": 0
+          },
+          {
+            "a": "We are somewhat interested.",
+            "pts": 5
+          },
+          {
+            "a": "We are not interested.",
+            "pts": 5
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Does your organization and/or the communities you work with face potential opposition from corporate, state, or regional actors?",
+        "area": "risk-threat",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 10
+          },
+          {
+            "a": "No",
+            "pts": 0
+          },
+          {
+            "a": "My organization doesn’t know.",
+            "pts": 5
+          }
+        ]
+      },
+      {
+        "q": "Does your organization support a marginalized/minority group?",
+        "area": "risk-threat",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 10
+          },
+          {
+            "a": "No",
+            "pts": 0
+          },
+          {
+            "a": "My organization doesn’t know.",
+            "pts": 5
+          }
+        ]
+      },
+      {
+        "q": "Does your organization support refugee, exile, or displaced communities?",
+        "area": "risk-threat",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 10
+          },
+          {
+            "a": "No",
+            "pts": 0
+          },
+          {
+            "a": "My organization doesn’t know.",
+            "pts": 5
+          }
+        ]
+      },
+      {
+        "q": "Which areas of your organization's work do you believe create additional risk? Choose your top three.",
+        "area": "risk-threat",
+        "answers": [
+          {
+            "a": "Communication/journalism",
+            "pts": 0
+          },
+          {
+            "a": "Advocacy",
+            "pts": 0
+          },
+          {
+            "a": "Research",
+            "pts": 0
+          },
+          {
+            "a": "Grantmaking and partnerships",
+            "pts": 0
+          },
+          {
+            "a": "Partnerships",
+            "pts": 0
+          },
+          {
+            "a": "Working directly with at-risk/marginalized people",
+            "pts": 0
+          },
+          {
+            "a": "Other",
+            "pts": 0
+          },
+          {
+            "a": "We have no additional risks.",
+            "pts": 5
+          },
+          {
+            "a": "We have never thought about it.",
+            "pts": 10
+          },
+        ]
+      },
+      {
+        "q": "Does your organization have specific cybersecurity concerns? Choose your top three.",
+        "area": "risk-threat",
+        "answers": [
+          {
+            "a": "Government activity",
+            "pts": 0
+          },
+          {
+            "a": "Criminal activity",
+            "pts": 0
+          },
+          {
+            "a": "Attacks from groups or individuals who dislike our work",
+            "pts": 0
+          },
+          {
+            "a": "Lack of staff awareness about cybersecurity",
+            "pts": 0
+          },
+          {
+            "a": "Our concerns aren’t listed here.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t have any concerns currently.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "How many times in the past year have you identified something that has concerned you about your organization’s security?",
+        "area": "internal-risks",
+        "answers": [
+          {
+            "a": "Often",
+            "pts": 0
+          },
+          {
+            "a": "Sometimes",
+            "pts": 5
+          },
+          {
+            "a": "Rarely",
+            "pts": 10
+          },
+          {
+            "a": "Never",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do you feel that everyone on your staff has identified and understands the cybersecurity risks to your organization?",
+        "area": "internal-risks",
+        "answers": [
+          {
+            "a": "Everyone has identified and understands these risks.",
+            "pts": 0
+          },
+          {
+            "a": "Some have identified and understand these risks better than others.",
+            "pts": 5
+          },
+          {
+            "a": "No one has identified and understands these risks.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do you have a policy for removing access to data after a staff member leaves your organization?",
+        "area": "internal-risks",
+        "answers": [
+          {
+            "a": "Yes, we have a policy.",
+            "pts": 0
+          },
+          {
+            "a": "No, we do not have a policy.",
+            "pts": 15
+          },
+          {
+            "a": "Nobody has left, but we do have such a policy.",
+            "pts": 5
+          },
+          {
+            "a": "We are not concerned about this risk.",
+            "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "Does your staff understand how your organization’s reputation could cause them to be targeted for cyberattacks?",
+        "area": "internal-risks",
+        "answers": [
+          {
+            "a": "Everyone understands these risks.",
+            "pts": 0
+          },
+          {
+            "a": "Some understand these risks.",
+            "pts": 10
+          },
+          {
+            "a": "Few members understand these risks.",
+            "pts": 15
+          },
+          {
+            "a": "Our organization does not face these risks.",
+            "pts": 5
+          }
+        ]
+      },
+      {
+        "q": "Is anyone on your staff responsible for information technology (IT) in your organization?",
+        "area": "internal-risks",
+        "answers": [
+          {
+            "a": "We have at least one staff member responsible for IT.",
+            "pts": 0
+          },
+          {
+            "a": "We use an outside IT provider/consultant.",
+            "pts": 5
+          },
+          {
+            "a": "We use volunteers.",
+            "pts": 10
+          },
+          {
+            "a": "We do not have any IT support.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
             "pts": 0
           }
         ]
       },
       {
-        "q": "Question placeholder goes here",
-        "area": "b",
+        "q": "Does your organization have any form of a security policy?",
+        "area": "docs-policy",
         "answers": [
           {
-            "a": "Answer placeholder goes here",
+            "a": "We have a formal written policy.",
+            "pts": 0
+          },
+          {
+            "a": "We discuss policies but do not write them down.",
+            "pts": 5,
+            "excludes": [15, 16, 17] // don't include the next three questions in queue
+          },
+          {
+            "a": "We do not have a policy.",
+            "pts": 10,
+            "excludes": [15, 16, 17] // don't include the next three questions in queue
+          },
+          {
+            "a": "My organization is not familiar with security policies.",
+            "pts": 15,
+            "excludes": [15, 16, 17] // don't include the next three questions in queue
+          }
+        ]
+      },
+      { // ONLY SHOW IF USER HAS INDICATED THEY HAVE A POLICY
+        "q": "Does your security policy cover any aspect of cybersecurity, such as safe use of mobile devices or computers?",
+        "area": "docs-policy",
+        "answers": [
+          {
+            "a": "Our security policy includes a section on cybersecurity.",
+            "pts": 0
+          },
+          {
+            "a": "Our security policy has one or two references to cybersecurity.",
+            "pts": 5
+          },
+          {
+            "a": "Our security policy only covers physical security.",
             "pts": 10
           },
           {
-            "a": "Next answer placeholder goes here",
+            "a": "We do not have a policy.",
+            "pts": 10
+          },
+          {
+            "a": "My organization is not familiar with security policies.",
+            "pts": 15
+          }
+        ]
+      },
+      { // ONLY SHOW IF USER HAS INDICATED THEY HAVE A POLICY
+        "q": "When was the last time you updated or reviewed your security policies?",
+        "area": "docs-policy",
+        "answers": [
+          {
+            "a": "We update our policy once a year or more.",
+            "pts": 0
+          },
+          {
+            "a": "We update our policy only after a threat occurs.",
+            "pts": 5
+          },
+          {
+            "a": "We have never don’t updated our policy.",
+            "pts": 10
+          },
+          {
+            "a": "We don’t have a policy.",
             "pts": 15
           },
           {
-            "a": "Last answer placeholder goes here",
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      },
+      { // ONLY SHOW IF USER HAS INDICATED THEY HAVE A POLICY
+        "q": "How often do you believe your employees are following your security policies?",
+        "area": "docs-policy",
+        "answers": [
+          {
+            "a": "Often",
+            "pts": 0
+          },
+          {
+            "a": "Sometimes",
+            "pts": 5
+          },
+          {
+            "a": "Rarely",
+            "pts": 10
+          },
+          {
+            "a": "Never",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Has anyone at your organization experienced “doxxing,” or the release of private information online in a targeted manner?",
+        "area": "assoc-risks",
+        "answers": [
+          {
+            "a": "Yes, one or more staff members have had their private information released online.",
+            "pts": 50
+          },
+          {
+            "a": "No, no one has had their private information released online.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Has anyone at your organization experienced online harassment, or any abusive language or behavior directed at a member of your team?",
+        "area": "assoc-risks",
+        "answers": [
+          {
+            "a": "Yes, one or more staff members have been harassed online.",
+            "pts": 60
+          },
+          {
+            "a": "No, no one has been harassed online.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Has anyone at your organization been physically harassed?",
+        "area": "assoc-risks",
+        "answers": [
+          {
+            "a": "Yes, one or more staff members have been physically harassed.",
+            "pts": 70
+          },
+          {
+            "a": "No, no one has been physically harassed.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Has anyone at your organization, or the organization itself, been the target of online impersonation or a fake account that spreads misleading or discrediting information?",
+        "area": "assoc-risks",
+        "answers": [
+          {
+            "a": "Yes, one or more staff members have been impersonated online.",
+            "pts": 20
+          },
+          {
+            "a": "No, no one has been impersonated online.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Has anyone ever hacked or defaced your website in recent memory (the past five years)?",
+        "area": "assoc-risks",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 20
+          },
+          {
+            "a": "No",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t have a website.",
             "pts": 0
           }
         ]
       },
+      {
+        "q": "Has your organization had a major security incident in recent memory (the past five years)?",
+        "area": "assoc-risks",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 20
+          },
+          {
+            "a": "No",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t have a website.",
+            "pts": 0
+          }
+        ]
+      }
     ]
   },
   {
@@ -2034,7 +2539,6 @@ var oc = [ // contains all other content
           "Technical assistance providers who would like to measure their clients' cybersecurity awareness",
         ],
       "Don't see your type of organization listed above? This doesn't mean that CAT won't work for you. However, you may need to adjust some of your recommendations for your particular context."
-      }
     ]
   },
   {
