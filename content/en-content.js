@@ -549,87 +549,1188 @@ var qs = [ // contains all question content
     "level": "basic",
     "questions": [
       {
-        "q":"Question placeholder goes here",
-        "area":"c",
+        "q":"How often do you consider cybersecurity when making decisions about internal workflow and processes?",
+        "area":"risk-threat",
         "answers": [
           {
-            "a": "Answer placeholder goes here",
-            "pts": 10
+            "a": "We put cybersecurity first when making such decisions.",
+            "pts": 0
           },
           {
-            "a": "Next answer placeholder goes here",
+            "a": "We sometimes consider cybersecurity when making such decisions.",
+            "pts": 0
+          },
+          {
+            "a": "We rarely consider cybersecurity when making such decisions.",
+            "pts": 0
+          },
+          {
+            "a": "We never consider cybersecurity when making such decisions.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
             "pts": 15
           },
+        ]
+      },
+      {
+        "q": "How does your organization pay for cybersecurity?",
+        "area":"risk-threat",
+        "answers": [
           {
-            "a": "Last answer placeholder goes here",
+            "a": "Cybersecurity is part of our operations budget.",
             "pts": 0
+          },
+          {
+            "a": "Cybersecurity has its own line item in our annual budget.",
+            "pts": 0
+          },
+          {
+            "a": "We raise funds for cybersecurity.",
+            "pts": 0
+          },
+          {
+            "a": "We do not pay for cybersecurity but receive assistance at no cost to us",
+            "pts": 0
+          },
+          {
+            "a": "We do not have a consistent way to pay for cybersecurity.",
+            "pts": 15
           }
         ]
       },
       {
-        "q": "Question placeholder goes here",
-        "area": "c",
+        "q": "Does your organization categorize the data you handle by how sensitive it is (low, medium, and high)",
+        "area": "data-security",
         "answers": [
           {
-            "a": "Answer placeholder goes here",
+            "a": "We categorize all our data by sensitivity.",
+            "pts": 0
+          },
+          {
+            "a": "We categorize some of our data  by sensitivity.",
+            "pts": 5
+          },
+          {
+            "a": "We don't categorize our data by sensitivity.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
             "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "Does your organization control who has access to the data you store based on how sensitive it is?",
+        "area": "data-security",
+        "answers": [
+          {
+            "a": "Yes, only authorized staff members can access sensitive data.",
+            "pts": 0
+          },
+          {
+            "a": "Yes, only particular staff members can access sensitive data.",
+            "pts": 5
+          },
+          {
+            "a": "No, anyone in our organization can access sensitive data.",
+            "pts": 10
+          },
+          {
+            "a": "No, we do not organize our data by its sensitivity.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "What is your process for keeping a regularly updated backup of your organization’s most important data?",
+        "area": "data-security",
+        "answers": [
+          {
+            "a": "We use automated backups ourselves.",
+            "pts": 0
+          },
+          {
+            "a": "We manually back up our data ourselves.",
+            "pts": 5
+          },
+          {
+            "a": "We use an outside contractor to back up our data.",
+            "pts": 5
+          },
+          {
+            "a": "We do not back up our data regularly.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "How does your organization message with each other privately and securely?",
+        "area": "messaging-collab",
+        "answers": [
+          {
+            "a": "We use secure messaging tools (Signal, Wire, Semaphor, etc.).",
+            "pts": 0
+          },
+          {
+            "a": "We use our personal devices and personal email accounts.",
+            "pts": 16
+          },
+          {
+            "a": "We use work email on our personal devices.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t use any special tools to message each other securely.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "How does your organization collaborate with each other privately and securely?",
+        "area": "messaging-collab",
+        "answers": [
+          {
+            "a": "We use secure messaging and collaboration tools (Wire, Mattermost, Semaphor, etc.).",
+            "pts": 0
+          },
+          {
+            "a": "We use our personal devices and personal email accounts.",
+            "pts": 16
+          },
+          {
+            "a": "We use work email on our personal devices.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t use any special tools to collaborate securely.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Does your organization have a process for working on sensitive topics?",
+        "area": "messaging-collab",
+        "answers": [
+          {
+            "a": "We have a dedicated process when working on sensitive topics.",
+            "pts": 0
+          },
+          {
+            "a": "Some members of our staff  have a different workflow, but we have no official process.",
+            "pts": 5
+          },
+          {
+            "a": "We don’t have a process for working on sensitive topics.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t work on sensitive topics.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do members of your organization use a password manager?",
+        "area": "pword-auth",
+        "answers": [
+          {
+            "a": "Everyone working for our organization does.",
+            "pts": 0
+          },
+          {
+            "a": "Some people who work for our organization do.",
+            "pts": 5
+          },
+          {
+            "a": "No one at our organization does.",
+            "pts": 15
           },
           {
             "a": "Next answer placeholder goes here",
             "pts": 15
           },
           {
-            "a": "Last answer placeholder goes here",
-            "pts": 0
+            "a": "We don’t know.",
+            "pts": 15
           }
         ]
       },
+      {
+        "q": "Do members of your organization store their existing passwords in the password manager, use it to generate new passwords, or both?",
+        "area": "pword-auth",
+        "answers": [
+          {
+            "a": "Store existing passwords",
+            "pts": 10
+          },
+          {
+            "a": "Generate new passwords",
+            "pts": 0
+          },
+          {
+            "a": "Both",
+            "pts": 5
+          },
+          {
+            "a": "We don’t use a password manager.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "To log in to your email and other services, do members of your organization use two-factor/multi-factor authentication, (such as Okta, DuoDUO Security, Google Authenticator, Authy, or RSA ID)?",
+        "area": "pword-auth",
+        "answers": [
+          {
+            "a": "Yes,  everyone working for our organization does.",
+            "pts": 0
+          },
+          {
+            "a": "Some people who work for our organization do.",
+            "pts": 5
+          },
+          {
+            "a": "No one at our organization does.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do members of your staff use their personal email for work-related tasks?",
+        "area": "device-security",
+        "answers": [
+          {
+            "a": "Yes, all staff members do.",
+            "pts": 15
+          },
+          {
+            "a": "Yes, some staff members do.",
+            "pts": 10
+          },
+          {
+            "a": "No, our staff members do not.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "How does your staff get work-related software?",
+        "area": "sware-security",
+        "answers": [
+          {
+            "a": "Our staff purchases work-related software online from a marketplace (app store, retailer, etc.).",
+            "pts": 5
+          },
+          {
+            "a": "We share work-related software with another organization.",
+            "pts": 10
+          },
+          {
+            "a": "We use other means to get our software.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Is it possible for your staff to download pirated personal or work-related software?",
+        "area": "sware-security",
+        "answers": [
+          {
+            "a": "Yes, our staff can download pirated  personal/work-related software.",
+            "pts": 35
+          },
+          {
+            "a": "No, our staff can only download software from an approved source.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Is your staff permitted to download and install personal software onto work devices?",
+        "area": "sware-security",
+        "answers": [
+          {
+            "a": "Our staff is permitted to download personal software.",
+            "pts": 20
+          },
+          {
+            "a": "Our staff is not permitted to download personal software.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "What data retention policy does your organization have (a policy that controls what information you store, how long, and where)?",
+        "area": "data-security",
+        "answers": [
+          {
+            "a": "We have a policy for all data.",
+            "pts": 0
+          },
+          {
+            "a": "We have a policy for some classes of data (e.g. email and work-related files).",
+            "pts": 5
+          },
+          {
+            "a": "We do not have a data retention policy.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "Does your organization encrypt backups and/or external media (hard drives, USB drives, etc.)?",
+        "area": "data-encrypt",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 0
+          },
+          {
+            "a": "No",
+            "pts": 8
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "Do you have a process for acquiring, maintaining, and disposing of hardware and devices that includes security procedures (for example, erasing devices between uses)?",
+        "area": "data-encrypt",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 0
+          },
+          {
+            "a": "No",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 5
+          }
+        ]
+      },
+      {
+        "q": "How does your organization make sure that critical systems (computers, servers, etc.) receive the latest security updates in a timely manner?",
+        "area": "updates",
+        "answers": [
+          {
+            "a": "Our internal IT staff installs updates on a regular/standard schedule.",
+            "pts": 0
+          },
+          {
+            "a": "An outside contractor/IT provider installs updates on a regular/standard schedule.",
+            "pts": 5
+          },
+          {
+            "a": "We do not have a policy for system updates.",
+            "pts": 15
+          },
+          {
+            "a": "Installing updates is the responsibility of each individual user.",
+            "pts": 10
+          },
+          {
+            "a": "We do not install system updates regularly.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 20
+          }
+        ]
+      },
+      {
+        "q": "Does your organization have security-related policies in place for travel?",
+        "area": "travel-security",
+        "answers": [
+          {
+            "a": "Yes, and we mostly follow these policies",
+            "pts": 0
+          },
+          {
+            "a": "Yes, but we do not always follow these policies.",
+            "pts": 5
+          },
+          {
+            "a": "No, we do not have travel safety policies.",
+            "pts": 15
+          },
+          {
+            "a": "No, we do not travel for work.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "What risks are covered in your travel security-related policy?",
+        "area": "travel-security",
+        "answers": [
+          {
+            "a": "Physical security",
+            "pts": 10
+          },
+          {
+            "a": "Physical and cybersecurity, including device policies and usage practices",
+            "pts": 0
+          },
+          {
+            "a": "We do not have travel safety policies.",
+            "pts": 15
+          },
+          {
+            "a": "We do not travel for work.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "What concerns do you have about potential legal requests for your organization’s internal documents?",
+        "area": "legal-risks",
+        "answers": [
+          {
+            "a": "We are very concerned about legal requests for internal documents.",
+            "pts": 0
+          },
+          {
+            "a": "We are somewhat concerned about legal requests for internal documents.",
+            "pts": 5
+          },
+          {
+            "a": "We are not concerned about legal requests for internal documents.",
+            "pts": 10
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      }
     ]
   },
   {
     "level": "advanced",
     "questions": [
       {
-        "q":"Question placeholder goes here",
-        "area":"d",
+        "q":"Is anyone on your staff responsible for cybersecurity in your organization?",
+        "area":"training-support",
         "answers": [
           {
-            "a": "Answer placeholder goes here",
+            "a": "We have at least one staff member responsible for cybersecurity.",
+            "pts": 0
+          },
+          {
+            "a": "We use an outside cybersecurity provider/consultant.",
+            "pts": 5
+          },
+          {
+            "a": "We use volunteers.",
             "pts": 10
           },
           {
-            "a": "Next answer placeholder goes here",
+            "a": "We do not have any cybersecurity support.",
             "pts": 15
           },
           {
-            "a": "Last answer placeholder goes here",
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Which groups within your organization do you currently provide cybersecurity training to?",
+        "area":"training-support",
+        "answers": [
+          {
+            "a": "Staff only",
+            "pts": 10
+          },
+          {
+            "a": "Staff and volunteers/temporary staff/contractors",
+            "pts": 0
+          },
+          {
+            "a": "Staff, volunteers/temporary staff/contractors, and any individual or organization we work with frequently",
+            "pts": 0
+          },
+          {
+            "a": "We don’t provide cybersecurity training.",
+            "pts": 15
+          },
+          {
+            "a": "None of these apply.",
+            "pts": 15
+          },
+          {
+            "a": "My organization doesn’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "How often does your organization provide cybersecurity training to these groups?",
+        "area":"training-support",
+        "answers": [
+          {
+            "a": "Once a month or more frequently",
+            "pts": 0
+          },
+          {
+            "a": "Once a quarter",
+            "pts": 5
+          },
+          {
+            "a": "Once a year",
+            "pts": 10
+          },
+          {
+            "a": "Only during onboarding",
+            "pts": 15
+          },
+          {
+            "a": "After a threat occurs",
+            "pts": 10
+          },
+          {
+            "a": "We don’t provide cybersecurity training.",
+            "pts": 15
+          },
+          {
+            "a": "My organization doesn’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Does your organization provide cybersecurity training to new employees (onboarding)?",
+        "area":"training-support",
+        "answers": [
+          {
+            "a": "Yes",
+            "pts": 0
+          },
+          {
+            "a": "Yes, but only to some staff members",
+            "pts": 10
+          },
+          {
+            "a": "No",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Does your organization have a documented offboarding process  that specifically focuses on cybersecurity when a staff member leaves?",
+        "area":"training-support",
+        "answers": [
+          {
+            "a": "Yes, and we always follow the process.",
+            "pts": 0
+          },
+          {
+            "a": "Yes, but we do not always follow the process.",
+            "pts": 5
+          },
+          {
+            "a": "No",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 10
+          }
+        ]
+      },
+      {
+        "q": "Does your organization conduct exit interviews that include a discussion of security (an honest conversation with the staff member about vulnerabilities and areas of improvement they’ve noticed) prior to an employee leaving?",
+        "area":"training-support",
+        "answers": [
+          {
+            "a": "We always conduct exit interviews about security.",
+            "pts": 0
+          },
+          {
+            "a": "We sometimes conduct exit interviews about security.",
+            "pts": 5
+          },
+          {
+            "a": "We do not conduct exit interviews about security.",
+            "pts": 10
+          },
+          {
+            "a": "We don’t conduct exit interviews.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "How concerned are you that your website will become a target for people who want to do harm to your organization?",
+        "area": "web-security",
+        "answers": [
+          {
+            "a": "Very concerned",
+            "pts": 0
+          },
+          {
+            "a": "Somewhat concerned",
+            "pts": 10
+          },
+          {
+            "a": "Not concerned",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t have a website.",
             "pts": 0
           }
         ]
       },
       {
-        "q": "Question placeholder goes here",
-        "area": "d",
+        "q": "Does your organization share information of public interest on your website that could upset powerful groups?",
+        "area": "web-security",
         "answers": [
           {
-            "a": "Answer placeholder goes here",
-            "pts": 10
-          },
-          {
-            "a": "Next answer placeholder goes here",
+            "a": "We frequently share such information.",
             "pts": 15
           },
           {
-            "a": "Last answer placeholder goes here",
+            "a": "We sometimes share such information.",
+            "pts": 10
+          },
+          {
+            "a": "We rarely share such information.",
+            "pts": 5
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t have a website.",
             "pts": 0
           }
         ]
       },
+      {
+        "q": "If someone hacked your organization’s website, what types of information could they get?",
+        "area": "web-security",
+        "answers": [
+          {
+            "a": "Only publicly available information",
+            "pts": 5
+          },
+          {
+            "a": "Publicly available information and unpublished information (draft blog posts, press releases, etc.)",
+            "pts": 10
+          },
+          {
+            "a": "Publicly available information and sensitive private information (addresses, payment records, etc.)",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t have a website.",
+            "pts": 0
+          }
+        ]
+      },
+      {
+        "q": "What is your process for keeping a regularly updated backup of your website?",
+        "area": "web-security",
+        "answers": [
+          {
+            "a": "We use automated backups.",
+            "pts": 0
+          },
+          {
+            "a": "We use manual backups.",
+            "pts": 5
+          },
+          {
+            "a": "We use an external provider to manage our backups.",
+            "pts": 10
+          },
+          {
+            "a": "We do not back up our website regularly.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t have a website.",
+            "pts": 0
+          }
+        ]
+      },
+      {
+        "q": "When you type your organization’s domain into a browser address bar, what happens?",
+        "area": "web-security",
+        "answers": [
+          {
+            "a": "I type \"HTTP\" and it remains \"HTTP\"",
+            "pts": 30
+          },
+          {
+            "a": "I type \"HTTP\" and it turns to \"HTTPS\"",
+            "pts": 0
+          },
+          {
+            "a": "I type \"HTTPS\" but my browser says \"insecure.\"",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Are you actively keeping track of the third-party online services (e.g. social media, Github, etc.) that your organization uses?",
+        "area": "3rd-party",
+        "answers": [
+          {
+            "a": "We update a list that is written down.",
+            "pts": 0
+          },
+          {
+            "a": "Our list is written down but not updated.",
+            "pts": 10
+          },
+          {
+            "a": "We have nothing written down, but we do have a verbal list.",
+            "pts": 15
+          },
+          {
+            "a": "We do not have a list",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do you have guidelines or documentation within your organization on how to use third-party services safely?",
+        "area": "3rd-party",
+        "answers": [
+          {
+            "a": "We have written guidelines for these services.",
+            "pts": 0
+          },
+          {
+            "a": "We have a verbal understanding but no written policy.",
+            "pts": 10
+          },
+          {
+            "a": "We do not have any guidelines for using these services.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 20
+          }
+        ]
+      },
+      {
+        "q": "Do you use non-business platforms (e.g. Facebook Messenger, WeTransfer, Instagram, etc.) to share or receive sensitive information?",
+        "area": "3rd-party",
+        "answers": [
+          {
+            "a": "We often share or receive sensitive information via non-business platforms.",
+            "pts": 20
+          },
+          {
+            "a": "We sometimes share or receive sensitive information via non-business platforms.",
+            "pts": 10
+          },
+          {
+            "a": "We rarely share or receive sensitive information via non-business platforms.",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "When you upgrade or stop using a third-party service, is there a process for turning it off or deleting accounts?",
+        "area": "3rd-party",
+        "answers": [
+          {
+            "a": "We have a written process.",
+            "pts": 0
+          },
+          {
+            "a": "We have a verbal process but nothing written.",
+            "pts": 10
+          },
+          {
+            "a": "We do not have a process.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Does your organization have a process for assessing third-party vendors?",
+        "area": "3rd-party",
+        "answers": [
+          {
+            "a": "We have a written process.",
+            "pts": 0
+          },
+          {
+            "a": "We have a verbal process but nothing written.",
+            "pts": 10
+          },
+          {
+            "a": "We do not have a process.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do members of your organization use a VPN (virtual private network) when connecting to the Internet?",
+        "area": "vpn",
+        "answers": [
+          {
+            "a": "Yes, all staff members do.",
+            "pts": 0
+          },
+          {
+            "a": "Yes, most staff members do.",
+            "pts": 5
+          },
+          {
+            "a": "Yes, some staff members do.",
+            "pts": 10
+          },
+          {
+            "a": "No, our staff members do not.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 20
+          }
+        ]
+      },
+      {
+        "q": "Does your organization have a policy that governs who enters your offices?",
+        "area": "office-security",
+        "answers": [
+          {
+            "a": "We don’t have a policy (visitors can come and go at will).",
+            "pts": 15
+          },
+          {
+            "a": "We don’t have a policy (we let visitors in when we recognize them).",
+            "pts": 10
+          },
+          {
+            "a": "We have a policy, but we don’t enforce it.",
+            "pts": 8
+          },
+          {
+            "a": "Only visitors who comply with our policy can enter our offices.",
+            "pts": 5
+          },
+          {
+            "a": "We work in a shared space that controls access.",
+            "pts": 5
+          },
+          {
+            "a": "We don’t have a physical office",
+            "pts": 0
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Does your organization have an alarm system in your offices?",
+        "area": "office-security",
+        "answers": [
+          {
+            "a": "We have some form of an alarm system in our office.",
+            "pts": 5
+          },
+          {
+            "a": "We have an alarm system that will capture the time and date when it goes off.",
+            "pts": 0
+          },
+          {
+            "a": "We have an alarm system that only makes warning noises.",
+            "pts": 10
+          },
+          {
+            "a": "We have no security system.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Does your organization have cameras in your offices?",
+        "area": "office-security",
+        "answers": [
+          {
+            "a": "We have some form of video monitoring for our office.",
+            "pts": 10
+          },
+          {
+            "a": "We have an encrypted video monitoring system.",
+            "pts": 0
+          },
+          {
+            "a": "We have no security system.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do you have a process for closing up at the end of the day in all your offices?",
+        "area": "office-security",
+        "answers": [
+          {
+            "a": "We have a written checklist.",
+            "pts": 0
+          },
+          {
+            "a": "We have a verbal procedure.",
+            "pts": 5
+          },
+          {
+            "a": "We do not have a formal process.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do you have a process for storing devices and clearing off desks?",
+        "area": "office-security",
+        "answers": [
+          {
+            "a": "We have a written checklist that includes storing devices and clearing off desks.",
+            "pts": 0
+          },
+          {
+            "a": "We have a verbal procedure that includes storing devices and clearing off desks.",
+            "pts": 5
+          },
+          {
+            "a": "We do not have a formal process.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do you have rules governing the disposal of printed information?",
+        "area": "office-security",
+        "answers": [
+          {
+            "a": "We keep shredders closer to our desks than garbage cans and shred all sensitive information.",
+            "pts": 0
+          },
+          {
+            "a": "We have a single shredder, and staff are instructed to shred all sensitive materials.",
+            "pts": 5
+          },
+          {
+            "a": "There are no particular rules on what gets shredded or disposed of.",
+            "pts": 10
+          },
+          {
+            "a": "We do not dispose of any paper documents.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "Do you have a contingency plan in case your main method of communication (e.g., email) becomes unreliable?",
+        "area": "op-continuity",
+        "answers": [
+          {
+            "a": "We have a written contingency plan.",
+            "pts": 0
+          },
+          {
+            "a": "We have a contingency plan, but it’s not written down.",
+            "pts": 10
+          },
+          {
+            "a": "We do not have a contingency plan for this situation.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "How would you continue your organization’s operations in case an emergency prevents access to your physical office or online systems (such as a natural disaster)?",
+        "area": "op-continuity",
+        "answers": [
+          {
+            "a": "We have a written remote work policy.",
+            "pts": 0
+          },
+          {
+            "a": "We have a verbal agreement but no documented policy.",
+            "pts": 10
+          },
+          {
+            "a": "We do not have a contingency plan for such a situation.",
+            "pts": 15
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+      {
+        "q": "How would your organization recover from fire, flood, theft, or other incidents?",
+        "area": "op-continuity",
+        "answers": [
+          {
+            "a": "We could start over because we have full copies of the data on our devices in a different location from the office.",
+            "pts": 0
+          },
+          {
+            "a": "We could start over because our data is stored in the cloud.",
+            "pts": 10
+          },
+          {
+            "a": "We have some printed documents and materials that we might be able to use.",
+            "pts": 15
+          },
+          {
+            "a": "This would be catastrophic because we do not have any backups of our data.",
+            "pts": 20
+          },
+          {
+            "a": "We don’t know.",
+            "pts": 15
+          }
+        ]
+      },
+
     ]
   }
 ];
 
-var rs = [
+var rs = [ // contains all evaluation content
   "title": "Evaluation & feedback",
   "reusables": {
     "below": {
