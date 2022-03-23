@@ -125,7 +125,6 @@ function handleSubmit() {
   var match = document.querySelector('.current');
   // this gets the current question id number e.g. q0
   var id = currentState.questionQ;
-  console.log(id);
   // currently lets everything through, will change when required Qs are back
   canProceed = true;
   // before doing anything else, check if this is a required question
@@ -202,7 +201,6 @@ function nextQuestion(){
   if (currentState.questionP < currentState.sectionQ.length) {
     // grab the next question's element and add class of current
     var nextQ = document.getElementById("q-"+currentState.questionQ);
-    console.log(currentState.questionQ);
     nextQ.classList.add("current");
   }
   // if there's more sections left

@@ -46,7 +46,7 @@ function editAnswers() {
 // when clicked, go through array of questions marked as editable and add/remove showAllQs class
 // this should be used when compiling a policy or pressing Done to end an editing session
 function collectAnswers(isEdited){
-  var dic = {};
+  // var dic = {};
   var exc = [];
   var ans = [];
 
@@ -77,13 +77,14 @@ function collectAnswers(isEdited){
         // for each of the input fields
         for (var bb = 0; bb < inputFields.length; bb++){
           // get the ID
+          console.log(inputFields[bb]);
           aNum = inputFields[bb].id.split("-")[1];
           // if the element is checked or is a type of text box
           if (inputFields[bb].checked || (inputFields[bb].type.includes("text") && inputFields[bb].value !== "")) {
             // grab any exclusions
             exc = updateExc(qData.data.answers[aNum], exc);
             // save the answer
-            dic = saveToDict(inputFields[bb], qData.data.answers[aNum], dic);
+            // dic = saveToDict(inputFields[bb], qData.data.answers[aNum], dic);
             ans = storeThisA(ans, qData.ref, aNum);
           } else {
             console.log('This element is '+inputFields[bb].id);
@@ -115,13 +116,13 @@ function collectAnswers(isEdited){
           // for each of the input fields
           for (var cc = 0; cc < inputFields.length; cc++){
             // get the ID
-            aNum = inputFields[cc].id.split("-")[1];
-            // if the element is checked or is a type of not-empty text box
-            if (inputFields[cc].checked || (inputFields[cc].type.includes("text") && inputFields[cc].value !== "")) {
+            aNum = inputFields[cc].id.split("-")[3];
+            // if the element is checked
+            if (inputFields[cc].checked) {
               // grab any exclusions
               exc = updateExc(qData.data.answers[aNum], exc);
               // save the answer
-              dic = saveToDict(inputFields[cc], qData.data.answers[aNum], dic);
+              // dic = saveToDict(inputFields[cc], qData.data.answers[aNum], dic);
               ans = storeThisA(ans, qData.ref, aNum);
             } else {
               console.log('Checked or text values only');
@@ -134,7 +135,7 @@ function collectAnswers(isEdited){
     }
   }
 
-  dict = dic;
+  // dict = dic;
   currentState.answers = ans;
   // collect any excluded question numbers
   if (exc.length > 0){
@@ -152,9 +153,9 @@ function collectExclusions(id){
       q = getQData(inputs[i]);
       // get the input's answer's id
       id = inputs[i].id.split('-')[3];
-      console.log(inputs[i]);
+      console.log(q.data.answers[id]);
       // if it has exclusions
-      if (q.data.answers[id].excludes != null) {
+      if (q.data.answers[id].excludes !== null) {
         // add them to the array
         exc = updateExc(q.data.answers[id], exc);
       }
@@ -194,22 +195,19 @@ function getQData(el){
   return q;
 }
 
-function saveToDict(el, a, storage){
-  // if this answer has a storeas value
-  if (a.storeAs !== ""){
-    // if it's a selected button
-    if (el.checked){
-      // get the edited or unedited text
-      storage = el.nextSibling.contentEditable === "true" ? storeThisPair(a.storeAs, storage, el.nextSibling.innerText) : storeThisPair(a.storeAs, storage, a.answerText);
-    } else if (el.type.includes('text') && el.value !== "") {
-      // or store the contents of the text field
-      storage = storeThisPair(a.storeAs, storage, el.value);
-    }
-  } else {
-    console.log('No storing that here');
-  }
-  return storage;
-}
+// function saveToDict(el, a, storage){
+//   // if this answer has a storeas value
+//   if (a.storeAs !== ""){
+//     // if it's a selected button
+//     if (el.checked){
+//       // get the edited or unedited text
+//       storage = el.nextSibling.contentEditable === "true" ? storeThisPair(a.storeAs, storage, el.nextSibling.innerText) : storeThisPair(a.storeAs, storage, a.answerText);
+//     }
+//   } else {
+//     console.log('No storing that here');
+//   }
+//   return storage;
+// }
 
 
 function storeThisA(storage, q, a){
@@ -221,26 +219,27 @@ function storeThisA(storage, q, a){
   return storage;
 };
 
-function storeThisPair(el, storage, text) {
-  text = stripCode(text);
-  // if the storeAs key already exists in the dictionary because it's a continuation of a list
-  if (el in storage) {
-    // copy its current value into a temp array with the new value
-    // if it's already an array, just push
-    if (Array.isArray(storage[el])){ // checks if array - broken?
-      storage[el].push(text);
-    } else {
-      // if not then add values to create an array
-      temp = [storage[el], text];
-      // then assign this temp array back to the key, overwriting the old value
-      storage[el] = temp;
-    }
-  } else {
-    // add the new key and value
-    storage[el] = text;
-  }
-  return storage;
-}
+// function storeThisPair(el, storage, text) {
+//   console.log(text);
+//   text = stripCode(text);
+//   // if the storeAs key already exists in the dictionary because it's a continuation of a list
+//   if (el in storage) {
+//     // copy its current value into a temp array with the new value
+//     // if it's already an array, just push
+//     if (Array.isArray(storage[el])){ // checks if array - broken?
+//       storage[el].push(text);
+//     } else {
+//       // if not then add values to create an array
+//       temp = [storage[el], text];
+//       // then assign this temp array back to the key, overwriting the old value
+//       storage[el] = temp;
+//     }
+//   } else {
+//     // add the new key and value
+//     storage[el] = text;
+//   }
+//   return storage;
+// }
 
 function toggleEditMode(){
   // get the edit button
@@ -268,8 +267,9 @@ function checkForInputs(q){
 }
 
 function updateExc(a, e){
+  console.log(a);
   // check for exclusions
-  if (a.excludes.length > 0){
+  if (a.excludes !== null){
     // add them to the list of excluded questions
     e = e.concat(a.excludes);
     return e;
