@@ -103,7 +103,6 @@ body.buildPage #page {
   border-width: 0.5em;
 }
 #editBtn {
-  color: #066493;
   cursor: pointer;
 }
 .prompt {

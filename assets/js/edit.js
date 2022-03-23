@@ -71,23 +71,22 @@ function collectAnswers(isEdited){
       // get the input fields
       var inputFields = checkForInputs(questions[b]);
       // if there are input fields and we're not on the last question
-      if ((inputFields !== false) && (b !== questions.length-1)){
+      if (inputFields !== false){
         // grab the question number and data
         qData = getQData(inputFields[0]);
         // for each of the input fields
         for (var bb = 0; bb < inputFields.length; bb++){
           // get the ID
-          console.log(inputFields[bb]);
-          aNum = inputFields[bb].id.split("-")[1];
-          // if the element is checked or is a type of text box
-          if (inputFields[bb].checked || (inputFields[bb].type.includes("text") && inputFields[bb].value !== "")) {
+          aNum = inputFields[bb].id.split("-")[3];
+          // if the element is checked
+          if (inputFields[bb].checked) {
             // grab any exclusions
             exc = updateExc(qData.data.answers[aNum], exc);
             // save the answer
             // dic = saveToDict(inputFields[bb], qData.data.answers[aNum], dic);
             ans = storeThisA(ans, qData.ref, aNum);
           } else {
-            console.log('This element is '+inputFields[bb].id);
+            console.log('Unchecked element: '+inputFields[bb].id);
           }
         }
       } else {
