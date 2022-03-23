@@ -41,37 +41,15 @@ a.btn:hover {
 }
 
 
-@font-face {
-  font-family: 'SinkinSansLight';
-  src: url('webfonts/SinkinSans-300Light.otf');
-}
-@font-face {
-  font-family: 'SinkinSansMedium';
-  src: url('webfonts/SinkinSans-500Medium.otf');
-}
-@font-face {
-  font-family: 'SinkinSansMediumItalic';
-  src: url('webfonts/SinkinSans-500MediumItalic.otf');
-}
-@font-face {
-  font-family: 'SinkinSansBold';
-  src: url('webfonts/SinkinSans-700Bold.otf');
-}
 body {
-  font-family: "SinkinSansMedium", "Helvetica", "OpenSans", sans-serif;
+  font-family: "Helvetica", "OpenSans", sans-serif;
   margin: 0;
   font-size: 16px;
-  color: #066493;
   line-height: 1.75em;
   display: flex;
   flex-direction: column;
   overflow: scroll;
   overflow-x:hidden;
-  background: #1b263b;
-}
-
-p {
-  font-family: "SinkinSansLight", "Helvetica", "OpenSans", sans-serif;
 }
 
 #head {
@@ -80,7 +58,6 @@ p {
   display: flex;
   padding: 5px 4em 0 4em;
   box-sizing: border-box;
-  background: rgba(27,38,59,0.9);
   align-items: center;
   z-index: 1;
 }
@@ -102,11 +79,6 @@ body.buildPage #head.nav-start {
 }
 body.buildPage #page {
   padding-top:4em;
-  background: linear-gradient(to right bottom, #1b263b, #066493);
-}
-.nav-start {
-  background-color: transparent;
-  color: #f2eee2;
 }
 #head.nav-start {
   opacity:0;
@@ -148,7 +120,6 @@ body.buildPage #page {
 
 #foot {
   flex-shrink: 0;
-  background: #1b263b;
 }
 .wrapper {
   width: 75%;
@@ -205,13 +176,6 @@ body.buildPage #page {
   color:inherit;
 }
 
-.links a:hover, .links a.active, .prompt:hover, .prompt:active {
-  border-color: #066493;
-}
-.nav-scroll .links a:hover, .nav-scroll .links a.active {
-  border-color: #066493;
-}
-
 .links li {
   display:inline;
   padding: 0 20px;
@@ -221,13 +185,8 @@ body.buildPage #page {
   padding-left: 0;
 }
 .links li:last-child {
-  background-color: #f2eee2;
-  font-weight: bold;
   padding:1em;
   white-space: nowrap;
-}
-.nav-start .links li:last-child a{
-  color:#066493;
 }
 
 .nav-scroll .links li:last-child {
@@ -301,9 +260,6 @@ a {
 
 .questionContent h2 {
   width:85%;
-}
-.questionContent > h1, .questionContent > p {
-color: #A9bcd0;
 }
 
 .questionContent > .btn-tert {
@@ -660,7 +616,6 @@ details a {
 .btn {
   border:2px solid;
   padding: 0.75em;
-  font-family: SinkinSansMedium;
   margin: 10px;
   min-width:10em;
   text-align: center;
@@ -669,14 +624,8 @@ details a {
 }
 
 .btn-prim {
-  background-color: #b93168;
-  border-color: #b93168;
-  color:#f2eee2;
+  border-color: black;
   font-weight: bold;
-}
-.btn-prim:hover, .btn-seco:hover, #intro .btn-seco:hover{
-  background-color: #A9BCD0;
-  color: #1b263b;
 }
 .btn-seco {
   color: #066493;
@@ -774,7 +723,6 @@ small {
   display:inline;
   font-size: 1.1em;
   line-height: 2em;
-  color: #f2eee2;
 }
 .form-el label[contenteditable="true"] {
   border-style: dotted;
@@ -794,7 +742,6 @@ input[type=text], textarea{
   background: transparent;
   border:none;
   border-bottom-style: dotted;
-  font-family: SinkinSansMedium;
   font-size: 1em;
 }
 
@@ -816,23 +763,13 @@ form input[type='checkbox'] + label {
     cursor: pointer;
     padding:1em;
     display:block;
-    border: 2px solid #b93168;
-    color: #a9bcd0;
-    font-family: SinkinSansMedium;
+    border: 1px solid black;
 }
 
-form input[type='radio'] + label{
-  border-radius: 2em;
-}
-form input[type='checkbox'] + label {
-  border-radius: 0.5em;
-}
 
 form input:checked + label {
-  background-color: #a9bcd0;
-  color: #1b263b;
-  box-shadow: 0px 0px 1em #b93168;
-  border-color: #b93168;
+  background-color: black;
+  color: white;
 }
 .form-el input + label:hover {
   opacity:0.6;
@@ -964,18 +901,6 @@ textarea[placeholder] {
   line-height: 1.4em;
 }
 
-/* styles for highlighting current element in focus */
-.pink-border-glow,
-:focus,
-form input[type="radio"]:focus + label,
-form input[type="checkbox"]:focus + label,
-input[type="text"]:focus,
-textarea:focus,
-#homeLink:focus > img,
-.modalScrollbox {
-  box-shadow: 0px 0px 1em #b93168;
-  border-color: #b93168;
-}
 
 /* reset style on logo link */
 #homeLink:focus {

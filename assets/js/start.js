@@ -186,7 +186,7 @@ function handleSubmit() {
 function setUpPage(id){
   // add the additional stuff after everything else has loaded
   if (parseInt(id) === 0) {
-    injectOverlay();
+    // injectOverlay();
     // sneaking this in here so it's done when textboxes exist
     resizingBoxes();
     addChangeListeners();

@@ -139,6 +139,7 @@ function collectAnswers(isEdited){
   currentState.answers = ans;
   // collect any excluded question numbers
   if (exc.length > 0){
+    console.log(exc);
     currentState.exclusions = exc;
   }
 }
@@ -153,14 +154,15 @@ function collectExclusions(id){
       q = getQData(inputs[i]);
       // get the input's answer's id
       id = inputs[i].id.split('-')[3];
-      console.log(q.data.answers[id]);
       // if it has exclusions
       if (q.data.answers[id].excludes !== null) {
+        console.log(exc);
         // add them to the array
         exc = updateExc(q.data.answers[id], exc);
       }
     }
     if (exc.length > 0){
+      console.log(exc);
       currentState.exclusions = exc.concat(currentState.exclusions);
     }
   } else {
@@ -267,7 +269,6 @@ function checkForInputs(q){
 }
 
 function updateExc(a, e){
-  console.log(a);
   // check for exclusions
   if (a.excludes !== null){
     // add them to the list of excluded questions
