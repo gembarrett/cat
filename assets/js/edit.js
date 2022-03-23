@@ -119,6 +119,7 @@ function collectAnswers(isEdited){
             aNum = inputFields[cc].id.split("-")[3];
             // if the element is checked
             if (inputFields[cc].checked) {
+
               if (qData.data.answers[aNum].hasOwnProperty("excludes")) {
                 // grab any exclusions
                 exc = updateExc(qData.data.answers[aNum], exc);
@@ -141,7 +142,6 @@ function collectAnswers(isEdited){
   currentState.answers = ans;
   // collect any excluded question numbers
   if (exc.length > 0){
-    console.log(exc);
     currentState.exclusions = exc;
   }
 }
@@ -175,14 +175,14 @@ function collectExclusions(id){
 
 function findContent(q){
   switch (true) {
-    case q < 24:
+    case q < 23: // questions 0-23 are in section 0
       return sections[0][q];
       break;
-    case q < 47:
-    return sections[1][q-24];
+    case q < 45: // questions 24-44 are in section 1
+    return sections[1][q-23];
       break;
-    case q < 74:
-    return sections[2][q-47];
+    case q < questionsList.length: // questions 45 onwards are in section 2
+    return sections[2][q-45];
       break;
     default:
       console.log('Question not found');

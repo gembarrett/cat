@@ -99,25 +99,25 @@ function enablePreview(p){
 }
 
 // if snapshot button is disabled then call this
-function enableSnapshot(s){
-  // if there's answers stored
-  if (currentState.answers.length !== 0){
-    // check the ids against the checkableQs
-    for (count = 0; count< currentState.answers.length; count++){
-      if (isCheckableQ(parseInt(currentState.answers[count].q))){
-        // enable the snapshot button
-        s.removeAttribute('disabled');
-        s.addEventListener('click', getSnapshotURL);
-        document.querySelector('#copyBtn').addEventListener('click', copyUrl);
-        return;
-      } else {
-        console.log(currentState.answers[count].q + ' is not a question that can be snapshotted');
-      }
-    }
-  } else {
-    console.log('More answers needed for snapshotting');
-  }
-}
+// function enableSnapshot(s){
+//   // if there's answers stored
+//   if (currentState.answers.length !== 0){
+//     // check the ids against the checkableQs
+//     for (count = 0; count< currentState.answers.length; count++){
+//       if (isCheckableQ(parseInt(currentState.answers[count].q))){
+//         // enable the snapshot button
+//         s.removeAttribute('disabled');
+//         s.addEventListener('click', getSnapshotURL);
+//         document.querySelector('#copyBtn').addEventListener('click', copyUrl);
+//         return;
+//       } else {
+//         console.log(currentState.answers[count].q + ' is not a question that can be snapshotted');
+//       }
+//     }
+//   } else {
+//     console.log('More answers needed for snapshotting');
+//   }
+// }
 
 // this is the function that's called when a user submits an answer
 function handleSubmit() {
@@ -150,11 +150,11 @@ function handleSubmit() {
         // mark the current question as editable
 
         // show the preview button if answers are available
-        snapshotBtn = document.querySelector('#snapshotPolicy');
+        // snapshotBtn = document.querySelector('#snapshotPolicy');
 
-        if (snapshotBtn.disabled){
-          enableSnapshot(snapshotBtn);  // enable the snapshot button
-        }
+        // if (snapshotBtn.disabled){
+        //   enableSnapshot(snapshotBtn);  // enable the snapshot button
+        // }
       }
 
       // if we're at the last question
@@ -207,7 +207,7 @@ function nextQuestion(){
     // get the next section
     currentState.sectionQ = sections[currentState.sectionC];
     // as before, grab the next question's element and add class of current
-    var nextQ = document.getElementById(currentState.questionQ);
+    var nextQ = document.getElementById("q-"+currentState.questionQ);
     nextQ.classList.add("current");
   }
   // if we're out of questions and sections then show the policy
