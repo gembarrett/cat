@@ -1,15 +1,7 @@
 function addChangeListeners() {
-  var notice = document.querySelectorAll('.q0-only');
-  for  (var n = 0; n <notice.length; n++){
-    notice[n].remove();
-  }
   // add listener for edit button
   var editBtn = document.getElementById("editBtn");
   editBtn.addEventListener('click', editAnswers, false);
-  // and a listener for changes in the subpolicies question
-  document.querySelector('#teams').addEventListener('change', updateTeams);
-  document.querySelector('#policyAreas').addEventListener('change', updateTeams);
-  document.querySelector('#teams button').addEventListener('click', addTeam);
 
   // TODO: get skip/next fully working
   // grab all the form inputs
@@ -51,7 +43,7 @@ function moveForward(id) {
   // start looking at the next question
   // increase the question id number
   id++;
-  currentState.questionQ = 'q' + id;
+  currentState.questionQ = id;
   // increase position in the array
   currentState.questionP++;
   var el = document.querySelector('progress');
@@ -84,9 +76,6 @@ function updateProgressBar(){
   el.value++;
 }
 
-function toggleSpinner(){
-  document.getElementById('spinner').classList.toggle('loading');
-}
 
 // if prev button is disabled then call this
 function enablePreview(p){
@@ -132,11 +121,11 @@ function enableSnapshot(s){
 
 // this is the function that's called when a user submits an answer
 function handleSubmit() {
-  toggleSpinner();
   // search for the currently shown element - question and answer
   var match = document.querySelector('.current');
   // this gets the current question id number e.g. q0
-  var id = currentState.questionQ.split('q')[1];
+  var id = currentState.questionQ;
+  console.log(id);
   // currently lets everything through, will change when required Qs are back
   canProceed = true;
   // before doing anything else, check if this is a required question
@@ -191,7 +180,6 @@ function handleSubmit() {
       nextQuestion();
       window.scrollTo(0,0);
   }
-  toggleSpinner();
 }
 
 
@@ -203,8 +191,6 @@ function setUpPage(id){
     // sneaking this in here so it's done when textboxes exist
     resizingBoxes();
     addChangeListeners();
-    setUpTeamContent();
-    checkForName();
   }
 }
 
@@ -215,7 +201,8 @@ function nextQuestion(){
   // if there's more questions left in this section
   if (currentState.questionP < currentState.sectionQ.length) {
     // grab the next question's element and add class of current
-    var nextQ = document.getElementById(currentState.questionQ);
+    var nextQ = document.getElementById("q-"+currentState.questionQ);
+    console.log(currentState.questionQ);
     nextQ.classList.add("current");
   }
   // if there's more sections left

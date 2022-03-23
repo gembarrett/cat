@@ -143,19 +143,21 @@ function collectAnswers(isEdited){
 }
 
 function collectExclusions(id){
-  find = "#q"+id+' input:checked';
+  find = "#q-"+id+' input:checked';
   var exc = [];
   if (inputs = document.querySelectorAll(find)){
     // for each checked input
     for (var i = 0; i < inputs.length; i++){
       // look up the question's data
       q = getQData(inputs[i]);
-
       // get the input's answer's id
-      id = inputs[i].id.split('-')[1];
+      id = inputs[i].id.split('-')[3];
+      console.log(inputs[i]);
       // if it has exclusions
-      // add them to the array
-      exc = updateExc(q.data.answers[id], exc);
+      if (q.data.answers[id].excludes != null) {
+        // add them to the array
+        exc = updateExc(q.data.answers[id], exc);
+      }
     }
     if (exc.length > 0){
       currentState.exclusions = exc.concat(currentState.exclusions);
@@ -168,33 +170,14 @@ function collectExclusions(id){
 
 function findContent(q){
   switch (true) {
-    case q < 9:
-      q = 'q'+q;
-      return sections[0].find(question => question.id === q);
+    case q < 24:
+      return sections[0][q];
       break;
-    case q < 14:
-      q = 'q'+q;
-      return sections[1].find(question => question.id === q);
+    case q < 47:
+    return sections[1][q-24];
       break;
-    case q < 21:
-      q = 'q'+q;
-      return sections[2].find(question => question.id === q);
-      break;
-    case q < 28:
-      q = 'q'+q;
-      return sections[3].find(question => question.id === q);
-      break;
-    case q < 35:
-      q = 'q'+q;
-      return sections[4].find(question => question.id === q);
-      break;
-    case q < 43:
-      q = 'q'+q;
-      return sections[5].find(question => question.id === q);
-      break;
-    case q < 49:
-      q = 'q'+q;
-      return sections[6].find(question => question.id === q);
+    case q < 74:
+    return sections[2][q-47];
       break;
     default:
       console.log('Question not found');
@@ -205,9 +188,9 @@ function findContent(q){
 function getQData(el){
   var q = {};
   //# get the question number
-  q.ref = el.id.split("-")[0];
+  q.ref = el.id.split("-")[1];
   //# get the question data
-  q.data = findContent(q.ref.split('q')[1]);
+  q.data = findContent(q.ref);
   return q;
 }
 

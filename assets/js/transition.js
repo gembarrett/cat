@@ -11,20 +11,3 @@ function getNameFromHome(){
     console.log('No organization name provided');
   }
 }
-
-function checkForName() {
-  // if there's a name been entered previously
-  if (homeName !== ""){
-    // autofill q1 input field with the variable
-    var orgNameInput = document.querySelectorAll('#q1-0-answer');
-    orgNameInput[0].value = homeName;
-    // document.getElementById('q1').classList.add('editable');
-    // currentState.questionC++;
-    // currentState.questionQ++;
-    // currentState.questionP++;
-    // moveForward(1);
-    // nextQuestion();
-  } else {
-    console.log('No organization name stored');
-  }
-}

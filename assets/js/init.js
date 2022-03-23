@@ -16,10 +16,14 @@ window.onload = function(){
   utils.router();
 };
 
-// initialise counters with the first section and question, this is updated at the end of questions and sections
+var sections = [];
 
-//  list of sections
-var sections = [qs[0].questions];
+// initialise counters with the first section and question, this is updated at the end of questions and sections
+// TODO: add a way to track which question is in which section
+for (var q = 0; q < qs.length; q++){
+  sections.push(qs[q].questions);
+}
+
 // loop through and create list of questions
 var questionsList = [];
 // for each of the sections
@@ -29,7 +33,7 @@ for (var i = 0; i < sections.length; i++) {
   // for each of the questions in that section
   for (var j = 0; j < tmpContent.length; j++) {
     // push the id to the queue
-    questionsList.push(tmpContent[j].id);
+    questionsList.push(j);
   }
 }
 
