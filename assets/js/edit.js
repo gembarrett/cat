@@ -119,8 +119,10 @@ function collectAnswers(isEdited){
             aNum = inputFields[cc].id.split("-")[3];
             // if the element is checked
             if (inputFields[cc].checked) {
-              // grab any exclusions
-              exc = updateExc(qData.data.answers[aNum], exc);
+              if (qData.data.answers[aNum].hasOwnProperty("excludes")) {
+                // grab any exclusions
+                exc = updateExc(qData.data.answers[aNum], exc);
+              }
               // save the answer
               // dic = saveToDict(inputFields[cc], qData.data.answers[aNum], dic);
               ans = storeThisA(ans, qData.ref, aNum);
@@ -155,8 +157,8 @@ function collectExclusions(id){
       // get the input's answer's id
       id = inputs[i].id.split('-')[3];
       // if it has exclusions
-      if (q.data.answers[id].excludes !== null) {
-        console.log(exc);
+      if (q.data.answers[id].hasOwnProperty("excludes")) {
+        console.log(q.data.answers[id].excludes);
         // add them to the array
         exc = updateExc(q.data.answers[id], exc);
       }
