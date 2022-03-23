@@ -12,7 +12,6 @@ document.querySelectorAll('[contenteditable=true]').forEach(function (el) {
 function isActiveFormItem(node) {
     var tagName = node.tagName.toUpperCase();
     var isInput = ( tagName === "INPUT" && node.type.toUpperCase() in validInputTypes);
-    var isTextarea = ( tagName === "TEXTAREA" );
     var container = node.ownerDocument.contains ? node.ownerDocument : node.ownerDocument.body;
     if ( isInput || isTextarea ) {
         var isDisabled = node.readOnly || node.disabled;
@@ -125,9 +124,10 @@ function collectAnswers(isEdited){
               }
               // save the answer
               // dic = saveToDict(inputFields[cc], qData.data.answers[aNum], dic);
-              ans = storeThisA(ans, qData.ref, aNum);
+
+              ans = storeThisA(ans, qData, aNum);
             } else {
-              console.log('Checked or text values only');
+              console.log('unchecked');
             }
           }
         } else {
@@ -213,11 +213,15 @@ function getQData(el){
 // }
 
 
-function storeThisA(storage, q, a){
-  q = q.split('q')[1];
+function storeThisA(storage, qData, a){
+  q = qData.ref.split('-')[0];
+  c = qData.data.area;
+  p = qData.data.answers[parseInt(a)].pts;
   storage.push({
     q: q,
-    a: a
+    a: a,
+    c: c,
+    p: p
   });
   return storage;
 };
@@ -259,7 +263,7 @@ function toggleEditMode(){
 
 
 function checkForInputs(q){
-  els = q.querySelectorAll('input, textarea');
+  els = q.querySelectorAll('input');
   // if this question has answers
   if (els.length > 0){
     // return the elements

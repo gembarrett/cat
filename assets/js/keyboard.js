@@ -64,9 +64,6 @@ function simulateClick(el, key, keys){
         } else { // if the preview is open
           return false;
         }
-      } else if (el.type === "textarea") { // if it's a textbox
-        el.value += '\n';
-        key.preventDefault();
       } else {
         key.preventDefault();
       }
@@ -88,7 +85,7 @@ function isPreviewOpen(){
 }
 
 function isThisText(el){
-  if (el.type == "textarea" || el.type == "text" || el.isContentEditable){
+  if (el.type == "text"){
     return true;
   } else {
     return false;

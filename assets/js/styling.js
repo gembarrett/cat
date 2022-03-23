@@ -1,11 +1,4 @@
 // this needs to be applied to textareas too
-function resizingBoxes() {
-  var boxes = document.querySelectorAll("textarea");
-  for (var i = 0; i < boxes.length; i++) {
-    boxes[i].setAttribute('style', 'height:' + (boxes[i].scrollHeight) + 'px;overflow-x:hidden;');
-    boxes[i].addEventListener("input", onInput, false);
-  }
-}
 
 function onInput() {
   this.style.height = 'auto';

@@ -733,7 +733,7 @@ small {
   cursor: text;
 }
 
-input[type=text], textarea{
+input[type=text]{
   display:block;
   padding: 2em;
   text-align: center;
@@ -892,13 +892,6 @@ span.q0-only {
   background-color: #fff;
 }
 
-textarea {
-  border-style: dotted;
-}
-textarea[placeholder] {
-  font-size: 1em;
-  line-height: 1.4em;
-}
 
 
 /* reset style on logo link */

@@ -6,8 +6,6 @@ function addChangeListeners() {
   // TODO: get skip/next fully working
   // grab all the form inputs
   var elements = Array.from(document.querySelectorAll('.form-el > input'));
-  var boxes = Array.from(document.querySelectorAll('.form-el > textarea'));
-  elements = elements.concat(boxes);
   // TODO: add these event listeners back in when required questions are reimplemented
   // for (var e = 0; e < elements.length; e++) {
   //   // if it's a radio or checkbox
@@ -61,9 +59,10 @@ function isExcludedQ(id) {
     if (currentState.exclusions.indexOf(parseInt(id)) === -1) {
       // if the question is not excluded
       // break the loop
-      console.log('not excluded: '+id);
+      console.log('next');
       // console.log('Go to next question.');
     } else {
+      console.log('skip');
       // update everything to the next question
       id = moveForward(id);
     }
@@ -182,7 +181,6 @@ function setUpPage(id){
   if (parseInt(id) === 0) {
     // injectOverlay();
     // sneaking this in here so it's done when textboxes exist
-    resizingBoxes();
     addChangeListeners();
   }
 }
