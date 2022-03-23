@@ -1,5 +1,5 @@
-// update current SOAP version here
-var soapv = "1.2.0";
+// update current version here
+var catv = "2.0.0";
 var thisEnv = window.location.origin;
 
 var templates = {};
@@ -17,9 +17,10 @@ window.onload = function(){
 };
 
 // initialise counters with the first section and question, this is updated at the end of questions and sections
+console.log(qs);
 
 //  list of sections
-var sections = [section0, section1, section2, section3, section4, section5, section6, section7];
+var sections = [qs];
 // loop through and create list of questions
 var questionsList = [];
 // for each of the sections

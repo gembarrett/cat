@@ -269,11 +269,11 @@ var links = {
       "en": "https://www.learndash.com/"
     }
   },
-  "libre"{
+  "libre": {
     "office": {
       "en": "https://www.libreoffice.org/"
     }
-  }
+  },
   "lifelock": {
     "web": {
       "en": "https://www.nortonlifelock.com/us/en/"

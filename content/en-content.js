@@ -1730,7 +1730,7 @@ var qs = [ // contains all question content
   }
 ];
 
-var rs = [ // contains all evaluation content
+var rs = { // contains all evaluation content
   "title": "Evaluation & feedback",
   "reusables": {
     "below": {
@@ -2139,7 +2139,7 @@ var rs = [ // contains all evaluation content
                   "type": "title",
                   "heading": "Familiarize yourself with cybersecurity basics.",
                 },
-                "Excellent resources to get started include the Electronic Frontier Foundation’s [Surveillance Self-Defense curriculum](links.eff.ssd) and the [Data Detox Kit](links.ttech.detox) from Tactical Tech."
+                "Excellent resources to get started include the Electronic Frontier Foundation’s [Surveillance Self-Defense curriculum](links.eff.ssd) and the [Data Detox Kit](links.ttech.detox) from Tactical Tech.",
                 {
                   "type": "title",
                   "heading": "Begin training.",
@@ -2302,7 +2302,7 @@ var rs = [ // contains all evaluation content
               "content": [ // explanation of this recommendation
                 "Data are the lifeblood of our digital systems. Your organization’s data contain incredible amounts of information—some trivial (such as your lunchtime calendar reminder) and some vital (such as the names and home addresses of your staff).",
                 "Many people across organizations have access to tremendous amounts of data, often more than they realistically need to do their jobs properly. An attacker, however, can do significant damage when they gain such access. One effective way to reduce your digital risk is to also reduce access to unnecessary data within your organization.",
-                "If you’re just getting started managing your data, it’s helpful to take two steps upfront."
+                "If you’re just getting started managing your data, it’s helpful to take two steps upfront.",
                 {
                   "type": "title",
                   "heading": "Understand the connection between retention and protection.",
@@ -2617,7 +2617,7 @@ var rs = [ // contains all evaluation content
           "assess": "ok", // assessed level, based on score
           "recs": [ // contains recommendations for this level
             {
-              "title": ""
+              "title": "",
               "content": [
                 "You’ve already adopted an encrypted messenger such as Signal or a collaboration tool such as Element. Your staff members are incorporating these tools into their workflow and understand the distinction between encrypted and unencrypted communication. Here are three additional steps to further enhance your communication security."
               ]
@@ -3535,7 +3535,7 @@ var rs = [ // contains all evaluation content
       ]
     }
   ]
-];
+};
 
 var oc = [ // contains all other content
   {
@@ -3616,12 +3616,15 @@ var oc = [ // contains all other content
     "content": [
       "This questionnaire is designed to help you identify strengths and weaknesses in your cybersecurity approach, as well as provide resources for improvement. After you complete the assessment, you’ll receive a personalized response and recommendations.",
       "The assessment will cover four key areas:",
-      "list": [
-        "Operational Security",
-        "Device Security",
-        "Account Security",
-        "Associated Risks"
-      ]
+      {
+        "type": "ul",
+        "items": [
+          "Operational Security",
+          "Device Security",
+          "Account Security",
+          "Associated Risks"
+        ]
+      },
       "This assessment will take approximately 30 to 40 minutes of your organization’s time. You may need to ask other staff members or third-party contractors for answers to some of these questions, depending on how your organization is structured.",
       "The Ford Foundation does not store your data when you use this tool. The data are stored in an encrypted database at FormStack, a leading online provider. We do receive anonymous results about the questionnaire’s general performance to help us understand our grantees’ needs."
     ]
@@ -3631,14 +3634,17 @@ var oc = [ // contains all other content
     "title": "Who did we build this tool for?",
     "content": [
         "We designed CAT to help a specific set of civil society organizations and funders around the world. These include:",
-        "list": [
-          "Grantees of the Ford Foundation BUILD program",
-          "Non-governmental organizations (NGOs) or civil society organizations (CSOs) that are funded by other grantmakers or foundations",
-          "Civil society organizations using other assessment tools that would like additional information about their cybersecurity preparedness",
-          "Civil society organizations that have recently suffered a cybersecurity incident and need to determine their next steps",
-          "Grantmakers or other funders seeking to assess their grantees' cybersecurity risk level",
-          "Technical assistance providers who would like to measure their clients' cybersecurity awareness",
-        ],
+        {
+          "type": "ul",
+          "items": [
+            "Grantees of the Ford Foundation BUILD program",
+            "Non-governmental organizations (NGOs) or civil society organizations (CSOs) that are funded by other grantmakers or foundations",
+            "Civil society organizations using other assessment tools that would like additional information about their cybersecurity preparedness",
+            "Civil society organizations that have recently suffered a cybersecurity incident and need to determine their next steps",
+            "Grantmakers or other funders seeking to assess their grantees' cybersecurity risk level",
+            "Technical assistance providers who would like to measure their clients' cybersecurity awareness",
+          ]
+        },
       "Don't see your type of organization listed above? This doesn't mean that CAT won't work for you. However, you may need to adjust some of your recommendations for your particular context."
     ]
   },
@@ -3649,24 +3655,32 @@ var oc = [ // contains all other content
       "This tool is provided for free to nonprofit organizations for informational purposes only. It is meant to be used as a starting point for organizations with limited resources to assist them in beginning to develop a cybersecurity program. Use of this tool does not guarantee compliance with federal, state or local laws. Please note that the information presented may not be applicable or appropriate for all of your nonprofit organization’s cybersecurity needs. This tool is not intended to be an exhaustive or definitive source on safeguarding your organization's information from privacy and security risks. For more information about cybersecurity assessments, visit SANS Incident Response framework, NIST Cybersecurity, and ISO 27000 series with attention to ISO 27005 risk management.",
       "NOTE: The cybersecurity standards provided reflect current best practices in information technology as of the release date of this tool, which means we cannot guarantee it is accurate, up to date, or appropriate for your organization. This tool is not intended to serve as legal advice or as recommendations based on an organization's specific circumstances. We encourage organizations to seek expert advice when evaluating the use of this tool.",
       "This tool is meant to help nonprofit organizations:",
-      "list": [
-        "develop a general sense of the maturity of an organization's cybersecurity program, and",
-        "identify potential cybersecurity program components to consider adding or improving.",
-      ],
+      {
+        "type": "ul",
+        "items": [
+          "develop a general sense of the maturity of an organization's cybersecurity program, and",
+          "identify potential cybersecurity program components to consider adding or improving.",
+        ]
+      },
       "The tool does not provide organizations with:",
-      "list": [
-        "a roadmap for securing the organization against cyberattacks or other misuse of their data or systems,",
-        "a basis for determining compliance with any legal obligations, or",
-        "a definitive list of the cybersecurity program components an organization should develop.",
-      ],
+      {
+        "type": "ul",
+        "items": [
+          "a roadmap for securing the organization against cyberattacks or other misuse of their data or systems,",
+          "a basis for determining compliance with any legal obligations, or",
+          "a definitive list of the cybersecurity program components an organization should develop.",
+        ]
+      },
       "By using this tool, you confirm that you have the right to provide all information entered into this tool without violating the privacy, confidentiality or other obligations of your organization in the relevant jurisdictions. The information that you entered into this tool is stored with a third-party service provider. The Ford Foundation does not receive the information entered into this tool; however, it may receive anonymized results about the tool’s general performance to help the Foundation: (1) deliver the tool’s service; (2) ensure that the tool is working as intended and to make improvements to the tool and the content; and (3) in the furtherance of Foundation's mission to support the nonprofit sector."
     ]
   },
-  "type": "start",
-  "title": "Let's Get Started",
-  "content": [
-    "Welcome to the CAT (Cybersecurity Assessment Tool).",
-    "This is version v2.0 from February 2022, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use.  If you find any errors, bugs, or issues please contact buildteam@fordfoundation.org",
-    "Please click \"next\" to begin."
-  ]
+  {
+    "type": "start",
+    "title": "Let's Get Started",
+    "content": [
+      "Welcome to the CAT (Cybersecurity Assessment Tool).",
+      "This is version v2.0 from February 2022, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use.  If you find any errors, bugs, or issues please contact buildteam@fordfoundation.org",
+      "Please click \"next\" to begin."
+    ]
+  }
 ]
