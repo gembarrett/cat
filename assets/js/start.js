@@ -140,22 +140,18 @@ function handleSubmit() {
   if (canProceed){
 
       setUpPage(id);
+      match.classList.add("editable");
+      collectAnswers(false);
 
       // if we're past the intro
       if (parseInt(id) > 0){
         // show the edit button
         document.getElementById('editBtn').classList.remove('disabled');
         // mark the current question as editable
-        match.classList.add("editable");
-        collectAnswers(false);
 
         // show the preview button if answers are available
-        prev = document.querySelector('#previewPolicy');
         snapshotBtn = document.querySelector('#snapshotPolicy');
 
-        if (prev.disabled){
-          enablePreview(prev);
-        }
         if (snapshotBtn.disabled){
           enableSnapshot(snapshotBtn);  // enable the snapshot button
         }
@@ -174,8 +170,6 @@ function handleSubmit() {
       // is the next question excluded
       // go to next question
       id = isExcludedQ(id);
-      // TODO change to Skip when skip/next is working
-      document.getElementById('submitAnswers').innerText = "Next";
       nextQuestion();
       window.scrollTo(0,0);
   }
