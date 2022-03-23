@@ -36,99 +36,47 @@ templates.questionsTemplate = function(data, params){
 
   for(var i = 0; i < questionsList.length; i++) {
       var question = data[i];
-
+      var currentQ = "q-"+i;
       // create the start of the form
-      content += `<form id="`+question.id+ `" class="questionContent`+ (question.id !== 'q0' ? '">' : ' current">');
+      content += `<form id="`+currentQ+ `" class="questionContent`+ (i !== 0 ? '">' : ' current">');
       // if it's a question
-      if (question.isQ) {
+      // if (question.isQ) {
         var panel = "";
-        if (question.tips[0].relevance) {
-          panel += '<div><span class="fas fa-user-circle"></span><p>' + question.tips[0].relevance + '</p></div>';
-        }
-        if (question.tips[1].meaning) {
-          panel += '<div><span class="fas fa-question-circle"></span><p>' + question.tips[1].meaning + '</p></div>';
-        }
-        if (question.tips[2].implementation) {
-          panel += '<div><span class="fas fa-clipboard-list"></span><p>' + question.tips[2].implementation + '</p></div>';
-        }
-        if (question.tips[3].more) {
-          panel += '<div><span class="fas fa-search"></span><p>| ';
-          for (var s = 0; s < question.tips[3].more.length; s++){
-            more = encodeURIComponent(question.tips[3].more[s]);
-            panel += '<a href="https://duckduckgo.com/?q='+more+'" target="_blank" title="Research '+question.tips[3].more[s]+' on DuckDuckGo">'+question.tips[3].more[s]+'</a> | ';
-          }
-          panel += '</p></div>';
-        }
         // add the question
-        content += '<details class="question-panel"><summary title="Click or press Space (while focused) to view more information"><h2>' + question.q + '</h2></summary>';
-        // if the panel content exists add it
-        content += panel !== "" ? panel+'</details>' : '<br />';
+        content += '<h1>' + question.q + '</h1>';
 
         content += '<div class="answers-container">';
 
         // add the answers
         for (var j = 0; j < question.answers.length; j++){
            // premake the id and name
-           thisID = 'id="' +question.id+ "-"+ j+ '-answer"';
-           thisName = 'name="' +question.id+  '-el"';
-           required = question.required ? "required" : "";
-           // if there's a placeholder then grab it
-           if (question.answers[j].placeholder) {
-             thisPlaceholder = 'placeholder="' + question.answers[j].placeholder + '"';
-           }
+           thisID = 'id="' +currentQ+ "-a-"+ j+ '"';
+           thisName = 'name="' +currentQ+  '-el"';
            // if this is an input field then create the label
-           if (question.answers[j].type !== 'textarea') {
-             thisLabel = '<label for="' +question.id+ "-"+ j+ '-answer"';
-             if (question.answers[j].type === 'radio'){
-               thisLabel += question.answers[j].editable ? ' class="btn-edit" contenteditable="true" title="Click or press S to select this editable option, or arrow keys to choose another">' : ' title="Click or press S to select this option">';
-             } else {
-               thisLabel += question.answers[j].editable ? ' class="btn-edit" contenteditable="true" title="Click or press S to select this editable option">' : ' title="Click or press S to select this option">';
-             }
-             thisLabel += question.answers[j].answerText+ '</label>';
-           }
+           thisLabel = '<label for="' +currentQ+ "-a-"+ j+ '">';
+           thisLabel += question.answers[j].a+ '</label>';
            // start the form
-           content += '<div class="form-el type-'+question.answers[j].type+'">';
+           content += '<div class="form-el">';
 
-           // if there's a textarea
-           if (question.answers[j].type === 'textarea') {
-             content += '<textarea ' +thisID+thisName+thisPlaceholder+ ' class="incidentBox" '+required+' title="'+question.answers[j].placeholder+'"></textarea>';
-           }
-
-           // if there's a textbox
-           else if (question.answers[j].type === 'text') {
-             content += thisLabel + '<input type="' +question.answers[j].type+ '"' +thisID+thisName+thisPlaceholder+required+ ' title="'+question.answers[j].placeholder+'">';
-           }
-
-           // if there's a radio or checkbox, check if there's an answer already that can be prepopulated
-           else {
-             // find a match for this question and answer object
-             var qMatch = currentState.answers.filter(o => (o.q === question.id.split('q')[1] && o.a === String(j)));
+             // find a match for this question and answer object - used for managing selections, NOT sure if needed, keep for now
+             // var qMatch = currentState.answers.filter(o => (o.q === question.id.split('q')[1] && o.a === String(j)));
 
              // if there's a previous answer for this
-             if ((qMatch !== 'undefined' && qMatch.length > 0)){
-               // add a checked element
-               content += '<input type="' +question.answers[j].type+ '"' +thisID+thisName+required+ ' checked="true">' + thisLabel;
-             } else {
+             // if ((qMatch !== 'undefined' && qMatch.length > 0)){
+             //   // add a checked element
+             //   content += '<input type="' +question.answers[j].type+ '"' +thisID+thisName+ ' checked="true">' + thisLabel;
+             // } else {
                // otherwise make an unchecked one
-               content += '<input type="' +question.answers[j].type+ '"' +thisID+thisName+required+ '>' + thisLabel;
-             }
-           }
+               content += '<input type="radio"' +thisID+thisName+ '>' + thisLabel;
            // end the form
            content += '</div>';
          }
-      } else if (question.id === "q0") {
-        // if it's the first question, lay out the content a bit differently
-        for (var k = 0; k < question.contentArray.length; k++){
-          content += `<div class="window pink-border-glow"><h3>`+question.contentArray[k].title+`</h3><p>`+question.contentArray[k].text+`</p></div>`;
-        }
-      } else if (question.id === ("q"+(questionsList.length-1))){
-        // call a function to deal with this
-        content += buildSubPolicies(question);
-      } else {
-        // add the title and paragraphs
-        content += '<h1>' + question.title + '</h1>';
-        content = formatArray(question.contentArray, content);
-      }
+      // } else {
+      //   // add the title and paragraphs
+      //   content += '<h1>' + question.q + '</h1>';
+      //   console.log(question);
+      //   content = formatArray(question.answers, content);
+      // }
       // if its the first question
       // no closing div, just closing form
       content += question.isQ ? '</div></form>' : '</form>';

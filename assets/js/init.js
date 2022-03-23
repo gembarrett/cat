@@ -17,10 +17,9 @@ window.onload = function(){
 };
 
 // initialise counters with the first section and question, this is updated at the end of questions and sections
-console.log(qs);
 
 //  list of sections
-var sections = [qs];
+var sections = [qs[0].questions];
 // loop through and create list of questions
 var questionsList = [];
 // for each of the sections
