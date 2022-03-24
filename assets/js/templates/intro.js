@@ -1,15 +1,15 @@
 templates.intro = function(data){
-  var text = ros[0];
+  var text = oc;
   var content = `
     <div id="intro" class="nav-start contain">
       <div id="logoContainer">
-        <div><img id="logoBig" alt="SOAP logo" src="assets/images/soapLogoW.png" /></div>
-        <h1>`+text.head+`</h1>
+        <div><img id="logoBig" alt="CAT logo" src="" height="80" width="100" /></div>
+        <h1>`+text.proj.title+`</h1>
       </div>
-      <h2>`+text.subhead+`</h2>
+      <h2>`+text.proj.content[0]+`</h2>
+      <p>`+text.proj.content[1]+`</p>
       <div class="btn-wrap wrap-c">
-        <label for="home-q1-0-answer"></label><input type="text" id="home-q1-0-answer" title="Great Organization Name!" name="home-q1-el" placeholder="Great Organization Name">
-        <button class="btn btn-prim" id="submit-home-q1" onclick="getNameFromHome()">Let's go!</button>
+        <button class="btn btn-prim" id="submit-home-q1">Let's go!</button>
         </div>
       </div>
     </div>

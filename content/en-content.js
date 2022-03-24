@@ -3537,9 +3537,8 @@ var rs = { // contains all evaluation content
   ]
 };
 
-var oc = [ // contains all other content
-  {
-    "type": "ux",
+var oc = { // contains all other content
+  "ux": {
     "title": "",
     "content": [
       {
@@ -3572,16 +3571,14 @@ var oc = [ // contains all other content
       }
     ]
   },
-  {
-    "type": "proj-intro",
+  "proj": {
     "title": "Cybersecurity Assessment Tool (CAT)",
     "content": [
       "COVID-19 has fundamentally changed the way we live and work. During this uncertain time, we are all finding new ways to survive and continue our work. This includes using technology more than ever before, raising the already important issue of cybersecurity within civil society organizations. However, finding where to begin and understanding the best way to tackle this topic can feel daunting for even the best-resourced organizations. That’s why we have created this tool.",
       "The Ford Foundation’s Cybersecurity Assessment Tool (CAT) is designed to measure the maturity, resiliency, and strength of an organization’s cybersecurity efforts. We have created this questionnaire with busy nontechnical grant makers, grantee partners, civil society organizations, and nonprofits in mind, and we hope it helps shine some light on a recommended path forward for any organization undertaking a cybersecurity journey. The tool is designed to be taken as a survey in one 30-minute sitting. However, it may require information from several members of your staff, including operations staff or decision makers. We initially created the questionnaire to help BUILD’s grantee partners, and we’re now making a beta version available for public use."
     ]
   },
-  {
-    "type": "team-intro",
+  "team": {
     "title": "Who built this tool",
     "content": [
       {
@@ -3610,8 +3607,7 @@ var oc = [ // contains all other content
       }
     ]
   },
-  {
-    "type": "process",
+  "process": {
     "title": "How it works",
     "content": [
       "This questionnaire is designed to help you identify strengths and weaknesses in your cybersecurity approach, as well as provide resources for improvement. After you complete the assessment, you’ll receive a personalized response and recommendations.",
@@ -3629,8 +3625,7 @@ var oc = [ // contains all other content
       "The Ford Foundation does not store your data when you use this tool. The data are stored in an encrypted database at FormStack, a leading online provider. We do receive anonymous results about the questionnaire’s general performance to help us understand our grantees’ needs."
     ]
   },
-  {
-    "type": "users",
+  "users": {
     "title": "Who did we build this tool for?",
     "content": [
         "We designed CAT to help a specific set of civil society organizations and funders around the world. These include:",
@@ -3648,8 +3643,7 @@ var oc = [ // contains all other content
       "Don't see your type of organization listed above? This doesn't mean that CAT won't work for you. However, you may need to adjust some of your recommendations for your particular context."
     ]
   },
-  {
-    "type": "legal",
+  "legal": {
     "title": "Legal disclaimer",
     "content": [
       "This tool is provided for free to nonprofit organizations for informational purposes only. It is meant to be used as a starting point for organizations with limited resources to assist them in beginning to develop a cybersecurity program. Use of this tool does not guarantee compliance with federal, state or local laws. Please note that the information presented may not be applicable or appropriate for all of your nonprofit organization’s cybersecurity needs. This tool is not intended to be an exhaustive or definitive source on safeguarding your organization's information from privacy and security risks. For more information about cybersecurity assessments, visit SANS Incident Response framework, NIST Cybersecurity, and ISO 27000 series with attention to ISO 27005 risk management.",
@@ -3674,8 +3668,7 @@ var oc = [ // contains all other content
       "By using this tool, you confirm that you have the right to provide all information entered into this tool without violating the privacy, confidentiality or other obligations of your organization in the relevant jurisdictions. The information that you entered into this tool is stored with a third-party service provider. The Ford Foundation does not receive the information entered into this tool; however, it may receive anonymized results about the tool’s general performance to help the Foundation: (1) deliver the tool’s service; (2) ensure that the tool is working as intended and to make improvements to the tool and the content; and (3) in the furtherance of Foundation's mission to support the nonprofit sector."
     ]
   },
-  {
-    "type": "start",
+  "start": {
     "title": "Let's Get Started",
     "content": [
       "Welcome to the CAT (Cybersecurity Assessment Tool).",
@@ -3683,4 +3676,4 @@ var oc = [ // contains all other content
       "Please click \"next\" to begin."
     ]
   }
-]
+}
