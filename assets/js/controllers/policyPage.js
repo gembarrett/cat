@@ -1,8 +1,6 @@
 controllers.policyPage = function(data, params){
 
   var tally = {};
-  console.log(tally);
-  console.log(currentState);
 
   // for each of the items in rs.content
   for (var r=0; r<rs.content.length; r++) {
@@ -19,6 +17,8 @@ controllers.policyPage = function(data, params){
   for (const rr in Object.keys(tally)){
     // check each of the answers
     for (var ans=0; ans<currentState.answers; ans++){
+      console.log(currentState.answers[ans].c);
+      console.log(rr);
       // to see if the area matches the key
       if (currentState.answers[ans].c === rr){
         console.log('matches');

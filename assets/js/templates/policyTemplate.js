@@ -5,8 +5,6 @@ templates.policyTemplate = function(data, params){
     // display the area title
     // replace the points placeholder (here??) and display sentence
     // display the object's content
-    console.log(data);
-
 
   var content =
     `<div class="box contain">

@@ -371,6 +371,7 @@ function dateStamp(){
 }
 
 function clearData(){
+  tally = null;
   currentState = null;
   dates  = null;
   dict = null;

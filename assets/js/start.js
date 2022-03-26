@@ -212,10 +212,9 @@ function nextQuestion(){
   else {
     // if there are answers
     if (currentState.answers.length > 0) {
-      var policyContainer = templates.policyTemplate();
-      utils.render('page', policyContainer);
+      window.location.href="/#policy";
     } else {
-      if (window.confirm("Oh no! It seems you haven't answered enough questions to build a policy. Start again?")) {
+      if (window.confirm("Oh no! It seems you haven't answered enough questions. Start again?")) {
         location.reload(false);
       } else {
         window.location.href = "/";
