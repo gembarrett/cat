@@ -2029,7 +2029,7 @@ var rs = { // contains all evaluation content
     {
       "area": "internal-risks", // which score-collection category is this
       "title": "Internal Risks (Intentional or Unintentional)",
-      "score": "Your organization has scored X points in the internal risks category.", // explanation of what this means
+      "score": "Your organization has scored [[X]] points in the internal risks category.", // explanation of what this means
       "general": {
           "why": [
             "Knowledge is power. By equipping your staff members with a checklist that allows them to identify cybersecurity risks, you’re empowering them to take action and increase their awareness. This step also provides you with a useful record of your staff’s overall level of cybersecurity.",
@@ -2354,7 +2354,7 @@ var rs = { // contains all evaluation content
     {
       "area": "web-security", // which score-collection category is this
       "title": "Website Security",
-      "score": "Your organization has scored X points in the website security category.", // explanation of what this means
+      "score": "Your organization has scored [[X]] points in the website security category.", // explanation of what this means
       "general": {
           "why": [
             "Securing your website can prevent everything from embarrassing defacement to harmful intrusions. Luckily, there are basic steps you can take to “harden” your site using widely available services. While these won’t prevent highly sophisticated attacks, they will make your site a more difficult target, discouraging some low-level threats.",
@@ -2483,7 +2483,7 @@ var rs = { // contains all evaluation content
     {
       "area": "office-security", // which score-collection category is this
       "title": "Office Security",
-      "score": "Your organization has scored X points in the office security category.", // explanation of what this means
+      "score": "Your organization has scored [[X]] points in the office security category.", // explanation of what this means
       "general": {
           "why": [
             "It’s easy to overlook office security risks because, as humans, we naturally fall into patterns of behavior. If we routinely leave our laptop on our desk at the end of the day, for example, we may see this action as normal and not risky. Taking another look at our daily patterns of behavior can help us see which of these actions are actually leaving us at risk. And installing a basic security system can provide an added level of protection for moments we didn’t anticipate in our policies.",

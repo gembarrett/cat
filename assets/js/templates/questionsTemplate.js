@@ -32,7 +32,7 @@ templates.questionsTemplate = function(data, params){
   }
   // build the page elements
   var content = `
-      <div class="qContainer contain"><progress max="`+questionsList.length+`" value="0"></progress>`;
+      <div class="box contain"><progress max="`+questionsList.length+`" value="0"></progress>`;
 
   for(var i = 0; i < questionsList.length; i++) {
       var question = data[i];

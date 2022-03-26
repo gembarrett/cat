@@ -252,11 +252,11 @@ a {
   color:#fff;
 }
 
-.qContainer {
+.box {
   margin-top: -4em;
   padding: 2em 4em;
 }
-.buildPage .qContainer {
+.buildPage .box {
   margin-top:0;
 }
 
@@ -530,7 +530,7 @@ details a {
 
 .window h3 {
   text-transform: uppercase;
-  font-size: 5em;
+  font-size: 3em;
   line-height: 1.5em;
   margin: 0;
   flex: 0 0 40%;
@@ -593,11 +593,6 @@ details a {
 .btn-prim {
   border-color: black;
   font-weight: bold;
-}
-.btn-seco {
-  color: #066493;
-  border-color: #066493;
-  background: #f2eee2;
 }
 .btn-tert {
   border: 0;

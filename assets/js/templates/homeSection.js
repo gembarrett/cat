@@ -20,6 +20,8 @@ templates.homeSection = function(data){
         list += `<p>`+text.content[i]+`</p>`;
       }
     }
+  } else {
+    console.log('no content array');
   }
   var content = `
   <div class="window">
