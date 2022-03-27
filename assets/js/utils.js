@@ -30,7 +30,13 @@ var utils = (function(){
       if ((temp[0] === 'build') || (temp[0].startsWith('b'))) {
         function_to_invoke = 'questionsView';
       } else if (temp[0] === 'policy') {
-        function_to_invoke = 'policyView';
+        if (currentState.answers.length > 0) {
+          console.log('has answers');
+          function_to_invoke = 'policyView';
+        } else {
+          window.location.href="/#build";
+          // function_to_invoke = 'questionsView';
+        }
       } else {
         function_to_invoke = temp[0] || false;
       }
