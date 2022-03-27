@@ -59,10 +59,10 @@ function isExcludedQ(id) {
     if (currentState.exclusions.indexOf(parseInt(id)) === -1) {
       // if the question is not excluded
       // break the loop
-      console.log('next');
+      // console.log('next');
       // console.log('Go to next question.');
     } else {
-      console.log('skip');
+      // console.log('skip');
       // update everything to the next question
       id = moveForward(id);
     }

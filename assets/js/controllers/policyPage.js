@@ -14,15 +14,14 @@ controllers.policyPage = function(data, params){
   }
 
   // for each of the categories
-  for (const rr in Object.keys(tally)){
+  for (const rr in tally){
     // check each of the answers
-    for (var ans=0; ans<currentState.answers; ans++){
-      console.log(currentState.answers[ans].c);
-      console.log(rr);
+    for (var ans=0; ans<currentState.answers.length; ans++){
       // to see if the area matches the key
       if (currentState.answers[ans].c === rr){
-        console.log('matches');
         tally[rr] += currentState.answers[ans].p;
+      } else {
+        // no match
       }
     }
   }

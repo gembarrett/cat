@@ -127,7 +127,7 @@ function collectAnswers(isEdited){
 
               ans = storeThisA(ans, qData, aNum);
             } else {
-              console.log('unchecked');
+              // console.log('unchecked');
             }
           }
         } else {
