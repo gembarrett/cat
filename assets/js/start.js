@@ -143,9 +143,9 @@ function handleSubmit() {
       collectAnswers(false);
 
       // if we're past the intro
-      if (parseInt(id) > 0){
+      // if (parseInt(id) > 0){
         // show the edit button
-        document.getElementById('editBtn').classList.remove('disabled');
+        // document.getElementById('editBtn').classList.remove('disabled');
         // mark the current question as editable
 
         // show the preview button if answers are available
@@ -154,7 +154,7 @@ function handleSubmit() {
         // if (snapshotBtn.disabled){
         //   enableSnapshot(snapshotBtn);  // enable the snapshot button
         // }
-      }
+      // }
 
       // if we're at the last question
       if(parseInt(id) === questionsList.length-1){

@@ -1,13 +1,14 @@
 controllers.policyPage = function(data, params){
 
   var tally = {};
+  var resText = rs.content;
 
   // for each of the items in rs.content
-  for (var r=0; r<rs.content.length; r++) {
+  for (var r=0; r<resText.length; r++) {
     // if the tally doesn't already have a bucket for this area
-    if (!tally[rs.content[r].area]) {
+    if (!tally[resText[r].area]) {
       // add the area, initialise with a 0
-      tally[rs.content[r].area] = 0;
+      tally[resText[r].area] = 0;
     } else {
       console.log('already stored');
     }
@@ -25,6 +26,22 @@ controllers.policyPage = function(data, params){
       }
     }
   }
+
+  // title of page: resText.title
+  // content match: tally[key] to match resText.content[X].area
+  // title of area: resText.content[X].title
+  // area intro: resText.content[X].general.why
+    // loop through array and add items between <p> tags
+  // area example: resText.content[X].general.eg
+  // scoretext: tally[key] adds to resText.content[X].score
+  // conditional on score:
+    // if tally[key] is < 10
+      // use resText.content[X].results.exceeds
+    // if tally[key] is < 20
+      // use resText.content[X].results.ok
+    // if tally[key] is > 20
+      // use resText.content[X].results.below
+
 
   // when all answers are processed, loop through the array
   // for each object, compare the tallied points to the area's limits

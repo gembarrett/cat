@@ -1769,10 +1769,9 @@ var rs = { // contains all evaluation content
             "The ADE staff decides to proactively lead a series of tabletop exercises talking through how they would respond in the event of a security incident. As a result, when the field staff receive some verbal threats from regional landowners, they are prepared with a plan to manage any potential risk."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "Determine your threat model.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -1797,11 +1796,9 @@ var rs = { // contains all evaluation content
                 "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [here](links.eff.matrix). Tactical Tech’s Holistic Security offers [additional reading](links.ttech.matrices) on these matrices."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "Develop an incident response plan.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -1896,11 +1893,9 @@ var rs = { // contains all evaluation content
                 "A security provider can’t fix all your organization’s challenges on their own. Understand that you will need a designated person on your staff  who will manage this work and act as a liaison between your organization and the security provider."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "Run a tabletop exercise.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -1921,8 +1916,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "docs-policy", // which score-collection category is this
@@ -1941,10 +1935,9 @@ var rs = { // contains all evaluation content
             "When they add a new field office in Thailand, they realize their policies need to be updated to reflect this new region. The CEO of ADE creates a working group to make changes to the policy, monitor threats across the offices and update policies at least once a year."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Document your security policy and your future road map.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -1972,11 +1965,9 @@ var rs = { // contains all evaluation content
                 "Remember that your security policy is a living document—try to update it with new guidelines based on changing threats at least once per year."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "Gently enforce the rules.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2000,11 +1991,9 @@ var rs = { // contains all evaluation content
                 "You could also consider giving different levels of access based on their security compliance, for example by giving access to sensitive data to those who have enabled two-factor authentication."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Keep your policy and road map updated.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2023,8 +2012,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "internal-risks", // which score-collection category is this
@@ -2042,10 +2030,9 @@ var rs = { // contains all evaluation content
             "Not long after adopting the checklist, ADE was able to partner with Papua Water Rights, a two-person advocacy group in Papua New Guinea. This was a major breakthrough for ADE as it has never been able to have a presence in Oceania before. While extremely effective, Papua Water Rights has fewer resources than ADE and must balance security needs with limited time and capacity. To help, they put together a detailed and mandatory checklist focused on keeping their devices safe. This is particularly important because they can’t afford to replace devices that may be compromised."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Do a check-up on your organization’s cybersecurity.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2053,11 +2040,9 @@ var rs = { // contains all evaluation content
                 "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow; such a checklist should be part of the onboarding process of any new staff member. Here are suggestions for Windows devices, and here are suggestions for Mac devices. Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can then be stored in their employee file.",
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Add clear language to employment agreements.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2091,11 +2076,9 @@ var rs = { // contains all evaluation content
                 "You may want to enlist a lawyer to help you draft this language. There may also be other sections that apply directly to your situation. Just remember: the goal here is to be clear and informative, not to overwhelm your staff with legalese. Try to keep employment agreements to one page if possible, including a checklist, and make sure they are signed by the staff members and supervisors."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Consider device management systems.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2106,8 +2089,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "training-support", // which score-collection category is this
@@ -2126,10 +2108,9 @@ var rs = { // contains all evaluation content
             "Even with these initiatives, though, managers notice that staff are still struggling to implement some of the lessons. Since ADE has a global staff working across different time zones, it isn’t feasible to have a single point of contact to answer questions and troubleshoot. To help, ADE’s management institute a learning management system with all the content from earlier training sessions so staff can look up resources and lessons at any time of day on any device."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "Set expectations for security knowledge.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2153,11 +2134,9 @@ var rs = { // contains all evaluation content
                 "Starting with introductory knowledge can ensure that all staff members are on an equal footing."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "Introduce training in small bites.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2166,11 +2145,9 @@ var rs = { // contains all evaluation content
                 "Then gradually introduce training sessions into your organization’s workflow. Perhaps an hour once a month is dedicated to reviewing cybersecurity basics, or maybe a weekly lunch break is converted into a practice session. Day-long training will disrupt workflow and lead to tired, overwhelmed staff members. Use smaller, bite-sized training sessions instead to keep material fresh and approachable."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "Create a knowledge base.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2181,9 +2158,8 @@ var rs = { // contains all evaluation content
                 "You may need to work with a technical assistance provider to implement this tool, but the effort can pay dividends. A well-designed LMS can help you capture not only cybersecurity lessons but also help your staff answer time-sensitive questions without having to track down an instructor. Most LMS platforms provide a scoring mechanism, too, so you can map your staff’s progress."
               ]
             },
-          ]
-        }
-      ]
+          ],
+      }
     },
     {
       "area": "travel-security", // which score-collection category is this
@@ -2199,10 +2175,9 @@ var rs = { // contains all evaluation content
             "When the majority of ADE’s staff needs to work remotely full-time due to the global pandemic, they use these travel policies to govern their work devices."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Understand the risks.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2245,11 +2220,9 @@ var rs = { // contains all evaluation content
                 "Again, you may benefit from the guidance of a security provider for your specific context and travel plans."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "Incorporate cloud storage.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2258,11 +2231,9 @@ var rs = { // contains all evaluation content
                 "You may need a security provider to help with this process and to select the right cloud service for you."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Source travel-specific devices and develop a policy for their use.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2275,8 +2246,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "data-security", // which score-collection category is this
@@ -2293,10 +2263,9 @@ var rs = { // contains all evaluation content
             "This is useful when ADE’s office in Puerto Rico is rattled by a sudden, unexpected earthquake. Since this office is near the epicenter, staff members aren’t able to return to it for weeks. Luckily, the central office on the mainland has access to critical data in encrypted cloud storage and is therefore able to grant the staff temporary access so they can continue operating in the aftermath of the earthquake."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Consider what’s valuable and how to protect it.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2316,11 +2285,9 @@ var rs = { // contains all evaluation content
                 "While these steps may seem challenging, changing the status quo around data access within your organization can greatly reduce the risk that a genuine mistake can lead to a data breach."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "Reduce the amount of data you keep and for how long.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2332,11 +2299,9 @@ var rs = { // contains all evaluation content
                 "Wherever you store your data, make sure you institute a backup policy, ensuring that a copy of your information is stored securely on a regular basis. Again, a technical assistance provider can advise you on the best backup process for your needs, although we recommend no less than every business quarter."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "Plan to keep your organization running.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2348,8 +2313,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "web-security", // which score-collection category is this
@@ -2366,10 +2330,9 @@ var rs = { // contains all evaluation content
             "Another threat arises when they hired a new head of their office in Indonesia. The new hire, a well-known environmental activist,  attracted some controversy for his outspoken advocacy of rural farmers. Not long after he was hired, he received a threatening note while volunteering at a local charity. ADE staff realized that the new hire had mentioned his work at the charity in his biography on the website, making it easy for an adversary to track him there. In response, the organization removed overly specific information from several staff biographies on the site."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2419,11 +2382,9 @@ var rs = { // contains all evaluation content
                 "You may need the assistance of your IT department, a technical assistance provider, or others to help answer these questions. Try to conduct this basic audit at least once per year."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok": // assessed level, based on score
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2443,11 +2404,9 @@ var rs = { // contains all evaluation content
                 "Consider using a first name and last initial policy for your website and social media sites such as LinkedIn, and being careful with sharing details about work assignments and location. Document your requirements in an official organizational policy so your staff members follow the appropriate guidelines, too."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2477,8 +2436,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "office-security", // which score-collection category is this
@@ -2496,10 +2454,9 @@ var rs = { // contains all evaluation content
             "At ADE Worldwide’s European headquarters in Berlin, the company that manages the offices promised that all documents placed in a secure lockbox would be shredded. Later, the company reports that it accidentally threw several lockboxes’ worth of material into the building’s recycling bins. To ensure more control over sensitive documents, ADE management institutes a shredding policy for the Berlin office, with the hope that they can eventually institute this policy throughout the organization."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2520,11 +2477,9 @@ var rs = { // contains all evaluation content
                 "At the end of a busy work day, it is tempting to leave devices, paperwork, and files on our desks for the next day. While convenient, this leaves an easy target for attackers who gain entry during off-hours. Institute a clean desk policy that requires staff members to secure their devices and paperwork in a locked space before leaving for the day. This same policy should apply across offices, even if staff members work from home. It may be useful to print a reminder checklist for staff members to leave on their desk as a visual cue."
               ]
             }
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2546,11 +2501,9 @@ var rs = { // contains all evaluation content
                 "Organizations that use video-based security systems should remember that video surveillance has an effect on your staff and visitors. Workers should always know where cameras are placed and you should designate a \"no camera\" zone where staff can congregate without being recorded."
               ]
             }
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2564,8 +2517,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "messaging-collab", // which score-collection category is this
@@ -2580,10 +2532,9 @@ var rs = { // contains all evaluation content
             "ADE Worldwide staff throughout Chile use unencrypted communications to reach each other in a large network of rural offices. These communications include sensitive information such as project details and login credentials for office accounts. When an influential landowner who has opposed ADE’s work takes over a national corporation, ADE managers realize they need to take added steps to keep their communication more secure. As a result, they implement an encrypted messaging service throughout the offices in the country."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2611,11 +2562,9 @@ var rs = { // contains all evaluation content
                 "At first, your staff members don’t need to use the encrypted platforms for every communication. Instead, reserve the use of encrypted tools only for your most sensitive work. This will also help staff members associate encrypted tools with a higher level of security and privacy that isn’t available with standard tools. "
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2641,11 +2590,9 @@ var rs = { // contains all evaluation content
                 "Additionally, guidelines should incorporate the idea of fragmentation, or spreading your communications across several different platforms. If your organization does all its work on Slack, for example, you risk significant harm if the platform is hacked, breached, or fails. Instead, try to spread your work (and risk) across several different collaboration tools."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2665,8 +2612,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "legal-risks", // which score-collection category is this
@@ -2682,10 +2628,9 @@ var rs = { // contains all evaluation content
             "A local landowner threatens to sue the organization for defamation he claims he experienced thanks to its water sustainability campaigns. The attorneys in ADE’s Mexico City regional headquarters say they believe they can handle the potential lawsuit themselves, but quickly realize they must bring on local representation in Guatemala to better understand and comply with local laws and requirements."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title":"",
               "content":[
@@ -2706,11 +2651,9 @@ var rs = { // contains all evaluation content
                 "A good resource for finding qualified lawyers in your region is the [International Bar Association](links.iba.web), which advocates for lawyers worldwide.",
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "",
               "content": [
@@ -2730,11 +2673,9 @@ var rs = { // contains all evaluation content
                 "Not every organization has the resources—either financial or technological—to archive sensitive data. However, most organizations do have the ability to selectively remove or delete emails from staff inboxes. When done properly, this can help  manage the flow of information better within your organization. When abused, however, this power can infringe on your staff’s right to privacy and your ethical responsibility as an employer. For this reason, we recommend that most organizations put into place an easy-to-understand policy around when you will remove data or messages from staff members’ systems and make sure they are familiar with this policy."
               ]
             }
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title":"",
               "content": [
@@ -2754,8 +2695,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "device-security", // which score-collection category is this
@@ -2773,16 +2713,15 @@ var rs = { // contains all evaluation content
             "They also require ADE’s research staff to use a dedicated browser on their computer for work-related research, while highly sensitive information is handled only through a virtual machine."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
+      "results": { // contains result text for this category
+        "intro": {
           "title": "",
           "content": [
             "You may already be familiar with the need for fragmentation, or spreading your data across several different platforms. Another related best practice is compartmentalization, which means using several different devices or services to lessen your risk. If your staff primarily uses the same device at both work and home, or relies entirely on Google’s G Suite for your work, you should consider compartmentalizing your organization’s workflow further. Here are a few ways to do so."
           ]
         },
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "Understand the connection between personal and professional use.", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2805,11 +2744,9 @@ var rs = { // contains all evaluation content
                 "You will want to work with a technical assistance provider on all of these options to customize these strategies for your organization."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2829,11 +2766,9 @@ var rs = { // contains all evaluation content
                 "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these can sometimes be compromised by bad actors. Using your native keyboard when entering information into your work device is preferable."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2859,8 +2794,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "sware-security", // which score-collection category is this
@@ -2875,10 +2809,9 @@ var rs = { // contains all evaluation content
             "When ADE Worldwide opens an office in Guam, local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2906,11 +2839,9 @@ var rs = { // contains all evaluation content
                 "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2924,11 +2855,9 @@ var rs = { // contains all evaluation content
                 "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft and Apple. Any software you do download should be digitally signed, although be aware that this is not a guarantee of safety."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2948,8 +2877,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "data-encrypt", // which score-collection category is this
@@ -2964,10 +2892,9 @@ var rs = { // contains all evaluation content
             "ADE Worldwide’s office in Zambia is  raided unexpectedly. The intruders seize the office’s two laptops and one desktop computer. Luckily, before the raid, ADE required all devices be full-disk encrypted. Therefore the staff in Zambia is reassured that their data remain safe while the devices are outside of their control."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -2987,11 +2914,9 @@ var rs = { // contains all evaluation content
                 "Currently, you may store some of your data on external hard drives, which are very portable and convenient. By default, however, most of these devices are not encrypted, leaving your data accessible to anyone who has the drive itself. Consider replacing these devices with more secure alternatives. One option would be to replace external hard drives with hard drives that require physical PIN codes. [Apricorn](links.apricorn.web) and [iStorageUK](links.istorageuk.web) sell these encrypted drives, which have keypads to enter the codes and access the data within."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3005,11 +2930,9 @@ var rs = { // contains all evaluation content
                 "While this greatly strengthens your ability to store sensitive information, there is also a downside: if you lose or forget your credentials to the service, you won’t be able to access your data. And since the provider doesn’t have access to your data, either, they can’t retrieve it for you. With this knowledge in mind, be selective about the data you choose to store with a zero-knowledge provider, choosing only sensitive data that you have backed up elsewhere. Popular zero-knowledge encrypted cloud storage providers include [Tresorit](links.tresorit.web), [SpiderOak One](links.soak.web), and the open-source alternative [NextCloud](links.nextcloud.web) or [OwnCloud](links.ocloud.web).",
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3024,9 +2947,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-
-      ]
+      }
     },
     {
       "area": "pword-auth", // which score-collection category is this
@@ -3041,10 +2962,9 @@ var rs = { // contains all evaluation content
             "A few years ago, ADE Worldwide required all staff to start using two-factor authentication alongside password managers for work accounts. When a third-party social media platform they use is compromised, staff are able to easily update their passwords with a new password generated by their password manager."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3078,11 +2998,9 @@ var rs = { // contains all evaluation content
                 "We recommend enabling two-factor authentication for every online service that your organization uses. Using a site such as twofactorauth.org, in combination with an outside security provider, can help your staff  enable two-factor authentication quickly and efficiently on most services."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3102,11 +3020,9 @@ var rs = { // contains all evaluation content
                 "You will also want to take a look at your organization’s password policies across work devices. For example, local administrators on your work devices should be able to reset passwords themselves at regular intervals, such as every 180 days. A technical assistance provider can help you walk through your existing policies and find areas for improvement."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3122,9 +3038,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-
-      ]
+      }
     },
     {
       "area": "updates", // which score-collection category is this
@@ -3138,10 +3052,9 @@ var rs = { // contains all evaluation content
             "The ADE Worldwide finance staff  consists of three members and a manager based in Washington, DC. As busy professionals, they are juggling financial oversight of a major global nonprofit. When they see a pop-up alert on their devices reminding them to update their accounting software, they generally ignore the notification and continue working. Unfortunately, a security flaw in their accounting software poses a risk to their systems unless it is updated, so ADE management requires the staff to enable automatic updates on their software moving forward. Then, they add that requirement to their updates policy to ensure staff continue following this best practice."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3154,11 +3067,9 @@ var rs = { // contains all evaluation content
                 "One of the most effective and least time-consuming ways to update software is to automate the process. Most software allows users to select an automatic update option, which will force the software to install available updates and restart as needed. We would recommend making sure that all staff members enable this option on all available software and send an email to their supervisors confirming they have done so."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3171,11 +3082,9 @@ var rs = { // contains all evaluation content
                 "If you’re concerned that your staff may be overlooking essential updates on their systems, work with a technical assistance provider to create a master administrator account on all work devices. Then, when the devices are not being used, such as after work hours, manually install all updates as needed using the administrator account."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3190,8 +3099,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "op-continuity", // which score-collection category is this
@@ -3205,10 +3113,9 @@ var rs = { // contains all evaluation content
             "ADE Worldwide works with local farming communities in rural parts of Colorado, Utah, and Wyoming. During wildfire season, it’s not uncommon for staff to temporarily relocate from their offices to safer locations away from zones that are susceptible to the fires. After a few years of this cycle, ADE management realizes they need to better support these offices during these seasonal crises. They implement an incident response plan and alternate communication channels to be used when fires break out."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3221,11 +3128,9 @@ var rs = { // contains all evaluation content
                 "There's no better time to plan for a crisis than before it takes place. A drill can help you do so. The level of complexity is up to you, but you should focus on how your organization would respond to a single threat, such as an Internet shutdown, inability to get into the office, or a natural disaster. Working with your managers, assess how your organization would respond to such a threat, making sure to identify any weaknesses or vulnerabilities that come up during the drill."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3244,11 +3149,9 @@ var rs = { // contains all evaluation content
                 "In an emergency, the normal communication channels that your organization relies on, such as Slack and email, may not be available. Consider creating an account with a different service, such as encrypted email provider [ProtonMail](links.pmail.web) or encrypted messenger [Threema](links.3ma.web), to use during a crisis. Make sure to practice logging in and using these accounts to communicate during drills every three to six months."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3280,8 +3183,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "3rd-party", // which score-collection category is this
@@ -3295,10 +3197,9 @@ var rs = { // contains all evaluation content
             "Staff at the ADE Worldwide office in Honduras are outspoken about the threat facing the small farming communities they represent. This has caught the attention of several vocal landowners, who feel that the organization is biased in its advocacy. As a result, ADE experiences a wave of online harassment to its Honduran-linked social media accounts. To help avoid any further risks to their staff, ADE management in Honduras enables two-factor authentication across their social media channels and removes personal information about staff from the website."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3313,11 +3214,9 @@ var rs = { // contains all evaluation content
                 "In addition to dual accounts, you will want to make sure that two-factor authentication and other security features are enabled on all third-party accounts, as well as making sure your staff understands privacy settings on social media, such as turning off location data."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3338,11 +3237,9 @@ var rs = { // contains all evaluation content
                 "It’s also wise to institute an offboarding process for departing staff who manage social media for your organization, including changing passwords upon their departure."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3363,8 +3260,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "vpn", // which score-collection category is this
@@ -3379,10 +3275,9 @@ var rs = { // contains all evaluation content
             "Eventually, managers in the Berlin office realize they need even more control over their browsing data and decide to build their own VPN using Google’s Outline service with the help of a local technical assistance provider."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3411,11 +3306,9 @@ var rs = { // contains all evaluation content
                 "While incognito or private browsing mode prevents in-browser tracking by websites, using a VPN alone does not. Understanding these distinctions is important for your staff as they choose which steps to take during their everyday work."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3430,11 +3323,9 @@ var rs = { // contains all evaluation content
                 "While not a VPN, a tool such as [Firefox DoH](links.mozilla.doh) can also make your web browsing safer and can be used in conjunction with your existing VPN service. You will probably need to work with a technical assistance provider to enable any of these solutions for your organization."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3455,8 +3346,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     },
     {
       "area": "assoc-risks", // which score-collection category is this
@@ -3471,10 +3361,9 @@ var rs = { // contains all evaluation content
             "To manage the harassment campaign, ADE institutes a harassment policy, requiring staff to report any personal or professional online abuse. Then, to help predict the spread of the online harassment, ADE implements several tools that allow it to closely track social media campaigns. Finally, the IT staff reviews the site for the Albanian office and removes any personally identifiable information about the staff there."
           ] // example scenario
       },
-      "results": [ // contains result text for this category
-        {
-          "assess": "below", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3488,11 +3377,9 @@ var rs = { // contains all evaluation content
                 "You may also want to consider reporting harassment to the harasser’s ISP. Although they aren’t always obligated to act, ISPs may have the power to temporarily ban or block a customer who is violating their terms of service. Last, while not always possible, consider allowing staff members to keep their work social media profiles private, which can help reduce attacks."
               ]
             },
-          ]
-        },
-        {
-          "assess": "ok", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "ok":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3506,11 +3393,9 @@ var rs = { // contains all evaluation content
                 "Although we recommend caution with LinkedIn, it can also be used as a research tool to see who is viewing staff member profiles. Within the organization, consider making specific staff information (such as using their first name and last initial) anonymous and removing headshots and other staff images."
               ]
             },
-          ]
-        },
-        {
-          "assess": "exceeds", // assessed level, based on score
-          "recs": [ // contains recommendations for this level
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
             {
               "title": "", // title of this recommendation
               "content": [ // explanation of this recommendation
@@ -3531,8 +3416,7 @@ var rs = { // contains all evaluation content
               ]
             },
           ]
-        }
-      ]
+      }
     }
   ]
 };

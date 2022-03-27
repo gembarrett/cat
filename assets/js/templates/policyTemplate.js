@@ -17,7 +17,7 @@ templates.policyTemplate = function(data, params){
   var content =
     `<div class="box contain">
       <div id="results">
-        <h2>Your results</h2>
+        <h2>`+rs.title+`</h2>
         `+answers+`
       </div>
       <div id="reset">
