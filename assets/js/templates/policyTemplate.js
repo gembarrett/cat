@@ -6,10 +6,19 @@ templates.policyTemplate = function(data, params){
     // replace the points placeholder (here??) and display sentence
     // display the object's content
 
+    var answers = "";
+    for (const item in data){
+      answers += `<p>You scored `+data[item]+` in `+item+ ` category.</p>`;
+    }
+
+    console.log(data);
+
+
   var content =
     `<div class="box contain">
       <div id="results">
         <h2>Your results</h2>
+        `+answers+`
       </div>
       <div id="reset">
         <h3>Start over</h3>

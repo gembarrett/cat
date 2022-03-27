@@ -26,8 +26,6 @@ controllers.policyPage = function(data, params){
     }
   }
 
-  console.log(tally);
-
   // when all answers are processed, loop through the array
   // for each object, compare the tallied points to the area's limits
   // push the relevant content to the object
