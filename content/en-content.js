@@ -1735,15 +1735,18 @@ var rs = { // contains all evaluation content
   "reusables": {
     "below": {
       "title": "Below",
-      "content": "This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity."
+      "content": "This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity.",
+      "threshold": 10
     },
     "ok": {
       "title": "OK",
-      "content": "This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization's cybersecurity even more."
+      "content": "This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization's cybersecurity even more.",
+      "threshold": 20
     },
     "exceeds": {
       "title": "Exceeds",
-      "content": "This means it has a high level of security in this area. Good work! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more."
+      "content": "This means it has a high level of security in this area. Good work! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more.",
+      "threshold": 30
     },
     "general": {
       "what": "What We Recommend:",
@@ -1751,9 +1754,8 @@ var rs = { // contains all evaluation content
       "eg": "A Fictional Example:" // title for each content.general.eg below
     }
   },
-  "content": [
-    {
-      "area": "risk-threat", // which score-collection category is this
+  "content": {
+    "risk-threat": {
       "title": "Risk Analysis and Threat Assessment",
       "score": "Your organization has scored [[X]] points in the risk analysis and threat assessment category.", // explanation of what this means
       "general": {
@@ -1918,8 +1920,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "docs-policy", // which score-collection category is this
+    "docs-policy": {
       "title": "Documentation and Policy",
       "score": "Your organization has scored [[X]] points in the documentation and policy category.", // explanation of what this means
       "general": {
@@ -2014,8 +2015,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "internal-risks", // which score-collection category is this
+    "internal-risks": {
       "title": "Internal Risks (Intentional or Unintentional)",
       "score": "Your organization has scored [[X]] points in the internal risks category.", // explanation of what this means
       "general": {
@@ -2091,8 +2091,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "training-support", // which score-collection category is this
+    "training-support": {
       "title": "Staff Training and Support",
       "score": "Your organization has scored [[X]] points in the staff training and support category.", // explanation of what this means
       "general": {
@@ -2161,8 +2160,7 @@ var rs = { // contains all evaluation content
           ],
       }
     },
-    {
-      "area": "travel-security", // which score-collection category is this
+    "travel-security": {
       "title": "Travel Security",
       "score": "Your organization has scored [[X]] points in the travel security category.", // explanation of what this means
       "general": {
@@ -2248,8 +2246,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "data-security", // which score-collection category is this
+    "data-security": {
       "title": "Data Security",
       "score": "Your organization has scored [[X]] points in the data security category.", // explanation of what this means
       "general": {
@@ -2315,8 +2312,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "web-security", // which score-collection category is this
+    "web-security": {
       "title": "Website Security",
       "score": "Your organization has scored [[X]] points in the website security category.", // explanation of what this means
       "general": {
@@ -2438,8 +2434,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "office-security", // which score-collection category is this
+    "office-security": {
       "title": "Office Security",
       "score": "Your organization has scored [[X]] points in the office security category.", // explanation of what this means
       "general": {
@@ -2519,8 +2514,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "messaging-collab", // which score-collection category is this
+    "messaging-collab": {
       "title": "Messaging and Collaboration",
       "score": "Your organization has scored [[X]] points in the messaging and collaboration category.", // explanation of what this means
       "general": {
@@ -2614,8 +2608,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "legal-risks", // which score-collection category is this
+    "legal-risks": {
       "title": "Legal Risks",
       "score": "Your organization has scored [[X]] points in the legal risks category.", // explanation of what this means
       "general": {
@@ -2697,8 +2690,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "device-security", // which score-collection category is this
+    "device-security": {
       "title": "Device Security and Compartmentalization",
       "score": "Your organization has scored [[X]] points in the device security and compartmentalization category.", // explanation of what this means
       "general": {
@@ -2796,8 +2788,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "sware-security", // which score-collection category is this
+    "sware-security": {
       "title": "Software Security",
       "score": "Your organization has scored [[X]] points in the software security category.", // explanation of what this means
       "general": {
@@ -2879,8 +2870,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "data-encrypt", // which score-collection category is this
+    "data-encrypt": {
       "title": "Data Encryption",
       "score": "Your organization has scored [[X]] points in the data encryption category.", // explanation of what this means
       "general": {
@@ -2949,8 +2939,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "pword-auth", // which score-collection category is this
+    "pword-auth": {
       "title": "Password Management and Authentication",
       "score": "Your organization has scored [[X]] points in the password management and authentication category.", // explanation of what this means
       "general": {
@@ -3040,8 +3029,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "updates", // which score-collection category is this
+    "updates": {
       "title": "Updates",
       "score": "Your organization has scored [[X]] points in the updates category.", // explanation of what this means
       "general": {
@@ -3101,8 +3089,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "op-continuity", // which score-collection category is this
+    "op-continuity": {
       "title": "Operational Continuity",
       "score": "Your organization has scored [[X]] points in the operational continuity category.", // explanation of what this means
       "general": {
@@ -3185,8 +3172,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "3rd-party", // which score-collection category is this
+    "3rd-party": {
       "title": "Third-Party Services",
       "score": "Your organization has scored [[X]] points in the third-party services category.", // explanation of what this means
       "general": {
@@ -3262,8 +3248,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "vpn", // which score-collection category is this
+    "vpn": {
       "title": "Virtual Private Network (VPN)",
       "score": "Your organization has scored [[X]] points in the Virtual Private Network (VPN) category.", // explanation of what this means
       "general": {
@@ -3348,8 +3333,7 @@ var rs = { // contains all evaluation content
           ]
       }
     },
-    {
-      "area": "assoc-risks", // which score-collection category is this
+    "assoc-risks": {
       "title": "Associated Risks",
       "score": "Your organization has scored [[X]] points in the associated risks category.", // explanation of what this means
       "general": {
@@ -3418,7 +3402,7 @@ var rs = { // contains all evaluation content
           ]
       }
     }
-  ]
+  }
 };
 
 var oc = { // contains all other content

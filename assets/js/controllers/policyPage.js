@@ -4,11 +4,10 @@ controllers.policyPage = function(data, params){
   var resText = rs.content;
 
   // for each of the items in rs.content
-  for (var r=0; r<resText.length; r++) {
-    // if the tally doesn't already have a bucket for this area
-    if (!tally[resText[r].area]) {
+  for (const res in resText) {
+    if (!tally[res]) {
       // add the area, initialise with a 0
-      tally[resText[r].area] = 0;
+      tally[res] = 0;
     } else {
       console.log('already stored');
     }
@@ -36,19 +35,21 @@ controllers.policyPage = function(data, params){
   // scoretext: tally[key] adds to resText.content[X].score
   // conditional on score:
     // if tally[key] is < 10
-      // use resText.content[X].results.exceeds
+      // set level to resText.content[X].results.exceeds
     // if tally[key] is < 20
-      // use resText.content[X].results.ok
+      // set level to resText.content[X].results.ok
     // if tally[key] is > 20
-      // use resText.content[X].results.below
+      // set level to resText.content[X].results.below
 
+    // for whatever level, grab
+      // reusables.(level).title
+      // reusables.(level).content
 
   // when all answers are processed, loop through the array
   // for each object, compare the tallied points to the area's limits
   // push the relevant content to the object
 
   // pass this array to the template
-
   var policyContainer = templates.policyTemplate(tally);
   utils.render('page', policyContainer);
 };
