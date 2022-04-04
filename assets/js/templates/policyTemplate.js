@@ -1,23 +1,5 @@
 templates.policyTemplate = function(data, params){
 
-// rs.title - page title
-
-// rs.content["risk-threat"].title - area title
-// data["risk-threat"] - score total
-// rs.content["risk-threat"].content.score - your org has scored...
-// rs.reusables.below.threshold - is score total below this or others
-
-// rs.reusables.below.title - might not be needed
-// rs.reusables.below.content - this means it has a...
-// rs.reusables.general.what - recommendation title
-
-// rs.content["risk-threat"].results.below[X].title
-// rs.content["risk-threat"].results.below[X].content
-// rs.reusables.general.why - title
-// rs.content["risk-threat"].content.general.why
-// rs.reusables.general.eg - example title
-// rs.content["risk-threat"].content.general.eg
-
     var answers = "";
     var level;
     for (const item in data){
