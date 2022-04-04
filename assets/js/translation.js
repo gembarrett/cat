@@ -1,7 +1,8 @@
 var translation = (function () {
 
+  var selectedLang = document.getElementsByName("lang")[0].value;
   // Properties
-  var language = 'en';
+  var language = selectedLang;
   var translations = {};
   var onLangChangeCallbacks = [];
 
@@ -30,6 +31,6 @@ var translation = (function () {
     },
     onLangChange: function (callback) {
       this.onLangChangeCallbacks.push(callback);
-    }    
+    }
   };
 })();

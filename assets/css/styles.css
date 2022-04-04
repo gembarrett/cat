@@ -163,10 +163,6 @@ body.buildPage #page {
   white-space: nowrap;
 }
 
-.nav-scroll .links li:last-child {
-  background-color: #066493;
-  color: #fff;
-}
 
 #foot li {
   font-size: 0.8rem;
