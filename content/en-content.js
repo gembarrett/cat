@@ -1,4 +1,4 @@
-var qs = [ // contains all question content
+var en_qs = [ // contains all question content
   {
     "level": "intro", // which of the three levels do these questions belong to
     "questions": [ // contains this level's questions
@@ -1730,7 +1730,7 @@ var qs = [ // contains all question content
   }
 ];
 
-var rs = { // contains all evaluation content
+var en_rs = { // contains all evaluation content
   "title": "Evaluation & feedback",
   "reusables": {
     "below": {
@@ -3405,7 +3405,7 @@ var rs = { // contains all evaluation content
   }
 };
 
-var oc = { // contains all other content
+var en_oc = { // contains all other content
   "ux": {
     "title": "",
     "content": [

@@ -1,7 +1,7 @@
 controllers.policyPage = function(data, params){
 
   var tally = {};
-  var resText = rs.content;
+  var resText = textStore.rs.content;
 
   // for each of the items in rs.content
   for (const res in resText) {

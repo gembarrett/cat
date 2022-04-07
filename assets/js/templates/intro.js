@@ -1,5 +1,5 @@
 templates.intro = function(data){
-  var text = oc;
+  var text = en_oc;
   var content = `
     <div id="intro" class="nav-start contain">
       <div id="logoContainer">

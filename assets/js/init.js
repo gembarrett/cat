@@ -5,6 +5,19 @@ var thisEnv = window.location.origin;
 var templates = {};
 var controllers = {};
 var views = {};
+var bodyLang = "en";
+var textStore = {
+  qs : window[bodyLang+"_qs"],
+  rs : window[bodyLang+"_rs"],
+  oc : window[bodyLang+"_oc"]
+}
+
+
+function updateLang(language) {
+  textStore.qs = window[language+"_qs"];
+  textStore.rs = window[language+"_rs"];
+  textStore.oc = window[language+"_oc"];
+}
 
 window.onload = function(){
   document.querySelector('#no-js').remove();
@@ -12,7 +25,8 @@ window.onload = function(){
       "hashchange",
       function(){utils.router()}
   );
-  // setUpFeedback();
+
+    // setUpFeedback();
   utils.router();
 };
 
@@ -20,8 +34,8 @@ var sections = [];
 
 // initialise counters with the first section and question, this is updated at the end of questions and sections
 // TODO: add a way to track which question is in which section
-for (var q = 0; q < qs.length; q++){
-  sections.push(qs[q].questions);
+for (var q = 0; q < textStore.qs.length; q++){
+  sections.push(textStore.qs[q].questions);
 }
 
 // loop through and create list of questions
