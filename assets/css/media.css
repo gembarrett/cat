@@ -5,8 +5,8 @@
   #menu-check:checked ~ ul {
     align-items: center;
   }
-  #head img {
-    max-width: 47%;
+  #head #logo {
+    max-width: 10%;
   }
   #head {
     justify-content: space-between;

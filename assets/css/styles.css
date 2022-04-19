@@ -38,6 +38,7 @@ body {
   box-sizing: border-box;
   align-items: center;
   z-index: 1;
+  background-color: #000;
 }
 #head a {
   margin:0.5em 0;
@@ -56,7 +57,7 @@ body.buildPage #page {
   padding-top:4em;
 }
 #head.nav-start {
-  opacity:0;
+  /* opacity:0; */
 }
 .nav-scroll #logo{
   filter:brightness(0.9);
