@@ -1,5 +1,13 @@
+@font-face {
+    font-family: fontstack;
+    font-style: normal;
+    src: local("Format_1452");
+}
+
+
 #head, #page, #foot {
   display:flex;
+  font-family: fontstack;
 }
 
 #head img {
@@ -14,6 +22,7 @@
   flex-direction: column;
   align-self: center;
   background-color: #DAD9CF;
+  padding-top:4em;
 }
 
 body {
@@ -35,6 +44,10 @@ body {
   font-size: 0.75em;
 }
 
+#foot img {
+  width:60%;
+}
+
 #foot .contain {
   display: flex;
   flex-direction: row;
@@ -43,6 +56,26 @@ body {
 }
 
 .contain {
-  max-width: 80%;
+  max-width: 70%;
   align-self: center;
+}
+
+#hero {
+  flex-direction: column;
+  display:flex;
+  align-items: center;
+}
+
+#hero img {
+  max-height: 200px;
+  padding:1.5em;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.btn-prim {
+  background-color: #000;
+  color: #DAD9CF;
 }

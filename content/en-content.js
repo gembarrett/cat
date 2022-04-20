@@ -3411,6 +3411,10 @@ var en_oc = { // contains all other content
     "content": [
       {
         "type": "",
+        "text": "Get started"
+      },
+      {
+        "type": "",
         "text": "SAVE & RESUME LATER"
       },
       {
@@ -3440,7 +3444,7 @@ var en_oc = { // contains all other content
     ]
   },
   "proj": {
-    "title": "Cybersecurity Assessment Tool (CAT)",
+    "title": "Cybersecurity Assessment Tool",
     "content": [
       "COVID-19 has fundamentally changed the way we live and work. During this uncertain time, we are all finding new ways to survive and continue our work. This includes using technology more than ever before, raising the already important issue of cybersecurity within civil society organizations. However, finding where to begin and understanding the best way to tackle this topic can feel daunting for even the best-resourced organizations. That’s why we have created this tool.",
       "The Ford Foundation’s Cybersecurity Assessment Tool (CAT) is designed to measure the maturity, resiliency, and strength of an organization’s cybersecurity efforts. We have created this questionnaire with busy nontechnical grant makers, grantee partners, civil society organizations, and nonprofits in mind, and we hope it helps shine some light on a recommended path forward for any organization undertaking a cybersecurity journey. The tool is designed to be taken as a survey in one 30-minute sitting. However, it may require information from several members of your staff, including operations staff or decision makers. We initially created the questionnaire to help BUILD’s grantee partners, and we’re now making a beta version available for public use."

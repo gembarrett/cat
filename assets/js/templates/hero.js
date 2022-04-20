@@ -2,16 +2,10 @@ templates.hero = function(data){
   var text = en_oc;
   var content = `
     <div id="hero">
-      <div id="logoContainer">
-        <div><img id="logoBig" alt="CAT logo" src="" height="80" width="100" /></div>
-        <h1>`+text.proj.title+`</h1>
-      </div>
-      <h2>`+text.proj.content[0]+`</h2>
-      <p>`+text.proj.content[1]+`</p>
-      <div class="btn-wrap wrap-c">
-        <button class="btn btn-prim" id="submit-home-q1">Let's go!</button>
-        </div>
-      </div>
+      <img alt="CAT logo" src="assets/images/CAT-logo_bg.png" />
+      <img alt="CAT logo" src="assets/images/CAT-logo_black.png" />
+      <h1 class="title">`+text.proj.title+`</h1>
+      <button class="btn btn-prim title" id="submit-home-q1">`+text.ux.content[0].text+`</button>
     </div>
     `;
     return content;
