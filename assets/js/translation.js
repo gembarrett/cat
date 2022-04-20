@@ -36,7 +36,7 @@
 // })();
 
 bodyLang = document.body.log;
-checkLanguage(bodyLang);
+// checkLanguage(bodyLang);
 
 function checkLanguage(lang){
 

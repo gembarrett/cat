@@ -1,0 +1,18 @@
+#head img {
+  max-height:36px;
+}
+
+.nav-start > img {
+  display: none;
+}
+
+#page {
+  flex: 1 0 auto;
+  max-width: 80%;
+  align-self: center;
+  background-color: #DAD9CF;
+}
+
+body {
+  background-color:#292929;
+}

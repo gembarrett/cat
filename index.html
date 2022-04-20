@@ -7,8 +7,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/cat-styles.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
-    <link href="assets/css/all.css" rel="stylesheet">
+    <!-- MIGHT NOT BE NEEDED <link href="assets/css/all.css" rel="stylesheet"> -->
 
     <script src="content/en-content.js"></script>
     <script src="content/zz-content.js"></script>
@@ -21,30 +22,27 @@
     <!-- these may need to be moved further down or refactored -->
     <script src="assets/js/start.js"></script>
     <script src="assets/js/keyboard.js"></script>
-    <!-- <script src="assets/js/overlay.js"></script> -->
     <script src="assets/js/edit.js"></script>
     <script src="assets/js/policy.js"></script>
     <script src="assets/js/subpolicies.js"></script>
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
     <link rel="manifest" href="/site.webmanifest">
   </head>
   <body lang="en">
     <div id="head" class="nav-start contain">
-      <a href="/" title="Go to the home page" id="homeLink">
-        <img id="logo" alt="CAT logo" src="assets/images/CAT-logo_white.png">
+      <a href="/">
+        <img alt="CAT text logo" id="link-home" src="assets/images/CAT-logo_white.png">
       </a>
-
+      <img class="nav-scroll" alt="CAT logo" src="assets/images/CAT-logo.png" id="logo-cat">
       <div class="header-menu">
-        <ul id="menu" class="links">
+        <img src="assets/images/hamburger.png">
+        <!-- <ul id="menu" class="links">
           <li><a id="bu" href="/#build" title="Use the tool">Use the tool</a></li>
           <li id="editBtn" class="disabled" tabindex="0" title="Click or press E to edit your answers">EDIT</li>
           <select name="language">
             <option value="en">EN</option>
             <option value="zz">ZZ</option>
           </select>
-        </ul>
+        </ul> -->
       </div>
 
     </div>

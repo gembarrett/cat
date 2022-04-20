@@ -60,7 +60,6 @@ body.buildPage #page {
   /* opacity:0; */
 }
 .nav-scroll #logo{
-  filter:brightness(0.9);
 }
 
 #page {
@@ -854,12 +853,7 @@ span.q0-only {
 
 
 
-/* reset style on logo link */
-#homeLink:focus {
-  box-shadow: initial;
-  border: initial;
-  outline: none;
-}
+
 button::-moz-focus-inner {
   outline: none;
   border: none;
