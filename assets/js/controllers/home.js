@@ -1,5 +1,5 @@
 controllers.homePage = function(data, params){
-  var homeContent = templates.intro();
+  var homeContent = templates.hero();
   homeContent += '<div class="contain">';
   homeContent += templates.homeSection(en_oc.proj);
   homeContent += templates.homeSection(en_oc.team);

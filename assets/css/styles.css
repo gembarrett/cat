@@ -33,12 +33,10 @@ body {
 #head {
   position: fixed;
   width:100%;
-  display: flex;
   padding: 5px 4em 0 4em;
   box-sizing: border-box;
   align-items: center;
   z-index: 1;
-  background-color: #000;
 }
 #head a {
   margin:0.5em 0;
@@ -868,11 +866,6 @@ summary::marker {
 }
 #no-js.window {
   flex-direction: column;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.contain > * {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;

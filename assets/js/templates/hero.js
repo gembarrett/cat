@@ -1,7 +1,7 @@
-templates.intro = function(data){
+templates.hero = function(data){
   var text = en_oc;
   var content = `
-    <div id="intro" class="nav-start contain">
+    <div id="hero">
       <div id="logoContainer">
         <div><img id="logoBig" alt="CAT logo" src="" height="80" width="100" /></div>
         <h1>`+text.proj.title+`</h1>

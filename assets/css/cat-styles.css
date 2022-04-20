@@ -1,3 +1,7 @@
+#head, #page, #foot {
+  display:flex;
+}
+
 #head img {
   max-height:36px;
 }
@@ -7,12 +11,38 @@
 }
 
 #page {
-  flex: 1 0 auto;
-  max-width: 80%;
+  flex-direction: column;
   align-self: center;
   background-color: #DAD9CF;
 }
 
 body {
   background-color:#292929;
+}
+
+#head, #foot {
+  background-color: #000;
+}
+
+#foot {
+  width:100%;
+  justify-content: center;
+  padding:1em 0;
+}
+
+#foot p {
+  color:#fff;
+  font-size: 0.75em;
+}
+
+#foot .contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex:1 0 auto;
+}
+
+.contain {
+  max-width: 80%;
+  align-self: center;
 }
