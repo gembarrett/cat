@@ -29,11 +29,15 @@
   </head>
   <body lang="en">
     <div id="head" class="nav-start">
+      <div class="glyph">
       <a href="/">
         <img alt="CAT text logo" id="link-home" src="assets/images/CAT-logo_white.png">
       </a>
-      <img class="nav-scroll" alt="CAT logo" src="assets/images/CAT-logo.png" id="logo-cat">
-      <div class="header-menu">
+    </div>
+    <div class="cat-logo">
+      <img class="nav-scroll" alt="CAT logo" src="assets/images/CAT-logo.png">
+    </div>
+    <div class="header-menu">
         <img src="assets/images/hamburger.png">
         <!-- <ul id="menu" class="links">
           <li><a id="bu" href="/#build" title="Use the tool">Use the tool</a></li>
@@ -53,14 +57,17 @@
         <p>If your threat model requires you to keep Javascript disabled, you can instead go to <a href="https://github.com/gembarrett/cat" title="View the open-source SOAP code at GitHub">SOAP's GitHub repository</a> and grab the code to run the whole website offline on your local computer.</p>
       </div>
     </div>
-    <div id="foot" class="footer">
+    <div id="foot">
       <div class="contain">
         <a href="https://www.fordfoundation.org/" target="_blank"><img src="assets/images/ford-foundation-logo.png" /></a>
-        <p>&#169; 2022 The Ford Foundation</p>
+        <p><span class="copyright">&#169;</span> 2022 The Ford Foundation</p>
       </div>
     </div>
     <script src="assets/js/templates/homeSection.js"></script>
+
     <script src="assets/js/templates/hero.js"></script>
+    <script src="assets/js/templates/trio.js"></script>
+
     <script src="assets/js/templates/questionsTemplate.js"></script>
     <script src="assets/js/templates/policyTemplate.js"></script>
     <script src="assets/js/controllers/home.js"></script>

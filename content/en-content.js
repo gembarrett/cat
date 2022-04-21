@@ -3451,7 +3451,7 @@ var en_oc = { // contains all other content
     ]
   },
   "team": {
-    "title": "Who built this tool",
+    "title": "Who built this",
     "content": [
       {
         "name": "Martijn Grooten",

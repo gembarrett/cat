@@ -4,17 +4,40 @@
     src: local("Format_1452");
 }
 
-
-#head, #page, #foot {
-  display:flex;
+body, .btn {
   font-family: fontstack;
 }
 
-#head img {
-  max-height:36px;
+#head, #page, #foot {
+  display:flex;
 }
 
-.nav-start > img {
+#head > div {
+  width: 33%;
+}
+
+.glyph img, .header-menu img {
+  max-height:30px;
+  padding: 5px 0;
+}
+
+#head .header-menu img {
+  max-height: 20px;
+}
+
+.header-menu {
+  text-align: right;
+}
+
+.cat-logo {
+  text-align: center;
+}
+
+.cat-logo img {
+  max-height: 40px;
+}
+
+.nav-start .cat-logo img {
   display: none;
 }
 
@@ -41,7 +64,11 @@ body {
 
 #foot p {
   color:#fff;
-  font-size: 0.75em;
+  font-size: 0.90em;
+}
+
+#foot .copyright {
+  font-family: 'Helvetica', sans-serif;
 }
 
 #foot img {
@@ -52,11 +79,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex:1 0 auto;
+  align-items: center;
 }
 
 .contain {
-  max-width: 70%;
+  width: 60%;
   align-self: center;
 }
 
@@ -67,15 +94,32 @@ body {
 }
 
 #hero img {
-  max-height: 200px;
-  padding:1.5em;
+  max-height: 140px;
+  margin:2em 0 1em;
+}
+
+#hero .btn {
+  width:33%;
+}
+
+#hero h1 {
+  font-size: 1.8em;
 }
 
 .title {
   text-transform: uppercase;
 }
 
+
 .btn-prim {
   background-color: #000;
   color: #DAD9CF;
+}
+
+.trio-3 {
+  width:33%;
+}
+
+.trio-3 img {
+  width:100%;
 }
