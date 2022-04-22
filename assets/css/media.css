@@ -1,4 +1,8 @@
-@media (min-width:600px) {
+@media (max-width:1399px) {
+
+}
+
+/* @media (min-width:600px) {
   #head a {
     width: auto;
   }
@@ -43,9 +47,7 @@
   #overview {
     flex-wrap: wrap;
   }
-  .main-content > div {
-    padding:2em;
-  }
+
   .text-buttons-wrap {
     margin: 0;
     max-width: initial;
@@ -256,7 +258,6 @@
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-    /* fallback */
     justify-content: center;
     justify-content: space-evenly;
     padding-left:0;
@@ -491,4 +492,4 @@
   #teamContentCols {
     flex-direction: column;
   }
-}
+} */
