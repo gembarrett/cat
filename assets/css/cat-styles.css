@@ -116,10 +116,36 @@ body {
   color: #DAD9CF;
 }
 
-.trio-3 {
-  width:33%;
+#trio {
+  display: flex;
+  flex-direction: row;
 }
 
-.trio-3 img {
+.trio-col {
+  width:33.33333%;
+}
+
+.trio-col img {
   width:100%;
+  display:block;
+}
+
+.trio-col h2 {
+  margin:0;
+  text-align: center;
+  font-size: 2.6em;
+  padding: 0.5em 1em 1em;
+  line-height: 1.2em;
+}
+
+.bg-green {
+  background-color: #009E72;
+}
+
+.bg-yellow {
+  background-color: #DECD38;
+}
+
+.bg-brown {
+  background-color: #A17354;
 }
