@@ -23,11 +23,11 @@
   }
   #menu {
     padding:0 0.5em;
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
   .trio-col h2 {
     font-size: 2.2em;
   }
@@ -45,6 +45,9 @@
   .btn.close {
     display:block;
   }
+  #menu-container #close-menu {
+    display: inline-block;
+  }
 }
 
 @media (max-width:700px) {
@@ -59,10 +62,6 @@
 @media (max-width:550px) {
   .trio-col h2 {
     font-size: 1.8em;
-  }
-  #menu {
-    height: 100%;
-    width: 100%;
   }
 }
 

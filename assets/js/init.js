@@ -20,14 +20,26 @@ function updateLang(language) {
 }
 
 function setUpMenu() {
-  var trigger = document.querySelector('#menu-trigger');
-  var links = document.querySelector('#menu-container');
-  trigger.addEventListener("click", function() {
-    // dim the menu trigger icon
-    trigger.classList.toggle('dim');
-    // show the #menu
-    links.classList.toggle('close');
+  var burger = document.querySelector('#menu-trigger');
+  var close = document.querySelector('#close-menu');
+
+  burger.addEventListener("click", function(e) {
+    toggleMenu(e);
   });
+  close.addEventListener('click', function() {
+    toggleMenu("c");
+  });
+}
+
+function toggleMenu(order) {
+  var menu = document.querySelector('#menu-container');
+  if (order == "c") {
+    document.querySelector('#menu-trigger').classList.toggle('dim');
+    menu.classList.add('close');
+  } else {
+    order.target.classList.toggle('dim');
+    menu.classList.toggle('close');
+  }
 }
 
 window.onload = function(){

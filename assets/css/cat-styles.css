@@ -51,6 +51,11 @@
   display: none;
 }
 
+/* TODO: figure out why this still allows scroll when menu is open */
+.no-scroll {
+  overflow: hidden;
+}
+
 #page {
   flex-direction: column;
   align-self: center;
@@ -179,6 +184,16 @@ body {
   background-color: rgba(0,0,0,0.95);
   align-self: end;
   padding-top:5em;
+  text-align: center;
+}
+
+#menu-container span {
+  color:#fff;
+  font-size: 2em;
+  border: 4px solid currentColor;
+  padding:0.5em 0.55em 0.25em;
+  border-radius: 50%;
+  display:none;
 }
 
 #menu {
