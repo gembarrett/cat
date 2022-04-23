@@ -194,6 +194,11 @@ body {
   padding:0.5em 0.55em 0.25em;
   border-radius: 50%;
   display:none;
+  cursor: pointer;
+}
+
+#menu-container span:active, #menu li:active, #menu-trigger:active {
+  opacity:0.5;
 }
 
 #menu {

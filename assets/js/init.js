@@ -29,11 +29,23 @@ function setUpMenu() {
   close.addEventListener('click', function() {
     toggleMenu("c");
   });
+
+  document.querySelector('body').addEventListener('click', function(e){
+    // if menu is open
+    if (!document.querySelector('#menu-container').classList.contains('close')) {
+      if (e.target.id !== 'menu-container') {
+        toggleMenu("c");
+        console.log(e.target.id);
+      } else {
+        console.log(e.target);
+      }
+    }
+  })
 }
 
 function toggleMenu(order) {
   var menu = document.querySelector('#menu-container');
-  if (order == "c") {
+  if (order === "c") {
     document.querySelector('#menu-trigger').classList.toggle('dim');
     menu.classList.add('close');
   } else {
