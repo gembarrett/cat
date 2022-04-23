@@ -1,11 +1,21 @@
 @font-face {
-    font-family: fontstack;
+    font-family: Format_1452;
     font-style: normal;
     src: local("Format_1452");
 }
 
-body, .btn {
-  font-family: fontstack;
+@font-face {
+    font-family: Salford_Sans_black;
+    font-style: black;
+    src: url('webfonts/Lewis McGuffie Type - Salford Sans Black.otf') format('opentype');
+}
+
+.format {
+  font-family: Format_1452;
+}
+
+.salford {
+  font-family: Salford_Sans_black;
 }
 
 #head, #page, #foot {
@@ -152,4 +162,34 @@ body {
 
 .bg-brown {
   background-color: #A17354;
+}
+
+#menu-trigger, #link-home {
+  cursor: pointer;
+}
+
+#menu-trigger.dim {
+  opacity:0.25;
+}
+
+#menu-container {
+  width:33.33333%;
+  position: fixed;
+  z-index: 0;
+  background-color: rgba(0,0,0,0.95);
+  align-self: end;
+  padding-top:5em;
+}
+
+#menu {
+  text-align: center;
+  color: #fff;
+  list-style: none;
+  font-size: 2.5em;
+  padding-left:0;
+  line-height: 2.5em;
+}
+
+#menu-container.close {
+  display:none;
 }

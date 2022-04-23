@@ -19,13 +19,24 @@ function updateLang(language) {
   textStore.oc = window[language+"_oc"];
 }
 
+function setUpMenu() {
+  var trigger = document.querySelector('#menu-trigger');
+  var links = document.querySelector('#menu-container');
+  trigger.addEventListener("click", function() {
+    // dim the menu trigger icon
+    trigger.classList.toggle('dim');
+    // show the #menu
+    links.classList.toggle('close');
+  });
+}
+
 window.onload = function(){
   document.querySelector('#no-js').remove();
   window.addEventListener(
       "hashchange",
       function(){utils.router()}
   );
-
+  setUpMenu();
     // setUpFeedback();
   utils.router();
 };

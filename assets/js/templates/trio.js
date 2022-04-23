@@ -9,6 +9,6 @@ templates.trio = function(data){
     cols += `<img src="assets/images/`+i+`-vertical.png">`;
     cols += `<h2 class="title bg-`+colors[i-1]+`">`+titles[i-1]+`</h2></div>`;
   }
-  var content = `<div id="trio">`+cols+`</div>`;
+  var content = `<div id="trio" class="format">`+cols+`</div>`;
     return content;
 };
