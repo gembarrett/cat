@@ -24,19 +24,22 @@ var utils = (function(){
   return {
     router: function(route, data){
       route = route || location.hash.slice(1) || 'home';
+
       var temp = route.split('?');
       var route_split = temp.length;
       var function_to_invoke;
-      if ((temp[0] === 'build') || (temp[0].startsWith('b'))) {
+      if (temp[0] === 'basics') {
+        function_to_invoke = 'basicsView';
+      // }
+      // if ((temp[0] === 'build') || (temp[0].startsWith('b'))) {
+      //   function_to_invoke = 'questionsView';
+      // } else if (temp[0] === 'policy') {
+      //   if (currentState.answers.length > 0) {
+      //     console.log('has answers');
+      //     function_to_invoke = 'policyView';
+    } else if (temp[0] === 'build') {
+        // window.location.href="/#build";
         function_to_invoke = 'questionsView';
-      } else if (temp[0] === 'policy') {
-        if (currentState.answers.length > 0) {
-          console.log('has answers');
-          function_to_invoke = 'policyView';
-        } else {
-          window.location.href="/#build";
-          // function_to_invoke = 'questionsView';
-        }
       } else {
         function_to_invoke = temp[0] || false;
       }
@@ -50,8 +53,16 @@ var utils = (function(){
       }
     },
 
-    render: function(element_id, content){
+    render: function(element_id, content, scroll_loc){
         document.getElementById(element_id).innerHTML = content;
+        console.log(scroll_loc);
+        if (scroll_loc[0]) {
+          var element = document.getElementById(scroll_loc[0]);
+          console.log(element);
+          element.scrollIntoView();
+        } else {
+          window.scrollTo(0,0);
+        }
     },
 
   };
