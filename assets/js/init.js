@@ -31,25 +31,27 @@ function setUpMenu() {
   });
 
   document.querySelector('body').addEventListener('click', function(e){
-    // if menu is open
-    if (!document.querySelector('#menu-container').classList.contains('close')) {
-      if (e.target.id !== 'menu-container') {
-        toggleMenu("c");
-        console.log(e.target.id);
-      } else {
-        console.log(e.target);
-      }
+    // the menu container only contains close when the menu is closed
+    var isMenuClosed = document.querySelector('#menu-container').classList.contains('close');
+
+    // the click shouldn't have occurred on the menu-trigger nor inside the menu
+    var isClickInside = (e.target.id === 'menu-trigger') || (e.target.id === 'menu-container');
+
+    // if menu is open and click was outside of menu trigger or container
+    if (!isMenuClosed && !isClickInside) {
+      // close the menu
+      toggleMenu("c");
     }
-  })
+  });
 }
 
 function toggleMenu(order) {
   var menu = document.querySelector('#menu-container');
   if (order === "c") {
-    document.querySelector('#menu-trigger').classList.toggle('dim');
+    document.querySelector('#menu-trigger').classList.remove('dim');
     menu.classList.add('close');
   } else {
-    order.target.classList.toggle('dim');
+    document.querySelector('#menu-trigger').classList.toggle('dim');
     menu.classList.toggle('close');
   }
 }
