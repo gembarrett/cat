@@ -1,7 +1,6 @@
 controllers.basicsPage = function(data, params){
-  var basicsContent = templates.how();
-  basicsContent += templates.legal();
-  basicsContent += templates.team();
-  console.log(params);
+  var basicsContent = templates.how(data);
+  basicsContent += templates.legal(data);
+  basicsContent += templates.team(data);
   utils.render('page', basicsContent, params);
 };

@@ -30,16 +30,10 @@ var utils = (function(){
       var function_to_invoke;
       if (temp[0] === 'basics') {
         function_to_invoke = 'basicsView';
-      // }
-      // if ((temp[0] === 'build') || (temp[0].startsWith('b'))) {
-      //   function_to_invoke = 'questionsView';
-      // } else if (temp[0] === 'policy') {
-      //   if (currentState.answers.length > 0) {
-      //     console.log('has answers');
-      //     function_to_invoke = 'policyView';
-    } else if (temp[0] === 'build') {
-        // window.location.href="/#build";
+        var data = en_oc;
+    } else if (temp[0] === 'build') { // TODO: references to 'build' should be changed to 'start'
         function_to_invoke = 'questionsView';
+        // could the question data be passed here instead of in a global variable?
       } else {
         function_to_invoke = temp[0] || false;
       }
@@ -55,12 +49,12 @@ var utils = (function(){
 
     render: function(element_id, content, scroll_loc){
         document.getElementById(element_id).innerHTML = content;
-        console.log(scroll_loc);
-        if (scroll_loc[0]) {
+        // if there's a location to scroll to
+        if ((scroll_loc !== undefined) && (scroll_loc[0])) {
           var element = document.getElementById(scroll_loc[0]);
-          console.log(element);
+          // TODO: calculate current height of header then add equal margin-top inline to element before scrolling
           element.scrollIntoView();
-        } else {
+        } else { // otherwise just scroll to top
           window.scrollTo(0,0);
         }
     },

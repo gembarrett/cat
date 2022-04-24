@@ -1,5 +1,6 @@
 templates.questionsTemplate = function(data, params){
   // if there's a snapshot url then build the currentState array
+  // TODO: add error catching
   if (params){
     // get the answer groups
     var snapQs = params[0].split("_");
