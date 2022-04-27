@@ -10,12 +10,29 @@
     src: url('webfonts/Lewis McGuffie Type - Salford Sans Black.otf') format('opentype');
 }
 
+@font-face {
+    font-family: Salford_Sans_medium;
+    font-style: medium;
+    src: url('webfonts/Lewis McGuffie Type - Salford Sans Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Salford_Sans_bold;
+    font-style: bold;
+    src: url('webfonts/Lewis McGuffie Type - Salford Sans Bold.otf') format('opentype');
+}
+
+
 .format {
   font-family: Format_1452;
 }
 
 .salford {
   font-family: Salford_Sans_black;
+}
+
+.salford-text {
+  font-family: Salford_Sans_medium;
 }
 
 #head, #page, #foot {

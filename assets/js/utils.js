@@ -63,7 +63,8 @@ var utils = (function(){
 
 })();
 
-function parseContent(data, array){
+function parseContent(data, array, style){
+  array += `<div class=`+style+`>`;
   for (var p = 0; p < data.length; p++){
     if (data[p].items !== undefined) {
       array += `<ul>`;
@@ -75,10 +76,6 @@ function parseContent(data, array){
       array += `<p>`+data[p]+`</p>`;
     }
   }
-  console.log(array);
+  array += `</div>`;
   return array;
-}
-
-function testingLocality(word) {
-  console.log(word);
 }
