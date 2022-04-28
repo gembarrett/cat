@@ -230,3 +230,30 @@ body {
 #menu-container.close {
   display:none;
 }
+
+.basics-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  bottom: -2em;
+}
+.basics-head img {
+  max-height:300px;
+}
+.basics-head h2 {
+  font-size: 5.5em;
+  line-height: 1em;
+  font-weight: lighter;
+  text-align: left;
+  margin:0;
+}
+
+.contain-75 {
+  width:75%;
+}
+
+#how {
+  margin-top:-1.5em;
+}

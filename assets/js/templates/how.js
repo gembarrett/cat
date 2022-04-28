@@ -1,10 +1,12 @@
 templates.how = function(data, params){
 
   var content = `<div id="how" class="format">
-                  <div class="basics-head">
-                    <h1 class="title">`+data.process.title+`</h1>
-                    <img src="/assets/images/3-header.png" />
-                  </div>`;
+                  <div class="bg-green">
+                    <div class="basics-head contain-75">
+                      <h2 class="title">`+data.process.title+`</h2>
+                      <img src="/assets/images/3-header.png" />
+                      </div>
+                    </div>`;
 
   content += `<button class="btn btn-prim title format">`+data.ux.content[0].text+`</button>`;
 
