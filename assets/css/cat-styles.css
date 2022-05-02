@@ -31,8 +31,13 @@
   font-family: Salford_Sans_black;
 }
 
+.salford-bold {
+  font-family: Salford_Sans_bold;
+}
+
 .salford-text {
   font-family: Salford_Sans_medium;
+  font-size: 1.2em;
 }
 
 #head, #page, #foot {
@@ -256,4 +261,22 @@ body {
 
 #how {
   margin-top:-1.5em;
+}
+
+.trio-col a:active:focus {
+  display: block;
+  border: 0;
+  color: inherit;
+}
+
+.trio-col a {
+  color: inherit;
+}
+
+.basics .salford-text {
+  margin: 3em 5.5em 1em;
+}
+
+.basics .salford-bold {
+  text-transform: uppercase;
 }
