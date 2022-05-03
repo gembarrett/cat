@@ -120,7 +120,7 @@ body {
 }
 
 .contain {
-  width: 60%;
+  width: 55%;
   align-self: center;
 }
 
@@ -166,6 +166,14 @@ body {
   width:33.33333%;
 }
 
+.trio-col span {
+  display:block;
+}
+
+.trio-col a:focus {
+  border:0;
+}
+
 .trio-col img {
   width:100%;
   display:block;
@@ -174,7 +182,7 @@ body {
 .trio-col h2 {
   margin:0;
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2.4em;
   padding: 0.5em 1em 1em;
   line-height: 1.2em;
 }
@@ -279,4 +287,13 @@ body {
 
 .basics .salford-bold {
   text-transform: uppercase;
+}
+
+.person {
+  display: flex;
+  align-items: start;
+}
+
+.person img {
+  margin: 1.5em 1em 0 0;
 }
