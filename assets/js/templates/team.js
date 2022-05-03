@@ -1,12 +1,12 @@
 templates.team = function(data){
   var content = `<div id="team" class="basics">
-                    <div class="bg-brown format">
-                      <div class="basics-head contain-75">
+                    <div class="format bg-brown">
+                      <div class="basics-head contain-70">
                         <h2 class="title"><span>`+data.team.title+`</span>`+data.team.subtitle+`</h2>
                         <img src="/assets/images/1-header.png" />
                       </div>
                     </div>
-                    <div class="salford-text">`;
+                    <div class="people contain-70 salford-text">`;
 
   // put team.content into an array
   var team = [];
@@ -21,11 +21,13 @@ templates.team = function(data){
     const rando = team[Math.floor(Math.random() * team.length)];
     // add img, span name and p for that element
     teamContent += `<div class="person">
-                      <div class="pic">
+                      <div class="inner">
                         <img src="/assets/images/`+rando.ref+`.png" />
-                      </div>
-                      <div class="text">
                         <p><span class="salford-bold">`+rando.name+`</span>`+rando.p+`</p>
+                      </div>
+                      <div class="borders">
+                        <div class="brown"></div>
+                        <div class="grey"></div>
                       </div>
                     </div>`;
     // remove ref from array

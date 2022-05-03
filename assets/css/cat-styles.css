@@ -250,14 +250,15 @@ body {
   flex-direction: row;
   align-items: center;
   margin: auto;
-  position: relative;
-  bottom: -2em;
+  justify-content: space-between;
 }
 .basics-head img {
   max-height:300px;
+  position: relative;
+  bottom: -2em;
 }
 .basics-head h2 {
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1em;
   font-weight: lighter;
   text-align: left;
@@ -268,12 +269,9 @@ body {
   display:block;
 }
 
-.contain-75 {
-  width:75%;
-}
-
-#how {
-  margin-top:-1.5em;
+.contain-70 {
+  width:70%;
+  margin: auto;
 }
 
 .trio-col a:active:focus {
@@ -286,9 +284,6 @@ body {
   color: inherit;
 }
 
-.basics .salford-text {
-  margin: 3em 5.5em 1em;
-}
 
 .basics .salford-bold {
   text-transform: uppercase;
@@ -296,22 +291,41 @@ body {
 
 .person {
   display: flex;
-  align-items: stretch;
-  flex-direction: row;
+  flex-direction: column;
+  margin-top:1em;
 }
 
 .person img {
   margin-top: 1.5em;
   max-width: 140px;
+  height: 100%;
 }
 
-.person .pic {
+.person p {
+  width: 80%;
+  margin-left: 1em;
+}
+
+.borders .brown {
   border-bottom: 0.5em solid #A17354;
-  margin-bottom: -5px;
-  padding-right: 0.5em;
+  height: 20px;
+  width: 170px;
 }
 
-.person .text  {
-  border-bottom: 1px solid #999999;
-  padding-left:0.5em;
+.borders .grey {
+  border-bottom: 1px solid #999;
+  height: 20px;
+  width:80%;
+}
+
+.person .borders {
+  display: flex;
+  height: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.person .inner {
+  display: flex;
+  flex-direction: row;
 }
