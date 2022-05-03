@@ -37,7 +37,8 @@
 
 .salford-text {
   font-family: Salford_Sans_medium;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  line-height: 1.5em;
 }
 
 #head, #page, #foot {
@@ -256,11 +257,15 @@ body {
   max-height:300px;
 }
 .basics-head h2 {
-  font-size: 5.5em;
+  font-size: 5em;
   line-height: 1em;
   font-weight: lighter;
   text-align: left;
   margin:0;
+}
+
+.basics-head h2 span {
+  display:block;
 }
 
 .contain-75 {
@@ -291,9 +296,22 @@ body {
 
 .person {
   display: flex;
-  align-items: start;
+  align-items: stretch;
+  flex-direction: row;
 }
 
 .person img {
-  margin: 1.5em 1em 0 0;
+  margin-top: 1.5em;
+  max-width: 140px;
+}
+
+.person .pic {
+  border-bottom: 0.5em solid #A17354;
+  margin-bottom: -5px;
+  padding-right: 0.5em;
+}
+
+.person .text  {
+  border-bottom: 1px solid #999999;
+  padding-left:0.5em;
 }

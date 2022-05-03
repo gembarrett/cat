@@ -2,7 +2,7 @@ templates.team = function(data){
   var content = `<div id="team" class="basics">
                     <div class="bg-brown format">
                       <div class="basics-head contain-75">
-                        <h2 class="title">`+data.team.title+`</h2>
+                        <h2 class="title"><span>`+data.team.title+`</span>`+data.team.subtitle+`</h2>
                         <img src="/assets/images/1-header.png" />
                       </div>
                     </div>
@@ -20,7 +20,14 @@ templates.team = function(data){
     // choose random element from array
     const rando = team[Math.floor(Math.random() * team.length)];
     // add img, span name and p for that element
-    teamContent += `<div class="person"><img src="/assets/images/`+rando.ref+`.png" /><p><span class="salford-bold">`+rando.name+`</span>`+rando.p+`</p></div>`;
+    teamContent += `<div class="person">
+                      <div class="pic">
+                        <img src="/assets/images/`+rando.ref+`.png" />
+                      </div>
+                      <div class="text">
+                        <p><span class="salford-bold">`+rando.name+`</span>`+rando.p+`</p>
+                      </div>
+                    </div>`;
     // remove ref from array
     team = team.filter(person => person.ref !== rando.ref);
   }

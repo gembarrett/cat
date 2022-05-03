@@ -2,7 +2,7 @@ templates.legal = function(data){
   var content = `<div id="legal" class="basics">
                   <div class="bg-yellow format">
                     <div class="basics-head contain-75">
-                      <h2 class="title">`+data.legal.title+`</h2>
+                      <h2 class="title"><span>`+data.legal.title+`</span>`+data.legal.subtitle+`</h2>
                       <img src="/assets/images/2-header.png" />
                     </div>
                   </div>`;
