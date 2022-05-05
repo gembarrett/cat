@@ -211,10 +211,10 @@ body {
 #menu-container {
   width:33.33333%;
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   background-color: rgba(0,0,0,0.95);
   align-self: end;
-  padding-top:5em;
+  margin-top:5em;
   text-align: center;
 }
 
@@ -245,6 +245,10 @@ body {
   display:none;
 }
 
+#how {
+  margin-bottom: 2em;
+}
+
 .basics-head {
   display: flex;
   flex-direction: row;
@@ -267,6 +271,14 @@ body {
 
 .basics-head h2 span {
   display:block;
+}
+
+.basics .btn {
+  margin: 1em 0 0.5em
+}
+
+.basics .btn.right {
+  float: right;
 }
 
 .contain-70 {
@@ -328,4 +340,14 @@ body {
 .person .inner {
   display: flex;
   flex-direction: row;
+}
+
+#legal div p:nth-child(1) {
+  border-left: 15px solid #DECD38;
+  padding-left: 2em;
+}
+
+#how div p:nth-child(2) {
+  border-left: 15px solid #009E72;
+  padding-left: 1.5em;
 }

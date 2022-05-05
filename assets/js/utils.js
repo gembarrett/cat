@@ -63,8 +63,7 @@ var utils = (function(){
 
 })();
 
-function parseContent(data, array, style){
-  array += `<div class=`+style+`>`;
+function parseContent(data, array){
   for (var p = 0; p < data.length; p++){
     if (data[p].items !== undefined) {
       array += `<ul>`;
@@ -76,6 +75,5 @@ function parseContent(data, array, style){
       array += `<p>`+data[p]+`</p>`;
     }
   }
-  array += `</div>`;
   return array;
 }

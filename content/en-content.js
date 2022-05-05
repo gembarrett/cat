@@ -3491,16 +3491,7 @@ var en_oc = { // contains all other content
     "subtitle": "it works",
     "content": [
       "This questionnaire is designed to help you identify strengths and weaknesses in your cybersecurity approach, as well as provide resources for improvement. After you complete the assessment, you’ll receive a personalized response and recommendations.",
-      "The assessment will cover four key areas:",
-      {
-        "type": "ul",
-        "items": [
-          "Operational Security",
-          "Device Security",
-          "Account Security",
-          "Associated Risks"
-        ]
-      },
+      "The assessment will cover four key areas: Operational Security - Device Security - Account Security - Associated Risks",
       "This assessment will take approximately 30 to 40 minutes of your organization’s time. You may need to ask other staff members or third-party contractors for answers to some of these questions, depending on how your organization is structured.",
       "The Ford Foundation does not store your data when you use this tool. The data are stored in an encrypted database at FormStack, a leading online provider. We do receive anonymous results about the questionnaire’s general performance to help us understand our grantees’ needs."
     ]

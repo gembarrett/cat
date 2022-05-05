@@ -7,8 +7,10 @@ templates.legal = function(data){
                     </div>
                   </div>`;
 
-  content = parseContent(data.legal.content, content, '"salford-text contain-70"');
+  content += '<div class="salford-text contain-70">';
 
-  content += `<button class="btn btn-prim title format">`+data.ux.content[0].text+`</button></div>`;
+  content = parseContent(data.legal.content, content);
+
+  content += `<button class="btn btn-prim title format right">`+data.ux.content[0].text+`</button></div></div>`;
   return content;
 };
