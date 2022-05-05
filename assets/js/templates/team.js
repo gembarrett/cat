@@ -35,6 +35,6 @@ templates.team = function(data){
   }
 
   // add the randomised list of team members to the page
-  content += teamContent + `</div><button class="btn btn-prim title format">`+data.ux.content[0].text+`</button></div>`;
+  content += teamContent + `<button class="btn btn-prim title format right">`+data.ux.content[0].text+`</button></div></div>`;
   return content;
 };
