@@ -8,10 +8,10 @@ templates.how = function(data, params){
                       </div>
                     </div>`;
 
-  content += '<div class="salford-text contain-70"><button class="btn btn-prim title format left">'+data.ux.content[0].text+'</button>';
+  content += '<div class="salford-text contain-70"><button class="btn btn-prim title format left"><a href="/#build">'+data.ux.content[0].text+'</a></button>';
 
   content = parseContent(data.process.content, content);
 
-  content += `<button class="btn btn-prim title format right">`+data.ux.content[0].text+`</button></div></div>`;
+  content += `<button class="btn btn-prim title format right"><a href="/#build">`+data.ux.content[0].text+`</a></button></div></div>`;
   return content;
 };

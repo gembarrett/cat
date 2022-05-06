@@ -38,7 +38,7 @@
 .salford-text {
   font-family: Salford_Sans_medium;
   font-size: 1.4em;
-  line-height: 1.5em;
+  line-height: 1.3em;
 }
 
 #head, #page, #foot {
@@ -151,7 +151,6 @@ body {
 .title {
   text-transform: uppercase;
 }
-
 
 .btn-prim {
   background-color: #000;
@@ -272,6 +271,10 @@ body {
 
 .basics .btn {
   margin: 1em 0;
+}
+
+.basics .btn a {
+  color:#fff;
 }
 
 .basics .btn.right {
