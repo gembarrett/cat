@@ -64,7 +64,6 @@ var utils = (function(){
 })();
 
 function parseContent(data, array){
-  console.log(array);
   for (var p = 0; p < data.length; p++){
     if (data[p].items !== undefined) {
       array += `<ul>`;
