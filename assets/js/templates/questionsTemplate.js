@@ -33,13 +33,21 @@ templates.questionsTemplate = function(data, params){
   }
   // build the page elements
   var content = `
+      <div class="level">
+        <div class="inner">
+            <h1 class="zup">Level</h1>
+            <img class="" src="assets/images/1-level.png">
+            <img src="assets/images/1-block.png">
+        </div>
+        <img src="assets/images/1-horizontal.png">
+      </div>
       <div class="box contain"><progress max="`+questionsList.length+`" value="0"></progress>`;
 
   for(var i = 0; i < questionsList.length; i++) {
       var question = data[i];
       var currentQ = "q-"+i;
       // create the start of the form
-      content += `<form id="`+currentQ+ `" class="questionContent`+ (i !== 0 ? '">' : ' current">');
+      content += `<form id="`+currentQ+ `" class="questionContent salford-text`+ (i !== 0 ? '">' : ' current">');
       // if it's a question
       // if (question.isQ) {
         var panel = "";
