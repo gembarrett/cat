@@ -1,38 +1,10 @@
 function addChangeListeners() {
-  // add listener for edit button
-  var editBtn = document.getElementById("editBtn");
-  editBtn.addEventListener('click', editAnswers, false);
-
-  // TODO: get skip/next fully working
   // grab all the form inputs
   var elements = Array.from(document.querySelectorAll('.form-el > input'));
-  // TODO: add these event listeners back in when required questions are reimplemented
-  // for (var e = 0; e < elements.length; e++) {
-  //   // if it's a radio or checkbox
-  //   if ((elements[e].type === "radio") || (elements[e].type === "checkbox")){
-  //     elements[e].addEventListener('change', toggleSkip);
-  //   } else {
-  //     elements[e].oninput = toggleSkip;
-  //   }
-  // }
 }
-
 
 function updateValue(e) {
   log.textContent = e.target.value;
-}
-
-function toggleSkip(e){
-  var button =  document.getElementById('submitAnswers');
-  // if the box contains text and the button is currently "Skip"
-  if ((e.data !== null) && (button.innerText === "Skip")){
-    // change button text
-    button.innerText = "Next";
-    button.disabled = false;
-  } else if ((e.data === null) && (button.innerText === "Next")){
-    button.innerText = "Skip";
-    button.disabled = true;
-  }
 }
 
 function moveForward(id) {
@@ -55,14 +27,13 @@ function isExcludedQ(id) {
   id = moveForward(id);
   // for each of the questions remaining
   for (var q = id; q < questionsList.length; q++) {
+
+    // THIS MAY BE DELETED IF EXCLUSIONS AREN'T IMPLEMENTED
     // if the question isn't on the list
     if (currentState.exclusions.indexOf(parseInt(id)) === -1) {
       // if the question is not excluded
       // break the loop
-      // console.log('next');
-      // console.log('Go to next question.');
     } else {
-      // console.log('skip');
       // update everything to the next question
       id = moveForward(id);
     }
@@ -76,27 +47,7 @@ function updateProgressBar(){
 }
 
 
-// if prev button is disabled then call this
-function enablePreview(p){
-  // if the section is 0
-  if (currentState.sectionC === 0){
-    // if there's text AND button answers
-    if ((currentState.answers.length !== 0) && (Object.values(dict).length !== 0)){
-      p.removeAttribute('disabled');
-    } else {
-      console.log('More answers needed for preview');
-    }
-  } else {
-    // if we're past the contextual section
-    // and there are text OR button answers
-    if ((currentState.answers.length !== 0) || (Object.values(dict).length !== 0)){
-      p.removeAttribute('disabled');
-    } else {
-      console.log('More answers needed for preview');
-    }
-  }
-}
-
+// THIS MAY BE DELETED IF PROGRESS SAVING ISN'T IMPLEMENTED
 // if snapshot button is disabled then call this
 // function enableSnapshot(s){
 //   // if there's answers stored
@@ -126,15 +77,6 @@ function handleSubmit() {
   var id = currentState.questionQ;
   // currently lets everything through, will change when required Qs are back
   canProceed = true;
-  // before doing anything else, check if this is a required question
-  // isRequired = match[0] ? match[0].required : false;
-  // compare the size of answers array to find out if answers have been provided for this question
-  // if (id > 0){
-    // if it's required and there are no answers provided
-    // if (isRequired && noAnswers){
-    //   canProceed = false;
-    // }
-  // }
 
   if (canProceed){
 
@@ -142,28 +84,16 @@ function handleSubmit() {
       match.classList.add("editable");
       collectAnswers(false);
 
-      // if we're past the intro
-      // if (parseInt(id) > 0){
-        // show the edit button
-        // document.getElementById('editBtn').classList.remove('disabled');
-        // mark the current question as editable
-
-        // show the preview button if answers are available
-        // snapshotBtn = document.querySelector('#snapshotPolicy');
-
-        // if (snapshotBtn.disabled){
-        //   enableSnapshot(snapshotBtn);  // enable the snapshot button
-        // }
+      // THIS MAY BE DELETED IF EXCLUSIONS AND EDIT ARE NOT IMPLEMENTED
+      // if we're at the last question
+      // if(parseInt(id) === questionsList.length-1){
+      //   // disable the edit button
+      //   document.getElementById('editBtn').classList.add('disabled');
+      // } else {
+      //   // collect the exclusions for this question
+      //   collectExclusions(id);
       // }
 
-      // if we're at the last question
-      if(parseInt(id) === questionsList.length-1){
-        // disable the edit button
-        document.getElementById('editBtn').classList.add('disabled');
-      } else {
-        // collect the exclusions for this question
-        collectExclusions(id);
-      }
       // this hides the current question,
       match.classList.remove("current");
       // is the next question excluded
@@ -175,11 +105,11 @@ function handleSubmit() {
 }
 
 
+// THIS MAY BE DELETED UPON REFACTOR
 // not sure this needs to be a function as it's only done once
 function setUpPage(id){
   // add the additional stuff after everything else has loaded
   if (parseInt(id) === 0) {
-    // injectOverlay();
     // sneaking this in here so it's done when textboxes exist
     addChangeListeners();
   }
@@ -221,14 +151,6 @@ function nextQuestion(){
       }
     }
   }
-  // if (nextQ){
-  //   // if there's a next question and it's required
-  //   if (nextQ[0] && nextQ[0].required){
-  //     // get and set the submit button to disabled
-  //     submit = document.querySelector('#submitAnswers');
-  //     submit.setAttribute("disabled", "");
-  //   }
-  // }
 }
 
 // function to add formatting to array

@@ -3,9 +3,9 @@
     font-style: normal;
     /* src: local("Format_1452"); */
     src: url('webfonts/Format_1452.otf') format('otf'),
-    url('webfonts/Format_1452.eot'),
-    url('webfonts/Format_1452.woff'),
-    url('webfonts/Format_1452.woff2');
+    url('webfonts/Format_1452.eot') format('eot'),
+    url('webfonts/Format_1452.woff') format('woff'),
+    url('webfonts/Format_1452.woff2') format('woff2');
 }
 
 @font-face {
@@ -29,7 +29,7 @@
 @font-face {
   font-family: ZupType;
   font-style: normal;
-  src: url('webfonts/zuptype_ccc.ttf') format('truety');
+  src: url('webfonts/zuptype_ccc.ttf') format('truetype');
 }
 
 .zup {
@@ -89,6 +89,10 @@ a {
 
 .nav-start .cat-logo img {
   display: none;
+}
+
+.buildPage .nav-start .cat-logo img {
+  display: initial;
 }
 
 /* TODO: figure out why this still allows scroll when menu is open */
@@ -423,10 +427,11 @@ body {
   margin-top: 4em;
 }
 body.buildPage #page {
-  padding-top: 7em;
+  padding-top: 1em;
   flex-direction: row;
   background-color: inherit;
   position: fixed;
+  margin-top: 7em;
 }
 
 progress {

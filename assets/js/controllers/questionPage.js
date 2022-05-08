@@ -11,6 +11,7 @@ controllers.questionPage = function(data, params){
     for (var j = 0; j < sections[i].length; j++){
       var el = sections[i][j];
       var item = {
+        's': i,
         'q': el.q,
         'area': el.area,
         'answers': el.answers,

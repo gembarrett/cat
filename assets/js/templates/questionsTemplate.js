@@ -31,11 +31,55 @@ templates.questionsTemplate = function(data, params){
       }
     }
   }
+
+// level 1: 0-22
+// level 2: 23-44
+// level 3: 45+
+
   // build the page elements
+
+//
+// // outer container
+// `<div class="outer `+level+`">`
+// // level container
+//   `<div class="level">`
+//   // level number
+//     `<div class="inner">
+//       <h1>`+Object.keys(en_qs[0])[0]+`</h1>
+//       <img class="number" src="assets/images/`+i+`-level.png">
+//       <img src="assets/images/`+i+`-block.png">`
+//     // level icon
+//     `<img src="assets/images/`+i+`horizontal.png">
+//   </div>`
+// // content container
+// `<div class="content box">`
+//   // progress bar
+//   `<div class="progress"><progress max="`+questionsList.length+`" value="0"></progress></div>`
+//   // question text
+//   `<form id="`+currentQ+ `" class="questionContent salford-text`+ (i !== 0 ? '">' : ' current">')
+//     '<h1>' + question.q + '</h1>';
+//     '<div class="answers-container">';
+//
+//     // answers
+//     for (var j = 0; j < question.answers.length; j++){
+//        thisID = ;
+//        thisName = ;
+//        '<div class="form-el">';
+//        '<input type="radio"' +'id="' +currentQ+ "-a-"+ j+ '" name="' +currentQ+  '-el"'+ '>'
+//        '<label for="' +currentQ+ "-a-"+ j+ '">'+question.answers[j].a+ '</label>';
+//        '</div>';
+//      }
+// '</div></form>`
+//
+//   // foot
+// `</div>`;
+
+console.log(data);
+
   var content = `
       <div class="level">
         <div class="inner">
-            <h1 class="zup">Level</h1>
+            <h1>Level</h1>
             <img class="number" src="assets/images/1-level.png">
             <img src="assets/images/1-block.png">
         </div>
@@ -48,7 +92,7 @@ templates.questionsTemplate = function(data, params){
       var question = data[i];
       var currentQ = "q-"+i;
       // create the start of the form
-      content += `<form id="`+currentQ+ `" class="questionContent salford-text`+ (i !== 0 ? '">' : ' current">');
+      content += `<form id="`+currentQ+ `" class="questionContent salford-text`+ (i !== 0 ? '">' : ' current lvl-'+question.s+'">');
       // if it's a question
       // if (question.isQ) {
         var panel = "";

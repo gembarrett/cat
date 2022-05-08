@@ -68,11 +68,13 @@ window.onload = function(){
 };
 
 var sections = [];
+var sectionLabels = [];
 
 // initialise counters with the first section and question, this is updated at the end of questions and sections
 // TODO: add a way to track which question is in which section
 for (var q = 0; q < textStore.qs.length; q++){
   sections.push(textStore.qs[q].questions);
+  sectionLabels.push(textStore.qs[q].level);
 }
 
 // loop through and create list of questions
@@ -87,6 +89,7 @@ for (var i = 0; i < sections.length; i++) {
     questionsList.push(j);
   }
 }
+
 
 // set up progress tracking
 var currentState = {
