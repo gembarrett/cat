@@ -36,12 +36,13 @@ templates.questionsTemplate = function(data, params){
       <div class="level">
         <div class="inner">
             <h1 class="zup">Level</h1>
-            <img class="" src="assets/images/1-level.png">
+            <img class="number" src="assets/images/1-level.png">
             <img src="assets/images/1-block.png">
         </div>
         <img src="assets/images/1-horizontal.png">
       </div>
-      <div class="box contain"><progress max="`+questionsList.length+`" value="0"></progress>`;
+      <div class="box">
+        <div class="progress"><progress max="`+questionsList.length+`" value="0"></progress></div>`;
 
   for(var i = 0; i < questionsList.length; i++) {
       var question = data[i];

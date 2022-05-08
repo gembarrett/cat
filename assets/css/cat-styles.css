@@ -2,7 +2,7 @@
     font-family: Format_1452;
     font-style: normal;
     /* src: local("Format_1452"); */
-    src: url('webfonts/Format_1452.otf'),
+    src: url('webfonts/Format_1452.otf') format('otf'),
     url('webfonts/Format_1452.eot'),
     url('webfonts/Format_1452.woff'),
     url('webfonts/Format_1452.woff2');
@@ -398,24 +398,24 @@ body {
 
 /* questions styling */
 .level {
-  width:40%;
   background-color: #000;
 }
 
 .level img {
-  width: 100%;
+  max-width: 220px;
 }
 
 .level .inner {
   background-color: #DAD9CF;
   display: flex;
   flex-direction: column;
-  margin:4em 0 2em;
+  margin:3em 0 1em;
 }
 
 .level .inner h1 {
   text-transform: uppercase;
   font-size: 3em;
+  text-align: center;
 }
 
 .question {
@@ -426,10 +426,24 @@ body.buildPage #page {
   padding-top: 7em;
   flex-direction: row;
   background-color: inherit;
+  position: fixed;
 }
+
 progress {
-  width:50%;
+  width:100%;
 }
-progress[value="0"]{
-  display: none;
+
+.level img.number {
+  width:50%;
+  align-self: center;
+}
+.box {
+  width: 70%;
+  background-color: #DAD9CF;
+  margin-left: 1em;
+  overflow: scroll;
+}
+
+#page .level, #page .box {
+  height: 100vh;
 }
