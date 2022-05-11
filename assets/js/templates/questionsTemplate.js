@@ -32,20 +32,32 @@ templates.questionsTemplate = function(data, params){
     }
   }
 
+// create the answer elements
+function buildAnswers(count, answers, storage){
+  var id = 'q-'+count;
+  for (var an = 0; an < answers.length; an++){
+    storage += `<div class="form-el">
+      <input type="radio" id="`+id+`-a-`+an+`" name="`+id+`-el">
+      <label for="`+id+`-a-`+an+`">`+answers[an].a+`</label>
+    </div>`;
+  }
+  return storage;
+}
+
 // build the page elements
 
 var content = "";
-var c = 0;
+var c = 0; // this counts the total number of questions that have been added
 // this route creates three distinct sections which are hidden and shown. Another alternative is to only change the question container and update the image sources, progress bar background to reflect section change.
-for (var level = 0; level < sections.length-1; level++){
-  content += `<div class="outer lvl-`+level+ (level === 0 ? ` current">` : `>`);
+for (var level = 0; level < sections.length; level++){
+  content += `<div class="outer lvl-`+[level+1]+ (level === 0 ? ` current">` : `">`);
   content += `<div class="level">
       <div class="inner">
         <h1>`+Object.keys(textStore.qs[0])[0]+`</h1>
-        <img class="number" src="assets/images/`+level+`-level.png">
-        <img src="assets/images/`+level+`-block.png">
+        <img class="number" src="assets/images/`+[level+1]+`-level.png">
+        <img src="assets/images/`+[level+1]+`-block.png">
       </div>
-      <img src="assets/images/`+level+`-horizontal.png">
+      <img src="assets/images/`+[level+1]+`-horizontal.png">
     </div>`;
     content += `<div class="content box">
       <div class="progress"><progress max="`+questionsList.length+`" value="0"></progress></div>`;
@@ -54,11 +66,14 @@ for (var level = 0; level < sections.length-1; level++){
         <h1>`+data[c].q+`</h1>
         <div class="answers">`;
       c++;
-      for (var an = 0; an < sections[level].answers.length; an++) { // add the answers to the parent question
-        content += `<div class="form-el">
-          <input type="radio"`+`id="q-`+c+`-a-`+an+`" name="q-`+c+`-el"`+`>
-          <label for="q-`+currentQ+`-a-`+an+`">`+data[c].answers[an].a+`</label>`;
-      }
+
+      content = buildAnswers(c, data[c].answers, content);
+      // for (var an = 0; an < sections[level][el].answers.length-1; an++) { // add the answers to the parent question
+      //   console.log(data[c]);
+      //   content += `<div class="form-el">
+      //     <input type="radio"`+`id="q-`+c+`-a-`+an+`" name="q-`+c+`-el"`+`>
+      //     <label for="q-`+c+`-a-`+an+`">`+data[c].answers[an].a+`</label>`;
+      // }
       content += `</div></form>`;
     }
     content += `</div></div>`;
@@ -160,7 +175,7 @@ for (var level = 0; level < sections.length-1; level++){
   //     // no closing div, just closing form
   //     content += '</div></form>';
   // }
-  pause = '<div><button title="Click to get a snapshot link you can use to finish this process later. Using this link will pre-select your current answers. Note that no text answers are included in the snapshot" id="snapshotPolicy" disabled class="btn btn-tert" title="Click or press U to get a URL for returning to this process later">Get snapshot</button><div id="snapshotGroup" class="hidden"><div><input id="snapshotLink" type="text" readonly value="No snapshot available"><i title="Click to copy this snapshot link" id="copyBtn" class="fas fa-copy"></i></div><p>Need to pause this process? Use your snapshot link to pre-select your answers on your return. Note that no text entries are included in this snapshot, and this link is not stored.</p></div></div>';
-  content += '<div class="btn-wrap wrap-r">'+pause+'<div><button disabled id="previewPolicy" class="previewButton btn btn-seco" title="Click or press P to view your policy preview">Preview</button><button id="submitAnswers" onclick="handleSubmit()" class="nextButton btn btn-prim" title="Click or press Enter to go to the next question">Next</button></div></div></div>';
+  // pause = '<div><button title="Click to get a snapshot link you can use to finish this process later. Using this link will pre-select your current answers. Note that no text answers are included in the snapshot" id="snapshotPolicy" disabled class="btn btn-tert" title="Click or press U to get a URL for returning to this process later">Get snapshot</button><div id="snapshotGroup" class="hidden"><div><input id="snapshotLink" type="text" readonly value="No snapshot available"><i title="Click to copy this snapshot link" id="copyBtn" class="fas fa-copy"></i></div><p>Need to pause this process? Use your snapshot link to pre-select your answers on your return. Note that no text entries are included in this snapshot, and this link is not stored.</p></div></div>';
+  // content += '<div class="btn-wrap wrap-r">'+pause+'<div><button disabled id="previewPolicy" class="previewButton btn btn-seco" title="Click or press P to view your policy preview">Preview</button><button id="submitAnswers" onclick="handleSubmit()" class="nextButton btn btn-prim" title="Click or press Enter to go to the next question">Next</button></div></div></div>';
   return content;
 };

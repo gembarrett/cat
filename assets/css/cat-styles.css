@@ -452,3 +452,11 @@ progress {
 #page .level, #page .box {
   height: 100vh;
 }
+
+.outer {
+  display: none;
+}
+
+.outer.current{
+  display: inherit;
+}

@@ -215,12 +215,6 @@ a {
   text-decoration: none;
 }
 
-.questionContent {
-  display:none;
-}
-.questionContent.current {
-  display:block;
-}
 
 .questionContent h2 {
   width:85%;
