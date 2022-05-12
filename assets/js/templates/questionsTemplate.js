@@ -44,6 +44,16 @@ function buildAnswers(count, answers, storage){
   return storage;
 }
 
+function buildProgressBar(){
+  // add 6 circles
+  var progress = `<div class="p-circ"></div>`;
+  // give each circle a border but only the first has a fill class
+  // when user scrolls to a question whose ID is divisble by 4
+  // then add a fill class to the next circle
+  // after three circle have fill class, show the halfway-point content break
+  return progress;
+}
+
 // build the page elements
 
 var content = "";
@@ -51,27 +61,36 @@ var c = 0; // this counts the total number of questions that have been added
 // this route creates three distinct sections which are hidden and shown. Another alternative is to only change the question container and update the image sources, progress bar background to reflect section change.
 for (var level = 0; level < sections.length; level++){
   content += `<div class="outer lvl-`+[level+1]+ (level === 0 ? ` current">` : `">`);
-  content += `<div class="level">
+  content += `<div class="left-col">
+    <div class="level">
       <div class="inner">
         <h1>`+Object.keys(textStore.qs[0])[0]+`</h1>
         <img class="number" src="assets/images/`+[level+1]+`-level.png">
         <img src="assets/images/`+[level+1]+`-block.png">
       </div>
+      </div>
       <img src="assets/images/`+[level+1]+`-horizontal.png">
     </div>`;
-    content += `<div class="content box">
-      <div class="progress"><progress max="`+questionsList.length+`" value="0"></progress></div>`;
-    for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
+  content += `<div class="content box">
+      <div class="progress bg-brown">`;
+// add 6 circles
+// give each circle a border but only the first has a fill class
+// when user scrolls to a question whose ID is divisble by 4
+// then add a fill class to the next circle
+// after three circle have fill class, show the halfway-point content break
+        // `<progress max="`+questionsList.length+`" value="0"></progress>`
+  content += buildProgressBar();
+  content += `</div>`;
+  for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
       content += `<form id="q-`+c+`" class="questionContent salford-text">
         <h2>`+data[c].q+`</h2>
         <div class="answers">`;
       content = buildAnswers(c, data[c].answers, content);
       content += `</div></form>`;
       c++;
-
-    }
+    } // end of the loop that adds questions
     content += `</div></div>`;
   // content += '<button id="submitAnswers" onclick="handleSubmit()" class="nextButton btn btn-prim" title="Click or press Enter to go to the next level">Next</button>';
-  return content;
 }
+return content;
 };
