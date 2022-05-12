@@ -216,10 +216,6 @@ a {
 }
 
 
-.questionContent h2 {
-  width:85%;
-}
-
 .questionContent > .btn-tert {
   min-width:3em;
 }
@@ -655,14 +651,6 @@ input[type=text]{
 }
 
 
-
-form input:checked + label {
-  background-color: black;
-  color: white;
-}
-.form-el input + label:hover {
-  opacity:0.6;
-}
 
 
 .q0-only {

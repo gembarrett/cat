@@ -460,3 +460,23 @@ progress {
 .outer.current{
   display: inherit;
 }
+
+form {
+  padding: 0 2em 1.5em;
+}
+
+form h2 {
+  line-height: 1em;
+}
+
+.form-el {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.form-el label {
+  padding-left: 0.25em;
+  font-size: 1.15em;
+  font-weight: lighter;
+}
