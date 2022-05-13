@@ -46,7 +46,10 @@ function buildAnswers(count, answers, storage){
 
 function buildProgressBar(){
   // add 6 circles
-  var progress = `<div class="p-circ"></div>`;
+  var progress = `<div class="p-circ current"></div>`;
+  for (var p=0; p<6; p++){
+    progress += `<div class="p-circ"></div>`;    
+  }
   // give each circle a border but only the first has a fill class
   // when user scrolls to a question whose ID is divisble by 4
   // then add a fill class to the next circle

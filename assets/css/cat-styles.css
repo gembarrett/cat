@@ -434,10 +434,6 @@ body.buildPage #page {
   margin-top: 7em;
 }
 
-progress {
-  width:100%;
-}
-
 .level img.number {
   width:50%;
   align-self: center;
@@ -484,7 +480,21 @@ form h2 {
 .p-circ {
   width: 8px;
   height: 8px;
-  border: 4px solid #000;
+  border: 2px solid #000;
   border-radius: 50%;
+  margin:2px;
+}
+.p-circ.current {
   background-color: #000;
+}
+.progress {
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-col img:last-child {
+  padding-top: 1em;
 }
