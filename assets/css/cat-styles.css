@@ -84,7 +84,7 @@ a {
 }
 
 .cat-logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 .nav-start .cat-logo img {
@@ -407,7 +407,7 @@ body {
 }
 
 .left-col img {
-  max-width: 220px;
+  max-width: 300px;
 }
 
 .level .inner {
@@ -435,14 +435,18 @@ body.buildPage #page {
 }
 
 .level img.number {
-  width:50%;
+  width:60%;
   align-self: center;
 }
 .box {
-  width: 70%;
   background-color: #DAD9CF;
-  margin-left: 1em;
   overflow: scroll;
+}
+
+.right-col {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 #page .left-col, #page .box {
@@ -478,8 +482,8 @@ form h2 {
 }
 
 .p-circ {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
   border: 2px solid #000;
   border-radius: 50%;
   margin:2px;
@@ -495,6 +499,13 @@ form h2 {
   justify-content: center;
 }
 
+.action {
+  background-color: #000;
+  position: fixed;
+  height: 3em;
+  bottom: 0;
+  color:#DAD9CF;
+}
 .left-col img:last-child {
   padding-top: 1em;
 }

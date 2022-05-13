@@ -48,7 +48,7 @@ function buildProgressBar(){
   // add 6 circles
   var progress = `<div class="p-circ current"></div>`;
   for (var p=0; p<6; p++){
-    progress += `<div class="p-circ"></div>`;    
+    progress += `<div class="p-circ"></div>`;
   }
   // give each circle a border but only the first has a fill class
   // when user scrolls to a question whose ID is divisble by 4
@@ -74,25 +74,25 @@ for (var level = 0; level < sections.length; level++){
       </div>
       <img src="assets/images/`+[level+1]+`-horizontal.png">
     </div>`;
-  content += `<div class="content box">
-      <div class="progress bg-brown">`;
-// add 6 circles
-// give each circle a border but only the first has a fill class
-// when user scrolls to a question whose ID is divisble by 4
-// then add a fill class to the next circle
-// after three circle have fill class, show the halfway-point content break
-        // `<progress max="`+questionsList.length+`" value="0"></progress>`
+  content += `<div class="right-col"><div class="progress bg-brown">`;
+  // add 6 circles
+  // give each circle a border but only the first has a fill class
+  // when user scrolls to halfway through the level, or at the end of the level
+  // then add a fill class to the next circle
   content += buildProgressBar();
   content += `</div>`;
+  content += `<div class="content box">`;
   for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
-      content += `<form id="q-`+c+`" class="questionContent salford-text">
-        <h2>`+data[c].q+`</h2>
-        <div class="answers">`;
+      content += `<form id="q-`+c+`" class="questionContent">
+        <h2 class="salford-bold">`+data[c].q+`</h2>
+        <div class="answers salford-text">`;
       content = buildAnswers(c, data[c].answers, content);
       content += `</div></form>`;
       c++;
     } // end of the loop that adds questions
-    content += `</div></div>`;
+    content += `</div>`; // closes the content box
+    content += `<div class="action">Resume later</div></div>`; // closes the right column
+    content += `</div>`; // closes each level
   // content += '<button id="submitAnswers" onclick="handleSubmit()" class="nextButton btn btn-prim" title="Click or press Enter to go to the next level">Next</button>';
 }
 return content;
