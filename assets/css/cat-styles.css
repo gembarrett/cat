@@ -407,7 +407,7 @@ body {
 }
 
 .left-col img {
-  max-width: 300px;
+  width:100%;
 }
 
 .level .inner {
@@ -455,6 +455,7 @@ body.buildPage #page {
 
 .outer {
   display: none;
+  width:100%;
 }
 
 .outer.current{
@@ -508,4 +509,21 @@ form h2 {
 }
 .left-col img:last-child {
   padding-top: 1em;
+}
+
+/* this is just so that it shows above the fold */
+.questionContent:last-child {
+  margin-bottom: 15em;
+}
+
+.inner > img:last-child {
+  height: 100px;
+}
+
+.left-col {
+  width: 30%;
+}
+
+.right-col {
+  width: 70%;
 }

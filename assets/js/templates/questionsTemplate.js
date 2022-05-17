@@ -82,9 +82,15 @@ for (var level = 0; level < sections.length; level++){
   content += buildProgressBar();
   content += `</div>`;
   content += `<div class="content box">`;
+  midpoint = Math.round(sections[level].length/2);
   for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
-      content += `<form id="q-`+c+`" class="questionContent">
-        <h2 class="salford-bold">`+data[c].q+`</h2>
+      content += `<form id="q-`+c+`" class="questionContent`;
+      if (el === midpoint){
+        content += ` midway">`;
+      } else {
+        content += `">`
+      }
+      content += `<h2 class="salford-bold">`+data[c].q+`</h2>
         <div class="answers salford-text">`;
       content = buildAnswers(c, data[c].answers, content);
       content += `</div></form>`;
