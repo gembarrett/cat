@@ -3418,6 +3418,10 @@ var en_oc = { // contains all other content
         "text": "SAVE & RESUME LATER"
       },
       {
+        "type":"",
+        "text": "Next"
+      },
+      {
         "type": "",
         "text": "Use this link to resume your CAT session. Copy the link below and save it in a safe place!"
       },
