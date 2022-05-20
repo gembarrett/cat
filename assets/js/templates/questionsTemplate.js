@@ -68,7 +68,7 @@ for (var level = 0; level < sections.length; level++){
   content += `<div class="left-col">
     <div class="level">
       <div class="inner">
-        <h1>`+Object.keys(textStore.qs[0])[0]+`</h1>
+        <h1 class="zup">Level</h1>
         <img class="number" src="assets/images/`+[level+1]+`-level.png">
         <img src="assets/images/`+[level+1]+`-block.png">
       </div>
