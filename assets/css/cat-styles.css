@@ -1,35 +1,29 @@
 @font-face {
     font-family: Format_1452;
-    font-style: normal;
-    /* src: local("Format_1452"); */
-    src: url('webfonts/Format_1452.otf') format('otf'),
-    url('webfonts/Format_1452.eot') format('eot'),
-    url('webfonts/Format_1452.woff') format('woff'),
-    url('webfonts/Format_1452.woff2') format('woff2');
+    src: url('../fonts/Format_1452.otf') format('opentype');
 }
 
 @font-face {
     font-family: Salford_Sans_black;
     font-style: black;
-    src: url('webfonts/Lewis McGuffie Type - Salford Sans Black.otf') format('opentype');
+    src: url('../fonts/Lewis McGuffie Type - Salford Sans Black.otf') format('opentype');
 }
 
 @font-face {
     font-family: Salford_Sans_medium;
     font-style: medium;
-    src: url('webfonts/Lewis McGuffie Type - Salford Sans Medium.otf') format('opentype');
+    src: url('../fonts/Lewis McGuffie Type - Salford Sans Medium.otf') format('opentype');
 }
 
 @font-face {
     font-family: Salford_Sans_bold;
     font-style: bold;
-    src: url('webfonts/Lewis McGuffie Type - Salford Sans Bold.otf') format('opentype');
+    src: url('../fonts/Lewis McGuffie Type - Salford Sans Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: ZupType;
-  font-style: normal;
-  src: url('webfonts/zuptype_ccc.ttf') format('truetype');
+  src: url('../fonts/zuptype_ccc.ttf') format('truetype');
 }
 
 .zup {
@@ -104,11 +98,11 @@ a {
   flex-direction: column;
   align-self: center;
   background-color: #DAD9CF;
-  padding-top:4em;
+  padding-top: 4em;
 }
 
 body {
-  background-color:#292929;
+  background-color: #292929;
 }
 
 #head, #foot {
@@ -116,13 +110,13 @@ body {
 }
 
 #foot {
-  width:100%;
+  width: 100%;
   justify-content: center;
-  padding:1em 0;
+  padding: 1em 0;
 }
 
 #foot p {
-  color:#fff;
+  color: #fff;
   font-size: 0.90em;
 }
 
@@ -131,7 +125,7 @@ body {
 }
 
 #foot img {
-  width:60%;
+  width: 60%;
 }
 
 #foot .contain {
@@ -148,17 +142,17 @@ body {
 
 #hero {
   flex-direction: column;
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
 #hero img {
   max-height: 140px;
-  margin:1em 0 1em;
+  margin: 1em 0 1em;
 }
 
 #hero .btn {
-  width:33%;
+  width: 33%;
 }
 
 #hero h1 {
@@ -184,24 +178,24 @@ body {
 }
 
 .trio-col {
-  width:33.33333%;
+  width: 33.33333%;
 }
 
 .trio-col span {
-  display:block;
+  display: block;
 }
 
 .trio-col a:focus {
-  border:0;
+  border: 0;
 }
 
 .trio-col img {
-  width:100%;
-  display:block;
+  width: 100%;
+  display: block;
 }
 
 .trio-col h2 {
-  margin:0;
+  margin: 0;
   text-align: center;
   font-size: 2.4em;
   padding: 0.5em 1em 1em;
@@ -225,31 +219,31 @@ body {
 }
 
 #menu-trigger.dim {
-  opacity:0.25;
+  opacity: 0.25;
 }
 
 #menu-container {
-  width:33.33333%;
+  width: 33.33333%;
   position: fixed;
   z-index: 1;
   background-color: rgba(0,0,0,0.95);
   align-self: end;
-  margin-top:5em;
+  margin-top: 5em;
   text-align: center;
 }
 
 #menu-container span {
-  color:#fff;
+  color: #fff;
   font-size: 2em;
   border: 4px solid currentColor;
-  padding:0.5em 0.55em 0.25em;
+  padding: 0.5em 0.55em 0.25em;
   border-radius: 50%;
-  display:none;
+  display: none;
   cursor: pointer;
 }
 
 #menu-container span:active, #menu li:active, #menu-trigger:active {
-  opacity:0.5;
+  opacity: 0.5;
 }
 
 #menu {
@@ -257,12 +251,12 @@ body {
   color: #fff;
   list-style: none;
   font-size: 2.5em;
-  padding-left:0;
+  padding-left: 0;
   line-height: 2.5em;
 }
 
 #menu-container.close {
-  display:none;
+  display: none;
 }
 
 .basics-head {
@@ -274,7 +268,7 @@ body {
   margin-bottom: 2em !important;
 }
 .basics-head img {
-  width:40%;
+  width: 40%;
   position: relative;
   bottom: -2em;
   right:-3em;
@@ -284,12 +278,12 @@ body {
   line-height: 1em;
   font-weight: lighter;
   text-align: left;
-  margin:0.5em 0 0;
-  width:60%;
+  margin: 0.5em 0 0;
+  width: 60%;
 }
 
 .basics-head h2 span {
-  display:block;
+  display: block;
 }
 
 .basics .btn {
@@ -297,7 +291,7 @@ body {
 }
 
 .basics .btn a {
-  color:#fff;
+  color: #fff;
 }
 
 .basics .btn.right {
@@ -309,7 +303,7 @@ body {
 }
 
 .contain-70 {
-  width:70%;
+  width: 70%;
   margin: auto;
 }
 
@@ -331,7 +325,7 @@ body {
 .person {
   display: flex;
   flex-direction: column;
-  margin-top:1em;
+  margin-top: 1em;
 }
 
 .person img {
@@ -354,7 +348,7 @@ body {
 .borders .grey {
   border-bottom: 1px solid #999;
   height: 20px;
-  width:80%;
+  width: 80%;
 }
 
 .person .borders {
@@ -403,11 +397,11 @@ body {
 /* questions styling */
 .level {
   background-color: #000;
-  padding-top:10vh;
+  padding-top: 10vh;
 }
 
 .left-col img {
-  width:100%;
+  width: 100%;
 }
 
 .level .inner {
@@ -423,7 +417,7 @@ body {
 }
 
 .question {
-  width:60%;
+  width: 60%;
   margin-top: 4em;
 }
 body.buildPage #page {
@@ -435,7 +429,7 @@ body.buildPage #page {
 }
 
 .level img.number {
-  width:60%;
+  width: 60%;
   align-self: center;
 }
 .box {
@@ -454,7 +448,7 @@ body.buildPage #page {
 
 .outer {
   display: none;
-  width:100%;
+  width: 100%;
 }
 
 .outer.current{
@@ -493,7 +487,7 @@ form h2 {
   height: 4px;
   border: 2px solid #000;
   border-radius: 50%;
-  margin:2px;
+  margin: 2px;
 }
 .p-circ.current {
   background-color: #000;
@@ -508,8 +502,8 @@ form h2 {
 
 .action {
   background-color: #000;
-  color:#DAD9CF;
-  height:10vh;
+  color: #DAD9CF;
+  height: 10vh;
   text-transform: uppercase;
   display: flex;
   justify-content: end;

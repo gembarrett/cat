@@ -1,6 +1,6 @@
 /* Structural styles */
 html, body {
-  height:100%;
+  height: 100%;
 }
 /* TODO: fix so it applies just to external links
 a[href]:visited {
@@ -26,12 +26,12 @@ body {
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 #head {
   position: fixed;
-  width:100%;
+  width: 100%;
   padding: 1em;
   box-sizing: border-box;
   align-items: center;
@@ -45,13 +45,13 @@ body {
   filter: drop-shadow(0px 0px 3px #eee);
 }
 body.buildPage #head.nav-start {
-  opacity:100;
+  opacity: 100;
 }
 body.buildPage #page {
-  padding-top:4em;
+  padding-top: 4em;
 }
 #head.nav-start {
-  /* opacity:0; */
+  /* opacity: 0; */
 }
 .nav-scroll #logo{
 }
@@ -79,11 +79,11 @@ body.buildPage #page {
 }
 .prompt:hover, .prompt:focus {
   text-decoration: underline;
-  padding:5px 20px;
+  padding: 5px 20px;
 }
 
 .nav-scroll #editBtn {
-  color:#fff;
+  color: #fff;
 }
 
 #foot {
@@ -91,17 +91,17 @@ body.buildPage #page {
 }
 .wrapper {
   width: 75%;
-  max-width:1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 #head h1 {
-  display:inline-block;
+  display: inline-block;
 }
 
 #head h2 {
   font-size: 2rem;
-  display:inline-block;
+  display: inline-block;
   padding-left: 10px;
 }
 
@@ -117,7 +117,7 @@ body.buildPage #page {
   margin-right: 4em;
 }
 .text-img-wrap {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
 .text-buttons-wrap {
@@ -138,14 +138,14 @@ body.buildPage #page {
 
 .links a, .links a:visited, .prompt {
   padding: 5px;
-  border:2px solid;
+  border: 2px solid;
   border-radius: 5%;
   border-color: transparent;
-  color:inherit;
+  color: inherit;
 }
 
 .links li {
-  display:inline;
+  display: inline;
   padding: 0 20px;
 }
 
@@ -153,10 +153,9 @@ body.buildPage #page {
   padding-left: 0;
 }
 .links li:last-child {
-  padding:1em;
+  padding: 1em;
   white-space: nowrap;
 }
-
 
 #foot li {
   font-size: 0.8rem;
@@ -215,9 +214,8 @@ a {
   text-decoration: none;
 }
 
-
 .questionContent > .btn-tert {
-  min-width:3em;
+  min-width: 3em;
 }
 
 .questionContent summary {
@@ -229,25 +227,24 @@ a {
 }
 
 #secretLink {
-  color:#fff;
+  color: #fff;
 }
 
-
 #q0 .text-img-wrap {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   padding: 0;
 }
 
 #q0 img {
-  width:100%;
+  width: 100%;
   border-radius: 5%;
 }
 
 #q0 section {
   flex: 2 2 20%;
   margin: 3em 2em;
-  background:#f2eee2;
+  background: #f2eee2;
 }
 
 #q0 section p {
@@ -271,7 +268,7 @@ a {
   border: 1px solid currentColor;
   padding: 1em;
   background-color: #f2eee2;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -306,17 +303,17 @@ a {
 /* Preview styles */
 
 #previewPolicy:disabled, #editBtn.disabled {
-  display:none;
+  display: none;
 }
 #submitAnswers {
-  margin-right:0;
+  margin-right: 0;
 }
 
 #submitAnswers:disabled {
   cursor: not-allowed;
-  opacity:75%;
+  opacity: 75%;
   background-color: #888685;
-  border:#ccc;
+  border: #ccc;
 }
 
 .modal {
@@ -344,12 +341,12 @@ a {
   position: absolute;
   right: -1.6em;
   background-color: initial;
-  color:#668EAA;
+  color: #668EAA;
   border: none;
   padding: 0.5em 0.75em;
   top: -1.3em;
   cursor: pointer;
-  font-size:1.2em;
+  font-size: 1.2em;
   opacity: 0.8;
 }
 .xIcon .fas {
@@ -365,8 +362,8 @@ a {
 }
 
 #preview h4 {
-  border-top:1px solid;
-  padding-top:0.5em;
+  border-top: 1px solid;
+  padding-top: 0.5em;
 }
 
 .modalScrollbox {
@@ -396,7 +393,7 @@ a {
   padding: 0 0 2em 3em;
   font-size: 1em;
   font-family: "SinkinSansLight", "Helvetica", "OpenSans", sans-serif;
-  width:100%;
+  width: 100%;
 }
 .homeSectionOverview li {
   padding: 0.5em 0;
@@ -422,7 +419,7 @@ details > h3, details > p {
   padding: 0 1em;
 }
 details a {
-  color:#b93168;
+  color: #b93168;
 }
 .questionContent details h3{
   text-transform: uppercase;
@@ -443,8 +440,8 @@ details a {
 }
 
 #overview img {
-  width:100%;
-  filter:drop-shadow(0px 0px 3px #eee);
+  width: 100%;
+  filter: drop-shadow(0px 0px 3px #eee);
 }
 
 
@@ -465,7 +462,7 @@ details a {
   font-size: 2.4em;
   line-height: 1.5em;
   margin: 2em 0;
-  width:80%;
+  width: 80%;
 }
 
 #intro h2 {
@@ -477,12 +474,12 @@ details a {
 
 #intro input {
   background: #f2eee2;
-  background:transparent;
+  background: transparent;
   margin: 0 auto;
 }
 
 #intro .btn {
-  margin-top:3em;
+  margin-top: 3em;
 }
 
 #intro .wrap-c {
@@ -490,8 +487,8 @@ details a {
 }
 
 .window {
-  margin:4em 0;
-  padding:2em;
+  margin: 4em 0;
+  padding: 2em;
 }
 
 .window:first-child {
@@ -518,7 +515,7 @@ details a {
   margin-top: 1em;
 }
 .buildPage .window {
-  margin:4em auto;
+  margin: 4em auto;
   padding: 2em;
 }
 .buildPage .window > :not(h3) {
@@ -531,7 +528,7 @@ details a {
 .buildPage .window div {
   display: flex;
   flex-direction: column;
-  width:100%
+  width: 100%
 }
 .feature {
   width: 30%;
@@ -554,7 +551,7 @@ details a {
   padding: 10px;
 }
 .btn {
-  border:2px solid;
+  border: 2px solid;
   padding: 0.5em;
   margin: 0.8em;
   text-align: center;
@@ -571,7 +568,7 @@ details a {
   color: #fff;
   background-color: #066493;
   min-width: 0;
-  border:1px solid #fff;
+  border: 1px solid #fff;
 }
 
 .btn-tert:hover {
@@ -596,38 +593,38 @@ details a {
 
 .wrap-r {
   justify-content: space-between;
-  margin-bottom:1em;
+  margin-bottom: 1em;
 }
 .policyHolder {
-  width:100%;
-  display:inline-block;
-  min-height:300px;
+  width: 100%;
+  display: inline-block;
+  min-height: 300px;
   border: none;
   padding: 1em 2em;
   box-sizing: border-box;
   text-align: left;
   line-height: 1.8em;
-  color:#1b263b;
+  color: #1b263b;
 }
 small a {
-  color:#a9bcd0;
+  color: #a9bcd0;
   text-decoration: underline;
 }
 small {
   padding: 1em 0;
-  color:#f2eee2;
-  display:block;
+  color: #f2eee2;
+  display: block;
 }
 .incidentBox {
   text-align: left;
-  padding:2em;
+  padding: 2em;
   width: 95%;
   min-height: 300px;
 }
 
 .form-el label[contenteditable="true"] {
   border-style: dotted;
-  border-width:4px;
+  border-width: 4px;
   cursor: text;
 }
 
@@ -636,12 +633,12 @@ small {
 }
 
 input[type=text]{
-  display:block;
+  display: block;
   padding: 2em;
   text-align: center;
   color: #A9BCD0;
   background: transparent;
-  border:none;
+  border: none;
   border-bottom-style: dotted;
   font-size: 1em;
 }
@@ -650,31 +647,28 @@ input[type=text]{
   margin: 0 auto;
 }
 
-
-
-
 .q0-only {
   font-size: 1em;
   color: #fff;
   background-color: #7cadcf;
   padding: 1em 0;
   text-align: center;
-  margin:0 10px;
+  margin: 0 10px;
 }
 span.q0-only {
   background-color: initial;
   color: inherit;
 }
 .q0-only h4, .q0-only p{
-  margin:0;
+  margin: 0;
 }
 
 #bgContainer {
-  padding:0;
+  padding: 0;
 }
 #bgContainer section {
-  padding:2em 6em;
-  display:flex;
+  padding: 2em 6em;
+  display: flex;
   align-items: center;
 }
 
@@ -687,14 +681,14 @@ span.q0-only {
 }
 #bgContainer img {
   border-radius: 5px;
-  height:100%;
-  max-width:500px;
+  height: 100%;
+  max-width: 500px;
 }
 #bgContainer .nav-start img {
-  filter:drop-shadow(0px 0px 3px #eee);
+  filter: drop-shadow(0px 0px 3px #eee);
 }
 #bgContainer .nav-scroll img {
-  filter:drop-shadow(0px 0px 3px currentColor);
+  filter: drop-shadow(0px 0px 3px currentColor);
 }
 /* #bgContainer .trio img {
   margin:1em;
@@ -706,7 +700,7 @@ span.q0-only {
   border-radius: 1.5em;
 }
 .trio-wrap {
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
 }
 .dbl {
@@ -716,13 +710,12 @@ span.q0-only {
   flex-direction: row-reverse;
 }
 
-
 .grid {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  flex:2 0 15%;
-  margin-left:4em;
+  flex: 2 0 15%;
+  margin-left: 4em;
 }
 .grid img {
   margin: 0
@@ -746,18 +739,18 @@ span.q0-only {
 }
 
 .spacer {
-  flex-grow:100;
+  flex-grow: 100;
 }
 .showAllQs {
-  display:block;
+  display: block;
 }
 #home-pic {
   flex: 1 1 60%;
   margin: 1em;
 }
 #img-intro {
-  width:100%;
-  margin:0;
+  width: 100%;
+  margin: 0;
 }
 
 .nav-start .btn.btn-seco {
@@ -769,9 +762,6 @@ span.q0-only {
   color: #066392;
   background-color: #fff;
 }
-
-
-
 
 button::-moz-focus-inner {
   outline: none;
@@ -798,14 +788,14 @@ summary::marker {
   left: 50%;
   z-index: 10;
   background: #893168;
-  padding:1em;
+  padding: 1em;
 }
 #spinner img {
   max-width: 100px;
 }
 #spinner p{
   text-align: center;
-  color:#f2eee2;
+  color: #f2eee2;
 }
 #spinner.loading{
   display: block;
@@ -814,17 +804,17 @@ summary::marker {
   display: none;
 }
 #snapshotGroup.hidden{
-  display:none !important;
+  display: none !important;
 }
 #snapshotLink {
-  padding:1em;
+  padding: 1em;
   margin: 10px;
   border-style: dotted;
   text-align: left;
   margin-left: 0;
 }
 .fa-copy{
-  color:#f2eee2;
+  color: #f2eee2;
   font-size: 2em;
   cursor: pointer;
   opacity: 0.8;
@@ -836,17 +826,17 @@ summary::marker {
   display: flex;
   flex-direction: column;
   color: #f2eee2;
-  font-size:0.8em;
+  font-size: 0.8em;
 }
 #snapshotGroup div {
   display: flex;
   align-items: center;
 }
 .btn-wrap.wrap-r p {
-  color:#a9bcd0;
+  color: #a9bcd0;
 }
 #teamContentCols{
-  display:flex;
+  display: flex;
   justify-content: space-around;
 }
 #teams {
