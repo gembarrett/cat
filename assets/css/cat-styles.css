@@ -456,7 +456,7 @@ body.buildPage #page {
 }
 
 form {
-  padding: 1em 2em 1.5em;
+  padding: 1em 2em 0em;
   scroll-snap-align: start;
   font-size: 1.1em;
 }
