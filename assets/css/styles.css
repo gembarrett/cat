@@ -62,53 +62,7 @@ a.btn:hover {
 }
 
 
-/* ================== */
-/* Info panel styles */
-.info-display {
-  border-top: 1px solid rgba(143,197,234,0.5);
-}
-
-.question-panel {
-  border: 1px solid currentColor;
-  padding: 1em;
-  background-color: #f2eee2;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.question-panel i {
-  font-size: 2em;
-  align-self: center;
-  opacity: 0.5;
-}
-
-.question-panel i:hover, .question-panel i.highlight {
-  opacity: 1;
-}
-
-.question-panel i.highlight{
-  transform: rotate(45deg);
-}
-
-.question-panel div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.question-panel span{
-  font-size: 2em;
-  padding-right: 0.5em;
-  min-width: 30px;
-}
-
-/* ================== */
-/* Preview styles */
-
-#previewPolicy:disabled, #editBtn.disabled {
-  display: none;
-}
+/* Submit answers has been commented out in JS but may be needed - keep for now */
 #submitAnswers {
   margin-right: 0;
 }

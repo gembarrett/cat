@@ -75,6 +75,7 @@ function simulateClick(el, key, keys){
 
 }
 
+// remove this function as overlay code has been deleted
 function isPreviewOpen(){
   pre = document.getElementById('preview');
   // if modal doesn't exist, or does exist and is closed
