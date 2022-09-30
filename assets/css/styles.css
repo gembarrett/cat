@@ -62,81 +62,23 @@ a.btn:hover {
 }
 
 
-/* Submit answers has been commented out in JS but may be needed - keep for now */
-#submitAnswers {
-  margin-right: 0;
-}
-
-#submitAnswers:disabled {
-  cursor: not-allowed;
-  opacity: 75%;
-  background-color: #888685;
-  border: #ccc;
-}
-
-#intro {
-  padding: 5em 4em 8em;
-}
-
-#intro h1, #intro h2 {
-  text-align: left;
-}
-
-#intro h1 {
-  font-size: 2.4em;
-  line-height: 1.5em;
-  margin: 2em 0;
-  width: 80%;
-}
-
-#intro h2 {
-  font-weight: lighter;
-  font-size: 1em;
-  text-align: center;
-  padding-bottom: 1em;
-}
-
-#intro input {
-  background: #f2eee2;
-  background: transparent;
-  margin: 0 auto;
-}
-
-#intro .btn {
-  margin-top: 3em;
-}
-
-#intro .wrap-c {
-  align-items: center;
-}
-
+/* Main content container */
 .window {
   margin: 4em 0;
   padding: 2em;
 }
-
 .window:first-child {
   margin-top: 0;
 }
 #page > .window ~ .window {
   margin-top: 4em;
 }
-
 .window h3 {
   text-transform: uppercase;
   font-size: 3em;
   line-height: 1.5em;
   margin: 0;
   flex: 0 0 40%;
-}
-.dlBtnWrapper {
-  display: flex;
-  flex-direction: column;
-}
-.dlBtnWrapper > div {
-  justify-content: space-evenly;
-  display: flex;
-  margin-top: 1em;
 }
 .buildPage .window {
   margin: 4em auto;
@@ -145,35 +87,20 @@ a.btn:hover {
 .buildPage .window > :not(h3) {
   padding: 0 2em;
 }
-
-#policy-dl i{
-  padding-left: 5px;
-}
 .buildPage .window div {
   display: flex;
   flex-direction: column;
   width: 100%
 }
-.feature {
-  width: 30%;
-  border: 1px solid #8FC5EA;
-  color: #066493;
-  box-shadow: 0px 4px 5px #eee;
-  margin: 1em;
+#no-js.window {
+  flex-direction: column;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.feat-wrap {
-  padding: 2em;
-}
 
-.feature i {
-  font-size: 6em;
-  text-align: center;
-  color: #8FC5EA;
-  display: block;
-  background-color: #066392;
-  padding: 10px;
-}
+/* Buttons */
 .btn {
   border: 2px solid;
   padding: 0.5em;
@@ -182,43 +109,25 @@ a.btn:hover {
   cursor: pointer;
   font-size: 1.5em;
 }
-
 .btn-prim {
   border-color: black;
   font-weight: bold;
 }
-.btn-tert {
-  border: 0;
+.nav-start .btn.btn-seco {
   color: #fff;
   background-color: #066493;
-  min-width: 0;
-  border: 1px solid #fff;
+}
+.nav-start .btn.btn-seco:hover {
+  color: #066392;
+  background-color: #fff;
+}
+button::-moz-focus-inner {
+  outline: none;
+  border: none;
 }
 
-.btn-tert:hover {
-  background-color: #8FC5EA;
-  filter: drop-shadow(0px 0px 3px #fff);
-}
 
-.btn-tert.highlight {
-  background-color: #8FC5EA;
-  filter: drop-shadow(0px 0px 3px #fff);
-}
-
-.btn-wrap {
-  display:flex;
-  padding: 2em 0 0 1em;
-}
-
-.wrap-c {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.wrap-r {
-  justify-content: space-between;
-  margin-bottom: 1em;
-}
+/* Element not created - remove if code references are deleted */
 .policyHolder {
   width: 100%;
   display: inline-block;
@@ -230,200 +139,28 @@ a.btn:hover {
   line-height: 1.8em;
   color: #1b263b;
 }
-small a {
-  color: #a9bcd0;
-  text-decoration: underline;
-}
-small {
-  padding: 1em 0;
-  color: #f2eee2;
-  display: block;
-}
-.incidentBox {
-  text-align: left;
-  padding: 2em;
-  width: 95%;
-  min-height: 300px;
-}
 
+
+/* Remove when code references to Edit functionality are deleted */
 .form-el label[contenteditable="true"] {
   border-style: dotted;
   border-width: 4px;
   cursor: text;
 }
-
-.btn-edit {
-  cursor: text;
-}
-
-input[type=text]{
+.showAllQs {
   display: block;
-  padding: 2em;
-  text-align: center;
-  color: #A9BCD0;
-  background: transparent;
-  border: none;
-  border-bottom-style: dotted;
-  font-size: 1em;
 }
 
-input[type=text]{
-  margin: 0 auto;
-}
 
-.q0-only {
-  font-size: 1em;
-  color: #fff;
-  background-color: #7cadcf;
-  padding: 1em 0;
-  text-align: center;
-  margin: 0 10px;
-}
-span.q0-only {
-  background-color: initial;
-  color: inherit;
-}
-.q0-only h4, .q0-only p{
-  margin: 0;
-}
-
-#bgContainer {
-  padding: 0;
-}
-#bgContainer section {
-  padding: 2em 6em;
-  display: flex;
-  align-items: center;
-}
-
-#bgContainer .text-img-wrap {
-  flex-direction: column;
-  flex: 1 1 90%;
-}
-#bgContainer section > div > p {
-  flex: 1 2 52%;
-}
-#bgContainer img {
-  border-radius: 5px;
-  height: 100%;
-  max-width: 500px;
-}
-#bgContainer .nav-start img {
-  filter: drop-shadow(0px 0px 3px #eee);
-}
-#bgContainer .nav-scroll img {
-  filter: drop-shadow(0px 0px 3px currentColor);
-}
-/* #bgContainer .trio img {
-  margin:1em;
-  width:100%;
-} */
-.border-white-round {
-  border: 2px solid #fff;
-  padding: 1em 2em;
-  border-radius: 1.5em;
-}
-.trio-wrap {
-  display: flex;
-  justify-content: space-evenly;
-}
-.dbl {
-  flex-direction: row;
-}
-.dbl.reverse {
-  flex-direction: row-reverse;
-}
-
-.grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 2 0 15%;
-  margin-left: 4em;
-}
-.grid img {
-  margin: 0
-  flex: 1 2 50%;
-}
-
+/* These styles apply to the three-column layout on home page */
 .trio p {
   flex: 2 0 60%;
 }
 .trio h1 {
   flex: 1 0 15%;
 }
-.dbl img {
-  margin-right: 2em;
-  margin-left: 0;
-  flex: 1 1 40%;
-}
-.dbl.reverse img {
-  margin-left: 2em;
-  margin-right: 0;
-}
 
-.spacer {
-  flex-grow: 100;
-}
-.showAllQs {
-  display: block;
-}
-#home-pic {
-  flex: 1 1 60%;
-  margin: 1em;
-}
-#img-intro {
-  width: 100%;
-  margin: 0;
-}
-
-.nav-start .btn.btn-seco {
-  color: #fff;
-  background-color: #066493;
-}
-
-.nav-start .btn.btn-seco:hover, .nav-start .btn.btn-tert:hover {
-  color: #066392;
-  background-color: #fff;
-}
-
-button::-moz-focus-inner {
-  outline: none;
-  border: none;
-}
-
-summary h2 {
-  display: inline;
-  line-height: 2em;
-}
-summary::marker {
-  font-size: 1.5em;
-}
-#no-js.window {
-  flex-direction: column;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#spinner {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  z-index: 10;
-  background: #893168;
-  padding: 1em;
-}
-#spinner img {
-  max-width: 100px;
-}
-#spinner p{
-  text-align: center;
-  color: #f2eee2;
-}
-#spinner.loading{
-  display: block;
-}
+/* Snapshot styles - remove if functionality is deleted */
 #snapshotPolicy:disabled, #snapshotPolicy:disabled + div {
   display: none;
 }
@@ -437,15 +174,6 @@ summary::marker {
   text-align: left;
   margin-left: 0;
 }
-.fa-copy{
-  color: #f2eee2;
-  font-size: 2em;
-  cursor: pointer;
-  opacity: 0.8;
-}
-.fa-copy:hover {
-  opacity: 1;
-}
 #snapshotGroup{
   display: flex;
   flex-direction: column;
@@ -456,22 +184,25 @@ summary::marker {
   display: flex;
   align-items: center;
 }
-.btn-wrap.wrap-r p {
-  color: #a9bcd0;
+.fa-copy{
+  color: #f2eee2;
+  font-size: 2em;
+  cursor: pointer;
+  opacity: 0.8;
 }
-#teamContentCols{
-  display: flex;
-  justify-content: space-around;
+.fa-copy:hover {
+  opacity: 1;
 }
-#teams {
-  text-align: center;
+
+
+/* Submit answers has been commented out in JS but may be needed - keep for now */
+#submitAnswers {
+  margin-right: 0;
 }
-#expectedOutput{
-  color: #F2EEE2;
-  margin-top: 4em;
-}
-label span {
-  display: block;
-  font-size: 0.8em;
-  font-family: "SinkinSansMediumItalic";
+
+#submitAnswers:disabled {
+  cursor: not-allowed;
+  opacity: 75%;
+  background-color: #888685;
+  border: #ccc;
 }
