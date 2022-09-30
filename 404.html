@@ -5,39 +5,88 @@
     <meta name="viewport" content="width=device-width">
     <title>Page not found - CAT: Cybersecurity Assessment Tool</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/cat-styles.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
-    <link href="/assets/css/all.css" rel="stylesheet">
+
+    <script src="content/en-content.js"></script>
+    <script src="content/zz-content.js"></script>
+    <script src="content/links.js"></script>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/init.js"></script>
+
+
+    <!-- these may need to be moved further down or refactored -->
+    <script src="assets/js/start.js"></script>
+    <script src="assets/js/keyboard.js"></script>
+    <script src="assets/js/edit.js"></script>
+    <script src="assets/js/policy.js"></script>
+    <script src="assets/js/subpolicies.js"></script>
   </head>
   <body>
-    <div id="head" class="nav-start">
-      <a href="/" title="Go to the home page">
-        <img id="logo" alt="CAT logo" src="" />
+    <div id="head" class="nav-start format">
+      <div class="glyph">
+      <a href="/">
+        <img alt="CAT text logo" id="link-home" src="assets/images/CAT-logo_white.png">
       </a>
-
-      <!-- hamburger icon -->
-      <input type="checkbox" id="menu-check" />
-      <label for="menu-check" id="expand"><i class="fas fa-ellipsis-v"></i></label>
-      <input type="checkbox" id="menu-collapse" />
-      <label for="menu-check" id="collapse"><i class="fas fa-ellipsis-h"></i></label>
-
-      <ul id="menu" class="links">
-        <li><a id="bu" href="/#build" title="Use the tool">Use the tool</a></li>
-      </ul>
     </div>
-    <div id="page" class="main-content">
-      <div id="no-js" class="window">
+    <div class="cat-logo">
+      <img class="nav-scroll" alt="CAT logo" src="assets/images/CAT-logo.png">
+    </div>
+    <div class="header-menu">
+        <img id="menu-trigger" src="assets/images/hamburger.png">
+      </div>
+    </div>
+    <div id="menu-container" class="close format">
+      <ul id="menu" class="title">
+        <li><a href="/#build">Get started</a></li>
+        <li><a href="/#basics?how">How it works</a></li>
+        <li><a href="/#basics?legal">Legal disclaimer</a></li>
+        <li><a href="/#basics?team">Who built this</a></li>
+        <!--
+        <select name="language">
+          <option value="en">EN</option>
+          <option value="zz">ZZ</option>
+        </select> -->
+      </ul>
+      <span id="close-menu">X</span>
+    </div>
+    <div id="page" class="main-content contain">
+      <div class="window">
         <h3>That page doesn't seem to exist</h3>
         <p>Looking to use the Cybersecurity Assessment Tool? <a href="/#build" title="Use the tool">Start here</a></p>
         <p>Want more information about CAT? <a href="/" title="Go to the home page">Go to the home page</a></p>
         <p>See a problem with this site? Raise an <a href="https://github.com/gembarrett/cat/issues" title="Report a problem with CAT on GitHub">issue on GitHub here</a>.</p>
         </div>
     </div>
-    <div id="foot" class="footer nav-start">
-      <ul class="links">
-        <!-- github, report download, contact, build, more info -->
-        <li><a href="https://github.com/gembarrett/cat" target="_blank" title="View the open-source CAT code at GitHub">Code</a></li>
-        <li><a href="/#build" title="Use the tool">Use the tool</a></li>
-      </ul>
+    <div id="foot" class="format">
+      <div class="contain">
+        <a href="https://www.fordfoundation.org/" target="_blank"><img src="assets/images/ford-foundation-logo.png" /></a>
+        <p><span class="copyright">&#169;</span> 2022 The Ford Foundation</p>
+      </div>
     </div>
+    <script src="assets/js/templates/hero.js"></script>
+    <script src="assets/js/templates/trio.js"></script>
+    <script src="assets/js/templates/how.js"></script>
+    <script src="assets/js/templates/legal.js"></script>
+    <script src="assets/js/templates/team.js"></script>
+
+    <script src="assets/js/templates/questionsTemplate.js"></script>
+    <script src="assets/js/templates/policyTemplate.js"></script>
+
+    <script src="assets/js/controllers/home.js"></script>
+    <script src="assets/js/controllers/basicsPage.js"></script>
+    <script src="assets/js/controllers/questionPage.js"></script>
+    <script src="assets/js/controllers/policyPage.js"></script>
+
+    <script src="assets/js/views/home.js"></script>
+    <script src="assets/js/views/basicsView.js"></script>
+    <script src="assets/js/views/questionsView.js"></script>
+    <script src="assets/js/views/policyView.js"></script>
+    <script src="assets/js/styling.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/snapshot.js"></script>
+    <script src="assets/js/translation.js"></script>
+
   </body>
 </html>

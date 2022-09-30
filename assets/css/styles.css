@@ -2,22 +2,6 @@
 html, body {
   height: 100%;
 }
-/* TODO: fix so it applies just to external links
-a[href]:visited {
-  color:inherit;
-} */
-a:hover {
-  text-decoration: underline;
-}
-a.btn:hover {
-  text-decoration: none;
-}
-
-:focus {
-  border-style: solid;
-  border-width: 0.5px;
-}
-
 
 body {
   margin: 0;
@@ -38,174 +22,41 @@ body {
   z-index: 1;
 }
 
-#img-intro {
-  width: 75%;
-  border: 1px solid white;
-  margin: 2em 4em 0;
-  filter: drop-shadow(0px 0px 3px #eee);
-}
 body.buildPage #head.nav-start {
   opacity: 100;
 }
 body.buildPage #page {
   padding-top: 4em;
 }
-#head.nav-start {
-  /* opacity: 0; */
-}
-.nav-scroll #logo{
-}
 
 #page {
   flex: 1 0 auto;
 }
-.editMode {
-  border: 3em #a9bcd0 solid;
-  border-top: 0;
-  border-bottom: 0;
-}
-.editMode .questionContent {
-  margin-bottom: 3em;
-}
-
-#editBtn.editMode {
-  border-width: 0.5em;
-}
-#editBtn {
-  cursor: pointer;
-}
-.prompt {
-  cursor: pointer;
-}
-.prompt:hover, .prompt:focus {
-  text-decoration: underline;
-  padding: 5px 20px;
-}
-
-.nav-scroll #editBtn {
-  color: #fff;
-}
 
 #foot {
   flex-shrink: 0;
-}
-.wrapper {
-  width: 75%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-#head h1 {
-  display: inline-block;
-}
-
-#head h2 {
-  font-size: 2rem;
-  display: inline-block;
-  padding-left: 10px;
-}
-
-#logoBig {
-  max-height: 110px;
-}
-#logoContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-#logoContainer > div {
-  margin-right: 4em;
-}
-.text-img-wrap {
-  display: flex;
-  flex-direction: row;
-}
-.text-buttons-wrap {
-  margin: 2em 4em 2em 0;
-  max-width: 25%;
-}
-#feedback .text-buttons-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: unset;
-}
-.links {
-  list-style: none;
-  margin-left: auto;
-  cursor: pointer;
-}
-
-.links a, .links a:visited, .prompt {
-  padding: 5px;
-  border: 2px solid;
-  border-radius: 5%;
-  border-color: transparent;
-  color: inherit;
-}
-
-.links li {
-  display: inline;
-  padding: 0 20px;
-}
-
-.links li:first-child {
-  padding-left: 0;
-}
-.links li:last-child {
-  padding: 1em;
-  white-space: nowrap;
 }
 
 #foot li {
   font-size: 0.8rem;
 }
 
-/* Button styles */
-
-/* Actual checkboxes set to display:none. Styling the labels and then simply checking if the checkboxes are checked to show and hide the nav. */
-#menu-check {
-  display: none;
+/* Link styles */
+/* TODO: fix so it applies just to external links
+a[href]:visited {
+  color:inherit;
+} */
+a:hover {
+  text-decoration: underline;
+}
+a.btn:hover {
+  text-decoration: none;
+}
+:focus {
+  border-style: solid;
+  border-width: 0.5px;
 }
 
-#menu-collapse {
-  display: none;
-}
-
-/* Style the checkbox labels.*/
-#expand {
-  cursor: pointer;
-}
-
-#collapse {
-  cursor: pointer;
-  display: none;
-}
-
-/* If menu-check is checked, set the collapse icon to display... */
-#menu-check:checked ~ #collapse {
-  display: block;
-}
-
-/* ...and if menu-check is checked, then set this icon to disappear */
-#menu-check:checked ~ #expand {
-  display: none;
-}
-
-/* ...and if collapse is checked, set expand to display again */
-#menu-collapse:checked ~ #expand {
-  display: block;
-}
-
-/* Show and hide the nav */
-#menu-check:checked ~ ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-#menu-collapse:checked ~ ul {
-  display: none;
-}
 
 /* ================== */
 /* Content styles */
