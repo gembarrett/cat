@@ -11,6 +11,13 @@ body {
   flex-direction: column;
   overflow: scroll;
   overflow-x: hidden;
+  background-color: #292929;
+}
+#head, #page, #foot {
+  display:flex;
+}
+#head, #foot {
+  background-color: #000;
 }
 
 #head {
@@ -21,34 +28,84 @@ body {
   align-items: center;
   z-index: 1;
 }
+#head > div {
+  width: 33%;
+}
 
 body.buildPage #head.nav-start {
   opacity: 100;
 }
 body.buildPage #page {
-  padding-top: 4em;
+  padding-top: 0;
+  flex-direction: row;
+  background-color: inherit;
+  position: fixed;
+  margin-top: 20vh;
+}
+body.buildPage #page {
 }
 
 #page {
   flex: 1 0 auto;
 }
+#page {
+  flex-direction: column;
+  align-self: center;
+  background-color: #DAD9CF;
+  padding-top: 4em;
+}
 
 #foot {
   flex-shrink: 0;
+  width: 100%;
+  justify-content: center;
+  padding: 1em 0;
 }
-
+#foot p {
+  color: #fff;
+  font-size: 0.90em;
+}
 #foot li {
   font-size: 0.8rem;
 }
+#foot .copyright {
+  font-family: 'Helvetica', sans-serif;
+}
+#foot img {
+  width: 60%;
+}
+#foot .contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contain {
+  width: 55%;
+  align-self: center;
+}
+.contain-70 {
+  width: 70%;
+  margin: auto;
+}
+
+.box {
+  background-color: #DAD9CF;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  height: 60vh;
+}
+
 
 /* Link styles */
 /* TODO: fix so it applies just to external links
 a[href]:visited {
   color:inherit;
 } */
-
 a {
   text-decoration: none;
+  color: #fff;
 }
 a:hover {
   text-decoration: underline;
@@ -112,6 +169,8 @@ a.btn:hover {
 .btn-prim {
   border-color: black;
   font-weight: bold;
+  background-color: #000;
+  color: #DAD9CF;
 }
 .nav-start .btn.btn-seco {
   color: #fff;
@@ -152,13 +211,62 @@ button::-moz-focus-inner {
 }
 
 
-/* These styles apply to the three-column layout on home page */
+/* Home page styles */
 .trio p {
   flex: 2 0 60%;
 }
 .trio h1 {
   flex: 1 0 15%;
 }
+#trio {
+  display: flex;
+  flex-direction: row;
+}
+.trio-col {
+  width: 33.33333%;
+}
+.trio-col span {
+  display: block;
+}
+.trio-col a {
+  color: inherit;
+}
+.trio-col a:focus {
+  border: 0;
+}
+.trio-col a:active:focus {
+  display: block;
+  border: 0;
+  color: inherit;
+}
+.trio-col img {
+  width: 100%;
+  display: block;
+}
+.trio-col h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.4em;
+  padding: 0.5em 1em 1em;
+  line-height: 1.2em;
+}
+#hero {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+#hero img {
+  max-height: 140px;
+  margin: 1em 0 1em;
+}
+#hero .btn {
+  width: 33%;
+  margin: 0.8em 0;
+}
+#hero h1 {
+  font-size: 1.8em;
+}
+
 
 /* Snapshot styles - remove if functionality is deleted */
 #snapshotPolicy:disabled, #snapshotPolicy:disabled + div {
