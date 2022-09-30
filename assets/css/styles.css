@@ -46,6 +46,10 @@ body.buildPage #page {
 a[href]:visited {
   color:inherit;
 } */
+
+a {
+  text-decoration: none;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -57,57 +61,6 @@ a.btn:hover {
   border-width: 0.5px;
 }
 
-
-/* ================== */
-/* Content styles */
-
-a {
-  text-decoration: none;
-}
-
-.questionContent > .btn-tert {
-  min-width: 3em;
-}
-
-.questionContent summary {
-  width: auto;
-  color: #f2eee2;
-  background: #1b263b;
-  padding: 1em;
-  cursor: pointer;
-}
-
-#secretLink {
-  color: #fff;
-}
-
-#q0 .text-img-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-#q0 img {
-  width: 100%;
-  border-radius: 5%;
-}
-
-#q0 section {
-  flex: 2 2 20%;
-  margin: 3em 2em;
-  background: #f2eee2;
-}
-
-#q0 section p {
-  padding: 0.5em 2em;
-}
-
-#q0 h1 {
-  font-size: 1.6em;
-}
-#q0 h2 {
-  font-size: 1.2em;
-}
 
 /* ================== */
 /* Info panel styles */
