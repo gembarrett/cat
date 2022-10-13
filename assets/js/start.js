@@ -167,3 +167,18 @@ function stripCode(t){
   t = t.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   return t;
 }
+
+function parseContent(data, array){
+  for (var p = 0; p < data.length; p++){
+    if (data[p].items !== undefined) {
+      array += `<ul>`;
+      for (var l = 0; l < data[p].items.length; l++) {
+        array += `<li>`+data[p].items[l]+`</li>`;
+      }
+      array += `</ul>`;
+    } else {
+      array += `<p>`+data[p]+`</p>`;
+    }
+  }
+  return array;
+}
