@@ -63,7 +63,6 @@ window.onload = function(){
       function(){utils.router()}
   );
   setUpMenu();
-    // setUpFeedback();
   utils.router();
 };
 
@@ -71,7 +70,7 @@ var sections = [];
 var sectionLabels = [];
 
 // initialise counters with the first section and question, this is updated at the end of questions and sections
-// TODO: add a way to track which question is in which section
+// TODO: add a way to track which question is in which section - perhaps by changing q id to reflect section and question
 for (var q = 0; q < textStore.qs.length; q++){
   sections.push(textStore.qs[q].questions);
   sectionLabels.push(textStore.qs[q].level);
@@ -109,14 +108,9 @@ var currentState = {
   exclusions: []
 }
 // for storing the storeAs names and values
+// NOTE: this may not be necessary, but check with link replacement functionality before deletion
 var dict = {};
-// for storing the team-content names and values
-var teamContent = [];
-
-// for storing the orgName when it's entered on the home page
-var homeName = "";
 
 // for holding the end result
 var policyText = [];
-var appendixText = [];
 var output;
