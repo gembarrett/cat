@@ -6,7 +6,7 @@ function copyUrl(){
       copyText.select();
       document.execCommand('copy');
     } else {
-      window.alert('Sorry, SOAP can\'t access your clipboard right now');
+      window.alert('Sorry, CAT can\'t access your clipboard right now');
     }
   } catch (error){
     console.log(error);
@@ -14,7 +14,6 @@ function copyUrl(){
 }
 
 function getSnapshotURL(){
-  // var snapshotUrl = "https://usesoap.app/#b";
   var snapshotUrl = thisEnv+"/#b-"+catv+"-p";
   var qNo = "0";
   for (var i = 0; i < currentState.answers.length; i++){
