@@ -10,11 +10,6 @@ function compileDoc(p,a){
     markdown: "",
     html: ""
   };
-  // create the temporary values
-  var tempPolicy = [];
-  var tempGeneralA = [];
-  var tempReviewA = [];
-  var tempTipsA = [];
 
   var contextP = [];
   var deviceP = [];
@@ -24,13 +19,6 @@ function compileDoc(p,a){
   var travelP = [];
   var envP = [];
   var networkP = [];
-  var appContent = {
-    general: [],
-    review: [],
-    tips: [],
-    links: []
-  };
-  var routineDoc = [];
 
   // what is the first q in the answers array?
   var prevQ = 0;
@@ -53,30 +41,15 @@ function compileDoc(p,a){
           // questions 0-5 are for context
           case qRef < 6:
             contextP = getPolicyContent(qRef, prevQ, aRef, contextP, found);
-            // if we need the appendix and routines too
-            if (a) {
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found); // TODO: instead of repeating this is should just be a function call each time
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // add case for teaming name & pos @ 9
           // questions 6-8 are for devices
           case qRef < 9:
             deviceP = getPolicyContent(qRef, prevQ, aRef, deviceP, found);
-            // if we need the appendix and routines too
-            if (a) {
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found);
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // questions 9-12 are for comms
           case qRef < 13:
             commsP = getPolicyContent(qRef, prevQ, aRef, commsP, found);
-            // if we need the appendix and routines too
-            if (a) {
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found);
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // question 13 is inc resp
           case qRef < 14:
@@ -85,11 +58,6 @@ function compileDoc(p,a){
           // questions 14-19 are for accounts
           case qRef < 20:
             acctsP = getPolicyContent(qRef, prevQ, aRef, acctsP, found);
-            // if we need the appendix and routines too
-            if (a) {
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found);
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // question 20 is for inc resp
           case qRef < 21:
@@ -99,11 +67,6 @@ function compileDoc(p,a){
           // questions 22-26 are for devices
           case qRef < 27:
             deviceP = getPolicyContent(qRef, prevQ, aRef, deviceP, found);
-            // if we need the appendix and routines too
-            if (a) {
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found);
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // question 27 is for inc resp
           case qRef < 28:
@@ -113,11 +76,6 @@ function compileDoc(p,a){
           // questions 28-33 are for travel
           case qRef < 34:
             travelP = getPolicyContent(qRef, prevQ, aRef, travelP, found);
-            // if we need the appendix and routines too
-            if (a) {
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found);
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // question 34 is for inc resp
           case qRef < 35:
@@ -126,11 +84,6 @@ function compileDoc(p,a){
           // questions 35-41 are for environmental security
           case qRef < 42:
             envP = getPolicyContent(qRef, prevQ, aRef, envP, found);
-            // if we need appendix and routines
-            if (a){
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found);
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // question 42 is for inc resp
           case qRef < 43:
@@ -139,11 +92,6 @@ function compileDoc(p,a){
           // questions 43-47 are for network security
           case qRef < 48:
             networkP = getPolicyContent(qRef, prevQ, aRef, networkP, found);
-            // if we need appendix and routines
-            if (a){
-              appContent = getAppendixContent(qRef, prevQ, aRef, appContent, found);
-              routineDoc = getRoutineEntry(qRef, prevQ, aRef, routineDoc, found);
-            }
             break;
           // question 48 is for inc resp
           case qRef <49:
@@ -158,9 +106,9 @@ function compileDoc(p,a){
     prevQ = qRef;
   }
 
-  doc.plain = 'Organizational Security Policy\n\nCreated '+dateStamp()+'\n\n'+contextP.join('\n');
-  doc.markdown = '# Organizational Security Policy \n#### Created '+dateStamp()+'\n\n'+contextP.join('\n');
-  doc.html = '<!DOCTYPE html><html><head><title>Organizational Security Policy '+dateStamp()+'</title></head><body><h1>Organizational Security Policy</h1><h4>Created '+dateStamp()+'</h4><p>'+contextP.join('</p><p>')+'</p>';
+  doc.plain = 'Cybersecurity Assessment \n\nCreated '+dateStamp()+'\n\n'+contextP.join('\n');
+  doc.markdown = '# Cybersecurity Assessment \n#### Created '+dateStamp()+'\n\n'+contextP.join('\n');
+  doc.html = '<!DOCTYPE html><html><head><title>Ford Foundation Cybersecurity Assessment Tool (CAT)'+dateStamp()+'</title></head><body><h1>Cybersecurity Assessment</h1><h4>Created '+dateStamp()+'</h4><p>'+contextP.join('</p><p>')+'</p>';
 
   if (deviceP.length > 0){
     doc.plain += '\n\nDevice Security\n' + deviceP.join('\n');
@@ -198,40 +146,9 @@ function compileDoc(p,a){
     doc.html += '<h3>What to do if...</h3><p>' + incResP.join('</p><p>')+'</p>';
   }
 
-  // if appendix is requested, join the policy, appendix and routines arrays together, and add the team-specific policies
-  if (a) {
-    doc.plain += '\n\nAppendix\n';
-    doc.markdown += '\n\n## Appendix\n';
-    doc.html += '<h2>Appendix</h2>';
-    if (appContent.general.length > 0){
-      doc.plain += '\n\nGeneral Advice\n- ' + appContent.general.join('\n- ');
-      doc.markdown += '\n\n### General Advice \n\n* ' + appContent.general.join('\n* ');
-      doc.html += '<h3>General Advice</h3><ul><li>' + appContent.general.join('</li><li>')+'</li></ul>';
-    }
-    if (appContent.review.length > 0){
-      doc.plain += '\n\nReview Checklist\n- ' + appContent.review.join('\n- ');
-      doc.markdown += '\n\n### Review Checklist \n\n- [ ] ' + appContent.review.join('\n- [ ] ');
-      doc.html += '<h3>Review Checklist</h3><ol><li>' + appContent.review.join('</li><li>')+'</li></ol>';
-    }
-    if (appContent.tips.length > 0){
-      doc.plain += '\n\nImplementation Tips\n- ' + appContent.tips.join('\n- ');
-      doc.markdown += '\n\n### Implementation Tips \n\n* ' + appContent.tips.join('\n* ');
-      doc.html += '<h3>Implementation Tips</h3><ul><li>' + appContent.tips.join('</li><li>')+'</li></ul>';
-    }
-    if (appContent.links.length > 0){
-      doc.plain += '\n\nUseful Links \n- ' + appContent.links.join('\n- ');
-      doc.markdown += '\n\n### Useful Links \n\n* ' + appContent.links.join('\n* ');
-      doc.html += '<h3>Useful Links</h3><ul><li>' + appContent.links.join('</li><li>')+'</li></ul>';
-    }
-    if (routineDoc.length > 0){
-      doc.plain += '\n\nEveryday practices \n+ ' + routineDoc.join('\n+ ');
-      doc.markdown += '\n\n## Everyday practices \n\n* ' + routineDoc.join('\n* ');
-      doc.html += '<h2>Everyday practices</h2><ul><li>' + routineDoc.join('</li><li>')+'</li></ul>';
-    }
-  }
-  doc.plain += '\n\nPlease note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization. \n\nBuilt with SOAP v.'+catv;
-  doc.markdown += '\n\n#### *Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.* \n\n##### Built with SOAP v.'+catv;
-  doc.html += '<h4>Please note: it is recommended that this policy undergoes a legal review prior to being implemented in your organization.</h4><h5>Built with SOAP v. '+catv+'</h5></body></html>';
+  doc.plain += '\n\nCybersecurity Assessment Tool v.'+catv;
+  doc.markdown += '\n\n#### Cybersecurity Assessment Tool v.'+catv;
+  doc.html += '<h5>Cybersecurity Assessment Tool v.'+catv+'</h5></body></html>';
 
   output = doc;
   return doc;
@@ -329,7 +246,7 @@ function downloadPolicy(type, edit) {
   }
 
   var format = 'text/'+type;
-  var filename = "SOAP-policy";
+  var filename = "CAT-results";
   if (type === 'markdown'){
     filename += '.md';
   } else if (type === 'plain'){
@@ -390,42 +307,6 @@ function getPolicyContent(question, previous, answer, policy, content){
   return policy;
 }
 
-function getAppendixContent(question, previous, answer, appDoc, content){
-  if ((question !== previous) && (content.appendixEntry !== "")) {
-    thisContent = replaceStr(content.appendixEntry);
-    appDoc.general.push(thisContent);
-  }
-  appEntry = content.answers[answer].appendixEntry[0];
-  if (appEntry.reviewList.length > 0){
-    thisContent = replaceStr(appEntry.reviewList);
-    appDoc.review.push(thisContent);
-  }
-  if (appEntry.tipList.length > 0){
-    thisContent = replaceStr(appEntry.tipList);
-    appDoc.tips.push(thisContent);
-  }
-  if (appEntry.linksList.length > 0){
-    thisContent = replaceStr(appEntry.linksList);
-    appDoc.links.push(thisContent);
-  }
-  return appDoc;
-}
-
-function getRoutineEntry(question, previous, answer, routines, content){
-  // if it's a new question and there's a general routine entry
-  if ((question !== previous) && (content.routineEntry !== "")) {
-    // edit the entry and push it to the doc
-    thisContent = replaceStr(content.routineEntry);
-    routines.push(thisContent);
-  }
-  // if the answer has a specific routine entry
-  if (content.answers[answer].routineEntry !== ""){
-    // edit that entry and push it to the doc
-    thisContent = replaceStr(content.answers[answer].routineEntry);
-    routines.push(thisContent);
-  }
-  return routines;
-}
 
 function resetChanges(){
   // could also use textContent instead of output here
