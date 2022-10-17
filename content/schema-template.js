@@ -15,8 +15,7 @@
       },
       {
         "a": "Last answer placeholder goes here",
-        "pts": 0,
-        "excludes": [] // does this answer render any of the subsequent questions irrelevant?
+        "pts": 0
       }
     ]
   },

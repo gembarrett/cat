@@ -46,7 +46,6 @@ function editAnswers() {
 // this should be used when compiling a policy or pressing Done to end an editing session
 function collectAnswers(isEdited){
   // var dic = {};
-  var exc = [];
   var ans = [];
 
   // get all the editable questions
@@ -79,8 +78,6 @@ function collectAnswers(isEdited){
           aNum = inputFields[bb].id.split("-")[3];
           // if the element is checked
           if (inputFields[bb].checked) {
-            // grab any exclusions
-            exc = updateExc(qData.data.answers[aNum], exc);
             // save the answer
             // dic = saveToDict(inputFields[bb], qData.data.answers[aNum], dic);
             ans = storeThisA(ans, qData.ref, aNum);
@@ -118,10 +115,6 @@ function collectAnswers(isEdited){
             // if the element is checked
             if (inputFields[cc].checked) {
 
-              if (qData.data.answers[aNum].hasOwnProperty("excludes")) {
-                // grab any exclusions
-                exc = updateExc(qData.data.answers[aNum], exc);
-              }
               // save the answer
               // dic = saveToDict(inputFields[cc], qData.data.answers[aNum], dic);
 
@@ -139,37 +132,8 @@ function collectAnswers(isEdited){
 
   // dict = dic;
   currentState.answers = ans;
-  // collect any excluded question numbers
-  if (exc.length > 0){
-    currentState.exclusions = exc;
-  }
 }
 
-function collectExclusions(id){
-  find = "#q-"+id+' input:checked';
-  var exc = [];
-  if (inputs = document.querySelectorAll(find)){
-    // for each checked input
-    for (var i = 0; i < inputs.length; i++){
-      // look up the question's data
-      q = getQData(inputs[i]);
-      // get the input's answer's id
-      id = inputs[i].id.split('-')[3];
-      // if it has exclusions
-      if (q.data.answers[id].hasOwnProperty("excludes")) {
-        console.log(q.data.answers[id].excludes);
-        // add them to the array
-        exc = updateExc(q.data.answers[id], exc);
-      }
-    }
-    if (exc.length > 0){
-      console.log(exc);
-      currentState.exclusions = exc.concat(currentState.exclusions);
-    }
-  } else {
-    console.log('none found');
-  }
-}
 
 
 function findContent(q){
@@ -270,16 +234,4 @@ function checkForInputs(q){
   } else {
     return false;
   }
-}
-
-function updateExc(a, e){
-  // check for exclusions
-  if (a.excludes !== null){
-    // add them to the list of excluded questions
-    e = e.concat(a.excludes);
-    return e;
-  } else {
-    return e;
-  }
-
 }

@@ -104,8 +104,6 @@ var currentState = {
   questionP: 0,
   // which answers have been given for which questions?
   answers: [],
-  // list of exclusions, updated on every submission and checked on every question load
-  exclusions: []
 }
 // for storing the storeAs names and values
 // NOTE: this may not be necessary, but check with link replacement functionality before deletion

@@ -22,23 +22,6 @@ function moveForward(id) {
 }
 
 
-function isExcludedQ(id) {
-  // start looking at the next question
-  id = moveForward(id);
-  // for each of the questions remaining
-  for (var q = id; q < questionsList.length; q++) {
-
-    // THIS MAY BE DELETED IF EXCLUSIONS AREN'T IMPLEMENTED
-    // if the question isn't on the list
-    if (currentState.exclusions.indexOf(parseInt(id)) === -1) {
-      // if the question is not excluded
-      // break the loop
-    } else {
-      // update everything to the next question
-      id = moveForward(id);
-    }
-  }
-}
 
 // this updates the progress bar
 function updateProgressBar(){
@@ -98,7 +81,6 @@ function handleSubmit() {
       match.classList.remove("current");
       // is the next question excluded
       // go to next question
-      id = isExcludedQ(id);
       nextQuestion();
       window.scrollTo(0,0);
   }
