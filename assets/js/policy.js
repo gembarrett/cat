@@ -1,5 +1,8 @@
 // File for all the policy-related functions
 
+// for holding the end result
+var output;
+
 // function which takes two boolean values which determine which document is needed
 function compileDoc(p,a){
   var doc = {
@@ -235,7 +238,8 @@ function compileDoc(p,a){
 }
 
 
-// function to replace temporary placeholder text in policy
+// function to replace temporary placeholder text in output
+// TODO: connect this with the links json
 function replaceStr(string) {
   var editedStr = string;
   // for each of the stored keys

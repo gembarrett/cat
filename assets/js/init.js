@@ -12,7 +12,6 @@ var textStore = {
   oc : window[bodyLang+"_oc"]
 }
 
-
 function updateLang(language) {
   textStore.qs = window[language+"_qs"];
   textStore.rs = window[language+"_rs"];
@@ -66,19 +65,16 @@ window.onload = function(){
   utils.router();
 };
 
+// these will hold the questions in their sections
 var sections = [];
-var sectionLabels = [];
-
-// initialise counters with the first section and question, this is updated at the end of questions and sections
-// TODO: add a way to track which question is in which section - perhaps by changing q id to reflect section and question
+// push the questions in their groups, plus labels, into variables for processing
 for (var q = 0; q < textStore.qs.length; q++){
   sections.push(textStore.qs[q].questions);
-  sectionLabels.push(textStore.qs[q].level);
 }
 
-// loop through and create list of questions
+// this will connect the question numbers (0-70) with their positions in each section (0-25)
 var questionsList = [];
-// for each of the sections
+// for each of the sections, loop through and create list of questions
 for (var i = 0; i < sections.length; i++) {
   // get the section data
   tmpContent = sections[i];
@@ -105,10 +101,7 @@ var currentState = {
   // which answers have been given for which questions?
   answers: [],
 }
+
 // for storing the storeAs names and values
 // NOTE: this may not be necessary, but check with link replacement functionality before deletion
 var dict = {};
-
-// for holding the end result
-var policyText = [];
-var output;
