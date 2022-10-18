@@ -69,6 +69,7 @@ window.onload = function(){
 // question list is only used in findContent() - can it be replaced?
 
 // these will hold the questions in their sections
+// TODO: the "levels" are being replaced, so this will need to be changed
 var sections = [];
 // push the questions in their groups, plus labels, into variables for processing
 for (var q = 0; q < textStore.qs.length; q++){

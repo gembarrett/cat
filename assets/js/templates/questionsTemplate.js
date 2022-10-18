@@ -52,27 +52,23 @@ function addSubmitHandler() {
 
 // build the page elements
 var content = "";
-var c = 0; // this counts the total number of questions that have been added
+var cats = [];
 // Left column needs to contain all the category titles
 content += `<div class="left-col"><div class="box">`;
 Object.entries(textStore.rs["content"]).forEach(([key, value]) => {
   content += `<p>`+value["title"]+`</p>`;
+  // use this later to find the relevant questions
+  cats.push(key);
 });
 content += `</div></div>`;
+// Right column needs to contain all the questions
+
+
 
 // this route creates three distinct sections which are hidden and shown. Another alternative is to only change the question container and update the image sources, progress bar background to reflect section change.
 // for (var level = 0; level < sections.length; level++){
 //   content += `<div class="outer lvl-`+[level+1]+ (level === 0 ? ` current">` : `">`);
-//   content += `<div class="left-col">
-//     <div class="level">
-//       <div class="inner">
-//         <h1 class="zup">Level</h1>
-//         <img class="number" src="assets/images/`+[level+1]+`-level.png">
-//         <img src="assets/images/`+[level+1]+`-block.png">
-//       </div>
-//       </div>
-//       <img src="assets/images/`+[level+1]+`-horizontal.png">
-//     </div>`;
+//
 //   content += `<div class="right-col"><div class="content box">`;
 //   midpoint = Math.round(sections[level].length/2);
 //   for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
