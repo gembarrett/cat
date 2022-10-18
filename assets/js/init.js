@@ -65,6 +65,9 @@ window.onload = function(){
   utils.router();
 };
 
+// TODO: consider whether it's instead better to simply have the whole list of questions, and then define the sections at particular element numbers
+// question list is only used in findContent() - can it be replaced?
+
 // these will hold the questions in their sections
 var sections = [];
 // push the questions in their groups, plus labels, into variables for processing
@@ -95,7 +98,7 @@ var currentState = {
   // which number in the question queue are we?
   questionC: 0,
   // which question's data is in use?
-  questionQ: questionsList[0],
+  questionQ: 0,
   // position in section
   questionP: 0,
   // which answers have been given for which questions?

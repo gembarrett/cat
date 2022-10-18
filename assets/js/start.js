@@ -30,8 +30,7 @@ function updateProgressBar(){
 }
 
 
-// THIS MAY BE DELETED IF PROGRESS SAVING ISN'T IMPLEMENTED
-// if snapshot button is disabled then call this
+// TODO: Add this back when snapshot link is re-implemented
 // function enableSnapshot(s){
 //   // if there's answers stored
 //   if (currentState.answers.length !== 0){
@@ -58,32 +57,26 @@ function handleSubmit() {
   var match = document.querySelector('.current');
   // this gets the current question id number e.g. q0
   var id = currentState.questionQ;
-  // currently lets everything through, will change when required Qs are back
-  canProceed = true;
+  setUpPage(id);
+  match.classList.add("editable");
+  collectAnswers(false);
 
-  if (canProceed){
+  // THIS MAY BE DELETED IF EXCLUSIONS AND EDIT ARE NOT IMPLEMENTED
+  // if we're at the last question
+  // if(parseInt(id) === questionsList.length-1){
+  //   // disable the edit button
+  //   document.getElementById('editBtn').classList.add('disabled');
+  // } else {
+  //   // collect the exclusions for this question
+  //   collectExclusions(id);
+  // }
 
-      setUpPage(id);
-      match.classList.add("editable");
-      collectAnswers(false);
-
-      // THIS MAY BE DELETED IF EXCLUSIONS AND EDIT ARE NOT IMPLEMENTED
-      // if we're at the last question
-      // if(parseInt(id) === questionsList.length-1){
-      //   // disable the edit button
-      //   document.getElementById('editBtn').classList.add('disabled');
-      // } else {
-      //   // collect the exclusions for this question
-      //   collectExclusions(id);
-      // }
-
-      // this hides the current question,
-      match.classList.remove("current");
-      // is the next question excluded
-      // go to next question
-      nextQuestion();
-      window.scrollTo(0,0);
-  }
+  // this hides the current question,
+  match.classList.remove("current");
+  // is the next question excluded
+  // go to next question
+  nextQuestion();
+  window.scrollTo(0,0);
 }
 
 

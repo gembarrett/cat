@@ -55,6 +55,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   background-color: #292929;
+  font-family: 'Helvetica', sans-serif;
 }
 #head, #page, #foot {
   display:flex;
@@ -80,7 +81,6 @@ body.buildPage #page {
   padding-top: 0;
   flex-direction: row;
   background-color: inherit;
-  position: fixed;
   margin-top: 20vh;
 }
 body.buildPage #page {
@@ -131,9 +131,6 @@ body.buildPage #page {
 }
 .box {
   background-color: #DAD9CF;
-  overflow-y: scroll;
-  scroll-snap-type: y proximity;
-  height: 60vh;
 }
 
 

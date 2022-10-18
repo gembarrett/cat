@@ -135,7 +135,7 @@ function collectAnswers(isEdited){
 }
 
 
-
+// TODO make better use of the sections variable to avoid hardcoding here
 function findContent(q){
   switch (true) {
     case q < 23: // questions 0-23 are in section 0

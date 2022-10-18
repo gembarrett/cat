@@ -43,64 +43,54 @@ function buildAnswers(count, answers, storage){
   return storage;
 }
 
-function buildProgressBar(){
-  // add 6 circles
-  var progress = `<div class="p-circ current"></div>`;
-  for (var p=0; p<6; p++){
-    progress += `<div class="p-circ"></div>`;
-  }
-  // give each circle a border but only the first has a fill class
-  // when user scrolls to a question whose ID is divisble by 4
-  // then add a fill class to the next circle
-  // after three circle have fill class, show the halfway-point content break
-  return progress;
+function addSubmitHandler() {
+  document.getElementById('submitAnswers').addEventListener('click', function() {
+    handleSubmit();
+  });
 }
-
-
 
 
 // build the page elements
 var content = "";
 var c = 0; // this counts the total number of questions that have been added
+// Left column needs to contain all the category titles
+content += `<div class="left-col"><div class="box">`;
+Object.entries(textStore.rs["content"]).forEach(([key, value]) => {
+  content += `<p>`+value["title"]+`</p>`;
+});
+content += `</div></div>`;
+
 // this route creates three distinct sections which are hidden and shown. Another alternative is to only change the question container and update the image sources, progress bar background to reflect section change.
-for (var level = 0; level < sections.length; level++){
-  content += `<div class="outer lvl-`+[level+1]+ (level === 0 ? ` current">` : `">`);
-  content += `<div class="left-col">
-    <div class="level">
-      <div class="inner">
-        <h1 class="zup">Level</h1>
-        <img class="number" src="assets/images/`+[level+1]+`-level.png">
-        <img src="assets/images/`+[level+1]+`-block.png">
-      </div>
-      </div>
-      <img src="assets/images/`+[level+1]+`-horizontal.png">
-    </div>`;
-  content += `<div class="right-col"><div class="progress bg-brown">`;
-  // add 6 circles
-  // give each circle a border but only the first has a fill class
-  // when user scrolls to halfway through the level, or at the end of the level
-  // then add a fill class to the next circle
-  content += buildProgressBar();
-  content += `</div>`;
-  content += `<div class="content box">`;
-  midpoint = Math.round(sections[level].length/2);
-  for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
-      content += `<form id="q-`+c+`" class="questionContent`;
-      if (el === midpoint){
-        content += ` midway">`;
-      } else {
-        content += `">`
-      }
-      content += `<h2 class="salford-bold">`+data[c].q+`</h2>
-        <div class="answers salford-text">`;
-      content = buildAnswers(c, data[c].answers, content);
-      content += `</div></form>`;
-      c++;
-    } // end of the loop that adds questions
-    content += `</div>`; // closes the content box
-    content += `<div class="action salford"><h3>`+textStore.oc.ux.content[2].text+`</h3></div></div>`; // closes the right column
-    content += `</div>`; // closes each level
-  // content += '<button id="submitAnswers" onclick="handleSubmit()" class="nextButton btn btn-prim" title="Click or press Enter to go to the next level">Next</button>';
-}
+// for (var level = 0; level < sections.length; level++){
+//   content += `<div class="outer lvl-`+[level+1]+ (level === 0 ? ` current">` : `">`);
+//   content += `<div class="left-col">
+//     <div class="level">
+//       <div class="inner">
+//         <h1 class="zup">Level</h1>
+//         <img class="number" src="assets/images/`+[level+1]+`-level.png">
+//         <img src="assets/images/`+[level+1]+`-block.png">
+//       </div>
+//       </div>
+//       <img src="assets/images/`+[level+1]+`-horizontal.png">
+//     </div>`;
+//   content += `<div class="right-col"><div class="content box">`;
+//   midpoint = Math.round(sections[level].length/2);
+//   for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
+//       content += `<form id="q-`+c+`" class="questionContent`;
+//       if (el === midpoint){
+//         content += ` midway">`;
+//       } else {
+//         content += `">`
+//       }
+//       content += `<h2 class="salford-bold">`+data[c].q+`</h2>
+//         <div class="answers salford-text">`;
+//       content = buildAnswers(c, data[c].answers, content);
+//       content += `</div></form>`;
+//       c++;
+//     } // end of the loop that adds questions
+//     content += `</div></div>`;
+//     content += `<div class="action"><button id="submitAnswers" class="nextButton salford btn btn-prim" title="Click or press Enter to go to the next level">`+textStore.oc.ux.content[2].text+`</button></div></div>`; // closes the content box
+// }
+
 return content;
 };
