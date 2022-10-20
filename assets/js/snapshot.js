@@ -14,7 +14,6 @@ function copyUrl(){
 }
 
 // TODO: snapshot link should be generated when Save & Resume Later button is clicked
-
 function getSnapshotURL(){
   var snapshotUrl = thisEnv+"/#b-"+catv+"-p";
   var qNo = "0";
@@ -41,6 +40,7 @@ function getSnapshotURL(){
   document.querySelector('#snapshotGroup').classList.remove('hidden');
 }
 
+// TODO: change this to check for answered questions instead
 function isCheckableQ(q){
   var btnsArr = [2, 3, 5, 6, 7, 8, 10, 11, 15, 16, 17, 18, 19, 22, 23, 24, 25, 26, 29, 30, 31, 32, 36, 37, 38, 40, 41, 44, 45, 46, 47];
   return btnsArr.includes(q) ? true : false;

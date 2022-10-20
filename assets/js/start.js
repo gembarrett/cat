@@ -93,17 +93,7 @@ function nextQuestion(){
   }
 }
 
-// function to add formatting to array
-function formatArray(arr, storage) {
-  if (Array.isArray([arr])) {
-    for (var i=0; i<arr.length; i++) {
-      storage += '<p>'+arr[i] + '</p>';
-    }
-    return storage;
-  }
-}
-
-
+// function to add li or p formatting to array
 function parseContent(data, array){
   for (var p = 0; p < data.length; p++){
     if (data[p].items !== undefined) {
