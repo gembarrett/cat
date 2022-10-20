@@ -36,7 +36,7 @@ var utils = (function(){
         // prepare to load the Basics page and relevant content
         function_to_invoke = 'basicsView';
         var data = en_oc;
-    } else if (temp[0] === 'build') { // TODO: references to 'build' should be changed to 'start'
+    } else if (temp[0] === 'survey') { 
         // prepare to load the Survey page
         function_to_invoke = 'questionsView';
         // TODO: could the question data be passed here instead of in a global variable?

@@ -11,6 +11,6 @@ templates.legal = function(data){
 
   legalContent = parseContent(data.legal.content, legalContent);
 
-  legalContent += `<button class="btn btn-prim title format right"><a href="/#build">`+data.ux.content[0].text+`</a></button></div></div>`;
+  legalContent += `<button class="btn btn-prim title format right"><a href="/#survey">`+data.ux.content[0].text+`</a></button></div></div>`;
   return legalContent;
 };
