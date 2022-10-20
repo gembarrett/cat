@@ -40,18 +40,7 @@ function simulateClick(el, key, keys){
         return false;
       }
       break;
-    case keys[2]: // preview
-      if (isThisText(el) === false){ // if it's not a text entry
-        if (document.getElementById('previewPolicy') !== null){ // if preview policy button exists
-          document.querySelector("#previewPolicy").disabled ? false : document.querySelector("#previewPolicy").click();
-        } else { // else if the button isn't on the page, do nothing
-          return false;
-        }
-      } else { // else if it's a text entry, do nothing
-        return false;
-      }
-      break;
-    case keys[3]: // next
+    case keys[2]: // next
       if (isThisText(el) === false){ // if it's not a text entry
         if (isPreviewOpen() === false){ // if the preview isn't open
           if (document.getElementById("submitAnswers").disabled === false){ // if the next button is enabled

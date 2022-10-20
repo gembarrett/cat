@@ -82,7 +82,7 @@ function nextQuestion(){
   else {
     // if there are answers
     if (currentState.answers.length > 0) {
-      window.location.href="/#policy";
+      window.location.href="/#results";
     } else {
       if (window.confirm("Oh no! It seems you haven't answered enough questions. Start again?")) {
         location.reload(false);
