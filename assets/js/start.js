@@ -1,8 +1,3 @@
-function addChangeListeners() {
-  // grab all the form inputs
-  var elements = Array.from(document.querySelectorAll('.form-el > input'));
-}
-
 function updateValue(e) {
   log.textContent = e.target.value;
 }
@@ -57,7 +52,6 @@ function handleSubmit() {
   var match = document.querySelector('.current');
   // this gets the current question id number e.g. q0
   var id = currentState.questionQ;
-  setUpPage(id);
   match.classList.add("editable");
   collectAnswers(false);
 
@@ -78,18 +72,6 @@ function handleSubmit() {
   nextQuestion();
   window.scrollTo(0,0);
 }
-
-
-// THIS MAY BE DELETED UPON REFACTOR
-// not sure this needs to be a function as it's only done once
-function setUpPage(id){
-  // add the additional stuff after everything else has loaded
-  if (parseInt(id) === 0) {
-    // sneaking this in here so it's done when textboxes exist
-    addChangeListeners();
-  }
-}
-
 
 function nextQuestion(){
   // reset the snapshot visibility
