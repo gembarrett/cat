@@ -1,10 +1,4 @@
-// this needs to be applied to textareas too
-
-function onInput() {
-  this.style.height = 'auto';
-  this.style.height = (this.scrollHeight) + 'px';
-}
-
+// remove if design doesn't require this
 var headChange = document.getElementById('head');
 window.onscroll = function () {
     "use strict";

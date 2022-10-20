@@ -16,6 +16,7 @@ function copyUrl(){
 // TODO: snapshot link should be generated when Save & Resume Later button is clicked
 function getSnapshotURL(){
   var snapshotUrl = thisEnv+"/#b-"+catv+"-p";
+  // since questions are now grouped, it doesn't matter which question is current
   var qNo = "0";
   for (var i = 0; i < currentState.answers.length; i++){
     // if we're on the same question
@@ -36,8 +37,6 @@ function getSnapshotURL(){
   }
   // get the input box and update the value
   document.querySelector('#snapshotLink').value = snapshotUrl;
-  // show the link
-  document.querySelector('#snapshotGroup').classList.remove('hidden');
 }
 
 // TODO: change this to check for answered questions instead

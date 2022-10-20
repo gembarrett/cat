@@ -18,6 +18,7 @@ function updateLang(language) {
   textStore.oc = window[language+"_oc"];
 }
 
+// Menu is only visible on mobile
 function setUpMenu() {
   var burger = document.querySelector('#menu-trigger');
   var close = document.querySelector('#close-menu');
@@ -91,6 +92,7 @@ for (var i = 0; i < sections.length; i++) {
 
 
 // set up progress tracking
+//TODO: update to track which page of questions is currently shown
 var currentState = {
   // which number in the section queue are we?
   sectionC: 0,

@@ -31,17 +31,17 @@ var utils = (function(){
       var route_split = temp.length;
       // this is going to hold the name of the page to load
       var function_to_invoke;
-      // if the url's first part says "basics"
-      if (temp[0] === 'basics') {
-        // prepare to load the Basics page and relevant content
-        function_to_invoke = 'basicsView';
+      if (route === 'home') {
+        function_to_invoke = 'home';
         var data = en_oc;
-    } else if (temp[0] === 'survey') { 
+      } else if (temp[0] === 'survey') {
         // prepare to load the Survey page
         function_to_invoke = 'questionsView';
         // TODO: could the question data be passed here instead of in a global variable?
       } else {
+        console.log(temp[0]);
         function_to_invoke = temp[0] || false;
+        var data = en_oc;
       }
       // if there's multiple parts to the url
       if(route_split > 1){
