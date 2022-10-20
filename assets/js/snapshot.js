@@ -13,6 +13,8 @@ function copyUrl(){
   }
 }
 
+// TODO: snapshot link should be generated when Save & Resume Later button is clicked
+
 function getSnapshotURL(){
   var snapshotUrl = thisEnv+"/#b-"+catv+"-p";
   var qNo = "0";

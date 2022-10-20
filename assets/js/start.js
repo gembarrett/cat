@@ -7,17 +7,7 @@ function moveForward(id) {
   currentState.questionQ = id;
   // increase position in the array
   currentState.questionP++;
-  var el = document.querySelector('progress');
-  el.value++;
   return id;
-}
-
-
-
-// this updates the progress bar
-function updateProgressBar(){
-  var el = document.querySelector('progress');
-  el.value++;
 }
 
 
@@ -43,12 +33,12 @@ function updateProgressBar(){
 // }
 
 // this is the function that's called when a user submits an answer
+// TODO: move this to a more suitable file, given it's not a "startup" function
 function handleSubmit() {
   // search for the currently shown element - question and answer
   var match = document.querySelector('.current');
   // this gets the current question id number e.g. q0
   var id = currentState.questionQ;
-  match.classList.add("editable");
   collectAnswers(false);
 
   // THIS MAY BE DELETED IF EXCLUSIONS AND EDIT ARE NOT IMPLEMENTED
@@ -61,17 +51,14 @@ function handleSubmit() {
   //   collectExclusions(id);
   // }
 
-  // this hides the current question,
+  // TODO: move this class to the currently-displayed container of questions
   match.classList.remove("current");
-  // is the next question excluded
   // go to next question
   nextQuestion();
   window.scrollTo(0,0);
 }
 
 function nextQuestion(){
-  // reset the snapshot visibility
-  document.querySelector('#snapshotGroup').classList.add('hidden');
   // if there's more questions left in this section
   if (currentState.questionP < currentState.sectionQ.length) {
     // grab the next question's element and add class of current
@@ -116,10 +103,6 @@ function formatArray(arr, storage) {
   }
 }
 
-function stripCode(t){
-  t = t.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-  return t;
-}
 
 function parseContent(data, array){
   for (var p = 0; p < data.length; p++){
