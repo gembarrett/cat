@@ -1,7 +1,3 @@
-function updateValue(e) {
-  log.textContent = e.target.value;
-}
-
 function moveForward(id) {
   // this increases the counter
   currentState.questionC++;
