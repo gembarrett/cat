@@ -56,15 +56,6 @@
 
 
 /* Basics page */
-.bg-green {
-  background-color: #009E72;
-}
-.bg-yellow {
-  background-color: #DECD38;
-}
-.bg-brown {
-  background-color: #A17354;
-}
 .basics > .contain-70 {
   display: flex;
   flex-direction: column;
@@ -87,7 +78,6 @@
 .basics-head h2 {
   font-size: 4.6em;
   line-height: 1em;
-  font-weight: lighter;
   text-align: left;
   margin: 0.5em 0 0;
   width: 60%;

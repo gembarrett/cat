@@ -281,9 +281,6 @@ button::-moz-focus-inner {
 .buildPage .nav-start .cat-logo img {
   display: initial;
 }
-.title {
-  text-transform: uppercase;
-}
 #menu-trigger, #link-home {
   cursor: pointer;
 }

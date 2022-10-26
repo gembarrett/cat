@@ -34,6 +34,9 @@ var utils = (function(){
       if (route === 'home') {
         function_to_invoke = 'home';
         var data = en_oc;
+      } else if (temp[0] === 'legal') {
+        function_to_invoke = 'legalView';
+        var data = en_oc['legal'];
       } else if (temp[0] === 'survey') {
         // prepare to load the Survey page
         function_to_invoke = 'questionsView';
