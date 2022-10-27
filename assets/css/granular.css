@@ -99,39 +99,18 @@
 }
 
 /* Team section */
+.people {
+  display: flex;
+  flex-wrap: wrap;
+}
 .person {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
+  flex-basis: 33%;
 }
-.person img {
-  margin-top: 1.5em;
-  max-width: 140px;
-  height: 100%;
-}
-.person p {
-  width: 80%;
-  margin-left: 1em;
-}
-.borders .brown {
-  border-bottom: 0.5em solid #A17354;
-  height: 20px;
-  width: 170px;
-}
-.borders .grey {
-  border-bottom: 1px solid #999;
-  height: 20px;
-  width: 80%;
-}
-.person .borders {
-  display: flex;
-  height: 20px;
-  flex-direction: row;
-  align-items: center;
-}
-.person .inner {
-  display: flex;
-  flex-direction: row;
+.person-name {
+  font-weight: bold;
 }
 
 /* Legal section */

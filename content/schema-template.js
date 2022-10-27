@@ -1,3 +1,47 @@
+// - Understanding Risk
+//   - About Your Organization
+//   - External Threats
+// - Operational Security
+//   - Policy & Documentation
+//   - Internal Risks
+//   - Staff Training & Support
+//   - Travel Policy
+//   - Managing Data
+//   - Website Security
+//   - Office Policies & Systems
+//   - Legal Risks
+// - Device & Account Security
+//   - Installing Software
+//   - Data Encryption
+//   - Compartmentalization
+//   - Passwords & Authentication
+//   - System Updates
+//   - Operational Continuity
+//   - Third-Party Services
+//   - VPN
+//
+// Score areas:
+// - risk analysis
+// - associated risks
+// - docs and policy
+// - internal risks
+// - training and support
+// - travel security
+// - data security
+// - website security
+// - office security
+// - legal risks
+// - messaging and collab
+// - software security
+// - data encryption
+// - device and compartmentalization
+// - passwords and auth
+// - updates
+// - op cont
+// - third-party
+// - vpn
+
+
 {
   "section": "understand-risk", // which of the sections do these questions belong to
   "subs": [
@@ -9,15 +53,18 @@
         "answers": [ // contains this question's answers
           {
             "a": "Answer placeholder goes here", // what's the answer text
-            "pts": 10 // how many points should be added to the category
+            "pts": 10, // how many points should be added to the category
+            "exc": 3 // exclude how many of the following questions (don't use q numbers)
           },
           {
             "a": "Next answer placeholder goes here",
-            "pts": 15
+            "pts": 15,
+            "exc": 0
           },
           {
             "a": "Last answer placeholder goes here",
-            "pts": 0
+            "pts": 0,
+            "exc": 0
           }
         ]
       }
