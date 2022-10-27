@@ -78,14 +78,14 @@ content += `</div></div>`;
 //       } else {
 //         content += `">`
 //       }
-//       content += `<h2 class="salford-bold">`+data[c].q+`</h2>
-//         <div class="answers salford-text">`;
+//       content += `<h2 class="">`+data[c].q+`</h2>
+//         <div class="answers ">`;
 //       content = buildAnswers(c, data[c].answers, content);
 //       content += `</div></form>`;
 //       c++;
 //     } // end of the loop that adds questions
 //     content += `</div></div>`;
-//     content += `<div class="action"><button id="submitAnswers" class="nextButton salford btn btn-prim" title="Click or press Enter to go to the next level">`+textStore.oc.ux.content[2].text+`</button></div></div>`; // closes the content box
+//     content += `<div class="action"><button id="submitAnswers" class="nextButton  btn btn-prim" title="Click or press Enter to go to the next level">`+textStore.oc.ux.content[2].text+`</button></div></div>`; // closes the content box
 // }
 
 return content;

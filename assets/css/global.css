@@ -1,47 +1,3 @@
-/* Fonts */
-
-@font-face {
-    font-family: Format_1452;
-    src: url('webfonts/Format_1452.otf') format('opentype');
-}
-@font-face {
-    font-family: Salford_Sans_black;
-    font-style: black;
-    src: url('webfonts/Lewis McGuffie Type - Salford Sans Black.otf') format('opentype');
-}
-@font-face {
-    font-family: Salford_Sans_medium;
-    font-style: medium;
-    src: url('webfonts/Lewis McGuffie Type - Salford Sans Medium.otf') format('opentype');
-}
-@font-face {
-    font-family: Salford_Sans_bold;
-    font-style: bold;
-    src: url('webfonts/Lewis McGuffie Type - Salford Sans Bold.otf') format('opentype');
-}
-@font-face {
-  font-family: ZupType;
-  src: url('webfonts/zuptype_ccc.ttf') format('truetype');
-}
-.zup {
-  font-family: ZupType;
-}
-.format {
-  font-family: Format_1452;
-}
-.salford {
-  font-family: Salford_Sans_black;
-}
-.salford-bold {
-  font-family: Salford_Sans_bold;
-}
-.salford-text {
-  font-family: Salford_Sans_medium;
-  font-size: 1.4em;
-  line-height: 1.3em;
-}
-
-
 /* Structural styles */
 html, body {
   height: 100%;
@@ -83,8 +39,6 @@ body.buildPage #page {
   background-color: inherit;
   margin-top: 20vh;
 }
-body.buildPage #page {
-}
 
 #page {
   flex: 1 0 auto;
@@ -92,8 +46,9 @@ body.buildPage #page {
 #page {
   flex-direction: column;
   align-self: center;
-  background-color: #DAD9CF;
-  padding-top: 4em;
+  background-color: #A17354;
+  padding-top: 8em;
+  padding-bottom:2em;
 }
 
 #foot {
@@ -115,19 +70,17 @@ body.buildPage #page {
 #foot img {
   width: 60%;
 }
-#foot .contain {
+#foot {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .contain {
-  width: 55%;
-  align-self: center;
-}
-.contain-70 {
-  width: 70%;
+  width: 40%;
   margin: auto;
+  background-color: #fff;
+  padding: 3em 5em;
 }
 .box {
   background-color: #DAD9CF;

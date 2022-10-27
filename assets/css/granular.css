@@ -97,9 +97,6 @@
 .basics .btn.left {
   align-self: start;
 }
-.basics .salford-bold {
-  text-transform: uppercase;
-}
 
 /* Team section */
 .person {
@@ -138,20 +135,8 @@
 }
 
 /* Legal section */
-#legal div p:nth-child(1), #legal div p:nth-child(3), #legal div p:nth-child(5), #legal ul {
-  border-left: 15px solid #DECD38;
-  padding-left: 2em;
-}
-#legal div p:nth-child(5) {
-  margin-top: 0;
-  padding-top: 1em;
-}
-#legal p {
-  margin-bottom: 0;
-}
 #legal ul {
   margin: 0;
-  padding-left: 4em;
 }
 
 

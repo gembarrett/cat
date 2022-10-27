@@ -1,12 +1,8 @@
 templates.legal = function(data){
-  var legalContent = `<div id="legal" class="basics">
-                    <div class="basics-head contain-70">
-                      <h2 class="title">`+data.title+`</h2>
-                    </div>`;
-
-  legalContent += '<div class="contain-70">';
-
-  legalContent = parseContent(data.content, legalContent);
-
+  var disc = '';
+  disc = parseContent(data.content, disc);
+  var legalContent = `<div class="contain">
+                      <h2\>`+data.title+`</h2>`
+                      +disc+`</div>`;
   return legalContent;
 };

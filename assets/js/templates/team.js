@@ -1,12 +1,12 @@
 templates.team = function(data){
   var content = `<div id="team" class="basics">
-                    <div class="format bg-brown">
+                    <div class="bg-brown">
                       <div class="basics-head contain-70">
                         <h2 class="title"><span>`+data.team.title+`</span>`+data.team.subtitle+`</h2>
                         <img src="/assets/images/1-header.png" />
                       </div>
                     </div>
-                    <div class="people contain-70 salford-text">`;
+                    <div class="people contain-70 ">`;
 
   // put team.content into an array
   var team = [];
@@ -23,7 +23,7 @@ templates.team = function(data){
     teamContent += `<div class="person">
                       <div class="inner">
                         <img src="/assets/images/`+rando.ref+`.png" />
-                        <p><span class="salford-bold">`+rando.name+`</span>`+rando.p+`</p>
+                        <p><span class="">`+rando.name+`</span>`+rando.p+`</p>
                       </div>
                       <div class="borders">
                         <div class="brown"></div>
@@ -35,6 +35,6 @@ templates.team = function(data){
   }
 
   // add the randomised list of team members to the page
-  content += teamContent + `<button class="btn btn-prim title format right"><a href="/#survey">`+data.ux.content[0].text+`</a></button></div></div>`;
+  content += teamContent + `<button class="btn btn-prim title right"><a href="/#survey">`+data.ux.content[0].text+`</a></button></div></div>`;
   return content;
 };
