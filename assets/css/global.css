@@ -11,15 +11,16 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   background-color: #292929;
-  font-family: 'Helvetica', sans-serif;
+  font-family: '-apple-system','BlinkMacSystemFont','Avenir Next','Avenir','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+}
+body > * {
+  box-sizing: border-box;
 }
 #head, #page, #foot {
   display:flex;
 }
-#head, #foot {
-  background-color: #000;
-}
 #head {
+  background-color: #000;
   position: fixed;
   width: 100%;
   padding: 1em;
@@ -51,11 +52,15 @@ body.buildPage #page {
 #foot {
   flex-shrink: 0;
   width: 100%;
-  justify-content: center;
-  padding: 1em 0;
+  padding: 2.5em;
+  background-color: #DAD9CF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
 }
 #foot p {
-  color: #fff;
   font-size: 0.90em;
 }
 #foot li {
@@ -65,13 +70,11 @@ body.buildPage #page {
   font-family: 'Helvetica', sans-serif;
 }
 #foot img {
-  width: 60%;
+  max-height: 35px;
 }
-#foot {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+#foot img:nth-child(2){
+  max-height: 30px;
+  padding-left: 0.5em;
 }
 .contain {
   width: 40%;
@@ -90,18 +93,11 @@ a[href]:visited {
   color:inherit;
 } */
 a {
-  text-decoration: none;
-  color: #fff;
+  color: inherit;
+  cursor: pointer;
 }
 a:hover {
   text-decoration: underline;
-}
-a.btn:hover {
-  text-decoration: none;
-}
-:focus {
-  border-style: solid;
-  border-width: 0.5px;
 }
 
 
