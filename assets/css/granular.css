@@ -138,7 +138,14 @@
 #legal ul {
   margin: 0;
 }
-
+.brown-bg {
+  background-color: #A17354;
+  padding: 3em 0;
+  margin-top:3em;
+}
+.brown-bg .contain {
+  background-color: #FFFEF5;
+}
 
 /* How section */
 #how div p:nth-child(2) {

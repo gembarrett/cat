@@ -1,12 +1,11 @@
 templates.team = function(data){
   var content = `<div id="team" class="basics">
                     <div class="bg-brown">
-                      <div class="basics-head contain-70">
+                      <div class="basics-head contain">
                         <h2 class="title"><span>`+data.team.title+`</span>`+data.team.subtitle+`</h2>
-                        <img src="/assets/images/1-header.png" />
                       </div>
                     </div>
-                    <div class="people contain-70 ">`;
+                    <div class="people contain">`;
 
   // put team.content into an array
   var team = [];

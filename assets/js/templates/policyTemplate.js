@@ -66,7 +66,7 @@ templates.policyTemplate = function(data, params){
     }
 
   var content =
-    `<div class="box contain">
+    `<div class="contain">
       <div id="results">
         <h2>`+textStore.rs.title+`</h2>
         `+answers+`

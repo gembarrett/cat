@@ -54,7 +54,7 @@ function addSubmitHandler() {
 var content = "";
 var cats = [];
 // Left column needs to contain all the category titles
-content += `<div class="left-col"><div class="box">`;
+content += `<div class="left-col"><div>`;
 Object.entries(textStore.rs["content"]).forEach(([key, value]) => {
   content += `<p>`+value["title"]+`</p>`;
   // use this later to find the relevant questions
@@ -69,7 +69,7 @@ content += `</div></div>`;
 // for (var level = 0; level < sections.length; level++){
 //   content += `<div class="outer lvl-`+[level+1]+ (level === 0 ? ` current">` : `">`);
 //
-//   content += `<div class="right-col"><div class="content box">`;
+//   content += `<div class="right-col"><div class="content">`;
 //   midpoint = Math.round(sections[level].length/2);
 //   for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
 //       content += `<form id="q-`+c+`" class="questionContent`;

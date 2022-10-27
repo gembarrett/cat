@@ -18,16 +18,12 @@ function updateLang(language) {
   textStore.oc = window[language+"_oc"];
 }
 
-// Menu is only visible on mobile
+// TODO: update this to suit language change
 function setUpMenu() {
   var burger = document.querySelector('#menu-trigger');
-  var close = document.querySelector('#close-menu');
 
   burger.addEventListener("click", function(e) {
     toggleMenu(e);
-  });
-  close.addEventListener('click', function() {
-    toggleMenu("c");
   });
 
   document.querySelector('body').addEventListener('click', function(e){
