@@ -1,6 +1,5 @@
 controllers.questionPage = function(data, params){
   // document.getElementById('bu').classList.add('active');
-  // add class to body to change nav-start/scroll
   document.querySelector('body').classList.add('buildPage');
   var templateContext = [];
   window.scrollTo(0,0);
