@@ -41,56 +41,27 @@
 // - third-party
 // - vpn
 
-
 {
   "section": "understand-risk", // which of the sections do these questions belong to
-  "subs": [
-    "your-org": [
-      "questions": [ // contains this level's questions
-      {
-        "q": "Question placeholder goes here", // what's the question text
-        "area": "a", // which category should the score be added to
-        "answers": [ // contains this question's answers
-          {
-            "a": "Answer placeholder goes here", // what's the answer text
-            "pts": 10, // how many points should be added to the category
-            "exc": 3 // exclude how many of the following questions (don't use q numbers)
-          },
-          {
-            "a": "Next answer placeholder goes here",
-            "pts": 15,
-            "exc": 0
-          },
-          {
-            "a": "Last answer placeholder goes here",
-            "pts": 0,
-            "exc": 0
-          }
-        ]
-      }
-    ]
-  ],
-  "external-threats": [
-    {
-      "q": "Question placeholder goes here", // what's the question text
-      "area": "a", // which category should the score be added to
-      "answers": [ // contains this question's answers
-        {
-          "a": "Answer placeholder goes here", // what's the answer text
-          "pts": 10 // how many points should be added to the category
-        },
-        {
-          "a": "Next answer placeholder goes here",
-          "pts": 15
-        },
-        {
-          "a": "Last answer placeholder goes here",
-          "pts": 0
-        }
-      ]
-    }
-  ]
-}
+  "title": "Understanding Risk",
+  "subs": [{
+      "your-org": [{
+          "subtitle": "About Your Organization",
+          "questions": [{  // contains this level's questions
+            "q": "Question placeholder goes here", // what's the question text
+            "area": "a", // which category should the score be added to
+            "answers": [ // contains this question's answers
+              {
+                "a": "Answer placeholder goes here", // what's the answer text
+                "pts": 10, // how many points should be added to the category
+                "exc": 0 // exclude how many of the following questions (don't use q numbers)
+              },
+            ]
+          }]
+      }]
+  }]
+},
+
 
 
 "title": "Evaluation & feedback",
