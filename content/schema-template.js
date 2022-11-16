@@ -21,11 +21,11 @@
 //   - VPN
 //
 // Score areas:
-// - risk analysis
-// - associated risks
-// - docs and policy
-// - internal risks
-// - training and support
+// - risk analysis risk-analysis risks
+// - associated risks associated-risks a-risks
+// - docs and policy docs-policy docs
+// - internal risks internal-risks i-risks
+// - training and support training-support training
 // - travel security
 // - data security
 // - website security
