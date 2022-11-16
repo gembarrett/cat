@@ -26,9 +26,9 @@
 // - docs and policy docs-policy docs
 // - internal risks internal-risks i-risks
 // - training and support training-support training
-// - travel security
-// - data security
-// - website security
+// - travel security travel-policy travel
+// - data security data
+// - website security web
 // - office security
 // - legal risks
 // - messaging and collab

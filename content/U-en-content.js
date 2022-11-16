@@ -638,8 +638,7 @@
             }
           ]
         }],
-        "training-support": [
-          {
+        "training-support": [{
             "subtitle": "Staff Training & Support",
             "questions": [
               {
@@ -783,8 +782,322 @@
                 ]
               }
             ]
-          }
-        ]
+        }],
+        "travel-policy": [{
+          "subtitle": "Travel Policy",
+          "questions": [
+            {
+              "q": "Does your organization have security-related policies in place for travel",
+              "area": "travel",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes, and we mostly follow these policies.",
+                  "pts": 0
+                },
+                {
+                  "a": "Yes, but we do not always follow these policies.",
+                  "pts": 5
+                },
+                {
+                  "a": "No, we do not have travel safety policies.",
+                  "pts": 15
+                },
+                {
+                  "a": "No, we do not travel for work.",
+                  "pts": 0
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 10
+                }
+              ]
+            },
+            {
+              "q": "[If yes] What risks are covered in your travel security-related policy?",
+              "area": "travel",
+              "required": "false",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Physical security and cybersecurity, including device policies and usage practices",
+                  "pts": 0
+                },
+                {
+                  "a": "Physical security only",
+                  "pts": 10
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                }
+              ]
+            }
+          ]
+        }],
+        "managing-data": [{
+          "subtitle": "Managing Data",
+          "questions": [
+            {
+              "q": "What data retention policy (a policy that controls what you store, where you store it, and how long you store it for) does your organization have?",
+              "area": "data",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "We have a policy for all data.",
+                  "pts": 0
+                },
+                {
+                  "a": "We have a policy for some categories of data (e.g. email, work-related files).",
+                  "pts": 5
+                },
+                {
+                  "a": "We do not have a data retention policy.",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 10
+                }
+              ]
+            },
+            {
+              "q": "Does your organization categorize the data you handle by how sensitive it is (low, medium, and high)?",
+              "area": "data",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes, we categorize all our data by sensitivity.",
+                  "pts": 0
+                },
+                {
+                  "a": "Yes, we categorize some of our data by sensitivity.",
+                  "pts": 5
+                },
+                {
+                  "a": "No, we don't categorize our data by sensitivity. ",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 10
+                }
+              ]
+            },
+            {
+              "q": "Does your organization control who has access to the data you store based on how sensitive it is?",
+              "area": "data",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes, we have a process for authorizing select staff members to access sensitive data.",
+                  "pts": 0
+                },
+                {
+                  "a": "Yes, we only allow senior and executive staff members to access sensitive data.",
+                  "pts": 5
+                },
+                {
+                  "a": "No, anyone in our organization can access sensitive data.",
+                  "pts": 10
+                },
+                {
+                  "a": "No, we do not organize our data by sensitivity.",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                }
+              ]
+            },
+            {
+              "q": "How does your organization keep regular backups of its most important data?",
+              "area": "data",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "We use our own automated backups.",
+                  "pts": 0
+                },
+                {
+                  "a": "We manually back up our data ourselves.",
+                  "pts": 5
+                },
+                {
+                  "a": "We use a third-party contractor to back up our data.",
+                  "pts": 5
+                },
+                {
+                  "a": "We do not back up our data regularly.",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 10
+                }
+              ]
+            }
+          ]
+        }],
+        "web-security": [{
+          "subtitle": "Website Security",
+          "questions": [
+            {
+              "q": "Does your organization have a website?",
+              "area": "web",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes",
+                  "pts": 0
+                },
+                {
+                  "a": "No",
+                  "pts": 0
+                }
+              ]
+            },
+            {
+              "q": "[If yes] How concerned are you that your website will become a target for people who want to do harm to your organization?",
+              "area": "web",
+              "required": "false",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Very concerned",
+                  "pts": 0
+                },
+                {
+                  "a": "Somewhat concerned",
+                  "pts": 10
+                },
+                {
+                  "a": "Not concerned",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                }
+              ]
+            },
+            {
+              "q": "[If yes] Does your organization share information of public interest on your website that could upset groups that disagree with you?",
+              "area": "web",
+              "required": "false",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes, we frequently share this kind of information.",
+                  "pts": 15
+                },
+                {
+                  "a": "Yes, we sometimes share this kind of information.",
+                  "pts": 10
+                },
+                {
+                  "a": "Yes, we rarely share this kind of information.",
+                  "pts": 5
+                },
+                {
+                  "a": "No, we never share this kind of information.",
+                  "pts": 0
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                }
+              ]
+            },
+            {
+              "q": "[If yes] If someone hacked your organization’s website, what types of information could they get?",
+              "area": "web",
+              "required": "false",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Only publicly available information",
+                  "pts": 5
+                },
+                {
+                  "a": "Publicly available information and unpublished information (draft blog posts, press releases, etc.)",
+                  "pts": 10
+                },
+                {
+                  "a": "Publicly available information and sensitive private information (addresses, payment records, etc.)",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t have a website.",
+                  "pts": 0
+                }
+              ]
+            },
+            {
+              "q": "[If yes] What is your process for keeping a regularly updated backup of your website?",
+              "area": "web",
+              "required": "false",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "We use automated backups.",
+                  "pts": 0
+                },
+                {
+                  "a": "We use manual backups.",
+                  "pts": 5
+                },
+                {
+                  "a": "We use a third-party provider to manage our backups.",
+                  "pts": 10
+                },
+                {
+                  "a": "We do not back up our website regularly.",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t have a website.",
+                  "pts": 0
+                }
+              ]
+            },
+            {
+              "q": "[If yes] Try typing your organization’s website into a browser address bar starting with 'http://' and then with 'https://'. What happens?",
+              "area": "web",
+              "required": "false",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "When I type 'http' it remains 'http'",
+                  "pts": 30
+                },
+                {
+                  "a": "When I type 'http' it turns to 'https'",
+                  "pts": 0
+                },
+                {
+                  "a": "When I type 'https' my browser gives a warning about an insecure website.",
+                  "pts": 15
+                }
+              ]
+            }
+          ]
+        }]
       }]
     }
   ]
