@@ -51,6 +51,7 @@
             "q": "Question placeholder goes here", // what's the question text
             "area": "a", // which category should the score be added to
             "required": "true", // does an answer have to be given (false applies to questions that start "If yes")
+            "type": "radio" // type of answers (checkbox applies to questions where users "choose your top three")
             "answers": [ // contains this question's answers
               {
                 "a": "Answer placeholder goes here", // what's the answer text
@@ -62,6 +63,16 @@
   }]
 },
 
+"q": "",
+"area": "",
+"required": "true",
+"type": "radio",
+"answers": [
+  {
+    "a": "",
+    "pts": 0
+  },
+]
 
 
 "title": "Evaluation & feedback",
