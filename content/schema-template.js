@@ -50,11 +50,11 @@
           "questions": [{  // contains this level's questions
             "q": "Question placeholder goes here", // what's the question text
             "area": "a", // which category should the score be added to
+            "required": "true", // does an answer have to be given (false applies to questions that start "If yes")
             "answers": [ // contains this question's answers
               {
                 "a": "Answer placeholder goes here", // what's the answer text
                 "pts": 10, // how many points should be added to the category
-                "exc": 0 // exclude how many of the following questions (don't use q numbers)
               },
             ]
           }]
