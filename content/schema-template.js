@@ -21,25 +21,25 @@
 //   - VPN
 //
 // Score areas:
-// - risk analysis risk-analysis risks
-// - associated risks associated-risks a-risks
-// - docs and policy docs-policy docs
-// - internal risks internal-risks i-risks
-// - training and support training-support training
-// - travel security travel-policy travel
-// - data security data
-// - website security web
-// - office security
-// - legal risks
-// - messaging and collab
-// - software security
-// - data encryption
-// - device and compartmentalization
-// - passwords and auth
-// - updates
-// - op cont
-// - third-party
-// - vpn
+// - risk analysis risk-analysis [risks]
+// - associated risks associated-risks [a-risks]
+// - docs and policy docs-policy [docs]
+// - internal risks internal-risks [i-risks]
+// - training and support training-support [training]
+// - travel security travel-policy [travel]
+// - data security managing-data [data]
+// - website security web-security [web]
+// - office policies office-security [office]
+// - legal risks legal-risks [legal]
+// - messaging and collab messaging-collab [collab]
+// - software security installing-software [software]
+// - data encryption data-encryption [encryption]
+// - device and compartmentalization device-compartmentalization [compartmentalization]
+// - passwords and auth passwords-authentication [auth]
+// - updates system-updates [updates]
+// - operational continuity op-continuity [continuity]
+// - third-party third-party [services]
+// - virtual private network vp-network [vpn] 
 
 {
   "section": "understand-risk", // which of the sections do these questions belong to
