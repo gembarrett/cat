@@ -1,0 +1,61 @@
+Question content is contained in the _qs variable of each content file.
+
+Sections
+There are three sections, which can be found by looking for the key "section". The convention for naming sections is to use the two main words and connect them with a hyphen, shortening the words where necessary. The section titles and their shortened references are as follows:
+1 - Understanding Risk (understand-risk)
+2 - Operational Security (op-sec)
+3 - Device & Account Security (devices-accounts)
+
+Subsections
+Aside from the section title and its shortened reference, each section contains a key called "subs". This contains an array of multiple subsections, where each subsection is referred to by a two-word hyphenated key - as demonstrated below:
+1 - Understanding Risk (understand-risk)
+    - About Your Organization (your-org)
+    - External Threats (external-threats)
+
+2 - Operational Security (op-sec)
+    - Policy & Documentation
+    - Internal Risks
+    - Staff Training & Support
+    - Travel Policy
+    - Managing Data
+    - Website Security
+    - Office Policies & Systems
+    - Legal Risks
+
+3 - Device & Account Security (devices-accounts)
+    - Messaging & Collaboration
+    - Installing Software
+    - Data Encryption
+    - Compartmentalization
+    - Passwords & Authentication
+    - System Updates
+    - Operational Continuity
+    - Third-Party Services
+    - VPN
+
+
+// Score areas:
+1
+// - risk analysis risk-analysis [risks]
+// - associated risks associated-risks [a-risks]
+
+2
+// - docs and policy docs-policy [docs]
+// - internal risks internal-risks [i-risks]
+// - training and support training-support [training]
+// - travel security travel-policy [travel]
+// - data security managing-data [data]
+// - website security web-security [web]
+// - office policies office-security [office]
+// - legal risks legal-risks [legal]
+
+3
+// - messaging and collab messaging-collab [collab]
+// - software security installing-software [software]
+// - data encryption data-encryption [encryption]
+// - device and compartmentalization device-compartmentalization [compartmentalization]
+// - passwords and auth passwords-authentication [auth]
+// - updates system-updates [updates]
+// - operational continuity op-continuity [continuity]
+// - third-party third-party [services]
+// - virtual private network vp-network [vpn]
