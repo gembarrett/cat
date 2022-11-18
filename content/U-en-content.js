@@ -1967,7 +1967,7 @@ var en_oc = {
       "This questionnaire is designed to help you identify strengths and weaknesses in your cybersecurity approach, as well as provide resources for improvement. After you complete the assessment, you’ll receive a personalized response and recommendations.",
       {
         "type": "ol",
-        "text": "The assessment will cover four key areas:"
+        "text": "The assessment will cover four key areas:",
         "items": [
           "Operational Security",
           "Device Security",
@@ -2050,7 +2050,7 @@ var en_oc = {
         "text": "This tool is meant to help nonprofit organizations:",
         "items": [
           "develop a general sense of the maturity of an organization's cybersecurity program, and",
-          "identify potential cybersecurity program components to consider adding or improving.",
+          "identify potential cybersecurity program components to consider adding or improving."
         ]
       },
       {
@@ -2059,7 +2059,7 @@ var en_oc = {
         "items": [
           "a roadmap for securing the organization against cyberattacks or other misuse of their data or systems,",
           "a basis for determining compliance with any legal obligations, or",
-          "a definitive list of the cybersecurity program components an organization should develop.",
+          "a definitive list of the cybersecurity program components an organization should develop."
         ]
       },
       "By using this tool, you confirm that you have the right to provide all information entered into this tool without violating the privacy, confidentiality or other obligations of your organization in the relevant jurisdictions. The information that you entered into this tool is stored with a third-party service provider. The Ford Foundation does not receive the information entered into this tool; however, it may receive anonymized results about the tool’s general performance to help the Foundation: (1) deliver the tool’s service; (2) ensure that the tool is working as intended and to make improvements to the tool and the content; and (3) in the furtherance of Foundation's mission to support the nonprofit sector."
