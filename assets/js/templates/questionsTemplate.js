@@ -1,4 +1,4 @@
-templates.questionsTemplate = function(data, params){
+templates.questionsTemplate = function(menuData, params){
   // UNCOMMENT WHEN SNAPSHOT IS RELEVENT: if there's a snapshot url then build the currentState array
   // TODO: add error catching
   // if (params){
@@ -55,11 +55,12 @@ var content = "";
 var cats = [];
 // Left column needs to contain all the category titles
 content += `<div class="left-col"><div>`;
-Object.entries(textStore.rs["content"]).forEach(([key, value]) => {
-  content += `<p>`+value["title"]+`</p>`;
-  // use this later to find the relevant questions
-  cats.push(key);
-});
+console.log(menuData);
+// Object.entries(textStore.rs["content"]).forEach(([key, value]) => {
+//   content += `<p>`+value["title"]+`</p>`;
+//   // use this later to find the relevant questions
+//   cats.push(key);
+// });
 content += `</div></div>`;
 // Right column needs to contain all the questions
 

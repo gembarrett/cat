@@ -39,28 +39,29 @@
 // - updates system-updates [updates]
 // - operational continuity op-continuity [continuity]
 // - third-party third-party [services]
-// - virtual private network vp-network [vpn] 
+// - virtual private network vp-network [vpn]
 
 {
   "section": "understand-risk", // which of the sections do these questions belong to
   "title": "Understanding Risk",
-  "subs": [{
-      "your-org": [{
-          "subtitle": "About Your Organization",
-          "questions": [{  // contains this level's questions
-            "q": "Question placeholder goes here", // what's the question text
-            "area": "a", // which category should the score be added to
-            "required": "true", // does an answer have to be given (false applies to questions that start "If yes")
-            "type": "radio" // type of answers (checkbox applies to questions where users "choose your top three")
-            "answers": [ // contains this question's answers
-              {
-                "a": "Answer placeholder goes here", // what's the answer text
-                "pts": 10, // how many points should be added to the category
-              },
-            ]
-          }]
+  "subs": [
+    {
+      "name":"your-org",
+      "subtitle": "About Your Organization",
+      "questions": [{  // contains this level's questions
+        "q": "Question placeholder goes here", // what's the question text
+        "area": "a", // which category should the score be added to
+        "required": "true", // does an answer have to be given (false applies to questions that start "If yes")
+        "type": "radio" // type of answers (checkbox applies to questions where users "choose your top three")
+        "answers": [ // contains this question's answers
+          {
+            "a": "Answer placeholder goes here", // what's the answer text
+            "pts": 10, // how many points should be added to the category
+          },
+        ]
       }]
-  }]
+    }
+  ]
 },
 
 "q": "",

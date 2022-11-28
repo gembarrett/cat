@@ -2,287 +2,289 @@ var en_qs = [
   {
     "section": "understand-risk",
     "title": "Understanding Risk",
-    "subs": [{
-        "your-org": [{
-            "subtitle": "About Your Organization",
-            "questions": [
-              {
-                "q": "How would you best describe your approach to cybersecurity?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a": "We have a staff member who manages cybersecurity as part of their job.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We have a third-party consultant who manages cybersecurity.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We haven’t thought about cybersecurity much within our organization.",
-                    "pts": 15
-                  },
-                  {
-                    "a": "We have a staff member who handles cybersecurity when needed.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We don’t know.",
-                    "pts": 15
-                  }
-                ]
-              },
-              {
-                "q": "What is the mood when cybersecurity comes up in conversation?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a": "We are excited.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We are stressed, worried, or anxious.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We are confused.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We are bored.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We never talk about cybersecurity.",
-                    "pts": 15
-                  }
-                ]
-              },
-              {
-                "q": "On average, how eager are your staff members to keep your organization secure?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a":"We are very eager.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We are somewhat eager.",
-                    "pts": 5
-                  },
-                  {
-                    "a": "We are not eager.",
-                    "pts": 5
-                  },
-                  {
-                    "a": "We don’t know.",
-                    "pts": 15
-                  }
-                ]
-              },
-              {
-                "q":"Does your organization (or the communities you work with) face potential backlash from groups who disagree with you?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a": "Yes",
-                    "pts": 10
-                  },
-                  {
-                    "a": "No",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We don’t know.",
-                    "pts": 5
-                  }
-                ]
-              },
-              {
-                "q": "Does your organization support a minority group?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a": "Yes",
-                    "pts": 10
-                  },
-                  {
-                    "a": "No",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We don't know.",
-                    "pts": 5
-                  }
-                ]
-              },
-              {
-                "q": "Does your organization support new immigrants to your country?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a": "Yes",
-                    "pts": 10
-                  },
-                  {
-                    "a": "No",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We don't know.",
-                    "pts": 5
-                  }
-                ]
-              },
-              {
-                "q": "Which areas of your organization's work do you believe create additional risk? Choose your top three.",
-                "area": "risks",
-                "required": "true",
-                "type": "checkbox",
-                "answers": [
-                  {
-                    "a": "Publications and journalism",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Community outreach and advocacy",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Research",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Grantmaking",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Partnerships",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Working directly with minority groups",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Other",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We have no additional risks.",
-                    "pts": 5
-                  },
-                  {
-                    "a": "We have never thought about it.",
-                    "pts": 10
-                  }
-                ]
-              },
-              {
-                "q": "Does your organization have specific cybersecurity concerns? Choose your top three.",
-                "area": "risks",
-                "required": "true",
-                "type": "checkbox",
-                "answers": [
-                  {
-                    "a": "Attacks from large groups who disagree with us",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Attacks from small groups or individuals who disagree with us",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Lack of staff awareness about cybersecurity",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Our concerns aren’t listed here.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We don’t have any concerns currently.",
-                    "pts": 15
-                  },
-                  {
-                    "a": "We don’t know.",
-                    "pts": 10
-                  }
-                ]
-              },
-              {
-                "q": "How often do you consider cybersecurity when you make decisions about internal workflow and processes?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a": "Always",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Sometimes",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Rarely",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Never",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We don’t know.",
-                    "pts": 15
-                  }
-                ]
-              },
-              {
-                "q": "How does your organization pay for cybersecurity?",
-                "area": "risks",
-                "required": "true",
-                "type": "radio",
-                "answers": [
-                  {
-                    "a": "Cybersecurity is part of our operations budget.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "Cybersecurity has its own line item in our annual budget.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We raise funds for cybersecurity.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We do not pay for cybersecurity but receive free assistance.",
-                    "pts": 0
-                  },
-                  {
-                    "a": "We do not have a consistent way to pay for cybersecurity.",
-                    "pts": 15
-                  }
-                ]
-              }
-            ]
-        }],
-        "external-threats": [{
-            "subtitle": "External Threats",
-            "questions": [
+    "subs": [
+        {
+          "name": "your-org",
+          "subtitle": "About Your Organization",
+          "questions": [
+            {
+              "q": "How would you best describe your approach to cybersecurity?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "We have a staff member who manages cybersecurity as part of their job.",
+                  "pts": 0
+                },
+                {
+                  "a": "We have a third-party consultant who manages cybersecurity.",
+                  "pts": 0
+                },
+                {
+                  "a": "We haven’t thought about cybersecurity much within our organization.",
+                  "pts": 15
+                },
+                {
+                  "a": "We have a staff member who handles cybersecurity when needed.",
+                  "pts": 0
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                }
+              ]
+            },
+            {
+              "q": "What is the mood when cybersecurity comes up in conversation?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "We are excited.",
+                  "pts": 0
+                },
+                {
+                  "a": "We are stressed, worried, or anxious.",
+                  "pts": 0
+                },
+                {
+                  "a": "We are confused.",
+                  "pts": 0
+                },
+                {
+                  "a": "We are bored.",
+                  "pts": 0
+                },
+                {
+                  "a": "We never talk about cybersecurity.",
+                  "pts": 15
+                }
+              ]
+            },
+            {
+              "q": "On average, how eager are your staff members to keep your organization secure?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a":"We are very eager.",
+                  "pts": 0
+                },
+                {
+                  "a": "We are somewhat eager.",
+                  "pts": 5
+                },
+                {
+                  "a": "We are not eager.",
+                  "pts": 5
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                }
+              ]
+            },
+            {
+              "q":"Does your organization (or the communities you work with) face potential backlash from groups who disagree with you?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes",
+                  "pts": 10
+                },
+                {
+                  "a": "No",
+                  "pts": 0
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 5
+                }
+              ]
+            },
+            {
+              "q": "Does your organization support a minority group?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes",
+                  "pts": 10
+                },
+                {
+                  "a": "No",
+                  "pts": 0
+                },
+                {
+                  "a": "We don't know.",
+                  "pts": 5
+                }
+              ]
+            },
+            {
+              "q": "Does your organization support new immigrants to your country?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Yes",
+                  "pts": 10
+                },
+                {
+                  "a": "No",
+                  "pts": 0
+                },
+                {
+                  "a": "We don't know.",
+                  "pts": 5
+                }
+              ]
+            },
+            {
+              "q": "Which areas of your organization's work do you believe create additional risk? Choose your top three.",
+              "area": "risks",
+              "required": "true",
+              "type": "checkbox",
+              "answers": [
+                {
+                  "a": "Publications and journalism",
+                  "pts": 0
+                },
+                {
+                  "a": "Community outreach and advocacy",
+                  "pts": 0
+                },
+                {
+                  "a": "Research",
+                  "pts": 0
+                },
+                {
+                  "a": "Grantmaking",
+                  "pts": 0
+                },
+                {
+                  "a": "Partnerships",
+                  "pts": 0
+                },
+                {
+                  "a": "Working directly with minority groups",
+                  "pts": 0
+                },
+                {
+                  "a": "Other",
+                  "pts": 0
+                },
+                {
+                  "a": "We have no additional risks.",
+                  "pts": 5
+                },
+                {
+                  "a": "We have never thought about it.",
+                  "pts": 10
+                }
+              ]
+            },
+            {
+              "q": "Does your organization have specific cybersecurity concerns? Choose your top three.",
+              "area": "risks",
+              "required": "true",
+              "type": "checkbox",
+              "answers": [
+                {
+                  "a": "Attacks from large groups who disagree with us",
+                  "pts": 0
+                },
+                {
+                  "a": "Attacks from small groups or individuals who disagree with us",
+                  "pts": 0
+                },
+                {
+                  "a": "Lack of staff awareness about cybersecurity",
+                  "pts": 0
+                },
+                {
+                  "a": "Our concerns aren’t listed here.",
+                  "pts": 0
+                },
+                {
+                  "a": "We don’t have any concerns currently.",
+                  "pts": 15
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 10
+                }
+              ]
+            },
+            {
+              "q": "How often do you consider cybersecurity when you make decisions about internal workflow and processes?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Always",
+                  "pts": 0
+                },
+                {
+                  "a": "Sometimes",
+                  "pts": 0
+                },
+                {
+                  "a": "Rarely",
+                  "pts": 0
+                },
+                {
+                  "a": "Never",
+                  "pts": 0
+                },
+                {
+                  "a": "We don’t know.",
+                  "pts": 15
+                }
+              ]
+            },
+            {
+              "q": "How does your organization pay for cybersecurity?",
+              "area": "risks",
+              "required": "true",
+              "type": "radio",
+              "answers": [
+                {
+                  "a": "Cybersecurity is part of our operations budget.",
+                  "pts": 0
+                },
+                {
+                  "a": "Cybersecurity has its own line item in our annual budget.",
+                  "pts": 0
+                },
+                {
+                  "a": "We raise funds for cybersecurity.",
+                  "pts": 0
+                },
+                {
+                  "a": "We do not pay for cybersecurity but receive free assistance.",
+                  "pts": 0
+                },
+                {
+                  "a": "We do not have a consistent way to pay for cybersecurity.",
+                  "pts": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "external-threats",
+          "subtitle": "External Threats",
+          "questions": [
               {
                 "q": "Has anyone at your organization experienced “doxxing” (when someone targets you and publishes your private information online)?",
                 "area": "a-risks",
@@ -325,7 +327,7 @@ var en_qs = [
               },
               {
                 "q": "Has anyone at your organization been physically harassed (followed or attacked) by someone outside of your organization?",
-                "area": "associated-risks",
+                "area": "a-risks",
                 "required": "true",
                 "type": "radio",
                 "answers": [
@@ -408,14 +410,15 @@ var en_qs = [
                 ]
               }
             ]
-          }]
-    }]
+        }
+    ]
   },
   {
     "section": "op-sec",
     "title": "Operational Security",
-    "subs": [{
-      "policy-docs": [{
+    "subs": [
+      {
+      "name": "policy-docs",
         "subtitle": "Policy & Documentation",
         "questions": [
           {
@@ -527,8 +530,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "internal-risks": [{
+      },
+      {
+        "name":"internal-risks",
         "subtitle": "Internal Risks",
         "questions": [
           {
@@ -660,10 +664,11 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "training-support": [{
-          "subtitle": "Staff Training & Support",
-          "questions": [
+      },
+      {
+        "name":"training-support",
+        "subtitle": "Staff Training & Support",
+        "questions": [
             {
               "q": "Which groups within your organization currently receive cybersecurity training?",
               "area": "training",
@@ -805,8 +810,9 @@ var en_qs = [
               ]
             }
           ]
-      }],
-      "travel-policy": [{
+      },
+      {
+        "name":"travel-policy",
         "subtitle": "Travel Policy",
         "questions": [
           {
@@ -858,8 +864,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "managing-data": [{
+      },
+      {
+        "name":"managing-data",
         "subtitle": "Managing Data",
         "questions": [
           {
@@ -967,8 +974,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "web-security": [{
+      },
+      {
+        "name":"web-security",
         "subtitle": "Website Security",
         "questions": [
           {
@@ -1120,8 +1128,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "office-security": [{
+      },
+      {
+        "name":"office-security",
         "subtitle": "Office Policies & Systems",
         "questions": [
           {
@@ -1289,8 +1298,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "legal-risks": [{
+      },
+      {
+        "name":"legal-risks",
         "subtitle": "Legal Risks",
         "questions": [
           {
@@ -1318,14 +1328,15 @@ var en_qs = [
             ]
           }
         ]
-      }]
-    }]
+      }
+    ]
   },
   {
     "section": "devices-accounts",
     "title": "Device & Account Security",
-    "subs": [{
-      "messaging-collab": [{
+    "subs": [
+      {
+        "name":"messaging-collab",
         "subtitle": "Messaging & Collaboration",
         "questions": [
           {
@@ -1413,8 +1424,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "installing-software": [{
+      },
+      {
+        "name":"installing-software",
         "subtitle": "Installing Software",
         "questions": [
           {
@@ -1462,8 +1474,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "data-encryption": [{
+      },
+      {
+        "name":"data-encryption",
         "subtitle": "Data Encryption",
         "questions": [
           {
@@ -1515,8 +1528,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "device-compartmentalization": [{
+      },
+      {
+        "name":"device-compartmentalization",
         "subtitle": "Compartmentalization",
         "questions": [
           {
@@ -1544,8 +1558,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "passwords-authentication": [{
+      },
+      {
+        "name":"passwords-authentication",
         "subtitle": "Passwords & Authentication",
         "questions": [
           {
@@ -1617,8 +1632,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "system-updates": [{
+      },
+      {
+        "name":"system-updates",
         "subtitle": "System Updates",
         "questions": [
           {
@@ -1654,8 +1670,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "op-continuity": [{
+      },
+      {
+        "name":"op-continuity",
         "subtitle": "Operational Continuity",
         "questions": [
           {
@@ -1735,8 +1752,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "third-party": [{
+      },
+      {
+        "name":"third-party",
         "subtitle": "Third-Party Services",
         "questions": [
           {
@@ -1864,8 +1882,9 @@ var en_qs = [
             ]
           }
         ]
-      }],
-      "vp-network": [{
+      },
+      {
+        "name":"vp-network",
         "subtitle": "VPN",
         "questions": [
           {
@@ -1897,8 +1916,8 @@ var en_qs = [
             ]
           }
         ]
-      }]
-    }]
+      }
+    ]
   }
 ];
 

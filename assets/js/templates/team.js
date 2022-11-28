@@ -1,12 +1,12 @@
 templates.team = function(data){
   var content = `<div id="team" class="basics contain">
-                    <h2 class="title">`+data.team.title+`</h2><div class="people">`;
+                    <h2 class="title">`+data.title+`</h2><div class="people">`;
 
   // put team.content into an array
   var team = [];
   var teamContent = '';
-  for (var t = 0; t < data.team.content.length; t++) {
-    team.push(data.team.content[t]);
+  for (var t = 0; t < data.content.length; t++) {
+    team.push(data.content[t]);
   }
 
   // this countdown (rather than count up) is deliberate

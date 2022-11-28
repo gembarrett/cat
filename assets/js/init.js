@@ -62,15 +62,12 @@ window.onload = function(){
   utils.router();
 };
 
-// TODO: consider whether it's instead better to simply have the whole list of questions, and then define the sections at particular element numbers
 // question list is only used in findContent() - can it be replaced?
 
-// these will hold the questions in their sections
-// TODO: the "levels" are being replaced, so this will need to be changed
 var sections = [];
 // push the questions in their groups, plus labels, into variables for processing
 for (var q = 0; q < textStore.qs.length; q++){
-  sections.push(textStore.qs[q].questions);
+  sections.push(textStore.qs[q]);
 }
 
 // this will connect the question numbers (0-70) with their positions in each section (0-25)
@@ -87,6 +84,7 @@ for (var i = 0; i < sections.length; i++) {
 }
 
 
+// NONE OF CURRENTSTATE IS NECESSARY WITHOUT PREVIEW, AFAIK
 // set up progress tracking
 //TODO: update to track which page of questions is currently shown
 var currentState = {
@@ -94,13 +92,13 @@ var currentState = {
   sectionC: 0,
   // which section's data is in use?
   sectionQ: sections[0],
-  // which number in the question queue are we?
+  // which number in the question queue are we? - NOT NEEDED?
   questionC: 0,
   // which question's data is in use?
   questionQ: 0,
-  // position in section
+  // position in section - NOT NEEDED
   questionP: 0,
-  // which answers have been given for which questions?
+  // which answers have been given for which questions? - NOT NEEDED? Grab on submit
   answers: [],
 }
 

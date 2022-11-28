@@ -33,16 +33,15 @@ var utils = (function(){
       var function_to_invoke;
       if (route === 'home') {
         function_to_invoke = 'home';
-        var data = en_oc;
+        var data = en_oc; // TODO: replace the hardcoded language files
       } else if (temp[0] === 'legal') {
         function_to_invoke = 'legalView';
         var data = en_oc['legal'];
       } else if (temp[0] === 'survey') {
         // prepare to load the Survey page
         function_to_invoke = 'questionsView';
-        // TODO: could the question data be passed here instead of in a global variable?
+        var data = en_qs;
       } else {
-        console.log(temp[0]);
         function_to_invoke = temp[0] || false;
         var data = en_oc;
       }
