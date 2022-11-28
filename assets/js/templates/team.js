@@ -1,6 +1,6 @@
 templates.team = function(data){
   var content = `<div id="team" class="basics contain">
-                    <h2 class="title">`+data.team.title+` `+data.team.subtitle+`</h2><div class="people">`;
+                    <h2 class="title">`+data.team.title+`</h2><div class="people">`;
 
   // put team.content into an array
   var team = [];
@@ -16,13 +16,13 @@ templates.team = function(data){
     // add img, span name and p for that element
     teamContent += `<div class="person">
                       <img src="/assets/images/`+rando.ref+`.png" />
-                      <p><span class="person-name">`+rando.name+`</span>`+rando.p+`</p>
+                      <p><span class="person-name">`+rando.name+`</span>`+rando.text+`</p>
                     </div>`;
     // remove ref from array
     team = team.filter(person => person.ref !== rando.ref);
   }
 
   // add the randomised list of team members to the page
-  content += teamContent + `</div><button class="btn btn-prim title right"><a href="/#survey">`+data.ux.content[0].text+`</a></button></div>`;
+  content += teamContent + `</div></div>`;
   return content;
 };

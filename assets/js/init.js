@@ -8,13 +8,13 @@ var views = {};
 var bodyLang = "en";
 var textStore = {
   qs : window[bodyLang+"_qs"],
-  rs : window[bodyLang+"_rs"],
+  // rs : window[bodyLang+"_rs"],
   oc : window[bodyLang+"_oc"]
 }
 
 function updateLang(language) {
   textStore.qs = window[language+"_qs"];
-  textStore.rs = window[language+"_rs"];
+  // textStore.rs = window[language+"_rs"];
   textStore.oc = window[language+"_oc"];
 }
 
