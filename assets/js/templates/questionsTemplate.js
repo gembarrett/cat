@@ -55,7 +55,6 @@ var content = "";
 var cats = [];
 // Left column needs to contain all the category titles
 content += `<div class="left-col"><div>`;
-console.log(menuData);
 // Object.entries(textStore.rs["content"]).forEach(([key, value]) => {
 //   content += `<p>`+value["title"]+`</p>`;
 //   // use this later to find the relevant questions
