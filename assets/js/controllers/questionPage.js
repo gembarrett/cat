@@ -39,6 +39,7 @@ controllers.questionPage = function(data, params){
         "reqd": list[j].required,
         "answers": theseAnswers
       }
+      questions.push(questionItem);
     }
     return questions;
   }
@@ -49,7 +50,7 @@ controllers.questionPage = function(data, params){
       var answerItem = {
         "a-text": question.answers[a].a,
         "pts-area": area,
-        "pts": question.answers[a].a
+        "pts": question.answers[a].pts
       }
       answers.push(answerItem);
     }
