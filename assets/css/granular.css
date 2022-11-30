@@ -165,16 +165,12 @@
 .left-col img:last-child {
   padding-top: 1em;
 }
+
 .left-col {
-  width: 30%;
+}
+.right-col {
 }
 
-.right-col {
-  width: 70%;
-  margin-left: 1em;
-  display: flex;
-  flex-direction: column;
-}
 .outer {
   display: none;
   width: 100%;

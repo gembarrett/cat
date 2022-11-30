@@ -1,4 +1,4 @@
-templates.questionsTemplate = function(menuData, params){
+templates.questionsTemplate = function(menuData, questionData, params){
   // UNCOMMENT WHEN SNAPSHOT IS RELEVENT: if there's a snapshot url then build the currentState array
   // TODO: add error catching
   // if (params){
@@ -31,6 +31,7 @@ templates.questionsTemplate = function(menuData, params){
   //   }
   // }
 
+
 // create the answer elements
 function buildAnswers(count, answers, storage){
   var id = 'q-'+count;
@@ -49,44 +50,68 @@ function addSubmitHandler() {
   });
 }
 
+function buildSectionMenu(sections) {
+  var menu = "";
+  for (var s = 0; s < sections.length; s++) {
+    menu += `<div id="`+sections[s].trigger+`"><h2>`+sections[s].name+`</h2><ul>`;
+    menu += buildSubMenu(sections[s].subs);
+    menu += `</ul></div>`;
+  }
+  return menu;
+}
+
+function buildSubMenu(subsections) {
+  var subMenu = "";
+  for (var t = 0; t < subsections.length; t++) {
+    subMenu += `<li id="`+subsections[t].trigger+`">`+subsections[t].title+`</li>`;
+  }
+  return subMenu;
+}
+
+
+
+
+
+function buildSurvey(qitems) {
+  var theseQs = "";
+  for (var q = 0; q < qitems.length; q++){ // 3 top-level sections
+    theseQs += `<div class="group" id="`+qitems[q].trigger+`">`;
+    // theseQs += `<p>`+qitems[q].title+`</p>`;
+    theseQs += buildQuestions(qitems[q]);
+    theseQs += `</div>`;
+  }
+  return theseQs;
+}
+
+function buildQuestions(items) {
+  var questionEls = "";
+  for (var i = 0; i < items.length; i++){
+    console.log(items[i].trigger);
+    questionEls += `<div class="`+items[i].trigger+`">`;
+    questionEls += `<h4>`+items[i].title+`</h4>`;
+    questionEls += buildElements(items[i].questions);
+    questionEls += `</div>`;
+  }
+  return questionEls;
+}
+
+// this puts together the question elements for the subsection
+function buildElements(el){
+  var element = "";
+  for (var e=0; e< el.length; e++){
+    element += `<p>`+el[e].qText+`</p>`;
+  }
+  return element;
+}
 
 // build the page elements
 var content = "";
-var cats = [];
 // Left column needs to contain all the category titles
-content += `<div class="left-col"><div>`;
-// Object.entries(textStore.rs["content"]).forEach(([key, value]) => {
-//   content += `<p>`+value["title"]+`</p>`;
-//   // use this later to find the relevant questions
-//   cats.push(key);
-// });
-content += `</div></div>`;
+var cats = buildSectionMenu(menuData);
+content += `<div class="left-col">`+cats+`</div>`;
 // Right column needs to contain all the questions
-
-
-
-// this route creates three distinct sections which are hidden and shown. Another alternative is to only change the question container and update the image sources, progress bar background to reflect section change.
-// for (var level = 0; level < sections.length; level++){
-//   content += `<div class="outer lvl-`+[level+1]+ (level === 0 ? ` current">` : `">`);
-//
-//   content += `<div class="right-col"><div class="content">`;
-//   midpoint = Math.round(sections[level].length/2);
-//   for (var el = 0; el < sections[level].length-1; el++) { // add the question to the parent container
-//       content += `<form id="q-`+c+`" class="questionContent`;
-//       if (el === midpoint){
-//         content += ` midway">`;
-//       } else {
-//         content += `">`
-//       }
-//       content += `<h2 class="">`+data[c].q+`</h2>
-//         <div class="answers ">`;
-//       content = buildAnswers(c, data[c].answers, content);
-//       content += `</div></form>`;
-//       c++;
-//     } // end of the loop that adds questions
-//     content += `</div></div>`;
-//     content += `<div class="action"><button id="submitAnswers" class="nextButton  btn btn-prim" title="Click or press Enter to go to the next level">`+textStore.oc.ux.content[2].text+`</button></div></div>`; // closes the content box
-// }
+var survey = buildSurvey(questionData);
+content += `<div class="right-col"><form>`+survey+`</form></div>`;
 
 return content;
 };

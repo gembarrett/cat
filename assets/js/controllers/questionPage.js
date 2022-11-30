@@ -22,7 +22,11 @@ controllers.questionPage = function(data, params){
       // push that sub object to the list.subs object
       list.subs.push(sub);
       // get the questions for this subsection, associate them with the sub trigger
-      var qObjs = getQuestions(sub.trigger, items[l].questions);
+      var qObjs = {
+        "trigger": sub.trigger,
+        "title": sub.title,
+        "questions": getQuestions(sub, items[l].questions)
+      }
       // push this array of questions to the list.questions object
       list.questions.push(qObjs);
     }
@@ -34,8 +38,8 @@ controllers.questionPage = function(data, params){
     for (var j = 0; j <list.length; j++) {
       var theseAnswers = getAnswers(list[j].area, list[j]);
       var questionItem = {
-        "trigger": sub,
-        "q-text": list[j].q,
+        "trigger": sub.trigger,
+        "qText": list[j].q,
         "reqd": list[j].required,
         "answers": theseAnswers
       }
@@ -48,8 +52,8 @@ controllers.questionPage = function(data, params){
     var answers = [];
     for (var a=0; a<question.answers.length; a++){
       var answerItem = {
-        "a-text": question.answers[a].a,
-        "pts-area": area,
+        "aText": question.answers[a].a,
+        "ptsArea": area,
         "pts": question.answers[a].pts
       }
       answers.push(answerItem);
@@ -68,18 +72,6 @@ controllers.questionPage = function(data, params){
     menuData.push(menuItem);
     questionData.push(surveyData.questions);
   }
-  console.log(menuData);
-  console.log(questionData);
-
-
-
-  // gather the section titles
-    // gather their subsection titles
-    // gather area
-
-  // gather areas
-    // gather questions data
-
 
 
   // // queue up all the questions in this section
