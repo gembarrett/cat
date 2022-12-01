@@ -41,10 +41,12 @@ controllers.questionPage = function(data, params){
         "trigger": sub.trigger,
         "qText": list[j].q,
         "reqd": list[j].required,
+        "input": list[j].type,
         "answers": theseAnswers
       }
       questions.push(questionItem);
     }
+    console.log(questions);
     return questions;
   }
 

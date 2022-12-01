@@ -32,18 +32,6 @@ templates.questionsTemplate = function(menuData, questionData, params){
   // }
 
 
-// create the answer elements
-function buildAnswers(count, answers, storage){
-  var id = 'q-'+count;
-  for (var an = 0; an < answers.length; an++){
-    storage += `<div class="form-el">
-      <input type="radio" id="`+id+`-a-`+an+`" name="`+id+`-el">
-      <label for="`+id+`-a-`+an+`">`+answers[an].a+`</label>
-    </div>`;
-  }
-  return storage;
-}
-
 function addSubmitHandler() {
   document.getElementById('submitAnswers').addEventListener('click', function() {
     handleSubmit();
@@ -83,10 +71,10 @@ function buildSurvey(qitems) {
   return theseQs;
 }
 
+// this puts together the groups of questions
 function buildQuestions(items) {
   var questionEls = "";
   for (var i = 0; i < items.length; i++){
-    console.log(items[i].trigger);
     questionEls += `<div class="`+items[i].trigger+`">`;
     questionEls += `<h4>`+items[i].title+`</h4>`;
     questionEls += buildElements(items[i].questions);
@@ -99,9 +87,23 @@ function buildQuestions(items) {
 function buildElements(el){
   var element = "";
   for (var e=0; e< el.length; e++){
-    element += `<p>`+el[e].qText+`</p>`;
+    var ref = el[e].trigger +`-`+e;
+    element += `<fieldset>`;
+    element += `<legend>`+counter+`. `+el[e].qText+`</legend>`;
+    element += buildAnswers(ref, el[e].input, el[e].reqd, el[e].answers);
+    element += `</fieldset>`;
+    counter++;
   }
   return element;
+}
+
+function buildAnswers(r, type, req, aArr){
+  var answers = "";
+  for (var a = 0; a< aArr.length; a++){
+    answers += `<label for="`+r+`">`+aArr[a].aText+`</label>`;
+    answers += `<input type="`+type+`" id="`+r+`" name="`+r+`">`;
+  }
+  return answers;
 }
 
 // build the page elements
@@ -110,6 +112,7 @@ var content = "";
 var cats = buildSectionMenu(menuData);
 content += `<div class="left-col">`+cats+`</div>`;
 // Right column needs to contain all the questions
+var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
 content += `<div class="right-col"><form>`+survey+`</form></div>`;
 
