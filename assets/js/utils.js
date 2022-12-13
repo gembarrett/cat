@@ -67,6 +67,10 @@ var utils = (function(){
         } else { // otherwise just scroll to top
           window.scrollTo(0,0);
         }
+        // could add event handlers for submenu here
+        if (document.querySelector('.submenu')){
+          addSubmenuHandlers(document.querySelector('.submenu'));
+        }
     }
   };
 })();

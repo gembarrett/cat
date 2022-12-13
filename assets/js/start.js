@@ -1,3 +1,26 @@
+function addSubmenuHandlers(menu){
+  for (var n=0; n < menu.childNodes.length; n++) {
+    // first narrow it down to the submenu items in this section
+    var subs = menu.childNodes[n].childNodes;
+    subs = subs[subs.length-1].childNodes;
+    // then get the handlers added to the elements
+    addShowHideHandlers(subs);
+  }
+}
+
+function addShowHideHandlers(els){
+  for (var el=0; el<els.length; el++){
+    els[el].addEventListener('click', showHideQuestions);
+  }
+}
+
+function showHideQuestions(e){
+  console.log(e.target.id);
+  // get the currently shown question group
+  // use e.target.id to find the matching question group
+  // toggle the hide and show classes (hide is default)
+}
+
 function moveForward(id) {
   // this increases the counter
   currentState.questionC++;

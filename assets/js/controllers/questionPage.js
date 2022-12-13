@@ -6,7 +6,7 @@ controllers.questionPage = function(data, params){
   var menuData = [];
   var questionData = [];
 
-  function getSubsections(items){
+  function getSubsections(section, items){
     // create an object for holding the questions and the subsections
     var list = {
       "questions": [],
@@ -23,6 +23,7 @@ controllers.questionPage = function(data, params){
       list.subs.push(sub);
       // get the questions for this subsection, associate them with the sub trigger
       var qObjs = {
+        "section": section,
         "trigger": sub.trigger,
         "title": sub.title,
         "questions": getQuestions(sub, items[l].questions)
@@ -46,7 +47,6 @@ controllers.questionPage = function(data, params){
       }
       questions.push(questionItem);
     }
-    console.log(questions);
     return questions;
   }
 
@@ -65,7 +65,7 @@ controllers.questionPage = function(data, params){
 
 
   for (var i=0; i<data.length;i++){
-    var surveyData = getSubsections(data[i].subs);
+    var surveyData = getSubsections(data[i].title, data[i].subs);
     var menuItem = {
       'trigger': data[i].section, // might not be needed if we use <detail> to group the menu items with subs
       'name': data[i].title,

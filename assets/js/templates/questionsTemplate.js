@@ -56,14 +56,10 @@ function buildSubMenu(subsections) {
   return subMenu;
 }
 
-
-
-
-
 function buildSurvey(qitems) {
   var theseQs = "";
   for (var q = 0; q < qitems.length; q++){ // 3 top-level sections
-    theseQs += `<div class="group" id="`+qitems[q].trigger+`">`;
+    theseQs += `<div class="group">`;
     // theseQs += `<p>`+qitems[q].title+`</p>`;
     theseQs += buildQuestions(qitems[q]);
     theseQs += `</div>`;
@@ -76,6 +72,7 @@ function buildQuestions(items) {
   var questionEls = "";
   for (var i = 0; i < items.length; i++){
     questionEls += `<div class="`+items[i].trigger+`">`;
+    questionEls += `<h3>`+items[i].section+`</h3>`;
     questionEls += `<h4>`+items[i].title+`</h4>`;
     questionEls += buildElements(items[i].questions);
     questionEls += `</div>`;
@@ -100,8 +97,8 @@ function buildElements(el){
 function buildAnswers(r, type, req, aArr){
   var answers = "";
   for (var a = 0; a< aArr.length; a++){
-    answers += `<label for="`+r+`">`+aArr[a].aText+`</label>`;
     answers += `<input type="`+type+`" id="`+r+`" name="`+r+`">`;
+    answers += `<label for="`+r+`">`+aArr[a].aText+`</label>`;
   }
   return answers;
 }
@@ -110,7 +107,7 @@ function buildAnswers(r, type, req, aArr){
 var content = "";
 // Left column needs to contain all the category titles
 var cats = buildSectionMenu(menuData);
-content += `<div class="left-col">`+cats+`</div>`;
+content += `<div class="left-col submenu">`+cats+`</div>`;
 // Right column needs to contain all the questions
 var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
