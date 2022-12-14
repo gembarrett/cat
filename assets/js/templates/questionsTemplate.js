@@ -56,12 +56,11 @@ function buildSubMenu(subsections) {
   return subMenu;
 }
 
-function buildSurvey(qitems) {
+function buildSurvey(qItems) {
   var theseQs = "";
-  for (var q = 0; q < qitems.length; q++){ // 3 top-level sections
+  for (var q = 0; q < qItems.length; q++){ // 3 top-level sections
     theseQs += `<div class="group">`;
-    // theseQs += `<p>`+qitems[q].title+`</p>`;
-    theseQs += buildQuestions(qitems[q]);
+    theseQs += buildQuestions(qItems[q]);
     theseQs += `</div>`;
   }
   return theseQs;
@@ -71,7 +70,7 @@ function buildSurvey(qitems) {
 function buildQuestions(items) {
   var questionEls = "";
   for (var i = 0; i < items.length; i++){
-    questionEls += `<div class="`+items[i].trigger+`">`;
+    questionEls += `<div class="`+items[i].trigger+ (counter === 1 ? ` active` : ``) +` subgroup">`;
     questionEls += `<h3>`+items[i].section+`</h3>`;
     questionEls += `<h4>`+items[i].title+`</h4>`;
     questionEls += buildElements(items[i].questions);
@@ -97,8 +96,8 @@ function buildElements(el){
 function buildAnswers(r, type, req, aArr){
   var answers = "";
   for (var a = 0; a< aArr.length; a++){
-    answers += `<input type="`+type+`" id="`+r+`" name="`+r+`">`;
-    answers += `<label for="`+r+`">`+aArr[a].aText+`</label>`;
+    answers += `<span><input type="`+type+`" id="`+r+`" name="`+r+`">`;
+    answers += `<label for="`+r+`">`+aArr[a].aText+`</label></span>`;
   }
   return answers;
 }

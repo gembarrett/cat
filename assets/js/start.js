@@ -15,10 +15,19 @@ function addShowHideHandlers(els){
 }
 
 function showHideQuestions(e){
-  console.log(e.target.id);
   // get the currently shown question group
+  var thisSubSection = e.target.id;
   // use e.target.id to find the matching question group
+  var matchingQs = document.querySelector('.'+thisSubSection);
   // toggle the hide and show classes (hide is default)
+  var currentQs = document.querySelector('.active');
+  if (matchingQs !== currentQs) {
+    currentQs.classList.toggle('active');
+    matchingQs.classList.toggle('active');
+  } else {
+    // if the selected content is already showing, do nothing
+    return;
+  }
 }
 
 function moveForward(id) {
