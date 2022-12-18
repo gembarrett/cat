@@ -40,20 +40,25 @@
 #hero {
   flex-direction: column;
   display: flex;
+  margin-top:5em;
+}
+#hero-header {
+  display:flex;
+  flex-direction: row;
   align-items: center;
 }
 #hero img {
-  max-height: 140px;
-  margin: 1em 0 1em;
-}
-#hero .btn {
-  width: 33%;
-  margin: 0.8em 0;
+  width: 100%;
 }
 #hero h1 {
-  font-size: 1.8em;
+  font-size: 3em;
+  line-height: normal;
+  margin: 0 0 0.5em;
 }
-
+#hero h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
 
 /* Basics page */
 .basics > .contain-70 {

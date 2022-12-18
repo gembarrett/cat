@@ -1,10 +1,14 @@
 templates.hero = function(data){
   var content = `
     <div id="hero">
-      <h2>`+data.subtitle+`</h2>
-      <h1 class="title">`+data.title+`</h1>
-      <button class="btn btn-prim title"><a href="/#survey">`+data.cta+`</a></button>
-    </div>
-    `;
+      <div id="hero-header">
+        <div id="hero-header-text">
+          <h2>`+data.subtitle+`</h2>
+          <h1>`+data.title+`</h1>
+          <button class="btn btn-prim"><a href="/#survey">`+data.cta+`</a></button>
+        </div>
+        <img src="assets/images/hero-image.png" />
+      </div>`;
+    content += `</div>`;
     return content;
 };

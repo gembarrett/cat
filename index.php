@@ -43,13 +43,17 @@ if(isset($_POST['submit'])){
           </a>
         </div>
         <div class="header-menu">
-            <p>[language]</p>
+            <p>English</p>
             <img id="menu-trigger" src="assets/images/globe.png">
         </div>
         <div id="menu-container" class="close">
           <ul id="menu" class="title">
             <select name="language">
               <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="es">Español</option>
+              <option value="es">Español</option>
+              <option value="es">Español</option>
               <option value="es">Español</option>
             </select>
           </ul>
@@ -75,6 +79,7 @@ if(isset($_POST['submit'])){
         </div>
 
         <script src="assets/js/templates/hero.js"></script>
+        <script src="assets/js/templates/about.js"></script>
         <script src="assets/js/templates/how.js"></script>
         <script src="assets/js/templates/legal.js"></script>
         <script src="assets/js/templates/team.js"></script>

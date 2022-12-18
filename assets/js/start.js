@@ -140,3 +140,10 @@ function parseContent(data, array){
   }
   return array;
 }
+
+function parseQuotes(data, array) {
+  for (var q=0; q<data.length; q++) {
+    array += `<div>`+data[q]+`</div>`;
+  }
+  return array;
+}

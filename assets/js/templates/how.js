@@ -1,6 +1,6 @@
 templates.how = function(data, params){
 
-  var content = `<div id="how" class="basics contain">
+  var content = `<div id="how" class="basics">
                       <h2 class="title">`+data.title+`</h2>`;
 
 
