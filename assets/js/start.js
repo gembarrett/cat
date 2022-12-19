@@ -128,12 +128,12 @@ function nextQuestion(){
 // function to add li or p formatting to array
 function parseContent(data, array){
   for (var p = 0; p < data.length; p++){
-    if (data[p].items !== undefined) {
-      array += `<ul>`;
+    if (data[p].type !== undefined) {
+      array += `<`+data[p].type+`>`;
       for (var l = 0; l < data[p].items.length; l++) {
         array += `<li>`+data[p].items[l]+`</li>`;
       }
-      array += `</ul>`;
+      array += `</`+data[p].type+`>`;
     } else {
       array += `<p>`+data[p]+`</p>`;
     }

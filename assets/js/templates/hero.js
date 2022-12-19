@@ -1,6 +1,6 @@
 templates.hero = function(data){
   var content = `
-    <div id="hero">
+    <div id="hero" class="home">
       <div id="hero-header">
         <div id="hero-header-text">
           <h2>`+data.subtitle+`</h2>

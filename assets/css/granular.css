@@ -1,4 +1,9 @@
 /* Home page styles */
+.home {
+  display: flex;
+  justify-content: flex-start;
+}
+/*
 .trio p {
   flex: 2 0 60%;
 }
@@ -36,10 +41,9 @@
   font-size: 2.4em;
   padding: 0.5em 1em 1em;
   line-height: 1.2em;
-}
+} */
 #hero {
   flex-direction: column;
-  display: flex;
   margin-top:5em;
 }
 #hero-header {
@@ -172,10 +176,19 @@
 }
 
 .left-col {
+  flex:0 0 50%;
 }
 .right-col {
+  flex:0 0 30%;
+  margin-left: 1em;
+}
+blockquote.twitter-tweet{
+  font-size: 10px !important;
 }
 
+blockquote.twitter-tweet p {
+  font-size: 10px !important;
+}
 .outer {
   display: none;
   width: 100%;

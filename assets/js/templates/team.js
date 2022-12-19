@@ -1,5 +1,5 @@
 templates.team = function(data){
-  var content = `<div id="team" class="basics">
+  var content = `<div id="team" class="home">
                     <h2 class="title">`+data.title+`</h2><div class="people">`;
 
   // put team.content into an array

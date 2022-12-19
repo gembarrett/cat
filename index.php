@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
         <link rel="stylesheet" href="assets/css/granular.css" />
         <link rel="stylesheet" href="assets/css/media.css" />
         <!-- ONLY NEEDED FOR FONT AWESOME <link href="assets/css/all.css" rel="stylesheet"> -->
-
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="content/en-content.js"></script>
         <script src="content/zz-content.js"></script>
         <script src="content/links.js"></script>
@@ -60,6 +60,7 @@ if(isset($_POST['submit'])){
         </div>
       </div>
         <div id="page">
+
           <div id="no-js" class="window">
             <h3>Looks like you've got Javascript disabled</h3>
             <p>You'll need to enable Javascript in order to use this website. Here's how to do that: <a href="https://enable-javascript.com" title="Find out more about enabling Javascript in your browser">enable-javascript.com</a></p>

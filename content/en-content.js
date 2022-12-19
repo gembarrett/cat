@@ -1973,14 +1973,10 @@ var en_oc = {
     "cta":"Start your assessment",
   },
   "intro": {
+    "title": "What people on the internet have said about us",
     "content": [
       "COVID-19 has fundamentally changed the way we live and work. This includes using technology more than ever before, raising the already important issue of cybersecurity within civil society organizations. However, finding where to begin and understanding the best way to tackle this topic can feel daunting for even the best-resourced organizations. That’s why we have created this tool.",
       "The Ford Foundation’s Cybersecurity Assessment Tool (CAT) is designed to measure the maturity, resiliency, and strength of an organization’s cybersecurity efforts. We have created this questionnaire with busy nontechnical grant makers, grantee partners, civil society organizations, and nonprofits in mind, and we hope it helps shine some light on a recommended path forward for any organization undertaking a cybersecurity journey. The tool is designed to be taken as a survey in one sitting. However, it may require information from several members of your staff, including operations staff or decision makers. We initially created the questionnaire to help BUILD’s grantee partners, and we’re now making a beta version available for public use."
-    ],
-    "title": "What people on the internet have said about us",
-    "quotes": [
-      '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">NGOs, learn how you can protect your work &amp; your staff by using our new, FREE Cybersecurity Assessment Tool! Developed by <a href="https://twitter.com/FordFoundation?ref_src=twsrc%5Etfw">@FordFoundation</a> BUILD team&#39;s own Matt Mitchell. <a href="https://t.co/rH1W9WrFPd">https://t.co/rH1W9WrFPd</a></p>&mdash; Kathy Reich (@kdreich) <a href="https://twitter.com/kdreich/status/1329486658035720192?ref_src=twsrc%5Etfw">November 19, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
-      '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Proud to have worked with <a href="https://twitter.com/geminiimatt?ref_src=twsrc%5Etfw">@geminiimatt</a> and the <a href="https://twitter.com/FordFoundation?ref_src=twsrc%5Etfw">@FordFoundation</a> on the creation of a cybersecurity assessment tool for NGOs. Congrats on the launch! <a href="https://t.co/mWE3557Iu5">https://t.co/mWE3557Iu5</a></p>&mdash; Runa Sandvik (@runasand) <a href="https://twitter.com/runasand/status/1329584094724939777?ref_src=twsrc%5Etfw">November 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
     ]
   },
   "process": {
