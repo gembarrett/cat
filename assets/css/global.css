@@ -37,10 +37,8 @@ body.buildPage #page {
 }
 
 #page {
-  flex: 1 0 auto;
-  width:80vw;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
 }
 
 #foot {
@@ -91,7 +89,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+.cta {
+  width:100%;
+  background-color: #dad9cf;
+  padding:2em;
+  text-align: center;
+}
 
 /* Main content container */
 .window {

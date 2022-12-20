@@ -2,6 +2,22 @@
 .home {
   display: flex;
   justify-content: flex-start;
+  max-width:80vw;
+  flex-direction: column;
+}
+
+
+.gather {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+#intro, #how {
+  flex-basis: 40%;
+}
+#promo {
+  flex-basis: 20%;
 }
 /*
 .trio p {
@@ -108,6 +124,9 @@
 }
 
 /* Team section */
+#team {
+  flex-direction: column;
+}
 .people {
   display: flex;
   flex-wrap: wrap;
@@ -115,11 +134,17 @@
 .person {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
-  flex-basis: 33%;
+  margin: 2em;
+  flex: 1 0 10%;
 }
 .person-name {
   font-weight: bold;
+}
+.person img {
+  max-width: 160px;
+}
+.person span {
+  display: inline;
 }
 
 /* Legal section */
@@ -136,11 +161,6 @@
 }
 
 /* How section */
-#how div p:nth-child(2) {
-  border-left: 15px solid #009E72;
-  padding-left: 1.5em;
-}
-
 
 /* Survey */
 .question {
@@ -182,13 +202,15 @@
   flex:0 0 30%;
   margin-left: 1em;
 }
+
+/* TODO: figure out why Twitter's instructions on styling aren't working here */
 blockquote.twitter-tweet{
   font-size: 10px !important;
 }
-
 blockquote.twitter-tweet p {
   font-size: 10px !important;
 }
+
 .outer {
   display: none;
   width: 100%;
