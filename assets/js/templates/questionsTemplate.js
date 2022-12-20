@@ -1,4 +1,4 @@
-templates.questionsTemplate = function(menuData, questionData, params){
+templates.questionsTemplate = function(menuData, questionData, additionalData, params){
   // UNCOMMENT WHEN SNAPSHOT IS RELEVENT: if there's a snapshot url then build the currentState array
   // TODO: add error catching
   // if (params){
@@ -110,7 +110,10 @@ content += `<div class="left-col submenu">`+cats+`</div>`;
 // Right column needs to contain all the questions
 var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
-content += `<div class="right-col"><form>`+survey+`</form></div>`;
+content += `<div class="right-col">
+          <h1>`+additionalData.title+`</h1>`;
+content = parseContent(additionalData.content, content);
+content += `<form>`+survey+`</form></div>`;
 
 return content;
 };

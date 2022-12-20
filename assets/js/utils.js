@@ -40,7 +40,15 @@ var utils = (function(){
       } else if (temp[0] === 'survey') {
         // prepare to load the Survey page
         function_to_invoke = 'questionsView';
-        var data = en_qs;
+        var data = {
+          "qs": en_qs,
+          "ui": en_oc['survey']
+        }
+        // TODO: make data into an object, so that it passes main content (_qs) and extra content (_oc)
+        // then update data processing in questions controller so that it can separate the two
+        // questions controller will then need to pass through the additional content to the template
+
+
       } else {
         function_to_invoke = temp[0] || false;
         var data = en_oc;

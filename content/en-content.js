@@ -1934,7 +1934,6 @@ var en_oc = {
       "2022 Ford Foundation, all rights reserved."
     ]
   },
-
   "languages": [
     {
       "name": "English",
@@ -1970,7 +1969,7 @@ var en_oc = {
   "header": {
     "title": "Cybersecurity Assessment Tool",
     "subtitle": "Ford Foundation",
-    "cta":"Start your assessment",
+    "cta":"Use the tool",
   },
   "intro": {
     "title": "What people on the internet have said about us",
@@ -2051,13 +2050,39 @@ var en_oc = {
       "Don't see your type of organization listed above? This doesn't mean that CAT won't work for you. However, you may need to adjust some of your recommendations for your particular context."
     ]
   },
-  "start": {
+  "survey": {
     "title": "Let's Get Started",
     "cta":"Start your assessment",
     "content": [
-      "Welcome to the CAT (Cybersecurity Assessment Tool). This is version v2.0, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use.  If you find any errors, bugs, or issues, please contact buildteam@fordfoundation.org",
-      "Please click \"next\" to begin."
-    ]
+      "Welcome to the CAT (Cybersecurity Assessment Tool). This is version v2.0, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use. If you find any errors, bugs, or issues, please contact buildteam@fordfoundation.org",
+      "Start your assessment."
+    ],
+    "ux": {
+      "mobile": {
+        "buttons": [
+          "Share",
+          "Continue anyway"
+        ],
+        "content": "It looks like you are on a mobile device. This assessment typically takes 1-2 hours and we do not recommend doing it on a small screen. Do you want to share a link to this page to move your work or continue on this device anyway?"
+      },
+      "save": {
+        "title": "Save and resume later",
+        "copy": {
+          "content": [
+            "Please copy the link below and save it in a safe place. You can use this link any time within the next 30 days to resume answering questions on the form.",
+            "Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."
+          ],
+          "cta": "Copy link"
+        },
+        "email": {
+          "content": [
+            "Want us to email you this Link? Enter your email below."
+          ],
+          "placeholder": "Enter your email here",
+          "cta": "Email link"
+        }
+      }
+    }
   },
   "legal": {
     "title": "Legal disclaimer",

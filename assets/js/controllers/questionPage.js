@@ -63,12 +63,11 @@ controllers.questionPage = function(data, params){
     return answers;
   }
 
-
-  for (var i=0; i<data.length;i++){
-    var surveyData = getSubsections(data[i].title, data[i].subs);
+  for (var i=0; i<data.qs.length;i++){
+    var surveyData = getSubsections(data.qs[i].title, data.qs[i].subs);
     var menuItem = {
-      'trigger': data[i].section, // might not be needed if we use <detail> to group the menu items with subs
-      'name': data[i].title,
+      'trigger': data.qs[i].section, // might not be needed if we use <detail> to group the menu items with subs
+      'name': data.qs[i].title,
       'subs': surveyData.subs
     }
     menuData.push(menuItem);
@@ -93,6 +92,6 @@ controllers.questionPage = function(data, params){
   // }
 
   // put that data into the template and return it for rendering
-  var questionContainer = templates.questionsTemplate(menuData, questionData, params);
+  var questionContainer = templates.questionsTemplate(menuData, questionData, data.ui, params);
   utils.render('page', questionContainer);
 };
