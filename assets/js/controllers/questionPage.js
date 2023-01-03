@@ -1,6 +1,6 @@
 controllers.questionPage = function(data, params){
   // document.getElementById('bu').classList.add('active');
-  document.querySelector('body').classList.add('buildPage');
+  document.querySelector('#page').classList.add('survey');
   window.scrollTo(0,0);
 
   var menuData = [];

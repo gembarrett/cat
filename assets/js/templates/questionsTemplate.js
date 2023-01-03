@@ -41,7 +41,7 @@ function addSubmitHandler() {
 function buildSectionMenu(sections) {
   var menu = "";
   for (var s = 0; s < sections.length; s++) {
-    menu += `<div id="`+sections[s].trigger+`"><h2>`+sections[s].name+`</h2><ul>`;
+    menu += `<div id="`+sections[s].trigger+`"><h4>`+sections[s].name+`</h4><ul>`;
     menu += buildSubMenu(sections[s].subs);
     menu += `</ul></div>`;
   }
@@ -106,14 +106,19 @@ function buildAnswers(r, type, req, aArr){
 var content = "";
 // Left column needs to contain all the category titles
 var cats = buildSectionMenu(menuData);
-content += `<div class="left-col submenu">`+cats+`</div>`;
+content += `<div class="contain-lrg"><div class="left-col submenu">`+cats+`</div>`;
 // Right column needs to contain all the questions
 var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
-content += `<div class="right-col">
+
+
+// TODO: split things up so that the submenu and questions are compiled in separate template files
+content += `<div class="right-col"><img src="assets/images/survey-image.png" />
           <h1>`+additionalData.title+`</h1>`;
 content = parseContent(additionalData.content, content);
-content += `<form>`+survey+`</form></div>`;
+content += `<div class="dots"><span class="circle"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></div>`
+
+content += `<form>`+survey+`</form></div></div>`;
 
 return content;
 };

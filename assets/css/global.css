@@ -2,6 +2,9 @@
 html, body {
   height: 100%;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-size: 16px;
@@ -29,11 +32,11 @@ body > * {
   justify-content: space-between;
   padding: 5px 10px;
 }
-body.buildPage #page {
-  padding-top: 0;
-  flex-direction: row;
-  background-color: inherit;
-  margin-top: 10vh;
+#page.survey {
+  padding-top: 5em;
+  flex-direction: column;
+  background-color: #009e72;
+  align-items: center;
 }
 
 #page {
@@ -50,7 +53,6 @@ body.buildPage #page {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 #foot img {
   max-height: 30px;
@@ -71,8 +73,8 @@ body.buildPage #page {
 #foot .links p {
   text-align: right;
 }
-.contain {
-  width: 40%;
+.contain-sm {
+  width: 50%;
   margin: auto;
 }
 

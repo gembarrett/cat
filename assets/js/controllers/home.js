@@ -7,6 +7,6 @@ controllers.homePage = function(data, params){
   homeContent += `</div>`;
   homeContent += `<div class="cta"><button class="btn btn-prim title right"><a href="/#survey">`+data.process.cta+`</a></button></div>`
   homeContent += templates.team(data.team);
-  document.querySelector('body').classList.remove('buildPage');
+  document.querySelector('#page').classList.remove('survey');
   utils.render('page', homeContent);
 };

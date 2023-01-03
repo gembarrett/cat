@@ -1,11 +1,14 @@
 /* Home page styles */
-.home {
+.home, .contain-lrg {
   display: flex;
   justify-content: flex-start;
   max-width:80vw;
   flex-direction: column;
 }
 
+.contain-lrg{
+  flex-direction: row;
+}
 
 .gather {
   flex-wrap: wrap;
@@ -17,7 +20,7 @@
   flex-basis: 40%;
 }
 #promo {
-  flex-basis: 20%;
+  flex-basis: 30%;
   margin:0 3em;
 }
 /*
@@ -154,11 +157,12 @@
 }
 .brown-bg {
   background-color: #A17354;
-  padding: 3em 0;
   margin-top:3em;
 }
-.brown-bg .contain {
+.brown-bg .contain-sm {
   background-color: #FFFEF5;
+  padding: 3em 5em;
+  margin-top:2em;
 }
 
 /* How section */
@@ -197,11 +201,53 @@
 }
 
 .left-col {
-  flex:0 0 50%;
-}
-.right-col {
   flex:0 0 30%;
-  margin-left: 1em;
+  padding:0 2em 1em 0;
+}
+
+.submenu {
+  color:#fff;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.submenu h4 {
+  background-color: #003f2e;
+  padding: 1em;
+}
+.submenu ul {
+  list-style: none;
+  padding:0;
+}
+.submenu h4::before, .submenu li::before {
+  content: "\25cb";
+  color:#009e72;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+}
+.submenu ul, .submenu h4 {
+  margin:0;
+}
+
+.submenu li {
+  background: #000;
+  padding:1em;
+  border:1px solid rgba(255,255,255,0.2);
+}
+.submenu li:hover {
+  background: rgba(255,255,255,0.9);
+  color:#000;
+}
+
+.right-col {
+  flex:0 0 70%;
+  background-color: #fffef5;
+  padding: 3em;
+}
+.right-col img {
+  max-width: 80%;
+  margin:0 auto;
+  display:block;
 }
 
 /* TODO: figure out why Twitter's instructions on styling aren't working here */
@@ -220,12 +266,10 @@ blockquote.twitter-tweet p {
   display: inherit;
 }
 form {
-  padding: 1em 2em 0em;
   scroll-snap-align: start;
-  font-size: 1.1em;
 }
-form h2 {
-  line-height: 1.2em;
+form h3 {
+  text-transform: uppercase;
 }
 .form-el {
   display: flex;
@@ -240,6 +284,31 @@ form h2 {
 .answers {
   border-bottom: 2px solid #000;
   padding-bottom: 1.5em;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle {
+  width:10px;
+  height: 10px;
+  border-radius: 100%;
+  margin:1em 0;
+}
+
+.circle:first-child {
+  background-color: #009e72;
+}
+.circle:nth-child(2){
+  background-color: #decd38;
+}
+.circle:nth-child(3){
+  background-color: #6b60bf;
+}
+.circle:last-child{
+  background-color: #a17354;
 }
 
 /* Progress bar */
