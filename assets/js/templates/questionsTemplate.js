@@ -42,16 +42,22 @@ function buildSectionMenu(sections) {
   var menu = "";
   for (var s = 0; s < sections.length; s++) {
     menu += `<div id="`+sections[s].trigger+`"><h4>`+sections[s].name+`</h4><ul>`;
-    menu += buildSubMenu(sections[s].subs);
+    menu += (s === 0 ? buildSubMenu(sections[s].subs, true) : buildSubMenu(sections[s].subs, false));
     menu += `</ul></div>`;
   }
   return menu;
 }
 
-function buildSubMenu(subsections) {
+function buildSubMenu(subsections, first) {
   var subMenu = "";
   for (var t = 0; t < subsections.length; t++) {
-    subMenu += `<li id="`+subsections[t].trigger+`">`+subsections[t].title+`</li>`;
+    // if it's the first li being created then add class of "selected"
+    if (first && (t === 0)) {
+      subMenu += `<li class="selected" id="`;
+    } else {
+      subMenu += `<li id="`;
+    }
+    subMenu += subsections[t].trigger+`">`+subsections[t].title+`</li>`;
   }
   return subMenu;
 }

@@ -213,17 +213,42 @@
 .submenu h4 {
   background-color: #003f2e;
   padding: 1em;
+  font-size: 1.25em;
+  font-weight: normal;
 }
 .submenu ul {
   list-style: none;
   padding:0;
 }
 .submenu h4::before, .submenu li::before {
-  content: "\25cb";
-  color:#009e72;
   font-weight: bold;
   display: inline-block;
-  width: 2em;
+  width: 3em;
+}
+/* four styles for dots:
+large green filled (section started)
+small green filled (subsection started)
+large black fill green border ()
+small black fill green border */
+
+
+.submenu li::before {
+  content: "\25cb";
+  color:#009e72;
+}
+.submenu li.started::before {
+  content: "\25cf";
+  color:#009e72;
+}
+.submenu li.selected, .submenu li:hover {
+  background: rgba(255,255,255,0.9);
+  color:#000;
+}
+.submenu h4::before {
+  content: "\25cb";
+  color:#009e72;
+  font-size: 1.25em;
+  width:2em;
 }
 .submenu ul, .submenu h4 {
   margin:0;
@@ -231,12 +256,8 @@
 
 .submenu li {
   background: #000;
-  padding:1em;
+  padding:1em 1.4em;
   border:1px solid rgba(255,255,255,0.2);
-}
-.submenu li:hover {
-  background: rgba(255,255,255,0.9);
-  color:#000;
 }
 
 .right-col {
@@ -270,6 +291,12 @@ form {
 }
 form h3 {
   text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1em;
+}
+form h4 {
+  font-size: 1.5em;
+  margin-top:0;
 }
 .form-el {
   display: flex;
@@ -340,7 +367,21 @@ form h3 {
 }
 fieldset {
   border:0;
+  line-height: 2em;
+  padding: 0;
+  margin: 2em 0;
+}
+legend {
+  font-size: 1.2em;
+  padding: 1em 0;
 }
 span {
   display:block;
+}
+form span {
+  margin: 0 1em;
+  padding: 0.25em 0;
+}
+form input {
+  margin-right: 10px;
 }

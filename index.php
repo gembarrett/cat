@@ -20,7 +20,6 @@ if(isset($_POST['submit'])){
         <!-- ONLY NEEDED FOR FONT AWESOME <link href="assets/css/all.css" rel="stylesheet"> -->
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="content/en-content.js"></script>
-        <script src="content/zz-content.js"></script>
         <script src="content/links.js"></script>
 
         <script src="assets/js/utils.js"></script>

@@ -2053,10 +2053,8 @@ var en_oc = {
   },
   "start": {
     "title": "Let's Get Started",
-    "cta":"Start your assessment",
     "content": [
-      "Welcome to the CAT (Cybersecurity Assessment Tool). This is version v2.0, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use.  If you find any errors, bugs, or issues, please contact buildteam@fordfoundation.org",
-      "Please click \"next\" to begin."
+      "Welcome to the CAT (Cybersecurity Assessment Tool). This is version v2.0, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use. If you find any errors, bugs, or issues, please contact buildteam@fordfoundation.org",
     ]
   },
   "legal": {

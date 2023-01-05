@@ -2,16 +2,40 @@ function addSubmenuHandlers(menu){
   for (var n=0; n < menu.childNodes.length; n++) {
     // first narrow it down to the submenu items in this section
     var subs = menu.childNodes[n].childNodes;
-    subs = subs[subs.length-1].childNodes;
     // then get the handlers added to the elements
     addShowHideHandlers(subs);
   }
 }
 
 function addShowHideHandlers(els){
-  for (var el=0; el<els.length; el++){
-    els[el].addEventListener('click', showHideQuestions);
+  // first add the event handlers to the category titles
+  var title = els[0];
+  title.addEventListener('click', showHideCategories);
+  // then narrow it down to the list items
+  var subCats = els[els.length-1].childNodes;
+  for (var el=0; el<subCats.length; el++){
+    subCats[el].addEventListener('click', showHideQuestions);
   }
+}
+
+// TODO: combine this with the other function that hides/shows questions
+function showHideCategories(e){
+  var currentCat = document.querySelectorAll('.submenu h4.selected');
+  if (currentCat.length > 0) {
+    for (var c = 0; c < currentCat.length; c++){
+      // if user is selecting a new category
+      if (currentCat[c].textContent !== e.target.textContent) {
+        // remove the class from current selection
+        currentCat[c].classList.remove("selected");
+        // close that class' ul
+        e.target.nextSibling.classList.add('selected');
+      } else {
+        console.log(currentCat[c].textContent);
+        console.log(e.target.textContent);
+      }
+    }
+  }
+  e.target.classList.add('selected');
 }
 
 function showHideQuestions(e){
@@ -22,6 +46,15 @@ function showHideQuestions(e){
   // toggle the hide and show classes (hide is default)
   var currentQs = document.querySelector('.active');
   if (matchingQs !== currentQs) {
+    // find other instances of "selected" class and remove them
+    var selected = document.querySelectorAll('.submenu li.selected');
+    if (selected.length > 0) {
+      for (var s = 0; s < selected.length; s++){
+          selected[s].classList.remove("selected");
+      }
+    }
+    // add class of "selected" to e.target.classList
+    e.target.classList.add('selected');
     currentQs.classList.toggle('active');
     matchingQs.classList.toggle('active');
   } else {
