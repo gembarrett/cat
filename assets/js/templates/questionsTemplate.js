@@ -41,7 +41,8 @@ function addSubmitHandler() {
 function buildSectionMenu(sections) {
   var menu = "";
   for (var s = 0; s < sections.length; s++) {
-    menu += `<div id="`+sections[s].trigger+`"><h4>`+sections[s].name+`</h4><ul>`;
+    menu += `<div id="`+sections[s].trigger+`"`+(s === 0 ? `class="selected">` : `>`);
+    menu += `<div class="subMenuTitle"><h4>`+sections[s].name+`</h4></div><ul>`;
     menu += (s === 0 ? buildSubMenu(sections[s].subs, true) : buildSubMenu(sections[s].subs, false));
     menu += `</ul></div>`;
   }

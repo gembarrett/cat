@@ -18,17 +18,22 @@ function addShowHideHandlers(els){
   }
 }
 
-// TODO: combine this with the other function that hides/shows questions
+// TODO: combine this with the other function that hides/shows questions?
 function showHideCategories(e){
-  var currentCat = document.querySelectorAll('.submenu h4.selected');
+  // which section is currently selected
+  var currentCat = document.querySelectorAll('.submenu div.selected');
+  // which section is now selected
+  var newCat = e.target.parentNode;
+  console.log(newCat);
   if (currentCat.length > 0) {
     for (var c = 0; c < currentCat.length; c++){
       // if user is selecting a new category
       if (currentCat[c].textContent !== e.target.textContent) {
         // remove the class from current selection
         currentCat[c].classList.remove("selected");
+        console.log(e.target);
         // close that class' ul
-        e.target.nextSibling.classList.add('selected');
+        e.target.parentNode.classList.add('selected');
       } else {
         console.log(currentCat[c].textContent);
         console.log(e.target.textContent);
@@ -37,6 +42,7 @@ function showHideCategories(e){
   }
   e.target.classList.add('selected');
 }
+
 
 function showHideQuestions(e){
   // get the currently shown question group

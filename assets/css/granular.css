@@ -210,10 +210,12 @@
   font-size: 0.8em;
   cursor: pointer;
 }
-.submenu h4 {
+.submenu .subMenuTitle {
   background-color: #003f2e;
+}
+.submenu h4 {
   padding: 1em;
-  font-size: 1.25em;
+  font-size: 1.15em;
   font-weight: normal;
 }
 .submenu ul {
@@ -240,6 +242,9 @@ small black fill green border */
   content: "\25cf";
   color:#009e72;
 }
+.submenu h4:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .submenu li.selected, .submenu li:hover {
   background: rgba(255,255,255,0.9);
   color:#000;
@@ -253,13 +258,17 @@ small black fill green border */
 .submenu ul, .submenu h4 {
   margin:0;
 }
-
 .submenu li {
   background: #000;
   padding:1em 1.4em;
   border:1px solid rgba(255,255,255,0.2);
 }
-
+.submenu div > ul {
+  display:none;
+}
+.submenu div.selected > ul {
+  display: initial;
+}
 .right-col {
   flex:0 0 70%;
   background-color: #fffef5;
