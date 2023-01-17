@@ -113,7 +113,7 @@ function buildAnswers(r, type, req, aArr){
 var content = "";
 // Left column needs to contain all the category titles
 var cats = buildSectionMenu(menuData);
-content += `<div class="contain-lrg"><div class="left-col submenu">`+cats+`</div>`;
+content += `<div class="contain-md"><div class="left-col submenu">`+cats+`</div>`;
 // Right column needs to contain all the questions
 var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
@@ -125,7 +125,7 @@ content += `<div class="right-col"><img src="assets/images/survey-image.png" />
 content = parseContent(additionalData.content, content);
 content += `<div class="dots"><span class="circle"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></div>`
 
-content += `<form>`+survey+`</form></div></div>`;
+content += `<form>`+survey+`</form></div><button class="save-btn">Save and Resume Later</button></div>`;
 
 return content;
 };

@@ -78,6 +78,10 @@ body > * {
   margin: auto;
 }
 
+.contain-md {
+  max-width: 70vw;
+}
+
 /* Link styles */
 /* TODO: fix so it applies just to external links
 a[href]:visited {
