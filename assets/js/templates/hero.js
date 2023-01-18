@@ -7,7 +7,7 @@ templates.hero = function(data){
           <h1>`+data.title+`</h1>
           <button class="btn btn-prim"><a href="/#survey">`+data.cta+`</a></button>
         </div>
-        <img src="assets/images/hero-image.png" />
+        <div id="hero-header-img"><img src="assets/images/hero-image.png" /></div>
       </div>`;
     content += `</div>`;
     return content;

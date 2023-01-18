@@ -82,6 +82,7 @@ if(isset($_POST['submit'])){
         <script src="assets/js/templates/about.js"></script>
         <script src="assets/js/templates/tweets.js"></script>
         <script src="assets/js/templates/how.js"></script>
+        <script src="assets/js/templates/who.js"></script>
         <script src="assets/js/templates/legal.js"></script>
         <script src="assets/js/templates/team.js"></script>
 

@@ -74,7 +74,7 @@ body > * {
   text-align: right;
 }
 .contain-sm {
-  width: 50%;
+  width: 45%;
   margin: auto;
 }
 
@@ -100,6 +100,7 @@ a:hover {
   background-color: #dad9cf;
   padding:2em;
   text-align: center;
+  margin:4em 0;
 }
 
 /* Main content container */
@@ -260,6 +261,9 @@ button::-moz-focus-inner {
   display: none;
 }
 
+.add-shadow {
+  box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
+}
 
 /* NOTE: when refactoring is complete, examine whether the following styles are still needed */
 
