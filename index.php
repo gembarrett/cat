@@ -70,7 +70,7 @@ if(isset($_POST['submit'])){
           <div class="info">
             <img src="assets/images/CAT-logo_bg.png" /><img src="assets/images/CAT-logo_black.png" />
             <p><span>Cybersecurity Assessment Tool</span> by the Ford Foundation's BUILD program</p>
-            <p>&#169; 2022 The Ford Foundation, all rights reserved.</p>
+            <p id="copyright">&#169; 2022 The Ford Foundation, all rights reserved.</p>
           </div>
           <div class="links">
             <p><a href="#survey">Assessment</a></p>
