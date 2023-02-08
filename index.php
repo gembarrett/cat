@@ -37,8 +37,9 @@ if(isset($_POST['submit'])){
         <div id="head">
           <div class="glyph">
           <a href="/">
-            <img alt="CAT logo" src="assets/images/CAT-logo.png">
-            <img alt="CAT text logo" id="link-home" src="assets/images/CAT-logo_white.png">
+              <img alt="CAT logo" src="assets/images/CAT-logo.png"></a>
+            <a href="/">
+              <img alt="CAT text logo" id="link-home" src="assets/images/CAT-logo_white.png">
           </a>
         </div>
         <div class="header-menu">

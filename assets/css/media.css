@@ -196,6 +196,9 @@
     #hero h1 {
         font-size: 1.5em;
     }
+    #hero h2 {
+        margin-bottom: 5px;
+    }
     #hero-header-img {
         margin-top: 2em;
     }
@@ -205,8 +208,26 @@
     .gather {
         flex-direction: column;
     }
+    #head {
+        padding:5px 0;
+    }
+    .header-menu {
+        padding:0.5em;
+    }
     .header-menu p {
         display:none;
+    }
+    #head .header-menu img {
+        padding-left: 0;
+    }
+    .glyph {
+        display: flex;
+        justify-content: flex-start;
+        width:100%;
+        padding-left: 5px;
+    }
+    .glyph a:last-child {
+        margin: 0 auto;
     }
     .home #intro-container {
         padding-right: 0;
