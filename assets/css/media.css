@@ -266,4 +266,19 @@
     #foot .links p {
         text-align: center;
     }
+    .brown-bg {
+        background-color: initial;
+        margin-top:0;
+    }
+    .brown-bg .contain-sm {
+        padding:0;
+        margin-top: 6em;
+        margin-bottom: 3em;
+    }
+    .contain-sm {
+        width:85%;
+    }
+    .brown-bg .add-shadow {
+        box-shadow: none;
+    }
 }
