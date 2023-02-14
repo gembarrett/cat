@@ -41,8 +41,8 @@ var utils = (function(){
         // prepare to load the Survey page
         function_to_invoke = 'questionsView';
         var data = {
-          "qs": en_qs,
-          "ui": en_oc['survey']
+            "qs": en_qs,
+            "ui": en_oc['survey']
         }
 
       } else {

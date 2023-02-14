@@ -31,6 +31,9 @@ templates.questionsTemplate = function(menuData, questionData, additionalData, p
   //   }
   // }
 
+var intro = '<div id="survey-intro"><img src="assets/images/survey-image.png" /><h1>'+additionalData.title+'</h1>';
+intro = parseContent(additionalData.content, intro);
+intro += '<div class="dots"><span class="circle"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></div></div>';
 
 function addSubmitHandler() {
   document.getElementById('submitAnswers').addEventListener('click', function() {
@@ -72,12 +75,15 @@ function buildSurvey(qItems) {
   }
   return theseQs;
 }
-
+    
 // this puts together the groups of questions
 function buildQuestions(items) {
   var questionEls = "";
   for (var i = 0; i < items.length; i++){
     questionEls += `<div class="`+items[i].trigger+ (counter === 1 ? ` active` : ``) +` subgroup">`;
+    if (i === 0) {
+        questionEls += intro;
+    }
     questionEls += `<h3>`+items[i].section+`</h3>`;
     questionEls += `<h4>`+items[i].title+`</h4>`;
     questionEls += buildElements(items[i].questions);
@@ -120,12 +126,9 @@ var survey = buildSurvey(questionData);
 
 
 // TODO: split things up so that the submenu and questions are compiled in separate template files
-content += `<div class="right-col add-shadow"><img src="assets/images/survey-image.png" />
-          <h1>`+additionalData.title+`</h1>`;
-content = parseContent(additionalData.content, content);
-content += `<div class="dots"><span class="circle"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></div>`
-
-content += `<form>`+survey+`</form></div><button class="save-btn add-shadow">Save and Resume Later</button></div>`;
+content += `<div class="right-col add-shadow">`;
+content += `<form>`+survey+`</form></div><button class="save-btn add-shadow">`+additionalData.ux.save.title+`</button>`;
+content += `<img src="assets/images/rhombus-yellow.png"></div>`;
 
 return content;
 };

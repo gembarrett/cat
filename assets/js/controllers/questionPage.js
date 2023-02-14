@@ -93,5 +93,6 @@ controllers.questionPage = function(data, params){
 
   // put that data into the template and return it for rendering
   var questionContainer = templates.questionsTemplate(menuData, questionData, data.ui, params);
+    questionContainer += templates.warning(data.ui.ux, params);
   utils.render('page', questionContainer);
 };

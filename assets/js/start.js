@@ -1,10 +1,10 @@
-function addSubmenuHandlers(menu){
-  for (var n=0; n < menu.childNodes.length; n++) {
-    // first narrow it down to the submenu items in this section
-    var subs = menu.childNodes[n].childNodes;
-    // then get the handlers added to the elements
-    addShowHideHandlers(subs);
-  }
+function addSubmenuHandlers(menu) {
+    for (var n=0; n < menu.childNodes.length; n++) {
+      // first narrow it down to the submenu items in this section
+      var subs = menu.childNodes[n].childNodes;
+      // then get the handlers added to the elements
+      addShowHideHandlers(subs);
+    }
 }
 
 function addShowHideHandlers(els){
@@ -169,15 +169,15 @@ function parseContent(data, array){
       // if type is defined, it'll be a list
       // check if there's an intro line accompanying it
       if (data[p].text !== undefined) {
-        array += `<p>`+data[p].text+`</p>`;
+        array += '<p>'+data[p].text+'</p>';
       }
-      array += `<`+data[p].type+`>`;
+      array += '<'+data[p].type+'>';
       for (var l = 0; l < data[p].items.length; l++) {
-        array += `<li>`+data[p].items[l]+`</li>`;
+        array += '<li>'+data[p].items[l]+'</li>';
       }
-      array += `</`+data[p].type+`>`;
+      array += '</'+data[p].type+'>';
     } else {
-      array += `<p>`+data[p]+`</p>`;
+      array += '<p>'+data[p]+'</p>';
     }
   }
   return array;
@@ -185,7 +185,7 @@ function parseContent(data, array){
 
 function parseQuotes(data, array) {
   for (var q=0; q<data.length; q++) {
-    array += `<div>`+data[q]+`</div>`;
+    array += '<div>'+data[q]+'</div>';
   }
   return array;
 }

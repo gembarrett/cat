@@ -1,3 +1,3 @@
-views.home = function(data, params){
+views.home = function(data, params) {
   controllers['homePage'](data, params);
 }

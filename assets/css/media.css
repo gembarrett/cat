@@ -183,6 +183,14 @@
 }
 
 @media (max-width:480px){
+/*
+    .mob-overlay {
+        display:block;
+        position: absolute;
+        margin:0 auto;
+        z-index: 1;
+    }
+*/
     #hero-header {
         flex-direction: column;
     }
@@ -280,5 +288,21 @@
     }
     .brown-bg .add-shadow {
         box-shadow: none;
+    }
+    .submenu {
+        display:none;
+    }
+    .contain-md {
+        max-width: 100vw;
+    }
+    .save-btn {
+        display:none;
+    }
+    .right-col {
+        flex-basis: fit-content;
+        padding:3em;
+    }
+    #page.survey {
+        padding-top: 3em;
     }
 }
