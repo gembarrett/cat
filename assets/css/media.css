@@ -182,6 +182,19 @@
   }
 }
 
+@media (max-height:800px){
+    .rhombus.top {
+        top:20vh;
+    }
+    .rhombus.mid {
+        top:80vh;
+    }
+    .rhombus.base {
+        top:90vh;
+    }
+}
+
+
 @media (max-width:480px){
 /*
     .mob-overlay {

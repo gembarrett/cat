@@ -285,9 +285,8 @@ small black fill green border */
   display: initial;
 }
 .right-col {
-  flex:0 0 63%;
   background-color: #fffef5;
-  padding: 4em;
+    width:63%;
 }
 .right-col img {
   max-width: 100%;
@@ -411,11 +410,45 @@ form input {
 }
 
 .save-btn {
-  align-self: start;
-  margin-left: -3em;
   background-color: #000;
   color: #fff;
   border: 0;
   margin-top: 20px;
   padding: 16px;
+    right:-100px;
+    position: absolute;
+    width:120px;
+    
+}
+
+.overlap-col {
+    background-color: red;
+    width:100%;
+    position: relative;
+    z-index: 3;
+}
+
+.contain-survey {
+    padding:4em;
+}
+
+.rhombus {
+    width:120px;
+    position: absolute;
+}
+
+.rhombus.l {
+    left:-60px;
+}
+.rhombus.r {
+    right:-60px;
+}
+.rhombus.top {
+    top:70vh;
+}
+.rhombus.mid {
+    top:100vh;
+}
+.rhombus.base {
+    top:130vh;
 }

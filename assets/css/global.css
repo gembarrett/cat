@@ -31,6 +31,7 @@ body > * {
   z-index: 1;
   justify-content: space-between;
   padding: 5px 10px;
+    z-index:10;
 }
 #page.survey {
   padding-top: 5em;
