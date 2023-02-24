@@ -41,6 +41,32 @@ function showHideCategories(e){
   e.target.classList.add('selected');
 }
 
+// if we're on desktop
+    // if (window.innerWidth > X)
+// call this each time the submenu is clicked
+function positionPolygons(){
+    // get the height of the containing block
+    var containerH = document.querySelector('.contain-survey').clientHeight;
+    // account for the intro height
+    var introH = document.querySelector('#survey-intro').clientHeight;
+    // get the three polygons
+    var images = document.querySelectorAll('.rhombus');
+    console.log(images);
+    // decide on the 3 positions, based on the height
+    // divide up the space between introH and containerH
+    var gapH = containerH - introH;
+    // if the gap is taller than a certain amount, decide how many rhombus can fit
+    var top = gapH / 3;
+    var mid = gapH / 2;
+    var base = containerH - top;
+
+    // apply display:block and top value to each
+    images[0].style.top = top + 'px';
+    images[1].style.top = mid + 'px';
+    images[2].style.top = base + 'px';
+
+}
+
 
 function showHideQuestions(e){
   // get the currently shown question group
@@ -61,6 +87,10 @@ function showHideQuestions(e){
     e.target.classList.add('selected');
     currentQs.classList.toggle('active');
     matchingQs.classList.toggle('active');
+      positionPolygons();
+      // position the polygons
+      // change their images
+      // change the background if we're in a new section (maybe move this bit up)
   } else {
     // if the selected content is already showing, do nothing
     return;

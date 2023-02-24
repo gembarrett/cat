@@ -443,12 +443,13 @@ form input {
 .rhombus.r {
     right:-60px;
 }
+/* starting positions */
 .rhombus.top {
-    top:70vh;
+    top:130vh;
 }
 .rhombus.mid {
-    top:100vh;
+    top:180vh;
 }
 .rhombus.base {
-    top:130vh;
+    top:230vh;
 }

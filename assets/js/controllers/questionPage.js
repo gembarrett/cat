@@ -63,6 +63,9 @@ controllers.questionPage = function(data, params){
     return answers;
   }
 
+
+
+
   for (var i=0; i<data.qs.length;i++){
     var surveyData = getSubsections(data.qs[i].title, data.qs[i].subs);
     var menuItem = {
@@ -90,7 +93,6 @@ controllers.questionPage = function(data, params){
   //     templateContext.push(item);
   //   }
   // }
-
   // put that data into the template and return it for rendering
   var questionContainer = templates.questionsTemplate(menuData, questionData, data.ui, params);
     questionContainer += templates.warning(data.ui.ux, params);
