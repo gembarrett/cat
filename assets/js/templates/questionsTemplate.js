@@ -127,7 +127,8 @@ var survey = buildSurvey(questionData);
 
 // TODO: split things up so that the submenu and questions are compiled in separate template files
 content += `<div class="right-col"><div class="overlap-col"><button class="save-btn add-shadow">`+additionalData.ux.save.title+`</button><img class="rhombus r top" src="assets/images/rhombus-yellow.png"><img class="rhombus l mid" src="assets/images/rhombus-purple.png"><img class="rhombus r base" src="assets/images/rhombus-brown.png"></div>`;
-content += `<div class="contain-survey add-shadow"><form>`+survey+`</form></div></div>`;
+content += `<div class="contain-survey add-shadow"><form>`+survey+`</form>`;
+    content += `<progress id="survey-progress" max="100" value="10">10%</progress><label for="survey-progress">`+additionalData.ux.survey.progress+`</label></div></div>`;
 
 return content;
 };

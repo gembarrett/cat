@@ -2063,6 +2063,13 @@ var en_oc = {
         ],
         "content": "It looks like you are on a mobile device. This assessment typically takes 1-2 hours and we do not recommend doing it on a small screen. Do you want to share a link to this page to move your work or continue on this device anyway?"
       },
+      "survey": {
+          "next": "Next",
+          "prev": "Previous",
+          "submit": "Submit",
+          "progress": "You are [val]% complete",
+          "incomplete":"You need to complete all questions to submit."
+      },
       "save": {
         "title": "Save and resume later",
         "copy": {
