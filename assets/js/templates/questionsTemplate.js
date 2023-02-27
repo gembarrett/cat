@@ -81,7 +81,7 @@ function buildQuestions(items) {
   var questionEls = "";
   for (var i = 0; i < items.length; i++){
     questionEls += `<div class="`+items[i].trigger+ (counter === 1 ? ` active` : ``) +` subgroup">`;
-    if (i === 0) {
+    if (items[i].trigger === "your-org") {
         questionEls += intro;
     }
     questionEls += `<h3>`+items[i].section+`</h3>`;
