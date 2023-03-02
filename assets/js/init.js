@@ -84,22 +84,10 @@ for (var i = 0; i < sections.length; i++) {
 }
 
 
-// NONE OF CURRENTSTATE IS NECESSARY WITHOUT PREVIEW, AFAIK
 // set up progress tracking
-//TODO: update to track which page of questions is currently shown
 var currentState = {
-  // which number in the section queue are we?
-  sectionC: 0,
-  // which section's data is in use?
-  sectionQ: sections[0],
-  // which number in the question queue are we? - NOT NEEDED?
-  questionC: 0,
-  // which question's data is in use?
-  questionQ: 0,
-  // position in section - NOT NEEDED
-  questionP: 0,
-  // which answers have been given for which questions? - NOT NEEDED? Grab on submit
-  answers: [],
+    // how many questions have been answered?
+    answered: 0
 }
 
 // for storing the storeAs names and values

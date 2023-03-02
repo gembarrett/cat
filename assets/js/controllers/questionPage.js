@@ -69,7 +69,7 @@ controllers.questionPage = function(data, params){
   for (var i=0; i<data.qs.length;i++){
     var surveyData = getSubsections(data.qs[i].title, data.qs[i].subs);
     var menuItem = {
-      'trigger': data.qs[i].section, // might not be needed if we use <detail> to group the menu items with subs
+      'trigger': data.qs[i].section,
       'name': data.qs[i].title,
       'subs': surveyData.subs
     }

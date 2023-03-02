@@ -51,7 +51,6 @@ function positionPolygons(){
     var introH = document.querySelector('#survey-intro').clientHeight;
     // get the three polygons
     var images = document.querySelectorAll('.rhombus');
-    console.log(images);
     // decide on the 3 positions, based on the height
     // divide up the space between introH and containerH
     var gapH = containerH - introH;
@@ -62,9 +61,15 @@ function positionPolygons(){
 
     // apply display:block and top value to each
     images[0].style.top = top + 'px';
-    images[1].style.top = mid + 'px';
-    images[2].style.top = base + 'px';
-
+    if (containerH > 800){
+        images[1].style.top = mid + 'px';
+        images[2].style.top = base + 'px';
+        images[1].style.display = 'block';
+        images[2].style.display = 'block';   
+    } else {
+        images[1].style.display = 'none';
+        images[2].style.display = 'none';   
+    }
 }
 
 
@@ -83,18 +88,28 @@ function showHideQuestions(e){
           selected[s].classList.remove("selected");
       }
     }
-    // add class of "selected" to e.target.classList
-    e.target.classList.add('selected');
-    currentQs.classList.toggle('active');
-    matchingQs.classList.toggle('active');
-      positionPolygons();
-      // position the polygons
-      // change their images
-      // change the background if we're in a new section (maybe move this bit up)
+      updateTheDisplay(e.target,currentQs, matchingQs);
   } else {
     // if the selected content is already showing, do nothing
     return;
   }
+}
+
+function updateTheDisplay(target,oldQs,newQs) {
+    // add class of "selected" to the category the user clicked on
+    target.classList.add('selected');
+    oldQs.classList.toggle('active');
+    newQs.classList.toggle('active');
+    // if we're going to the your-org page
+    // hide the Previous button
+    // if we're going to the vp-network page
+        // change the Next button text to Submit
+        //if the progress bar is at <100% then disable the Submit button
+    
+    positionPolygons();
+  // position the polygons
+  // change their images
+  // change the background if we're in a new section (maybe move this bit up)
 }
 
 function moveForward(id) {
@@ -139,16 +154,6 @@ function handleSubmit() {
   // this gets the current question id number e.g. q0
   var id = currentState.questionQ;
   collectAnswers(false);
-
-  // THIS MAY BE DELETED IF EXCLUSIONS AND EDIT ARE NOT IMPLEMENTED
-  // if we're at the last question
-  // if(parseInt(id) === questionsList.length-1){
-  //   // disable the edit button
-  //   document.getElementById('editBtn').classList.add('disabled');
-  // } else {
-  //   // collect the exclusions for this question
-  //   collectExclusions(id);
-  // }
 
   // TODO: move this class to the currently-displayed container of questions
   match.classList.remove("current");

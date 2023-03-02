@@ -31,8 +31,9 @@ templates.questionsTemplate = function(menuData, questionData, additionalData, p
   //   }
   // }
 
-var intro = '<div id="survey-intro"><img src="assets/images/survey-image.png" /><h1>'+additionalData.title+'</h1>';
+var intro = '<div id="survey-intro"><img src="assets/images/survey-image.png" /><h1>'+additionalData.title+'</h1><div id="intro-p">';
 intro = parseContent(additionalData.content, intro);
+intro += `<span><a href="mailto:buildteam@fordfoundation.org">buildteam@fordfoundation.org</a></span></div>`;
 intro += '<div class="dots"><span class="circle"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></div></div>';
 
 function addSubmitHandler() {
@@ -109,11 +110,12 @@ function buildElements(el){
 function buildAnswers(r, type, req, aArr){
   var answers = "";
   for (var a = 0; a< aArr.length; a++){
-    answers += `<span><input type="`+type+`" id="`+r+`" name="`+r+`">`;
+    answers += `<span><input type="`+type+`" id="`+r+`" name="`+r+`" required="`+req+`">`;
     answers += `<label for="`+r+`">`+aArr[a].aText+`</label></span>`;
   }
   return answers;
 }
+    
 
 // build the page elements
 var content = "";
@@ -123,12 +125,14 @@ content += `<div class="contain-md"><div class="left-col add-shadow submenu">`+c
 // Right column needs to contain all the questions
 var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
-
+    var totalQ = document.querySelectorAll('fieldset').length;
+var progressElement = `<progress id="survey-progress" max="100" value="10">10%</progress><label for="survey-progress">`+additionalData.ux.survey.progress+`</label>`
+var progressButtons = `<div class="progressButtons"><button class="back">`+additionalData.ux.survey.prev+`</button><button class="forward">`+additionalData.ux.survey.next+`</button></div>`;
 
 // TODO: split things up so that the submenu and questions are compiled in separate template files
-content += `<div class="right-col"><div class="overlap-col"><button class="save-btn add-shadow">`+additionalData.ux.save.title+`</button><img class="rhombus r top" src="assets/images/rhombus-yellow.png"><img class="rhombus l mid" src="assets/images/rhombus-purple.png"><img class="rhombus r base" src="assets/images/rhombus-brown.png"></div>`;
-content += `<div class="contain-survey add-shadow"><form>`+survey+`</form>`;
-    content += `<progress id="survey-progress" max="100" value="10">10%</progress><label for="survey-progress">`+additionalData.ux.survey.progress+`</label></div></div>`;
+    content += `<div class="right-col"><div class="overlap-col"><button class="save-btn add-shadow">`+additionalData.ux.save.title+`</button><img class="rhombus r top" src="assets/images/rhombus-yellow.png"><img class="rhombus l mid" src="assets/images/rhombus-purple.png"><img class="rhombus r base" src="assets/images/rhombus-brown.png"></div>`;
+    content += `<div class="contain-survey add-shadow"><form>`+survey+`</form>`;
+    content += progressButtons+progressElement+`</div></div>`;
 
 return content;
 };

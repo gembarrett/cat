@@ -71,9 +71,15 @@ var utils = (function(){
         } else { // otherwise just scroll to top
           window.scrollTo(0,0);
         }
-        // could add event handlers for submenu here
+        // TODO: move these and check just for survey page then call the functions
         if (document.querySelector('.submenu')){
           addSubmenuHandlers(document.querySelector('.submenu'));
+        }
+        if (document.querySelector('form')){
+            var form = document.querySelector('form');
+            form.addEventListener('change', function(e){
+                updateProgress(e);
+            });
         }
     }
   };

@@ -430,6 +430,7 @@ form input {
 
 .contain-survey {
     padding:4em;
+    min-height: 700px;
 }
 
 .rhombus {
@@ -452,4 +453,30 @@ form input {
 }
 .rhombus.base {
     top:230vh;
+}
+
+.progressButtons {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.progressButtons > button {
+    flex-basis: 45%;
+    background-color: #000;
+    color: #fff;
+    padding: 1.5em;
+    border: 0;
+}
+.prev {
+    display:none;
+}
+.prev.show {
+    display:block;
+}
+#intro-p p, #intro-p span {
+    display:inline;
+}
+#intro-p span {
+    margin:0;
+    padding:0;
 }

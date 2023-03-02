@@ -29,7 +29,6 @@ if(isset($_POST['submit'])){
         <!-- these may need to be moved further down or refactored -->
         <script src="assets/js/start.js"></script>
         <script src="assets/js/keyboard.js"></script>
-        <script src="assets/js/edit.js"></script>
         <script src="assets/js/policy.js"></script>
         <link rel="manifest" href="/site.webmanifest">
       </head>
@@ -102,6 +101,7 @@ if(isset($_POST['submit'])){
         <script src="assets/js/views/policyView.js"></script>
         <script src="assets/js/snapshot.js"></script>
         <script src="assets/js/translation.js"></script>
+        <script src="assets/js/progress.js"></script>
       </body>
       <?php
   } else {
