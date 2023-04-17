@@ -88,11 +88,20 @@ function showHideQuestions(e){
           selected[s].classList.remove("selected");
       }
     }
-      updateTheDisplay(e.target,currentQs, matchingQs);
+    updateTheDisplay(e.target,currentQs, matchingQs);
   } else {
     // if the selected content is already showing, do nothing
     return;
   }
+}
+
+function changeBackground(sectionID) {
+    var page = document.querySelector('#page');
+    if (!page.classList.contains(sectionID)){
+        page.classList = "survey "+sectionID;
+    } else {
+        return;
+    }
 }
 
 function updateTheDisplay(target,oldQs,newQs) {
@@ -110,6 +119,8 @@ function updateTheDisplay(target,oldQs,newQs) {
   // position the polygons
   // change their images
   // change the background if we're in a new section (maybe move this bit up)
+  changeBackground(target.parentElement.parentElement.id);
+
 }
 
 function moveForward(id) {

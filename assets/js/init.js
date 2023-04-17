@@ -62,6 +62,7 @@ window.onload = function(){
   utils.router();
 };
 
+
 // question list is only used in findContent() - can it be replaced?
 
 var sections = [];

@@ -36,13 +36,22 @@ body > * {
 #page.survey {
   padding-top: 5em;
   flex-direction: column;
-  background-color: #009e72;
   align-items: center;
 }
 
 #page {
   flex-direction: column;
   align-items: center;
+}
+
+#page.understand-risk {
+  background-color: #009e72;
+}
+#page.op-sec {
+    background-color: #decd38;
+}
+#page.devices-accounts {
+    background-color: #6b60bf;
 }
 
 #foot {

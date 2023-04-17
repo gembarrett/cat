@@ -92,7 +92,7 @@ if(isset($_POST['submit'])){
 
         <script src="assets/js/controllers/home.js"></script>
         <script src="assets/js/controllers/legalPage.js"></script>
-        <script src="assets/js/controllers/questionPage.js"></script>
+        <script src="assets/js/controllers/questionsPage.js"></script>
         <script src="assets/js/controllers/policyPage.js"></script>
 
         <script src="assets/js/views/home.js"></script>

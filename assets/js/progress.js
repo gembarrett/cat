@@ -22,3 +22,16 @@ function updateProgress(event) {
     // update the circle in the submenu
         // black center and green border = default, no selections made
         // green center = at least one selection made
+
+
+    // user clicks on an answer
+    // is this a checkbox or radio
+        // if it's a radio, update the progress bar values
+        // if it's a checkbox, are there 2 others selected for this question
+            // if 3 checkboxes selected, update the progress bar values
+            // if <3 checkboxes selected, turn the "Choose your top three" text red
+    // 
+    
+    // when all required answers have an answer selected, progressbar should be 100%
+    // when an answer is selected, update the progressbar values
+    // if a checkbox is selected, don't update the progress bar until three have been selected

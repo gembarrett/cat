@@ -148,7 +148,7 @@ var en_qs = [
               ]
             },
             {
-              "q": "Which areas of your organization's work do you believe create additional risk? Choose your top three.",
+              "q": "Which areas of your organization's work do you believe create additional risk? <span>Choose your top three.</span>",
               "area": "risks",
               "required": "true",
               "type": "checkbox",
@@ -192,7 +192,7 @@ var en_qs = [
               ]
             },
             {
-              "q": "Does your organization have specific cybersecurity concerns? Choose your top three.",
+              "q": "Does your organization have specific cybersecurity concerns? <span>Choose your top three.</span>",
               "area": "risks",
               "required": "true",
               "type": "checkbox",
@@ -2067,7 +2067,7 @@ var en_oc = {
           "next": "Next",
           "prev": "Previous",
           "submit": "Submit",
-          "progress": "You are [val]% complete",
+          "progress": ["You are ", " complete."],
           "incomplete":"You need to complete all questions to submit."
       },
       "save": {

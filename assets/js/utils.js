@@ -44,7 +44,7 @@ var utils = (function(){
             "qs": en_qs,
             "ui": en_oc['survey']
         }
-
+        changeBackground('understand-risk');
       } else {
         function_to_invoke = temp[0] || false;
         var data = en_oc;

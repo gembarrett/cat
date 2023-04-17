@@ -11,6 +11,6 @@ The [Cybersecurity Assessment Tool (CAT)](https://www.fordfoundation.org/work/ou
 * **content**: holds all the text content for the site in JSON format
 * **assets**: contains CSS files, images, report PDFs and JavaScript files
 * **assets/js**: holds several files containing various feature-specific functions
-* **assets/js/views**: files here direct the controller files to pull the data into the templates and serve it up for display. For example, views/questionsView.js calls on controllers/questionPage.js to get all the question data and plug it into templates/questionsTemplate.js
+* **assets/js/views**: files here direct the controller files to pull the data into the templates and serve it up for display. For example, views/questionsView.js calls on controllers/questionsPage.js to get all the question data and plug it into templates/questionsTemplate.js
 * **assets/js/controllers**: these files are instructed by their counterparts in the views folder to get all the data needed for that section and parcel it up ready for the corresponding template
 * **assets/js/templates**: these files take the data provided and plug it into the appropriate HTML elements for serving back to the controller, who then renders it in the browser

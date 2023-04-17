@@ -372,12 +372,28 @@ form h4 {
 .p-circ.current {
   background-color: #000;
 }
-.progress {
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+progress {
+    width:100%;
+    background-color: #dad9cf;
+    height: 10px;
+    margin-bottom: 10px;
+}
+.progressBar {
+    display:flex;
+    flex-direction: column;
+}
+progress[value]::-moz-progress-bar, progress[value]::-webkit-progress-value {
+    background-color:#009e72;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: #dad9cf;
+}
+label[for="survey-progress"] {
+    color:#777;
+    text-align: center;
+}
+label[for="survey-progress"] span {
+    display:inline;
 }
 
 /* Survey nav */
@@ -435,9 +451,12 @@ form input {
 
 .rhombus {
     width:120px;
+    height:120px;
     position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
-
 .rhombus.l {
     left:-60px;
 }
@@ -454,6 +473,35 @@ form input {
 .rhombus.base {
     top:230vh;
 }
+/* background images */
+.understand-risk .rhombus.top {
+    background-image: url(../images/rhombus-yellow-ribbons.png);
+}
+.understand-risk .rhombus.mid {
+    background-image: url(../images/rhombus-purple-rings.png);
+}
+.understand-risk .rhombus.base {
+    background-image: url(../images/rhombus-brown-eye.png);
+}
+.op-sec .rhombus.top {
+    background-image: url(../images/rhombus-green-leaf.png);
+}
+.op-sec .rhombus.mid {
+    background-image: url(../images/rhombus-brown-squares.png);
+}
+.op-sec .rhombus.base {
+    background-image: url(../images/rhombus-purple-crane.png);
+}
+.devices-accounts .rhombus.top {
+    background-image: url(../images/rhombus-green-arrows.png);
+}
+.devices-accounts .rhombus.mid {
+    background-image: url(../images/rhombus-brown-hourglass.png);
+}
+.devices-accounts .rhombus.base {
+    background-image: url(../images/rhombus-yellow-bulb.png);
+}
+
 
 .progressButtons {
     width:100%;
@@ -464,8 +512,15 @@ form input {
     flex-basis: 45%;
     background-color: #000;
     color: #fff;
-    padding: 1.5em;
-    border: 0;
+    padding: 1em;
+    border:2px solid #000;
+    cursor: pointer;
+    font-size: inherit;
+    margin:2em 0;
+}
+.progressButtons > button:hover {
+    background-color: #fff;
+    color: #000;
 }
 .prev {
     display:none;

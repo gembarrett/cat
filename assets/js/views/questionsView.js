@@ -1,3 +1,3 @@
 views.questionsView = function(data, params){
-  controllers['questionPage'](data, params);
+  controllers['questionsPage'](data, params);
 }

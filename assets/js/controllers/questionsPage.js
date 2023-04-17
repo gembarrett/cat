@@ -1,4 +1,4 @@
-controllers.questionPage = function(data, params){
+controllers.questionsPage = function(data, params){
   // document.getElementById('bu').classList.add('active');
   document.querySelector('#page').classList.add('survey');
   window.scrollTo(0,0);
