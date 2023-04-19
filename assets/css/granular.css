@@ -522,12 +522,18 @@ form input {
     background-color: #fff;
     color: #000;
 }
-.prev {
-    display:none;
+.progressButtons.startStatus  {
+    justify-content: center;
 }
-.prev.show {
-    display:block;
+
+.progressButtons.startStatus .back, .progressButtons .submit, .progressButtons.endStatus .forward {
+    display: none;
 }
+.progressButtons.endStatus .submit {
+    display: block;
+}
+
+
 #intro-p p, #intro-p span {
     display:inline;
 }

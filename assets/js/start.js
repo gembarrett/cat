@@ -16,6 +16,11 @@ function addShowHideHandlers(els){
   for (var el=0; el<subCats.length; el++){
     subCats[el].addEventListener('click', showHideQuestions);
   }
+    // add click handlers for the previous and next buttons
+    var progButtons = document.querySelectorAll('.progressButtons button');
+    for (var p = 0; p < progButtons.length; p++){
+        progButtons[p].addEventListener('click', nextPage);
+    }
 }
 
 // TODO: combine this with the other function that hides/shows questions?
@@ -109,11 +114,15 @@ function updateTheDisplay(target,oldQs,newQs) {
     target.classList.add('selected');
     oldQs.classList.toggle('active');
     newQs.classList.toggle('active');
+        
     // if we're going to the your-org page
-    // hide the Previous button
-    // if we're going to the vp-network page
-        // change the Next button text to Submit
-        //if the progress bar is at <100% then disable the Submit button
+    if (target.id === 'your-org') {
+        updateButtons('start');        
+    } else if (target.id === 'vp-network'){
+        updateButtons('end'); 
+    } else {
+        updateButtons();
+    }
     
     positionPolygons();
   // position the polygons
@@ -121,6 +130,17 @@ function updateTheDisplay(target,oldQs,newQs) {
   // change the background if we're in a new section (maybe move this bit up)
   changeBackground(target.parentElement.parentElement.id);
 
+    // does the selected category name match the one attached to the #page? 
+    const selectedCategory = document.querySelector('.submenu > div.selected');
+    const correctCategory = document.querySelector('#page').classList[1];
+    const selectedCategoryMatch = correctCategory === selectedCategory.id;
+    if (!selectedCategoryMatch) {
+        selectedCategory.classList.remove('selected');
+        document.getElementById(correctCategory).classList.add('selected');
+    } else {
+        // do nothing because the selected category has the selected class
+    }
+    
 }
 
 function moveForward(id) {

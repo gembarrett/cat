@@ -35,3 +35,60 @@ function updateProgress(event) {
     // when all required answers have an answer selected, progressbar should be 100%
     // when an answer is selected, update the progressbar values
     // if a checkbox is selected, don't update the progress bar until three have been selected
+
+
+function nextPage(event) {
+    const clicked = event.target.className;
+    // when user clicks next
+    // loop through all the list items in the submenu
+    var submenuItems = document.querySelectorAll('.submenu li');
+    const selectedSubmenuItem = (element) => element.classList.contains('selected');
+    submenuItems = Array.from(submenuItems);
+    const selectedIndex = submenuItems.findIndex(selectedSubmenuItem);
+    
+    if (clicked === "back"){
+        // if this is the first item
+        if (selectedIndex === 0) {
+            // do nothing bc the button should be hidden
+        } else if (selectedIndex === 1){ 
+            // check if the previous item is the first one
+            // simulate a click on the previous index
+            submenuItems[selectedIndex-1].click();
+            window.scrollTo(0,0);
+            // hide/show the Previous button here -> put this into a function I can call if VPNs is selected
+        } else {
+            // simulate a click on the next index
+            submenuItems[selectedIndex-1].click();
+            window.scrollTo(0,0);
+        }
+    } else {
+            // check if this is the last item
+        if (selectedIndex === submenuItems.length) {
+            // take this as a Submit action and act accordingly
+            // might not be necessary if the Next button is replaced with Submit
+            console.log('Check progress and submit or reject');
+        } else if (selectedIndex === submenuItems.length-1){ 
+            // check if the next item is the last one
+            // simulate a click on the next index
+            submenuItems[selectedIndex+1].click();
+            window.scrollTo(0,0);
+            // hide/show a Submit button here rather than changing text & colour -> put this into a function I can call if VPNs is selected
+        } else {
+            // simulate a click on the next index
+            submenuItems[selectedIndex+1].click();
+            window.scrollTo(0,0);
+        }
+    }               
+}
+
+function updateButtons(page){
+    if (page === 'start'){
+        document.querySelector('.progressButtons').classList.remove('endStatus');
+        document.querySelector('.progressButtons').classList.add('startStatus');
+    } else if (page === 'end'){
+        document.querySelector('.progressButtons').classList.remove('startStatus');
+        document.querySelector('.progressButtons').classList.add('endStatus');
+    } else {
+        document.querySelector('.progressButtons').classList.remove('startStatus','endStatus');
+    }
+}
