@@ -8,47 +8,64 @@ function updateProgress(e) {
     // we need a list of the questions that already have answers
     // and what those answers are
     
-    // when a radio button is clicked
+    // when an input button is clicked
     // which question is this?
     let clickedQ = e.target.name;
-    // is it optional?
-    if (isOptional(e.target.id)){ // if it's optional
-        // store the name, id and state that it's optional
-        obj = {
-            "q": e.target.name,
-            "a": e.target.id,
-            "r": false
-        }
-        // if not, then store the answer but don't update the progress % bar
-        currentState.answered.push(obj);
+    
+    // has this question been answered before?
+    match = currentState.answered.filter(x => x.startsWith(e.target.name));
+    // if there's no previous answer for this question
+    if (match.length === 0){
+        // add this answer to the list
+        currentState.answered.push(e.target.id);
+        updateBar(e.target);
     } else {
-        console.log('required question');
-        // is it in the currentState list of answered questions?
-        isNewAnswer(e.target.name);
-            // if not, then add all selected answers in that question to the currentState list
-            // if it is, then replace the currently stored answers for that question        
+        // is this a 1-answer question? (radio or checkbox)
+        if (match.length === 1){
+            
+            // if there's only one match get the position of match's first element in the answers list
+            position = currentState.answered.indexOf(match[0]);
+            
+            // because you can't unselect radio buttons, but this may be a multiple checkbox answer
+            if (e.target.type === "checkbox"){
+                selectedMultiples = document.querySelectorAll(`input[name=${e.target.name}]:checked`);
+                if (selectedMultiples.length < 4){
+                    // add them to the answers list
+                    currentState.answered.concat(selectedMultiples);
+                    updateBar(e.target);
+                } else {
+                    // TODO: alert the user
+                    console.log("Too many items selected.");
+                }                
+            } else {
+                // replace the old answer with the new
+                currentState.answered[position] = e.target.id;                
+            }
+        } else {
+            // checkbox question
+            for (var i = 0; i < match.length; i++){
+                // get the position in current answers array
+                position = currentState.answered.indexOf(match[i]);
+                // remove the element from array
+                currentState.answered.splice(position);
+            }
+            // get all the selected answers in that question
+            selectedMultiples = document.querySelectorAll(`input[name=${e.target.name}]:checked`);
+            // check that there's no more than 3
+            if (selectedMultiples.length < 4){
+                // add them to the answers list
+                currentState.answered.concat(selectedMultiples);
+                updateBar(e.target);
+            } else {
+                // TODO: alert the user
+                console.log("Too many items selected.")
+            }
+        }
     }
     // out of total number of questions, how many do we have in currentState list?
     
     
-    // when a question has been answered, push it to the currentState, check if it's required
     // when there's at least (70 - optional) in the array, the form is ready for submission
-    
-    // count how many of the fieldsets have a selected box
-    
-    // get all answers
-    const answers = Array.prototype.slice.call(document.querySelectorAll('fieldset > span'));
-//    console.log(fieldsets);
-//    const visibleFieldsets = fieldsets.filter(fieldset => fieldset.clientHeight > 0);
-//    console.log(visibleFieldsets);
-    
-    // how many of them
-    
-    // check each fieldset for 
-//    const sibs = event.target.parentElement.parentElement.elements;
-//    for (var sib = 0; sib < sibs.length; sib++){
-//        
-//    }
 }
     // update the value of the progress bar, and its label
     // update the circle in the submenu
@@ -68,20 +85,22 @@ function updateProgress(e) {
     // when an answer is selected, update the progressbar values
     // if a checkbox is selected, don't update the progress bar until three have been selected
 
-function isNewAnswer(element){
-    // try filtering the current answers by ones that match the supplied question name
-    answersFromSameQ = currentState.answered.filter(x => x.includes(element));
-    // if there are matches
-    if (answersFromSameQ.length === 1){
-        // replace them in the array
-        console.log('this question already has an answer');
-//        currentState.answered.includes(answersFromSameQ[0])
+
+function updateBar(el){
+    // should the progress % be updated?
+    if (isOptional(el.id)){
+        // update the progress bar
+        console.log('Number of questions: '+currentState.answered.length);
+    } else {
+        // do nothing
+        return;
     }
 }
 
+
 function isOptional(element){
     if (element.required = true) {
-        return false; // this is a required question
+        return false; // this is not an optional question
     } else {
         return true; // this is an optional question
     }
