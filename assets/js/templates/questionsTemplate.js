@@ -110,8 +110,9 @@ function buildElements(el){
 function buildAnswers(r, type, req, aArr){
   var answers = "";
   for (var a = 0; a< aArr.length; a++){
-    answers += `<span><input type="`+type+`" id="`+r+`" name="`+r+`" required="`+req+`">`;
-    answers += `<label for="`+r+`">`+aArr[a].aText+`</label></span>`;
+    id = r +`-`+ a;
+    answers += `<span><input type="`+type+`" id="`+id+`" name="`+r+`" required="`+req+`">`;
+    answers += `<label for="`+id+`">`+aArr[a].aText+`</label></span>`;
   }
   return answers;
 }
