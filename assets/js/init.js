@@ -88,7 +88,8 @@ for (var i = 0; i < sections.length; i++) {
 // set up progress tracking
 var currentState = {
     // which questions have been answered?
-    answered: []
+    answered: [],
+    totalQs: 0
 }
 
 // for storing the storeAs names and values

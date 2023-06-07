@@ -39,8 +39,8 @@ function updateProgress(e) {
             // update the progress bar here
         }
     }
-    console.log(currentState.answered);    
-    
+    updateBar();
+    console.log(currentState.answered);
 }
     // when there's at least (70 - optional) in the array, the form is ready for submission
 
@@ -59,14 +59,53 @@ function updateProgress(e) {
 
 
 // only update the progress bar once if checkboxes, or is it worth 3?
-function updateBar(el){    
-    // should the progress % be updated because this question has been answered?
-    if (!isOptional(el.id)){ // if it's required, update the progress bar
-        console.log('Number of questions: '+currentState.answered.length);  
-        // check whether all the required questions have been answered
-    } else { // if it is required, update the progress bar
-        // don't update the progress bar      
-        return;
+function updateBar(){
+    count = 0;
+    // first, sort the answers
+    currentState.answered.sort();
+    // how many required questions have stored answers
+    for (var i=0; i<currentState.answered.length; i++){
+        // if answer should be counted (it's from an uncounted, required question)
+        if (countThis(i) && !currentState.answered[i].endsWith('-o')){
+            count++;
+        } else {
+            // don't count this question
+        }
+    }
+            
+    // update the value of the progress bar
+    document.getElementById('survey-progress').value = count;
+    
+    // if the progress is 100% then change the Next button to Submit
+    if (count === currentState.totalQs){
+        
+    } else {
+    // if it's < 100% then update the Submit button to Next
+        
+    }
+    
+    console.log(`total questions counted is ${count}`);
+}
+
+function countThis(i){
+    // check if the answer is from the same question as before
+    if (i > 0){
+         // how many answers does this question have
+        current = currentState.answered[i].split('-');
+        current = current[0]+current[1]+current[2];
+        prev = currentState.answered[i-1].split('-');
+        prev = prev[0]+prev[1]+prev[2];
+
+        // if the current question is different from the previous question
+        if (current !== prev){
+            // count this question
+            return true;
+        } else {
+            // don't count this question (only count one answer per question)
+            return false;
+        }   
+    } else {
+        return true; // always count the first answer
     }
 }
 
@@ -76,7 +115,7 @@ function isRequired(el){
     } else if (el.required === false) {
         return el.id+'-o';
     } else {
-        console.log(el.required);        
+        console.log(el.required);      
     }
 }
 
