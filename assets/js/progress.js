@@ -25,7 +25,14 @@ function updateProgress(e) {
         }
         // get an updated list of the new answers from this question
         selections = document.querySelectorAll(`input[name=${e.target.name}]:checked`);
+        
         // add a check in here for the number of checkboxes (should be max of 3)
+        if (tooManyChecks === true){
+            // find the relevant span (give it id that matches the name value)
+            // add a red-bold class on it to highlight
+        } else {
+            // remove the highlight class on the relevant span
+        }
         
         for (var s = 0; s < selections.length; s++){
             currentState.answered.push(isRequired(selections[s]));
@@ -66,13 +73,15 @@ function updateBar(el){
 function isRequired(el){
     if (el.required === true){
         return el.id;
-    } else {
+    } else if (el.required === false) {
         return el.id+'-o';
+    } else {
+        console.log(el.required);        
     }
 }
 
-function isRadio(el){
-    if (el.type === "radio"){
+function tooManyChecks(arr){
+    if (arr[0].type === "checkbox" && arr.length > 3){
         return true;
     } else {
         return false;
