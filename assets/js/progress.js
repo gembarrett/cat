@@ -40,25 +40,15 @@ function updateProgress(e) {
         }
     }
     updateBar();
-    console.log(currentState.answered);
 }
-    // when there's at least (70 - optional) in the array, the form is ready for submission
 
-    // update the value of the progress bar, and its label
-    // update the circle in the submenu
+// update the circle in the submenu
         // black center and green border = default, no selections made
         // green center = at least one selection made
 
 
     // if <3 checkboxes selected, turn the "Choose your top three" text red
     
-    // when all required answers have an answer selected, progressbar should be 100%
-    // when an answer is selected, update the progressbar values
-    // if a checkbox is selected, don't update the progress bar until three have been selected
-
-
-
-// only update the progress bar once if checkboxes, or is it worth 3?
 function updateBar(){
     count = 0;
     // first, sort the answers
@@ -72,19 +62,18 @@ function updateBar(){
             // don't count this question
         }
     }
+    
+    // calculate the % complete
+    percentage = count/currentState.totalQs * 100;
             
     // update the value of the progress bar
     document.getElementById('survey-progress').value = count;
+    // update the value in the label
+    document.querySelector('label[for="survey-progress"] span').innerHTML = Math.round(percentage);
     
-    // if the progress is 100% then change the Next button to Submit
-    if (count === currentState.totalQs){
-        
-    } else {
-    // if it's < 100% then update the Submit button to Next
-        
-    }
-    
-    console.log(`total questions counted is ${count}`);
+    // current page
+    currentPage = document.querySelector('.submenu li.selected').id;
+    updateButtons(currentPage);    
 }
 
 function countThis(i){
@@ -184,14 +173,40 @@ function nextPage(event) {
     }               
 }
 
+
 function updateButtons(page){
-    if (page === 'start'){
-        document.querySelector('.progressButtons').classList.remove('endStatus');
-        document.querySelector('.progressButtons').classList.add('startStatus');
-    } else if (page === 'end'){
-        document.querySelector('.progressButtons').classList.remove('startStatus');
-        document.querySelector('.progressButtons').classList.add('endStatus');
-    } else {
-        document.querySelector('.progressButtons').classList.remove('startStatus','endStatus');
+    // get the progress status
+    prog = document.querySelector('label[for="survey-progress"] span').innerHTML;
+    
+    prog = parseInt(prog);
+    
+    status = "";
+    
+    // TODO: add checks in to test whether the right class is already applied
+    
+    // if we're on first page and not ready to submit
+    if (page === 'your-org' && prog < 100){
+        status = "first-start"; // hide prev/submit
+    } 
+    // if we're on first page and ready to submit
+    else if (page === 'your-org' && prog === 100){
+        status = "first-end"; // hide prev/next
+    } 
+    // if we're on last page and not ready to submit
+    else if (page === 'vp-network' && prog < 100){
+        status = "last"; // hide next/submit
     }
+    // if we're on any other page and not ready to submit
+    else if (prog < 100){
+        status = "mid-start"; // hide submit
+    }
+    // if we're on any other page and ready to submit
+    else if (prog === 100){
+        status = "mid-end"; // hide next
+    } else {
+        status = "mid-start";
+    }
+    
+    stBtns = document.getElementById('progressButtons');
+    stBtns.classList = status;
 }

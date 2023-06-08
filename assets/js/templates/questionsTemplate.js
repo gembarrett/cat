@@ -129,8 +129,8 @@ content += `<div class="contain-md"><div class="left-col add-shadow submenu">`+c
 // Right column needs to contain all the questions
 var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
-var progressElement = `<div class="progressBar"><progress id="survey-progress" max="`+currentState.totalQs+`" value="0">0%</progress><label for="survey-progress">`+additionalData.ux.survey.progress[0]+`<span>0</span>%`+additionalData.ux.survey.progress[1]+`</label></div>`;
-var progressButtons = `<div class="progressButtons startStatus"><button class="back">`+additionalData.ux.survey.prev+`</button><button class="forward">`+additionalData.ux.survey.next+`</button><button class="submit">`+additionalData.ux.survey.submit+`</button></div>`;
+var progressElement = `<div class="progressBar"><progress id="survey-progress" max="`+currentState.totalQs+`" value="0"></progress><label for="survey-progress">`+additionalData.ux.survey.progress[0]+`<span>0</span>%`+additionalData.ux.survey.progress[1]+`</label></div>`;
+var progressButtons = `<div id="progressButtons" class="first-start"><button class="back">`+additionalData.ux.survey.prev+`</button><button class="forward">`+additionalData.ux.survey.next+`</button><button class="submit">`+additionalData.ux.survey.submit+`</button></div>`;
 
 // TODO: split things up so that the submenu and questions are compiled in separate template files
     content += `<div class="right-col"><div class="overlap-col"><button class="save-btn add-shadow">`+additionalData.ux.save.title+`</button><div class="rhombus r top"></div><div class="rhombus l mid"></div><div class="rhombus r base"></div></div>`;

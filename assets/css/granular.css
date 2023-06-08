@@ -503,12 +503,12 @@ form input {
 }
 
 
-.progressButtons {
+#progressButtons {
     width:100%;
     display: flex;
     justify-content: space-between;
 }
-.progressButtons > button {
+#progressButtons > button {
     flex-basis: 45%;
     background-color: #000;
     color: #fff;
@@ -518,18 +518,75 @@ form input {
     font-size: inherit;
     margin:2em 0;
 }
-.progressButtons > button:hover {
+#progressButtons > button:hover {
     background-color: #fff;
     color: #000;
 }
-.progressButtons.startStatus  {
+#progressButtons.first-start, #progressButtons.first-end, #progressButtons.last  {
     justify-content: center;
 }
 
-.progressButtons.startStatus .back, .progressButtons .submit, .progressButtons.endStatus .forward {
+/*
+hide prev
+hide submit
+show next
+*/
+#progressButtons.first-start .back, 
+#progressButtons.first-start .submit {
     display: none;
 }
-.progressButtons.endStatus .submit {
+#progressButtons.first-start .forward {
+    display: block;
+}
+
+/*
+hide prev
+hide next
+show submit
+*/
+#progressButtons.first-end .back, 
+#progressButtons.first-end .forward {
+    display: none;
+}
+#progressButtons.first-end .submit {
+    display: block;
+}
+
+/*
+hide submit
+show prev
+show next
+*/
+#progressButtons.mid-start .submit {
+    display: none;
+}
+#progressButtons.mid-start .back, 
+#progressButtons.mid-start .forward {
+    display: block;
+}
+
+/*
+hide next
+show prev
+show submit
+*/
+#progressButtons.mid-end .forward{
+    display: none;
+}
+#progressButtons.mid-end .back, 
+#progressButtons.mid-end .submit {
+    display: block;
+}
+
+/*
+hide next
+hide submit
+show prev
+*/
+#progressButtons.last .forward, #progressButtons.last .submit{
+    display: none;
+}
+#progressButtons.last .back {
     display: block;
 }
 

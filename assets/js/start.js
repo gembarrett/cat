@@ -17,7 +17,7 @@ function addShowHideHandlers(els){
     subCats[el].addEventListener('click', showHideQuestions);
   }
     // add click handlers for the previous and next buttons
-    var progButtons = document.querySelectorAll('.progressButtons button');
+    var progButtons = document.querySelectorAll('#progressButtons button');
     for (var p = 0; p < progButtons.length; p++){
         progButtons[p].addEventListener('click', nextPage);
     }
@@ -114,20 +114,13 @@ function updateTheDisplay(target,oldQs,newQs) {
     target.classList.add('selected');
     oldQs.classList.toggle('active');
     newQs.classList.toggle('active');
-        
-    // if we're going to the your-org page
-    if (target.id === 'your-org') {
-        updateButtons('start');        
-    } else if (target.id === 'vp-network'){
-        updateButtons('end'); 
-    } else {
-        updateButtons();
-    }
+    
+    updateButtons(target.id);
     
     positionPolygons();
   // position the polygons
   // change their images
-  // change the background if we're in a new section (maybe move this bit up)
+  // change the background if we're in a new section
   changeBackground(target.parentElement.parentElement.id);
 
     // does the selected category name match the one attached to the #page? 
