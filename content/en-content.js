@@ -148,7 +148,8 @@ var en_qs = [
               ]
             },
             {
-              "q": "Which areas of your organization's work do you believe create additional risk? <span>Choose your top three.</span>",
+              "q": "Which areas of your organization's work do you believe create additional risk? Choose your top three.",
+                "errorText": "Too many answers selected. Please choose only three.",
               "area": "risks",
               "required": "true",
               "type": "checkbox",
@@ -192,7 +193,8 @@ var en_qs = [
               ]
             },
             {
-              "q": "Does your organization have specific cybersecurity concerns? <span>Choose your top three.</span>",
+              "q": "Does your organization have specific cybersecurity concerns? Choose your top three.",
+                "errorText": "Too many answers selected. Please choose only three.",
               "area": "risks",
               "required": "true",
               "type": "checkbox",

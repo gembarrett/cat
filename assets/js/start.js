@@ -79,25 +79,62 @@ function positionPolygons(){
 
 
 function showHideQuestions(e){
-  // get the currently shown question group
-  var thisSubSection = e.target.id;
-  // use e.target.id to find the matching question group
-  var matchingQs = document.querySelector('.'+thisSubSection);
-  // toggle the hide and show classes (hide is default)
-  var currentQs = document.querySelector('.active');
-  if (matchingQs !== currentQs) {
-    // find other instances of "selected" class and remove them
-    var selected = document.querySelectorAll('.submenu li.selected');
-    if (selected.length > 0) {
-      for (var s = 0; s < selected.length; s++){
-          selected[s].classList.remove("selected");
-      }
+  // what did the user click on
+  var destSubSection = e.target.id;
+  // which section is that in
+  var destParentSection = document.querySelector(`li#${destSubSection}`).parentElement.parentElement.id;
+    
+    // which group of questions are currently visible
+    var currentSubSection = document.querySelector(`.submenu li.selected`).id;
+
+     // if we're going to a new set of questions
+    if (destSubSection !== currentSubSection){
+        // are we also going to a new section
+        updateSection(destParentSection, document.querySelector(`.submenu div.selected`).id);
+        
+
     }
-    updateTheDisplay(e.target,currentQs, matchingQs);
-  } else {
-    // if the selected content is already showing, do nothing
-    return;
-  }
+    
+    // what section are we currently in
+//    var thisParentSection = document.querySelector(`#page`).classList[1];
+
+    
+//    
+//  // which subgroup of questions does this relate to
+//  var matchingQs = document.querySelector('.'+destSubSection);
+//  // which subgroup of questions are currently visible
+//  var currentQs = document.querySelector('.active');
+//    var currentParentSection = 
+//    // if the user clicked on a new subgroup of questions
+//  if (matchingQs !== currentQs) {
+//      // is it in the same parent group?
+//      if (thisParentSection !== )
+//      
+//    // find other instances of "selected" class and remove them
+//    var selected = document.querySelectorAll('.submenu li.selected');
+//    if (selected.length > 0) {
+//      for (var s = 0; s < selected.length; s++){
+//          selected[s].classList.remove("selected");
+//      }
+//    }
+//    updateTheDisplay(e.target,currentQs, matchingQs);
+//  } else {
+//    // if the selected content is already showing, do nothing
+//    return;
+//  }
+}
+
+function updateSection(d, c){
+    if (d !== c){
+        // if we're heading to a new section
+        // remove selected class from the currentParentSection
+        document.querySelector(`.submenu #${c}`).classList.remove('selected');
+        // add selected to the destParentSection
+        document.querySelector(`.submenu #${d}`).classList.add('selected');
+        // update the page id?
+    } else {
+        // if we're in the same section, no need to update the category anywhere
+    }
 }
 
 function changeBackground(sectionID) {

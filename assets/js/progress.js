@@ -4,11 +4,7 @@ function updateProgress(e) {
         // which answer was selected (for results processing)
         // was the answer already selected
         // was there aleady an answer for that question which needs to be replaced
-    
-    // we need a list of the questions that already have answers
-    // and what those answers are
-    
-    // when an input button is clicked
+        
     // which question is this? (e.target.name)
     // has this question been answered before?
     newAnswerCheck = isNewAnswer(e.target); // returns either true or the matching answers
@@ -17,26 +13,32 @@ function updateProgress(e) {
         // if this is a new answer, push optional or required id to the answers list
         currentState.answered.push(isRequired(e.target));
     } else {
+        // get an updated list of the new answers from this question
+        selections = document.querySelectorAll(`input[name=${e.target.name}]:checked`);
+        
+        // add a check in here for the number of checkboxes (should be max of 3)
+        if (tooMany(selections) === true){
+            // find the error text
+            thisError = document.querySelector('span#error-'+e.target.name);
+            // if the error is hidden
+            if (thisError.classList.contains('hide')){
+                thisError.classList.remove('hide');
+            }
+        } else {
+            // remove the highlight class on the relevant span
+            thisError = document.querySelector('span#error-'+e.target.name);
+            thisError.classList.add('hide');
+        }
+
         // if this question already has stored answers, find & remove them
         for (var i = 0; i < newAnswerCheck.length; i++){
             // get the position in current answers array
             position = currentState.answered.indexOf(newAnswerCheck[i]);
             currentState.answered.splice(position, 1);
         }
-        // get an updated list of the new answers from this question
-        selections = document.querySelectorAll(`input[name=${e.target.name}]:checked`);
         
-        // add a check in here for the number of checkboxes (should be max of 3)
-        if (tooManyChecks === true){
-            // find the relevant span (give it id that matches the name value)
-            // add a red-bold class on it to highlight
-        } else {
-            // remove the highlight class on the relevant span
-        }
-        
-        for (var s = 0; s < selections.length; s++){
+        for (var s = 0; s < selections.length; s++){ 
             currentState.answered.push(isRequired(selections[s]));
-            // update the progress bar here
         }
     }
     updateBar();
@@ -45,9 +47,6 @@ function updateProgress(e) {
 // update the circle in the submenu
         // black center and green border = default, no selections made
         // green center = at least one selection made
-
-
-    // if <3 checkboxes selected, turn the "Choose your top three" text red
     
 function updateBar(){
     count = 0;
@@ -108,7 +107,7 @@ function isRequired(el){
     }
 }
 
-function tooManyChecks(arr){
+function tooMany(arr){
     if (arr[0].type === "checkbox" && arr.length > 3){
         return true;
     } else {
@@ -130,47 +129,45 @@ function isNewAnswer(el){
 
 
 function nextPage(event) {
+    // when user clicks next, figure out what subcategory they want to go to
     const clicked = event.target.className;
-    // when user clicks next
-    // loop through all the list items in the submenu
+    // get all the subcategories
     var submenuItems = document.querySelectorAll('.submenu li');
+    // figure out which subcategory we're in
     const selectedSubmenuItem = (element) => element.classList.contains('selected');
+    // create an array of the subcategories
     submenuItems = Array.from(submenuItems);
+    // get an index number for the subcategory
     const selectedIndex = submenuItems.findIndex(selectedSubmenuItem);
     
+    // if the user wants to go to the previous page
     if (clicked === "back"){
-        // if this is the first item
-        if (selectedIndex === 0) {
-            // do nothing bc the button should be hidden
-        } else if (selectedIndex === 1){ 
-            // check if the previous item is the first one
+        // if  they're not on the first page
+        if (selectedIndex !== 0) {
             // simulate a click on the previous index
             submenuItems[selectedIndex-1].click();
-            window.scrollTo(0,0);
-            // hide/show the Previous button here -> put this into a function I can call if VPNs is selected
-        } else {
-            // simulate a click on the next index
-            submenuItems[selectedIndex-1].click();
-            window.scrollTo(0,0);
+        } 
+        else {
+            // if they're on the first page they can't go back
         }
-    } else {
-            // check if this is the last item
-        if (selectedIndex === submenuItems.length) {
-            // take this as a Submit action and act accordingly
-            // might not be necessary if the Next button is replaced with Submit
-            console.log('Check progress and submit or reject');
-        } else if (selectedIndex === submenuItems.length-1){ 
-            // check if the next item is the last one
+    } 
+    // if the user wants to go to the next page
+    else if (clicked === "forward"){
+        // if  they're not on the last page
+        if (selectedIndex !== submenuItems.length) {
             // simulate a click on the next index
             submenuItems[selectedIndex+1].click();
-            window.scrollTo(0,0);
-            // hide/show a Submit button here rather than changing text & colour -> put this into a function I can call if VPNs is selected
-        } else {
-            // simulate a click on the next index
-            submenuItems[selectedIndex+1].click();
-            window.scrollTo(0,0);
+        }  
+        else {
+            // if they're on the last page they can't go forward
         }
-    }               
+    } 
+    // or if they want to submit their answers
+    else { 
+        // handleSubmit();
+    } 
+    // scroll to the top of the page
+    window.scrollTo(0,0);
 }
 
 
@@ -181,9 +178,7 @@ function updateButtons(page){
     prog = parseInt(prog);
     
     status = "";
-    
-    // TODO: add checks in to test whether the right class is already applied
-    
+        
     // if we're on first page and not ready to submit
     if (page === 'your-org' && prog < 100){
         status = "first-start"; // hide prev/submit
@@ -208,5 +203,12 @@ function updateButtons(page){
     }
     
     stBtns = document.getElementById('progressButtons');
-    stBtns.classList = status;
+    
+    // if doesn't already have this class
+    if (!stBtns.classList.contains(status)){
+        // update the classlist
+        stBtns.classList = status;        
+    } else {
+        // already got this class so do nothing
+    }
 }

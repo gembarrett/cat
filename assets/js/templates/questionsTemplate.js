@@ -99,7 +99,14 @@ function buildElements(el){
   for (var e=0; e< el.length; e++){
     var ref = el[e].trigger +`-`+e;
     element += `<fieldset>`;
-    element += `<legend>`+counter+`. `+el[e].qText+`</legend>`;
+    element += `<legend>`+counter+`. `+el[e].qText;
+
+    // is there error text to be included here
+    if (typeof el[e].err === 'string'){
+        element += `<span id="error-${ref}" class="hide">`+el[e].err+`</span>`;
+    }
+    element += `</legend>`;
+    
     element += buildAnswers(ref, el[e].input, el[e].reqd, el[e].answers);
     element += `</fieldset>`;
     if (el[e].reqd === "true"){

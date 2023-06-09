@@ -41,6 +41,7 @@ controllers.questionsPage = function(data, params){
       var questionItem = {
         "trigger": sub.trigger,
         "qText": list[j].q,
+          "err": list[j].errorText,
         "reqd": list[j].required,
         "input": list[j].type,
         "answers": theseAnswers
