@@ -73,9 +73,7 @@ var utils = (function(){
         }
         // TODO: move these and check just for survey page then call the functions
         if (document.querySelector('.submenu')){
-          addSubmenuHandlers(document.querySelector('.submenu'));
-        }
-        if (document.querySelector('form')){
+            addSubmenuHandlers(document.querySelector('.submenu'));
             var form = document.querySelector('form');
             form.addEventListener('change', function(e){
                 updateProgress(e);

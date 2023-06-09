@@ -5,7 +5,6 @@ function updateProgress(e) {
         // was the answer already selected
         // was there aleady an answer for that question which needs to be replaced
         
-    // which question is this? (e.target.name)
     // has this question been answered before?
     newAnswerCheck = isNewAnswer(e.target); // returns either true or the matching answers
     
@@ -45,8 +44,8 @@ function updateProgress(e) {
 }
 
 // update the circle in the submenu
-        // black center and green border = default, no selections made
-        // green center = at least one selection made
+    // black center and green border = default, no selections made
+    // green center = at least one selection made
     
 function updateBar(){
     count = 0;
@@ -128,9 +127,9 @@ function isNewAnswer(el){
 }
 
 
-function nextPage(event) {
+function nextPage(e) {
     // when user clicks next, figure out what subcategory they want to go to
-    const clicked = event.target.className;
+    const clicked = e.target.className;
     // get all the subcategories
     var submenuItems = document.querySelectorAll('.submenu li');
     // figure out which subcategory we're in

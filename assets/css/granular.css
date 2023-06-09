@@ -270,13 +270,13 @@ small black fill green border */
 .submenu #devices-accounts h4::before {
   content: url('../images/ns-l-m.png');        
 }
-.submenu #devices-accounts h4.selected::before {
+.submenu #devices-accounts.selected h4::before {
   content: url('../images/ns-m-m.png');        
 }
-.submenu #devices-accounts h4.selected.started::before {
+.submenu #devices-accounts.selected.started h4::before {
   content: url('../images/s-m-m.png');        
 }
-.submenu #devices-accounts h4.started::before {
+.submenu #devices-accounts.started h4::before {
   content: url('../images/s-l-m.png');        
 }
 .submenu #vp-network::before {
@@ -298,7 +298,7 @@ small black fill green border */
 }
 .submenu li {
   background: #000;
-  border:1px solid rgba(255,255,255,0.2);
+  border:0.5px solid #686969;
   font-size: 0.9em;
     border-left:0;
     border-right:0;

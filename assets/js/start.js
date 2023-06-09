@@ -1,49 +1,70 @@
 function addSubmenuHandlers(menu) {
-    for (var n=0; n < menu.childNodes.length; n++) {
-      // first narrow it down to the submenu items in this section
-      var subs = menu.childNodes[n].childNodes;
-      // then get the handlers added to the elements
-      addShowHideHandlers(subs);
-    }
-}
-
-function addShowHideHandlers(els){
-  // first add the event handlers to the category titles
-  var title = els[0];
-  title.addEventListener('click', showHideCategories);
-  // then narrow it down to the list items
-  var subCats = els[els.length-1].childNodes;
-  for (var el=0; el<subCats.length; el++){
-    subCats[el].addEventListener('click', showHideQuestions);
-  }
-    // add click handlers for the previous and next buttons
+//    for (var n=0; n < menu.childNodes.length; n++) {
+//      // first narrow it down to the submenu items in this section
+//      var subs = menu.childNodes[n].childNodes;
+//        
+//        console.log(subs);
+//      // then get the handlers added to the elements
+//      addShowHideHandlers(subs);
+//    }
+    subs = document.querySelectorAll('.submenu h4, .submenu li');
+    subs.forEach(sub => sub.addEventListener('click', updateSubmenu));
+    
     var progButtons = document.querySelectorAll('#progressButtons button');
     for (var p = 0; p < progButtons.length; p++){
         progButtons[p].addEventListener('click', nextPage);
     }
+
 }
 
-// TODO: combine this with the other function that hides/shows questions?
-function showHideCategories(e){
-  // which section is currently selected
-  var currentCat = document.querySelectorAll('.submenu div.selected');
-  // which section is now selected
-  var newCat = e.target.parentNode.parentNode;
-  if (currentCat.length > 0) {
-    for (var c = 0; c < currentCat.length; c++){
-      // if user is selecting a new category
-      if (currentCat[c].textContent !== e.target.textContent) {
-        // remove the class from current selection
-        currentCat[c].classList.remove("selected");
-        // close that class' ul
-        e.target.parentNode.parentNode.classList.add('selected');
-      } else {
-        console.log(currentCat[c].textContent);
-        console.log(e.target.textContent);
-      }
+function updateSubmenu(e){
+    dest = e.target;
+    // did the user click on a subcategory or a category (is it an li or a h4)
+    if (dest.nodeName === 'LI'){
+    // subcategory selected
+        // compare the dest to the current submenu selections
+        origin = document.querySelector('.submenu li.selected');
+        if (dest.id !== origin.id) {
+        // is dest a different subcategory
+            // remove selected class from elsewhere in the submenu
+            origin.classList.remove('selected');
+            // apply it to the subcategory
+            dest.classList.add('selected');
+            // and show the relevant questions
+            updateQuestions(dest.id, origin.id);
+            updateButtons(dest.id);
+            // position the polygons, change their images
+            positionPolygons();
+            parent = dest.parentElement.parentElement.id
+            // change the background if we're in a new section
+            changeBackground(parent);
+            // do we need to update the category too?
+            if (!document.querySelector(`.submenu div#${parent}`).classList.contains('selected')){
+                document.querySelector('.submenu div.selected').classList.remove('selected');
+                document.querySelector(`.submenu div#${parent}`).classList.add('selected');
+            }
+        }
+    } else if (dest.nodeName === 'H4'){
+    // category selected
+        // remove selected class from current category
+        document.querySelector('.submenu div.selected').classList.remove('selected');
+        // add selected class to dest category        
+        dest.parentElement.parentElement.classList.add('selected');
     }
-  }
-  e.target.classList.add('selected');
+}
+
+function updateQuestions(d, o){
+    if (d !== o){
+        // find the currently active question group
+        active = document.querySelector('form div.active');
+        // verify that it matches the origin
+        if (active.classList[0] === o){
+            active.classList.remove('active');
+            document.querySelector(`form div.${d}`).classList.add('active');
+        } else {
+            console.log(active.classList[0], o);
+        }
+    }
 }
 
 // if we're on desktop
@@ -78,64 +99,7 @@ function positionPolygons(){
 }
 
 
-function showHideQuestions(e){
-  // what did the user click on
-  var destSubSection = e.target.id;
-  // which section is that in
-  var destParentSection = document.querySelector(`li#${destSubSection}`).parentElement.parentElement.id;
-    
-    // which group of questions are currently visible
-    var currentSubSection = document.querySelector(`.submenu li.selected`).id;
 
-     // if we're going to a new set of questions
-    if (destSubSection !== currentSubSection){
-        // are we also going to a new section
-        updateSection(destParentSection, document.querySelector(`.submenu div.selected`).id);
-        
-
-    }
-    
-    // what section are we currently in
-//    var thisParentSection = document.querySelector(`#page`).classList[1];
-
-    
-//    
-//  // which subgroup of questions does this relate to
-//  var matchingQs = document.querySelector('.'+destSubSection);
-//  // which subgroup of questions are currently visible
-//  var currentQs = document.querySelector('.active');
-//    var currentParentSection = 
-//    // if the user clicked on a new subgroup of questions
-//  if (matchingQs !== currentQs) {
-//      // is it in the same parent group?
-//      if (thisParentSection !== )
-//      
-//    // find other instances of "selected" class and remove them
-//    var selected = document.querySelectorAll('.submenu li.selected');
-//    if (selected.length > 0) {
-//      for (var s = 0; s < selected.length; s++){
-//          selected[s].classList.remove("selected");
-//      }
-//    }
-//    updateTheDisplay(e.target,currentQs, matchingQs);
-//  } else {
-//    // if the selected content is already showing, do nothing
-//    return;
-//  }
-}
-
-function updateSection(d, c){
-    if (d !== c){
-        // if we're heading to a new section
-        // remove selected class from the currentParentSection
-        document.querySelector(`.submenu #${c}`).classList.remove('selected');
-        // add selected to the destParentSection
-        document.querySelector(`.submenu #${d}`).classList.add('selected');
-        // update the page id?
-    } else {
-        // if we're in the same section, no need to update the category anywhere
-    }
-}
 
 function changeBackground(sectionID) {
     var page = document.querySelector('#page');
@@ -146,32 +110,6 @@ function changeBackground(sectionID) {
     }
 }
 
-function updateTheDisplay(target,oldQs,newQs) {
-    // add class of "selected" to the category the user clicked on
-    target.classList.add('selected');
-    oldQs.classList.toggle('active');
-    newQs.classList.toggle('active');
-    
-    updateButtons(target.id);
-    
-    positionPolygons();
-  // position the polygons
-  // change their images
-  // change the background if we're in a new section
-  changeBackground(target.parentElement.parentElement.id);
-
-    // does the selected category name match the one attached to the #page? 
-    const selectedCategory = document.querySelector('.submenu > div.selected');
-    const correctCategory = document.querySelector('#page').classList[1];
-    const selectedCategoryMatch = correctCategory === selectedCategory.id;
-    if (!selectedCategoryMatch) {
-        selectedCategory.classList.remove('selected');
-        document.getElementById(correctCategory).classList.add('selected');
-    } else {
-        // do nothing because the selected category has the selected class
-    }
-    
-}
 
 function moveForward(id) {
   // this increases the counter
@@ -207,55 +145,8 @@ function moveForward(id) {
 //   }
 // }
 
-// this is the function that's called when a user submits an answer
-// TODO: move this to a more suitable file, given it's not a "startup" function
+// this is the function that's called when a user their answers
 function handleSubmit() {
-  // search for the currently shown element - question and answer
-  var match = document.querySelector('.current');
-  // this gets the current question id number e.g. q0
-  var id = currentState.questionQ;
-  collectAnswers(false);
-
-  // TODO: move this class to the currently-displayed container of questions
-  match.classList.remove("current");
-  // go to next question
-  nextQuestion();
-  window.scrollTo(0,0);
-}
-
-function nextQuestion(){
-  // if there's more questions left in this section
-  if (currentState.questionP < currentState.sectionQ.length) {
-    // grab the next question's element and add class of current
-    var nextQ = document.getElementById("q-"+currentState.questionQ);
-    nextQ.classList.add("current");
-  }
-  // if there's more sections left
-  // consider whether this should happen here, before the last q, or after it
-  else if (currentState.sectionC < sections.length-1) {
-    // increase the section counter
-    currentState.sectionC++;
-    // reset the position counter
-    currentState.questionP = 0;
-    // get the next section
-    currentState.sectionQ = sections[currentState.sectionC];
-    // as before, grab the next question's element and add class of current
-    var nextQ = document.getElementById("q-"+currentState.questionQ);
-    nextQ.classList.add("current");
-  }
-  // if we're out of questions and sections then show the policy
-  else {
-    // if there are answers
-    if (currentState.answers.length > 0) {
-      window.location.href="/#results";
-    } else {
-      if (window.confirm("Oh no! It seems you haven't answered enough questions. Start again?")) {
-        location.reload(false);
-      } else {
-        window.location.href = "/";
-      }
-    }
-  }
 }
 
 // function to add li or p formatting to array
