@@ -232,7 +232,8 @@ button::-moz-focus-inner {
 .cat-logo img {
   max-height: 50px;
 }
-#menu-trigger, #link-home {
+/*#menu-trigger, */
+#link-home {
   cursor: pointer;
 }
 #menu-trigger.dim {

@@ -1,3 +1,93 @@
+function updateSubmenu(e){
+    dest = e.target;
+    // did the user click on a subcategory or a category (is it an li or a h4)
+    if (dest.nodeName === 'LI'){
+    // subcategory selected
+        // compare the dest to the current submenu selections
+        origin = document.querySelector('.submenu li.selected');
+        if (dest.id !== origin.id) {
+        // is dest a different subcategory
+            // remove selected class from elsewhere in the submenu
+            origin.classList.remove('selected');
+            // apply it to the subcategory
+            dest.classList.add('selected');
+            // and show the relevant questions
+            updateQuestions(dest.id, origin.id);
+            updateButtons(dest.id);
+            // position the polygons, change their images
+            positionPolygons();
+            parent = dest.parentElement.parentElement.id
+            // change the background if we're in a new section
+            changeBackground(parent);
+            // do we need to update the category too?
+            if (!document.querySelector(`.submenu div#${parent}`).classList.contains('selected')){
+                document.querySelector('.submenu div.selected').classList.remove('selected');
+                document.querySelector(`.submenu div#${parent}`).classList.add('selected');
+            }
+        }
+    } else if (dest.nodeName === 'H4'){
+    // category selected
+        // remove selected class from current category
+        document.querySelector('.submenu div.selected').classList.remove('selected');
+        // add selected class to dest category        
+        dest.parentElement.parentElement.classList.add('selected');
+    }
+}
+
+function updateQuestions(d, o){
+    if (d !== o){
+        // find the currently active question group
+        active = document.querySelector('form div.active');
+        // verify that it matches the origin
+        if (active.classList[0] === o){
+            active.classList.remove('active');
+            document.querySelector(`form div.${d}`).classList.add('active');
+        } else {
+            console.log(active.classList[0], o);
+        }
+    }
+}
+
+// if we're on desktop
+    // if (window.innerWidth > X)
+// call this each time the submenu is clicked
+function positionPolygons(){
+    // get the height of the containing block
+    var containerH = document.querySelector('.contain-survey').clientHeight;
+    // account for the intro height
+    var introH = document.querySelector('#survey-intro').clientHeight;
+    // get the three polygons
+    var images = document.querySelectorAll('.rhombus');
+    // decide on the 3 positions, based on the height
+    // divide up the space between introH and containerH
+    var gapH = containerH - introH;
+    // if the gap is taller than a certain amount, decide how many rhombus can fit
+    var top = gapH / 3;
+    var mid = gapH / 2;
+    var base = containerH - top;
+
+    // apply display:block and top value to each
+    images[0].style.top = top + 'px';
+    if (containerH > 800){
+        images[1].style.top = mid + 'px';
+        images[2].style.top = base + 'px';
+        images[1].style.display = 'block';
+        images[2].style.display = 'block';   
+    } else {
+        images[1].style.display = 'none';
+        images[2].style.display = 'none';   
+    }
+}
+
+function changeBackground(sectionID) {
+    var page = document.querySelector('#page');
+    if (!page.classList.contains(sectionID)){
+        page.classList = "survey "+sectionID;
+    } else {
+        return;
+    }
+}
+
 // when a radio button is selected
 function updateProgress(e) {
     // when there's an answer, we need to know:
@@ -42,10 +132,6 @@ function updateProgress(e) {
     }
     updateBar();
 }
-
-// update the circle in the submenu
-    // black center and green border = default, no selections made
-    // green center = at least one selection made
     
 function updateBar(){
     count = 0;
@@ -69,9 +155,29 @@ function updateBar(){
     // update the value in the label
     document.querySelector('label[for="survey-progress"] span').innerHTML = Math.round(percentage);
     
-    // current page
     currentPage = document.querySelector('.submenu li.selected').id;
-    updateButtons(currentPage);    
+    updateButtons(currentPage);
+    
+    // if there's answers and the section has been started
+    if (percentage > 0){
+        // update the circle in submenu        
+        sectionStarted(currentPage);
+    }
+}
+
+function sectionStarted(page){
+    // what's the current subcategory
+    sub = document.querySelector(`.submenu li#${page}`);
+    // what's the current category
+    cat = document.querySelector(`.submenu div.selected`);
+    // check if the category has been started
+    if (!cat.classList.contains('started')){
+        cat.classList.add('started');
+    }
+    // check if the subcategory has been started
+    if (!sub.classList.contains('started')){
+        sub.classList.add('started');
+    }    
 }
 
 function countThis(i){

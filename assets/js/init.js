@@ -58,7 +58,7 @@ window.onload = function(){
       "hashchange",
       function(){utils.router()}
   );
-  setUpMenu();
+//  setUpMenu();
   utils.router();
 };
 

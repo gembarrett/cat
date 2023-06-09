@@ -241,12 +241,12 @@
     margin:0 10px 0 5px;
     height:50px;
 }
-/* four styles for dots:
+
+/* four main styles for dots:
 large green filled (section started)
 small green filled (subsection started)
 large black fill green border ()
 small black fill green border */
-
 
 .submenu li::before {
   content: url('../images/ns-m-s.png');
@@ -257,14 +257,14 @@ small black fill green border */
 .submenu h4::before {
   content: url('../images/ns-m-m.png');    
 }
-.submenu h4.started::before {
+.submenu div.started h4::before {
     content: url('../images/s-m-m.png');
 }
 
 .submenu #understand-risk h4::before {
   content: url('../images/ns-f-m.png');        
 }
-.submenu #understand-risk h4.started::before {
+.submenu #understand-risk.started h4::before {
   content: url('../images/s-f-m.png');        
 }
 .submenu #devices-accounts h4::before {
