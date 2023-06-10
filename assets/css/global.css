@@ -23,16 +23,21 @@ body > * {
   display:flex;
 }
 #head {
-  background-color: #000;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  align-items: center;
-  z-index: 1;
-  justify-content: space-between;
-  padding: 5px 10px;
     z-index:10;
+    flex-wrap: wrap;
 }
+#menu-triggers {
+  align-items: center;
+  justify-content: space-between;
+    display:flex;
+    width:100%;
+    background-color: #000;
+    padding: 5px;
+}
+
 #page.survey {
   padding-top: 5em;
   flex-direction: column;
@@ -212,11 +217,11 @@ button::-moz-focus-inner {
 .glyph img:last-child{
   max-height: 25px;
 }
-#head .header-menu img {
+#head .lang-menu img {
   max-height: 20px;
   padding-left: 0.5em;
 }
-.header-menu {
+.lang-menu {
   text-align: right;
   display: flex;
   color:#fff;
@@ -232,14 +237,49 @@ button::-moz-focus-inner {
 .cat-logo img {
   max-height: 50px;
 }
-/*#menu-trigger, */
-#link-home {
+#mobile-menu {
+    display:none;
+}
+#nav-container {
+    display:none;
+    background-color:#dad9cf;
+    width:100%;
+}
+#nav-container.open{
+    display:block;
+    padding:10px;
+}
+#nav-container hr {
+    color: rgba(0,0,0,.2);
+}
+#section-menu {
+    display:none;
+}
+#section-menu.open {
+    display:block;
+}
+#section-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#survey-menu p {
+    margin:0;
+}
+#survey-menu img {
+    width:20px;
+}
+#menu-containers {
+    background-color: #dad9cf;
+    width:100%;
+}
+a#link-home {
   cursor: pointer;
 }
-#menu-trigger.dim {
+#lang-trigger.dim {
   opacity: 0.25;
 }
-#menu-container {
+#lang-container {
   width: 33.33333%;
   position: fixed;
   z-index: 1;
@@ -248,7 +288,7 @@ button::-moz-focus-inner {
   margin-top: 5em;
   text-align: center;
 }
-#menu-container span {
+#lang-container span {
   color: #fff;
   font-size: 2em;
   border: 4px solid currentColor;
@@ -257,10 +297,10 @@ button::-moz-focus-inner {
   display: none;
   cursor: pointer;
 }
-#menu-container span:active, #menu li:active, #menu-trigger:active {
+#lang-container span:active, #lang-list li:active, #lang-trigger:active {
   opacity: 0.5;
 }
-#menu {
+#lang-list {
   text-align: center;
   color: #fff;
   list-style: none;
@@ -268,7 +308,7 @@ button::-moz-focus-inner {
   padding-left: 0;
   line-height: 2.5em;
 }
-#menu-container.close {
+#lang-container.close {
   display: none;
 }
 

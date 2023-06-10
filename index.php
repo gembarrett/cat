@@ -34,32 +34,46 @@ if(isset($_POST['submit'])){
       </head>
       <body lang="en">
         <div id="head">
-          <div class="glyph">
-          <a href="/">
-              <img alt="CAT logo" src="assets/images/CAT-logo.png"></a>
-            <a href="/">
-              <img alt="CAT text logo" id="link-home" src="assets/images/CAT-logo_white.png">
-          </a>
+            <div id="menu-triggers">
+                <div class="glyph">
+                    <img id="mobile-menu" src="assets/images/CAT-mobile-menu.png" alt="Mobile menu button" />
+                    <a href="/">
+                      <img alt="CAT logo" src="assets/images/CAT-logo.png">
+                      <img alt="CAT text logo" id="link-home" src="assets/images/CAT-logo_white.png">
+                    </a>
+                </div>
+                <div class="lang-menu">
+                    <p>English</p>
+                    <img id="lang-trigger" src="assets/images/globe.png">
+                </div>
+            </div>  
+          <div id="menu-containers">
+            <div id="lang-container" class="close">
+              <ul id="lang-list" class="title">
+                <select name="language">
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                </select>
+              </ul>
+            </div>
+            <!-- when other languages are added this will need to be updated -->
+            <div id="nav-container">
+                <div id="survey-menu">
+                    <div id="section-trigger"><p>Go to section...</p>
+                    <img src="assets/images/menu-forward.png" alt="View survey sections"/>
+                    </div>
+                    <div id="section-menu">
+                        <p>Understanding Risk</p>
+                        <p>Operational Security</p>
+                        <p>Device &amp; Account Security</p>
+                    </div>
+                    <hr />
+                    <p>Save &amp; resume later</p>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="header-menu">
-            <p>English</p>
-            <img id="menu-trigger" src="assets/images/globe.png">
-        </div>
-        <div id="menu-container" class="close">
-          <ul id="menu" class="title">
-            <select name="language">
-              <option value="en">English</option>
-              <option value="es">Español</option>
-              <option value="es">Español</option>
-              <option value="es">Español</option>
-              <option value="es">Español</option>
-              <option value="es">Español</option>
-            </select>
-          </ul>
-        </div>
-      </div>
         <div id="page">
-
           <div id="no-js" class="window">
             <h3>Looks like you've got Javascript disabled</h3>
             <p>You'll need to enable Javascript in order to use this website. Here's how to do that: <a href="https://enable-javascript.com" title="Find out more about enabling Javascript in your browser">enable-javascript.com</a></p>

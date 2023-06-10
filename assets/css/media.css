@@ -73,14 +73,14 @@
     padding: 5px 20px;
     box-sizing: border-box;
   }
-  #menu-container {
+  #lang-container {
     width:100%;
     height:100%;
   }
   .btn.close {
     display:block;
   }
-  #menu-container #close-menu {
+  #lang-container #close-menu {
     display: inline-block;
   }
   .basics-head img {
@@ -206,6 +206,9 @@
         z-index: 1;
     }
 */
+    #menu-triggers {
+        padding:5px 0;
+    }
     #hero-header {
         flex-direction: column;
     }
@@ -231,17 +234,20 @@
     .gather {
         flex-direction: column;
     }
-    #head {
-        padding:5px 0;
-    }
-    .header-menu {
+    .lang-menu {
         padding:0.5em;
     }
-    .header-menu p {
+    .lang-menu p {
         display:none;
     }
-    #head .header-menu img {
+    #head .lang-menu img {
         padding-left: 0;
+    }
+    #lang-menu {
+        display:block;
+    }
+    #mobile-menu{
+        display: block;
     }
     .glyph {
         display: flex;
@@ -249,8 +255,11 @@
         width:100%;
         padding-left: 5px;
     }
-    .glyph a:last-child {
+    .glyph a {
         margin: 0 auto;
+    }
+    .glyph a img:first-child {
+        display:none;
     }
     .home #intro-container {
         padding-right: 0;

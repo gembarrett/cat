@@ -20,7 +20,7 @@ function updateLang(language) {
 
 // TODO: update this to suit language change
 function setUpMenu() {
-  var burger = document.querySelector('#menu-trigger');
+  var burger = document.querySelector('#lang-trigger');
 
   burger.addEventListener("click", function(e) {
     toggleMenu(e);
@@ -28,10 +28,10 @@ function setUpMenu() {
 
   document.querySelector('body').addEventListener('click', function(e){
     // the menu container only contains close when the menu is closed
-    var isMenuClosed = document.querySelector('#menu-container').classList.contains('close');
+    var isMenuClosed = document.querySelector('#lang-container').classList.contains('close');
 
     // the click shouldn't have occurred on the menu-trigger nor inside the menu
-    var isClickInside = (e.target.id === 'menu-trigger') || (e.target.id === 'menu-container');
+    var isClickInside = (e.target.id === 'lang-trigger') || (e.target.id === 'lang-container');
 
     // if menu is open and click was outside of menu trigger or container
     if (!isMenuClosed && !isClickInside) {
@@ -42,14 +42,33 @@ function setUpMenu() {
 }
 
 function toggleMenu(order) {
-  var menu = document.querySelector('#menu-container');
+  var menu = document.querySelector('#lang-container');
   if (order === "c") {
-    document.querySelector('#menu-trigger').classList.remove('dim');
+    document.querySelector('#lang-trigger').classList.remove('dim');
     menu.classList.add('close');
   } else {
-    document.querySelector('#menu-trigger').classList.toggle('dim');
+    document.querySelector('#lang-trigger').classList.toggle('dim');
     menu.classList.toggle('close');
   }
+}
+
+function prepTheMenu(){
+    trigger = document.getElementById('mobile-menu');
+    trigger.addEventListener('click', function(){
+        toggleMobileMenu();
+    });
+    trigger = document.getElementById('section-trigger');
+    trigger.addEventListener('click', function(){
+        toggleSectionMenu();
+    });
+}
+                             
+function toggleMobileMenu(){
+    document.getElementById('nav-container').classList.toggle('open');
+}
+
+function toggleSectionMenu(){
+    document.getElementById('section-menu').classList.toggle('open');
 }
 
 window.onload = function(){
@@ -59,7 +78,8 @@ window.onload = function(){
       function(){utils.router()}
   );
 //  setUpMenu();
-  utils.router();
+    prepTheMenu();
+    utils.router();
 };
 
 
