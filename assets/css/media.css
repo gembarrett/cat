@@ -206,6 +206,9 @@
         z-index: 1;
     }
 */
+    #survey-menu {
+        display:block;
+    }
     #menu-triggers {
         padding:5px 0;
     }
