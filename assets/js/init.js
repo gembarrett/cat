@@ -86,11 +86,13 @@ function prepTheMenu(){
             if (document.querySelector(lilink)){
                 // desktop submenu is on the page, so simulate click
                 document.querySelector(lilink).click();
-                // close the menu
-                toggleMenu('nav-container');
             } else {
-                console.log('elsewhere');
+                // we're not on the survey page, so pass url change with section id
+                document.location.href = document.location + '#survey?' + id[1];
             }
+            // close the menu
+            toggleMenu('nav-container');
+            window.scrollTo(0,0);
         });
     }
 }

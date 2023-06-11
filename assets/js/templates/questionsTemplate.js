@@ -80,8 +80,23 @@ function buildSurvey(qItems) {
 // this puts together the groups of questions
 function buildQuestions(items) {
   var questionEls = "";
+    let startFrom = "";
+    if (typeof params === "object"){
+        startFrom = params[0];
+    }
   for (var i = 0; i < items.length; i++){
-    questionEls += `<div class="`+items[i].trigger+ (counter === 1 ? ` active` : ``) +` subgroup">`;
+    questionEls += `<div class="${items[i].trigger}`;
+    // if starting point is defined, add active to that
+    if (startFrom === items[i].trigger){
+        questionEls += ` active subgroup">`;
+    }
+    // if it's not defined, use counter instead
+    else if (startFrom === "" && counter === 1){
+        questionEls += ` active subgroup">`;
+    } else {
+        questionEls += ` subgroup">`;
+    }
+//    questionEls += `<div class="`+items[i].trigger+ (counter === 1 ? ` active` : ``) +` subgroup">`;
     if (items[i].trigger === "your-org") {
         questionEls += intro;
     }
@@ -127,7 +142,6 @@ function buildAnswers(r, type, req, aArr){
   return answers;
 }
     
-
 // build the page elements
 var content = "";
 // Left column needs to contain all the category titles

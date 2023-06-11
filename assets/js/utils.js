@@ -47,9 +47,17 @@ var utils = (function(){
           // if there's multiple parts to the url
           if(route_split > 1){
             // use the above function to figure out the parameters to pass along
+              
+            // TODO: this is getting in the way of in-page nav, which should override whatever is in the url
             var params = extract_params(temp[1]);
-              console.log(params);
-              // don't changeBackground here because it relates to the section not the sub
+              destination = `li#${params[0]}`;
+              // if this isn't a mangled parameter
+              if (document.querySelector(destination)){
+                document.querySelector(destination).click();
+              } else {
+                  // just load the first section
+                  console.log('go to first section');
+              }
           } else {
             // if not, show the default first section
             changeBackground('understand-risk');              
