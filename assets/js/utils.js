@@ -44,15 +44,19 @@ var utils = (function(){
             "qs": en_qs,
             "ui": en_oc['survey']
         }
-        changeBackground('understand-risk');
+          // if there's multiple parts to the url
+          if(route_split > 1){
+            // use the above function to figure out the parameters to pass along
+            var params = extract_params(temp[1]);
+              console.log(params);
+              // don't changeBackground here because it relates to the section not the sub
+          } else {
+            // if not, show the default first section
+            changeBackground('understand-risk');              
+          }
       } else {
         function_to_invoke = temp[0] || false;
         var data = en_oc;
-      }
-      // if there's multiple parts to the url
-      if(route_split > 1){
-        // use the above function to figure out the parameters to pass along
-        var params = extract_params(temp[1]);
       }
 
       // if there's something specified in the url then use it to load the right page with the right parameters

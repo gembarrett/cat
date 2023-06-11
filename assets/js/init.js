@@ -53,23 +53,60 @@ function toggleMenu(order) {
 }
 
 function prepTheMenu(){
+    // when user clicks on mobile menu icon
     trigger = document.getElementById('mobile-menu');
     trigger.addEventListener('click', function(){
-        toggleMobileMenu();
+        toggleMenu('nav-container');
     });
+    // when user clicks on "go to section"
     trigger = document.getElementById('section-trigger');
     trigger.addEventListener('click', function(){
-        toggleSectionMenu();
+        toggleMenu('section-menu');
+        // replace text with "back"
+        trigger.innerHTML = '<img src="assets/images/menu-back.png" alt="Back to main menu"/><p>Back</p>';
     });
-}
-                             
-function toggleMobileMenu(){
-    document.getElementById('nav-container').classList.toggle('open');
+    // when user clicks on a section
+    triggers = document.querySelectorAll('#section-menu > p');
+    for (t = 0; t < triggers.length; t++){
+        triggers[t].addEventListener('click', function(e){
+            // which item is it
+            id = e.target.id;
+            id = id.split('nav-')[1];
+            toggleMenu(`subs-${id}`);
+        });
+    }
+    // click listener for each of the subsections with class starting nav-
+    triggers = document.getElementById('section-menu').querySelectorAll('[id^="sub-"]');
+    for (v = 0; v < triggers.length; v++){
+        triggers[v].addEventListener('click', function(e){
+            // where are we going
+            id = e.target.id.split(`sub-`);
+            // where are we coming from
+            lilink = `li#${id[1]}`;
+            if (document.querySelector(lilink)){
+                // desktop submenu is on the page, so simulate click
+                document.querySelector(lilink).click();
+                // close the menu
+                toggleMenu('nav-container');
+            } else {
+                console.log('elsewhere');
+            }
+        });
+    }
 }
 
-function toggleSectionMenu(){
-    document.getElementById('section-menu').classList.toggle('open');
+function toggleMenu(el){
+    document.getElementById(el).classList.toggle('open');
 }
+
+// can't put links into the html because will reload the page
+function navToSurvey(){
+    // if user clicks on a subsection
+    // check if the li with the right id is on the page
+    // if we are, then simulate a click on the relevant menu item
+    // if we're on a different page, pass as param by creating a url like /#survey?${subsection}
+    // pass it to the routing mechanism for processing (will need to load up the page and simulate the click)
+}                             
 
 window.onload = function(){
   document.querySelector('#no-js').remove();
@@ -78,10 +115,29 @@ window.onload = function(){
       function(){utils.router()}
   );
 //  setUpMenu();
+    buildMobileMenu(sections);
     prepTheMenu();
     utils.router();
 };
 
+function buildMobileMenu(s){
+    // get the mobile menu
+    menu = '<div id="section-menu">';
+    //for each of the main sections
+    for (var m = 0; m < s.length; m++){
+        //  build an element for it
+        menu += `<p id="nav-${s[m].section}">${s[m].title}</p><img src="assets/images/menu-forward.png" alt="View survey sections"/><div id="subs-${s[m].section}">`;
+        
+        // for each of the subsections
+        for (var i=0; i<s[m].subs.length; i++){
+            menu += `<p id="sub-${s[m].subs[i].name}">${s[m].subs[i].subtitle}</p>`;
+        }
+        menu += `</div>`;   
+    }
+    menu += '</div>';
+    // append after menu trigger
+    document.getElementById('section-trigger').insertAdjacentHTML('afterend', menu);
+}
 
 // question list is only used in findContent() - can it be replaced?
 

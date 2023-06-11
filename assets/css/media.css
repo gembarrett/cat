@@ -327,7 +327,6 @@
     }
     .right-col {
         flex-basis: fit-content;
-        padding:3em;
     }
     #page.survey {
         padding-top: 3em;

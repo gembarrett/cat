@@ -252,10 +252,10 @@ button::-moz-focus-inner {
 #nav-container hr {
     color: rgba(0,0,0,.2);
 }
-#section-menu {
+#section-menu, #section-menu > div {
     display:none;
 }
-#section-menu.open {
+#section-menu.open, #section-menu > div.open {
     display:block;
 }
 #section-trigger {

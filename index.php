@@ -59,13 +59,9 @@ if(isset($_POST['submit'])){
             <!-- when other languages are added this will need to be updated -->
             <div id="nav-container">
                 <div id="survey-menu">
-                    <div id="section-trigger"><p>Go to section...</p>
-                    <img src="assets/images/menu-forward.png" alt="View survey sections"/>
-                    </div>
-                    <div id="section-menu">
-                        <p>Understanding Risk</p>
-                        <p>Operational Security</p>
-                        <p>Device &amp; Account Security</p>
+                    <div id="section-trigger">
+                        <p>Go to section...</p>
+                        <img src="assets/images/menu-forward.png" alt="View survey sections"/>
                     </div>
                     <hr />
                     <p>Save &amp; resume later</p>
