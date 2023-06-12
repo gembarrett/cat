@@ -36,11 +36,12 @@ intro = parseContent(additionalData.content, intro);
 intro += `<span><a href="mailto:buildteam@fordfoundation.org">buildteam@fordfoundation.org</a></span></div>`;
 intro += '<div class="dots"><span class="circle"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></div></div>';
 
-function addSubmitHandler() {
-  document.getElementById('submitAnswers').addEventListener('click', function() {
-    handleSubmit();
-  });
-}
+// not sure if this is needed, since it appears to be handled when any progress buttons are clicked
+//function addSubmitHandler() {
+//  document.querySelector('.submit').addEventListener('click', function() {
+//    handleSubmit();
+//  });
+//}
 
 function buildSectionMenu(sections) {
   var menu = "";

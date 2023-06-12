@@ -32,6 +32,7 @@ function addSubmenuHandlers(menu) {
 
 // this is the function that's called when a user their answers
 function handleSubmit() {
+    //
 }
 
 // function to add li or p formatting to array

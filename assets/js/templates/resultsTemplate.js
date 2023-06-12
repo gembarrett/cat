@@ -1,4 +1,4 @@
-templates.policyTemplate = function(data, params){
+templates.resultsTemplate = function(data, params){
 
     var answers = "";
     var level;

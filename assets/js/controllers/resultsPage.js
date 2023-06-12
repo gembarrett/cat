@@ -1,4 +1,4 @@
-controllers.policyPage = function(data, params){
+controllers.resultsPage = function(data, params){
 
   var tally = {};
   var resText = textStore.rs.content;
@@ -27,6 +27,6 @@ controllers.policyPage = function(data, params){
   }
 
   // pass this array to the template
-  var policyContainer = templates.policyTemplate(tally);
-  utils.render('page', policyContainer);
+  var resultsContainer = templates.resultsTemplate(tally);
+  utils.render('page', resultsContainer);
 };

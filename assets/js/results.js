@@ -1,4 +1,4 @@
-// File for all the policy-related functions
+// File for all the results-related functions
 
 // for holding the end result
 var output;

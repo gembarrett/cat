@@ -50,7 +50,7 @@ var utils = (function(){
             "ui": en_oc['survey']
         }
         // if we have a subsection to open
-        if (surveyDestination){
+        if (typeof surveyDestination === "string" && surveyDestination !== ""){
             data["go"] = surveyDestination;
         }
           

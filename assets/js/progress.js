@@ -270,7 +270,7 @@ function nextPage(e) {
     } 
     // or if they want to submit their answers
     else { 
-        // handleSubmit();
+         handleSubmit();
     } 
     // scroll to the top of the page
     window.scrollTo(0,0);

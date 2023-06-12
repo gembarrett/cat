@@ -5,7 +5,7 @@ controllers.questionsPage = function(data, params){
 
   var menuData = [];
   var questionData = [];
-    
+    var goTo = "";
     // if there's a preset destination subsection
     if (typeof data.go === 'string'){
         goTo = data.go;
