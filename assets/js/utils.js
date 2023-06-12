@@ -25,6 +25,11 @@ var utils = (function(){
     router: function(route, data){
       // if there's a # in the url then grab whatever's after that
       route = route || location.hash.slice(1) || 'home';
+        // if there's data, save it as a survey destination
+        if (Array.isArray(data)){
+            surveyDestination = data[1];
+        }
+        
       // if there's a ? in the url then split it at that point
       var temp = route.split('?');
       // how many parts did it get split into?
@@ -44,20 +49,15 @@ var utils = (function(){
             "qs": en_qs,
             "ui": en_oc['survey']
         }
+        // if we have a subsection to open
+        if (surveyDestination){
+            data["go"] = surveyDestination;
+        }
+          
           // if there's multiple parts to the url
           if(route_split > 1){
-            // use the above function to figure out the parameters to pass along
-              
-            // TODO: this is getting in the way of in-page nav, which should override whatever is in the url
+            // use the above function to figure out the parameters to pass along         
             var params = extract_params(temp[1]);
-              destination = `li#${params[0]}`;
-              // if this isn't a mangled parameter
-              if (document.querySelector(destination)){
-                document.querySelector(destination).click();
-              } else {
-                  // just load the first section
-                  console.log('go to first section');
-              }
           } else {
             // if not, show the default first section
             changeBackground('understand-risk');              
@@ -73,16 +73,10 @@ var utils = (function(){
       }
     },
     // if we have to scroll to a particular section, based on the parameters, that happens here
-    render: function(element_id, content, scroll_loc){
+    render: function(element_id, content, selected_dest){
         document.getElementById(element_id).innerHTML = content;
-        // if there's a location to scroll to
-        if ((scroll_loc !== undefined) && (scroll_loc[0])) {
-          var element = document.getElementById(scroll_loc[0]);
-          // TODO: calculate current height of header then add equal margin-top inline to element before scrolling
-          element.scrollIntoView();
-        } else { // otherwise just scroll to top
+        
           window.scrollTo(0,0);
-        }
         // TODO: move these and check just for survey page then call the functions
         if (document.querySelector('.submenu')){
             addSubmenuHandlers(document.querySelector('.submenu'));
@@ -90,6 +84,18 @@ var utils = (function(){
             form.addEventListener('change', function(e){
                 updateProgress(e);
             });
+            // if a destination has been chosen from the mobile menu
+            if (selected_dest) {
+               // click on the relevant link in the main submenu
+                document.querySelector(`li#${selected_dest}`).click();
+                // update the URL
+                url = window.location;
+                url = url.toString();
+                // figure out if we're on home page
+                url = url.split('#');
+                url = `${url[0]}#survey`;
+                history.pushState({}, "", url);
+            }
         }
     }
   };

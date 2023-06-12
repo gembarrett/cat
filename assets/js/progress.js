@@ -35,6 +35,7 @@ function updateSubmenu(e){
 }
 
 function updateQuestions(d, o){
+    // if we're going to a new subsection
     if (d !== o){
         // find the currently active question group
         active = document.querySelector('form div.active');

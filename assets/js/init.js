@@ -88,7 +88,10 @@ function prepTheMenu(){
                 document.querySelector(lilink).click();
             } else {
                 // we're not on the survey page, so pass url change with section id
-                document.location.href = document.location + '#survey?' + id[1];
+                
+                // can we pass the destination a different way
+                // document.location.href = document.location + '#survey?' + id[1];
+                utils.router('survey', id);
             }
             // close the menu
             toggleMenu('nav-container');
