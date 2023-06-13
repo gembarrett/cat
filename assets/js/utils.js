@@ -62,7 +62,13 @@ var utils = (function(){
             // if not, show the default first section
             changeBackground('understand-risk');              
           }
-      } else {
+          
+      } else if (temp[0] === 'results'){
+          function_to_invoke = 'resultsView';
+          var data = en_rs;
+      }
+        else {
+          console.log(temp);
         function_to_invoke = temp[0] || false;
         var data = en_oc;
       }

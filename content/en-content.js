@@ -2144,172 +2144,213 @@ var en_rs = { // contains all evaluation content
     }
   },
   "content": {
-    "risk-threat": {
-      "title": "Risk Analysis and Threat Assessment",
-      "score": "Your organization has scored [[X]] points in the risk analysis and threat assessment category.", // explanation of what this means
-      "general": {
-          "why": [ // text for reusables.general.why above
-            "Understanding your risk is critical to keeping your organization safe. All good safety and security planning begins with a thorough understanding of the possible threats we face. Investing time and effort into better understanding your threat model will make reducing your risk much easier in the future. Remember also that threats evolve, so you may need to update your threat model as your organization and the landscape around you change.",
-            "Once you have developed policies, plans, and documentation, consider a tabletop exercise. Just remember to encourage an open, nonjudgmental space; learning about security vulnerabilities doesn’t require individual finger-pointing or blame.",
-            "When—not if—a real incident occurs, it can be scary, stressful, and chaotic. Following these best practices increases the likelihood of best possible outcomes. And don’t forget that you will need to assign at least one member of your staff  to oversee the cybersecurity effort within your organization."
-          ],
-          "eg": [
-            "ADE Worldwide is a civil society organization that helps train farmers and agricultural workers around the world to use water sustainably while advocating for better global environmental policy. The group’s advocacy for water rights has upset powerful landowners in several nations.",
-            "ADE sees itself as a nonpartisan, nonpolitical agricultural advisor. After its website is hacked and defaced, however, ADE realizes it needs to conduct a threat model analysis to better understand the risks the group faces around the world.",
-            "This process helps it realize that the likelihood of these digital attacks is high for groups working on similar issues. While ADE staff members don’t see their mission as controversial, they realize their own organization’s risk profile is high due to the effectiveness and publicity of their work. As a result, they develop an incident response plan and checklist for physical or cybersecurity incidents.",
-            "The ADE staff decides to proactively lead a series of tabletop exercises talking through how they would respond in the event of a security incident. As a result, when the field staff receive some verbal threats from regional landowners, they are prepared with a plan to manage any potential risk."
-          ] // example scenario
+      "your-org":{
+          "title": "About Your Organization",
+          "score": "",
+          "general": {
+              "why": [
+                  "",
+              ],
+              "eg": [
+                  "",
+              ]
+          },
+          "results": {
+              "below": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  },
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  }
+              ],
+              "ok": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  }
+              ],
+              "exceeds": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]                      
+                  }
+              ]
+          }
       },
-      "results": { // contains result text for this category
-        "below":
-          [ // contains recommendations for this level
-            {
-              "title": "Determine your threat model.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "When thinking about the risks that face your organization in the digital world, it’s helpful to think about all the risks that your staff  faces outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the “offline” world, such as risks posed by governments, law enforcement, criminal groups, and lawsuits.",
-                "Documenting and analyzing your risk is a process known in cybersecurity as “threat modeling.”, which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [here](links.eff.tmodel). Access Now Helpdesk offers an easy guide to threat models with examples [here](links.an.tmodel)."
+      "external-threats":{
+          "title": "External Threats",
+          "score": "Your organization has scored [[X]] points in the External Threats category.",
+          "general": {
+              "why": [ // text for reusables.general.why above
+                  "Understanding your risk is critical to keeping your organization safe. All good safety and security planning begins with a thorough understanding of the possible threats we face. Investing time and effort into better understanding your threat model will make reducing your risk much easier in the future. Remember also that threats evolve, so you may need to update your threat model as your organization and the landscape around you change.",
+                  "Once you have developed policies, plans, and documentation, consider a tabletop exercise. Just remember to encourage an open, nonjudgmental space; learning about security vulnerabilities doesn’t require individual finger-pointing or blame.",
+                  "When—not if—a real incident occurs, it can be scary, stressful, and chaotic. Following these best practices increases the likelihood of best possible outcomes. And don’t forget that you will need to assign at least one member of your staff  to oversee the cybersecurity effort within your organization."
+              ],
+              "eg": [
+                  "ADE Worldwide is a civil society organization that helps train farmers and agricultural workers around the world to use water sustainably while advocating for better global environmental policy. The group’s advocacy for water rights has upset powerful landowners in several nations.",
+                  "ADE sees itself as a nonpartisan, nonpolitical agricultural advisor. After its website is hacked and defaced, however, ADE realizes it needs to conduct a threat model analysis to better understand the risks the group faces around the world.",
+                  "This process helps it realize that the likelihood of these digital attacks is high for groups working on similar issues. While ADE staff members don’t see their mission as controversial, they realize their own organization’s risk profile is high due to the effectiveness and publicity of their work. As a result, they develop an incident response plan and checklist for physical or cybersecurity incidents.",
+                  "The ADE staff decides to proactively lead a series of tabletop exercises talking through how they would respond in the event of a security incident. As a result, when the field staff receive some verbal threats from regional landowners, they are prepared with a plan to manage any potential risk."
               ]
-            },
-            {
-              "title": "Create a risk matrix.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Every organization’s risks are unique, and the context in which you work will help you better map out which risks are both most likely and most dangerous for your staff . It’s helpful to think about risks to your organization’s security based on the likelihood and the impact of particular threats. Just because an event is likely doesn’t mean it deserves your full attention. There may be less frequent threats that could have significantly more of an impact on your organization. For example, some threats—such as physical damage to your phone—may be highly likely but not very effective or dangerous. Other threats, such as a corporate-sponsored cyberattack, may be much less likely but very dangerous.",
-                "You can map these risks using a tool called a “risk matrix,” which represents your different threats on a chart with likelihood on one axis and impact on the other.",
-                "Here's an example.",
-                {
-                  "type": "table",
-                  "rows": [
-                    ["", "Low Likelihood", "High Likelihood"],
-                    ["Low Consequence", "Printer is stolen from your office", "Physical damage to your phone"],
-                    ["High Consequence", "Corporate-sponsored cyberattack", "Phishing attack on your email account"]
-                  ]
-                },
-                "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [here](links.eff.matrix). Tactical Tech’s Holistic Security offers [additional reading](links.ttech.matrices) on these matrices."
+          },
+          "results": {
+              "below": [
+                  {
+                      "title": "Determine your threat model.",
+                      "content": [
+                          "When thinking about the risks that face your organization in the digital world, it’s helpful to think about all the risks that your staff  faces outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the “offline” world, such as risks posed by governments, law enforcement, criminal groups, and lawsuits.",
+                          "Documenting and analyzing your risk is a process known in cybersecurity as “threat modeling.”, which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [here](links.eff.tmodel). Access Now Helpdesk offers an easy guide to threat models with examples [here](links.an.tmodel)."
+                      ]
+                  },
+                  {
+                      "title": "Create a risk matrix.",
+                      "content": [
+                          "Every organization’s risks are unique, and the context in which you work will help you better map out which risks are both most likely and most dangerous for your staff . It’s helpful to think about risks to your organization’s security based on the likelihood and the impact of particular threats. Just because an event is likely doesn’t mean it deserves your full attention. There may be less frequent threats that could have significantly more of an impact on your organization. For example, some threats—such as physical damage to your phone—may be highly likely but not very effective or dangerous. Other threats, such as a corporate-sponsored cyberattack, may be much less likely but very dangerous.",
+                          "You can map these risks using a tool called a “risk matrix,” which represents your different threats on a chart with likelihood on one axis and impact on the other.",
+                          "Here's an example.",
+                          {
+                              "type": "table",
+                              "rows": [
+                                ["", "Low Likelihood", "High Likelihood"],
+                                ["Low Consequence", "Printer is stolen from your office", "Physical damage to your phone"],
+                                ["High Consequence", "Corporate-sponsored cyberattack", "Phishing attack on your email account"]
+                              ]
+                            },
+                          "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [here](links.eff.matrix). Tactical Tech’s Holistic Security offers [additional reading](links.ttech.matrices) on these matrices."
+                      ]
+                  }
+              ],
+              "ok": [
+                  {
+                      "title": "Develop an incident response plan.",
+                      "content": [
+                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [NIST Cybersecurity](links.nist.framework), ISO 27001, and the [MITRE ATT&CK Matrix](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
+                          {
+                              "type": "table",
+                              "rows": [
+                                ["If an attacker...", "How would you respond..."],
+                                ["...sent a malicious link that was clicked on", ""],
+                                ["...hacked our social media", ""],
+                                ["...hacked our email account", ""],
+                                ["...hacked our laptops/phones", ""],
+                                ["...hacked or defaced our website", ""],
+                                ["...tricked our organization by impersonating donors/funders", ""],
+                                ["...found/discovered our data", ""],
+                                ["...harassed a member of our staff online.", ""],
+                                ["...disrupted our internal communications", ""],
+                                ["...may have stolen our laptops or devices", ""]
+                              ]
+                          },
+                          "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a security provider who can help develop solutions to these threats.",
+                          "We have also developed [an incident response plan questionnaire](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
+                      ]
+                  },
+                  {
+                      "title": "Understand how incident response phases work together.", 
+                      "content": [ 
+                        "In cybersecurity, you can think of four stages to respond to an incident: prepare, detect, contain/eradicate/recover, and then process/learn.",
+                        {
+                          "type": "title",
+                          "heading": "Prepare:",
+                        },
+                        "The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps your staff can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:",
+                        {
+                          "type": "ul",
+                          "items": [
+                            "How many devices do we have?",
+                            "Which are the most important?",
+                            "How do we keep those devices updated and safe?",
+                            "Do we have internal policies and a crisis communications plan from our departments that are easy to follow in a digital crisis?",
+                            "Can we come up with a master checklist to follow during a crisis? During an incident, panic often clouds our best thinking and a checklist will help."]
+                        },
+                        {
+                          "type": "title",
+                          "heading": "Detect:",
+                        },
+                        "This phase occurs when your organization identifies what is happening and plans a path forward. To do this, consider the following steps:",
+                        {
+                          "type": "ul",
+                          "items": [
+                            "As best you can, identify an incident while it’s occurring or shortly after it has occurred",
+                            "Collect everything you can about the incident as soon as possible. Log dates and times, capture screenshots, record suspicious websites and links, stop using the device, and disconnect the device from the Internet (but don’t turn it off).",
+                            "Make sure to notify your internal teams about the incident, but don’t forget that cybersecurity attacks can affect other organizations, too. If outside groups are affected, you should inform them as soon as possible."
+                          ]
+                        },
+                        {
+                          "type": "title",
+                          "heading": "Contain/Eradicate/Recover:",
+                        },
+                        "This stage is actually made up of three steps.",
+                        {
+                          "type": "ul",
+                          "items": [
+                            "In the first “containment” step, your staff can identify the cause and scope of the incident and take steps to stop or block immediate harm.",
+                            "In the second “eradicate” step, your staff can fully stop the incident and remove any discovered threats from your system.",
+                            "In the third “recovery” step, your staff can bring operations back online to their pre-incident state and address any remaining damage."
+                          ]
+                        },
+                        {
+                          "type": "title",
+                          "heading": "Process/Learn:",
+                        },
+                        "This phase isn’t about blaming others, but rather reviewing how each phase unfolded and evaluating how your organization can improve the process and your future response."
+                      ]
+                  },
+                  {
+                      "title": "Find a security provider that you can afford.",
+                      "content": [ 
+                            "Now that you have an understanding of the risks and threats facing your organization, you can begin to think about how to respond to those threats. This is when many people feel uncertain, especially if they don’t have a background in technology or security. Luckily, there are security providers who can help. When vetting a security provider, we recommend asking a series of questions to determine whether they are a good fit for your organization. We feel the most important ones are:",
+                            {
+                              "type": "ul",
+                              "items": [
+                                "Why do you do this work?",
+                                "Are you familiar with our region, culture, or language?",
+                                "Do you work with CSOs/NGOs? If so, what is the difference between your approach to this work and the work of your other clients?",
+                                "Have you worked with a group of my size before? Can you tell me more about this work?",
+                                "Have you worked on incidents or issues that are similar to ours in the past? Please provide a case study.",
+                                "How many clients are you currently working with? What percentage of your time will go to me?",
+                                "What is your understanding of the risks we face?"
+                              ]
+                            },
+                            "A security provider can’t fix all your organization’s challenges on their own. Understand that you will need a designated person on your staff  who will manage this work and act as a liaison between your organization and the security provider."
+]
+                  },
+              ],
+              "exceeds": [
+                  {
+                      "title": "Run a tabletop exercise.",
+                      "content": [
+                          "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff  doesn’t need to be physically gathered around a table to complete one. During an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
+                          "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [MITRE Corp.’s guidelines on tabletop exercises](links.mitre.tabletop).",
+                          {
+                              "type": "ul",
+                              "items": [
+                                "Determine what you would like to test (usually by choosing one of your top identified threats).",
+                                "Designate a group leader to run the exercise.",
+                                "Create a plausible storyline that includes the threat you want to test your response to.",
+                                "Gather the staff that would be responsible for managing this threat.",
+                                "Walk the staff  through the scenario and ask for their responses, step by step.",
+                                "Document gaps, concerns, and weak points in the threat response."
+                              ]
+                          },
+                          "You can use the knowledge gained from a tabletop exercise to identify areas of concern and begin to develop strategies to reduce those risks."
+                      ]                      
+                  }
               ]
-            },
-          ],
-        "ok":
-          [ // contains recommendations for this level
-            {
-              "title": "Develop an incident response plan.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [NIST Cybersecurity](links.nist.framework), ISO 27001, and the [MITRE ATT&CK Matrix](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
-                {
-                  "type": "table",
-                  "rows": [
-                    ["If an attacker...", "How would you respond..."],
-                    ["...sent a malicious link that was clicked on", ""],
-                    ["...hacked our social media", ""],
-                    ["...hacked our email account", ""],
-                    ["...hacked our laptops/phones", ""],
-                    ["...hacked or defaced our website", ""],
-                    ["...tricked our organization by impersonating donors/funders", ""],
-                    ["...found/discovered our data", ""],
-                    ["...harassed a member of our staff online.", ""],
-                    ["...disrupted our internal communications", ""],
-                    ["...may have stolen our laptops or devices", ""]
-                  ]
-                },
-                "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a security provider who can help develop solutions to these threats.",
-                "We have also developed [an incident response plan questionnaire](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
-              ]
-            },
-            {
-              "title": "Understand how incident response phases work together.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "In cybersecurity, you can think of four stages to respond to an incident: prepare, detect, contain/eradicate/recover, and then process/learn.",
-                {
-                  "type": "title",
-                  "heading": "Prepare:",
-                },
-                "The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps your staff can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:",
-                {
-                  "type": "ul",
-                  "items": [
-                    "How many devices do we have?",
-                    "Which are the most important?",
-                    "How do we keep those devices updated and safe?",
-                    "Do we have internal policies and a crisis communications plan from our departments that are easy to follow in a digital crisis?",
-                    "Can we come up with a master checklist to follow during a crisis? During an incident, panic often clouds our best thinking and a checklist will help."]
-                },
-                {
-                  "type": "title",
-                  "heading": "Detect:",
-                },
-                "This phase occurs when your organization identifies what is happening and plans a path forward. To do this, consider the following steps:",
-                {
-                  "type": "ul",
-                  "items": [
-                    "As best you can, identify an incident while it’s occurring or shortly after it has occurred",
-                    "Collect everything you can about the incident as soon as possible. Log dates and times, capture screenshots, record suspicious websites and links, stop using the device, and disconnect the device from the Internet (but don’t turn it off).", // TODO: find out if this should include subitem from 2nd sentence
-                    "Make sure to notify your internal teams about the incident, but don’t forget that cybersecurity attacks can affect other organizations, too. If outside groups are affected, you should inform them as soon as possible."
-                  ]
-                },
-                {
-                  "type": "title",
-                  "heading": "Contain/Eradicate/Recover:",
-                },
-                "This stage is actually made up of three steps.",
-                {
-                  "type": "ul",
-                  "items": [
-                    "In the first “containment” step, your staff can identify the cause and scope of the incident and take steps to stop or block immediate harm.",
-                    "In the second “eradicate” step, your staff can fully stop the incident and remove any discovered threats from your system.",
-                    "In the third “recovery” step, your staff can bring operations back online to their pre-incident state and address any remaining damage."
-                  ]
-                },
-                {
-                  "type": "title",
-                  "heading": "Process/Learn:",
-                },
-                "This phase isn’t about blaming others, but rather reviewing how each phase unfolded and evaluating how your organization can improve the process and your future response."
-              ]
-            },
-            {
-              "title": "Find a security provider that you can afford.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Now that you have an understanding of the risks and threats facing your organization, you can begin to think about how to respond to those threats. This is when many people feel uncertain, especially if they don’t have a background in technology or security. Luckily, there are security providers who can help. When vetting a security provider, we recommend asking a series of questions to determine whether they are a good fit for your organization. We feel the most important ones are:",
-                {
-                  "type": "ul",
-                  "items": [
-                    "Why do you do this work?",
-                    "Are you familiar with our region, culture, or language?",
-                    "Do you work with CSOs/NGOs? If so, what is the difference between your approach to this work and the work of your other clients?",
-                    "Have you worked with a group of my size before? Can you tell me more about this work?",
-                    "Have you worked on incidents or issues that are similar to ours in the past? Please provide a case study.",
-                    "How many clients are you currently working with? What percentage of your time will go to me?",
-                    "What is your understanding of the risks we face?"
-                  ]
-                },
-                "A security provider can’t fix all your organization’s challenges on their own. Understand that you will need a designated person on your staff  who will manage this work and act as a liaison between your organization and the security provider."
-              ]
-            },
-          ],
-        "exceeds":
-          [ // contains recommendations for this level
-            {
-              "title": "Run a tabletop exercise.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff  doesn’t need to be physically gathered around a table to complete one. During an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
-                "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [MITRE Corp.’s guidelines on tabletop exercises](links.mitre.tabletop).",
-                {
-                  "type": "ul",
-                  "items": [
-                    "Determine what you would like to test (usually by choosing one of your top identified threats).",
-                    "Designate a group leader to run the exercise.",
-                    "Create a plausible storyline that includes the threat you want to test your response to.",
-                    "Gather the staff that would be responsible for managing this threat.",
-                    "Walk the staff  through the scenario and ask for their responses, step by step.",
-                    "Document gaps, concerns, and weak points in the threat response."
-                  ]
-                },
-                "You can use the knowledge gained from a tabletop exercise to identify areas of concern and begin to develop strategies to reduce those risks."
-              ]
-            },
-          ]
-      }
-    },
-    "docs-policy": {
+          }
+      },
+    "policy-docs": {
       "title": "Documentation and Policy",
       "score": "Your organization has scored [[X]] points in the documentation and policy category.", // explanation of what this means
       "general": {
@@ -2549,7 +2590,7 @@ var en_rs = { // contains all evaluation content
           ],
       }
     },
-    "travel-security": {
+    "travel-policy": {
       "title": "Travel Security",
       "score": "Your organization has scored [[X]] points in the travel security category.", // explanation of what this means
       "general": {
@@ -2635,7 +2676,7 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-    "data-security": {
+    "managing-data": {
       "title": "Data Security",
       "score": "Your organization has scored [[X]] points in the data security category.", // explanation of what this means
       "general": {
@@ -2903,6 +2944,88 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
+    "legal-risks": {
+      "title": "Legal Risks",
+      "score": "Your organization has scored [[X]] points in the legal risks category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Security threats facing civil society organizations aren’t restricted to physical or digital attacks. Legal challenges can force organizations to divulge sensitive information, slow down or stop projects, or simply spend time and money responding to frivolous lawsuits. Consulting with a lawyer familiar with your country’s law is a good first step in protecting your organization from these challenges.",
+            "Proactively managing data before a legal challenge better equips your organization to quarantine data that may be needed in the event of a lawsuit. Before archiving or relocating employee information, however, explain clearly to your staff when and how their data may be accessed and used."
+          ], // explanation of what this means
+          "eg": [
+            "ADE Worldwide runs a one-person office in Guatemala that works with local farmers to better manage their water usage. As an environmental advocacy organization in a region where powerful interests own vast amounts of land, ADE understands that this office may be the target of a legal challenge. To help prepare, ADE management asks the staff member there, alongside the organization’s legal counsel, to review and archive sensitive data in the system.",
+            "A local landowner threatens to sue the organization for defamation he claims he experienced thanks to its water sustainability campaigns. The attorneys in ADE’s Mexico City regional headquarters say they believe they can handle the potential lawsuit themselves, but quickly realize they must bring on local representation in Guatemala to better understand and comply with local laws and requirements."
+          ] // example scenario
+      },
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
+            {
+              "title":"",
+              "content":[
+                "Legal risk can be complex. Laws vary from country to country, and even region to region. As a civil society organization, it’s vital that you have a basic grounding in your legal responsibilities and restrictions, as well as any possible risks you face from lawsuits or other legal action. If you’ve never met with a lawyer before, here are two tips to get started:"
+              ]
+            },
+            {
+              "title": "Educate yourself about civil society law in your country and region.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Law can be highly complicated, but your staff  can learn the basics. An excellent resource (apart from a lawyer in your area) is the [International Center for Not-For-Profit Law](links.icnl.web), which has an online library with case studies from around the world, as well as reports and resources for nearly every nation. ",
+                "It is also important to become familiar with how (well) the relevant laws are enforced."
+              ]
+            },
+            {
+              "title": "Meet with a lawyer.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "While this may seem like an obvious suggestion, finding a qualified lawyer in your area may be challenging. If you’re able to meet with a lawyer to discuss your organization, make sure to discuss key areas of concern about legal liability. If you aren’t able to meet with a lawyer, you may have better luck consulting with a free clinic at a local law school or a legal scholar or researcher. Many lawyers may be willing to work with a civil society organization pro bono, but that may not always be the case.",
+                "A good resource for finding qualified lawyers in your region is the [International Bar Association](links.iba.web), which advocates for lawyers worldwide.",
+              ]
+            },
+          ],
+        "ok":
+          [ // contains recommendations for this level
+            {
+              "title": "",
+              "content": [
+                "You’ve met with a lawyer to discuss legal risks to your organization, and perhaps you now have a lawyer on retainer for emergencies. Even with these steps, you still face some legal vulnerabilities that you can reduce using cybersecurity principles. Here’s how."
+              ]
+            },
+            {
+              "title": "Identify and archive data.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Though legal systems vary around the world, most lawsuits include a “discovery” period, in which lawyers may request documents pertaining to their case. While discovery was once mainly focused on paper records, lawyers may now request vast amounts of electronic information that may be useful to their case, including emails, instant messages, and even messages on collaboration platforms such as Slack.",
+                "While some of this information may be used for legitimate legal purposes, so-called “nuisance” or frivolous lawsuits can also force organizations to disclose sensitive information as part of discovery. One way to prepare for such lawsuits is to identify concerning keywords within electronic communication that would be targeted in a lawsuit. From there, with your lawyer’s advice, you can archive or “quarantine” this information in a secure location, such as off-line storage devices or encrypted cloud storage.",
+              ]
+            },
+            {
+              "title": "Establish a data removal policy.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Not every organization has the resources—either financial or technological—to archive sensitive data. However, most organizations do have the ability to selectively remove or delete emails from staff inboxes. When done properly, this can help  manage the flow of information better within your organization. When abused, however, this power can infringe on your staff’s right to privacy and your ethical responsibility as an employer. For this reason, we recommend that most organizations put into place an easy-to-understand policy around when you will remove data or messages from staff members’ systems and make sure they are familiar with this policy."
+              ]
+            }
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
+            {
+              "title":"",
+              "content": [
+                "Now that you’ve begun to identify and archive data, as well as put together policies for ethically removing data, you can take additional steps to safeguard your organization’s private data from frivolous lawsuits. It’s important to work alongside a lawyer familiar with your situation whenever you are handling legally sensitive data."
+              ]
+            },
+            {
+              "title": "Use an e-discovery platform.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through vast amounts of information using a computer. Your organization can also use these tools, such as [Google’s G Suite Vault](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform.",
+              ]
+            },
+            {
+              "title": "Test your defenses with an annual drill.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Just as you have conducted inter-office exercises to test your physical security and your security policies, you can also conduct a drill to test your response to a legal request. In this drill, you would simulate an outside legal request for particular information. You may even want to work with your lawyer on this. Can your staff locate and secure this information? Does this request expose your organization to a particular legal risk? Does the legal request itself temporarily stop your organization from carrying out its work? Understanding the impact of a lawsuit—even a fictional one—on your organization can help you better prepare for the real-life risk."
+              ]
+            },
+          ]
+      }
+    },
     "messaging-collab": {
       "title": "Messaging and Collaboration",
       "score": "Your organization has scored [[X]] points in the messaging and collaboration category.", // explanation of what this means
@@ -2997,269 +3120,231 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-    "legal-risks": {
-      "title": "Legal Risks",
-      "score": "Your organization has scored [[X]] points in the legal risks category.", // explanation of what this means
-      "general": {
-          "why": [
-            "Security threats facing civil society organizations aren’t restricted to physical or digital attacks. Legal challenges can force organizations to divulge sensitive information, slow down or stop projects, or simply spend time and money responding to frivolous lawsuits. Consulting with a lawyer familiar with your country’s law is a good first step in protecting your organization from these challenges.",
-            "Proactively managing data before a legal challenge better equips your organization to quarantine data that may be needed in the event of a lawsuit. Before archiving or relocating employee information, however, explain clearly to your staff when and how their data may be accessed and used."
-          ], // explanation of what this means
-          "eg": [
-            "ADE Worldwide runs a one-person office in Guatemala that works with local farmers to better manage their water usage. As an environmental advocacy organization in a region where powerful interests own vast amounts of land, ADE understands that this office may be the target of a legal challenge. To help prepare, ADE management asks the staff member there, alongside the organization’s legal counsel, to review and archive sensitive data in the system.",
-            "A local landowner threatens to sue the organization for defamation he claims he experienced thanks to its water sustainability campaigns. The attorneys in ADE’s Mexico City regional headquarters say they believe they can handle the potential lawsuit themselves, but quickly realize they must bring on local representation in Guatemala to better understand and comply with local laws and requirements."
-          ] // example scenario
+      "installing-software": {
+          "title": "Installing Software",
+          "score": "",
+          "general": {
+              "why": [
+                  "",
+              ],
+              "eg": [
+                  "",
+              ]
+          },
+          "results": {
+              "below": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  },
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  }
+              ],
+              "ok": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  }
+              ],
+              "exceeds": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]                      
+                  }
+              ]
+          }
       },
-      "results": { // contains result text for this category
-        "below":
-          [ // contains recommendations for this level
-            {
-              "title":"",
-              "content":[
-                "Legal risk can be complex. Laws vary from country to country, and even region to region. As a civil society organization, it’s vital that you have a basic grounding in your legal responsibilities and restrictions, as well as any possible risks you face from lawsuits or other legal action. If you’ve never met with a lawyer before, here are two tips to get started:"
-              ]
-            },
-            {
-              "title": "Educate yourself about civil society law in your country and region.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Law can be highly complicated, but your staff  can learn the basics. An excellent resource (apart from a lawyer in your area) is the [International Center for Not-For-Profit Law](links.icnl.web), which has an online library with case studies from around the world, as well as reports and resources for nearly every nation. ",
-                "It is also important to become familiar with how (well) the relevant laws are enforced."
-              ]
-            },
-            {
-              "title": "Meet with a lawyer.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "While this may seem like an obvious suggestion, finding a qualified lawyer in your area may be challenging. If you’re able to meet with a lawyer to discuss your organization, make sure to discuss key areas of concern about legal liability. If you aren’t able to meet with a lawyer, you may have better luck consulting with a free clinic at a local law school or a legal scholar or researcher. Many lawyers may be willing to work with a civil society organization pro bono, but that may not always be the case.",
-                "A good resource for finding qualified lawyers in your region is the [International Bar Association](links.iba.web), which advocates for lawyers worldwide.",
-              ]
-            },
-          ],
-        "ok":
-          [ // contains recommendations for this level
-            {
-              "title": "",
-              "content": [
-                "You’ve met with a lawyer to discuss legal risks to your organization, and perhaps you now have a lawyer on retainer for emergencies. Even with these steps, you still face some legal vulnerabilities that you can reduce using cybersecurity principles. Here’s how."
-              ]
-            },
-            {
-              "title": "Identify and archive data.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Though legal systems vary around the world, most lawsuits include a “discovery” period, in which lawyers may request documents pertaining to their case. While discovery was once mainly focused on paper records, lawyers may now request vast amounts of electronic information that may be useful to their case, including emails, instant messages, and even messages on collaboration platforms such as Slack.",
-                "While some of this information may be used for legitimate legal purposes, so-called “nuisance” or frivolous lawsuits can also force organizations to disclose sensitive information as part of discovery. One way to prepare for such lawsuits is to identify concerning keywords within electronic communication that would be targeted in a lawsuit. From there, with your lawyer’s advice, you can archive or “quarantine” this information in a secure location, such as off-line storage devices or encrypted cloud storage.",
-              ]
-            },
-            {
-              "title": "Establish a data removal policy.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Not every organization has the resources—either financial or technological—to archive sensitive data. However, most organizations do have the ability to selectively remove or delete emails from staff inboxes. When done properly, this can help  manage the flow of information better within your organization. When abused, however, this power can infringe on your staff’s right to privacy and your ethical responsibility as an employer. For this reason, we recommend that most organizations put into place an easy-to-understand policy around when you will remove data or messages from staff members’ systems and make sure they are familiar with this policy."
-              ]
-            }
-          ],
-        "exceeds":
-          [ // contains recommendations for this level
-            {
-              "title":"",
-              "content": [
-                "Now that you’ve begun to identify and archive data, as well as put together policies for ethically removing data, you can take additional steps to safeguard your organization’s private data from frivolous lawsuits. It’s important to work alongside a lawyer familiar with your situation whenever you are handling legally sensitive data."
-              ]
-            },
-            {
-              "title": "Use an e-discovery platform.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through vast amounts of information using a computer. Your organization can also use these tools, such as [Google’s G Suite Vault](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform.",
-              ]
-            },
-            {
-              "title": "Test your defenses with an annual drill.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Just as you have conducted inter-office exercises to test your physical security and your security policies, you can also conduct a drill to test your response to a legal request. In this drill, you would simulate an outside legal request for particular information. You may even want to work with your lawyer on this. Can your staff locate and secure this information? Does this request expose your organization to a particular legal risk? Does the legal request itself temporarily stop your organization from carrying out its work? Understanding the impact of a lawsuit—even a fictional one—on your organization can help you better prepare for the real-life risk."
-              ]
-            },
-          ]
-      }
-    },
-    "device-security": {
-      "title": "Device Security and Compartmentalization",
-      "score": "Your organization has scored [[X]] points in the device security and compartmentalization category.", // explanation of what this means
-      "general": {
-          "why": [
-            "Compartmentalization can take many different forms, depending on your organization and your mission.",
-            "Just as you wouldn’t store all your valuables in one desk drawer, you don’t want to keep all your sensitive data in one location, system, or platform. Implementing the principles of compartmentalization can help you keep your data safe even if your devices are hacked, attacked, or stolen.",
-            "If your organization is heavily research-based, using a dedicated \"research only\" browser can help keep online activities separate. Your staff can also make their work devices—particularly mobile devices—safer by storing data outside of the device itself. These easily implemented steps can contribute to a safer organizational culture.",
-            "As threats increase, you may want to consider more advanced options such as a virtual machine or end-point protection, both of which a technical assistance provider can set up."
-          ], // explanation of what this means
-          "eg": [
-            "ADE Worldwide has offices around the world. In some regions, up-to-date devices are reasonably priced, but in others, it’s difficult to buy affordable new technology. To help staff keep their data more secure, ADE management institutes a work-only account policy, instructing regional IT staff to create user accounts that staff should use on work devices. Only IT personnel have the ability to install software and change settings.",
-            "They also require ADE’s research staff to use a dedicated browser on their computer for work-related research, while highly sensitive information is handled only through a virtual machine."
-          ] // example scenario
-      },
-      "results": { // contains result text for this category
-        "intro": {
-          "title": "",
-          "content": [
-            "You may already be familiar with the need for fragmentation, or spreading your data across several different platforms. Another related best practice is compartmentalization, which means using several different devices or services to lessen your risk. If your staff primarily uses the same device at both work and home, or relies entirely on Google’s G Suite for your work, you should consider compartmentalizing your organization’s workflow further. Here are a few ways to do so."
-          ]
-        },
-        "below":
-          [ // contains recommendations for this level
-            {
-              "title": "Understand the connection between personal and professional use.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Members of your staff wouldn’t have the same conversations at work that they would at home or over dinner with a friend. The same rule of thumb applies when it comes to their digital lives as well. Using the same device for both personal and professional uses magnifies their risk of being targeted at both work and home.",
-                "For example, a staff member who uses their work laptop to play online games may be targeted by hackers who then have access to sensitive work files. By contrast, a staff member who is targeted for their work may find that hackers now have access to their personal files. Educating your staff on the importance of separating these two data streams is important.",
-              ]
-            },
-            {
-              "title": "Implement the right solution for your organization.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "The right solution to help your staff compartmentalize their data depends on a variety of different factors, including your budget, technical ability, and the availability of computers and smartphones in your region. Possible solutions, sorted by price and complexity, include:",
-                {
-                  "type": "ul",
-                  "items": [
-                    "Purchase dedicated work devices (laptops and/or smartphones) for staff members. (Most expensive, least complex)",
-                    "Create new work-only accounts on staff computers. (Least expensive, somewhat complex)",
-                    "Use a USB or external hard drive to load a separate operating system on staff computers. (Less expensive, most complex)"
-                  ]
-                },
-                "You will want to work with a technical assistance provider on all of these options to customize these strategies for your organization."
-              ]
-            },
-          ],
-        "ok":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Your staff is familiar with the concept of compartmentalization, and you've taken some initial steps to keep your organization’s work and personal data separate. Now, you can implement a few more changes to further strengthen that boundary.",
-              ]
-            },
-            {
-              "title": "Use a dedicated browser for different types of work.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Even within your work device, you can further compartmentalize your online footprint. One easy way to do this is to use a different browser for different types of work. This reduces the chances that an attacker can compromise one single browser and access all your staff’s search history and other data."
-              ]
-            },
-            {
-              "title": "Store less information on work devices.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Rather than storing files locally on work devices, implement ways for your staff to store their data on encrypted cloud or external storage. This lessens the risk of an attacker being able to steal a device and access all the data stored within it. We would also recommend you work with your technical assistance provider to set up a remote wipe policy, which allows you to remotely erase work accounts on staff devices if they are lost, stolen, or compromised.",
-                "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these can sometimes be compromised by bad actors. Using your native keyboard when entering information into your work device is preferable."
-              ]
-            },
-          ],
-        "exceeds":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "You’ve made great progress on helping your staff compartmentalize their personal and professional lives. Now, your goal should be full compartmentalization, so there is very little data left for outside adversaries to locate. You will need to work with a technical assistance provider on these next steps."
-              ]
-            },
-            {
-              "title": "Use a virtual machine.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "If you have access to high-speed Internet, your staff can use software such as [VMWare](links.vmware.virtualization) or [Microsoft Hypervisor](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization.",
-              ]
-            },
-            {
-              "title": "Implement biometrics, if appropriate.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Many organizations rely on passwords as the first line of defense for work devices. This is, in part, because organizations based in the United States have higher legal defenses against disclosing their passwords to government authorities. In other parts of the world, however, biometric solutions (such as scanning a fingerprint) may be more secure and less vulnerable to challenges from law enforcement and governments. If that is the case in your region, a biometric solution may be a good fit for accessing work devices. Many biometric password systems also allow administrators to maintain an active log of devices that are currently connected to their network."
-              ]
-            },
-            {
-              "title": "Incorporate end-point security solutions.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [Microsoft Defender for Endpoint](links.ms.defender) and [Bitdefender GravityZone Ultra Security Suite](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [this resource from SANS](links.sans.endpoint)."
-              ]
-            },
-          ]
-      }
-    },
-    "sware-security": {
-      "title": "Software Security",
-      "score": "Your organization has scored [[X]] points in the software security category.", // explanation of what this means
-      "general": {
-          "why": [
-            "Software is the backbone of any organization’s digital work. But using illegal, bootleg, or unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
-            "In addition to being vigilant about software, your organization can also be strict about where software comes from, who can install it, and how it works. A technical assistance provider can help you be sure that software comes from legitimate sources and can be changed or altered only by dedicated staff members."
-          ], // explanation of what this means
-          "eg": [
-            "When ADE Worldwide opens an office in Guam, local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
-          ] // example scenario
-      },
-      "results": { // contains result text for this category
-        "below":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "You use software every day—web browsers, word processors, and numerous other types. Yet if your organization is using unlicensed, illegal, or bootleg software, you could be putting yourself at risk. While licensed software can be costly, illegal or unlicensed versions of that same software, often downloaded from the Internet, can be weaponized with malware and other threats."
-              ]
-            },
-            {
-              "title": "Apply for discounted licensed software.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [technology provider TechSoup](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
-              ]
-            },
-            {
-              "title": "Use free, open-source software.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Many of the most popular paid programs have free, open- source alternatives. We’ve listed a few below. These programs aren’t the right fit for every organization, so do your research before relying on them.",
-                {
-                  "type": "ul",
-                  "items": [
-                    "Microsoft Office can be replaced with [OpenOffice](links.apache.oofice) or [LibreOffice](links.libre.office)",
-                    "Adobe Photoshop can be replaced with Canva (available with a nonprofit license), Sumopaint, and Pixlr",
-                    "Microsoft Outlook can be replaced with [Mozilla Thunderbird](links.mozilla.tbird)"
-                  ]
-                },
-                "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
-              ]
-            },
-          ],
-        "ok":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "You’ve cracked down on your organization’s use of illegal or unlicensed software and found alternatives. Now, you can take steps to protect your work systems from untrusted software, too."
-              ]
-            },
-            {
-              "title": "Be strict about who can install software.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Working with a technical assistance provider, you can restrict your staff from installing software on their work devices. One of the easiest ways to do this by making sure your staff members are not administrators of their own work devices. Instead, make sure the administrator is a trusted person in the office, preferably with some technical experience. You’ll also want to designate a backup administrator with access in case your primary administrator isn’t unavailable and you need to make changes to a work device.",
-                "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft and Apple. Any software you do download should be digitally signed, although be aware that this is not a guarantee of safety."
-              ]
-            },
-          ],
-        "exceeds":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "You are now regulating the type of software used by your organization and you’re ready to further strengthen your security posture. There are several steps you can take."
-              ]
-            },
-            {
-              "title": "Establish a strong policy on the use of personal devices.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "While convenience is important, allowing staff members to connect their personal devices to work networks quickly transforms your office system into the equivalent of an Internet cafe. Instead, establish a strong policy that explicitly states which devices employees may use and where, including when working from home. This reduces the risk that staff will unwittingly connect a compromised device to your network. You may also consider running a separate, less secure WiFi network."
-              ]
-            },
-            {
-              "title": "Take steps to tighten your oversight.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Working with a technical assistance provider, you may want to consider implementing a “zero trust” network, which allows an individual to connect to your internal systems only after they go through an authentication process. One way to do this is through single sign-on, which uses a single password across accounts and devices. Alternatively, you can establish a network administrator role to make sure that all staff log in through a central domain that can track and manage who is connected. Last, consider using device management software to remotely install needed software and wipe work devices as needed."
-              ]
-            },
-          ]
-      }
-    },
-    "data-encrypt": {
+//    "device-security": {
+//      "title": "Device Security and Compartmentalization",
+//      "score": "Your organization has scored [[X]] points in the device security and compartmentalization category.", // explanation of what this means
+//      "general": {
+//          "why": [
+//            "Compartmentalization can take many different forms, depending on your organization and your mission.",
+//            "Just as you wouldn’t store all your valuables in one desk drawer, you don’t want to keep all your sensitive data in one location, system, or platform. Implementing the principles of compartmentalization can help you keep your data safe even if your devices are hacked, attacked, or stolen.",
+//            "If your organization is heavily research-based, using a dedicated \"research only\" browser can help keep online activities separate. Your staff can also make their work devices—particularly mobile devices—safer by storing data outside of the device itself. These easily implemented steps can contribute to a safer organizational culture.",
+//            "As threats increase, you may want to consider more advanced options such as a virtual machine or end-point protection, both of which a technical assistance provider can set up."
+//          ], // explanation of what this means
+//          "eg": [
+//            "ADE Worldwide has offices around the world. In some regions, up-to-date devices are reasonably priced, but in others, it’s difficult to buy affordable new technology. To help staff keep their data more secure, ADE management institutes a work-only account policy, instructing regional IT staff to create user accounts that staff should use on work devices. Only IT personnel have the ability to install software and change settings.",
+//            "They also require ADE’s research staff to use a dedicated browser on their computer for work-related research, while highly sensitive information is handled only through a virtual machine."
+//          ] // example scenario
+//      },
+//      "results": { // contains result text for this category
+//        "intro": {
+//          "title": "",
+//          "content": [
+//            "You may already be familiar with the need for fragmentation, or spreading your data across several different platforms. Another related best practice is compartmentalization, which means using several different devices or services to lessen your risk. If your staff primarily uses the same device at both work and home, or relies entirely on Google’s G Suite for your work, you should consider compartmentalizing your organization’s workflow further. Here are a few ways to do so."
+//          ]
+//        },
+//        "below":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "Understand the connection between personal and professional use.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Members of your staff wouldn’t have the same conversations at work that they would at home or over dinner with a friend. The same rule of thumb applies when it comes to their digital lives as well. Using the same device for both personal and professional uses magnifies their risk of being targeted at both work and home.",
+//                "For example, a staff member who uses their work laptop to play online games may be targeted by hackers who then have access to sensitive work files. By contrast, a staff member who is targeted for their work may find that hackers now have access to their personal files. Educating your staff on the importance of separating these two data streams is important.",
+//              ]
+//            },
+//            {
+//              "title": "Implement the right solution for your organization.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "The right solution to help your staff compartmentalize their data depends on a variety of different factors, including your budget, technical ability, and the availability of computers and smartphones in your region. Possible solutions, sorted by price and complexity, include:",
+//                {
+//                  "type": "ul",
+//                  "items": [
+//                    "Purchase dedicated work devices (laptops and/or smartphones) for staff members. (Most expensive, least complex)",
+//                    "Create new work-only accounts on staff computers. (Least expensive, somewhat complex)",
+//                    "Use a USB or external hard drive to load a separate operating system on staff computers. (Less expensive, most complex)"
+//                  ]
+//                },
+//                "You will want to work with a technical assistance provider on all of these options to customize these strategies for your organization."
+//              ]
+//            },
+//          ],
+//        "ok":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Your staff is familiar with the concept of compartmentalization, and you've taken some initial steps to keep your organization’s work and personal data separate. Now, you can implement a few more changes to further strengthen that boundary.",
+//              ]
+//            },
+//            {
+//              "title": "Use a dedicated browser for different types of work.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Even within your work device, you can further compartmentalize your online footprint. One easy way to do this is to use a different browser for different types of work. This reduces the chances that an attacker can compromise one single browser and access all your staff’s search history and other data."
+//              ]
+//            },
+//            {
+//              "title": "Store less information on work devices.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Rather than storing files locally on work devices, implement ways for your staff to store their data on encrypted cloud or external storage. This lessens the risk of an attacker being able to steal a device and access all the data stored within it. We would also recommend you work with your technical assistance provider to set up a remote wipe policy, which allows you to remotely erase work accounts on staff devices if they are lost, stolen, or compromised.",
+//                "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these can sometimes be compromised by bad actors. Using your native keyboard when entering information into your work device is preferable."
+//              ]
+//            },
+//          ],
+//        "exceeds":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "You’ve made great progress on helping your staff compartmentalize their personal and professional lives. Now, your goal should be full compartmentalization, so there is very little data left for outside adversaries to locate. You will need to work with a technical assistance provider on these next steps."
+//              ]
+//            },
+//            {
+//              "title": "Use a virtual machine.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "If you have access to high-speed Internet, your staff can use software such as [VMWare](links.vmware.virtualization) or [Microsoft Hypervisor](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization.",
+//              ]
+//            },
+//            {
+//              "title": "Implement biometrics, if appropriate.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Many organizations rely on passwords as the first line of defense for work devices. This is, in part, because organizations based in the United States have higher legal defenses against disclosing their passwords to government authorities. In other parts of the world, however, biometric solutions (such as scanning a fingerprint) may be more secure and less vulnerable to challenges from law enforcement and governments. If that is the case in your region, a biometric solution may be a good fit for accessing work devices. Many biometric password systems also allow administrators to maintain an active log of devices that are currently connected to their network."
+//              ]
+//            },
+//            {
+//              "title": "Incorporate end-point security solutions.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [Microsoft Defender for Endpoint](links.ms.defender) and [Bitdefender GravityZone Ultra Security Suite](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [this resource from SANS](links.sans.endpoint)."
+//              ]
+//            },
+//          ]
+//      }
+//    },
+//    "sware-security": {
+//      "title": "Software Security",
+//      "score": "Your organization has scored [[X]] points in the software security category.", // explanation of what this means
+//      "general": {
+//          "why": [
+//            "Software is the backbone of any organization’s digital work. But using illegal, bootleg, or unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
+//            "In addition to being vigilant about software, your organization can also be strict about where software comes from, who can install it, and how it works. A technical assistance provider can help you be sure that software comes from legitimate sources and can be changed or altered only by dedicated staff members."
+//          ], // explanation of what this means
+//          "eg": [
+//            "When ADE Worldwide opens an office in Guam, local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
+//          ] // example scenario
+//      },
+//      "results": { // contains result text for this category
+//        "below":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "You use software every day—web browsers, word processors, and numerous other types. Yet if your organization is using unlicensed, illegal, or bootleg software, you could be putting yourself at risk. While licensed software can be costly, illegal or unlicensed versions of that same software, often downloaded from the Internet, can be weaponized with malware and other threats."
+//              ]
+//            },
+//            {
+//              "title": "Apply for discounted licensed software.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [technology provider TechSoup](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
+//              ]
+//            },
+//            {
+//              "title": "Use free, open-source software.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Many of the most popular paid programs have free, open- source alternatives. We’ve listed a few below. These programs aren’t the right fit for every organization, so do your research before relying on them.",
+//                {
+//                  "type": "ul",
+//                  "items": [
+//                    "Microsoft Office can be replaced with [OpenOffice](links.apache.oofice) or [LibreOffice](links.libre.office)",
+//                    "Adobe Photoshop can be replaced with Canva (available with a nonprofit license), Sumopaint, and Pixlr",
+//                    "Microsoft Outlook can be replaced with [Mozilla Thunderbird](links.mozilla.tbird)"
+//                  ]
+//                },
+//                "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
+//              ]
+//            },
+//          ],
+//        "ok":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "You’ve cracked down on your organization’s use of illegal or unlicensed software and found alternatives. Now, you can take steps to protect your work systems from untrusted software, too."
+//              ]
+//            },
+//            {
+//              "title": "Be strict about who can install software.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Working with a technical assistance provider, you can restrict your staff from installing software on their work devices. One of the easiest ways to do this by making sure your staff members are not administrators of their own work devices. Instead, make sure the administrator is a trusted person in the office, preferably with some technical experience. You’ll also want to designate a backup administrator with access in case your primary administrator isn’t unavailable and you need to make changes to a work device.",
+//                "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft and Apple. Any software you do download should be digitally signed, although be aware that this is not a guarantee of safety."
+//              ]
+//            },
+//          ],
+//        "exceeds":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "You are now regulating the type of software used by your organization and you’re ready to further strengthen your security posture. There are several steps you can take."
+//              ]
+//            },
+//            {
+//              "title": "Establish a strong policy on the use of personal devices.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "While convenience is important, allowing staff members to connect their personal devices to work networks quickly transforms your office system into the equivalent of an Internet cafe. Instead, establish a strong policy that explicitly states which devices employees may use and where, including when working from home. This reduces the risk that staff will unwittingly connect a compromised device to your network. You may also consider running a separate, less secure WiFi network."
+//              ]
+//            },
+//            {
+//              "title": "Take steps to tighten your oversight.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Working with a technical assistance provider, you may want to consider implementing a “zero trust” network, which allows an individual to connect to your internal systems only after they go through an authentication process. One way to do this is through single sign-on, which uses a single password across accounts and devices. Alternatively, you can establish a network administrator role to make sure that all staff log in through a central domain that can track and manage who is connected. Last, consider using device management software to remotely install needed software and wipe work devices as needed."
+//              ]
+//            },
+//          ]
+//      }
+//    },
+    "data-encryption": {
       "title": "Data Encryption",
       "score": "Your organization has scored [[X]] points in the data encryption category.", // explanation of what this means
       "general": {
@@ -3328,7 +3413,51 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-    "pword-auth": {
+      "device-compartmentalization": {
+          "title": "Compartmentalization",
+          "score": "",
+          "general": {
+              "why": [
+                  "",
+              ],
+              "eg": [
+                  "",
+              ]
+          },
+          "results": {
+              "below": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  },
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  }
+              ],
+              "ok": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]
+                  }
+              ],
+              "exceeds": [
+                  {
+                      "title": "",
+                      "content": [
+                          "",
+                      ]                      
+                  }
+              ]
+          }
+      },
+    "passwords-authentication": {
       "title": "Password Management and Authentication",
       "score": "Your organization has scored [[X]] points in the password management and authentication category.", // explanation of what this means
       "general": {
@@ -3418,7 +3547,7 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-    "updates": {
+    "system-updates": {
       "title": "Updates",
       "score": "Your organization has scored [[X]] points in the updates category.", // explanation of what this means
       "general": {
@@ -3561,7 +3690,7 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-    "3rd-party": {
+    "third-party": {
       "title": "Third-Party Services",
       "score": "Your organization has scored [[X]] points in the third-party services category.", // explanation of what this means
       "general": {
@@ -3637,7 +3766,7 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-    "vpn": {
+    "vp-network": {
       "title": "Virtual Private Network (VPN)",
       "score": "Your organization has scored [[X]] points in the Virtual Private Network (VPN) category.", // explanation of what this means
       "general": {
@@ -3722,74 +3851,74 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-    "assoc-risks": {
-      "title": "Associated Risks",
-      "score": "Your organization has scored [[X]] points in the associated risks category.", // explanation of what this means
-      "general": {
-          "why": [
-            "Digital risks can quickly accelerate into actual physical risks. Understanding how to detect, track, and mitigate these types of risks can help keep your staff safe. This may require a greater degree of vigilance on your part than normal, but implementing a set of policies and incorporating some tools into your workflow can help enormously."
-          ], // explanation of what this means
-          "eg": [
-            "The ADE Worldwide office in Albania has become the target of a local smear campaign by a billionaire industrialist whose company has been dumping chemicals into agricultural water supplies. The wealthy magnate claims that ADE is a shell company created by British intelligence agents looking to investigate him. As an independent nonprofit, ADE objects, but not before a gang of online trolls begins harassing local ADE workers.",
-            "To manage the harassment campaign, ADE institutes a harassment policy, requiring staff to report any personal or professional online abuse. Then, to help predict the spread of the online harassment, ADE implements several tools that allow it to closely track social media campaigns. Finally, the IT staff reviews the site for the Albanian office and removes any personally identifiable information about the staff there."
-          ] // example scenario
-      },
-      "results": { // contains result text for this category
-        "below":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Online harassment, cyberbullying, and even website hacking can all escalate into real-world physical threats or high-level cyberattacks. Though it’s tempting to disregard these events as an upsetting cost of being active online, they can pose a greater threat than you might expect. Here’s how to begin to mitigate some of those risks:"
-              ]
-            },
-            {
-              "title": "Create a threat and harassment policy.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Before an online harassment campaign escalates into violence, consider establishing an organization-wide threat and harassment policy. For example, your organization’s policy could state that any staff member who is harassed online in their personal or work life must report the incident to their supervisors. Even a single report should heighten the state of alert within the office for at least one week and cause a series of carefully documented security measures. At a minimum, organizations should capture the evidence of the harassment through screenshots, log the time and date the harassment occurred, and report the abuse to the platform used by the harassers.",
-                "You may also want to consider reporting harassment to the harasser’s ISP. Although they aren’t always obligated to act, ISPs may have the power to temporarily ban or block a customer who is violating their terms of service. Last, while not always possible, consider allowing staff members to keep their work social media profiles private, which can help reduce attacks."
-              ]
-            },
-          ],
-        "ok":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "You’ve taken some important steps to protect your staff from online harassment, abuse, and hacking. But there are additional steps you can take to anticipate and avoid future risks."
-              ]
-            },
-            {
-              "title": "Take steps to reduce emerging threats.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Staying ahead of potential adversaries can help your staff avoid distressing and stressful cyberattacks. Google and other search engines offer alerts for sensitive information that appears online, such as the last name of staff members and their home address. Other commercial services, such as [TalkWalker](links.twalker.web) and [Mention](links.mention.web), can search social media for concerning keywords. [ChangeTower](links.ctower.web) allows users to track changes to Wikipedia pages and other sites that can often be a precursor to harassment.",
-                "Although we recommend caution with LinkedIn, it can also be used as a research tool to see who is viewing staff member profiles. Within the organization, consider making specific staff information (such as using their first name and last initial) anonymous and removing headshots and other staff images."
-              ]
-            },
-          ],
-        "exceeds":
-          [ // contains recommendations for this level
-            {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "You are being proactive about protecting your staff from online harassment, abuse, and hacking. Here are two additional steps you can take to lessen this risk further:",
-              ]
-            },
-            {
-              "title": "Monitor and remove personal information online.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "If you are concerned that your staff members have personally identifiable information online, you can work with commercial providers to temporarily remove this information. Services include [Abine DeleteMe](links.deleteme.web), [PrivacyDuck](links.pduck.web), [Reputation Defender](links.repdef.web), and [Norton LifeLock](links.lifelock.web), although it is important to note that they primarily scrub data from US-based marketing and sales databases.",
-                "Staff may also want to consider creating virtual phone numbers for work purposes rather than using their personal phone numbers, including setting up online accounts and using messenger services such as WhatsApp. Google Voice and Skype can both provide virtual phone numbers."
-              ]
-            },
-            {
-              "title": "Watch for warning signs.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Staying proactive about online threats can help organizations respond more quickly when their projects or staff are targeted online. Content moderation tools including [Perspective API](links.perapi.web) and [The Coral Project](links.coral.web) can use artificial intelligence (AI) to track and score comments left on your organization’s blog or website. Tools such as [CrowdTangle](links.ctangle.web), [SMAT (Social Media Analysis Toolkit)](links.smat.kit), [Block Party](links.bparty.web), and [Babel Street](links.babelst.web) can help your organization monitor social media for misinformation campaigns about your work. A provider like [Tall Poppy](links.tpoppy.web) may be able to help you manage online harassment. And you can work with a technical assistance provider to analyze your web traffic for anomalies, such as harassers who are not hiding their real identities or are sending lots of referral traffic to your site from noted troll sites such as 8chan."
-              ]
-            },
-          ]
-      }
-    }
+//    "assoc-risks": {
+//      "title": "Associated Risks",
+//      "score": "Your organization has scored [[X]] points in the associated risks category.", // explanation of what this means
+//      "general": {
+//          "why": [
+//            "Digital risks can quickly accelerate into actual physical risks. Understanding how to detect, track, and mitigate these types of risks can help keep your staff safe. This may require a greater degree of vigilance on your part than normal, but implementing a set of policies and incorporating some tools into your workflow can help enormously."
+//          ], // explanation of what this means
+//          "eg": [
+//            "The ADE Worldwide office in Albania has become the target of a local smear campaign by a billionaire industrialist whose company has been dumping chemicals into agricultural water supplies. The wealthy magnate claims that ADE is a shell company created by British intelligence agents looking to investigate him. As an independent nonprofit, ADE objects, but not before a gang of online trolls begins harassing local ADE workers.",
+//            "To manage the harassment campaign, ADE institutes a harassment policy, requiring staff to report any personal or professional online abuse. Then, to help predict the spread of the online harassment, ADE implements several tools that allow it to closely track social media campaigns. Finally, the IT staff reviews the site for the Albanian office and removes any personally identifiable information about the staff there."
+//          ] // example scenario
+//      },
+//      "results": { // contains result text for this category
+//        "below":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Online harassment, cyberbullying, and even website hacking can all escalate into real-world physical threats or high-level cyberattacks. Though it’s tempting to disregard these events as an upsetting cost of being active online, they can pose a greater threat than you might expect. Here’s how to begin to mitigate some of those risks:"
+//              ]
+//            },
+//            {
+//              "title": "Create a threat and harassment policy.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Before an online harassment campaign escalates into violence, consider establishing an organization-wide threat and harassment policy. For example, your organization’s policy could state that any staff member who is harassed online in their personal or work life must report the incident to their supervisors. Even a single report should heighten the state of alert within the office for at least one week and cause a series of carefully documented security measures. At a minimum, organizations should capture the evidence of the harassment through screenshots, log the time and date the harassment occurred, and report the abuse to the platform used by the harassers.",
+//                "You may also want to consider reporting harassment to the harasser’s ISP. Although they aren’t always obligated to act, ISPs may have the power to temporarily ban or block a customer who is violating their terms of service. Last, while not always possible, consider allowing staff members to keep their work social media profiles private, which can help reduce attacks."
+//              ]
+//            },
+//          ],
+//        "ok":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "You’ve taken some important steps to protect your staff from online harassment, abuse, and hacking. But there are additional steps you can take to anticipate and avoid future risks."
+//              ]
+//            },
+//            {
+//              "title": "Take steps to reduce emerging threats.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Staying ahead of potential adversaries can help your staff avoid distressing and stressful cyberattacks. Google and other search engines offer alerts for sensitive information that appears online, such as the last name of staff members and their home address. Other commercial services, such as [TalkWalker](links.twalker.web) and [Mention](links.mention.web), can search social media for concerning keywords. [ChangeTower](links.ctower.web) allows users to track changes to Wikipedia pages and other sites that can often be a precursor to harassment.",
+//                "Although we recommend caution with LinkedIn, it can also be used as a research tool to see who is viewing staff member profiles. Within the organization, consider making specific staff information (such as using their first name and last initial) anonymous and removing headshots and other staff images."
+//              ]
+//            },
+//          ],
+//        "exceeds":
+//          [ // contains recommendations for this level
+//            {
+//              "title": "", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "You are being proactive about protecting your staff from online harassment, abuse, and hacking. Here are two additional steps you can take to lessen this risk further:",
+//              ]
+//            },
+//            {
+//              "title": "Monitor and remove personal information online.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "If you are concerned that your staff members have personally identifiable information online, you can work with commercial providers to temporarily remove this information. Services include [Abine DeleteMe](links.deleteme.web), [PrivacyDuck](links.pduck.web), [Reputation Defender](links.repdef.web), and [Norton LifeLock](links.lifelock.web), although it is important to note that they primarily scrub data from US-based marketing and sales databases.",
+//                "Staff may also want to consider creating virtual phone numbers for work purposes rather than using their personal phone numbers, including setting up online accounts and using messenger services such as WhatsApp. Google Voice and Skype can both provide virtual phone numbers."
+//              ]
+//            },
+//            {
+//              "title": "Watch for warning signs.", // title of this recommendation
+//              "content": [ // explanation of this recommendation
+//                "Staying proactive about online threats can help organizations respond more quickly when their projects or staff are targeted online. Content moderation tools including [Perspective API](links.perapi.web) and [The Coral Project](links.coral.web) can use artificial intelligence (AI) to track and score comments left on your organization’s blog or website. Tools such as [CrowdTangle](links.ctangle.web), [SMAT (Social Media Analysis Toolkit)](links.smat.kit), [Block Party](links.bparty.web), and [Babel Street](links.babelst.web) can help your organization monitor social media for misinformation campaigns about your work. A provider like [Tall Poppy](links.tpoppy.web) may be able to help you manage online harassment. And you can work with a technical assistance provider to analyze your web traffic for anomalies, such as harassers who are not hiding their real identities or are sending lots of referral traffic to your site from noted troll sites such as 8chan."
+//              ]
+//            },
+//          ]
+//      }
+//    }
   }
 };

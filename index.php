@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
         <!-- these may need to be moved further down or refactored -->
         <script src="assets/js/start.js"></script>
         <script src="assets/js/keyboard.js"></script>
-        <script src="assets/js/policy.js"></script>
+        <script src="assets/js/results.js"></script>
         <link rel="manifest" href="/site.webmanifest">
       </head>
       <body lang="en">

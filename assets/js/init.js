@@ -14,7 +14,7 @@ var textStore = {
 
 function updateLang(language) {
   textStore.qs = window[language+"_qs"];
-  // textStore.rs = window[language+"_rs"];
+   textStore.rs = window[language+"_rs"];
   textStore.oc = window[language+"_oc"];
 }
 
