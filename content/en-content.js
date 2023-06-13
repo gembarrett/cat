@@ -2146,43 +2146,43 @@ var en_rs = { // contains all evaluation content
   "content": {
       "your-org":{
           "title": "About Your Organization",
-          "score": "",
+          "score": "Your organization has scored [[X]] points in the About Your Organization category.",
           "general": {
               "why": [
-                  "",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque sit amet porttitor eget dolor. Elementum tempus egestas sed sed risus pretium. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Et ligula ullamcorper malesuada proin libero. Non arcu risus quis varius quam quisque id. Elementum sagittis vitae et leo. Adipiscing tristique risus nec feugiat in fermentum. Id interdum velit laoreet id donec ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Eget mi proin sed libero enim sed faucibus turpis in. A diam maecenas sed enim ut. Vel fringilla est ullamcorper eget nulla facilisi etiam. At risus viverra adipiscing at in tellus integer feugiat scelerisque. Vestibulum sed arcu non odio euismod. Semper feugiat nibh sed pulvinar proin. A erat nam at lectus urna duis convallis. Venenatis urna cursus eget nunc. Nibh ipsum consequat nisl vel pretium lectus quam id. Gravida neque convallis a cras semper auctor neque.",
               ],
               "eg": [
-                  "",
+                  "Lacinia quis vel eros donec ac. Tortor pretium viverra suspendisse potenti nullam. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. Velit dignissim sodales ut eu sem integer. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nibh nisl condimentum id venenatis. Convallis posuere morbi leo urna molestie at. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Nunc id cursus metus aliquam. Quis blandit turpis cursus in hac. Vitae sapien pellentesque habitant morbi tristique senectus et. Id ornare arcu odio ut sem. Euismod in pellentesque massa placerat. Mi eget mauris pharetra et ultrices. Habitant morbi tristique senectus et. Malesuada fames ac turpis egestas integer eget aliquet.",
               ]
           },
           "results": {
               "below": [
                   {
-                      "title": "",
+                      "title": "Determine your threat model.",
                       "content": [
-                          "",
+                          "Tellus molestie nunc non blandit massa. Sagittis nisl rhoncus mattis rhoncus urna neque. Dignissim suspendisse in est ante in nibh mauris. Amet venenatis urna cursus eget nunc. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Vestibulum lorem sed risus ultricies tristique. Mattis rhoncus urna neque viverra justo nec. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Eget egestas purus viverra accumsan in. Arcu vitae elementum curabitur vitae.",
                       ]
                   },
                   {
-                      "title": "",
+                      "title": "Create a risk matrix.",
                       "content": [
-                          "",
+                          "Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Sed elementum tempus egestas sed sed risus pretium quam. Consequat mauris nunc congue nisi vitae suscipit. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Sed risus ultricies tristique nulla aliquet enim tortor. Scelerisque fermentum dui faucibus in ornare. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Leo vel fringilla est ullamcorper. Justo donec enim diam vulputate ut. Tortor at risus viverra adipiscing.",
                       ]
                   }
               ],
               "ok": [
                   {
-                      "title": "",
+                      "title": "Develop an incident response plan.",
                       "content": [
-                          "",
+                          "Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Duis tristique sollicitudin nibh sit amet commodo nulla. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ut enim blandit volutpat maecenas. Elit ullamcorper dignissim cras tincidunt lobortis. Eget nullam non nisi est sit amet facilisis magna etiam. Accumsan sit amet nulla facilisi morbi. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Lacus sed viverra tellus in hac habitasse platea. Aliquam eleifend mi in nulla. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tempor id eu nisl nunc mi ipsum faucibus vitae. Iaculis eu non diam phasellus vestibulum lorem. Faucibus in ornare quam viverra orci sagittis eu volutpat. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
                       ]
                   }
               ],
               "exceeds": [
                   {
-                      "title": "",
+                      "title": "Run a tabletop exercise.",
                       "content": [
-                          "",
+                          "Aliquam vestibulum morbi blandit cursus. Id volutpat lacus laoreet non curabitur gravida. Id porta nibh venenatis cras sed felis eget velit. Vulputate odio ut enim blandit volutpat maecenas. Nam at lectus urna duis. Etiam erat velit scelerisque in dictum non consectetur a. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Varius quam quisque id diam vel. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Quis commodo odio aenean sed. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Semper auctor neque vitae tempus quam pellentesque nec nam. Eleifend donec pretium vulputate sapien nec. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Lacinia at quis risus sed vulputate odio ut enim blandit. Sed vulputate odio ut enim. Urna molestie at elementum eu. Nam libero justo laoreet sit amet.",
                       ]                      
                   }
               ]
@@ -3120,230 +3120,88 @@ var en_rs = { // contains all evaluation content
           ]
       }
     },
-      "installing-software": {
-          "title": "Installing Software",
-          "score": "",
-          "general": {
-              "why": [
-                  "",
-              ],
-              "eg": [
-                  "",
-              ]
-          },
-          "results": {
-              "below": [
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]
-                  },
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]
-                  }
-              ],
-              "ok": [
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]
-                  }
-              ],
-              "exceeds": [
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]                      
-                  }
-              ]
-          }
+    "installing-software": {
+      "title": "Installing software",
+      "score": "Your organization has scored [[X]] points in the Installing Software category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Software is the backbone of any organization’s digital work. But using illegal, bootleg, or unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
+            "In addition to being vigilant about software, your organization can also be strict about where software comes from, who can install it, and how it works. A technical assistance provider can help you be sure that software comes from legitimate sources and can be changed or altered only by dedicated staff members."
+          ], // explanation of what this means
+          "eg": [
+            "When ADE Worldwide opens an office in Guam, local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
+          ] // example scenario
       },
-//    "device-security": {
-//      "title": "Device Security and Compartmentalization",
-//      "score": "Your organization has scored [[X]] points in the device security and compartmentalization category.", // explanation of what this means
-//      "general": {
-//          "why": [
-//            "Compartmentalization can take many different forms, depending on your organization and your mission.",
-//            "Just as you wouldn’t store all your valuables in one desk drawer, you don’t want to keep all your sensitive data in one location, system, or platform. Implementing the principles of compartmentalization can help you keep your data safe even if your devices are hacked, attacked, or stolen.",
-//            "If your organization is heavily research-based, using a dedicated \"research only\" browser can help keep online activities separate. Your staff can also make their work devices—particularly mobile devices—safer by storing data outside of the device itself. These easily implemented steps can contribute to a safer organizational culture.",
-//            "As threats increase, you may want to consider more advanced options such as a virtual machine or end-point protection, both of which a technical assistance provider can set up."
-//          ], // explanation of what this means
-//          "eg": [
-//            "ADE Worldwide has offices around the world. In some regions, up-to-date devices are reasonably priced, but in others, it’s difficult to buy affordable new technology. To help staff keep their data more secure, ADE management institutes a work-only account policy, instructing regional IT staff to create user accounts that staff should use on work devices. Only IT personnel have the ability to install software and change settings.",
-//            "They also require ADE’s research staff to use a dedicated browser on their computer for work-related research, while highly sensitive information is handled only through a virtual machine."
-//          ] // example scenario
-//      },
-//      "results": { // contains result text for this category
-//        "intro": {
-//          "title": "",
-//          "content": [
-//            "You may already be familiar with the need for fragmentation, or spreading your data across several different platforms. Another related best practice is compartmentalization, which means using several different devices or services to lessen your risk. If your staff primarily uses the same device at both work and home, or relies entirely on Google’s G Suite for your work, you should consider compartmentalizing your organization’s workflow further. Here are a few ways to do so."
-//          ]
-//        },
-//        "below":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "Understand the connection between personal and professional use.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Members of your staff wouldn’t have the same conversations at work that they would at home or over dinner with a friend. The same rule of thumb applies when it comes to their digital lives as well. Using the same device for both personal and professional uses magnifies their risk of being targeted at both work and home.",
-//                "For example, a staff member who uses their work laptop to play online games may be targeted by hackers who then have access to sensitive work files. By contrast, a staff member who is targeted for their work may find that hackers now have access to their personal files. Educating your staff on the importance of separating these two data streams is important.",
-//              ]
-//            },
-//            {
-//              "title": "Implement the right solution for your organization.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "The right solution to help your staff compartmentalize their data depends on a variety of different factors, including your budget, technical ability, and the availability of computers and smartphones in your region. Possible solutions, sorted by price and complexity, include:",
-//                {
-//                  "type": "ul",
-//                  "items": [
-//                    "Purchase dedicated work devices (laptops and/or smartphones) for staff members. (Most expensive, least complex)",
-//                    "Create new work-only accounts on staff computers. (Least expensive, somewhat complex)",
-//                    "Use a USB or external hard drive to load a separate operating system on staff computers. (Less expensive, most complex)"
-//                  ]
-//                },
-//                "You will want to work with a technical assistance provider on all of these options to customize these strategies for your organization."
-//              ]
-//            },
-//          ],
-//        "ok":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Your staff is familiar with the concept of compartmentalization, and you've taken some initial steps to keep your organization’s work and personal data separate. Now, you can implement a few more changes to further strengthen that boundary.",
-//              ]
-//            },
-//            {
-//              "title": "Use a dedicated browser for different types of work.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Even within your work device, you can further compartmentalize your online footprint. One easy way to do this is to use a different browser for different types of work. This reduces the chances that an attacker can compromise one single browser and access all your staff’s search history and other data."
-//              ]
-//            },
-//            {
-//              "title": "Store less information on work devices.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Rather than storing files locally on work devices, implement ways for your staff to store their data on encrypted cloud or external storage. This lessens the risk of an attacker being able to steal a device and access all the data stored within it. We would also recommend you work with your technical assistance provider to set up a remote wipe policy, which allows you to remotely erase work accounts on staff devices if they are lost, stolen, or compromised.",
-//                "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these can sometimes be compromised by bad actors. Using your native keyboard when entering information into your work device is preferable."
-//              ]
-//            },
-//          ],
-//        "exceeds":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "You’ve made great progress on helping your staff compartmentalize their personal and professional lives. Now, your goal should be full compartmentalization, so there is very little data left for outside adversaries to locate. You will need to work with a technical assistance provider on these next steps."
-//              ]
-//            },
-//            {
-//              "title": "Use a virtual machine.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "If you have access to high-speed Internet, your staff can use software such as [VMWare](links.vmware.virtualization) or [Microsoft Hypervisor](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization.",
-//              ]
-//            },
-//            {
-//              "title": "Implement biometrics, if appropriate.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Many organizations rely on passwords as the first line of defense for work devices. This is, in part, because organizations based in the United States have higher legal defenses against disclosing their passwords to government authorities. In other parts of the world, however, biometric solutions (such as scanning a fingerprint) may be more secure and less vulnerable to challenges from law enforcement and governments. If that is the case in your region, a biometric solution may be a good fit for accessing work devices. Many biometric password systems also allow administrators to maintain an active log of devices that are currently connected to their network."
-//              ]
-//            },
-//            {
-//              "title": "Incorporate end-point security solutions.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [Microsoft Defender for Endpoint](links.ms.defender) and [Bitdefender GravityZone Ultra Security Suite](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [this resource from SANS](links.sans.endpoint)."
-//              ]
-//            },
-//          ]
-//      }
-//    },
-//    "sware-security": {
-//      "title": "Software Security",
-//      "score": "Your organization has scored [[X]] points in the software security category.", // explanation of what this means
-//      "general": {
-//          "why": [
-//            "Software is the backbone of any organization’s digital work. But using illegal, bootleg, or unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
-//            "In addition to being vigilant about software, your organization can also be strict about where software comes from, who can install it, and how it works. A technical assistance provider can help you be sure that software comes from legitimate sources and can be changed or altered only by dedicated staff members."
-//          ], // explanation of what this means
-//          "eg": [
-//            "When ADE Worldwide opens an office in Guam, local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
-//          ] // example scenario
-//      },
-//      "results": { // contains result text for this category
-//        "below":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "You use software every day—web browsers, word processors, and numerous other types. Yet if your organization is using unlicensed, illegal, or bootleg software, you could be putting yourself at risk. While licensed software can be costly, illegal or unlicensed versions of that same software, often downloaded from the Internet, can be weaponized with malware and other threats."
-//              ]
-//            },
-//            {
-//              "title": "Apply for discounted licensed software.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [technology provider TechSoup](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
-//              ]
-//            },
-//            {
-//              "title": "Use free, open-source software.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Many of the most popular paid programs have free, open- source alternatives. We’ve listed a few below. These programs aren’t the right fit for every organization, so do your research before relying on them.",
-//                {
-//                  "type": "ul",
-//                  "items": [
-//                    "Microsoft Office can be replaced with [OpenOffice](links.apache.oofice) or [LibreOffice](links.libre.office)",
-//                    "Adobe Photoshop can be replaced with Canva (available with a nonprofit license), Sumopaint, and Pixlr",
-//                    "Microsoft Outlook can be replaced with [Mozilla Thunderbird](links.mozilla.tbird)"
-//                  ]
-//                },
-//                "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
-//              ]
-//            },
-//          ],
-//        "ok":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "You’ve cracked down on your organization’s use of illegal or unlicensed software and found alternatives. Now, you can take steps to protect your work systems from untrusted software, too."
-//              ]
-//            },
-//            {
-//              "title": "Be strict about who can install software.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Working with a technical assistance provider, you can restrict your staff from installing software on their work devices. One of the easiest ways to do this by making sure your staff members are not administrators of their own work devices. Instead, make sure the administrator is a trusted person in the office, preferably with some technical experience. You’ll also want to designate a backup administrator with access in case your primary administrator isn’t unavailable and you need to make changes to a work device.",
-//                "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft and Apple. Any software you do download should be digitally signed, although be aware that this is not a guarantee of safety."
-//              ]
-//            },
-//          ],
-//        "exceeds":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "You are now regulating the type of software used by your organization and you’re ready to further strengthen your security posture. There are several steps you can take."
-//              ]
-//            },
-//            {
-//              "title": "Establish a strong policy on the use of personal devices.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "While convenience is important, allowing staff members to connect their personal devices to work networks quickly transforms your office system into the equivalent of an Internet cafe. Instead, establish a strong policy that explicitly states which devices employees may use and where, including when working from home. This reduces the risk that staff will unwittingly connect a compromised device to your network. You may also consider running a separate, less secure WiFi network."
-//              ]
-//            },
-//            {
-//              "title": "Take steps to tighten your oversight.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Working with a technical assistance provider, you may want to consider implementing a “zero trust” network, which allows an individual to connect to your internal systems only after they go through an authentication process. One way to do this is through single sign-on, which uses a single password across accounts and devices. Alternatively, you can establish a network administrator role to make sure that all staff log in through a central domain that can track and manage who is connected. Last, consider using device management software to remotely install needed software and wipe work devices as needed."
-//              ]
-//            },
-//          ]
-//      }
-//    },
+      "results": { // contains result text for this category
+        "below":
+          [ // contains recommendations for this level
+            {
+              "title": "", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "You use software every day—web browsers, word processors, and numerous other types. Yet if your organization is using unlicensed, illegal, or bootleg software, you could be putting yourself at risk. While licensed software can be costly, illegal or unlicensed versions of that same software, often downloaded from the Internet, can be weaponized with malware and other threats."
+              ]
+            },
+            {
+              "title": "Apply for discounted licensed software.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [technology provider TechSoup](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
+              ]
+            },
+            {
+              "title": "Use free, open-source software.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Many of the most popular paid programs have free, open- source alternatives. We’ve listed a few below. These programs aren’t the right fit for every organization, so do your research before relying on them.",
+                {
+                  "type": "ul",
+                  "items": [
+                    "Microsoft Office can be replaced with [OpenOffice](links.apache.oofice) or [LibreOffice](links.libre.office)",
+                    "Adobe Photoshop can be replaced with Canva (available with a nonprofit license), Sumopaint, and Pixlr",
+                    "Microsoft Outlook can be replaced with [Mozilla Thunderbird](links.mozilla.tbird)"
+                  ]
+                },
+                "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
+              ]
+            },
+          ],
+        "ok":
+          [ // contains recommendations for this level
+            {
+              "title": "", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "You’ve cracked down on your organization’s use of illegal or unlicensed software and found alternatives. Now, you can take steps to protect your work systems from untrusted software, too."
+              ]
+            },
+            {
+              "title": "Be strict about who can install software.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Working with a technical assistance provider, you can restrict your staff from installing software on their work devices. One of the easiest ways to do this by making sure your staff members are not administrators of their own work devices. Instead, make sure the administrator is a trusted person in the office, preferably with some technical experience. You’ll also want to designate a backup administrator with access in case your primary administrator isn’t unavailable and you need to make changes to a work device.",
+                "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft and Apple. Any software you do download should be digitally signed, although be aware that this is not a guarantee of safety."
+              ]
+            },
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
+            {
+              "title": "", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "You are now regulating the type of software used by your organization and you’re ready to further strengthen your security posture. There are several steps you can take."
+              ]
+            },
+            {
+              "title": "Establish a strong policy on the use of personal devices.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "While convenience is important, allowing staff members to connect their personal devices to work networks quickly transforms your office system into the equivalent of an Internet cafe. Instead, establish a strong policy that explicitly states which devices employees may use and where, including when working from home. This reduces the risk that staff will unwittingly connect a compromised device to your network. You may also consider running a separate, less secure WiFi network."
+              ]
+            },
+            {
+              "title": "Take steps to tighten your oversight.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Working with a technical assistance provider, you may want to consider implementing a “zero trust” network, which allows an individual to connect to your internal systems only after they go through an authentication process. One way to do this is through single sign-on, which uses a single password across accounts and devices. Alternatively, you can establish a network administrator role to make sure that all staff log in through a central domain that can track and manage who is connected. Last, consider using device management software to remotely install needed software and wipe work devices as needed."
+              ]
+            },
+          ]
+      }
+    },
     "data-encryption": {
       "title": "Data Encryption",
       "score": "Your organization has scored [[X]] points in the data encryption category.", // explanation of what this means
@@ -3414,49 +3272,103 @@ var en_rs = { // contains all evaluation content
       }
     },
       "device-compartmentalization": {
-          "title": "Compartmentalization",
-          "score": "",
-          "general": {
-              "why": [
-                  "",
-              ],
-              "eg": [
-                  "",
-              ]
-          },
-          "results": {
-              "below": [
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]
-                  },
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]
-                  }
-              ],
-              "ok": [
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]
-                  }
-              ],
-              "exceeds": [
-                  {
-                      "title": "",
-                      "content": [
-                          "",
-                      ]                      
-                  }
-              ]
-          }
+      "title": "Device Compartmentalization",
+      "score": "Your organization has scored [[X]] points in the Device Compartmentalization category.", // explanation of what this means
+      "general": {
+          "why": [
+            "Compartmentalization can take many different forms, depending on your organization and your mission.",
+            "Just as you wouldn’t store all your valuables in one desk drawer, you don’t want to keep all your sensitive data in one location, system, or platform. Implementing the principles of compartmentalization can help you keep your data safe even if your devices are hacked, attacked, or stolen.",
+            "If your organization is heavily research-based, using a dedicated \"research only\" browser can help keep online activities separate. Your staff can also make their work devices—particularly mobile devices—safer by storing data outside of the device itself. These easily implemented steps can contribute to a safer organizational culture.",
+            "As threats increase, you may want to consider more advanced options such as a virtual machine or end-point protection, both of which a technical assistance provider can set up."
+          ], // explanation of what this means
+          "eg": [
+            "ADE Worldwide has offices around the world. In some regions, up-to-date devices are reasonably priced, but in others, it’s difficult to buy affordable new technology. To help staff keep their data more secure, ADE management institutes a work-only account policy, instructing regional IT staff to create user accounts that staff should use on work devices. Only IT personnel have the ability to install software and change settings.",
+            "They also require ADE’s research staff to use a dedicated browser on their computer for work-related research, while highly sensitive information is handled only through a virtual machine."
+          ] // example scenario
       },
+      "results": { // contains result text for this category
+        "intro": {
+          "title": "",
+          "content": [
+            "You may already be familiar with the need for fragmentation, or spreading your data across several different platforms. Another related best practice is compartmentalization, which means using several different devices or services to lessen your risk. If your staff primarily uses the same device at both work and home, or relies entirely on Google’s G Suite for your work, you should consider compartmentalizing your organization’s workflow further. Here are a few ways to do so."
+          ]
+        },
+        "below":
+          [ // contains recommendations for this level
+            {
+              "title": "Understand the connection between personal and professional use.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Members of your staff wouldn’t have the same conversations at work that they would at home or over dinner with a friend. The same rule of thumb applies when it comes to their digital lives as well. Using the same device for both personal and professional uses magnifies their risk of being targeted at both work and home.",
+                "For example, a staff member who uses their work laptop to play online games may be targeted by hackers who then have access to sensitive work files. By contrast, a staff member who is targeted for their work may find that hackers now have access to their personal files. Educating your staff on the importance of separating these two data streams is important.",
+              ]
+            },
+            {
+              "title": "Implement the right solution for your organization.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "The right solution to help your staff compartmentalize their data depends on a variety of different factors, including your budget, technical ability, and the availability of computers and smartphones in your region. Possible solutions, sorted by price and complexity, include:",
+                {
+                  "type": "ul",
+                  "items": [
+                    "Purchase dedicated work devices (laptops and/or smartphones) for staff members. (Most expensive, least complex)",
+                    "Create new work-only accounts on staff computers. (Least expensive, somewhat complex)",
+                    "Use a USB or external hard drive to load a separate operating system on staff computers. (Less expensive, most complex)"
+                  ]
+                },
+                "You will want to work with a technical assistance provider on all of these options to customize these strategies for your organization."
+              ]
+            },
+          ],
+        "ok":
+          [ // contains recommendations for this level
+            {
+              "title": "", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Your staff is familiar with the concept of compartmentalization, and you've taken some initial steps to keep your organization’s work and personal data separate. Now, you can implement a few more changes to further strengthen that boundary.",
+              ]
+            },
+            {
+              "title": "Use a dedicated browser for different types of work.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Even within your work device, you can further compartmentalize your online footprint. One easy way to do this is to use a different browser for different types of work. This reduces the chances that an attacker can compromise one single browser and access all your staff’s search history and other data."
+              ]
+            },
+            {
+              "title": "Store less information on work devices.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Rather than storing files locally on work devices, implement ways for your staff to store their data on encrypted cloud or external storage. This lessens the risk of an attacker being able to steal a device and access all the data stored within it. We would also recommend you work with your technical assistance provider to set up a remote wipe policy, which allows you to remotely erase work accounts on staff devices if they are lost, stolen, or compromised.",
+                "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these can sometimes be compromised by bad actors. Using your native keyboard when entering information into your work device is preferable."
+              ]
+            },
+          ],
+        "exceeds":
+          [ // contains recommendations for this level
+            {
+              "title": "", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "You’ve made great progress on helping your staff compartmentalize their personal and professional lives. Now, your goal should be full compartmentalization, so there is very little data left for outside adversaries to locate. You will need to work with a technical assistance provider on these next steps."
+              ]
+            },
+            {
+              "title": "Use a virtual machine.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "If you have access to high-speed Internet, your staff can use software such as [VMWare](links.vmware.virtualization) or [Microsoft Hypervisor](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization.",
+              ]
+            },
+            {
+              "title": "Implement biometrics, if appropriate.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Many organizations rely on passwords as the first line of defense for work devices. This is, in part, because organizations based in the United States have higher legal defenses against disclosing their passwords to government authorities. In other parts of the world, however, biometric solutions (such as scanning a fingerprint) may be more secure and less vulnerable to challenges from law enforcement and governments. If that is the case in your region, a biometric solution may be a good fit for accessing work devices. Many biometric password systems also allow administrators to maintain an active log of devices that are currently connected to their network."
+              ]
+            },
+            {
+              "title": "Incorporate end-point security solutions.", // title of this recommendation
+              "content": [ // explanation of this recommendation
+                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [Microsoft Defender for Endpoint](links.ms.defender) and [Bitdefender GravityZone Ultra Security Suite](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [this resource from SANS](links.sans.endpoint)."
+              ]
+            },
+          ]
+      }
+    },
     "passwords-authentication": {
       "title": "Password Management and Authentication",
       "score": "Your organization has scored [[X]] points in the password management and authentication category.", // explanation of what this means
@@ -3850,75 +3762,6 @@ var en_rs = { // contains all evaluation content
             },
           ]
       }
-    },
-//    "assoc-risks": {
-//      "title": "Associated Risks",
-//      "score": "Your organization has scored [[X]] points in the associated risks category.", // explanation of what this means
-//      "general": {
-//          "why": [
-//            "Digital risks can quickly accelerate into actual physical risks. Understanding how to detect, track, and mitigate these types of risks can help keep your staff safe. This may require a greater degree of vigilance on your part than normal, but implementing a set of policies and incorporating some tools into your workflow can help enormously."
-//          ], // explanation of what this means
-//          "eg": [
-//            "The ADE Worldwide office in Albania has become the target of a local smear campaign by a billionaire industrialist whose company has been dumping chemicals into agricultural water supplies. The wealthy magnate claims that ADE is a shell company created by British intelligence agents looking to investigate him. As an independent nonprofit, ADE objects, but not before a gang of online trolls begins harassing local ADE workers.",
-//            "To manage the harassment campaign, ADE institutes a harassment policy, requiring staff to report any personal or professional online abuse. Then, to help predict the spread of the online harassment, ADE implements several tools that allow it to closely track social media campaigns. Finally, the IT staff reviews the site for the Albanian office and removes any personally identifiable information about the staff there."
-//          ] // example scenario
-//      },
-//      "results": { // contains result text for this category
-//        "below":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Online harassment, cyberbullying, and even website hacking can all escalate into real-world physical threats or high-level cyberattacks. Though it’s tempting to disregard these events as an upsetting cost of being active online, they can pose a greater threat than you might expect. Here’s how to begin to mitigate some of those risks:"
-//              ]
-//            },
-//            {
-//              "title": "Create a threat and harassment policy.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Before an online harassment campaign escalates into violence, consider establishing an organization-wide threat and harassment policy. For example, your organization’s policy could state that any staff member who is harassed online in their personal or work life must report the incident to their supervisors. Even a single report should heighten the state of alert within the office for at least one week and cause a series of carefully documented security measures. At a minimum, organizations should capture the evidence of the harassment through screenshots, log the time and date the harassment occurred, and report the abuse to the platform used by the harassers.",
-//                "You may also want to consider reporting harassment to the harasser’s ISP. Although they aren’t always obligated to act, ISPs may have the power to temporarily ban or block a customer who is violating their terms of service. Last, while not always possible, consider allowing staff members to keep their work social media profiles private, which can help reduce attacks."
-//              ]
-//            },
-//          ],
-//        "ok":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "You’ve taken some important steps to protect your staff from online harassment, abuse, and hacking. But there are additional steps you can take to anticipate and avoid future risks."
-//              ]
-//            },
-//            {
-//              "title": "Take steps to reduce emerging threats.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Staying ahead of potential adversaries can help your staff avoid distressing and stressful cyberattacks. Google and other search engines offer alerts for sensitive information that appears online, such as the last name of staff members and their home address. Other commercial services, such as [TalkWalker](links.twalker.web) and [Mention](links.mention.web), can search social media for concerning keywords. [ChangeTower](links.ctower.web) allows users to track changes to Wikipedia pages and other sites that can often be a precursor to harassment.",
-//                "Although we recommend caution with LinkedIn, it can also be used as a research tool to see who is viewing staff member profiles. Within the organization, consider making specific staff information (such as using their first name and last initial) anonymous and removing headshots and other staff images."
-//              ]
-//            },
-//          ],
-//        "exceeds":
-//          [ // contains recommendations for this level
-//            {
-//              "title": "", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "You are being proactive about protecting your staff from online harassment, abuse, and hacking. Here are two additional steps you can take to lessen this risk further:",
-//              ]
-//            },
-//            {
-//              "title": "Monitor and remove personal information online.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "If you are concerned that your staff members have personally identifiable information online, you can work with commercial providers to temporarily remove this information. Services include [Abine DeleteMe](links.deleteme.web), [PrivacyDuck](links.pduck.web), [Reputation Defender](links.repdef.web), and [Norton LifeLock](links.lifelock.web), although it is important to note that they primarily scrub data from US-based marketing and sales databases.",
-//                "Staff may also want to consider creating virtual phone numbers for work purposes rather than using their personal phone numbers, including setting up online accounts and using messenger services such as WhatsApp. Google Voice and Skype can both provide virtual phone numbers."
-//              ]
-//            },
-//            {
-//              "title": "Watch for warning signs.", // title of this recommendation
-//              "content": [ // explanation of this recommendation
-//                "Staying proactive about online threats can help organizations respond more quickly when their projects or staff are targeted online. Content moderation tools including [Perspective API](links.perapi.web) and [The Coral Project](links.coral.web) can use artificial intelligence (AI) to track and score comments left on your organization’s blog or website. Tools such as [CrowdTangle](links.ctangle.web), [SMAT (Social Media Analysis Toolkit)](links.smat.kit), [Block Party](links.bparty.web), and [Babel Street](links.babelst.web) can help your organization monitor social media for misinformation campaigns about your work. A provider like [Tall Poppy](links.tpoppy.web) may be able to help you manage online harassment. And you can work with a technical assistance provider to analyze your web traffic for anomalies, such as harassers who are not hiding their real identities or are sending lots of referral traffic to your site from noted troll sites such as 8chan."
-//              ]
-//            },
-//          ]
-//      }
-//    }
+    }
   }
 };

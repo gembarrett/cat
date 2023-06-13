@@ -8,7 +8,7 @@ var views = {};
 var bodyLang = "en";
 var textStore = {
   qs : window[bodyLang+"_qs"],
-  // rs : window[bodyLang+"_rs"],
+   rs : window[bodyLang+"_rs"],
   oc : window[bodyLang+"_oc"]
 }
 

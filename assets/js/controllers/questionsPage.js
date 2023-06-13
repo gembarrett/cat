@@ -61,7 +61,7 @@ controllers.questionsPage = function(data, params){
     for (var a=0; a<question.answers.length; a++){
       var answerItem = {
         "aText": question.answers[a].a,
-        "ptsArea": area,
+        "ptsArea": area, // might be unnecessary
         "pts": question.answers[a].pts
       }
       answers.push(answerItem);

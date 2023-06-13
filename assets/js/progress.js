@@ -114,10 +114,12 @@ function updateProgress(e) {
             if (thisError.classList.contains('hide')){
                 thisError.classList.remove('hide');
             }
-        } else {
-            // remove the highlight class on the relevant span
+        } else if(tooMany(selections) === false && document.querySelector('span#error-'+e.target.name)) {
+            // if there aren't too many selections but there's an error showing then hide the error
             thisError = document.querySelector('span#error-'+e.target.name);
-            thisError.classList.add('hide');
+            thisError.classList.add('hide');    
+        } else {
+            // in this case there aren't too many errors but also there's no error shown, so do nothing
         }
 
         // if this question already has stored answers, find & remove them
@@ -205,9 +207,9 @@ function countThis(i){
 
 function isRequired(el){
     if (el.required === true){
-        return el.id;
+        return `${el.id}-${el.attributes["data-pts"].value}`;
     } else if (el.required === false) {
-        return el.id+'-o';
+        return `${el.id}-${el.attributes["data-pts"].value}-o`;
     } else {
         console.log(el.required);      
     }

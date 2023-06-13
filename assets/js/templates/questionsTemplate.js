@@ -128,8 +128,8 @@ function buildAnswers(r, type, req, aArr){
   var answers = "";
   for (var a = 0; a< aArr.length; a++){
     id = r +`-`+ a;
-    answers += `<span><input type="`+type+`" id="`+id+`" name="`+r+`" ` + (req === "true" ? `required>` : `>`);
-    answers += `<label for="`+id+`">`+aArr[a].aText+`</label></span>`;
+    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + (req === "true" ? `required>` : `>`);
+    answers += `<label for="${id}">${aArr[a].aText}</label></span>`;
   }
   return answers;
 }
