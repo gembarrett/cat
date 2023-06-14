@@ -1,7 +1,7 @@
 controllers.resultsPage = function(data, params){
   document.querySelector('#page').classList = 'survey results';
   var tally = {};
-  var resText = data.content;
+  var resText = data.rs.content;
     
     // this builds up the tally object to keep track of the scores for each sub/section
   // for each of the items in rs.content
@@ -31,8 +31,14 @@ controllers.resultsPage = function(data, params){
       }
     }
   }
+    
+    dataToPass = {
+        "tally": tally,
+        "recs": data.rs,
+        "ui": data.ui
+    };
 
   // pass this array to the template
-  var resultsContainer = templates.resultsTemplate(tally);
+  var resultsContainer = templates.resultsTemplate(dataToPass);
   utils.render('page', resultsContainer);
 };

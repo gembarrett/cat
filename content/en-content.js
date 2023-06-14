@@ -2115,12 +2115,33 @@ var en_oc = {
       },
       "By using this tool, you confirm that you have the right to provide all information entered into this tool without violating the privacy, confidentiality or other obligations of your organization in the relevant jurisdictions. The information that you entered into this tool is stored with a third-party service provider. The Ford Foundation does not receive the information entered into this tool; however, it may receive anonymized results about the tool’s general performance to help the Foundation: (1) deliver the tool’s service; (2) ensure that the tool is working as intended and to make improvements to the tool and the content; and (3) in the furtherance of Foundation's mission to support the nonprofit sector."
     ]
-  }
+  },
+    "results": {
+        "intro": "This assessment was completed on [[date]]. Here is how you scored in each section:",
+        "feedback": {
+            "title": " Help Us Make The Cybersecurity Assessment Tool Better!",
+            "btn": "Give feedback"
+        },
+        "save": [
+            {
+                "btn-title":"Get your results",
+                "link": ""
+            },
+            {
+                "btn-title": "Email",
+                "link": ""
+            },
+            {
+                "btn-title": "Print",
+                "link": ""
+            }
+        ]
+    }
 };
 
 // this is old recommendations text - replace when updated text available
 var en_rs = { // contains all evaluation content
-  "title": "Evaluation & feedback",
+  "title": "Results and Recommendations",
   "reusables": {
     "below": {
       "title": "Below",
@@ -2140,7 +2161,7 @@ var en_rs = { // contains all evaluation content
     "general": {
       "what": "What We Recommend:",
       "why": "Why We Recommend This:", // title for each content.general.why below
-      "eg": "A Fictional Example:" // title for each content.general.eg below
+      "eg": "A Real World Example:" // title for each content.general.eg below
     }
   },
   "content": {

@@ -1,24 +1,25 @@
 templates.resultsTemplate = function(data, params){
 
+    var intro = "";
     var answers = "";
     var level;
     
-    for (const item in data){
-      answers += `<h2>`+textStore.rs.content[item].title+`</h2>`;
+    for (const item in data.recs.content){
+      answers += `<h2>`+data.recs.content[item].title+`</h2>`;
       // FUNCTION TODO: replace placeholder score with real one
-      answers += `<p>`+textStore.rs.content[item].score+`</p>`;
-      if (data[item] <= textStore.rs.reusables.below.threshold) { // if number is 0 - 10
-        answers += `<h3>`+textStore.rs.reusables.below.title+`</h3>`;
-        answers += `<p>`+textStore.rs.reusables.below.content+`</p>`;
-        level = textStore.rs.content[item].results.below;
-      } else if ((data[item] > textStore.rs.reusables.below.threshold) && (data[item] <= textStore.rs.reusables.ok.threshold)){ // if number is under 21
-        answers += `<h3>`+textStore.rs.reusables.ok.title+`</h3>`;
-        answers += `<p>`+textStore.rs.reusables.ok.content+`</p>`;
-        level = textStore.rs.content[item].results.ok;
-      } else if (data[item] > textStore.rs.reusables.ok.threshold) { // if number is over 20
-        answers += `<h3>`+textStore.rs.reusables.exceeds.title+`</h3>`;
-        answers += `<p>`+textStore.rs.reusables.exceeds.content+`</p>`;
-        level = textStore.rs.content[item].results.exceeds;
+      answers += `<p>`+data.recs.content[item].score+`</p>`;
+      if (data.tally[item] <= data.recs.reusables.below.threshold) { // if number is 0 - 10
+        answers += `<h3>`+data.recs.reusables.below.title+`</h3>`;
+        answers += `<p>`+data.recs.reusables.below.content+`</p>`;
+        level = data.recs.content[item].results.below;
+      } else if ((data.tally[item] > data.recs.reusables.below.threshold) && (data[item] <= data.recs.reusables.ok.threshold)){ // if number is under 21
+        answers += `<h3>`+data.recs.reusables.ok.title+`</h3>`;
+        answers += `<p>`+data.recs.reusables.ok.content+`</p>`;
+        level = data.recs.content[item].results.ok;
+      } else if (data.tally[item] > data.recs.reusables.ok.threshold) { // if number is over 20
+        answers += `<h3>`+data.recs.reusables.exceeds.title+`</h3>`;
+        answers += `<p>`+data.recs.reusables.exceeds.content+`</p>`;
+        level = data.recs.content[item].results.exceeds;
       } else {
         console.log('Something is wrong with '+item);
       }
@@ -56,31 +57,23 @@ templates.resultsTemplate = function(data, params){
           }
         }
       }
-      answers += `<h3>`+textStore.rs.reusables.general.why+`</h3>`;
-      for (var y = 0; y < textStore.rs.content[item].general.why.length; y++) {
-          answers += `<p>`+textStore.rs.content[item].general.why[y]+`</p>`;
+      answers += `<h3>`+data.recs.reusables.general.why+`</h3>`;
+      for (var y = 0; y < data.recs.content[item].general.why.length; y++) {
+          answers += `<p>`+data.recs.content[item].general.why[y]+`</p>`;
       }
-      answers += `<h3>`+textStore.rs.reusables.general.eg+`</h3>`;
-      for (var eg = 0; eg < textStore.rs.content[item].general.eg.length; eg++) {
-          answers += `<p>`+textStore.rs.content[item].general.eg[eg]+`</p>`;
+      answers += `<h3>`+data.recs.reusables.general.eg+`</h3>`;
+      for (var eg = 0; eg < data.recs.content[item].general.eg.length; eg++) {
+          answers += `<p>`+data.recs.content[item].general.eg[eg]+`</p>`;
       }
     }
 
   var content = `
     <div class="contain-md">
-      <div id="results">
-        <h2>`+textStore.rs.title+`</h2>
-        `+answers+`
-      </div>
-      <div id="reset">
-        <h3>Start over</h3>
-        <div>
-          <p>All done? You'll need to reload the page before using the tool again.</p>
-          <button id="reset" onclick="clearData()" class="btn btn-seco">
-            <i class="fas fa-redo"></i> Start again
-          </button>
-        </div>
-      </div>
-      </div>`;
+        <div class="right-col">
+            <div class="overlap-col">
+                <button class="save-btn add-shadow">text</button>
+            </div>`;
+    
+    content += `<div class="contain-results add-shadow"><h2>`+data.recs.title+`</h2>${answers}</div></div></div>`;
   return content;
 };
