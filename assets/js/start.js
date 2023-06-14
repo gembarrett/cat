@@ -32,8 +32,7 @@ function addSubmenuHandlers(menu) {
 
 // this is the function that's called when a user their answers
 function handleSubmit() {
-    var resultsContainer = templates.resultsTemplate();
-    utils.render('page', resultsContainer);
+    utils.router('results');
 }
 
 // function to add li or p formatting to array

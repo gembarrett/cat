@@ -64,11 +64,25 @@ var utils = (function(){
           }
           
       } else if (temp[0] === 'results'){
-          function_to_invoke = 'resultsView';
-          var data = en_rs;
+          // if the user has completed the survey
+          if (currentState.answered.length > 0){
+              function_to_invoke = 'resultsView';
+              var data = en_rs;              
+          } else {
+              // if not, send them to the home page
+              function_to_invoke = "home";
+            var data = en_oc; // TODO: replace the hardcoded language files
+              
+              // update the URL
+                url = window.location;
+                url = url.toString();
+                // figure out if we're on home page
+                url = url.split('#');
+                url = `${url[0]}#survey`;
+                history.pushState({}, "", url);
+          }
       }
         else {
-          console.log(temp);
         function_to_invoke = temp[0] || false;
         var data = en_oc;
       }

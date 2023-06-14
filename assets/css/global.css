@@ -58,6 +58,9 @@ body > * {
 #page.devices-accounts {
     background-color: #6b60bf;
 }
+#page.results {
+    background-color: #33251b;
+}
 
 #foot {
   flex-shrink: 0;
