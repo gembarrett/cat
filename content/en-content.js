@@ -2145,29 +2145,29 @@ var en_rs = { // contains all evaluation content
   "reusables": {
     "below": {
       "title": "Below",
-      "content": "This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity.",
-      "threshold": 10
+      "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity.",
+      "threshold": 15
     },
     "ok": {
-      "title": "OK",
-      "content": "This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization's cybersecurity even more.",
-      "threshold": 20
+      "title": "Reasonable",
+      "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization's cybersecurity even more.",
+      "threshold": 16
     },
     "exceeds": {
       "title": "Exceeds",
-      "content": "This means it has a high level of security in this area. Good work! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more.",
+      "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This means it has a high level of security in this area. Good work! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more.",
       "threshold": 30
     },
     "general": {
-      "what": "What We Recommend:",
-      "why": "Why We Recommend This:", // title for each content.general.why below
-      "eg": "A Real World Example:" // title for each content.general.eg below
+      "what": "What We Recommend",
+      "why": "Why We Recommend This", // title for each content.general.why below
+      "eg": "A Real World Example" // title for each content.general.eg below
     }
   },
   "content": {
       "your-org":{
+          "section": "Understanding Risk",
           "title": "About Your Organization",
-          "score": "Your organization has scored [[X]] points in the About Your Organization category.",
           "general": {
               "why": [
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque sit amet porttitor eget dolor. Elementum tempus egestas sed sed risus pretium. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Et ligula ullamcorper malesuada proin libero. Non arcu risus quis varius quam quisque id. Elementum sagittis vitae et leo. Adipiscing tristique risus nec feugiat in fermentum. Id interdum velit laoreet id donec ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Eget mi proin sed libero enim sed faucibus turpis in. A diam maecenas sed enim ut. Vel fringilla est ullamcorper eget nulla facilisi etiam. At risus viverra adipiscing at in tellus integer feugiat scelerisque. Vestibulum sed arcu non odio euismod. Semper feugiat nibh sed pulvinar proin. A erat nam at lectus urna duis convallis. Venenatis urna cursus eget nunc. Nibh ipsum consequat nisl vel pretium lectus quam id. Gravida neque convallis a cras semper auctor neque.",
@@ -2210,8 +2210,8 @@ var en_rs = { // contains all evaluation content
           }
       },
       "external-threats":{
+          "section": "Understanding Risk",
           "title": "External Threats",
-          "score": "Your organization has scored [[X]] points in the External Threats category.",
           "general": {
               "why": [ // text for reusables.general.why above
                   "Understanding your risk is critical to keeping your organization safe. All good safety and security planning begins with a thorough understanding of the possible threats we face. Investing time and effort into better understanding your threat model will make reducing your risk much easier in the future. Remember also that threats evolve, so you may need to update your threat model as your organization and the landscape around you change.",
@@ -2280,52 +2280,54 @@ var en_rs = { // contains all evaluation content
                   {
                       "title": "Understand how incident response phases work together.", 
                       "content": [ 
-                        "In cybersecurity, you can think of four stages to respond to an incident: prepare, detect, contain/eradicate/recover, and then process/learn.",
-                        {
-                          "type": "title",
-                          "heading": "Prepare:",
-                        },
-                        "The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps your staff can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:",
-                        {
-                          "type": "ul",
-                          "items": [
-                            "How many devices do we have?",
-                            "Which are the most important?",
-                            "How do we keep those devices updated and safe?",
-                            "Do we have internal policies and a crisis communications plan from our departments that are easy to follow in a digital crisis?",
-                            "Can we come up with a master checklist to follow during a crisis? During an incident, panic often clouds our best thinking and a checklist will help."]
-                        },
-                        {
-                          "type": "title",
-                          "heading": "Detect:",
-                        },
-                        "This phase occurs when your organization identifies what is happening and plans a path forward. To do this, consider the following steps:",
-                        {
-                          "type": "ul",
-                          "items": [
-                            "As best you can, identify an incident while it’s occurring or shortly after it has occurred",
-                            "Collect everything you can about the incident as soon as possible. Log dates and times, capture screenshots, record suspicious websites and links, stop using the device, and disconnect the device from the Internet (but don’t turn it off).",
-                            "Make sure to notify your internal teams about the incident, but don’t forget that cybersecurity attacks can affect other organizations, too. If outside groups are affected, you should inform them as soon as possible."
-                          ]
-                        },
-                        {
-                          "type": "title",
-                          "heading": "Contain/Eradicate/Recover:",
-                        },
-                        "This stage is actually made up of three steps.",
-                        {
-                          "type": "ul",
-                          "items": [
-                            "In the first “containment” step, your staff can identify the cause and scope of the incident and take steps to stop or block immediate harm.",
-                            "In the second “eradicate” step, your staff can fully stop the incident and remove any discovered threats from your system.",
-                            "In the third “recovery” step, your staff can bring operations back online to their pre-incident state and address any remaining damage."
-                          ]
-                        },
-                        {
-                          "type": "title",
-                          "heading": "Process/Learn:",
-                        },
-                        "This phase isn’t about blaming others, but rather reviewing how each phase unfolded and evaluating how your organization can improve the process and your future response."
+                        "In cybersecurity, you can think of four stages to respond to an incident: prepare, detect, contain/eradicate/recover, and then process/learn.", 
+                        [ 
+                            {
+                              "type": "title",
+                              "heading": "Prepare:",
+                                "content": "The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps your staff can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:"
+                            },
+                            {
+                              "type": "ul",
+                              "items": [
+                                "How many devices do we have?",
+                                "Which are the most important?",
+                                "How do we keep those devices updated and safe?",
+                                "Do we have internal policies and a crisis communications plan from our departments that are easy to follow in a digital crisis?",
+                                "Can we come up with a master checklist to follow during a crisis? During an incident, panic often clouds our best thinking and a checklist will help."]
+                            },
+                            {
+                              "type": "title",
+                              "heading": "Detect:",
+                                "content": "This phase occurs when your organization identifies what is happening and plans a path forward. To do this, consider the following steps:"
+                            },
+                            {
+                              "type": "ul",
+                              "items": [
+                                "As best you can, identify an incident while it’s occurring or shortly after it has occurred",
+                                "Collect everything you can about the incident as soon as possible. Log dates and times, capture screenshots, record suspicious websites and links, stop using the device, and disconnect the device from the Internet (but don’t turn it off).",
+                                "Make sure to notify your internal teams about the incident, but don’t forget that cybersecurity attacks can affect other organizations, too. If outside groups are affected, you should inform them as soon as possible."
+                              ]
+                            },
+                            {
+                              "type": "title",
+                              "heading": "Contain/Eradicate/Recover:",
+                                "content": "This stage is actually made up of three steps."
+                            },
+                            {
+                              "type": "ul",
+                              "items": [
+                                "In the first “containment” step, your staff can identify the cause and scope of the incident and take steps to stop or block immediate harm.",
+                                "In the second “eradicate” step, your staff can fully stop the incident and remove any discovered threats from your system.",
+                                "In the third “recovery” step, your staff can bring operations back online to their pre-incident state and address any remaining damage."
+                              ]
+                            },
+                            {
+                              "type": "title",
+                              "heading": "Process/Learn:",
+                                "content": "This phase isn’t about blaming others, but rather reviewing how each phase unfolded and evaluating how your organization can improve the process and your future response."
+                            },
+                        ]
                       ]
                   },
                   {
@@ -2372,8 +2374,8 @@ var en_rs = { // contains all evaluation content
           }
       },
     "policy-docs": {
+          "section": "Operational Security",
       "title": "Documentation and Policy",
-      "score": "Your organization has scored [[X]] points in the documentation and policy category.", // explanation of what this means
       "general": {
           "why": [
             "Before you can upgrade your security, you need to have the fundamentals in place. Putting together a security policy and road map for your organization can help you be proactive about your security while also preparing for worst-case scenarios.",
@@ -2467,8 +2469,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "internal-risks": {
+          "section": "Operational Security",
       "title": "Internal Risks (Intentional or Unintentional)",
-      "score": "Your organization has scored [[X]] points in the internal risks category.", // explanation of what this means
       "general": {
           "why": [
             "Knowledge is power. By equipping your staff members with a checklist that allows them to identify cybersecurity risks, you’re empowering them to take action and increase their awareness. This step also provides you with a useful record of your staff’s overall level of cybersecurity.",
@@ -2499,31 +2501,33 @@ var en_rs = { // contains all evaluation content
               "content": [ // explanation of this recommendation
                 "Your staff members are proactive about monitoring their cybersecurity and understand the importance of complying with your organization’s security policy. They may periodically meet with supervisors to discuss their cybersecurity and complete required security checklists.",
                 "You can start to incorporate cybersecurity into their job description. This helps emphasize that security is not just a part of their workflow but also a core responsibility for them as a member of your organization.One effective way to do this is to ensure that employment agreements have language about privacy and security that is clear, truthful, and easy to understand. We recommend including language about:",
-                {
-                  "type": "title",
-                  "heading": "Data:",
-                },
-                "what responsibilities do staff members have with your organization’s data, and vice versa? Which categories of data can particular staff members access and which can they not access?",
-                {
-                  "type": "title",
-                  "heading": "Terms of use:",
-                },
-                "what legal arrangements govern your staff members’ use of technology, particularly any software, hardware, or systems that your organization owns?",
-                {
-                  "type": "title",
-                  "heading": "Acceptable use policy:",
-                },
-                "when staff members access your organization’s internal systems, what policies and guidelines must they follow?",
-                {
-                  "type": "title",
-                  "heading": "Onboarding policy:",
-                },
-                "how are staff members expected to learn about and use your organization’s technology when they join the organization?",
-                {
-                  "type": "title",
-                  "heading": "Offboarding policy:",
-                },
-                "what steps need to take place when a staff member leaves your organization?",
+                [
+                    {
+                      "type": "title",
+                      "heading": "Data:",
+                        "content": "what responsibilities do staff members have with your organization’s data, and vice versa? Which categories of data can particular staff members access and which can they not access?"
+                    },
+                    {
+                      "type": "title",
+                      "heading": "Terms of use:",
+                        "content": "what legal arrangements govern your staff members’ use of technology, particularly any software, hardware, or systems that your organization owns?"
+                    },
+                    {
+                      "type": "title",
+                      "heading": "Acceptable use policy:",
+                        "content": "when staff members access your organization’s internal systems, what policies and guidelines must they follow?"
+                    },
+                    {
+                      "type": "title",
+                      "heading": "Onboarding policy:",
+                        "content": "how are staff members expected to learn about and use your organization’s technology when they join the organization?"
+                    },
+                    {
+                      "type": "title",
+                      "heading": "Offboarding policy:",
+                        "content": "what steps need to take place when a staff member leaves your organization?"
+                    },
+                  ],
                 "You may want to enlist a lawyer to help you draft this language. There may also be other sections that apply directly to your situation. Just remember: the goal here is to be clear and informative, not to overwhelm your staff with legalese. Try to keep employment agreements to one page if possible, including a checklist, and make sure they are signed by the staff members and supervisors."
               ]
             },
@@ -2543,8 +2547,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "training-support": {
+          "section": "Operational Security",
       "title": "Staff Training and Support",
-      "score": "Your organization has scored [[X]] points in the staff training and support category.", // explanation of what this means
       "general": {
           "why": [
             "Your staff may find cybersecurity intimidating or technology daunting. Alternatively, some staff members may be advanced technology users while others may be embarrassed to admit their shortcomings. Not making assumptions on the cybersecurity knowledge of your staff allows your entire staff to establish a baseline level of security knowledge before moving on to more advanced topics.",
@@ -2566,21 +2570,23 @@ var en_rs = { // contains all evaluation content
               "content": [ // explanation of this recommendation
                 "Your staff members are passionate, driven, motivated, and hard-working. They may be experts in fields such as human rights law and voting advocacy. Most likely, however, they are not cybersecurity experts. And while it’s easy to assume that most people have a basic level of experience with technology, that’s not always the case.",
                 "Instead of assuming that your staff understands the basics of cybersecurity, assume that you are starting with a blank slate. From here, you can take a series of effective steps:",
-                {
-                  "type": "title",
-                  "heading": "Familiarize yourself with cybersecurity basics.",
-                },
-                "Excellent resources to get started include the Electronic Frontier Foundation’s [Surveillance Self-Defense curriculum](links.eff.ssd) and the [Data Detox Kit](links.ttech.detox) from Tactical Tech.",
-                {
-                  "type": "title",
-                  "heading": "Begin training.",
-                },
-                "Work with a cybersecurity provider, as needed, to conduct introductory “digital best practices” training for your staff.",
-                {
-                  "type": "title",
-                  "heading": "Share your organization’s security history with staff.",
-                },
-                "In fast-paced organizations, it’s easy for generational knowledge about security incidents to disappear, leaving newer staff unaware of risk. Document this history as much as possible so your staff members are fully informed.",
+                [
+                    {
+                      "type": "title",
+                      "heading": "Familiarize yourself with cybersecurity basics.",
+                        "content": "Excellent resources to get started include the Electronic Frontier Foundation’s [Surveillance Self-Defense curriculum](links.eff.ssd) and the [Data Detox Kit](links.ttech.detox) from Tactical Tech."
+                    },
+                    {
+                      "type": "title",
+                      "heading": "Begin training.",
+                        "content": "Work with a cybersecurity provider, as needed, to conduct introductory “digital best practices” training for your staff."
+                    },
+                    {
+                      "type": "title",
+                      "heading": "Share your organization’s security history with staff.",
+                        "content": "In fast-paced organizations, it’s easy for generational knowledge about security incidents to disappear, leaving newer staff unaware of risk. Document this history as much as possible so your staff members are fully informed."
+                    }
+                ],
                 "Starting with introductory knowledge can ensure that all staff members are on an equal footing."
               ]
             },
@@ -2612,8 +2618,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "travel-policy": {
+          "section": "Operational Security",
       "title": "Travel Security",
-      "score": "Your organization has scored [[X]] points in the travel security category.", // explanation of what this means
       "general": {
           "why": [
             "Organizations that don’t plan for risks in the field leave themselves vulnerable to surprises. Having an open conversation with your staff about travel security can encourage an important dialogue about risk within your organization and may even highlight some vulnerabilities you hadn’t noticed previously. You can then use those findings to help create policies to mitigate travel risks."
@@ -2698,8 +2704,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "managing-data": {
+          "section": "Operational Security",
       "title": "Data Security",
-      "score": "Your organization has scored [[X]] points in the data security category.", // explanation of what this means
       "general": {
           "why": [
             "Like physical mail, important pieces of data can pile up in a digital corner if we don’t stay organized. This makes it much easier for an attacker to seize sensitive data simply by accessing your accounts. Undertaking a data categorization exercise helps your staff identify what information they need to access frequently and what can be stored away securely.",
@@ -2720,16 +2726,18 @@ var en_rs = { // contains all evaluation content
                 "Data are the lifeblood of our digital systems. Your organization’s data contain incredible amounts of information—some trivial (such as your lunchtime calendar reminder) and some vital (such as the names and home addresses of your staff).",
                 "Many people across organizations have access to tremendous amounts of data, often more than they realistically need to do their jobs properly. An attacker, however, can do significant damage when they gain such access. One effective way to reduce your digital risk is to also reduce access to unnecessary data within your organization.",
                 "If you’re just getting started managing your data, it’s helpful to take two steps upfront.",
-                {
-                  "type": "title",
-                  "heading": "Understand the connection between retention and protection.",
-                },
-                "Remember this rule of thumb when it comes to managing your data: \"if it’s not there, they can’t steal it.\" For example, if your colleague doesn’t need 10 years’ worth of tax data on their laptop, find a safer place to store that information. Consider whether everyone in your organization needs access to a decade’s worth of emails or the entire staff  directory and regularly delete data you don’t need any more. Determining which data is valuable and requires additional protection will help you take appropriate next steps.",
-                {
-                  "type": "title",
-                  "heading": "Conduct a data categorization exercise."
-                },
-                "If you are working with a technical assistance provider, you may be able to conduct this exercise on your internal system. If not, you can also conduct a tabletop version of this exercise with your staff. Consider a blunt but effective measure: list the key data sources within your organization and determine who actually needs access to them. These could include email archives, staff directories, financial records, and project details. To access this data moving forward, staff  members need to specifically request the data they need. You can then determine whether they should be granted access permanently, for a 30-day window, or even for a supervised 24-hour block of time.",
+                [
+                    {
+                      "type": "title",
+                      "heading": "Understand the connection between retention and protection.",
+                        "content": "Remember this rule of thumb when it comes to managing your data: \"if it’s not there, they can’t steal it.\" For example, if your colleague doesn’t need 10 years’ worth of tax data on their laptop, find a safer place to store that information. Consider whether everyone in your organization needs access to a decade’s worth of emails or the entire staff directory and regularly delete data you don’t need any more. Determining which data is valuable and requires additional protection will help you take appropriate next steps.",
+                    },
+                    {
+                      "type": "title",
+                      "heading": "Conduct a data categorization exercise.",
+                        "content": "If you are working with a technical assistance provider, you may be able to conduct this exercise on your internal system. If not, you can also conduct a tabletop version of this exercise with your staff. Consider a blunt but effective measure: list the key data sources within your organization and determine who actually needs access to them. These could include email archives, staff directories, financial records, and project details. To access this data moving forward, staff  members need to specifically request the data they need. You can then determine whether they should be granted access permanently, for a 30-day window, or even for a supervised 24-hour block of time."
+                    }
+                ],
                 "While these steps may seem challenging, changing the status quo around data access within your organization can greatly reduce the risk that a genuine mistake can lead to a data breach."
               ]
             },
@@ -2764,8 +2772,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "web-security": {
+          "section": "Operational Security",
       "title": "Website Security",
-      "score": "Your organization has scored [[X]] points in the website security category.", // explanation of what this means
       "general": {
           "why": [
             "Securing your website can prevent everything from embarrassing defacement to harmful intrusions. Luckily, there are basic steps you can take to “harden” your site using widely available services. While these won’t prevent highly sophisticated attacks, they will make your site a more difficult target, discouraging some low-level threats.",
@@ -2886,8 +2894,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "office-security": {
+          "section": "Operational Security",
       "title": "Office Security",
-      "score": "Your organization has scored [[X]] points in the office security category.", // explanation of what this means
       "general": {
           "why": [
             "It’s easy to overlook office security risks because, as humans, we naturally fall into patterns of behavior. If we routinely leave our laptop on our desk at the end of the day, for example, we may see this action as normal and not risky. Taking another look at our daily patterns of behavior can help us see which of these actions are actually leaving us at risk. And installing a basic security system can provide an added level of protection for moments we didn’t anticipate in our policies.",
@@ -2966,8 +2974,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "legal-risks": {
+          "section": "Operational Security",
       "title": "Legal Risks",
-      "score": "Your organization has scored [[X]] points in the legal risks category.", // explanation of what this means
       "general": {
           "why": [
             "Security threats facing civil society organizations aren’t restricted to physical or digital attacks. Legal challenges can force organizations to divulge sensitive information, slow down or stop projects, or simply spend time and money responding to frivolous lawsuits. Consulting with a lawyer familiar with your country’s law is a good first step in protecting your organization from these challenges.",
@@ -3048,8 +3056,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "messaging-collab": {
+          "section": "Device and Account Security",
       "title": "Messaging and Collaboration",
-      "score": "Your organization has scored [[X]] points in the messaging and collaboration category.", // explanation of what this means
       "general": {
           "why": [
             "Encrypted communication can help keep your organization’s messages, data, and activities more secure. Implementing encrypted messaging and collaboration tools also instills the values of compartmentalization, which helps ensure that your organization’s sensitive data are not in a single system.",
@@ -3142,8 +3150,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "installing-software": {
+          "section": "Device and Account Security",
       "title": "Installing software",
-      "score": "Your organization has scored [[X]] points in the Installing Software category.", // explanation of what this means
       "general": {
           "why": [
             "Software is the backbone of any organization’s digital work. But using illegal, bootleg, or unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
@@ -3224,8 +3232,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "data-encryption": {
+          "section": "Device and Account Security",
       "title": "Data Encryption",
-      "score": "Your organization has scored [[X]] points in the data encryption category.", // explanation of what this means
       "general": {
           "why": [
             "Understanding and enabling data encryption on work devices isn’t as daunting as it may seem. While it’s critical to understand how encryption works (including when services use at-rest encryption), taking steps toward better safeguarding data is within reach for most organizations.",
@@ -3293,8 +3301,8 @@ var en_rs = { // contains all evaluation content
       }
     },
       "device-compartmentalization": {
+          "section": "Device and Account Security",
       "title": "Device Compartmentalization",
-      "score": "Your organization has scored [[X]] points in the Device Compartmentalization category.", // explanation of what this means
       "general": {
           "why": [
             "Compartmentalization can take many different forms, depending on your organization and your mission.",
@@ -3391,8 +3399,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "passwords-authentication": {
+          "section": "Device and Account Security",
       "title": "Password Management and Authentication",
-      "score": "Your organization has scored [[X]] points in the password management and authentication category.", // explanation of what this means
       "general": {
           "why": [
             "Passwords allow us to access the hundreds of services we use online each day. Because we juggle so many passwords, it’s important that we keep them organized, secure, and easily managed. Implementing a password manager may be logistically complicated depending on your organization’s size but immediately makes your accounts and staff safer.",
@@ -3481,8 +3489,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "system-updates": {
+          "section": "Device and Account Security",
       "title": "Updates",
-      "score": "Your organization has scored [[X]] points in the updates category.", // explanation of what this means
       "general": {
           "why": [
             "By not updating our software and operating systems, we are leaving ourselves vulnerable to unnecessary risks. Luckily, updates don’t have to be time-consuming and annoying. Enabling automatic updates, establishing master administrator accounts for manual updates, or even pushing updates to devices can all be done with a little help from a technical assistance provider. "
@@ -3541,8 +3549,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "op-continuity": {
+          "section": "Device and Account Security",
       "title": "Operational Continuity",
-      "score": "Your organization has scored [[X]] points in the operational continuity category.", // explanation of what this means
       "general": {
           "why": [
             "Disasters and crises aren’t always predictable. That’s why we recommend that your organization invest time now in creating plans to make sure you can continue operating even when situations drastically change. This type of planning isn’t limited to natural disasters, either, as illness, conflict, or simply a flooded office can all derail your staff’s ability to work effectively."
@@ -3624,8 +3632,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "third-party": {
+          "section": "Device and Account Security",
       "title": "Third-Party Services",
-      "score": "Your organization has scored [[X]] points in the third-party services category.", // explanation of what this means
       "general": {
           "why": [
             "Increasingly, we rely on third-party services such as social media platforms and cloud-based software for much of our workflow. And while these tools can be tremendously useful for our work, they also carry significant risks and drawbacks. Understanding how to manage third-party services properly can keep your organization safer and your staff more informed about how they should carry out their work."
@@ -3700,8 +3708,8 @@ var en_rs = { // contains all evaluation content
       }
     },
     "vp-network": {
+          "section": "Device and Account Security",
       "title": "Virtual Private Network (VPN)",
-      "score": "Your organization has scored [[X]] points in the Virtual Private Network (VPN) category.", // explanation of what this means
       "general": {
           "why": [
             "A VPN enables us to have a greater degree of privacy as we do our work online. Yet selecting and implementing the right VPN isn't always the easiest decision. Work with a technical assistance provider to determine which VPN service is right for you and to better understand the advantages and disadvantages of using this software."

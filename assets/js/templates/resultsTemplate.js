@@ -1,79 +1,59 @@
 templates.resultsTemplate = function(data, params){
 
-    var intro = "";
-    var answers = "";
+    var currentDate = dateStamp();
+    var dateString = dataToPass.ui.intro;
+    currentDate = dateString.replace('[[date]]', currentDate);
+
+    var intro = `<h1>${data.recs.title}</h1><img src="assets/images/CAT-collage-results.png" /><p>${currentDate}</p>`;
+    
+    var answers = ``;
     var level;
+    var submenu = `<ul>`;
+    var overview = ``;
     
     for (const item in data.recs.content){
-      answers += `<h2>`+data.recs.content[item].title+`</h2>`;
-      // FUNCTION TODO: replace placeholder score with real one
-      answers += `<p>`+data.recs.content[item].score+`</p>`;
-      if (data.tally[item] <= data.recs.reusables.below.threshold) { // if number is 0 - 10
-        answers += `<h3>`+data.recs.reusables.below.title+`</h3>`;
-        answers += `<p>`+data.recs.reusables.below.content+`</p>`;
-        level = data.recs.content[item].results.below;
-      } else if ((data.tally[item] > data.recs.reusables.below.threshold) && (data[item] <= data.recs.reusables.ok.threshold)){ // if number is under 21
-        answers += `<h3>`+data.recs.reusables.ok.title+`</h3>`;
-        answers += `<p>`+data.recs.reusables.ok.content+`</p>`;
-        level = data.recs.content[item].results.ok;
-      } else if (data.tally[item] > data.recs.reusables.ok.threshold) { // if number is over 20
-        answers += `<h3>`+data.recs.reusables.exceeds.title+`</h3>`;
-        answers += `<p>`+data.recs.reusables.exceeds.content+`</p>`;
-        level = data.recs.content[item].results.exceeds;
-      } else {
+        
+        // if the submenu doesn't include the current section heading, add it
+        if (!submenu.includes(data.recs.content[item].section)){
+            submenu += `<li>${data.recs.content[item].section}</li>`;
+            overview += `<h4>${data.recs.content[item].section}</h4>`;
+        }
+        overview += `<div class="overview"><p>${data.recs.content[item].title}</p>`;
+                
+      if (data.tally[item] <= data.recs.reusables.below.threshold) { // if less than or equal to 15
+        recLevel = data.recs.reusables.below;
+        reslevel = data.recs.content[item].results.below;
+          progValue = "10";
+      } else if ((data.tally[item] >= data.recs.reusables.ok.threshold) && (data.tally[item] <= data.recs.reusables.exceeds.threshold)){ // if 16-30
+        recLevel = data.recs.reusables.ok;
+        reslevel = data.recs.content[item].results.ok;
+          progValue = "20";
+      } else if (data.tally[item] > data.recs.reusables.exceeds.threshold) { // if number is over 30
+        recLevel = data.recs.reusables.exceeds;
+        reslevel = data.recs.content[item].results.exceeds;
+          progValue = "30";
+     } else {
         console.log('Something is wrong with '+item);
       }
-      for (var rec = 0; rec < level.length; rec ++) {
-        if (level[rec].title !== "") {
-          answers += `<h3>`+level[rec].title+`</h3>`;
-        } else {
-          // don't add the title if empty
-        }
-        for (const text in level[rec].content) {
-          if (typeof level[rec].content[text] === "string") {
-            answers += `<p>`+level[rec].content[text]+`</p>`;
-          } else if (level[rec].content[text].type === "title") {
-            answers += `<h4>`+level[rec].content[text].heading+`</h4>`;
-          } else if ((typeof level[rec].content[text] === "ul") || (typeof level[rec].content[text] === "ol")) {
-            answers += `<`+level[rec].content[text].type+`>`;
-            for (var pt = 0; pt < level[rec].content[text].items; pt++) {
-              answers += `<li>`+level[rec].content[text].items[pt]+`</li>`;
-            }
-            answers += `</`+level[rec].content[text].type+`>`;
-          } else if (level[rec].content[text].type === "table") {
-            answers += `<table><thead><tr>`;
-            for (var th = 0; th < level[rec].content[text].rows[0].length; th++) {
-              answers += `<th>`+level[rec].content[text].rows[0][th] + `</th>`;
-            }
-            answers += `</tr></thead><tbody>`;
-            for (var tr = 1; tr < level[rec].content[text].rows.length-1; tr++) {
-              answers += `<tr>`;
-              for (var td = 0; td < level[rec].content[text].rows[tr].length; td++){
-                answers += `<td>`+level[rec].content[text].rows[tr][td]+`</td>`;
-              }
-              answers += `</tr>`;
-            }
-            answers += `</tbody></table>`;
-          }
-        }
-      }
-      answers += `<h3>`+data.recs.reusables.general.why+`</h3>`;
-      for (var y = 0; y < data.recs.content[item].general.why.length; y++) {
-          answers += `<p>`+data.recs.content[item].general.why[y]+`</p>`;
-      }
-      answers += `<h3>`+data.recs.reusables.general.eg+`</h3>`;
-      for (var eg = 0; eg < data.recs.content[item].general.eg.length; eg++) {
-          answers += `<p>`+data.recs.content[item].general.eg[eg]+`</p>`;
-      }
+      
+        overview += `<progress value="${progValue}" max="30"></progress></div>`;
+        
+        answers += generateRecommendation(data.recs.content[item], recLevel, reslevel, data.recs.reusables.general, progValue);
+    
     }
+    
+    submenu += `</ul>`;
 
   var content = `
     <div class="contain-md">
+        <div class="left-col add-shadow submenu">
+            ${submenu}
+        </div>
         <div class="right-col">
             <div class="overlap-col">
                 <button class="save-btn add-shadow">text</button>
             </div>`;
     
-    content += `<div class="contain-results add-shadow"><h2>`+data.recs.title+`</h2>${answers}</div></div></div>`;
+    content += `<div class="contain-results add-shadow"><div class="results-intro">${intro}</div><div class="results-overview">${overview}</div><div class="results-content">${answers}</div></div></div></div>`;
   return content;
 };

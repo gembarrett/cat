@@ -38,7 +38,7 @@ body > * {
     padding: 5px;
 }
 
-#page.survey {
+#page.survey, #page.results {
   padding-top: 5em;
   flex-direction: column;
   align-items: center;

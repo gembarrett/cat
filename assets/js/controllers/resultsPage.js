@@ -1,5 +1,5 @@
 controllers.resultsPage = function(data, params){
-  document.querySelector('#page').classList = 'survey results';
+  document.querySelector('#page').classList = 'results';
   var tally = {};
   var resText = data.rs.content;
     
@@ -13,7 +13,7 @@ controllers.resultsPage = function(data, params){
       console.log('already stored');
     }
   }
-
+    
   // for each of the categories
   for (const rr in tally){
     // check each of the answers
