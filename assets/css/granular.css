@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.results .contain-lrg {
+  flex-direction: row;
+}
+
 .gather {
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -289,7 +293,7 @@ small black fill green border */
 .survey .submenu h4:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.survey .submenu li.selected, .submenu li:hover {
+.survey .submenu li.selected, .survey .submenu li:hover {
   background: rgba(255,255,255,0.9);
   color:#000;
 }
@@ -314,12 +318,23 @@ small black fill green border */
     border:0.5px solid #686969;
 }
 .results .submenu li{
-    background-color: #373466;
+    background-color: rgba(55,52,102,.5);
     border: 0.5px solid rgba(0,0,0,.5);
+    margin:0;
+    padding-left: 1em;
+}
+.results .submenu li:hover, .results .submenu li.selected {
+    background-color: rgba(55,52,102,1);
+    color:#fff;
 }
 .result {
     margin: 2em 0;
+    display: none;
 }
+.result.active {
+    display: block;
+}
+
 .result h4.section {
     text-transform: uppercase;
     margin:0;
@@ -327,6 +342,7 @@ small black fill green border */
 .result h2 {
     margin: 0;
     padding-bottom: 0.5em;
+    line-height:1.2em;
 }
 .results-overview progress {
     margin:0;
@@ -355,24 +371,48 @@ small black fill green border */
 .results-overview h4 {
     margin-bottom: 0.5em;
 }
-.results-intro, .results-overview, .results-content {
+.results-intro, .results-overview, .results-content, #nextStepButtons {
     padding:3em;
+}
+.results-content {
+  padding-bottom: 0;
+}
+.results-content a {
+    text-decoration: underline;
 }
 .results span {
     display: inline;
     font-weight: bold;
 }
-.result .what {
+.results .results-intro img {
+  margin: 2em auto;
+}
+.results h1 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+  margin: 0;
+}
+.result > h3 {
     color:#6b60bf;
     padding-top:1em;
 }
+
+.result h4 {
+    margin-bottom: 0;
+}
 .result .score {
-    font-size:1.1em;
+    font-size:1.2em;
+    line-height: 1.5em;
 }
 .rec-example {
     background-color: #fff8cc;
     padding:0.5em 1.5em;
 }
+.extra-recs {
+  border: 2px solid #6b60bf;
+  padding: 0.5em 1.5em;
+}
+
 .right-col {
   background-color: #fffef5;
     width:63%;
@@ -590,12 +630,12 @@ form input {
 
 
 
-#progressButtons {
+#progressButtons, #nextStepButtons {
     width:100%;
     display: flex;
     justify-content: space-between;
 }
-#progressButtons > button {
+#progressButtons > button, #nextStepButtons > button {
     flex-basis: 45%;
     background-color: #000;
     color: #fff;
@@ -605,6 +645,20 @@ form input {
     font-size: inherit;
     margin:2em 0;
 }
+
+#nextStepButtons {
+    padding: 0 3em 1em 3em;
+}
+
+#nextStepButtons > button {
+    border:0;
+    margin: 2em 0.25em;
+}
+
+#nextStepButtons > button:hover {
+    background-color: #009e72;
+}
+
 #progressButtons > button:hover {
     background-color: #fff;
     color: #000;

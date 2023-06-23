@@ -6,16 +6,26 @@ templates.resultsTemplate = function(data, params){
 
     var intro = `<h1>${data.recs.title}</h1><img src="assets/images/CAT-collage-results.png" /><p>${currentDate}</p>`;
     
+    
+    var buttons = `<button class="results-generate">${dataToPass.ui.save[0].btn}</button><button class="results-email">${dataToPass.ui.save[1].btn}</button><button class="results-print">${dataToPass.ui.save[2].btn}</button>`;
+    
     var answers = ``;
     var level;
     var submenu = `<ul>`;
     var overview = ``;
+    var firstElement = 'understanding-risk';
     
     for (const item in data.recs.content){
         
-        // if the submenu doesn't include the current section heading, add it
+        // if the submenu doesn't include the current section heading, add it, plus the overview bar
         if (!submenu.includes(data.recs.content[item].section)){
-            submenu += `<li>${data.recs.content[item].section}</li>`;
+            shortRef = data.recs.content[item].section.toLowerCase().replaceAll(' ', '-');
+            if (shortRef === firstElement){
+                liInfo = `id="r-${shortRef}" class="selected"`;
+            } else {
+                liInfo = `id="r-${shortRef}"`;
+            }
+            submenu += `<li ${liInfo}>${data.recs.content[item].section}</li>`;
             overview += `<h4>${data.recs.content[item].section}</h4>`;
         }
         overview += `<div class="overview"><p>${data.recs.content[item].title}</p>`;
@@ -35,17 +45,15 @@ templates.resultsTemplate = function(data, params){
      } else {
         console.log('Something is wrong with '+item);
       }
-      
         overview += `<progress value="${progValue}" max="30"></progress></div>`;
         
-        answers += generateRecommendation(data.recs.content[item], recLevel, reslevel, data.recs.reusables.general, progValue);
-    
+        answers += generateRecommendation(data.recs.content[item], recLevel, reslevel, data.recs.reusables.general, progValue, firstElement);
     }
     
     submenu += `</ul>`;
 
   var content = `
-    <div class="contain-md">
+    <div class="contain-lrg">
         <div class="left-col add-shadow submenu">
             ${submenu}
         </div>
@@ -54,6 +62,6 @@ templates.resultsTemplate = function(data, params){
                 <button class="save-btn add-shadow">text</button>
             </div>`;
     
-    content += `<div class="contain-results add-shadow"><div class="results-intro">${intro}</div><div class="results-overview">${overview}</div><div class="results-content">${answers}</div></div></div></div>`;
+    content += `<div class="contain-results add-shadow"><div class="results-intro">${intro}</div><div class="results-overview">${overview}</div><div class="results-content">${answers}</div><div id="nextStepButtons">${buttons}</div></div></div></div>`;
   return content;
 };

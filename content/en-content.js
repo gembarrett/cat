@@ -1933,7 +1933,7 @@ var en_oc = {
     "text": [
       "Cybersecurity Assessment Tool",
       "by the Ford Foundation's BUILD program",
-      "2022 Ford Foundation, all rights reserved."
+      "2023 Ford Foundation, all rights reserved."
     ]
   },
   "languages": [
@@ -2119,20 +2119,21 @@ var en_oc = {
     "results": {
         "intro": "This assessment was completed on [[date]]. Here is how you scored in each section:",
         "feedback": {
-            "title": " Help Us Make The Cybersecurity Assessment Tool Better!",
-            "btn": "Give feedback"
+            "title": "Help Us Make The Cybersecurity Assessment Tool Better!",
+            "btn": "Give feedback",
+            "cta": "Get your results"
         },
         "save": [
             {
-                "btn-title":"Get your results",
+                "btn":"Generate link",
                 "link": ""
             },
             {
-                "btn-title": "Email",
+                "btn": "Email",
                 "link": ""
             },
             {
-                "btn-title": "Print",
+                "btn": "Print",
                 "link": ""
             }
         ]
@@ -2231,7 +2232,7 @@ var en_rs = { // contains all evaluation content
                       "title": "Determine your threat model.",
                       "content": [
                           "When thinking about the risks that face your organization in the digital world, it’s helpful to think about all the risks that your staff  faces outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the “offline” world, such as risks posed by governments, law enforcement, criminal groups, and lawsuits.",
-                          "Documenting and analyzing your risk is a process known in cybersecurity as “threat modeling.”, which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [here](links.eff.tmodel). Access Now Helpdesk offers an easy guide to threat models with examples [here](links.an.tmodel)."
+                          "Documenting and analyzing your risk is a process known in cybersecurity as “threat modeling.”, which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [[here]](links.eff.tmodel). Access Now Helpdesk offers an easy guide to threat models with examples [[here]](links.an.tmodel)."
                       ]
                   },
                   {
@@ -2248,7 +2249,7 @@ var en_rs = { // contains all evaluation content
                                 ["High Consequence", "Corporate-sponsored cyberattack", "Phishing attack on your email account"]
                               ]
                             },
-                          "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [here](links.eff.matrix). Tactical Tech’s Holistic Security offers [additional reading](links.ttech.matrices) on these matrices."
+                          "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [[here]](links.eff.matrix). Tactical Tech’s Holistic Security offers [[additional reading]](links.ttech.matrices) on these matrices."
                       ]
                   }
               ],
@@ -2256,7 +2257,7 @@ var en_rs = { // contains all evaluation content
                   {
                       "title": "Develop an incident response plan.",
                       "content": [
-                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [NIST Cybersecurity](links.nist.framework), ISO 27001, and the [MITRE ATT&CK Matrix](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
+                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [[NIST Cybersecurity]](links.nist.framework), ISO 27001, and the [[MITRE ATT&CK Matrix]](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
                           {
                               "type": "table",
                               "rows": [
@@ -2274,7 +2275,7 @@ var en_rs = { // contains all evaluation content
                               ]
                           },
                           "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a security provider who can help develop solutions to these threats.",
-                          "We have also developed [an incident response plan questionnaire](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
+                          "We have also developed [[an incident response plan questionnaire]](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
                       ]
                   },
                   {
@@ -2347,7 +2348,7 @@ var en_rs = { // contains all evaluation content
                               ]
                             },
                             "A security provider can’t fix all your organization’s challenges on their own. Understand that you will need a designated person on your staff  who will manage this work and act as a liaison between your organization and the security provider."
-]
+                        ]
                   },
               ],
               "exceeds": [
@@ -2355,7 +2356,7 @@ var en_rs = { // contains all evaluation content
                       "title": "Run a tabletop exercise.",
                       "content": [
                           "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff  doesn’t need to be physically gathered around a table to complete one. During an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
-                          "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [MITRE Corp.’s guidelines on tabletop exercises](links.mitre.tabletop).",
+                          "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [[MITRE Corp.’s guidelines on tabletop exercises]](links.mitre.tabletop).",
                           {
                               "type": "ul",
                               "items": [
@@ -2374,7 +2375,7 @@ var en_rs = { // contains all evaluation content
           }
       },
     "policy-docs": {
-          "section": "Operational Security",
+        "section": "Operational Security",
       "title": "Documentation and Policy",
       "general": {
           "why": [
@@ -2415,7 +2416,7 @@ var en_rs = { // contains all evaluation content
                     "Document what you would like to implement in the future to improve your security approach.",
                   ]
                 },
-                "When you’re ready to create your first security policy, you can use the highly useful [SOAP tool](links.soap.tool) or the [SANS templates](links.sans.templates) to generate a policy through a series of step-by-step questions.",
+                "When you’re ready to create your first security policy, you can use the highly useful [[SOAP tool]](links.soap.tool) or the [[SANS templates]](links.sans.templates) to generate a policy through a series of step-by-step questions.",
                 "Remember that your security policy is a living document—try to update it with new guidelines based on changing threats at least once per year."
               ]
             },
@@ -2505,27 +2506,27 @@ var en_rs = { // contains all evaluation content
                     {
                       "type": "title",
                       "heading": "Data:",
-                        "content": "what responsibilities do staff members have with your organization’s data, and vice versa? Which categories of data can particular staff members access and which can they not access?"
+                        "content": "What responsibilities do staff members have with your organization’s data, and vice versa? Which categories of data can particular staff members access and which can they not access?"
                     },
                     {
                       "type": "title",
                       "heading": "Terms of use:",
-                        "content": "what legal arrangements govern your staff members’ use of technology, particularly any software, hardware, or systems that your organization owns?"
+                        "content": "What legal arrangements govern your staff members’ use of technology, particularly any software, hardware, or systems that your organization owns?"
                     },
                     {
                       "type": "title",
                       "heading": "Acceptable use policy:",
-                        "content": "when staff members access your organization’s internal systems, what policies and guidelines must they follow?"
+                        "content": "When staff members access your organization’s internal systems, what policies and guidelines must they follow?"
                     },
                     {
                       "type": "title",
                       "heading": "Onboarding policy:",
-                        "content": "how are staff members expected to learn about and use your organization’s technology when they join the organization?"
+                        "content": "How are staff members expected to learn about and use your organization’s technology when they join the organization?"
                     },
                     {
                       "type": "title",
                       "heading": "Offboarding policy:",
-                        "content": "what steps need to take place when a staff member leaves your organization?"
+                        "content": "What steps need to take place when a staff member leaves your organization?"
                     },
                   ],
                 "You may want to enlist a lawyer to help you draft this language. There may also be other sections that apply directly to your situation. Just remember: the goal here is to be clear and informative, not to overwhelm your staff with legalese. Try to keep employment agreements to one page if possible, including a checklist, and make sure they are signed by the staff members and supervisors."
@@ -2539,7 +2540,7 @@ var en_rs = { // contains all evaluation content
               "content": [ // explanation of this recommendation
                 "Your staff regularly checks in with management about cybersecurity risks and has read and reviewed the cybersecurity requirements in their employment agreements.",
                 "Even the most informed and engaged staff members can still make mistakes, however.That’s why we recommend finding a method for managing devices that is consistent with your organization’s values and goals. For example, software known as “device management” platforms can allow organizations to manage work devices remotely. While the convenience and increased security of device management tools is an advantage, remember that you must always balance security with a level of privacy for your staff.",
-                "Device management software includes tools such as G Suite’s Google Devices, Apple’s Mobile Device Management, and [Prey](links.prey.web), which allow tracking and remote data erasure on devices, and solutions from companies including IBM, Citrix, and VMWare.",
+                "Device management software includes tools such as G Suite’s Google Devices, Apple’s Mobile Device Management, and [[Prey]](links.prey.web), which allow tracking and remote data erasure on devices, and solutions from companies including IBM, Citrix, and VMWare.",
                 "A technical provider can also help you use these tools to force organization-owned devices to “comply” with security policies or restrict the ability for your staff to install their own software or change settings."
               ]
             },
@@ -2574,7 +2575,7 @@ var en_rs = { // contains all evaluation content
                     {
                       "type": "title",
                       "heading": "Familiarize yourself with cybersecurity basics.",
-                        "content": "Excellent resources to get started include the Electronic Frontier Foundation’s [Surveillance Self-Defense curriculum](links.eff.ssd) and the [Data Detox Kit](links.ttech.detox) from Tactical Tech."
+                        "content": "Excellent resources to get started include the Electronic Frontier Foundation’s [[Surveillance Self-Defense curriculum]](links.eff.ssd) and the [[Data Detox Kit]](links.ttech.detox) from Tactical Tech."
                     },
                     {
                       "type": "title",
@@ -2609,8 +2610,8 @@ var en_rs = { // contains all evaluation content
               "content": [ // explanation of this recommendation
                 "While live instruction, either in-person or online, is helpful for teaching big concepts, your organization can’t rely on training alone to enhance cybersecurity. Instead, you must create an institutionalized version of this knowledge that can be accessed by any staff member at any time.",
                 "A good interim solution can be a basic online quiz accompanied by a 2- to 3-minute recap video to test the staff’s knowledge and refresh their memories.",
-                "Alternatively, digital tools for learning—sometimes known as learning management systems, or LMS—are widely available. We like open-source options such as [Moodle](links.moodle.web) and [ILIAS](links.ilias.web) or commercial versions such as [LearnDash](links.learndash.web) (built for the content management system WordPress) or [Docebo](links.docebo.web).",
-                "You may also want to consider a third-party learning platform like [Totem Project](links.totem.web) to help your staff practice their cybersecurity skills.",
+                "Alternatively, digital tools for learning—sometimes known as learning management systems, or LMS—are widely available. We like open-source options such as [[Moodle]](links.moodle.web) and [[ILIAS]](links.ilias.web) or commercial versions such as [[LearnDash]](links.learndash.web) (built for the content management system WordPress) or [[Docebo]](links.docebo.web).",
+                "You may also want to consider a third-party learning platform like [[Totem Project]](links.totem.web) to help your staff practice their cybersecurity skills.",
                 "You may need to work with a technical assistance provider to implement this tool, but the effort can pay dividends. A well-designed LMS can help you capture not only cybersecurity lessons but also help your staff answer time-sensitive questions without having to track down an instructor. Most LMS platforms provide a scoring mechanism, too, so you can map your staff’s progress."
               ]
             },
@@ -2682,7 +2683,7 @@ var en_rs = { // contains all evaluation content
               "title": "Incorporate cloud storage.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "Your staff members understand the risks posed by travel, and you’ve briefed them on your organization’s policies governing work travel. You may have even chosen to use dedicated travel-specific devices for your staff.",
-                "Now, you can enhance the precautions that your staff members take when they travel. One of the most effective ways to protect against device theft or damage while traveling is to store data in the cloud. While there are many cloud storage services to consider, we recommend using encrypted ones when traveling. These services include [SpiderOak One](links.soak.web), a US-based provider, and [Tresorit](links.tresorit.web), a Swiss provider. Self-hosted solutions include [NextCloud](links.nextcloud.web) and [OwnCloud](links.ocloud.web). Alternatively, you may use a tool such as [Cryptomator](links.cmator.web) to encrypt your files locally and store them in your nonencrypted cloud storage service, such as Dropbox or Google Drive. (Files on Google Drive and other popular services are encrypted but can be accessed by the cloud storage provider in response to legal requests.)",
+                "Now, you can enhance the precautions that your staff members take when they travel. One of the most effective ways to protect against device theft or damage while traveling is to store data in the cloud. While there are many cloud storage services to consider, we recommend using encrypted ones when traveling. These services include [[SpiderOak One]](links.soak.web), a US-based provider, and [[Tresorit]](links.tresorit.web), a Swiss provider. Self-hosted solutions include [[NextCloud]](links.nextcloud.web) and [[OwnCloud]](links.ocloud.web). Alternatively, you may use a tool such as [[Cryptomator]](links.cmator.web) to encrypt your files locally and store them in your nonencrypted cloud storage service, such as Dropbox or Google Drive. (Files on Google Drive and other popular services are encrypted but can be accessed by the cloud storage provider in response to legal requests.)",
                 "You may need a security provider to help with this process and to select the right cloud service for you."
               ]
             },
@@ -2694,10 +2695,10 @@ var en_rs = { // contains all evaluation content
               "content": [ // explanation of this recommendation
                 "You’ve made good progress on keeping your staff and your data safe during work-related travel. To further improve your travel security, you should consider using dedicated travel-specific devices. This will require both an investment of time and money, as well as the creation of new policies around the safe use of these devices. Used effectively, however, travel devices can greatly reduce risk, even if they fall into the wrong hands.",
                 "Rather than having staff use their personal or work devices while traveling, consider using dedicated travel devices instead.",
-                "To start, you will want to identify the types of devices that your staff members use in the field. If they typically need a laptop while traveling, consider a reliable but inexpensive alternative like a [Chromebook](links.google.cbook).",
+                "To start, you will want to identify the types of devices that your staff members use in the field. If they typically need a laptop while traveling, consider a reliable but inexpensive alternative like a [[Chromebook]](links.google.cbook).",
                 "Once you’ve identified the types of devices appropriate for your organization, you will need to develop a clear policy and process for handling travel devices before, during, and after their use. This will likely include a “pre-flight” process to prepare the device and a return check-in with the staff  member who used the device to learn about any challenges they may have had in the field. You will also need to wipe the device clean before and after travel.",
                 "Each of these device management phases can be time-consuming, so they should be spelled out in detail and written down. You may want to work with a security provider to implement this process smoothly.",
-                "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [VMWare Work Station Player](links.vmware.player) (Linux/PC), Fusion (Mac), or [VirtualBox](links.vbox.web). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a provider whether this is a good option for you."
+                "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [[VMWare Work Station Player]](links.vmware.player) (Linux/PC), Fusion (Mac), or [[VirtualBox]](links.vbox.web). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a provider whether this is a good option for you."
               ]
             },
           ]
@@ -2797,15 +2798,14 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Reduce your risk of DDOS attacks.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "If someone dislikes your organization’s work or wants to harm your efforts, one strategy they may use is to temporarily force your website offline. This is often accomplished through a distributed denial of service (DDOS) attack, in which attackers overwhelm your website with visits to temporarily shut it down. A qualified technical assistance provider can help you reduce your vulnerability to these attacks by installing a content delivery network (CDN). A CDN delivers the content of your website from several different locations across the web, reducing your dependence on a single point of failure that can be crippled by a DDOS attack. You can read more about these attacks in [this article by CloudFlare](links.cflare.ddos). [CloudFlare’s free Galileo](links.cflare.gal) and Google’s free [Project Shield](links.google.shield) are both ideal CDNs for civil society organizations, as is [Equalite’s Deflect](links.equalite.deflect).",
-                "String 2",
+                "If someone dislikes your organization’s work or wants to harm your efforts, one strategy they may use is to temporarily force your website offline. This is often accomplished through a distributed denial of service (DDOS) attack, in which attackers overwhelm your website with visits to temporarily shut it down. A qualified technical assistance provider can help you reduce your vulnerability to these attacks by installing a content delivery network (CDN). A CDN delivers the content of your website from several different locations across the web, reducing your dependence on a single point of failure that can be crippled by a DDOS attack. You can read more about these attacks in [[this article by CloudFlare]](links.cflare.ddos). [[CloudFlare’s free Galileo]](links.cflare.gal) and Google’s free [[Project Shield]](links.google.shield) are both ideal CDNs for civil society organizations, as is [[Equalite’s Deflect]](links.equalite.deflect)."
               ]
             },
             {
               "title": "Understand and implement HTTPS.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "When you visit a website, you may see the letters “http” in front of the web address. This allows the site to communicate and provide directions to your web browser. In the early years of the Internet, HTTP was the default form of communication between websites and browsers. Now, a more secure form of communication, known as HTTPS, provides greater protection for users visiting your website. This means that if they search for sensitive information or submit information to you via a form, their data are encrypted from outside eyes.",
-                "Increasingly, popular search engines such as Google are flagging sites that do not use HTTPS as insecure, which also reduces the number of people who are comfortable visiting your site. You can read more about HTTPS in [this article by CloudFlare](links.cflare.https).",
+                "Increasingly, popular search engines such as Google are flagging sites that do not use HTTPS as insecure, which also reduces the number of people who are comfortable visiting your site. You can read more about HTTPS in [[this article by CloudFlare]](links.cflare.https).",
               ]
             },
             {
@@ -2871,15 +2871,15 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Enable rate limits.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "People who want to do harm to your organization will use any available channels to slow down or hamper your operations. This can include useful features on your website, such as online contact forms or other tools, which they can overwhelm with automated requests. To help lessen this risk, you can work with a technical assistance provider to enable rate limits, which can reduce the number of attempts an individual user can make on a particular part of your website. You can read more about how rate limits can be used in [this article from Google](links.google.rlimits)."
+                "People who want to do harm to your organization will use any available channels to slow down or hamper your operations. This can include useful features on your website, such as online contact forms or other tools, which they can overwhelm with automated requests. To help lessen this risk, you can work with a technical assistance provider to enable rate limits, which can reduce the number of attempts an individual user can make on a particular part of your website. You can read more about how rate limits can be used in [[this article from Google]](links.google.rlimits)."
               ]
             },
             {
               "title": "Harden your content management system.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "Using a content management system (CMS) can save you time and effort when updating your website. But these systems require users to log into the website from a live login page. Unless you take proactive steps, an attacker can access this login page, determine which CMS you are using, and attempt to force their way inside.",
-                "There are steps you can take to mitigate this risk with varying degrees of technical complexity. One of the easiest steps is to enable [two-factor authentication](links.2fa.web) on your website CMS, which requires an additional step to log in. You can also work with a technical provider to enable a single-sign-on (SSO) system that allows your staff  members to use one master login across the organization. This improves both usability and security, although it can be complicated to set up. Last, you can work with a provider to limit access to the login page to only a pre-approved list of users, which would require the use of a virtual private network (VPN).",
-                "There are other steps you can take to make your CMS more difficult to attack. Many CMS platforms will support third-party applications that can help strengthen their security. For example, [WordPress](links.wfence.web), one of the world's most popular CMS platforms, supports WordFence, a third-party intrusion detection and prevention system.",
+                "There are steps you can take to mitigate this risk with varying degrees of technical complexity. One of the easiest steps is to enable [[two-factor authentication]](links.2fa.web) on your website CMS, which requires an additional step to log in. You can also work with a technical provider to enable a single-sign-on (SSO) system that allows your staff  members to use one master login across the organization. This improves both usability and security, although it can be complicated to set up. Last, you can work with a provider to limit access to the login page to only a pre-approved list of users, which would require the use of a virtual private network (VPN).",
+                "There are other steps you can take to make your CMS more difficult to attack. Many CMS platforms will support third-party applications that can help strengthen their security. For example, [[WordPress]](links.wfence.web), one of the world's most popular CMS platforms, supports WordFence, a third-party intrusion detection and prevention system.",
                 "Additionally, you can change the settings on your CMS to make attacks less likely. For example, many CMS platforms allow you to identify and “sleep” any user accounts that have not published any new content in a set period of time, such as 6 to 9 months. This can reduce the risk of a defunct user account being hijacked by an attacker looking for a way into your system."
               ]
             },
@@ -2951,7 +2951,7 @@ var en_rs = { // contains all evaluation content
               "title": "Create a minimum viable security system.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "Physical security systems can be highly complex, involving video and audio monitoring, entry cards, and visitor registration. If you don’t currently have a security system, however, you don’t need to start with the most advanced option. Instead, you can work with a security provider to implement a low-cost solution using basic equipment such as a dedicated smartphone or streaming camera. As your threat level increases or you increase your budget, you can work with a provider to install or implement a more elaborate solution.",
-                "Remember that video monitoring systems may not be appropriate for every organization. If you choose to use a video system, make sure to use systems that balance the need for security with the need for privacy, such as [Haven](links.gproj.haven) by the Guardian Project. Video feeds should be encrypted to protect your organization further. Both [Surveillance Station](links.synology.station) by Synology and [Haicam](links.haicam.web) can support encrypted video.",
+                "Remember that video monitoring systems may not be appropriate for every organization. If you choose to use a video system, make sure to use systems that balance the need for security with the need for privacy, such as [[Haven]](links.gproj.haven) by the Guardian Project. Video feeds should be encrypted to protect your organization further. Both [[Surveillance Station]](links.synology.station) by Synology and [[Haicam]](links.haicam.web) can support encrypted video.",
                 "Organizations that use video-based security systems should remember that video surveillance has an effect on your staff and visitors. Workers should always know where cameras are placed and you should designate a \"no camera\" zone where staff can congregate without being recorded."
               ]
             }
@@ -2998,7 +2998,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Educate yourself about civil society law in your country and region.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "Law can be highly complicated, but your staff  can learn the basics. An excellent resource (apart from a lawyer in your area) is the [International Center for Not-For-Profit Law](links.icnl.web), which has an online library with case studies from around the world, as well as reports and resources for nearly every nation. ",
+                "Law can be highly complicated, but your staff  can learn the basics. An excellent resource (apart from a lawyer in your area) is the [[International Center for Not-For-Profit Law]](links.icnl.web), which has an online library with case studies from around the world, as well as reports and resources for nearly every nation. ",
                 "It is also important to become familiar with how (well) the relevant laws are enforced."
               ]
             },
@@ -3006,7 +3006,7 @@ var en_rs = { // contains all evaluation content
               "title": "Meet with a lawyer.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "While this may seem like an obvious suggestion, finding a qualified lawyer in your area may be challenging. If you’re able to meet with a lawyer to discuss your organization, make sure to discuss key areas of concern about legal liability. If you aren’t able to meet with a lawyer, you may have better luck consulting with a free clinic at a local law school or a legal scholar or researcher. Many lawyers may be willing to work with a civil society organization pro bono, but that may not always be the case.",
-                "A good resource for finding qualified lawyers in your region is the [International Bar Association](links.iba.web), which advocates for lawyers worldwide.",
+                "A good resource for finding qualified lawyers in your region is the [[International Bar Association]](links.iba.web), which advocates for lawyers worldwide.",
               ]
             },
           ],
@@ -3043,7 +3043,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Use an e-discovery platform.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through vast amounts of information using a computer. Your organization can also use these tools, such as [Google’s G Suite Vault](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform.",
+                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through vast amounts of information using a computer. Your organization can also use these tools, such as [[Google’s G Suite Vault]](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform.",
               ]
             },
             {
@@ -3080,14 +3080,14 @@ var en_rs = { // contains all evaluation content
               "title": "Understand the risks of unencrypted communication.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "If your staff members are unfamiliar with cybersecurity, they may have communicated only using unencrypted technology, such as their standard smartphone or email. As a result, they may not understand the amount of information that can be hacked, uncovered through surveillance, or seized through a legal or government request when using unencrypted communication. This is especially true during moments of crisis, when many governments and other groups may increase their surveillance of regular communication channels.",
-                "Educating your staff members on how encryption works is a good first start to introducing this concept. The Electronic Frontier Foundation’s \"[Communicating with Others](links.eff.comms)\" in its Surveillance Self-Defense curriculum is useful reading. If you’re using a dedicated mobile phone number for work, consider switching to a  voice-over Internet protocol (VOIP) number that connects via the Internet. You can find such numbers through services such as Google Voice or Skype, allowing you to avoid having to use a country-specific SIM card in your smartphone. Using a VOIP number can also protect you from threats including cell site simulators, also known as [Stingrays](links.aclu.stingrays), and vulnerabilities in cellular technology, such as [SS7](links.guardian.ss7) attacks.",
+                "Educating your staff members on how encryption works is a good first start to introducing this concept. The Electronic Frontier Foundation’s \"[[Communicating with Others]](links.eff.comms)\" in its Surveillance Self-Defense curriculum is useful reading. If you’re using a dedicated mobile phone number for work, consider switching to a  voice-over Internet protocol (VOIP) number that connects via the Internet. You can find such numbers through services such as Google Voice or Skype, allowing you to avoid having to use a country-specific SIM card in your smartphone. Using a VOIP number can also protect you from threats including cell site simulators, also known as [[Stingrays]](links.aclu.stingrays), and vulnerabilities in cellular technology, such as [[SS7]](links.guardian.ss7) attacks.",
               ]
             },
             {
               "title": "Begin introducing encrypted alternatives.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "To help your staff become accustomed to encrypted communications, you shouldn’t expect them to use this new technology overnight. Instead, introduce encrypted platforms gradually, perhaps over 8 to 10 months, before making them mandatory. You may want to publicly praise staff members who are early adopters. Those who are resistant can become members of a working group dedicated to adopting the tools, making them more likely to use them.",
-                "At the time of writing, a few encrypted communication tools we recommend are the messenger applications [Signal](links.signal.web) and [Wire](links.wire.web). You may also want to consider a self-hosted workplace messenger like [Mattermost](links.mmost.web) or the [collaboration tool Element](links.element.web) as an alternative to popular software such as Slack. A technical assistance provider can help you enable any of these tools, or find alternatives.",
+                "At the time of writing, a few encrypted communication tools we recommend are the messenger applications [[Signal]](links.signal.web) and [[Wire]](links.wire.web). You may also want to consider a self-hosted workplace messenger like [[Mattermost]](links.mmost.web) or the [[collaboration tool Element]](links.element.web) as an alternative to popular software such as Slack. A technical assistance provider can help you enable any of these tools, or find alternatives.",
                 "If you work in a highly regulated space, such as legal advocacy, you may be required to keep records of your communications. In this case, remember to take screenshots of any encrypted messaging or collaboration tools, especially if the messages are set to disappear."
               ]
             },
@@ -3173,7 +3173,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Apply for discounted licensed software.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [technology provider TechSoup](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
+                "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [[technology provider TechSoup]](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
               ]
             },
             {
@@ -3183,9 +3183,9 @@ var en_rs = { // contains all evaluation content
                 {
                   "type": "ul",
                   "items": [
-                    "Microsoft Office can be replaced with [OpenOffice](links.apache.oofice) or [LibreOffice](links.libre.office)",
+                    "Microsoft Office can be replaced with [[OpenOffice]](links.apache.oofice) or [[LibreOffice]](links.libre.office)",
                     "Adobe Photoshop can be replaced with Canva (available with a nonprofit license), Sumopaint, and Pixlr",
-                    "Microsoft Outlook can be replaced with [Mozilla Thunderbird](links.mozilla.tbird)"
+                    "Microsoft Outlook can be replaced with [[Mozilla Thunderbird]](links.mozilla.tbird)"
                   ]
                 },
                 "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
@@ -3255,14 +3255,14 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Turn on full disk encryption on work devices.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "Work with a technical assistance provider to enable full disk encryption on any computers that your organization uses for work. This may be time-consuming, especially for busy organizations with little downtime, but can be performed during off hours as needed. Windows computers must be upgraded to at least Windows 10 Pro (which typically costs around US $50) to enable [BitLocker](links.ms.bitlocker), the built-in full disk encryption software. Apple computers have access to built-in [FileVault](links.apple.filevault) software that can be enabled at any time. Linux computers use [Luks](links.redhat.luks), which must be enabled when the operating system is being installed.",
+                "Work with a technical assistance provider to enable full disk encryption on any computers that your organization uses for work. This may be time-consuming, especially for busy organizations with little downtime, but can be performed during off hours as needed. Windows computers must be upgraded to at least Windows 10 Pro (which typically costs around US $50) to enable [[BitLocker]](links.ms.bitlocker), the built-in full disk encryption software. Apple computers have access to built-in [[FileVault]](links.apple.filevault) software that can be enabled at any time. Linux computers use [[Luks]](links.redhat.luks), which must be enabled when the operating system is being installed.",
                 "It’s also important to understand how your encryption system works. Much encryption software, including Microsoft’s BitLocker, encrypts data “at rest,” meaning the data are encrypted only when the device is turned off. Some encrypted cloud storage also works this way, only encrypting data when the user is not actively connected to the system. This is important to consider when setting up these systems so there is no misunderstanding about how extensively you have protected your data."
               ]
             },
             {
               "title": "Consider more secure hard drive alternatives.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "Currently, you may store some of your data on external hard drives, which are very portable and convenient. By default, however, most of these devices are not encrypted, leaving your data accessible to anyone who has the drive itself. Consider replacing these devices with more secure alternatives. One option would be to replace external hard drives with hard drives that require physical PIN codes. [Apricorn](links.apricorn.web) and [iStorageUK](links.istorageuk.web) sell these encrypted drives, which have keypads to enter the codes and access the data within."
+                "Currently, you may store some of your data on external hard drives, which are very portable and convenient. By default, however, most of these devices are not encrypted, leaving your data accessible to anyone who has the drive itself. Consider replacing these devices with more secure alternatives. One option would be to replace external hard drives with hard drives that require physical PIN codes. [[Apricorn]](links.apricorn.web) and [[iStorageUK]](links.istorageuk.web) sell these encrypted drives, which have keypads to enter the codes and access the data within."
               ]
             },
           ],
@@ -3278,7 +3278,7 @@ var en_rs = { // contains all evaluation content
               "title": "Use “zero-knowledge” encrypted cloud storage.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "For highly sensitive information, consider using a “zero-knowledge” cloud storage provider. This term refers to a cloud storage provider that has no “knowledge” of the files or data you store. They simply provide storage and the encryption functionality necessary to keep your data safe. This means that your organization alone has access to the files and data you store there.",
-                "While this greatly strengthens your ability to store sensitive information, there is also a downside: if you lose or forget your credentials to the service, you won’t be able to access your data. And since the provider doesn’t have access to your data, either, they can’t retrieve it for you. With this knowledge in mind, be selective about the data you choose to store with a zero-knowledge provider, choosing only sensitive data that you have backed up elsewhere. Popular zero-knowledge encrypted cloud storage providers include [Tresorit](links.tresorit.web), [SpiderOak One](links.soak.web), and the open-source alternative [NextCloud](links.nextcloud.web) or [OwnCloud](links.ocloud.web).",
+                "While this greatly strengthens your ability to store sensitive information, there is also a downside: if you lose or forget your credentials to the service, you won’t be able to access your data. And since the provider doesn’t have access to your data, either, they can’t retrieve it for you. With this knowledge in mind, be selective about the data you choose to store with a zero-knowledge provider, choosing only sensitive data that you have backed up elsewhere. Popular zero-knowledge encrypted cloud storage providers include [[Tresorit]](links.tresorit.web), [[SpiderOak One]](links.soak.web), and the open-source alternative [[NextCloud]](links.nextcloud.web) or [[OwnCloud]](links.ocloud.web).",
               ]
             },
           ],
@@ -3293,7 +3293,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Encrypt sensitive information on your computer", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "While we recommend full disk encryption on all devices, it has its limitations. What happens, for example, if a staff member leaves their work laptop unlocked while they use the restroom and someone clicks on a sensitive file on their desktop? For individual files that could pose a risk if they fell into the wrong hands, consider teaching your staff members how to encrypt files and folders. If files are encrypted, individuals will be prompted for a password to open them. You can accomplish this through the use of file encryption software such as [VeraCrypt](links.vera.web) or [Cryptomator](links.cmator.web). A technical assistance provider can help you get started.",
+                "While we recommend full disk encryption on all devices, it has its limitations. What happens, for example, if a staff member leaves their work laptop unlocked while they use the restroom and someone clicks on a sensitive file on their desktop? For individual files that could pose a risk if they fell into the wrong hands, consider teaching your staff members how to encrypt files and folders. If files are encrypted, individuals will be prompted for a password to open them. You can accomplish this through the use of file encryption software such as [[VeraCrypt]](links.vera.web) or [[Cryptomator]](links.cmator.web). A technical assistance provider can help you get started.",
                 "One important note: when using some types of this software, encrypted files may appear to be missing and not present in file folders or on the desktop. These files only appear when a user opens the appropriate software and enters their password."
               ]
             },
@@ -3380,7 +3380,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Use a virtual machine.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "If you have access to high-speed Internet, your staff can use software such as [VMWare](links.vmware.virtualization) or [Microsoft Hypervisor](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization.",
+                "If you have access to high-speed Internet, your staff can use software such as [[VMWare]](links.vmware.virtualization) or [[Microsoft Hypervisor]](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization.",
               ]
             },
             {
@@ -3392,7 +3392,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Incorporate end-point security solutions.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [Microsoft Defender for Endpoint](links.ms.defender) and [Bitdefender GravityZone Ultra Security Suite](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [this resource from SANS](links.sans.endpoint)."
+                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [[Microsoft Defender for Endpoint]](links.ms.defender) and [[Bitdefender GravityZone Ultra Security Suite]](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [[this resource from SANS]](links.sans.endpoint)."
               ]
             },
           ]
@@ -3423,7 +3423,7 @@ var en_rs = { // contains all evaluation content
               "title": "Understand how passwords are compromised online.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "Passwords are valuable to people interested in accessing your organization’s information online. They can include attackers looking to compromise your organization or cybercriminals looking to steal or sell data. Most online services— such as email and social media platforms—will eventually be compromised. When this happens, attackers sell and trade passwords until they are gradually released on the public Internet.",
-                "Sooner or later, staff members will suffer from a breach that exposes at least one of their passwords. If they use that password across several different accounts, they increase their risk and the risk to your organization. You can detect whether your current passwords have been breached by using the website [Have I Been Pwned](links.hibp.web)."
+                "Sooner or later, staff members will suffer from a breach that exposes at least one of their passwords. If they use that password across several different accounts, they increase their risk and the risk to your organization. You can detect whether your current passwords have been breached by using the website [[Have I Been Pwned]](links.hibp.web)."
               ]
             },
             {
@@ -3436,7 +3436,7 @@ var en_rs = { // contains all evaluation content
               "title": "Enable a password manager.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "Every online service your staff members use needs a unique password. Unfortunately, with many of us managing hundreds of different online services, it’s virtually impossible to remember so many unique passwords. A password management tool—also known as a password manager—can help organize our passwords, store them securely, and allow us to generate random, stronger passwords for our services. Some password managers can even share passwords with your staff for accounts that they all use regularly.",
-                "Popular and easy-to-use password managers for staff include [1Password Business](links.1pass.biz) ([which offers 50% discount for NGOs](links.1pass.discount)), [LastPass Enterprise](links.lpass.web), [Dashlane](links.dlane.web), [KeePassxc](links.kpassxc.web), [Keeper](links.keeper.web), and [Bitwarden](links.bwarden.web). A technical assistance provider can help you determine the right password manager for your organization."
+                "Popular and easy-to-use password managers for staff include [[1Password Business]](links.1pass.biz) ([[which offers 50% discount for NGOs]](links.1pass.discount)), [[LastPass Enterprise]](links.lpass.web), [[Dashlane]](links.dlane.web), [[KeePassxc]](links.kpassxc.web), [[Keeper]](links.keeper.web), and [[Bitwarden]](links.bwarden.web). A technical assistance provider can help you determine the right password manager for your organization."
               ]
             },
             {
@@ -3458,7 +3458,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Use an authenticator app or token.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "When first enabled, most two-factor authentication services use SMS, or text, messages to send the codes your staff  will need to access their accounts. However, because SMS messages are easily intercepted and manipulated, this isn’t the most secure way to send authentication codes. Instead, we recommend switching from SMS to either an authenticator app that will run on your staff ’s smartphones or, for an even more secure solution, a hardware token that plugs into the physical computer’s USB port. We recommend [Authy](links.authy.web), [Google Authenticator](links.google.auth), and [Microsoft Authenticator](links.ms.auth). Reputable hardware tokens include [Yubikey](links.yubico.key), [Solo Key](links.solo.key), and [Titan Key](links.titan.key)."
+                "When first enabled, most two-factor authentication services use SMS, or text, messages to send the codes your staff  will need to access their accounts. However, because SMS messages are easily intercepted and manipulated, this isn’t the most secure way to send authentication codes. Instead, we recommend switching from SMS to either an authenticator app that will run on your staff ’s smartphones or, for an even more secure solution, a hardware token that plugs into the physical computer’s USB port. We recommend [[Authy]](links.authy.web), [[Google Authenticator]](links.google.auth), and [[Microsoft Authenticator]](links.ms.auth). Reputable hardware tokens include [[Yubikey]](links.yubico.key), [[Solo Key]](links.solo.key), and [[Titan Key]](links.titan.key)."
               ]
             },
             {
@@ -3481,7 +3481,7 @@ var en_rs = { // contains all evaluation content
               "title": "Use single sign-on throughout your organization.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "By instituting a comprehensive or single sign-on (SSO) system, you’re improving both your staff’s workflow and their security. SSO requires your staff to use the same username, password, and two-factor authentication for all accounts they use for work. The system also gives an administrator greater control over security preferences, as well as the ability to more closely monitor staff usage of work accounts.",
-                "SSO can be complicated to set up, especially for a large organization with established security protocols, but a technical assistance provider can help. We recommend SSO systems [Duo](links.duo.web) and [Okta](links.okta.web). The [Advanced Protection Program from Google](links.google.applan) can help establish a similar system for high-risk users. Just remember that to be effective, all accounts within your organization that require a log-in need to be governed by SSO.",
+                "SSO can be complicated to set up, especially for a large organization with established security protocols, but a technical assistance provider can help. We recommend SSO systems [[Duo]](links.duo.web) and [[Okta]](links.okta.web). The [[Advanced Protection Program from Google]](links.google.applan) can help establish a similar system for high-risk users. Just remember that to be effective, all accounts within your organization that require a log-in need to be governed by SSO.",
                 "The reason that SSO is more secure than using hundreds of different accounts is because it lowers your “attack surface.” Rather than having several different accounts and passwords for an attacker to target, SSO puts all your accounts behind a single gate, usually with a high level of protection. Most SSO providers also require two-factor authentication for an added layer of security, as well as oversight by an administrator who can deactivate accounts as needed."
               ]
             },
@@ -3541,7 +3541,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Pushing updates as needed to work devices.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "For large organizations with several offices, using device management software can allow your IT department to “push” updates to work devices without having to be physically present in the office. This can ensure that critical updates reach work devices around the world while giving your organization more hands-on management of software and security. Apple supplies [their own device management software](links.apple.management), while Google provides a [similar service](links.google.management) through their G Suite platform. You may be able to use an open source alternative such as [Miradore](links.miradore.web).",
+                "For large organizations with several offices, using device management software can allow your IT department to “push” updates to work devices without having to be physically present in the office. This can ensure that critical updates reach work devices around the world while giving your organization more hands-on management of software and security. Apple supplies [[their own device management software]](links.apple.management), while Google provides a [[similar service]](links.google.management) through their G Suite platform. You may be able to use an open source alternative such as [[Miradore]](links.miradore.web).",
                 "You can also configure your internal systems to prevent access to users who are running older versions of operating systems and software."
               ]
             },
@@ -3592,7 +3592,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Set up an alternate communication channel.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "In an emergency, the normal communication channels that your organization relies on, such as Slack and email, may not be available. Consider creating an account with a different service, such as encrypted email provider [ProtonMail](links.pmail.web) or encrypted messenger [Threema](links.3ma.web), to use during a crisis. Make sure to practice logging in and using these accounts to communicate during drills every three to six months."
+                "In an emergency, the normal communication channels that your organization relies on, such as Slack and email, may not be available. Consider creating an account with a different service, such as encrypted email provider [[ProtonMail]](links.pmail.web) or encrypted messenger [[Threema]](links.3ma.web), to use during a crisis. Make sure to practice logging in and using these accounts to communicate during drills every three to six months."
               ]
             },
           ],
@@ -3613,7 +3613,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Introduce alternatives to physical meetings.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "When staff can’t meet in person, productivity can sometimes dip. While using popular videoconferencing platforms is ideal for standard meetings, consider a more secure and end-to-end encrypted alternative for sensitive staff  meetings, such as [Cisco Webex](links.cisco.webex), Zoom or Signal."
+                "When staff can’t meet in person, productivity can sometimes dip. While using popular videoconferencing platforms is ideal for standard meetings, consider a more secure and end-to-end encrypted alternative for sensitive staff  meetings, such as [[Cisco Webex]](links.cisco.webex), Zoom or Signal."
               ]
             },
             {
@@ -3655,7 +3655,7 @@ var en_rs = { // contains all evaluation content
               "title": "Create a public and private organizational account on social media platforms.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "On social media, verification is essential. An account that claims to represent your organization can sow misinformation, mislead your community, and discredit your efforts. To help prevent this risk, create both a public and private account for your organization. If your public account is compromised or attacked, your private account can issue public statements and clarifications. Most social media platforms allow dual accounts, although Facebook may be more restrictive due to its “real name” policy, which requires users to use a verifiable name.",
-                "Nonetheless, Facebook has extended some special permissions for certain types of accounts, such as [accounts belonging to journalists](links.fb.journos).",
+                "Nonetheless, Facebook has extended some special permissions for certain types of accounts, such as [[accounts belonging to journalists]](links.fb.journos).",
                 "In addition to dual accounts, you will want to make sure that two-factor authentication and other security features are enabled on all third-party accounts, as well as making sure your staff understands privacy settings on social media, such as turning off location data."
               ]
             },
@@ -3700,8 +3700,8 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Use defensive tactics against doxxing.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "Doxxing, or the practice of releasing personally identifiable information on the Internet, can be personally and professionally challenging. Luckily, there are several anti-doxxing measures your organization can take to lessen this risk. These include proactively searching the names of your staff on popular search engines and removing the names of staff members from data brokerage sites using services such as [Abine DeleteMe](links.deleteme.web) and [Norton LifeLock](links.lifelock.web).",
-                "Other defensive measures you can take to strengthen staff accounts include establishing trusted backup access to third-party accounts in case of a staff member’s illness, imprisonment, or death, and claiming similar-sounding social media account names using a service such as [DNSTwist](links.dnstwist.web).",
+                "Doxxing, or the practice of releasing personally identifiable information on the Internet, can be personally and professionally challenging. Luckily, there are several anti-doxxing measures your organization can take to lessen this risk. These include proactively searching the names of your staff on popular search engines and removing the names of staff members from data brokerage sites using services such as [[Abine DeleteMe]](links.deleteme.web) and [[Norton LifeLock]](links.lifelock.web).",
+                "Other defensive measures you can take to strengthen staff accounts include establishing trusted backup access to third-party accounts in case of a staff member’s illness, imprisonment, or death, and claiming similar-sounding social media account names using a service such as [[DNSTwist]](links.dnstwist.web).",
               ]
             },
           ]
@@ -3740,7 +3740,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Evaluate your budget and choose a VPN accordingly.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "VPNs come in all varieties and price points. Luckily, most VPNs are reasonably priced. We discourage most organizations from relying on an entirely free VPN because of concerns about your data security and privacy. There are a small number of trusted free alternatives, including [Psiphon](links.psiphon.web), [Lantern](links.lantern.web), and [BitMask](links.bmask.web). Many VPN companies, including [Tunnel Bear](links.tbear.web) and [Mullvad](links.mvad.web), also provide free annual subscriptions to deserving organizations, but these are best left for groups with little to no financial resources. You can consult with a technical assistance provider for advice on choosing a VPN and read articles like [this New York Times Wirecutter guide](links.nyt.vpns) for more details."
+                "VPNs come in all varieties and price points. Luckily, most VPNs are reasonably priced. We discourage most organizations from relying on an entirely free VPN because of concerns about your data security and privacy. There are a small number of trusted free alternatives, including [[Psiphon]](links.psiphon.web), [[Lantern]](links.lantern.web), and [[BitMask]](links.bmask.web). Many VPN companies, including [[Tunnel Bear]](links.tbear.web) and [[Mullvad]](links.mvad.web), also provide free annual subscriptions to deserving organizations, but these are best left for groups with little to no financial resources. You can consult with a technical assistance provider for advice on choosing a VPN and read articles like [[this New York Times Wirecutter guide]](links.nyt.vpns) for more details."
               ]
             },
             {
@@ -3763,8 +3763,8 @@ var en_rs = { // contains all evaluation content
               "title": "Consider a more technical alternative.", // title of this recommendation
               "content": [ // explanation of this recommendation
                 "Creating your own VPN can be technically complicated but allows you to better control your own data and privacy. Rather than relying on a commercial provider, a build-your-own VPN allows you to better customize a specific tool to meet your security needs.",
-                "Google offers [a service called Outline](links.google.outline) which allows organizations to build their own VPN for approximately US $10 a month. Outline works well for most contexts, including areas where VPN use may be noticed or blocked. (It is not a solution for countries or regions where VPNs are banned.) Alternatively, a slightly more complex option is [Algo by the security firm Trail of Bits](links.trailbits.algo), which helps organizations set up their own VPN server.",
-                "While not a VPN, a tool such as [Firefox DoH](links.mozilla.doh) can also make your web browsing safer and can be used in conjunction with your existing VPN service. You will probably need to work with a technical assistance provider to enable any of these solutions for your organization."
+                "Google offers [[a service called Outline]](links.google.outline) which allows organizations to build their own VPN for approximately US $10 a month. Outline works well for most contexts, including areas where VPN use may be noticed or blocked. (It is not a solution for countries or regions where VPNs are banned.) Alternatively, a slightly more complex option is [[Algo by the security firm Trail of Bits]](links.trailbits.algo), which helps organizations set up their own VPN server.",
+                "While not a VPN, a tool such as [[Firefox DoH]](links.mozilla.doh) can also make your web browsing safer and can be used in conjunction with your existing VPN service. You will probably need to work with a technical assistance provider to enable any of these solutions for your organization."
               ]
             },
           ],
@@ -3785,7 +3785,7 @@ var en_rs = { // contains all evaluation content
             {
               "title": "Understand when to use Tor.", // title of this recommendation
               "content": [ // explanation of this recommendation
-                "The [Tor browser](links.tor.browser) has been a popular choice for journalists, researchers, and advocates who are concerned about their online activities being tracked by ISPs, governments, and other organizations. Tor provides a higher degree of privacy and anonymity than a standard browser or a VPN because it bounces the user’s traffic through a series of servers, making it much more difficult for an adversary to determine where the traffic originated. You can read more about how Tor works at the Tor Project website.",
+                "The [[Tor browser]](links.tor.browser) has been a popular choice for journalists, researchers, and advocates who are concerned about their online activities being tracked by ISPs, governments, and other organizations. Tor provides a higher degree of privacy and anonymity than a standard browser or a VPN because it bounces the user’s traffic through a series of servers, making it much more difficult for an adversary to determine where the traffic originated. You can read more about how Tor works at the Tor Project website.",
                 "Many organizations use Tor for sensitive research only, as the browsing experience can be slower than a standard browser and there is a learning curve to use the tool properly. Nonetheless, Tor is a trusted, reputable option for anonymous browsing. Talk to your technical assistance provider about how to incorporate Tor into your workflow."
               ]
             },

@@ -1,6 +1,6 @@
-function generateRecommendation(result, rec, res, gen, prog){
+function generateRecommendation(result, rec, res, gen, prog, first){
     thisCat = result.section.toLowerCase().replaceAll(' ', '-');
-    thisScore = rec.content.replace('[[level]]', '<span>'+ rec.title.toLocaleLowerCase()+'</span>');    
+    thisScore = rec.content.replace('[[level]]', '<span>'+ rec.title.toLowerCase()+'</span>');    
     thisScore = thisScore.replace('[[section]]', result.title);
     
     section = `<h4 class="section">${result.section}</h4><progress value="${prog}" max="30"></progress>`;
@@ -12,100 +12,57 @@ function generateRecommendation(result, rec, res, gen, prog){
           resContent += `<h4>${res[i].title}</h4>`;
         }
         for (const text in res[i].content) {
-            thisRec = typeof res[i].content[text];
+            thisRec = res[i].content[text];
             // each item inside content
-            resContent += getContentType(res[i].content[text]);
-                // check if it's a string (title + content)
-                if (thisRec === "string"){
-                    resContent += `<p>${res[i].content[text]}</p>`;
+                
+            // check if it's an array of objects
+            if (Array.isArray(thisRec)){
+                resContent += `<div class="extra-recs">`;
+                // if it's an array then do all the above checks again
+                for (const r in thisRec){
+                    resContent += getRecsContent(thisRec[r]);
                 }
-                // check if it's a table (type + rows)
-                if (thisRec.type === "table"){
-                    resContent += `<table><thead><tr>`;
-                    for (var th = 0; th < res[i].content[text].rows[0].length; th++) {
-                      resContent += `<th>${res[i].content[text].rows[0][th]}</th>`;
-                    }
-                    resContent += `</tr></thead><tbody>`;
-                    for (var tr = 1; tr < res[i].content[text].rows.length-1; tr++) {
-                        resContent += `<tr>`;
-                        for (var td = 0; td < res[i].content[text].rows[tr].length; td++){
-                            resContent += `<td>${res[i].content[text].rows[tr][td]}</td>`;
-                        }
-                        resContent += `</tr>`;
-                    }
-                    resContent += `</tbody></table>`;
-                }
-                // check if it's a list (ul/ol + items)
-                if (thisRec.type === "ul" || thisRec.type === "ol"){
-                    resContent += `<${res[i].content[text].type}>`;
-                    for (var pt = 0; pt < res[i].content[text].items; pt++) {
-                        resContent += `<li>${res[i].content[text].items[pt]}</li>`;
-                    }
-                    resContent += `</${res[i].content[text].type}>`;
-                }
-                // check if it's an array
-                if (Array.isArray(thisRec)){
-                    // if it's an array then do all the above checks again
-                }
-
-
-            
-//            if (typeof res[i].content[text] === "string") {
-//                resContent += `<p>${res[i].content[text]}</p>`;
-//            } 
-//            else {
-//                if (Array.isArray(res[i].content[text])){
-//                    resContent += `<div class="subrec">`;
-//                    if (res[i].content[text].type === "title") {
-//                        resContent += `<h4>${res[i].content[text].heading}</h4><p>${res[i].content[text].content}</p>`;
-//                    } 
-//                    else if ((typeof res[i].content[text] === "ul") || (typeof res[i].content[text] === "ol")) {
-//                        resContent += `<${res[i].content[text].type}>`;
-//                        for (var pt = 0; pt < res[i].content[text].items; pt++) {
-//                            resContent += `<li>${res[i].content[text].items[pt]}</li>`;
-//                        }
-//                        resContent += `</${res[i].content[text].type}>`;
-//                    } 
-//                    else if (res[i].content[text].type === "table") {
-//                        resContent += `<table><thead><tr>`;
-//                        for (var th = 0; th < res[i].content[text].rows[0].length; th++) {
-//                          resContent += `<th>${res[i].content[text].rows[0][th]}</th>`;
-//                        }
-//                        resContent += `</tr></thead><tbody>`;
-//                        for (var tr = 1; tr < res[i].content[text].rows.length-1; tr++) {
-//                            resContent += `<tr>`;
-//                            for (var td = 0; td < res[i].content[text].rows[tr].length; td++){
-//                                resContent += `<td>${res[i].content[text].rows[tr][td]}</td>`;
-//                            }
-//                            resContent += `</tr>`;
-//                        }
-//                        resContent += `</tbody></table>`;
-//                    }
-//                    resContent += `</div>`;
-//                }
-//            }
+                resContent += `</div>`;
+            } else {
+                resContent += getRecsContent(thisRec);
+            }
         }
         general = `<h3>${gen.why}</h3>`;
           
         for (var y = 0; y < result.general.why.length; y++) {
-            general += `<p>${result.general.why[y]}</p>`;
+            checkedText = findReplaceLinks(result.general.why[y]);
+            general += `<p>${checkedText}</p>`;
         }
         general += `<div class="rec-example"><h3>${gen.eg}</h3>`;
           
         for (var eg = 0; eg < result.general.eg.length; eg++) {
-            general += `<p>${result.general.eg[eg]}</p>`;
+            checkedText = findReplaceLinks(result.general.eg[eg]);
+            general += `<p>${checkedText}</p>`;
         }
         general += `</div>`;
       }
     
-    return `<div class="result r-${thisCat}">`+section+heading+`<p class="score">${thisScore}</p>`+`<h3 class="what">${gen.what}</h3>`+resContent+general+`</div>`;
+    if (thisCat === first){
+        divInfo = `class="result r-${thisCat} active"`;
+    } else {
+        divInfo = `class="result r-${thisCat}"`;
+    }
+    
+    return `<div ${divInfo}>`+section+heading+`<p class="score">${thisScore}</p>`+`<h3>${gen.what}</h3>`+resContent+general+`</div>`;
 }
 
-function getContentType(el){
-    if (el === "string"){
+function getRecsContent(el){
+    if (typeof el === "string"){
+        el = findReplaceLinks(el);
         return `<p>${el}</p>`;
-    } else if ()
-               
+    } else if (el.type === "ul" || el.type === "ol"){
+        list = `<${el.type}>`;
+        for (var pt = 0; pt < el.items; pt++) {
+            checkedPoint = findReplaceLinks(el.items[pt]);
+            list += `<li>${point}</li>`;
+        }
+        list += `</${el.type}>`;
+        return list;
     } else if (el.type === "table"){
         table = `<table><thead><tr>`;
         for (var th = 0; th < el.rows[0].length; th++) {
@@ -119,8 +76,15 @@ function getContentType(el){
             }
             table += `</tr>`;
         }
-        resContent += `</tbody></table>`;
-        return "table";
+        table += `</tbody></table>`;
+        return table;
+    } else if (el.type === "title") {
+        highlight = `<h4>${el.heading}</h4>`;
+        checkedContent = findReplaceLinks(el.content);
+        highlight += `<p>${checkedContent}</p>`;
+        return highlight;
+    } else {
+        console.log(el);
     }
 }
 
@@ -136,17 +100,65 @@ function dateStamp(){
 }
 
 function clearData(){
-  tally = null;
   currentState = null;
-  dates  = null;
   dict = null;
-  output = null;
-  qRef = null;
   tmpContent = null;
   window.location.reload(true);
 }
 
-function resetChanges(){
-  // could also use textContent instead of output here
-  document.querySelector('.policyHolder').value = output.plain;
+function findReplaceLinks(string){
+    // set up the regex to search for text within [[ ]] that is followed by text within ()
+    
+// 0 has the full match
+// 1 has the text without [[]]
+// 2 has the link in ()
+// input contains the full unedited string
+
+    
+    var findLinkRefs = new RegExp(/\[\[([^\[]+)\]\]\(([^\)]*)\)/, 'g');
+    var matches = [...string.matchAll(findLinkRefs)];
+    if (matches.length > 0){
+        // if there are matches
+        // for each matching group
+        for (var m = 0; m < matches.length; m++){
+            wordsToReplace = matches[m][0];
+            // get the matching link
+            linkRef = matches[m][2].split('.');
+            // get the current language from the body
+            currentLang = document.body["lang"];
+            // if there's a matching url in the links array
+            if (links[linkRef[1]][linkRef[2]] !== undefined){
+                urlMatch = links[linkRef[1]][linkRef[2]][currentLang];
+                string = string.replace(wordsToReplace, `<a href="${urlMatch}" target="_blank">${matches[m][1]}</a>`);
+            } else {
+                // remove the [[]] and the link reference
+                string = string.replace(matches[m][0], matches[m][1]);
+            }            
+        }
+        return string; // edited
+    } else {
+        return string; // unedited
+    }
+}
+
+function replaceStr(string) {    
+  var editedStr = string;
+  // for each of the stored keys
+  for (var key in dict){
+    // if it's a list of things and the last item does not start with an " and "
+    if ((Array.isArray(dict[key])) && (!dict[key][dict[key].length-1].startsWith(" and "))){
+      last = dict[key][dict[key].length-1];
+      // add "and" plus a full stop to the last item
+      dict[key][dict[key].length-1] = "and " + last;
+      // prepend each item in the array with a space
+      for (var i = 0; i < dict[key].length; i++){
+        dict[key][i] = " " + dict[key][i];
+      }
+    }
+    var regexKey = key.replace('[', '\\[').replace(']', '\\]');
+//    var regex = new RegExp(regexKey, 'gi');
+    // check if that key exists in the string and replace it with value from dict
+    editedStr = editedStr.replace(regex, dict[key]);
+  }
+  return editedStr;
 }

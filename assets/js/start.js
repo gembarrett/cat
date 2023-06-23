@@ -1,12 +1,13 @@
-function addSubmenuHandlers(menu) {
+function addSubmenuHandlers(menu, page) {
     subs = document.querySelectorAll('.submenu h4, .submenu li');
     subs.forEach(sub => sub.addEventListener('click', updateSubmenu));
     
-    var progButtons = document.querySelectorAll('#progressButtons button');
-    for (var p = 0; p < progButtons.length; p++){
-        progButtons[p].addEventListener('click', nextPage);
+    if (page === 'survey'){
+        var progButtons = document.querySelectorAll('#progressButtons button');
+        for (var p = 0; p < progButtons.length; p++){
+            progButtons[p].addEventListener('click', nextPage);
+        }        
     }
-
 }
 
 // TODO: Add this back when snapshot link is re-implemented
