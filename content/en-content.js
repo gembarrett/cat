@@ -2147,7 +2147,7 @@ var en_rs = { // contains all evaluation content
     "below": {
       "title": "Below",
       "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity.",
-      "threshold": 15
+      "threshold": 30
     },
     "ok": {
       "title": "Reasonable",
@@ -2157,7 +2157,7 @@ var en_rs = { // contains all evaluation content
     "exceeds": {
       "title": "Exceeds",
       "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This means it has a high level of security in this area. Good work! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more.",
-      "threshold": 30
+      "threshold": 0
     },
     "general": {
       "what": "What We Recommend",

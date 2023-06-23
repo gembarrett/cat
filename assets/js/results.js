@@ -69,7 +69,7 @@ function getRecsContent(el){
           table += `<th>${el.rows[0][th]}</th>`;
         }
         table += `</tr></thead><tbody>`;
-        for (var tr = 1; tr < el.rows.length-1; tr++) {
+        for (var tr = 1; tr < el.rows.length; tr++) {
             table += `<tr>`;
             for (var td = 0; td < el.rows[tr].length; td++){
                 table += `<td>${el.rows[tr][td]}</td>`;

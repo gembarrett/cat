@@ -30,15 +30,15 @@ templates.resultsTemplate = function(data, params){
         }
         overview += `<div class="overview"><p>${data.recs.content[item].title}</p>`;
                 
-      if (data.tally[item] <= data.recs.reusables.below.threshold) { // if less than or equal to 15
+      if (data.tally[item] >= data.recs.reusables.below.threshold) { // if scored 30
         recLevel = data.recs.reusables.below;
         reslevel = data.recs.content[item].results.below;
           progValue = "10";
-      } else if ((data.tally[item] >= data.recs.reusables.ok.threshold) && (data.tally[item] <= data.recs.reusables.exceeds.threshold)){ // if 16-30
+      } else if ((data.tally[item] >= data.recs.reusables.ok.threshold) && (data.tally[item] < data.recs.reusables.below.threshold)){ // if over 16 but less than 30
         recLevel = data.recs.reusables.ok;
         reslevel = data.recs.content[item].results.ok;
           progValue = "20";
-      } else if (data.tally[item] > data.recs.reusables.exceeds.threshold) { // if number is over 30
+      } else if (data.tally[item] < data.recs.reusables.ok.threshold) { // if under 16
         recLevel = data.recs.reusables.exceeds;
         reslevel = data.recs.content[item].results.exceeds;
           progValue = "30";
