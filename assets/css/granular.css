@@ -404,6 +404,13 @@ small black fill green border */
     font-size:1.2em;
     line-height: 1.5em;
 }
+
+table th {
+    text-align: left;
+}
+tbody tr td:first-child {
+    font-weight: bold;
+}
 .rec-example {
     background-color: #fff8cc;
     padding:0.5em 1.5em;
@@ -556,12 +563,17 @@ form input {
 .save-btn {
   background-color: #000;
   color: #fff;
-  border: 0;
+  border: 1px solid #000;
   margin-top: 20px;
   padding: 16px;
     right:-100px;
     position: absolute;
     width:120px;
+    cursor: pointer;
+}
+.save-btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .overlap-col {
@@ -738,4 +750,8 @@ show prev
 #intro-p span {
     margin:0;
     padding:0;
+}
+/* this hides by default*/
+#overlay-resume, #overlay-mobile {
+    display: none;
 }

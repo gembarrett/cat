@@ -30,33 +30,25 @@ function simulateClick(el, key, keys){
       }
       break;
     case keys[1]: // edit
-      if (isThisText(el) === false){ // if it's not text entry
         if (isPreviewOpen() === false){ // if the preview isn't open
-          document.getElementById('editBtn').classList.contains('disabled') ? false : document.getElementById('editBtn').click();
+            document.getElementById('editBtn').classList.contains('disabled') ? false : document.getElementById('editBtn').click();
         } else { // else if the preview is open
           return false;
         }
-      } else { // else if it's a text entry, do nothing
-        return false;
-      }
       break;
     case keys[2]: // next
-      if (isThisText(el) === false){ // if it's not a text entry
-        if (isPreviewOpen() === false){ // if the preview isn't open
-          if (document.getElementById("submitAnswers").disabled === false){ // if the next button is enabled
-            document.getElementById('submitAnswers').click();
-            // this won't work as there is no summary section
-            document.querySelector('.current summary') ? document.querySelector('.current summary').focus() : document.querySelector('#logo');
-            key.preventDefault();
-          } else { // if the next button is disabled, do nothing
-            return false;
-          }
-        } else { // if the preview is open
-          return false;
-        }
-      } else {
+    if (isPreviewOpen() === false){ // if the preview isn't open
+      if (document.getElementById("submitAnswers").disabled === false){ // if the next button is enabled
+        document.getElementById('submitAnswers').click();
+        // this won't work as there is no summary section
+        document.querySelector('.current summary') ? document.querySelector('.current summary').focus() : document.querySelector('#logo');
         key.preventDefault();
+      } else { // if the next button is disabled, do nothing
+        return false;
       }
+    } else { // if the preview is open
+      return false;
+    }
       break;
     default:
       return false;
@@ -64,16 +56,6 @@ function simulateClick(el, key, keys){
 
 }
 
-// remove this function as overlay code has been deleted
-function isPreviewOpen(){
-  pre = document.getElementById('preview');
-  // if modal doesn't exist, or does exist and is closed
-  if (!pre || pre.classList.contains('closed')){
-    return false;
-  } else { // else if modal is open
-    return true;
-  }
-}
 
 function isThisText(el){
   if (el.type == "text"){

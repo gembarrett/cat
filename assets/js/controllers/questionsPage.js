@@ -79,28 +79,12 @@ controllers.questionsPage = function(data, params){
     menuData.push(menuItem);
     questionData.push(surveyData.questions);
   }
-
-
-  // // queue up all the questions in this section
-  // // for each of the sections
-  // for (var i = 0; i < sections.length; i++){
-  //   // get each of the questions
-  //   for (var j = 0; j < sections[i].length; j++){
-  //     var el = sections[i][j];
-  //     var item = {
-  //       's': i,
-  //       'q': el.q,
-  //       'area': el.area,
-  //       'answers': el.answers,
-  //     };
-  //     templateContext.push(item);
-  //   }
-  // }
+    
   // put that data into the template and return it for rendering
   var questionContainer = templates.questionsTemplate(menuData, questionData, data.ui, params);
-    
-    // does this do anything yet?
-    questionContainer += templates.warning(data.ui.ux, params);
-    
+    // set up the overlays
+    questionContainer += templates.overlay(data.ui.save, 'resume');
+    questionContainer += templates.overlay(data.ui.survey.ux.mobile, 'mobile');
+
   utils.render('page', questionContainer, goTo);
 };

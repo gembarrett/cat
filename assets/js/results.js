@@ -101,7 +101,6 @@ function dateStamp(){
 
 function clearData(){
   currentState = null;
-  dict = null;
   tmpContent = null;
   window.location.reload(true);
 }
@@ -139,26 +138,4 @@ function findReplaceLinks(string){
     } else {
         return string; // unedited
     }
-}
-
-function replaceStr(string) {    
-  var editedStr = string;
-  // for each of the stored keys
-  for (var key in dict){
-    // if it's a list of things and the last item does not start with an " and "
-    if ((Array.isArray(dict[key])) && (!dict[key][dict[key].length-1].startsWith(" and "))){
-      last = dict[key][dict[key].length-1];
-      // add "and" plus a full stop to the last item
-      dict[key][dict[key].length-1] = "and " + last;
-      // prepend each item in the array with a space
-      for (var i = 0; i < dict[key].length; i++){
-        dict[key][i] = " " + dict[key][i];
-      }
-    }
-    var regexKey = key.replace('[', '\\[').replace(']', '\\]');
-//    var regex = new RegExp(regexKey, 'gi');
-    // check if that key exists in the string and replace it with value from dict
-    editedStr = editedStr.replace(regex, dict[key]);
-  }
-  return editedStr;
 }

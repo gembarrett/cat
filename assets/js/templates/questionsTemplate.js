@@ -31,17 +31,10 @@ templates.questionsTemplate = function(menuData, questionData, additionalData, p
   //   }
   // }
 
-var intro = '<div id="survey-intro"><img src="assets/images/survey-image.png" /><h1>'+additionalData.title+'</h1><div id="intro-p">';
-intro = parseContent(additionalData.content, intro);
+var intro = '<div id="survey-intro"><img src="assets/images/survey-image.png" /><h1>'+additionalData.survey.title+'</h1><div id="intro-p">';
+intro = parseContent(additionalData.survey.content, intro);
 intro += `<span><a href="mailto:buildteam@fordfoundation.org">buildteam@fordfoundation.org</a></span></div>`;
 intro += '<div class="dots"><span class="circle"></span><span class="circle"></span><span class="circle"></span><span class="circle"></span></div></div>';
-
-// not sure if this is needed, since it appears to be handled when any progress buttons are clicked
-//function addSubmitHandler() {
-//  document.querySelector('.submit').addEventListener('click', function() {
-//    handleSubmit();
-//  });
-//}
 
 function buildSectionMenu(sections) {
   var menu = "";
@@ -142,11 +135,11 @@ content += `<div class="contain-md"><div class="left-col add-shadow submenu">`+c
 // Right column needs to contain all the questions
 var counter = 1; // not keen on this being a global variable but it'll do for now
 var survey = buildSurvey(questionData);
-var progressElement = `<div class="progressBar"><progress id="survey-progress" max="`+currentState.totalQs+`" value="0"></progress><label for="survey-progress">`+additionalData.ux.survey.progress[0]+`<span>0</span>%`+additionalData.ux.survey.progress[1]+`</label></div>`;
-var progressButtons = `<div id="progressButtons" class="first-start"><button class="back">`+additionalData.ux.survey.prev+`</button><button class="forward">`+additionalData.ux.survey.next+`</button><button class="submit">`+additionalData.ux.survey.submit+`</button></div>`;
+var progressElement = `<div class="progressBar"><progress id="survey-progress" max="`+currentState.totalQs+`" value="0"></progress><label for="survey-progress">`+additionalData.survey.ux.nav.progress[0]+`<span>0</span>%`+additionalData.survey.ux.nav.progress[1]+`</label></div>`;
+var progressButtons = `<div id="progressButtons" class="first-start"><button class="back">`+additionalData.survey.ux.nav.prev+`</button><button class="forward">`+additionalData.survey.ux.nav.next+`</button><button class="submit">`+additionalData.survey.ux.nav.submit+`</button></div>`;
 
 // TODO: split things up so that the submenu and questions are compiled in separate template files
-    content += `<div class="right-col"><div class="overlap-col"><button class="save-btn add-shadow">`+additionalData.ux.save.title+`</button><div class="rhombus r top"></div><div class="rhombus l mid"></div><div class="rhombus r base"></div></div>`;
+    content += `<div class="right-col"><div class="overlap-col"><button class="later save-btn add-shadow">`+additionalData.save.title+`</button><div class="rhombus r top"></div><div class="rhombus l mid"></div><div class="rhombus r base"></div></div>`;
     content += `<div class="contain-survey add-shadow"><form>`+survey+`</form>`;
     content += progressButtons+progressElement+`</div></div>`;
 

@@ -1,13 +1,13 @@
 templates.resultsTemplate = function(data, params){
-
+console.log(data);
     var currentDate = dateStamp();
-    var dateString = dataToPass.ui.intro;
+    var dateString = dataToPass.ui.results.intro;
     currentDate = dateString.replace('[[date]]', currentDate);
 
     var intro = `<h1>${data.recs.title}</h1><img src="assets/images/CAT-collage-results.png" /><p>${currentDate}</p>`;
     
     
-    var buttons = `<button class="results-generate">${dataToPass.ui.save[0].btn}</button><button class="results-email">${dataToPass.ui.save[1].btn}</button><button class="results-print">${dataToPass.ui.save[2].btn}</button>`;
+    var buttons = `<button class="results-generate">${dataToPass.ui.results.save[0].btn}</button><button class="results-email">${dataToPass.ui.results.save[1].btn}</button><button class="results-print">${dataToPass.ui.results.save[2].btn}</button>`;
     
     var answers = ``;
     var level;
@@ -59,7 +59,7 @@ templates.resultsTemplate = function(data, params){
         </div>
         <div class="right-col">
             <div class="overlap-col">
-                <button class="save-btn add-shadow">text</button>
+                <button class="later save-btn add-shadow">text</button>
             </div>`;
     
     content += `<div class="contain-results add-shadow"><div class="results-intro">${intro}</div><div class="results-overview">${overview}</div><div class="results-content">${answers}</div><div id="nextStepButtons">${buttons}</div></div></div></div>`;

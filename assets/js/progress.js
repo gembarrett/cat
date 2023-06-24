@@ -238,7 +238,7 @@ function isRequired(el){
 }
 
 function tooMany(arr){
-    if (arr[0].type === "checkbox" && arr.length > 3){
+    if (Array.isArray(arr) === true && arr[0].type === "checkbox" && arr.length > 3){
         return true;
     } else {
         return false;

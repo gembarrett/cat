@@ -13,6 +13,46 @@ function copyUrl(){
   }
 }
 
+function showOverlay(overlayToShow){
+    
+}
+
+function generateLink(){
+   // if there's answers stored
+   if (currentState.answered.length !== 0){
+       var saveLink = `${thisEnv}/#re-`;
+       curr = "";
+       for (var a = 0; a < currentState.answered.length; a++){
+           // each answer in the array has category name ([0] and [1], question number in that category [2], answer number in that question [3] and points for that answer [4]
+           // not all questions will have been answered
+           // change the category name to a shorter ref
+           catBits = currentState.answered[a].split('-');
+           // this must match subCatRef creation in buildCatRefLib()
+           catRef = catBits[0][0]+catBits[0][1]+catBits[1][0];
+           // if this catRef is not the same as the previous
+           if (curr !== catRef){
+                // update it
+                curr = catRef;
+               // then just add the question and answer
+                catRef += catBits[2]+catBits[3];
+
+           } else {
+               // if we're on the same category, don't repeat the ref
+               catRef = `-${catBits[2]}${catBits[3]}`;
+           }
+           
+           // keep question and answer numbers
+           saveLink += catRef;
+       }
+       console.log(saveLink);
+   }
+    else {
+        console.log('Not enough answers to generate link');
+    }
+}
+    
+
+
 // TODO: snapshot link should be generated when Save & Resume Later button is clicked
 function getSnapshotURL(){
   var snapshotUrl = thisEnv+"/#b-"+catv+"-p";
@@ -39,8 +79,3 @@ function getSnapshotURL(){
   document.querySelector('#snapshotLink').value = snapshotUrl;
 }
 
-// TODO: change this to check for answered questions instead
-function isCheckableQ(q){
-  var btnsArr = [2, 3, 5, 6, 7, 8, 10, 11, 15, 16, 17, 18, 19, 22, 23, 24, 25, 26, 29, 30, 31, 32, 36, 37, 38, 40, 41, 44, 45, 46, 47];
-  return btnsArr.includes(q) ? true : false;
-}

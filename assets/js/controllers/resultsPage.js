@@ -21,10 +21,8 @@ controllers.resultsPage = function(data, params){
         // get the subsection
         currAnswer = currentState.answered[ans].split('-');
         subGroup = `${currAnswer[0]}-${currAnswer[1]}`;
-        
       // if the area matches the key
       if (subGroup === rr){
-//          currQuestion = currAnswer[2];
         tally[rr] += parseInt(currAnswer[4]);
       } else {
         // doesn't match: skip
@@ -40,5 +38,8 @@ controllers.resultsPage = function(data, params){
 
   // pass this array to the template
   var resultsContainer = templates.resultsTemplate(dataToPass);
+    
+    resultsContainer += templates.overlay(data.ui.save, 'resume');
+    
   utils.render('page', resultsContainer);
 };

@@ -2034,6 +2034,23 @@ var en_oc = {
       }
     ]
   },
+  "save": {
+    "title": "Save and resume later",
+    "copy": {
+      "content": [
+        "Please copy the link below and save it in a safe place. You can use this link any time within the next 30 days to resume answering questions on the form.",
+        "Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."
+      ],
+      "cta": "Copy link"
+    },
+    "email": {
+      "content": [
+        "Want to email this link? Enter your email below."
+      ],
+      "placeholder": "Enter your email here",
+      "cta": "Email link"
+    }
+  },
   "users": {
     "title": "Who did we build this tool for?",
     "content": [
@@ -2065,29 +2082,12 @@ var en_oc = {
         ],
         "content": "It looks like you are on a mobile device. This assessment typically takes 1-2 hours and we do not recommend doing it on a small screen. Do you want to share a link to this page to move your work or continue on this device anyway?"
       },
-      "survey": {
+      "nav": {
           "next": "Next",
           "prev": "Previous",
           "submit": "Submit",
           "progress": ["You are ", " complete."],
           "incomplete":"You need to complete all questions to submit."
-      },
-      "save": {
-        "title": "Save and resume later",
-        "copy": {
-          "content": [
-            "Please copy the link below and save it in a safe place. You can use this link any time within the next 30 days to resume answering questions on the form.",
-            "Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."
-          ],
-          "cta": "Copy link"
-        },
-        "email": {
-          "content": [
-            "Want us to email you this link? Enter your email below."
-          ],
-          "placeholder": "Enter your email here",
-          "cta": "Email link"
-        }
       }
     }
   },
@@ -2147,12 +2147,12 @@ var en_rs = { // contains all evaluation content
     "below": {
       "title": "Below",
       "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity.",
-      "threshold": 30
+      "threshold": 10
     },
     "ok": {
       "title": "Reasonable",
       "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization's cybersecurity even more.",
-      "threshold": 16
+      "threshold": 5
     },
     "exceeds": {
       "title": "Exceeds",

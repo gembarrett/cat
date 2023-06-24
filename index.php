@@ -64,10 +64,12 @@ if(isset($_POST['submit'])){
                         <img src="assets/images/menu-forward.png" alt="View survey sections"/>
                     </div>
                     <hr />
-                    <p>Save &amp; resume later</p>
+                    <p class="later">Save &amp; resume later</p>
                 </div>
             </div>
           </div>
+            <div id="overlay-container">
+            </div>
         </div>
         <div id="page">
           <div id="no-js" class="window">
@@ -95,7 +97,7 @@ if(isset($_POST['submit'])){
         <script src="assets/js/templates/who.js"></script>
         <script src="assets/js/templates/legal.js"></script>
         <script src="assets/js/templates/team.js"></script>
-        <script src="assets/js/templates/warning.js"></script>
+        <script src="assets/js/templates/overlay.js"></script>
 
         <script src="assets/js/templates/questionsTemplate.js"></script>
         <script src="assets/js/templates/resultsTemplate.js"></script>

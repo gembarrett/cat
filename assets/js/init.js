@@ -8,7 +8,7 @@ var views = {};
 var bodyLang = "en";
 var textStore = {
   qs : window[bodyLang+"_qs"],
-   rs : window[bodyLang+"_rs"],
+    rs : window[bodyLang+"_rs"],
   oc : window[bodyLang+"_oc"]
 }
 
@@ -104,15 +104,6 @@ function toggleMenu(el){
     document.getElementById(el).classList.toggle('open');
 }
 
-// can't put links into the html because will reload the page
-function navToSurvey(){
-    // if user clicks on a subsection
-    // check if the li with the right id is on the page
-    // if we are, then simulate a click on the relevant menu item
-    // if we're on a different page, pass as param by creating a url like /#survey?${subsection}
-    // pass it to the routing mechanism for processing (will need to load up the page and simulate the click)
-}                             
-
 window.onload = function(){
   document.querySelector('#no-js').remove();
   window.addEventListener(
@@ -122,8 +113,19 @@ window.onload = function(){
 //  setUpMenu();
     buildMobileMenu(sections);
     prepTheMenu();
+    buildCatRefLib();
     utils.router();
+    initialiseSaveButtons();
 };
+
+function initialiseSaveButtons(){
+    buttons = document.querySelectorAll('.later');
+    for (var b=0; b<buttons.length; b++){
+        buttons[b].addEventListener('click', function(){
+            generateLink();
+        });
+    }
+}
 
 function buildMobileMenu(s){
     // get the mobile menu
@@ -144,25 +146,26 @@ function buildMobileMenu(s){
     document.getElementById('section-trigger').insertAdjacentHTML('afterend', menu);
 }
 
-// question list is only used in findContent() - can it be replaced?
-
+// TODO: limit the scope if poss
 var sections = [];
 // push the questions in their groups, plus labels, into variables for processing
 for (var q = 0; q < textStore.qs.length; q++){
   sections.push(textStore.qs[q]);
 }
 
-// this will connect the question numbers (0-70) with their positions in each section (0-25)
-var questionsList = [];
-// for each of the sections, loop through and create list of questions
-for (var i = 0; i < sections.length; i++) {
-  // get the section data
-  tmpContent = sections[i];
-  // for each of the questions in that section
-  for (var j = 0; j < tmpContent.length; j++) {
-    // push the id to the queue
-    questionsList.push(j);
-  }
+// this connects the short ref names with the longer cat names for use in rebuilding from a generated link
+function buildCatRefLib(){
+    for (cat in sections){
+        for (subcat in sections[cat].subs){
+            subCatName = sections[cat].subs[subcat].name;
+            subCatBits = subCatName.split('-');
+            subCatRef = subCatBits[0][0]+subCatBits[0][1]+subCatBits[1][0];
+            thisRef = {
+                [subCatRef]: subCatName
+            };
+            currentState.catRefLib.push(thisRef);
+        }
+    }
 }
 
 
@@ -170,9 +173,8 @@ for (var i = 0; i < sections.length; i++) {
 var currentState = {
     // which questions have been answered?
     answered: [],
-    totalQs: 0
+    // how many questions are in the survey
+    totalQs: 0,
+    // what are the references for each subcategory
+    catRefLib: []
 }
-
-// for storing the storeAs names and values
-// NOTE: this may not be necessary, but check with link replacement functionality before deletion
-var dict = {};
