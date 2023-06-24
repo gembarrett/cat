@@ -68,8 +68,6 @@ if(isset($_POST['submit'])){
                 </div>
             </div>
           </div>
-            <div id="overlay-container">
-            </div>
         </div>
         <div id="page">
           <div id="no-js" class="window">
@@ -111,7 +109,7 @@ if(isset($_POST['submit'])){
         <script src="assets/js/views/legalView.js"></script>
         <script src="assets/js/views/questionsView.js"></script>
         <script src="assets/js/views/resultsView.js"></script>
-        <script src="assets/js/snapshot.js"></script>
+        <script src="assets/js/overlays.js"></script>
         <script src="assets/js/translation.js"></script>
         <script src="assets/js/progress.js"></script>
       </body>

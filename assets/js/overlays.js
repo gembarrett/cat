@@ -1,8 +1,8 @@
-function copyUrl(){
+function copyUrl(){    
   try {
     // does copy work here?
     if (document.queryCommandSupported('copy')) {
-      var copyText = document.querySelector('#snapshotLink');
+      var copyText = document.querySelector('.overlay textarea');
       copyText.select();
       document.execCommand('copy');
     } else {
@@ -13,8 +13,35 @@ function copyUrl(){
   }
 }
 
-function showOverlay(overlayToShow){
+function showSavePanel(){
+    // try to generate a link based on questions answered
+    urlToShare = generateLink();
     
+    // if no link has been generated
+    if (urlToShare === false){
+        // if there's no link to add to the textarea, display a message instead
+        urlToShare = "Not enough completed answers to generate link."
+        // disable the copy button
+        document.querySelector('button.copy').setAttribute('disabled', 'disabled');
+        // and disable the email button too
+        document.querySelector('button.send').setAttribute('disabled', 'disabled');
+    } else {
+        // remove any disabled attributes from buttons
+        document.querySelector('button.copy').removeAttribute('disabled');
+        document.querySelector('button.send').removeAttribute('disabled');
+    }
+    document.querySelector(`#overlay-resume textarea`).value = urlToShare;
+
+    // dim the background and show the panel
+    document.querySelector('#overlay-resume').classList.add('show');
+}
+
+function hidePanels(){
+    // hide any overlays that are open
+    openPanels = document.querySelectorAll('.overlay.show');
+    for (var p = 0; p < openPanels.length; p++){
+        openPanels[p].classList.remove('show');
+    }
 }
 
 function generateLink(){
@@ -44,10 +71,10 @@ function generateLink(){
            // keep question and answer numbers
            saveLink += catRef;
        }
-       console.log(saveLink);
+       return saveLink;
    }
     else {
-        console.log('Not enough answers to generate link');
+        return false;
     }
 }
     

@@ -119,12 +119,30 @@ window.onload = function(){
 };
 
 function initialiseSaveButtons(){
+    // grab the save buttons
     buttons = document.querySelectorAll('.later');
+    // add a click listener for each that shows the save panel
     for (var b=0; b<buttons.length; b++){
         buttons[b].addEventListener('click', function(){
-            generateLink();
+            showSavePanel();
         });
     }
+    document.querySelector('.overlay').addEventListener('click', function(e){
+        if (document.querySelector('.inner-panel').contains(e.target)){
+            // do nothing
+            console.log('click happens inside panel');
+        } else {
+            hidePanels();
+        }
+    })
+    // find the dismiss button
+    dismiss = document.querySelector('.dismiss');
+    dismiss.addEventListener('click', function(){
+        hidePanels();
+    });
+    document.querySelector('.overlay button.copy').addEventListener('click', function(){
+        copyUrl();
+    });
 }
 
 function buildMobileMenu(s){

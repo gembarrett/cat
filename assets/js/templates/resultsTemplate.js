@@ -1,5 +1,4 @@
 templates.resultsTemplate = function(data, params){
-console.log(data);
     var currentDate = dateStamp();
     var dateString = dataToPass.ui.results.intro;
     currentDate = dateString.replace('[[date]]', currentDate);
@@ -30,15 +29,15 @@ console.log(data);
         }
         overview += `<div class="overview"><p>${data.recs.content[item].title}</p>`;
                 
-      if (data.tally[item] >= data.recs.reusables.below.threshold) { // if scored 30
+      if (data.tally[item] >= data.recs.reusables.below.threshold) { // if it's a high score
         recLevel = data.recs.reusables.below;
         reslevel = data.recs.content[item].results.below;
           progValue = "10";
-      } else if ((data.tally[item] >= data.recs.reusables.ok.threshold) && (data.tally[item] < data.recs.reusables.below.threshold)){ // if over 16 but less than 30
+      } else if ((data.tally[item] >= data.recs.reusables.ok.threshold) && (data.tally[item] < data.recs.reusables.below.threshold)){
         recLevel = data.recs.reusables.ok;
         reslevel = data.recs.content[item].results.ok;
           progValue = "20";
-      } else if (data.tally[item] < data.recs.reusables.ok.threshold) { // if under 16
+      } else if (data.tally[item] < data.recs.reusables.ok.threshold) { // if it's a low score
         recLevel = data.recs.reusables.exceeds;
         reslevel = data.recs.content[item].results.exceeds;
           progValue = "30";

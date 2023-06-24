@@ -108,6 +108,9 @@
   .basics-head h2 {
     font-size:3.8em;
   }
+    .survey #overlay-mobile {
+        display: block;
+    }
 }
 
 @media (max-width:700px) {

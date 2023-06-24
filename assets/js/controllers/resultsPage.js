@@ -41,5 +41,10 @@ controllers.resultsPage = function(data, params){
     
     resultsContainer += templates.overlay(data.ui.save, 'resume');
     
+    // set up the overlays
+    resultsContainer += `<div id="overlay-bg" class="overlay"></div>`;
+    resultsContainer += templates.overlay(data.ui.save, 'resume');
+
+    
   utils.render('page', resultsContainer);
 };

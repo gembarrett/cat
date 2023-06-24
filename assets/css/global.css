@@ -157,11 +157,13 @@ a:hover {
 
 
 /* Buttons */
+button {
+  cursor: pointer;    
+}
 .btn {
   border: 2px solid;
   padding: 0.5em;
   text-align: center;
-  cursor: pointer;
   font-size: 1em;
 }
 .btn-prim {
@@ -359,4 +361,102 @@ a#link-home {
   opacity: 75%;
   background-color: #888685;
   border: #ccc;
+}
+
+#overlay-bg {
+    background-color: rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    height:100vh;
+    width:100vw;
+}
+
+.inner-overlay {
+    background-color: #dad9cf;
+}
+/* this hides by default*/
+.overlay {
+    display: none;
+}
+
+.overlay.show {
+    display:flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.later {
+    cursor: pointer;
+}
+
+.inner-panel {
+    position: absolute;
+    z-index: 12;
+    background-color: #dad9cf;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-panel img {
+    width:30px;
+    align-self: flex-end;
+}
+
+.panel-content {
+    padding:0 3em 3em 3em;    
+}
+
+textarea {
+    width:100%;
+    height:100px;
+    font-family: inherit;
+}
+
+.overlay input {
+    margin-right: 10px;
+    width:50%;
+}
+
+.overlay input, textarea {
+    padding:0.5em;
+}
+
+.overlay button {
+    background-color: #009e72;
+    border:1px solid #009e72;
+    color:#fff;
+    padding:0.5em 1.5em;
+}
+
+button.copy {
+    margin-top:5px;
+    float:right;
+}
+.overlay button:disabled, .overlay button:hover:disabled{
+    background-color: darkgrey;
+    border-color: darkgrey;
+    cursor: not-allowed;
+    color:#000;
+}
+
+img.dismiss {
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background-color: #fff;
+    color:#000;
+}
+#email-prompt {
+    margin-top:2.5em;
 }

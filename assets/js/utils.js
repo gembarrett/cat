@@ -41,7 +41,7 @@ var utils = (function(){
         var data = textStore.oc;
       } else if (temp[0] === 'legal') {
         function_to_invoke = 'legalView';
-        var data = textStore.oc['legal'];
+        var data = textStore.oc;
       } else if (temp[0] === 'survey') {
         // prepare to load the Survey page
         function_to_invoke = 'questionsView';
@@ -107,7 +107,7 @@ var utils = (function(){
         if (document.querySelector('.results')){
             addSubmenuHandlers(document.querySelector('.submenu'), 'results');
         }
-        
+                
         // TODO: move these and check just for survey page then call the functions
         if (document.querySelector('form')){
             addSubmenuHandlers(document.querySelector('.submenu'), 'survey');

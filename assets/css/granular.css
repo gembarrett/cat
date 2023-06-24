@@ -751,7 +751,3 @@ show prev
     margin:0;
     padding:0;
 }
-/* this hides by default*/
-#overlay-resume, #overlay-mobile {
-    display: none;
-}

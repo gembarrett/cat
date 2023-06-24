@@ -1,11 +1,17 @@
 templates.overlay = function(data, params){
-    var content = `<div id="overlay-${params}"`;
-        console.log(data);
+    var content = `<div id="overlay-${params}" class="overlay">`;
 
     if (params === 'resume'){
-        content += ` class="panel">`;
+        // add the content for this panel
+        content += `<div class="inner-panel"><img src="assets/images/close.png" class="dismiss" /><div class="panel-content"><h3>${data.title}</h3>`;
+        content = parseContent(data.copy.content, content);
+        content += `<textarea placeholder=${data.placeholder} readonly></textarea><button class="copy">${data.copy.cta}</button><div id="email-prompt"><p>${data.email.content[0]}</p>`;
+        content += `<input type="text" placeholder="${data.email.placeholder}" name="email-link"><button class="send">${data.email.cta}</button></div>`;
+        content += `</div></div>`;
     } else {
-        content += ` class="hide panel">`;
+        // add the content for this panel
+        content += `<div class="inner-panel"><p>${data.content}</p>`;
+        content += `<button class="send">${data.buttons[0]}</button><button class="dismiss">${data.buttons[1]}</button></div>`;
     }
     content += `</div>`;
     return content;

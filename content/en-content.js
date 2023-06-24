@@ -2041,7 +2041,8 @@ var en_oc = {
         "Please copy the link below and save it in a safe place. You can use this link any time within the next 30 days to resume answering questions on the form.",
         "Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."
       ],
-      "cta": "Copy link"
+      "cta": "Copy link",
+        "placeholder": "No link available."
     },
     "email": {
       "content": [
