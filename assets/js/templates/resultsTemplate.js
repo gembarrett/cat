@@ -58,7 +58,11 @@ templates.resultsTemplate = function(data, params){
         </div>
         <div class="right-col">
             <div class="overlap-col">
-                <button class="later save-btn add-shadow">text</button>
+                <p>${data.ui.results.feedback.btn}</p>
+                <button class="later results-generate">${dataToPass.ui.results.save[0].btn}</button>
+                <button class="results-email">${dataToPass.ui.results.save[1].btn}</button>
+                <button class="results-print">${dataToPass.ui.results.save[2].btn}</button>
+                <button class="later save-btn add-shadow">${data.ui.results.feedback.title}</button>
             </div>`;
     
     content += `<div class="contain-results add-shadow"><div class="results-intro">${intro}</div><div class="results-overview">${overview}</div><div class="results-content">${answers}</div><div id="nextStepButtons">${buttons}</div></div></div></div>`;

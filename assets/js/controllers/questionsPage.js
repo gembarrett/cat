@@ -82,9 +82,14 @@ controllers.questionsPage = function(data, params){
     
   // put that data into the template and return it for rendering
   var questionContainer = templates.questionsTemplate(menuData, questionData, data.ui, params);
+    
     // set up the overlays
     questionContainer += templates.overlay(data.ui.save, 'resume');
-    questionContainer += templates.overlay(data.ui.survey.ux.mobile, 'mobile');
+
+    // if we're on a device with screen < 800px then add the mobile overlay too
+    if (window.innerWidth < '800'){
+        questionContainer += templates.overlay(data.ui.survey.ux.mobile, 'mobile');
+    }
 
   utils.render('page', questionContainer, goTo);
 };

@@ -49,6 +49,7 @@ var utils = (function(){
             "qs": textStore.qs,
             "ui": textStore.oc
         }
+        
         // if we have a subsection to open
         if (typeof surveyDestination === "string" && surveyDestination !== ""){
             data["go"] = surveyDestination;

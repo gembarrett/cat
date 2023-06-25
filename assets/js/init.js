@@ -115,10 +115,10 @@ window.onload = function(){
     prepTheMenu();
     buildCatRefLib();
     utils.router();
-    initialiseSaveButtons();
+    initialisePanels();
 };
 
-function initialiseSaveButtons(){
+function initialisePanels(){
     // grab the save buttons
     buttons = document.querySelectorAll('.later');
     // add a click listener for each that shows the save panel
@@ -127,22 +127,69 @@ function initialiseSaveButtons(){
             showSavePanel();
         });
     }
-    document.querySelector('.overlay').addEventListener('click', function(e){
-        if (document.querySelector('.inner-panel').contains(e.target)){
-            // do nothing
-            console.log('click happens inside panel');
-        } else {
-            hidePanels();
-        }
-    })
+    overlays = document.querySelectorAll('.overlay');
+    for (var o=0; o < overlays.length; o++){
+        overlays[o].addEventListener('click', function(e){
+            if (document.querySelector('.inner-panel').contains(e.target)){
+                // do nothing
+                console.log('click happens inside panel');
+            } else {
+                hidePanels();
+            }
+        })
+    }
     // find the dismiss button
-    dismiss = document.querySelector('.dismiss');
-    dismiss.addEventListener('click', function(){
-        hidePanels();
-    });
+    dismiss = document.querySelectorAll('.dismiss');
+    for (var d=0; d < dismiss.length; d++){
+        dismiss[d].addEventListener('click', function(){
+            hidePanels();
+        });        
+    }
+    
     document.querySelector('.overlay button.copy').addEventListener('click', function(){
         copyUrl();
     });
+        
+    emailInput = document.querySelector('#email-field');
+    emailInput.addEventListener('input', function(){
+        // if an email is entered, the send button becomes enabled
+        if (checkForEmail(emailInput.value) === true){
+            document.querySelector('button.send').removeAttribute('disabled');
+        } else {
+            document.querySelector('button.send').setAttribute('disabled', 'disabled');
+        }
+    });
+    
+    
+    sendButtons = document.querySelectorAll('button.send');    
+    for (var s = 0; s<sendButtons.length; s++){
+       sendButtons[s].addEventListener('click', function(){
+           // is there an email
+           if (emailInput.value !== ""){
+                // yes: check for link
+               if (document.querySelector('.overlay textarea').value !== ""){
+                   // send generated link to email               
+                   sendEmail(emailInput.value, document.querySelector('.overlay textarea').value);
+               } else {
+                   // send main url to email
+                   sendEmail(emailInput.value, window.location);
+               }
+           } else {
+            // no:
+                // send window location to empty recipient field  
+                sendEmail("", window.location);
+           }
+        })
+    }
+}
+
+function sendEmail(email, link){
+    // if the window location was used
+    if (typeof link === 'object'){
+        // turn it into a string before sending
+        link = window.location.toString();
+    }
+    window.location = `mailto:${email}?subject=${textStore.oc.save.email.subject}&body=${textStore.oc.save.email.body}${link}`;
 }
 
 function buildMobileMenu(s){

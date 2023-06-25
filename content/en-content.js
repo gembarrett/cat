@@ -2049,7 +2049,9 @@ var en_oc = {
         "Want to email this link? Enter your email below."
       ],
       "placeholder": "Enter your email here",
-      "cta": "Email link"
+      "cta": "Email link",
+        "subject": "Link to the Cybersecurity Assessment Tool",
+        "body": "Here is the link to the Cybersecurity Assessment Tool (CAT): "
     }
   },
   "users": {
@@ -2081,7 +2083,8 @@ var en_oc = {
           "Share",
           "Continue anyway"
         ],
-        "content": "It looks like you are on a mobile device. This assessment typically takes 1-2 hours and we do not recommend doing it on a small screen. Do you want to share a link to this page to move your work or continue on this device anyway?"
+          "title":"It looks like you are on a mobile device.",
+        "content": "This assessment typically takes 1-2 hours and we do not recommend doing it on a small screen. Do you want to share a link to this page to move your work or continue on this device anyway?"
       },
       "nav": {
           "next": "Next",

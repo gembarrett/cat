@@ -13,41 +13,53 @@ function copyUrl(){
   }
 }
 
+function checkForEmail(val){
+    var checkEmail = new RegExp(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g, 'g');
+    result = val.match(checkEmail);
+    if (Array.isArray(result)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function showSavePanel(){
     // try to generate a link based on questions answered
     urlToShare = generateLink();
+   
+   // disable the email button until an email is entered 
+    if (document.querySelector('#email-field').value === ""){
+        document.querySelector('button.send').setAttribute('disabled', 'disabled');   
+    }
     
     // if no link has been generated
     if (urlToShare === false){
         // if there's no link to add to the textarea, display a message instead
-        urlToShare = "Not enough completed answers to generate link."
+        document.querySelector(`#overlay-resume textarea`).placeholder = "Not enough completed answers to generate link."
         // disable the copy button
         document.querySelector('button.copy').setAttribute('disabled', 'disabled');
-        // and disable the email button too
-        document.querySelector('button.send').setAttribute('disabled', 'disabled');
     } else {
+        document.querySelector(`#overlay-resume textarea`).value = urlToShare;
         // remove any disabled attributes from buttons
         document.querySelector('button.copy').removeAttribute('disabled');
-        document.querySelector('button.send').removeAttribute('disabled');
     }
-    document.querySelector(`#overlay-resume textarea`).value = urlToShare;
 
     // dim the background and show the panel
-    document.querySelector('#overlay-resume').classList.add('show');
+    document.querySelector('#overlay-resume').classList.remove('hide');
 }
 
 function hidePanels(){
     // hide any overlays that are open
-    openPanels = document.querySelectorAll('.overlay.show');
+    openPanels = document.querySelectorAll('.overlay:not(.hide)');
     for (var p = 0; p < openPanels.length; p++){
-        openPanels[p].classList.remove('show');
+        openPanels[p].classList.add('hide');
     }
 }
 
 function generateLink(){
    // if there's answers stored
    if (currentState.answered.length !== 0){
-       var saveLink = `${thisEnv}/#re-`;
+       var saveLink = `${thisEnv}/?`;
        curr = "";
        for (var a = 0; a < currentState.answered.length; a++){
            // each answer in the array has category name ([0] and [1], question number in that category [2], answer number in that question [3] and points for that answer [4]
