@@ -6,7 +6,7 @@ templates.resultsTemplate = function(data, params){
     var intro = `<h1>${data.recs.title}</h1><img src="assets/images/CAT-collage-results.png" /><p>${currentDate}</p>`;
     
     
-    var buttons = `<button class="results-generate">${dataToPass.ui.results.save[0].btn}</button><button class="results-email">${dataToPass.ui.results.save[1].btn}</button><button class="results-print">${dataToPass.ui.results.save[2].btn}</button>`;
+    var buttons = `<button class="later result-generate">${dataToPass.ui.results.save.btns[0]}</button><button class="later result-email">${dataToPass.ui.results.save.btns[1]}</button><button class="result-print">${dataToPass.ui.results.save.btns[2]}</button>`;
     
     var answers = ``;
     var level;
@@ -51,6 +51,8 @@ templates.resultsTemplate = function(data, params){
     
     submenu += `</ul>`;
 
+    var feedback = `<div class="feedback"><h4>${data.ui.results.feedback.title}</h4><button class="send-feedback">${data.ui.results.feedback.btn}</button></div>`;
+    
   var content = `
     <div class="contain-lrg">
         <div class="left-col add-shadow submenu">
@@ -58,13 +60,17 @@ templates.resultsTemplate = function(data, params){
         </div>
         <div class="right-col">
             <div class="overlap-col">
-                <p>${data.ui.results.feedback.btn}</p>
-                <button class="later results-generate">${dataToPass.ui.results.save[0].btn}</button>
-                <button class="results-email">${dataToPass.ui.results.save[1].btn}</button>
-                <button class="results-print">${dataToPass.ui.results.save[2].btn}</button>
-                <button class="later save-btn add-shadow">${data.ui.results.feedback.title}</button>
+                <div class="contain-sidebar">
+                    <div class="save-results">
+                        <h4>${data.ui.results.save.title}</h4>
+                        <button class="later result-generate">${dataToPass.ui.results.save.btns[0]}</button>
+                        <button class="later result-email">${dataToPass.ui.results.save.btns[1]}</button>
+                        <button class="result-print">${dataToPass.ui.results.save.btns[2]}</button>
+                    </div>
+                    ${feedback}
+                </div>
             </div>`;
     
-    content += `<div class="contain-results add-shadow"><div class="results-intro">${intro}</div><div class="results-overview">${overview}</div><div class="results-content">${answers}</div><div id="nextStepButtons">${buttons}</div></div></div></div>`;
+    content += `<div class="contain-results add-shadow"><div class="results-intro">${intro}</div><div class="results-overview">${overview}</div><div class="results-content">${answers}</div><div id="nextStepButtons">${buttons}</div></div>${feedback}</div></div>`;
   return content;
 };

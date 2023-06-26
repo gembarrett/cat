@@ -15,5 +15,5 @@ controllers.homePage = function(data, params){
     homeContent += templates.overlay(data.save, 'resume');
 
     document.querySelector('#page').classList.remove('survey');
-  utils.render('page', homeContent);
+  utils.render('page', homeContent, 'home');
 };

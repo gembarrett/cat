@@ -10,9 +10,21 @@ function addSubmenuHandlers(menu, page) {
     }
 }
 
+function addResultsPageHandlers(){
+    
+}
+
 // this is the function that's called when a user submits their answers
 function handleSubmit() {
     utils.router('results');
+}
+
+function parseGeneratedURL(data){
+    urlParts = data[0].split(/([a-z][0-9][0-9])/);
+    // remove any empty strings from the array
+    urlParts = urlParts.filter(part => part !== '');
+    
+    console.log(urlParts);
 }
 
 // function to add li or p formatting to array

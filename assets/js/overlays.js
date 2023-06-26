@@ -23,10 +23,19 @@ function checkForEmail(val){
     }
 }
 
-function showSavePanel(){
-    // try to generate a link based on questions answered
-    urlToShare = generateLink();
-   
+function openPanel(el){
+    // what are we opening
+    panelID = el.target.classList;
+    
+    if (panelID.contains('result-email') || panelID.contains('result-generate')){
+        // if we're on the results page, the link needs to direct to results page
+        urlToShare = generateLink('results');
+    } else {
+        // try to generate a link based on questions answered so far
+        urlToShare = generateLink('survey');        
+    }
+    
+  
    // disable the email button until an email is entered 
     if (document.querySelector('#email-field').value === ""){
         document.querySelector('button.send').setAttribute('disabled', 'disabled');   
@@ -39,82 +48,68 @@ function showSavePanel(){
         // disable the copy button
         document.querySelector('button.copy').setAttribute('disabled', 'disabled');
     } else {
-        document.querySelector(`#overlay-resume textarea`).value = urlToShare;
+        document.querySelector(`.overlay textarea`).value = urlToShare;
         // remove any disabled attributes from buttons
         document.querySelector('button.copy').removeAttribute('disabled');
     }
 
-    // dim the background and show the panel
-    document.querySelector('#overlay-resume').classList.remove('hide');
+    // are we talking about the email overlay
+    if (panelID.contains('result-email')){
+        document.querySelector('#overlay-email').classList.remove('hide');
+    } else {
+        // dim the background and show the other panel
+        document.querySelector('.overlay').classList.remove('hide');
+    }
+    
 }
 
-function hidePanels(){
-    // hide any overlays that are open
-    openPanels = document.querySelectorAll('.overlay:not(.hide)');
-    for (var p = 0; p < openPanels.length; p++){
-        openPanels[p].classList.add('hide');
+function hidePanel(panel){    
+// hide any overlays that are open
+    console.log(panel);
+    // if it's the mobile prompt overlay
+    if (panel.parentElement.id.endsWith('mobile')){
+        // remove it from the DOM altogether to avoid accidentally reopening it
+        panel.parentElement.remove();
+    } else {
+        // otherwise just hide it
+        panel.parentElement.classList.add('hide');               
     }
 }
 
-function generateLink(){
+function generateLink(page){
    // if there's answers stored
    if (currentState.answered.length !== 0){
-       var saveLink = `${thisEnv}/?`;
+       if (page === 'results'){
+          var saveLink = `${thisEnv}/#results?`;
+       } else {
+           var saveLink = `${thisEnv}/#survey?`;           
+       }
        curr = "";
        for (var a = 0; a < currentState.answered.length; a++){
            // each answer in the array has category name ([0] and [1], question number in that category [2], answer number in that question [3] and points for that answer [4]
            // not all questions will have been answered
            // change the category name to a shorter ref
+                      
            catBits = currentState.answered[a].split('-');
-           // this must match subCatRef creation in buildCatRefLib()
-           catRef = catBits[0][0]+catBits[0][1]+catBits[1][0];
-           // if this catRef is not the same as the previous
-           if (curr !== catRef){
-                // update it
-                curr = catRef;
-               // then just add the question and answer
-                catRef += catBits[2]+catBits[3];
-
-           } else {
-               // if we're on the same category, don't repeat the ref
-               catRef = `-${catBits[2]}${catBits[3]}`;
-           }
            
-           // keep question and answer numbers
-           saveLink += catRef;
+           catName = `${catBits[0]}-${catBits[1]}`;
+           
+           let thisAnswerRef;
+           
+           // for each of the keys
+              for(key in currentState.catRefLib) {
+                  // if the name matches
+                if(currentState.catRefLib[key].indexOf(catName)!=-1) {
+                    // use the key plus question and answer numbers to create the link
+                  thisAnswerRef = key+catBits[2]+catBits[3];
+                }
+              }
+           saveLink += thisAnswerRef;
        }
        return saveLink;
    }
     else {
         return false;
     }
-}
-    
-
-
-// TODO: snapshot link should be generated when Save & Resume Later button is clicked
-function getSnapshotURL(){
-  var snapshotUrl = thisEnv+"/#b-"+catv+"-p";
-  // since questions are now grouped, it doesn't matter which question is current
-  var qNo = "0";
-  for (var i = 0; i < currentState.answers.length; i++){
-    // if we're on the same question
-    if (qNo === currentState.answers[i].q){
-      // add the a value to rest of that answer group
-      snapshotUrl += currentState.answers[i].a;
-    } else if (isCheckableQ(parseInt(currentState.answers[i].q))) {
-      // get the new question number
-      qNo = currentState.answers[i].q;
-      // start new answer group, format appropriately if it's the first answer
-      snapshotUrl += snapshotUrl[snapshotUrl.length - 1] === "p" ? "?" : "_";
-      // add the question number and first answer for that question
-      snapshotUrl += qNo + "-" + currentState.answers[i].a;
-    } else {
-      // tell the user why they're not getting what they expect
-      console.log('either no answers or no questions');
-    }
-  }
-  // get the input box and update the value
-  document.querySelector('#snapshotLink').value = snapshotUrl;
 }
 

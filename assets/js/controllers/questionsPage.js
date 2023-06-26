@@ -91,5 +91,5 @@ controllers.questionsPage = function(data, params){
         questionContainer += templates.overlay(data.ui.survey.ux.mobile, 'mobile');
     }
 
-  utils.render('page', questionContainer, goTo);
+  utils.render('page', questionContainer, 'survey', goTo);
 };

@@ -2035,19 +2035,26 @@ var en_oc = {
     ]
   },
   "save": {
-    "title": "Save and resume later",
     "copy": {
-      "content": [
-        "Please copy the link below and save it in a safe place. You can use this link any time within the next 30 days to resume answering questions on the form.",
-        "Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."
-      ],
-      "cta": "Copy link",
+      "content":{ 
+            "resume": {
+              "title": "Save and resume later",
+              "content": ["Please copy the link below and save it in a safe place. You can use this link any time to resume answering questions on the form.","Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."]
+            },
+           "result": {
+               "title": "Save your results and recommendations",
+               "content": "Please copy the link below and save it in a safe place. You can use this link any time to access your results."
+           },
+           "email": {
+               "title": "Email your results",
+               "content": "Enter an email address below to access your results on our website. Your email will not be stored."
+           }
+      },
+        "cta": "Copy link",
         "placeholder": "No link available."
     },
     "email": {
-      "content": [
-        "Want to email this link? Enter your email below."
-      ],
+      "content": "Want to email this link? Enter your email below.",
       "placeholder": "Enter your email here",
       "cta": "Email link",
         "subject": "Link to the Cybersecurity Assessment Tool",
@@ -2125,22 +2132,15 @@ var en_oc = {
         "feedback": {
             "title": "Help Us Make The Cybersecurity Assessment Tool Better!",
             "btn": "Give feedback",
-            "cta": "Get your results"
         },
-        "save": [
-            {
-                "btn":"Generate link",
-                "link": ""
-            },
-            {
-                "btn": "Email",
-                "link": ""
-            },
-            {
-                "btn": "Print",
-                "link": ""
-            }
-        ]
+        "save": {
+            "title": "Get your results",
+            "btns": [
+                "Generate link",
+                "Email",
+                "Print"
+            ]
+        }
     }
 };
 

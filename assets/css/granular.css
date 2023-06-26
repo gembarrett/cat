@@ -560,6 +560,72 @@ form input {
   margin-right: 10px;
 }
 
+.contain-sidebar {
+    position: absolute;
+    right: -120px;
+    top: 140px;    
+    width: 260px;
+}
+
+.save-results {
+    padding: 16px;
+    background-color: #003f2e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-intro p {
+    max-width: 80%;
+}
+
+.contain-sidebar h4{
+    font-size:0.8em;
+    margin: 0.5em 0;
+    text-align: center;
+    line-height: 1em;
+}
+
+.contain-sidebar button {
+    background-color: #009e72;
+    border: 0;
+    margin: 0.25em 0;
+    color: #fff;
+}
+
+.contain-sidebar button:hover {
+    background-color: #fff;
+    color:#000;
+}
+
+.save-results > button {
+    padding:1em;
+}
+
+.overlap-col .feedback {
+    background-color: #dad9cf;
+    color:#000;
+    padding: 1em;
+}
+.feedback {
+    display: flex;
+    flex-direction: column;
+    background-color: #33251b;
+    color:#fff;
+    text-align: center;
+}
+.right-col > .feedback button {
+    background-color: #6b60bf;
+    margin: 0 2em 2em;
+    align-self: center;
+    color:#fff;
+    border:0;
+    padding: 1em;
+}
+
+.feedback button {
+    padding:0.5em;
+}
 .save-btn {
   background-color: #000;
   color: #fff;

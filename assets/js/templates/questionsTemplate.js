@@ -139,7 +139,7 @@ var progressElement = `<div class="progressBar"><progress id="survey-progress" m
 var progressButtons = `<div id="progressButtons" class="first-start"><button class="back">`+additionalData.survey.ux.nav.prev+`</button><button class="forward">`+additionalData.survey.ux.nav.next+`</button><button class="submit">`+additionalData.survey.ux.nav.submit+`</button></div>`;
 
 // TODO: split things up so that the submenu and questions are compiled in separate template files
-    content += `<div class="right-col"><div class="overlap-col"><button class="later save-btn add-shadow">`+additionalData.save.title+`</button><div class="rhombus r top"></div><div class="rhombus l mid"></div><div class="rhombus r base"></div></div>`;
+    content += `<div class="right-col"><div class="overlap-col"><button class="later save-btn add-shadow">`+additionalData.save.copy.content.resume.title+`</button><div class="rhombus r top"></div><div class="rhombus l mid"></div><div class="rhombus r base"></div></div>`;
     content += `<div class="contain-survey add-shadow"><form>`+survey+`</form>`;
     content += progressButtons+progressElement+`</div></div>`;
 

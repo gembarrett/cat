@@ -38,12 +38,11 @@ controllers.resultsPage = function(data, params){
 
   // pass this array to the template
   var resultsContainer = templates.resultsTemplate(dataToPass);
-    
-    resultsContainer += templates.overlay(data.ui.save, 'resume');
-    
+        
     // set up the overlays
-    resultsContainer += templates.overlay(data.ui.save, 'resume');
+    resultsContainer += templates.overlay(data.ui.save, 'result');
+    resultsContainer += templates.overlay(data.ui.save, 'email');
 
     
-  utils.render('page', resultsContainer);
+  utils.render('page', resultsContainer, 'results');
 };

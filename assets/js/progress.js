@@ -126,8 +126,8 @@ function updateProgress(e) {
         currentState.answered.push(isRequired(e.target));
     } else {
         // get an updated list of the new answers from this question
-        selections = document.querySelectorAll(`input[name=${e.target.name}]:checked`);
-        
+        selections = Array.from(document.querySelectorAll(`input[name=${e.target.name}]:checked`));
+                
         // add a check in here for the number of checkboxes (should be max of 3)
         if (tooMany(selections) === true){
             // find the error text

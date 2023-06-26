@@ -4,5 +4,5 @@ controllers.legalPage = function(data, params){
     // set up the overlays
     legalContent += templates.overlay(data.save, 'resume');
 
-    utils.render('page', legalContent);
+    utils.render('page', legalContent, 'legal');
 };

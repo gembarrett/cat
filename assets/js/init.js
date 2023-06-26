@@ -115,41 +115,57 @@ window.onload = function(){
     prepTheMenu();
     buildCatRefLib();
     utils.router();
-    initialisePanels();
 };
 
-function initialisePanels(){
+function addSaveResumeEventListeners(){
+    /* Event Listener added to all 'Save and resume later' buttons */
+    
     // grab the save buttons
     buttons = document.querySelectorAll('.later');
     // add a click listener for each that shows the save panel
     for (var b=0; b<buttons.length; b++){
-        buttons[b].addEventListener('click', function(){
-            showSavePanel();
+        buttons[b].addEventListener('click', function(e){
+            openPanel(e);
         });
     }
+    
+    /* Event Listener added to all overlays to hide when clicked outside */
+    
     overlays = document.querySelectorAll('.overlay');
-    for (var o=0; o < overlays.length; o++){
-        overlays[o].addEventListener('click', function(e){
-            if (document.querySelector('.inner-panel').contains(e.target)){
-                // do nothing
-                console.log('click happens inside panel');
+    for (const element of overlays){
+        element.addEventListener('click', function(e){
+            // find the open panel
+            panel = document.querySelector('.overlay:not(.hide) .inner-panel');
+            if (panel !== null && !panel.contains(e.target)){
+                hidePanel(panel);
             } else {
-                hidePanels();
-            }
+                // do nothing
+            }                
         })
     }
+    
+    /* Event listener added to all X or dismiss buttons on overlays */
+    
     // find the dismiss button
     dismiss = document.querySelectorAll('.dismiss');
-    for (var d=0; d < dismiss.length; d++){
-        dismiss[d].addEventListener('click', function(){
-            hidePanels();
+    for (const element of dismiss){
+        element.addEventListener('click', function(){
+            panel = document.querySelector('.overlay:not(.hide) .inner-panel');
+            if (panel !== null){
+                hidePanel(panel);
+            }
         });        
     }
+    
+    /* Event listener added to all "copy url" buttons */
     
     document.querySelector('.overlay button.copy').addEventListener('click', function(){
         copyUrl();
     });
-        
+
+    
+    /* Event listener added to all "email url" buttons to check validity and enable/disable the send button */
+    
     emailInput = document.querySelector('#email-field');
     emailInput.addEventListener('input', function(){
         // if an email is entered, the send button becomes enabled
@@ -160,10 +176,12 @@ function initialisePanels(){
         }
     });
     
+    /* Event listener added to all "send email" buttons */
     
-    sendButtons = document.querySelectorAll('button.send');    
-    for (var s = 0; s<sendButtons.length; s++){
-       sendButtons[s].addEventListener('click', function(){
+    sendButtons = document.querySelectorAll('button.send'); 
+    for (const element of sendButtons){
+//    for (var s = 0; s<sendButtons.length; s++){
+       element.addEventListener('click', function(){
            // is there an email
            if (emailInput.value !== ""){
                 // yes: check for link
@@ -181,6 +199,72 @@ function initialisePanels(){
            }
         })
     }
+}
+
+
+function addPrintBtnEventListener(){
+    /* Event listener added to all print buttons */
+    
+    printBtns = document.querySelectorAll('.result-print');
+    for (var p = 0; p < printBtns.length; p++){
+        printBtns[p].addEventListener('click', function(){
+            window.print();
+        });
+    }
+}
+
+function addFeedbackBtnEventListener(){
+    /* Event listener added to all feedback buttons */
+    
+    feedbacks = document.querySelectorAll('.send-feedback');
+    for (var f=0; f<feedbacks.length; f++){
+        feedbacks[f].addEventListener('click', function(){
+            window.location = `mailto:buildteam@fordfoundation.org?subject=Feedback on CAT`;
+        })
+    }
+}
+
+function addFormProgressHandler(){
+        if (document.querySelector('form')){
+            var form = document.querySelector('form');
+            form.addEventListener('change', function(e){
+                updateProgress(e);
+            });
+        }     
+}
+
+function goToSection(dest){
+           // click on the relevant link in the main submenu
+            document.querySelector(`li#${dest}`).click();
+            // update the URL
+            url = window.location;
+            url = url.toString();
+            // figure out if we're on home page
+            url = url.split('#');
+            url = `${url[0]}#survey`;
+            history.pushState({}, "", url);
+}
+
+function initialiseHandlers(page){
+    
+    switch (page) {
+        case 'home':
+        case 'legal':
+            addSaveResumeEventListeners();
+        case 'survey':
+            addSubmenuHandlers(document.querySelector('.submenu'), 'survey');
+            addFormProgressHandler();
+//            addMobilePromptEventListener();
+            addSaveResumeEventListeners();
+        case 'results':
+            addSubmenuHandlers(document.querySelector('.submenu'), 'results');
+            addSaveResumeEventListeners();
+            addPrintBtnEventListener();
+            addFeedbackBtnEventListener();
+        default:
+            console.log(page);
+    }
+    
 }
 
 function sendEmail(email, link){
@@ -218,17 +302,16 @@ for (var q = 0; q < textStore.qs.length; q++){
   sections.push(textStore.qs[q]);
 }
 
-// this connects the short ref names with the longer cat names for use in rebuilding from a generated link
+// this connects the cat names with a short 1-letter reference for use in rebuilding from a generated link
+// WARNING: IF THIS IS CHANGED THEN GENERATED LINKS WILL BREAK
 function buildCatRefLib(){
+    var n = 0;
     for (cat in sections){
-        for (subcat in sections[cat].subs){
-            subCatName = sections[cat].subs[subcat].name;
-            subCatBits = subCatName.split('-');
-            subCatRef = subCatBits[0][0]+subCatBits[0][1]+subCatBits[1][0];
-            thisRef = {
-                [subCatRef]: subCatName
-            };
-            currentState.catRefLib.push(thisRef);
+        for (var c = 0; c < sections[cat].subs.length; c++){
+            subCatName = sections[cat].subs[c].name;
+            subCatRef = String.fromCharCode(97 + n);
+            currentState.catRefLib[subCatRef] = subCatName;
+            n++;
         }
     }
 }
@@ -241,5 +324,5 @@ var currentState = {
     // how many questions are in the survey
     totalQs: 0,
     // what are the references for each subcategory
-    catRefLib: []
+    catRefLib: {}
 }
