@@ -339,3 +339,9 @@
         padding-top: 3em;
     }
 }
+
+@media print {
+    .contain-sidebar {
+        display:none;
+    }
+}

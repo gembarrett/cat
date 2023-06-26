@@ -81,30 +81,50 @@ function generateLink(page){
    if (currentState.answered.length !== 0){
        if (page === 'results'){
           var saveLink = `${thisEnv}/#results?`;
+           
+           // for each tallied category
+           for (key in dataToPass.tally){
+          
+               let thisAnswerRef;
+               // for each category reference
+               for (key2 in currentState.catRefLib){
+                   // if the tallied category name is in the category reference library as a value
+                   if (key === currentState.catRefLib[key2]){
+                       // connect the short reference name with the tallied value
+                       thisAnswerRef = `${key2}${dataToPass.tally[key]}`;
+                    } else {
+                      // didn't match
+                  }
+               }
+               
+                // add the ref-tally to the link
+                saveLink += thisAnswerRef;
+
+           }
+        
        } else {
            var saveLink = `${thisEnv}/#survey?`;           
-       }
-       curr = "";
-       for (var a = 0; a < currentState.answered.length; a++){
-           // each answer in the array has category name ([0] and [1], question number in that category [2], answer number in that question [3] and points for that answer [4]
-           // not all questions will have been answered
-           // change the category name to a shorter ref
-                      
-           catBits = currentState.answered[a].split('-');
-           
-           catName = `${catBits[0]}-${catBits[1]}`;
-           
-           let thisAnswerRef;
-           
-           // for each of the keys
-              for(key in currentState.catRefLib) {
-                  // if the name matches
-                if(currentState.catRefLib[key].indexOf(catName)!=-1) {
-                    // use the key plus question and answer numbers to create the link
-                  thisAnswerRef = key+catBits[2]+catBits[3];
-                }
-              }
-           saveLink += thisAnswerRef;
+           for (var a = 0; a < currentState.answered.length; a++){
+               // each answer in the array has category name ([0] and [1], question number in that category [2], answer number in that question [3] and points for that answer [4]
+               // not all questions will have been answered
+               // change the category name to a shorter ref
+
+               catBits = currentState.answered[a].split('-');
+
+               catName = `${catBits[0]}-${catBits[1]}`;
+
+               let thisAnswerRef;
+
+               // for each of the keys
+                  for(key in currentState.catRefLib) {
+                      // if the name matches
+                    if(currentState.catRefLib[key].indexOf(catName)!=-1) {
+                        // use the key plus question and answer numbers to create the link
+                      thisAnswerRef = key+catBits[2]+catBits[3];
+                    }
+                  }
+               saveLink += thisAnswerRef;
+           }
        }
        return saveLink;
    }
