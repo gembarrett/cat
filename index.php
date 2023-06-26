@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
         <!-- these may need to be moved further down or refactored -->
         <script src="assets/js/start.js"></script>
         <script src="assets/js/keyboard.js"></script>
-        <script src="assets/js/policy.js"></script>
+        <script src="assets/js/results.js"></script>
         <link rel="manifest" href="/site.webmanifest">
       </head>
       <body lang="en">
@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){
                         <img src="assets/images/menu-forward.png" alt="View survey sections"/>
                     </div>
                     <hr />
-                    <p>Save &amp; resume later</p>
+                    <p class="later">Save &amp; resume later</p>
                 </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ if(isset($_POST['submit'])){
           <div class="info">
             <img src="assets/images/CAT-logo_bg.png" /><img src="assets/images/CAT-logo_black.png" />
             <p><span>Cybersecurity Assessment Tool</span> by the Ford Foundation's BUILD program</p>
-            <p id="copyright">&#169; 2022 The Ford Foundation, all rights reserved.</p>
+            <p id="copyright">&#169; 2023 The Ford Foundation, all rights reserved.</p>
           </div>
           <div class="links">
             <p><a href="#survey">Assessment</a></p>
@@ -95,21 +95,21 @@ if(isset($_POST['submit'])){
         <script src="assets/js/templates/who.js"></script>
         <script src="assets/js/templates/legal.js"></script>
         <script src="assets/js/templates/team.js"></script>
-        <script src="assets/js/templates/warning.js"></script>
+        <script src="assets/js/templates/overlay.js"></script>
 
         <script src="assets/js/templates/questionsTemplate.js"></script>
-        <script src="assets/js/templates/policyTemplate.js"></script>
+        <script src="assets/js/templates/resultsTemplate.js"></script>
 
         <script src="assets/js/controllers/home.js"></script>
         <script src="assets/js/controllers/legalPage.js"></script>
         <script src="assets/js/controllers/questionsPage.js"></script>
-        <script src="assets/js/controllers/policyPage.js"></script>
+        <script src="assets/js/controllers/resultsPage.js"></script>
 
         <script src="assets/js/views/home.js"></script>
         <script src="assets/js/views/legalView.js"></script>
         <script src="assets/js/views/questionsView.js"></script>
-        <script src="assets/js/views/policyView.js"></script>
-        <script src="assets/js/snapshot.js"></script>
+        <script src="assets/js/views/resultsView.js"></script>
+        <script src="assets/js/overlays.js"></script>
         <script src="assets/js/translation.js"></script>
         <script src="assets/js/progress.js"></script>
       </body>

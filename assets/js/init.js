@@ -8,13 +8,13 @@ var views = {};
 var bodyLang = "en";
 var textStore = {
   qs : window[bodyLang+"_qs"],
-  // rs : window[bodyLang+"_rs"],
+    rs : window[bodyLang+"_rs"],
   oc : window[bodyLang+"_oc"]
 }
 
 function updateLang(language) {
   textStore.qs = window[language+"_qs"];
-  // textStore.rs = window[language+"_rs"];
+   textStore.rs = window[language+"_rs"];
   textStore.oc = window[language+"_oc"];
 }
 
@@ -104,15 +104,6 @@ function toggleMenu(el){
     document.getElementById(el).classList.toggle('open');
 }
 
-// can't put links into the html because will reload the page
-function navToSurvey(){
-    // if user clicks on a subsection
-    // check if the li with the right id is on the page
-    // if we are, then simulate a click on the relevant menu item
-    // if we're on a different page, pass as param by creating a url like /#survey?${subsection}
-    // pass it to the routing mechanism for processing (will need to load up the page and simulate the click)
-}                             
-
 window.onload = function(){
   document.querySelector('#no-js').remove();
   window.addEventListener(
@@ -122,8 +113,173 @@ window.onload = function(){
 //  setUpMenu();
     buildMobileMenu(sections);
     prepTheMenu();
+    buildCatRefLib();
     utils.router();
 };
+
+function addSaveResumeEventListeners(){
+    /* Event Listener added to all 'Save and resume later' buttons */
+    
+    // grab the save buttons
+    buttons = document.querySelectorAll('.later');
+    // add a click listener for each that shows the save panel
+    for (var b=0; b<buttons.length; b++){
+        buttons[b].addEventListener('click', function(e){
+            openPanel(e);
+        });
+    }
+    
+    /* Event Listener added to all overlays to hide when clicked outside */
+    
+    overlays = document.querySelectorAll('.overlay');
+    for (const element of overlays){
+        element.addEventListener('click', function(e){
+            // find the open panel
+            panel = document.querySelector('.overlay:not(.hide) .inner-panel');
+            if (panel !== null && !panel.contains(e.target)){
+                hidePanel(panel);
+            } else {
+                // do nothing
+            }                
+        })
+    }
+    
+    /* Event listener added to all X or dismiss buttons on overlays */
+    
+    // find the dismiss button
+    dismiss = document.querySelectorAll('.dismiss');
+    for (const element of dismiss){
+        element.addEventListener('click', function(){
+            panel = document.querySelector('.overlay:not(.hide) .inner-panel');
+            if (panel !== null){
+                hidePanel(panel);
+            }
+        });        
+    }
+    
+    /* Event listener added to all "copy url" buttons */
+    
+    document.querySelector('.overlay button.copy').addEventListener('click', function(){
+        copyUrl();
+    });
+
+    
+    /* Event listener added to all "email url" buttons to check validity and enable/disable the send button */
+    
+    emailInput = document.querySelector('#email-field');
+    emailInput.addEventListener('input', function(){
+        // if an email is entered, the send button becomes enabled
+        if (checkForEmail(emailInput.value) === true){
+            document.querySelector('button.send').removeAttribute('disabled');
+        } else {
+            document.querySelector('button.send').setAttribute('disabled', 'disabled');
+        }
+    });
+    
+    /* Event listener added to all "send email" buttons */
+    
+    sendButtons = document.querySelectorAll('button.send'); 
+    for (const element of sendButtons){
+//    for (var s = 0; s<sendButtons.length; s++){
+       element.addEventListener('click', function(){
+           // is there an email
+           if (emailInput.value !== ""){
+                // yes: check for link
+               if (document.querySelector('.overlay textarea').value !== ""){
+                   // send generated link to email               
+                   sendEmail(emailInput.value, document.querySelector('.overlay textarea').value);
+               } else {
+                   // send main url to email
+                   sendEmail(emailInput.value, window.location);
+               }
+           } else {
+            // no:
+                // send window location to empty recipient field  
+                sendEmail("", window.location);
+           }
+        })
+    }
+}
+
+
+function addPrintBtnEventListener(){
+    /* Event listener added to all print buttons */
+    
+    printBtns = document.querySelectorAll('.result-print');
+    for (var p = 0; p < printBtns.length; p++){
+        printBtns[p].addEventListener('click', function(){
+            window.print();
+        });
+    }
+}
+
+function addFeedbackBtnEventListener(){
+    /* Event listener added to all feedback buttons */
+    
+    feedbacks = document.querySelectorAll('.send-feedback');
+    for (var f=0; f<feedbacks.length; f++){
+        feedbacks[f].addEventListener('click', function(){
+            window.location = `mailto:buildteam@fordfoundation.org?subject=Feedback on CAT`;
+        })
+    }
+}
+
+function addFormProgressHandler(){
+        if (document.querySelector('form')){
+            var form = document.querySelector('form');
+            form.addEventListener('change', function(e){
+                updateProgress(e);
+            });
+        }     
+}
+
+function goToSection(dest){
+   // click on the relevant link in the main submenu
+    document.querySelector(`li#${dest}`).click();
+    // update the URL
+    url = window.location;
+    url = url.toString();
+    // figure out if we're on home page
+    url = url.split('#');
+    url = `${url[0]}#survey`;
+    history.pushState({}, "", url);
+    // close the mobile menu button
+//    document.getElementById('mobile-menu').click();
+}
+
+function initialiseHandlers(page){
+    
+    switch (page) {
+        case 'home':
+        case 'legal':
+            addSaveResumeEventListeners();
+            break;
+        case 'survey':
+            addSubmenuHandlers(document.querySelector('.submenu'), 'survey');
+            addFormProgressHandler();
+//            addMobilePromptEventListener();
+            addSaveResumeEventListeners();
+            break;
+        case 'results':
+            addSubmenuHandlers(document.querySelector('.submenu'), 'results');
+            addSaveResumeEventListeners();
+            addPrintBtnEventListener();
+            addFeedbackBtnEventListener();
+            break;
+        default:
+            console.log(page);
+    }
+    
+}
+
+function sendEmail(email, link){
+    // if the window location was used
+    if (typeof link === 'object'){
+        // turn it into a string before sending
+        link = window.location.toString();
+    }
+    window.location = `mailto:${email}?subject=${textStore.oc.save.email.subject}&body=${textStore.oc.save.email.body}${link}`;
+}
 
 function buildMobileMenu(s){
     // get the mobile menu
@@ -144,25 +300,25 @@ function buildMobileMenu(s){
     document.getElementById('section-trigger').insertAdjacentHTML('afterend', menu);
 }
 
-// question list is only used in findContent() - can it be replaced?
-
+// TODO: limit the scope if poss
 var sections = [];
 // push the questions in their groups, plus labels, into variables for processing
 for (var q = 0; q < textStore.qs.length; q++){
   sections.push(textStore.qs[q]);
 }
 
-// this will connect the question numbers (0-70) with their positions in each section (0-25)
-var questionsList = [];
-// for each of the sections, loop through and create list of questions
-for (var i = 0; i < sections.length; i++) {
-  // get the section data
-  tmpContent = sections[i];
-  // for each of the questions in that section
-  for (var j = 0; j < tmpContent.length; j++) {
-    // push the id to the queue
-    questionsList.push(j);
-  }
+// this connects the cat names with a short 1-letter reference for use in rebuilding from a generated link
+// WARNING: IF THIS IS CHANGED THEN GENERATED LINKS WILL BREAK
+function buildCatRefLib(){
+    var n = 0;
+    for (cat in sections){
+        for (var c = 0; c < sections[cat].subs.length; c++){
+            subCatName = sections[cat].subs[c].name;
+            subCatRef = String.fromCharCode(97 + n);
+            currentState.catRefLib[subCatRef] = subCatName;
+            n++;
+        }
+    }
 }
 
 
@@ -170,9 +326,8 @@ for (var i = 0; i < sections.length; i++) {
 var currentState = {
     // which questions have been answered?
     answered: [],
-    totalQs: 0
+    // how many questions are in the survey
+    totalQs: 0,
+    // what are the references for each subcategory
+    catRefLib: {}
 }
-
-// for storing the storeAs names and values
-// NOTE: this may not be necessary, but check with link replacement functionality before deletion
-var dict = {};

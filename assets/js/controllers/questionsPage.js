@@ -5,7 +5,7 @@ controllers.questionsPage = function(data, params){
 
   var menuData = [];
   var questionData = [];
-    
+    var goTo = "";
     // if there's a preset destination subsection
     if (typeof data.go === 'string'){
         goTo = data.go;
@@ -61,7 +61,7 @@ controllers.questionsPage = function(data, params){
     for (var a=0; a<question.answers.length; a++){
       var answerItem = {
         "aText": question.answers[a].a,
-        "ptsArea": area,
+        "ptsArea": area, // might be unnecessary
         "pts": question.answers[a].pts
       }
       answers.push(answerItem);
@@ -79,28 +79,17 @@ controllers.questionsPage = function(data, params){
     menuData.push(menuItem);
     questionData.push(surveyData.questions);
   }
-
-
-  // // queue up all the questions in this section
-  // // for each of the sections
-  // for (var i = 0; i < sections.length; i++){
-  //   // get each of the questions
-  //   for (var j = 0; j < sections[i].length; j++){
-  //     var el = sections[i][j];
-  //     var item = {
-  //       's': i,
-  //       'q': el.q,
-  //       'area': el.area,
-  //       'answers': el.answers,
-  //     };
-  //     templateContext.push(item);
-  //   }
-  // }
+    
   // put that data into the template and return it for rendering
   var questionContainer = templates.questionsTemplate(menuData, questionData, data.ui, params);
     
-    // does this do anything yet?
-    questionContainer += templates.warning(data.ui.ux, params);
-    
-  utils.render('page', questionContainer, goTo);
+    // set up the overlays
+    questionContainer += templates.overlay(data.ui.save, 'resume');
+
+    // if we're on a device with screen < 800px then add the mobile overlay too
+    if (window.innerWidth < '800'){
+        questionContainer += templates.overlay(data.ui.survey.ux.mobile, 'mobile');
+    }
+
+  utils.render('page', questionContainer, 'survey', goTo);
 };

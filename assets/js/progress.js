@@ -1,4 +1,5 @@
 function updateSubmenu(e){
+    isResults = e.target.id.startsWith("r-");
     dest = e.target;
     // did the user click on a subcategory or a category (is it an li or a h4)
     if (dest.nodeName === 'LI'){
@@ -11,18 +12,20 @@ function updateSubmenu(e){
             origin.classList.remove('selected');
             // apply it to the subcategory
             dest.classList.add('selected');
+            
             // and show the relevant questions
-            updateQuestions(dest.id, origin.id);
-            updateButtons(dest.id);
-            // position the polygons, change their images
-            positionPolygons();
-            parent = dest.parentElement.parentElement.id
-            // change the background if we're in a new section
-            changeBackground(parent);
-            // do we need to update the category too?
-            if (!document.querySelector(`.submenu div#${parent}`).classList.contains('selected')){
-                document.querySelector('.submenu div.selected').classList.remove('selected');
-                document.querySelector(`.submenu div#${parent}`).classList.add('selected');
+            updateQuestions(dest.id, origin.id, isResults);
+            if (!isResults){
+                updateButtons(dest.id);
+                // position the polygons, change their images
+                positionPolygons();
+                parent = dest.parentElement.parentElement.id
+                // change the background if we're in a new section
+                changeBackground(parent);                
+                if (!document.querySelector(`.submenu div#${parent}`).classList.contains('selected')){
+                    document.querySelector('.submenu div.selected').classList.remove('selected');
+                    document.querySelector(`.submenu div#${parent}`).classList.add('selected');
+                }
             }
         }
     } else if (dest.nodeName === 'H4'){
@@ -34,17 +37,36 @@ function updateSubmenu(e){
     }
 }
 
-function updateQuestions(d, o){
+function updateQuestions(d, o, r){
     // if we're going to a new subsection
     if (d !== o){
-        // find the currently active question group
-        active = document.querySelector('form div.active');
-        // verify that it matches the origin
-        if (active.classList[0] === o){
-            active.classList.remove('active');
-            document.querySelector(`form div.${d}`).classList.add('active');
+        // if we're on the survey page
+        if (!r){
+            // find the currently active question group
+            active = document.querySelector('form div.active');
+            // verify that it matches the origin
+            if (active.classList[0] === o){
+                active.classList.remove('active');
+                document.querySelector(`form div.${d}`).classList.add('active');
+            } else {
+                console.log(active.classList[0], o);
+            }            
         } else {
-            console.log(active.classList[0], o);
+            // find the currently active result groups
+            active = document.querySelectorAll('.result.active');
+            // verify that it matches the origin
+            if (active[0].classList[1].includes(o)){
+                for (var i = 0; i < active.length; i++){
+                    active[i].classList.remove('active');                    
+                }
+                active = document.querySelectorAll(`.results-content div.${d}`);
+                for (var j = 0; j < active.length; j++){
+                    active[j].classList.add('active');
+                }
+                active[0].scrollIntoView({ behavior: "smooth", block: "nearest"});
+            } else {
+                console.log(active, o);
+            }            
         }
     }
 }
@@ -104,8 +126,8 @@ function updateProgress(e) {
         currentState.answered.push(isRequired(e.target));
     } else {
         // get an updated list of the new answers from this question
-        selections = document.querySelectorAll(`input[name=${e.target.name}]:checked`);
-        
+        selections = Array.from(document.querySelectorAll(`input[name=${e.target.name}]:checked`));
+                
         // add a check in here for the number of checkboxes (should be max of 3)
         if (tooMany(selections) === true){
             // find the error text
@@ -114,10 +136,12 @@ function updateProgress(e) {
             if (thisError.classList.contains('hide')){
                 thisError.classList.remove('hide');
             }
-        } else {
-            // remove the highlight class on the relevant span
+        } else if(tooMany(selections) === false && document.querySelector('span#error-'+e.target.name)) {
+            // if there aren't too many selections but there's an error showing then hide the error
             thisError = document.querySelector('span#error-'+e.target.name);
-            thisError.classList.add('hide');
+            thisError.classList.add('hide');    
+        } else {
+            // in this case there aren't too many errors but also there's no error shown, so do nothing
         }
 
         // if this question already has stored answers, find & remove them
@@ -205,16 +229,16 @@ function countThis(i){
 
 function isRequired(el){
     if (el.required === true){
-        return el.id;
+        return `${el.id}-${el.attributes["data-pts"].value}`;
     } else if (el.required === false) {
-        return el.id+'-o';
+        return `${el.id}-${el.attributes["data-pts"].value}-o`;
     } else {
         console.log(el.required);      
     }
 }
 
 function tooMany(arr){
-    if (arr[0].type === "checkbox" && arr.length > 3){
+    if (Array.isArray(arr) === true && arr[0].type === "checkbox" && arr.length > 3){
         return true;
     } else {
         return false;
@@ -270,7 +294,7 @@ function nextPage(e) {
     } 
     // or if they want to submit their answers
     else { 
-        // handleSubmit();
+         handleSubmit();
     } 
     // scroll to the top of the page
     window.scrollTo(0,0);

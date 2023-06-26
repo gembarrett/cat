@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.results .contain-lrg {
+  flex-direction: row;
+}
+
 .gather {
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -224,7 +228,7 @@
   font-size: 0.8em;
   cursor: pointer;
 }
-.submenu .subMenuTitle {
+.survey .submenu .subMenuTitle {
   background-color: #003f2e;
 }
 .submenu h4 {
@@ -237,7 +241,7 @@
   list-style: none;
   padding:0;
 }
-.submenu h4::before, .submenu li::before {
+.submenu h4::before, .submenu li::before, .results .submenu li {
     margin:0 10px 0 5px;
     height:50px;
 }
@@ -248,48 +252,48 @@ small green filled (subsection started)
 large black fill green border ()
 small black fill green border */
 
-.submenu li::before {
+.survey .submenu li::before {
   content: url('../images/ns-m-s.png');
 }
-.submenu li.started::before {
+.survey .submenu li.started::before {
   content: url('../images/s-m-s.png');
 }
-.submenu h4::before {
+.survey .submenu h4::before {
   content: url('../images/ns-m-m.png');    
 }
-.submenu div.started h4::before {
+.survey .submenu div.started h4::before {
     content: url('../images/s-m-m.png');
 }
 
-.submenu #understand-risk h4::before {
+.survey .submenu #understand-risk h4::before {
   content: url('../images/ns-f-m.png');        
 }
-.submenu #understand-risk.started h4::before {
+.survey .submenu #understand-risk.started h4::before {
   content: url('../images/s-f-m.png');        
 }
-.submenu #devices-accounts h4::before {
+.survey .submenu #devices-accounts h4::before {
   content: url('../images/ns-l-m.png');        
 }
-.submenu #devices-accounts.selected h4::before {
+.survey .submenu #devices-accounts.selected h4::before {
   content: url('../images/ns-m-m.png');        
 }
-.submenu #devices-accounts.selected.started h4::before {
+.survey .submenu #devices-accounts.selected.started h4::before {
   content: url('../images/s-m-m.png');        
 }
-.submenu #devices-accounts.started h4::before {
+.survey .submenu #devices-accounts.started h4::before {
   content: url('../images/s-l-m.png');        
 }
-.submenu #vp-network::before {
+.survey .submenu #vp-network::before {
   content: url('../images/ns-l-s.png');
 }
-.submenu #vp-network.started::before {
+.survey .submenu #vp-network.started::before {
   content: url('../images/s-l-s.png');
 }
 
-.submenu h4:hover {
+.survey .submenu h4:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.submenu li.selected, .submenu li:hover {
+.survey .submenu li.selected, .survey .submenu li:hover {
   background: rgba(255,255,255,0.9);
   color:#000;
 }
@@ -297,8 +301,6 @@ small black fill green border */
   margin:0;
 }
 .submenu li {
-  background: #000;
-  border:0.5px solid #686969;
   font-size: 0.9em;
     border-left:0;
     border-right:0;
@@ -311,6 +313,113 @@ small black fill green border */
 .submenu div.selected > ul {
   display: initial;
 }
+.survey .submenu li {
+    background: #000;
+    border:0.5px solid #686969;
+}
+.results .submenu li{
+    background-color: rgba(55,52,102,.5);
+    border: 0.5px solid rgba(0,0,0,.5);
+    margin:0;
+    padding-left: 1em;
+}
+.results .submenu li:hover, .results .submenu li.selected {
+    background-color: rgba(55,52,102,1);
+    color:#fff;
+}
+.result {
+    margin: 2em 0;
+    display: none;
+}
+.result.active {
+    display: block;
+}
+
+.result h4.section {
+    text-transform: uppercase;
+    margin:0;
+}
+.result h2 {
+    margin: 0;
+    padding-bottom: 0.5em;
+    line-height:1.2em;
+}
+.results-overview progress {
+    margin:0;
+    width: 50%;
+    border:0;
+    background-color: #fff;
+}
+.results-overview{
+    background-color:#dad9cf;
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+}
+.results .overview {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+}
+.results-overview p {
+    font-size: 0.8em;
+    max-width: 40%;
+    margin:0;
+}
+.results-overview h4 {
+    margin-bottom: 0.5em;
+}
+.results-intro, .results-overview, .results-content, #nextStepButtons {
+    padding:3em;
+}
+.results-content {
+  padding-bottom: 0;
+}
+.results-content a {
+    text-decoration: underline;
+}
+.results span {
+    display: inline;
+    font-weight: bold;
+}
+.results .results-intro img {
+  margin: 2em auto;
+}
+.results h1 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+  margin: 0;
+}
+.result > h3 {
+    color:#6b60bf;
+    padding-top:1em;
+}
+
+.result h4 {
+    margin-bottom: 0;
+}
+.result .score {
+    font-size:1.2em;
+    line-height: 1.5em;
+}
+
+table th {
+    text-align: left;
+}
+tbody tr td:first-child {
+    font-weight: bold;
+}
+.rec-example {
+    background-color: #fff8cc;
+    padding:0.5em 1.5em;
+}
+.extra-recs {
+  border: 2px solid #6b60bf;
+  padding: 0.5em 1.5em;
+}
+
 .right-col {
   background-color: #fffef5;
     width:63%;
@@ -321,7 +430,6 @@ small black fill green border */
   display:block;
 }
 
-/* TODO: figure out why Twitter's instructions on styling aren't working here */
 blockquote.twitter-tweet{
   font-size: 10px !important;
 }
@@ -447,25 +555,97 @@ span {
 form span {
   margin: 0 1em;
   padding: 0.25em 0;
+    display: flex;
+    align-items: flex-start;
 }
 form input {
   margin-right: 10px;
+    margin-top:5px;
 }
 
+.contain-sidebar {
+    position: absolute;
+    right: -120px;
+    top: 140px;    
+    width: 260px;
+}
+
+.save-results {
+    padding: 16px;
+    background-color: #003f2e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-intro p {
+    max-width: 80%;
+}
+
+.contain-sidebar h4{
+    font-size:0.8em;
+    margin: 0.5em 0;
+    text-align: center;
+    line-height: 1em;
+}
+
+.contain-sidebar button {
+    background-color: #009e72;
+    border: 0;
+    margin: 0.25em 0;
+    color: #fff;
+}
+
+.contain-sidebar button:hover {
+    background-color: #fff;
+    color:#000;
+}
+
+.save-results > button {
+    padding:1em;
+}
+
+.overlap-col .feedback {
+    background-color: #dad9cf;
+    color:#000;
+    padding: 1em;
+}
+.feedback {
+    display: flex;
+    flex-direction: column;
+    background-color: #33251b;
+    color:#fff;
+    text-align: center;
+}
+.right-col > .feedback button {
+    background-color: #6b60bf;
+    margin: 0 2em 2em;
+    align-self: center;
+    color:#fff;
+    border:0;
+    padding: 1em;
+}
+
+.feedback button {
+    padding:0.5em;
+}
 .save-btn {
   background-color: #000;
   color: #fff;
-  border: 0;
+  border: 1px solid #000;
   margin-top: 20px;
   padding: 16px;
     right:-100px;
     position: absolute;
     width:120px;
-    
+    cursor: pointer;
+}
+.save-btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .overlap-col {
-    background-color: red;
     width:100%;
     position: relative;
     z-index: 3;
@@ -531,12 +711,12 @@ form input {
 
 
 
-#progressButtons {
+#progressButtons, #nextStepButtons {
     width:100%;
     display: flex;
     justify-content: space-between;
 }
-#progressButtons > button {
+#progressButtons > button, #nextStepButtons > button {
     flex-basis: 45%;
     background-color: #000;
     color: #fff;
@@ -546,6 +726,20 @@ form input {
     font-size: inherit;
     margin:2em 0;
 }
+
+#nextStepButtons {
+    padding: 0 3em 1em 3em;
+}
+
+#nextStepButtons > button {
+    border:0;
+    margin: 2em 0.25em;
+}
+
+#nextStepButtons > button:hover {
+    background-color: #009e72;
+}
+
 #progressButtons > button:hover {
     background-color: #fff;
     color: #000;

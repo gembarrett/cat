@@ -10,6 +10,10 @@ controllers.homePage = function(data, params){
   homeContent += `</div>`;
   homeContent += `<div class="cta"><button class="btn btn-prim title right"><a href="/#survey">`+data.process.cta+`</a></button></div>`
   homeContent += templates.team(data.team);
-  document.querySelector('#page').classList.remove('survey');
-  utils.render('page', homeContent);
+
+    // set up the overlays
+    homeContent += templates.overlay(data.save, 'resume');
+
+    document.querySelector('#page').classList.remove('survey');
+  utils.render('page', homeContent, 'home');
 };
