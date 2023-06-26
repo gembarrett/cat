@@ -22,24 +22,24 @@ function parseGeneratedURL(data){
     // remove any empty strings from the array
     urlParts = urlParts.filter(part => part !== '');
     
-    var preSelections = [];
-    
-    for (const part of urlParts){
-        // match up the first character with the category in the catRefLib
-        if (typeof currentState.catRefLib[part.charAt(0)] === 'string'){
-            c = currentState.catRefLib[part.charAt(0)];
-            q = part.charAt(1);
-            a = part.charAt(2);
-            preSelections.push(`${c}-${q}-${a}`);
-            
-        } else {
-            console.log(`Unable to parse: ${part}`);
+        var preSelections = [];
+
+        for (const part of urlParts){
+            // match up the first character with the category in the catRefLib
+            if (typeof currentState.catRefLib[part.charAt(0)] === 'string'){
+                c = currentState.catRefLib[part.charAt(0)];
+                q = part.charAt(1);
+                a = part.charAt(2);
+                preSelections.push(`${c}-${q}-${a}`);
+
+            } else {
+                console.log(`Unable to parse: ${part}`);
+            }
+
         }
-        
-    }
-    // add the preselections to currentState)
-    currentState.preSelections = preSelections;
-    
+        // add the preselections to currentState)
+        currentState.preSelections = preSelections;        
+
 }
 
 function doThePreselections(){
