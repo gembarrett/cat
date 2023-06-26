@@ -555,9 +555,12 @@ span {
 form span {
   margin: 0 1em;
   padding: 0.25em 0;
+    display: flex;
+    align-items: flex-start;
 }
 form input {
   margin-right: 10px;
+    margin-top:5px;
 }
 
 .contain-sidebar {

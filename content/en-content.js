@@ -2039,11 +2039,11 @@ var en_oc = {
       "content":{ 
             "resume": {
               "title": "Save and resume later",
-              "content": ["Please copy the link below and save it in a safe place. You can use this link any time to resume answering questions on the form.","Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."]
+              "content": ["Please copy the link below and save it in a safe place. You can use this link any time within 30 days to resume answering questions on the form.","Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."]
             },
            "result": {
                "title": "Save your results and recommendations",
-               "content": "Please copy the link below and save it in a safe place. You can use this link any time to access your results."
+               "content": "Please copy the link below and save it in a safe place. You can use this link any time within 30 days to access your results."
            },
            "email": {
                "title": "Email your results",

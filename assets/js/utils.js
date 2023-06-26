@@ -57,9 +57,8 @@ var utils = (function(){
           
           // if there's multiple parts to the url
           if(route_split > 1){
-            // use the above function to figure out the parameters to pass along         
+            // figure out the parameters to pass along         
             var params = extract_params(temp[1]);
-              console.log(params);
               parseGeneratedURL(params);
             changeBackground('understand-risk');              
           } else {
@@ -68,6 +67,12 @@ var utils = (function(){
           }
                     
       } else if (temp[0] === 'results'){
+            if(route_split > 1){
+                // figure out the parameters to pass along         
+                var params = extract_params(temp[1]);
+                  parseGeneratedURL(params);
+            }
+          
           // temp data for development
           currentState.answered = ["data-encryption-0-0-0","data-encryption-1-0-0","device-compartmentalization-0-1-10","external-threats-0-0-50","external-threats-1-0-60","external-threats-2-1-0","external-threats-3-0-20","external-threats-4-0-20","external-threats-5-0-20","installing-software-0-0-5","installing-software-1-0-35","internal-risks-0-0-0","internal-risks-1-0-0","internal-risks-2-0-0","internal-risks-3-0-0","internal-risks-4-0-0","legal-risks-0-0-0","managing-data-0-0-0","managing-data-1-0-0","managing-data-2-0-0","managing-data-3-0-0","messaging-collab-0-0-0","messaging-collab-1-0-0","messaging-collab-2-0-0","office-security-0-0-15","office-security-1-0-0","office-security-2-0-10","office-security-3-0-0","office-security-4-0-0","office-security-5-0-0","op-continuity-0-1-10","op-continuity-1-0-0","op-continuity-2-0-0","passwords-authentication-0-2-15","passwords-authentication-1-1-10-o","passwords-authentication-2-0-0","policy-docs-0-0-0","policy-docs-1-0-0-o","policy-docs-2-0-0-o","system-updates-0-0-0","third-party-0-1-10","third-party-1-1-10","third-party-2-0-20","third-party-3-0-0","third-party-4-0-0","training-support-0-0-10","training-support-3-0-0","training-support-4-0-0","travel-policy-0-0-0","vp-network-0-3-20","web-security-0-0-0","web-security-1-0-0-o","web-security-2-0-15-o","web-security-3-0-5-o","web-security-4-0-0-o","your-org-0-0-0","your-org-1-0-0","your-org-2-0-0","your-org-3-0-10","your-org-4-0-10","your-org-5-2-5","your-org-6-0-0","your-org-6-1-0","your-org-6-2-0","your-org-7-0-0","your-org-7-2-0","your-org-7-3-0","your-org-8-2-0","your-org-9-0-0"]; 
           
@@ -103,7 +108,7 @@ var utils = (function(){
         views[function_to_invoke](data, params);
       }
     },
-    // if we have to scroll to a particular section, based on the parameters, that happens here
+    // if we have to do anything specific after a page has loaded, do it here
     render: function(element_id, content, sender, selected_dest){
         document.getElementById(element_id).innerHTML = content;
         
@@ -113,31 +118,11 @@ var utils = (function(){
         if (selected_dest) {
             goToSection(selected_dest);
         }
-        
-//        if (document.querySelector('.results')){
-//            addSubmenuHandlers(document.querySelector('.submenu'), 'results');
-//        }
-                
-        // TODO: move these and check just for survey page then call the functions
-//        if (document.querySelector('form')){
-//            addSubmenuHandlers(document.querySelector('.submenu'), 'survey');
-//            var form = document.querySelector('form');
-//            form.addEventListener('change', function(e){
-//                updateProgress(e);
-//            });
-//            // if a destination has been chosen from the mobile menu
-//            if (selected_dest) {
-//               // click on the relevant link in the main submenu
-//                document.querySelector(`li#${selected_dest}`).click();
-//                // update the URL
-//                url = window.location;
-//                url = url.toString();
-//                // figure out if we're on home page
-//                url = url.split('#');
-//                url = `${url[0]}#survey`;
-//                history.pushState({}, "", url);
-//            }
-//        }
+        // if there are already answers
+        if (currentState.preSelections){
+            doThePreselections();
+        }
+
     }
   };
 })();

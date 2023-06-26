@@ -44,7 +44,7 @@ function openPanel(el){
     // if no link has been generated
     if (urlToShare === false){
         // if there's no link to add to the textarea, display a message instead
-        document.querySelector(`#overlay-resume textarea`).placeholder = "Not enough completed answers to generate link."
+        document.querySelector(`#overlay-resume textarea`).placeholder = "Not enough completed answers to create link."
         // disable the copy button
         document.querySelector('button.copy').setAttribute('disabled', 'disabled');
     } else {

@@ -234,15 +234,17 @@ function addFormProgressHandler(){
 }
 
 function goToSection(dest){
-           // click on the relevant link in the main submenu
-            document.querySelector(`li#${dest}`).click();
-            // update the URL
-            url = window.location;
-            url = url.toString();
-            // figure out if we're on home page
-            url = url.split('#');
-            url = `${url[0]}#survey`;
-            history.pushState({}, "", url);
+   // click on the relevant link in the main submenu
+    document.querySelector(`li#${dest}`).click();
+    // update the URL
+    url = window.location;
+    url = url.toString();
+    // figure out if we're on home page
+    url = url.split('#');
+    url = `${url[0]}#survey`;
+    history.pushState({}, "", url);
+    // close the mobile menu button
+//    document.getElementById('mobile-menu').click();
 }
 
 function initialiseHandlers(page){
@@ -251,16 +253,19 @@ function initialiseHandlers(page){
         case 'home':
         case 'legal':
             addSaveResumeEventListeners();
+            break;
         case 'survey':
             addSubmenuHandlers(document.querySelector('.submenu'), 'survey');
             addFormProgressHandler();
 //            addMobilePromptEventListener();
             addSaveResumeEventListeners();
+            break;
         case 'results':
             addSubmenuHandlers(document.querySelector('.submenu'), 'results');
             addSaveResumeEventListeners();
             addPrintBtnEventListener();
             addFeedbackBtnEventListener();
+            break;
         default:
             console.log(page);
     }

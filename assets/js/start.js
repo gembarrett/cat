@@ -10,21 +10,47 @@ function addSubmenuHandlers(menu, page) {
     }
 }
 
-function addResultsPageHandlers(){
-    
-}
-
 // this is the function that's called when a user submits their answers
 function handleSubmit() {
     utils.router('results');
 }
 
+
+// this takes the preselected answers from the url and stores them
 function parseGeneratedURL(data){
     urlParts = data[0].split(/([a-z][0-9][0-9])/);
     // remove any empty strings from the array
     urlParts = urlParts.filter(part => part !== '');
     
-    console.log(urlParts);
+    var preSelections = [];
+    
+    for (const part of urlParts){
+        // match up the first character with the category in the catRefLib
+        if (typeof currentState.catRefLib[part.charAt(0)] === 'string'){
+            c = currentState.catRefLib[part.charAt(0)];
+            q = part.charAt(1);
+            a = part.charAt(2);
+            preSelections.push(`${c}-${q}-${a}`);
+            
+        } else {
+            console.log(`Unable to parse: ${part}`);
+        }
+        
+    }
+    // add the preselections to currentState)
+    currentState.preSelections = preSelections;
+    
+}
+
+function doThePreselections(){
+        
+    for (const item of currentState.preSelections){
+        element = document.querySelector(`input#${item}`);
+        if (element !== null){
+            element.click();            
+        }
+    }
+    
 }
 
 // function to add li or p formatting to array
