@@ -341,7 +341,7 @@
 }
 
 @media print {
-    .contain-sidebar, .submenu, .lang-menu, .results-intro img, .results-overview, #nextStepButtons, .feedback {
+    .contain-sidebar, .submenu, .menu-containers, .lang-menu, .results-intro img, .results-overview, #nextStepButtons, .feedback {
         display:none;
     }
     body {
@@ -352,7 +352,7 @@
         position:static;
         background-color:#000;
     }
-    #page {
+    #page, {
         background-color:#fff;
         padding:0;
     }
@@ -362,6 +362,9 @@
     }
     .results-content, .results-intro {
         padding:0;
+    }
+    .glyph {
+        background-color: #000;
     }
     .result {
         display:block;
