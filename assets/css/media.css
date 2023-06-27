@@ -341,7 +341,29 @@
 }
 
 @media print {
-    .contain-sidebar {
+    .contain-sidebar, .submenu, .lang-menu, .results-intro img, .results-overview, #nextStepButtons, .feedback {
         display:none;
+    }
+    body {
+        overflow: visible;
+        font-size:10px;
+    }
+    #head {
+        position:static;
+        background-color:#000;
+    }
+    #page {
+        background-color:#fff;
+        padding:0;
+    }
+    .contain-lrg, .right-col, .results-intro p {
+        max-width:initial;
+        width:100%;
+    }
+    .results-content, .results-intro {
+        padding:0;
+    }
+    .result {
+        display:block;
     }
 }

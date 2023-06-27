@@ -26,10 +26,12 @@ function checkForEmail(val){
 function openPanel(el){
     // what are we opening
     panelID = el.target.classList;
+    console.log(panelID);
     
     if (panelID.contains('result-email') || panelID.contains('result-generate')){
         // if we're on the results page, the link needs to direct to results page
         urlToShare = generateLink('results');
+        console.log(urlToShare);
     } else {
         // try to generate a link based on questions answered so far
         urlToShare = generateLink('survey');        
@@ -78,7 +80,7 @@ function hidePanel(panel){
 
 function generateLink(page){
    // if there's answers stored
-   if (currentState.answered.length !== 0){
+   if (currentState.answered.length !== 0 || typeof dataToPass.tally === 'object'){
        if (page === 'results'){
           var saveLink = `${thisEnv}/#results?`;
            
@@ -127,9 +129,8 @@ function generateLink(page){
            }
        }
        return saveLink;
-   }
-    else {
+   } else {
         return false;
-    }
+    }   
 }
 
