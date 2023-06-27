@@ -79,8 +79,8 @@ function hidePanel(panel){
 }
 
 function generateLink(page){
-   // if there's answers stored
-   if (currentState.answered.length !== 0 || typeof dataToPass.tally === 'object'){
+   // if there's answers or a tally stored
+   if (currentState.answered.length !== 0 || typeof dataToPass === 'object'){
        if (page === 'results'){
           var saveLink = `${thisEnv}/#results?`;
            

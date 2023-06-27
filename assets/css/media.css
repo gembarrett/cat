@@ -134,6 +134,171 @@
   }
 }
 
+
+/* this is where most of the mobile view kicks in */
+@media (max-width:600px){
+    #overlay-mobile .inner-panel {
+        width: 100%;
+        height: 100%;
+    }
+    #mobile-menu{
+        display: block;
+    }
+    .glyph {
+        display: flex;
+        justify-content: flex-start;
+        width:100%;
+        padding-left: 5px;
+    }
+    .glyph a {
+        margin: 0 auto;
+    }
+    .glyph a img:first-child {
+        display:none;
+    }
+    .left-col {
+        display:none;
+    }
+    .contain-md, .right-col {
+        max-width: initial;
+        width:100%;
+    }
+    .survey button.later {
+        display:none;
+    }
+    #page.survey, #page.results {
+        padding-top:0;
+    }
+    .contain-survey {
+        min-height: initial;
+    }
+    .contain-sidebar {
+        display:none;
+    }
+    .panel-content {
+        padding:3em;
+    }
+    .inner-panel {
+        width:100vw;
+        height:100vh;
+    }
+        #survey-menu {
+        display:block;
+    }
+    #menu-triggers {
+        padding:5px 0;
+    }
+    #hero-header {
+        flex-direction: column;
+    }
+    #hero-header-text {
+        padding-right: 0;
+        text-align: center;
+    }
+    #hero {
+        margin-top: 4em;
+    }
+    #hero h1 {
+        font-size: 1.5em;
+    }
+    #hero h2 {
+        margin-bottom: 5px;
+    }
+    #hero-header-img {
+        margin-top: 2em;
+    }
+    #hero img:first-child {
+        max-height: none;
+    }
+    .gather {
+        flex-direction: column;
+    }
+    .lang-menu {
+        padding:0.5em;
+    }
+    .lang-menu p {
+        display:none;
+    }
+    #head .lang-menu img {
+        padding-left: 0;
+    }
+    #lang-menu {
+        display:block;
+    }
+
+    .home #intro-container {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    #promo {
+        max-width: none;
+        display:none;
+    }
+    .person img {
+        max-width: 25vw;
+        margin: 0 auto;
+    }
+    .person {
+        flex-basis: 60%;
+        margin:0;
+        margin-top:1.5em;
+    }
+    #foot {
+        flex-direction: column;
+    }
+    .info {
+        order: 1;
+    }
+    .info img, .info p{
+        display: none;
+    }
+    #copyright {
+        display: block;   
+        color: grey;
+    }
+    .links a {
+        text-decoration: underline;
+        font-size: 0.85em;
+    }
+    #foot .links p {
+        text-align: center;
+    }
+    .brown-bg {
+        background-color: initial;
+        margin-top:0;
+    }
+
+    .contain-sm {
+        width:100vw;
+    }
+    .brown-bg .add-shadow {
+        box-shadow: none;
+    }
+    .submenu {
+        display:none;
+    }
+    .contain-md {
+        max-width: 100vw;
+    }
+    .save-btn {
+        display:none;
+    }
+    .right-col {
+        flex-basis: fit-content;
+    }
+    #page.survey {
+        padding-top: 3em;
+    }
+    .results .contain-lrg {
+        max-width: initial;
+        width:100vw;
+    }
+    .result {
+        display:block;
+    }
+}
+
+
 @media (max-width:550px) {
   .trio-col h2 {
     font-size: 1.4em;
@@ -147,10 +312,18 @@
   #legal ul {
     padding-left: 3em;
   }
-    #overlay-mobile .inner-panel {
-        width: 100%;
-        height: 100%;
+}
+
+@media (max-width:480px){
+/*
+    .mob-overlay {
+        display:block;
+        position: absolute;
+        margin:0 auto;
+        z-index: 1;
     }
+*/
+
 }
 
 @media (max-width:450px) {
@@ -204,141 +377,7 @@
 */
 
 
-@media (max-width:480px){
-/*
-    .mob-overlay {
-        display:block;
-        position: absolute;
-        margin:0 auto;
-        z-index: 1;
-    }
-*/
-    #survey-menu {
-        display:block;
-    }
-    #menu-triggers {
-        padding:5px 0;
-    }
-    #hero-header {
-        flex-direction: column;
-    }
-    #hero-header-text {
-        padding-right: 0;
-        text-align: center;
-    }
-    #hero {
-        margin-top: 4em;
-    }
-    #hero h1 {
-        font-size: 1.5em;
-    }
-    #hero h2 {
-        margin-bottom: 5px;
-    }
-    #hero-header-img {
-        margin-top: 2em;
-    }
-    #hero img:first-child {
-        max-height: none;
-    }
-    .gather {
-        flex-direction: column;
-    }
-    .lang-menu {
-        padding:0.5em;
-    }
-    .lang-menu p {
-        display:none;
-    }
-    #head .lang-menu img {
-        padding-left: 0;
-    }
-    #lang-menu {
-        display:block;
-    }
-    #mobile-menu{
-        display: block;
-    }
-    .glyph {
-        display: flex;
-        justify-content: flex-start;
-        width:100%;
-        padding-left: 5px;
-    }
-    .glyph a {
-        margin: 0 auto;
-    }
-    .glyph a img:first-child {
-        display:none;
-    }
-    .home #intro-container {
-        padding-right: 0;
-        margin-right: 0;
-    }
-    #promo {
-        max-width: none;
-        display:none;
-    }
-    .person img {
-        max-width: 25vw;
-        margin: 0 auto;
-    }
-    .person {
-        flex-basis: 60%;
-        margin:0;
-        margin-top:1.5em;
-    }
-    #foot {
-        flex-direction: column;
-    }
-    .info {
-        order: 1;
-    }
-    .info img, .info p{
-        display: none;
-    }
-    #copyright {
-        display: block;   
-        color: grey;
-    }
-    .links a {
-        text-decoration: underline;
-        font-size: 0.85em;
-    }
-    #foot .links p {
-        text-align: center;
-    }
-    .brown-bg {
-        background-color: initial;
-        margin-top:0;
-    }
-    .brown-bg .contain-sm {
-        padding:0;
-        margin-top: 6em;
-        margin-bottom: 3em;
-    }
-    .contain-sm {
-        width:85%;
-    }
-    .brown-bg .add-shadow {
-        box-shadow: none;
-    }
-    .submenu {
-        display:none;
-    }
-    .contain-md {
-        max-width: 100vw;
-    }
-    .save-btn {
-        display:none;
-    }
-    .right-col {
-        flex-basis: fit-content;
-    }
-    #page.survey {
-        padding-top: 3em;
-    }
-}
+
 
 @media print {
     .contain-sidebar, .submenu, .menu-containers, .lang-menu, .results-intro img, .results-overview, #nextStepButtons, .feedback {
