@@ -72,9 +72,19 @@ function doThePreselections(){
     for (const item of currentState.preSelections){
         element = document.querySelector(`input#${item}`);
         if (element !== null){
-            element.click();            
+//            element.click(); 
+            // what's involved in this click:
+                // updateProgress(e) happens
+            // check the button
+            element.checked = true;
+            // push it to the answered array
+            currentState.answered.push(isRequired(element));
+        } else {
+            // skip this one
         }
     }
+    // then update the progress bar
+    updateBar();
     
 }
 

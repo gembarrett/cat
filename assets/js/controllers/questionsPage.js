@@ -87,7 +87,7 @@ controllers.questionsPage = function(data, params){
     questionContainer += templates.overlay(data.ui.save, 'resume');
 
     // if we're on a device with screen < 800px then add the mobile overlay too
-    if (window.innerWidth < '800'){
+    if (window.innerWidth < '600'){
         questionContainer += templates.overlay(data.ui.survey.ux.mobile, 'mobile');
     }
 

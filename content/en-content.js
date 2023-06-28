@@ -2087,7 +2087,7 @@ var en_oc = {
   "survey": {
     "title": "Let's Get Started",
     "content": [
-      "Welcome to the CAT (Cybersecurity Assessment Tool). This is version v2.0, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use. If you find any errors, bugs, or issues, please contact ",
+      "Welcome to the CAT (Cybersecurity Assessment Tool). This is version v2.0, developed for the use of Ford’s BUILD grantees. Once you have completed it, the assessment tool will display a series of recommendations. Print or save that information for your organization's use. If you find any errors, bugs, or issues, please contact "
     ],
     "ux": {
       "mobile": {
@@ -2136,7 +2136,7 @@ var en_oc = {
         "intro": "This assessment was completed on [[date]]. Here is how you scored in each section:",
         "feedback": {
             "title": "Help Us Make The Cybersecurity Assessment Tool Better!",
-            "btn": "Give feedback",
+            "btn": "Give feedback"
         },
         "save": {
             "title": "Get your results",
@@ -2150,7 +2150,7 @@ var en_oc = {
 };
 
 // this is old recommendations text - replace when updated text available
-var en_rs = { // contains all evaluation content
+var en_rs = { 
   "title": "Results and Recommendations",
   "reusables": {
     "below": {
@@ -2170,8 +2170,8 @@ var en_rs = { // contains all evaluation content
     },
     "general": {
       "what": "What We Recommend",
-      "why": "Why We Recommend This", // title for each content.general.why below
-      "eg": "A Real World Example" // title for each content.general.eg below
+      "why": "Why We Recommend This", 
+      "eg": "A Real World Example"
     }
   },
   "content": {
@@ -2180,10 +2180,10 @@ var en_rs = { // contains all evaluation content
           "title": "About Your Organization",
           "general": {
               "why": [
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque sit amet porttitor eget dolor. Elementum tempus egestas sed sed risus pretium. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Et ligula ullamcorper malesuada proin libero. Non arcu risus quis varius quam quisque id. Elementum sagittis vitae et leo. Adipiscing tristique risus nec feugiat in fermentum. Id interdum velit laoreet id donec ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Eget mi proin sed libero enim sed faucibus turpis in. A diam maecenas sed enim ut. Vel fringilla est ullamcorper eget nulla facilisi etiam. At risus viverra adipiscing at in tellus integer feugiat scelerisque. Vestibulum sed arcu non odio euismod. Semper feugiat nibh sed pulvinar proin. A erat nam at lectus urna duis convallis. Venenatis urna cursus eget nunc. Nibh ipsum consequat nisl vel pretium lectus quam id. Gravida neque convallis a cras semper auctor neque.",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque sit amet porttitor eget dolor. Elementum tempus egestas sed sed risus pretium. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Et ligula ullamcorper malesuada proin libero. Non arcu risus quis varius quam quisque id. Elementum sagittis vitae et leo. Adipiscing tristique risus nec feugiat in fermentum. Id interdum velit laoreet id donec ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Eget mi proin sed libero enim sed faucibus turpis in. A diam maecenas sed enim ut. Vel fringilla est ullamcorper eget nulla facilisi etiam. At risus viverra adipiscing at in tellus integer feugiat scelerisque. Vestibulum sed arcu non odio euismod. Semper feugiat nibh sed pulvinar proin. A erat nam at lectus urna duis convallis. Venenatis urna cursus eget nunc. Nibh ipsum consequat nisl vel pretium lectus quam id. Gravida neque convallis a cras semper auctor neque."
               ],
               "eg": [
-                  "Lacinia quis vel eros donec ac. Tortor pretium viverra suspendisse potenti nullam. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. Velit dignissim sodales ut eu sem integer. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nibh nisl condimentum id venenatis. Convallis posuere morbi leo urna molestie at. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Nunc id cursus metus aliquam. Quis blandit turpis cursus in hac. Vitae sapien pellentesque habitant morbi tristique senectus et. Id ornare arcu odio ut sem. Euismod in pellentesque massa placerat. Mi eget mauris pharetra et ultrices. Habitant morbi tristique senectus et. Malesuada fames ac turpis egestas integer eget aliquet.",
+                  "Lacinia quis vel eros donec ac. Tortor pretium viverra suspendisse potenti nullam. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. Velit dignissim sodales ut eu sem integer. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nibh nisl condimentum id venenatis. Convallis posuere morbi leo urna molestie at. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Nunc id cursus metus aliquam. Quis blandit turpis cursus in hac. Vitae sapien pellentesque habitant morbi tristique senectus et. Id ornare arcu odio ut sem. Euismod in pellentesque massa placerat. Mi eget mauris pharetra et ultrices. Habitant morbi tristique senectus et. Malesuada fames ac turpis egestas integer eget aliquet."
               ]
           },
           "results": {
@@ -2191,13 +2191,13 @@ var en_rs = { // contains all evaluation content
                   {
                       "title": "Determine your threat model.",
                       "content": [
-                          "Tellus molestie nunc non blandit massa. Sagittis nisl rhoncus mattis rhoncus urna neque. Dignissim suspendisse in est ante in nibh mauris. Amet venenatis urna cursus eget nunc. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Vestibulum lorem sed risus ultricies tristique. Mattis rhoncus urna neque viverra justo nec. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Eget egestas purus viverra accumsan in. Arcu vitae elementum curabitur vitae.",
+                          "Tellus molestie nunc non blandit massa. Sagittis nisl rhoncus mattis rhoncus urna neque. Dignissim suspendisse in est ante in nibh mauris. Amet venenatis urna cursus eget nunc. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Vestibulum lorem sed risus ultricies tristique. Mattis rhoncus urna neque viverra justo nec. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Eget egestas purus viverra accumsan in. Arcu vitae elementum curabitur vitae."
                       ]
                   },
                   {
                       "title": "Create a risk matrix.",
                       "content": [
-                          "Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Sed elementum tempus egestas sed sed risus pretium quam. Consequat mauris nunc congue nisi vitae suscipit. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Sed risus ultricies tristique nulla aliquet enim tortor. Scelerisque fermentum dui faucibus in ornare. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Leo vel fringilla est ullamcorper. Justo donec enim diam vulputate ut. Tortor at risus viverra adipiscing.",
+                          "Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Sed elementum tempus egestas sed sed risus pretium quam. Consequat mauris nunc congue nisi vitae suscipit. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Sed risus ultricies tristique nulla aliquet enim tortor. Scelerisque fermentum dui faucibus in ornare. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Leo vel fringilla est ullamcorper. Justo donec enim diam vulputate ut. Tortor at risus viverra adipiscing."
                       ]
                   }
               ],
@@ -2205,7 +2205,7 @@ var en_rs = { // contains all evaluation content
                   {
                       "title": "Develop an incident response plan.",
                       "content": [
-                          "Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Duis tristique sollicitudin nibh sit amet commodo nulla. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ut enim blandit volutpat maecenas. Elit ullamcorper dignissim cras tincidunt lobortis. Eget nullam non nisi est sit amet facilisis magna etiam. Accumsan sit amet nulla facilisi morbi. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Lacus sed viverra tellus in hac habitasse platea. Aliquam eleifend mi in nulla. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tempor id eu nisl nunc mi ipsum faucibus vitae. Iaculis eu non diam phasellus vestibulum lorem. Faucibus in ornare quam viverra orci sagittis eu volutpat. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
+                          "Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Duis tristique sollicitudin nibh sit amet commodo nulla. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ut enim blandit volutpat maecenas. Elit ullamcorper dignissim cras tincidunt lobortis. Eget nullam non nisi est sit amet facilisis magna etiam. Accumsan sit amet nulla facilisi morbi. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Lacus sed viverra tellus in hac habitasse platea. Aliquam eleifend mi in nulla. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tempor id eu nisl nunc mi ipsum faucibus vitae. Iaculis eu non diam phasellus vestibulum lorem. Faucibus in ornare quam viverra orci sagittis eu volutpat. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor."
                       ]
                   }
               ],
@@ -2213,7 +2213,7 @@ var en_rs = { // contains all evaluation content
                   {
                       "title": "Run a tabletop exercise.",
                       "content": [
-                          "Aliquam vestibulum morbi blandit cursus. Id volutpat lacus laoreet non curabitur gravida. Id porta nibh venenatis cras sed felis eget velit. Vulputate odio ut enim blandit volutpat maecenas. Nam at lectus urna duis. Etiam erat velit scelerisque in dictum non consectetur a. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Varius quam quisque id diam vel. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Quis commodo odio aenean sed. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Semper auctor neque vitae tempus quam pellentesque nec nam. Eleifend donec pretium vulputate sapien nec. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Lacinia at quis risus sed vulputate odio ut enim blandit. Sed vulputate odio ut enim. Urna molestie at elementum eu. Nam libero justo laoreet sit amet.",
+                          "Aliquam vestibulum morbi blandit cursus. Id volutpat lacus laoreet non curabitur gravida. Id porta nibh venenatis cras sed felis eget velit. Vulputate odio ut enim blandit volutpat maecenas. Nam at lectus urna duis. Etiam erat velit scelerisque in dictum non consectetur a. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Varius quam quisque id diam vel. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Quis commodo odio aenean sed. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Semper auctor neque vitae tempus quam pellentesque nec nam. Eleifend donec pretium vulputate sapien nec. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Lacinia at quis risus sed vulputate odio ut enim blandit. Sed vulputate odio ut enim. Urna molestie at elementum eu. Nam libero justo laoreet sit amet."
                       ]                      
                   }
               ]
@@ -2223,7 +2223,7 @@ var en_rs = { // contains all evaluation content
           "section": "Understanding Risk",
           "title": "External Threats",
           "general": {
-              "why": [ // text for reusables.general.why above
+              "why": [ 
                   "Understanding your risk is critical to keeping your organization safe. All good safety and security planning begins with a thorough understanding of the possible threats we face. Investing time and effort into better understanding your threat model will make reducing your risk much easier in the future. Remember also that threats evolve, so you may need to update your threat model as your organization and the landscape around you change.",
                   "Once you have developed policies, plans, and documentation, consider a tabletop exercise. Just remember to encourage an open, nonjudgmental space; learning about security vulnerabilities doesn’t require individual finger-pointing or blame.",
                   "When—not if—a real incident occurs, it can be scary, stressful, and chaotic. Following these best practices increases the likelihood of best possible outcomes. And don’t forget that you will need to assign at least one member of your staff  to oversee the cybersecurity effort within your organization."
@@ -2336,7 +2336,7 @@ var en_rs = { // contains all evaluation content
                               "type": "title",
                               "heading": "Process/Learn:",
                                 "content": "This phase isn’t about blaming others, but rather reviewing how each phase unfolded and evaluating how your organization can improve the process and your future response."
-                            },
+                            }
                         ]
                       ]
                   },
@@ -2358,7 +2358,7 @@ var en_rs = { // contains all evaluation content
                             },
                             "A security provider can’t fix all your organization’s challenges on their own. Understand that you will need a designated person on your staff  who will manage this work and act as a liaison between your organization and the security provider."
                         ]
-                  },
+                  }
               ],
               "exceeds": [
                   {
@@ -2391,20 +2391,20 @@ var en_rs = { // contains all evaluation content
             "Before you can upgrade your security, you need to have the fundamentals in place. Putting together a security policy and road map for your organization can help you be proactive about your security while also preparing for worst-case scenarios.",
             "Even the most well-intentioned organizations sometimes struggle to put security policies into practice on an everyday basis. That’s why it’s important to adopt a nonjudgmental, empathetic approach to helping staff become compliant. Reward the successes and manage the failures, and remember that changing behavior takes time.",
             "Once you have a policy in place within your organization, you might be hesitant to make any changes and upset the status quo. Remember, though, that policies and road maps must adapt to changing threats to be effective. Designating certain staff members to keep these documents updated can help reduce unexpected risks in the future."
-          ], // explanation of what this means
+          ],
           "eg": [
             "ADE Worldwide is growing quickly. What started as an organization with headquarters in Washington, DC, and a single field office in Latin America has quickly expanded to other locations around the world. Now that the organization is growing, more ADE staff members are reporting possible security challenges. Luckily, no security challenge has escalated into an incident, but management is growing concerned with the organization’s existing security policy.",
             "To help close this gap, the executive management team conducts a policy review session. They find that their current security policy has notable gaps but accurately reflects how the majority of staff handles cybersecurity. They realize they need to do more to make security a key part of the organization’s workflow. In response, they patch the gaps by moving security goals from their road map to their policy, making these steps a reality.",
             "Then, they take steps to ensure that more of the staff complies with the newly revised policy. These include starting every staff meeting with a recognition of staff members who have demonstrated good security practices, while asking those falling behind to take part in a tabletop exercise that will demonstrate firsthand the risks of ignoring the new policy.",
             "When they add a new field office in Thailand, they realize their policies need to be updated to reflect this new region. The CEO of ADE creates a working group to make changes to the policy, monitor threats across the offices and update policies at least once a year."
-          ] // example scenario
+          ]
       },
-      "results": { // contains result text for this category
-        "below": // assessed level, based on score
-          [ // contains recommendations for this level
+      "results": {
+        "below": 
+          [ 
             {
-              "title": "Document your security policy and your future road map.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Document your security policy and your future road map.", 
+              "content": [
                 "As an established civil society organization, you probably have strategic documents, policies, and plans to help you reach your key goals. Now that you’re focusing on strengthening your cybersecurity, it’s time to develop a security policy and road map, too.",
                 "A security policy explains your day-to-day cybersecurity operations currently. A security road map, on the other hand, is a more aspirational document that states your medium- and long-term goals for your cybersecurity policy.",
                 "Luckily, this doesn’t have to be too daunting. While some organizations may have a series of complex security policies and plans, you can get started with something much simpler. The key steps to a successfully documenting a security policy are:",
@@ -2412,7 +2412,7 @@ var en_rs = { // contains all evaluation content
                   "type": "ul",
                   "items": [
                     "Document whatever steps more than 80 percent of your staff currently take to face cybersecurity threats.",
-                    "Conduct an honest assessment of your current approach toward cybersecurity threats.",
+                    "Conduct an honest assessment of your current approach toward cybersecurity threats."
                   ]
                 },
                 "The more honest your policy, the more your organization can improve. If you are fully honest, you should be able to find room for improvement within your organization. For example, you may find that only some of your staff members use a cybersecurity tool you’ve purchased. Once you’ve taken a look at your policy and identified gaps, you can start to put together a security road map.",
@@ -2422,19 +2422,19 @@ var en_rs = { // contains all evaluation content
                   "items": [
                     "Understand and define your key threats and risks (see Risk Analysis and Threat Assessment).",
                     "Compare your existing policy against the key threats to identify what is missing in your security approach",
-                    "Document what you would like to implement in the future to improve your security approach.",
+                    "Document what you would like to implement in the future to improve your security approach."
                   ]
                 },
                 "When you’re ready to create your first security policy, you can use the highly useful [[SOAP tool]](links.soap.tool) or the [[SANS templates]](links.sans.templates) to generate a policy through a series of step-by-step questions.",
                 "Remember that your security policy is a living document—try to update it with new guidelines based on changing threats at least once per year."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "Gently enforce the rules.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Gently enforce the rules.",
+              "content": [ 
                 "You’ve invested time and resources into creating a security policy and road map for your organization. But despite your best efforts, you notice that some staff members aren’t always following the rules. This is common, especially in organizations where security isn’t a key component of staff  culture.",
                 "Don’t worry; integrating “security thinking” into an organization is possible, if time-consuming. One of the most effective ways to get the staff  thinking about security is to gradually introduce security concepts into your everyday workflow until they become part of your staff’s routine.",
                 "Here is one strategy to help your staff incorporate your security policies into their operations.",
@@ -2454,13 +2454,13 @@ var en_rs = { // contains all evaluation content
                 "If results are slow, don’t worry. Organizational change can sometimes take a year or more to fully take place. Keep working at this process steadily over time.",
                 "You could also consider giving different levels of access based on their security compliance, for example by giving access to sensitive data to those who have enabled two-factor authentication."
               ]
-            },
+            }
           ],
-        "exceeds": // assessed level, based on score
-          [ // contains recommendations for this level
+        "exceeds":
+          [ 
             {
-              "title": "Keep your policy and road map updated.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Keep your policy and road map updated.",
+              "content": [
                 "Your organization has strong security policies and procedures, and your staff members understand the importance of security in their everyday work. It’s important to remember, though, that even the strongest security policy and road map will become outdated and obsolete as technology and threats evolve.",
                 "To help, we recommend you think of your security policy and road map as ‘living” documents that need to be updated regularly to meet new risks and threats. Keeping these documents updated doesn’t require an extensive commitment, but it does require regular check-ins.",
                 "Here is one strategy to keep policies and road maps up to date by creating a governance structure for cybersecurity within your organization.",
@@ -2469,12 +2469,12 @@ var en_rs = { // contains all evaluation content
                   "items": [
                     "Create a working group to investigate new threats, risks, and tools as they appear. This group may want to meet as frequently as monthly or quarterly or as infrequently as once or twice a year.",
                     "Develop criteria for including new software and systems into your workflow. Before adding a new piece of software or online tool, the working group should consider whether that decision fits with your existing security policy or road map.",
-                    "Designate a staff member to be responsible for updating the policy based on feedback from your working group.",
+                    "Designate a staff member to be responsible for updating the policy based on feedback from your working group."
                   ]
                 },
                 "Remember that outside forces should cause your security policy to change, just as your organizational goals and approaches change, to meet new challenges."
               ]
-            },
+            }
           ]
       }
     },
@@ -2485,30 +2485,30 @@ var en_rs = { // contains all evaluation content
           "why": [
             "Knowledge is power. By equipping your staff members with a checklist that allows them to identify cybersecurity risks, you’re empowering them to take action and increase their awareness. This step also provides you with a useful record of your staff’s overall level of cybersecurity.",
             "Once you’ve implemented a “do it yourself” checklist, remember that even the most dedicated staff member can make a mistake. Having a technical solution that allows your organization to access work devices can create a safety net for unpredictable moments or staff accidents, but you must balance this against your staff’s right to privacy."
-          ], // explanation of what this means
+          ], 
           "eg": [
             "Whenever a new person started at ADE Worldwide, managers sent them lots of information in an employee handbook. Included in it were guidelines on how to maintain their work devices for maximum cybersecurity.",
             "Upon closer inspection, managers found about half of the staff followed the guidelines. Busy schedules, impending deadlines, and the pressures of the work were keeping staff from taking the necessary steps to keep their devices safe.",
             "Rather than impose penalties on their staff, ADE managers asked all staff members to conduct a check-up on their devices and discuss their results with their supervisors. This allows staff  members to tighten their security without feeling judged or censured by leadership.",
             "Not long after adopting the checklist, ADE was able to partner with Papua Water Rights, a two-person advocacy group in Papua New Guinea. This was a major breakthrough for ADE as it has never been able to have a presence in Oceania before. While extremely effective, Papua Water Rights has fewer resources than ADE and must balance security needs with limited time and capacity. To help, they put together a detailed and mandatory checklist focused on keeping their devices safe. This is particularly important because they can’t afford to replace devices that may be compromised."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
-        "below": // assessed level, based on score
-          [ // contains recommendations for this level
+      "results": { 
+        "below":
+          [ 
             {
-              "title": "Do a check-up on your organization’s cybersecurity.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Do a check-up on your organization’s cybersecurity.", 
+              "content": [ 
                 "Your staff members are vital to the mission of your organization. But sometimes, intentionally or unintentionally, their decisions and actions can put your organization at risk. This is especially true in today’s digital world, where a wrong click or a missed security setting can leave the entire staff vulnerable.",
-                "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow; such a checklist should be part of the onboarding process of any new staff member. Here are suggestions for Windows devices, and here are suggestions for Mac devices. Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can then be stored in their employee file.",
+                "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow; such a checklist should be part of the onboarding process of any new staff member. Here are suggestions for Windows devices, and here are suggestions for Mac devices. Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can then be stored in their employee file."
               ]
-            },
+            }
           ],
-        "ok": // assessed level, based on score
-          [ // contains recommendations for this level
+        "ok": 
+          [ 
             {
-              "title": "Add clear language to employment agreements.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Add clear language to employment agreements.", 
+              "content": [ 
                 "Your staff members are proactive about monitoring their cybersecurity and understand the importance of complying with your organization’s security policy. They may periodically meet with supervisors to discuss their cybersecurity and complete required security checklists.",
                 "You can start to incorporate cybersecurity into their job description. This helps emphasize that security is not just a part of their workflow but also a core responsibility for them as a member of your organization.One effective way to do this is to ensure that employment agreements have language about privacy and security that is clear, truthful, and easy to understand. We recommend including language about:",
                 [
@@ -2536,23 +2536,23 @@ var en_rs = { // contains all evaluation content
                       "type": "title",
                       "heading": "Offboarding policy:",
                         "content": "What steps need to take place when a staff member leaves your organization?"
-                    },
+                    }
                   ],
                 "You may want to enlist a lawyer to help you draft this language. There may also be other sections that apply directly to your situation. Just remember: the goal here is to be clear and informative, not to overwhelm your staff with legalese. Try to keep employment agreements to one page if possible, including a checklist, and make sure they are signed by the staff members and supervisors."
               ]
-            },
+            }
           ],
-        "exceeds": // assessed level, based on score
-          [ // contains recommendations for this level
+        "exceeds": 
+          [ 
             {
-              "title": "Consider device management systems.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Consider device management systems.", 
+              "content": [
                 "Your staff regularly checks in with management about cybersecurity risks and has read and reviewed the cybersecurity requirements in their employment agreements.",
                 "Even the most informed and engaged staff members can still make mistakes, however.That’s why we recommend finding a method for managing devices that is consistent with your organization’s values and goals. For example, software known as “device management” platforms can allow organizations to manage work devices remotely. While the convenience and increased security of device management tools is an advantage, remember that you must always balance security with a level of privacy for your staff.",
                 "Device management software includes tools such as G Suite’s Google Devices, Apple’s Mobile Device Management, and [[Prey]](links.prey.web), which allow tracking and remote data erasure on devices, and solutions from companies including IBM, Citrix, and VMWare.",
                 "A technical provider can also help you use these tools to force organization-owned devices to “comply” with security policies or restrict the ability for your staff to install their own software or change settings."
               ]
-            },
+            }
           ]
       }
     },
@@ -2564,20 +2564,20 @@ var en_rs = { // contains all evaluation content
             "Your staff may find cybersecurity intimidating or technology daunting. Alternatively, some staff members may be advanced technology users while others may be embarrassed to admit their shortcomings. Not making assumptions on the cybersecurity knowledge of your staff allows your entire staff to establish a baseline level of security knowledge before moving on to more advanced topics.",
             "Remember that whether we are learning a new language or technical skill, we learn best with repetition, practice, and time. Incorporating these strategies into our cybersecurity training can help break complex topics down into digestible details.",
             "While in-person training can help establish a baseline level of knowledge, your staff also needs access to information and lessons on their own schedule. Setting up a learning management system or other tool can bridge this gap while also documenting key security lessons that your organization has incorporated into your workflow."
-          ], // explanation of what this means
+          ],
           "eg": [
             "Staff members at ADE Worldwide pride themselves on a “can-do” approach. If they don’t know the answer to a problem, they will seek out the resources necessary to solve it on their own.",
             "As a result, they  hesitate to admit when they lack sufficient knowledge to fix a problem, including improving their security footprint. ADE managers realize the only way to ensure that everyone moves forward with needed security updates is to require all staff to meet the same level of cybersecurity training, giving them permission to ask for help as needed without embarrassment.",
             "Once the initial training is over, there’s little time to invest on refreshers. That’s why ADE managers then start “Learning Lunches” every two weeks, when each office holds a refresher training over the lunch hour on Wednesdays. This provides staff with an interactive opportunity to practice their skills in an open, conversational setting with little pressure, but also reminds them of the importance of keeping their skills sharp.",
             "Even with these initiatives, though, managers notice that staff are still struggling to implement some of the lessons. Since ADE has a global staff working across different time zones, it isn’t feasible to have a single point of contact to answer questions and troubleshoot. To help, ADE’s management institute a learning management system with all the content from earlier training sessions so staff can look up resources and lessons at any time of day on any device."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": { 
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "Set expectations for security knowledge.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Set expectations for security knowledge.", 
+              "content": [ 
                 "Your staff members are passionate, driven, motivated, and hard-working. They may be experts in fields such as human rights law and voting advocacy. Most likely, however, they are not cybersecurity experts. And while it’s easy to assume that most people have a basic level of experience with technology, that’s not always the case.",
                 "Instead of assuming that your staff understands the basics of cybersecurity, assume that you are starting with a blank slate. From here, you can take a series of effective steps:",
                 [
@@ -2599,32 +2599,32 @@ var en_rs = { // contains all evaluation content
                 ],
                 "Starting with introductory knowledge can ensure that all staff members are on an equal footing."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "Introduce training in small bites.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Introduce training in small bites.", 
+              "content": [ 
                 "Your staff members are busy professionals. It’s important to remember that they will forget most of the content that they hear, read, or watch during training.",
                 "That’s why repetition of key points in “small bites” is one of the most effective learning strategies for hard-working staffs. Begin by identifying the most critical behaviors, actions, and tools you need your staff to understand and implement.",
                 "Then gradually introduce training sessions into your organization’s workflow. Perhaps an hour once a month is dedicated to reviewing cybersecurity basics, or maybe a weekly lunch break is converted into a practice session. Day-long training will disrupt workflow and lead to tired, overwhelmed staff members. Use smaller, bite-sized training sessions instead to keep material fresh and approachable."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "Create a knowledge base.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Create a knowledge base.", 
+              "content": [ 
                 "While live instruction, either in-person or online, is helpful for teaching big concepts, your organization can’t rely on training alone to enhance cybersecurity. Instead, you must create an institutionalized version of this knowledge that can be accessed by any staff member at any time.",
                 "A good interim solution can be a basic online quiz accompanied by a 2- to 3-minute recap video to test the staff’s knowledge and refresh their memories.",
                 "Alternatively, digital tools for learning—sometimes known as learning management systems, or LMS—are widely available. We like open-source options such as [[Moodle]](links.moodle.web) and [[ILIAS]](links.ilias.web) or commercial versions such as [[LearnDash]](links.learndash.web) (built for the content management system WordPress) or [[Docebo]](links.docebo.web).",
                 "You may also want to consider a third-party learning platform like [[Totem Project]](links.totem.web) to help your staff practice their cybersecurity skills.",
                 "You may need to work with a technical assistance provider to implement this tool, but the effort can pay dividends. A well-designed LMS can help you capture not only cybersecurity lessons but also help your staff answer time-sensitive questions without having to track down an instructor. Most LMS platforms provide a scoring mechanism, too, so you can map your staff’s progress."
               ]
-            },
-          ],
+            }
+          ]
       }
     },
     "travel-policy": {
@@ -2633,25 +2633,25 @@ var en_rs = { // contains all evaluation content
       "general": {
           "why": [
             "Organizations that don’t plan for risks in the field leave themselves vulnerable to surprises. Having an open conversation with your staff about travel security can encourage an important dialogue about risk within your organization and may even highlight some vulnerabilities you hadn’t noticed previously. You can then use those findings to help create policies to mitigate travel risks."
-          ], // explanation of what this means
+          ], 
           "eg": [
             "ADE Worldwide now has offices in nearly every region of the world. Staff often travel to meet colleagues overseas, attend large conferences, or oversee fieldwork. While staff have a basic understanding of how to stay safe while traveling, ADE realizes it hasn’t done its due diligence regarding travel security as an organization. As a result, it institutes a series of organizational open meetings to collect feedback about travel risks, then begins the process of drafting a formal travel security policy.",
             "One part of the new policy governs the use of work devices outside the office. Field staff at ADE Worldwide work in rural areas with farmers and agricultural workers, often in tough conditions. When headquarters staff travel into the field, they bring their work devices to take photographs, notes, and record data. After a series of devices were lost on a recent field visit, ADE management now requires all travelers to upload their data to an encrypted cloud storage provider, accessing only the files they absolutely need while on the road.",
             "When the majority of ADE’s staff needs to work remotely full-time due to the global pandemic, they use these travel policies to govern their work devices."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
-        "below": // assessed level, based on score
-          [ // contains recommendations for this level
+      "results": { 
+        "below":
+          [ 
             {
-              "title": "Understand the risks.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand the risks.", 
+              "content": [
                 "Travel is an exciting opportunity for staff to advance your organization’s mission. When your staff members travel, however, they are temporarily removed from the regular security habits they use at home or the office. This poses risks when they are carrying work devices or accessing sensitive information. Even losing their personal devices can cause a threat to your organization’s work."
               ]
             },
             {
-              "title": "Develop travel security policies.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Develop travel security policies.",
+              "content": [ 
                 "It’s important to emphasize to staff members just how vulnerable they really are when they are working away from home. Have a candid discussion about the repercussions of losing a work device while traveling, for example. Other topics you will want to cover include:",
                 {
                   "type": "ul",
@@ -2669,8 +2669,8 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Create a checklist to maintain your travel devices.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Create a checklist to maintain your travel devices.", 
+              "content": [ 
                 "Traveling with a digital device can often bring a higher level of risk. If your organization plans to use work devices while traveling, you should plan to take proactive steps to stay safe. Consider developing checklists to guide your staff through the necessary steps to keep their devices safe. These steps should include plans to:",
                 {
                   "type": "ul",
@@ -2684,24 +2684,24 @@ var en_rs = { // contains all evaluation content
                 },
                 "Again, you may benefit from the guidance of a security provider for your specific context and travel plans."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "Incorporate cloud storage.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Incorporate cloud storage.",
+              "content": [ 
                 "Your staff members understand the risks posed by travel, and you’ve briefed them on your organization’s policies governing work travel. You may have even chosen to use dedicated travel-specific devices for your staff.",
                 "Now, you can enhance the precautions that your staff members take when they travel. One of the most effective ways to protect against device theft or damage while traveling is to store data in the cloud. While there are many cloud storage services to consider, we recommend using encrypted ones when traveling. These services include [[SpiderOak One]](links.soak.web), a US-based provider, and [[Tresorit]](links.tresorit.web), a Swiss provider. Self-hosted solutions include [[NextCloud]](links.nextcloud.web) and [[OwnCloud]](links.ocloud.web). Alternatively, you may use a tool such as [[Cryptomator]](links.cmator.web) to encrypt your files locally and store them in your nonencrypted cloud storage service, such as Dropbox or Google Drive. (Files on Google Drive and other popular services are encrypted but can be accessed by the cloud storage provider in response to legal requests.)",
                 "You may need a security provider to help with this process and to select the right cloud service for you."
               ]
-            },
+            }
           ],
-        "exceeds": // assessed level, based on score
-          [ // contains recommendations for this level
+        "exceeds": 
+          [ 
             {
-              "title": "Source travel-specific devices and develop a policy for their use.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Source travel-specific devices and develop a policy for their use.", 
+              "content": [ 
                 "You’ve made good progress on keeping your staff and your data safe during work-related travel. To further improve your travel security, you should consider using dedicated travel-specific devices. This will require both an investment of time and money, as well as the creation of new policies around the safe use of these devices. Used effectively, however, travel devices can greatly reduce risk, even if they fall into the wrong hands.",
                 "Rather than having staff use their personal or work devices while traveling, consider using dedicated travel devices instead.",
                 "To start, you will want to identify the types of devices that your staff members use in the field. If they typically need a laptop while traveling, consider a reliable but inexpensive alternative like a [[Chromebook]](links.google.cbook).",
@@ -2709,7 +2709,7 @@ var en_rs = { // contains all evaluation content
                 "Each of these device management phases can be time-consuming, so they should be spelled out in detail and written down. You may want to work with a security provider to implement this process smoothly.",
                 "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [[VMWare Work Station Player]](links.vmware.player) (Linux/PC), Fusion (Mac), or [[VirtualBox]](links.vbox.web). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a provider whether this is a good option for you."
               ]
-            },
+            }
           ]
       }
     },
@@ -2721,18 +2721,18 @@ var en_rs = { // contains all evaluation content
             "Like physical mail, important pieces of data can pile up in a digital corner if we don’t stay organized. This makes it much easier for an attacker to seize sensitive data simply by accessing your accounts. Undertaking a data categorization exercise helps your staff identify what information they need to access frequently and what can be stored away securely.",
             "Staying safe always requires a balance between convenience and security. Instituting an email archive policy, for example, can remove sensitive emails from inboxes while still making them accessible in an archive. This is also a good first step as you move your organization toward routinely categorizing and storing data based on its sensitivity.",
             "Data security isn’t only focused on preventing attacks from outside the organization. When handled properly, secure data are also a resource to keep an organization running during crises when they may be unable to access their offices or work devices."
-          ], // explanation of what this means
+          ],
           "eg": [
             "In its early years as a young organization, ADE Worldwide worked with a lean technology setup and a shoestring budget. Now, as an established player in the agricultural development space, ADE is slowly moving beyond its old technology. This means that the staff is now moving much of the data in inboxes and online accounts into secure cloud and physical storage instead.",
             "This is useful when ADE’s office in Puerto Rico is rattled by a sudden, unexpected earthquake. Since this office is near the epicenter, staff members aren’t able to return to it for weeks. Luckily, the central office on the mainland has access to critical data in encrypted cloud storage and is therefore able to grant the staff temporary access so they can continue operating in the aftermath of the earthquake."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
-        "below": // assessed level, based on score
-          [ // contains recommendations for this level
+      "results": {
+        "below":
+          [ 
             {
-              "title": "Consider what’s valuable and how to protect it.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Consider what’s valuable and how to protect it.", 
+              "content": [ 
                 "Data are the lifeblood of our digital systems. Your organization’s data contain incredible amounts of information—some trivial (such as your lunchtime calendar reminder) and some vital (such as the names and home addresses of your staff).",
                 "Many people across organizations have access to tremendous amounts of data, often more than they realistically need to do their jobs properly. An attacker, however, can do significant damage when they gain such access. One effective way to reduce your digital risk is to also reduce access to unnecessary data within your organization.",
                 "If you’re just getting started managing your data, it’s helpful to take two steps upfront.",
@@ -2740,7 +2740,7 @@ var en_rs = { // contains all evaluation content
                     {
                       "type": "title",
                       "heading": "Understand the connection between retention and protection.",
-                        "content": "Remember this rule of thumb when it comes to managing your data: \"if it’s not there, they can’t steal it.\" For example, if your colleague doesn’t need 10 years’ worth of tax data on their laptop, find a safer place to store that information. Consider whether everyone in your organization needs access to a decade’s worth of emails or the entire staff directory and regularly delete data you don’t need any more. Determining which data is valuable and requires additional protection will help you take appropriate next steps.",
+                        "content": "Remember this rule of thumb when it comes to managing your data: \"if it’s not there, they can’t steal it.\" For example, if your colleague doesn’t need 10 years’ worth of tax data on their laptop, find a safer place to store that information. Consider whether everyone in your organization needs access to a decade’s worth of emails or the entire staff directory and regularly delete data you don’t need any more. Determining which data is valuable and requires additional protection will help you take appropriate next steps."
                     },
                     {
                       "type": "title",
@@ -2750,13 +2750,13 @@ var en_rs = { // contains all evaluation content
                 ],
                 "While these steps may seem challenging, changing the status quo around data access within your organization can greatly reduce the risk that a genuine mistake can lead to a data breach."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "Reduce the amount of data you keep and for how long.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Reduce the amount of data you keep and for how long.", 
+              "content": [ 
                 "Email is one major area in which organizations tend to neglect good data management practices. Inboxes often overflow with unread messages while sent mail folders date back years.",
                 "As a way of improving your data management policies, consider instituting a limit on the amount of email that is stored in your staff’s mailboxes. Archiving email is a relatively easy practice that does not delete or remove the email itself. Instead, this practice removes a set of emails from the active mailbox to be stored somewhere more secure. A technical assistance provider can help you with this process.",
                 "To start, consider archiving all email more than five years old in your staff  inboxes. After your staff has adjusted to this change, try changing the limit to any emails more than three years old. Some organizations may have a legal requirement to keep emails in an accessible format, so consult with a lawyer before determining the right policy for your organization.",
@@ -2764,20 +2764,20 @@ var en_rs = { // contains all evaluation content
                 "Additionally, work with a technical provider to determine how best to categorize your organization’s remaining data by sensitivity. Some data—such as financial or tax records—should be considered highly sensitive and stored in encrypted storage. Others may not require such a high level of protection.",
                 "Wherever you store your data, make sure you institute a backup policy, ensuring that a copy of your information is stored securely on a regular basis. Again, a technical assistance provider can advise you on the best backup process for your needs, although we recommend no less than every business quarter."
               ]
-            },
+            }
           ],
-        "exceeds": // assessed level, based on score
-          [ // contains recommendations for this level
+        "exceeds": 
+          [ 
             {
-              "title": "Plan to keep your organization running.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Plan to keep your organization running.",
+              "content": [
                 "While none of us wants to experience a crisis that disrupts our organization’s work, we need a plan to maintain our operations should a challenge occur. This is a process known as “business continuity planning” and differs for every organization. For example, an investigative journalism network may have different continuity procedures than an organization that works with foreign policy.",
                 "A key element of business continuity is the ability to access your data and continue your work even when you aren’t physically in your office or on your work device. This means that your current backup policy must be robust enough to allow you to maintain your operations using your most recent backup. Ask yourself how long you could use your most recent backup to keep your operations running. If the answer is sooner than you expected, consider increasing the frequency of data backups within your organization.",
                 "If you increase the frequency of backups, you should also increase the amount of time you spend practicing restoring your backups. We recommend testing your backups at least once a year and ideally every six months. You don’t want to rely on a backup process that you have not tested.",
                 "Backups are also essential protections against ransomware threats. Ransomware is a form of malicious software that encrypts your device until you pay a fee. If you have a previous backup of your device stored separately from the device (on an external hard drive or cloud storage, for example), you can “turn back the clock” on your data prior to the ransomware attack. This allows you to regain access to the data you stored before the attack took place.",
                 "Finally, you can work with a security provider to continue the data categorization process. Now that you’ve determined which staff members need access to which data and for how long, you can go a step further and hyper-categorize access. For example, your accounting staff may need access to sensitive financial records, but only the manager of that group will be granted access to personnel records. This categorization of data by tiers can further tighten your organization’s data security."
               ]
-            },
+            }
           ]
       }
     },
@@ -2789,15 +2789,15 @@ var en_rs = { // contains all evaluation content
             "Securing your website can prevent everything from embarrassing defacement to harmful intrusions. Luckily, there are basic steps you can take to “harden” your site using widely available services. While these won’t prevent highly sophisticated attacks, they will make your site a more difficult target, discouraging some low-level threats.",
             "Many organizations believe the primary threat to their website is a cyberattack. Organizations might not be as aware thatIn reality, attackers can also use the publicly available information on a website for social engineering and other threats. Social engineering occurs when an attacker targets the weakest part of an organization—the human beings who work there. An example of a social engineering attack would be an attacker impersonating a staff member to gain access to information about computer systems from a customer service department. Another example would be an attacker waiting outside a locked door with a fake delivery package until someone lets them inside.",
             "Removing unnecessary information about your staff and projects can help limit the amount of usable details an attacker can find on your site. This, of course, asks for a difficult balance between informing the public about your mission and not sharing overly sensitive details that could put your staff or work at risk. A good way to find the appropriate balance is to assess your organization’s work alongside your risk climate. There is no right or wrong answer here; do what is best for your organization at this moment in time."
-          ], // explanation of what this means
+          ], 
           "eg": [
             "As an agricultural advocacy organization focused on responsible water usage, ADE Worldwide management didn’t believe they needed much security for their website. When they noticed some unusual traffic spikes from nations where they don’t have offices, however, they became concerned that they might be targeted for a cyberattack. To help, they implemented a few basic recommendations, including enabling HTTPs and installing a CDN, to lessen their risk of attacks.",
             "Another threat arises when they hired a new head of their office in Indonesia. The new hire, a well-known environmental activist,  attracted some controversy for his outspoken advocacy of rural farmers. Not long after he was hired, he received a threatening note while volunteering at a local charity. ADE staff realized that the new hire had mentioned his work at the charity in his biography on the website, making it easy for an adversary to track him there. In response, the organization removed overly specific information from several staff biographies on the site."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": { 
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
               "title": "",
               "content": [
@@ -2805,35 +2805,35 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Reduce your risk of DDOS attacks.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Reduce your risk of DDOS attacks.", 
+              "content": [ 
                 "If someone dislikes your organization’s work or wants to harm your efforts, one strategy they may use is to temporarily force your website offline. This is often accomplished through a distributed denial of service (DDOS) attack, in which attackers overwhelm your website with visits to temporarily shut it down. A qualified technical assistance provider can help you reduce your vulnerability to these attacks by installing a content delivery network (CDN). A CDN delivers the content of your website from several different locations across the web, reducing your dependence on a single point of failure that can be crippled by a DDOS attack. You can read more about these attacks in [[this article by CloudFlare]](links.cflare.ddos). [[CloudFlare’s free Galileo]](links.cflare.gal) and Google’s free [[Project Shield]](links.google.shield) are both ideal CDNs for civil society organizations, as is [[Equalite’s Deflect]](links.equalite.deflect)."
               ]
             },
             {
-              "title": "Understand and implement HTTPS.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand and implement HTTPS.", 
+              "content": [
                 "When you visit a website, you may see the letters “http” in front of the web address. This allows the site to communicate and provide directions to your web browser. In the early years of the Internet, HTTP was the default form of communication between websites and browsers. Now, a more secure form of communication, known as HTTPS, provides greater protection for users visiting your website. This means that if they search for sensitive information or submit information to you via a form, their data are encrypted from outside eyes.",
-                "Increasingly, popular search engines such as Google are flagging sites that do not use HTTPS as insecure, which also reduces the number of people who are comfortable visiting your site. You can read more about HTTPS in [[this article by CloudFlare]](links.cflare.https).",
+                "Increasingly, popular search engines such as Google are flagging sites that do not use HTTPS as insecure, which also reduces the number of people who are comfortable visiting your site. You can read more about HTTPS in [[this article by CloudFlare]](links.cflare.https)."
               ]
             },
             {
-              "title": "Understand how Google “dorking” can harm your organization.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand how Google “dorking” can harm your organization.", 
+              "content": [ 
                 "Despite the silly name, Google “dorking” is a serious threat to civil society organizations. The practice involves using a popular search engine, such as Google, to search for vulnerabilities within particular websites. For example, if your website includes a particular snippet of code from an outdated application, searchers can use Google to locate and attack insecure pages. Google dorking can also be used to detect the current version of your content management system, helping attackers find vulnerabilities to exploit. This practice can also reveal potentially sensitive documents that you may be storing on your site in areas that are accessible to search engines.",
-                "You can work with a technical assistance provider to identify areas of your site that need to be updated to protect against this practice.",
+                "You can work with a technical assistance provider to identify areas of your site that need to be updated to protect against this practice."
               ]
             },
             {
-              "title": "Keep your website updated.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Keep your website updated.",
+              "content": [ 
                 "Many websites run on content management systems (CMS) that allow nontechnical users to easily maintain the site. As with all software, you must update your CMS when new features and security updates become available. Any plug-ins or themes (the code that provides the look and feel of your site) should also be updated to plug any vulnerabilities. A technical assistance provider can help you keep your CMS updated on a regular basis.",
                 "If you don’t have the resources to keep your site updated, consider switching to a hosted provider such as Wix, Squarespace or wordpress.com. For a monthly fee, these services update automatically and require less maintenance than a self-hosted site."
               ]
             },
             {
-              "title": "Conduct a basic audit of your website security setup.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Conduct a basic audit of your website security setup.", 
+              "content": [ 
                 "Your organization, like many nonprofits, is busy pushing forward with your mission and goals. But in order to safeguard your work, you should take time to regularly audit your website security. This doesn't have to be a complex, time-consuming process. In fact, you can get started with a basic website security audit with just a few questions. Start by asking yourself these:",
                 {
                   "type": "ul",
@@ -2845,10 +2845,10 @@ var en_rs = { // contains all evaluation content
                 },
                 "You may need the assistance of your IT department, a technical assistance provider, or others to help answer these questions. Try to conduct this basic audit at least once per year."
               ]
-            },
+            }
           ],
-        "ok": // assessed level, based on score
-          [ // contains recommendations for this level
+        "ok": 
+          [
             {
               "title": "",
               "content": [
@@ -2856,21 +2856,21 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Understand the connection between online and physical harassment.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand the connection between online and physical harassment.", 
+              "content": [ 
                 "Though cyberbullying and doxxing (the release of private information online) may seem like digital risks, they may also be warning signs for physical harassment. Leaked information such as home addresses can put staff members at risk of physical harm, and attacks by trolls on social media can indicate increased risk of real-life harassment. Don’t assume that online attacks only stay online and consider increasing your physical security."
               ]
             },
             {
-              "title": "Comb your website and social media profiles for unnecessary information.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Comb your website and social media profiles for unnecessary information.", 
+              "content": [ 
                 "People who want to harm your organization will use any available information to make their attacks more effective. This includes using seemingly innocent details on your website or social media profiles. For example, sharing full names, staff photos, and biographical details on your website can allow an attacker to identify a target more easily.",
                 "Consider using a first name and last initial policy for your website and social media sites such as LinkedIn, and being careful with sharing details about work assignments and location. Document your requirements in an official organizational policy so your staff members follow the appropriate guidelines, too."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
               "title": "",
               "content": [
@@ -2878,14 +2878,14 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Enable rate limits.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Enable rate limits.", 
+              "content": [ 
                 "People who want to do harm to your organization will use any available channels to slow down or hamper your operations. This can include useful features on your website, such as online contact forms or other tools, which they can overwhelm with automated requests. To help lessen this risk, you can work with a technical assistance provider to enable rate limits, which can reduce the number of attempts an individual user can make on a particular part of your website. You can read more about how rate limits can be used in [[this article from Google]](links.google.rlimits)."
               ]
             },
             {
-              "title": "Harden your content management system.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Harden your content management system.", 
+              "content": [
                 "Using a content management system (CMS) can save you time and effort when updating your website. But these systems require users to log into the website from a live login page. Unless you take proactive steps, an attacker can access this login page, determine which CMS you are using, and attempt to force their way inside.",
                 "There are steps you can take to mitigate this risk with varying degrees of technical complexity. One of the easiest steps is to enable [[two-factor authentication]](links.2fa.web) on your website CMS, which requires an additional step to log in. You can also work with a technical provider to enable a single-sign-on (SSO) system that allows your staff  members to use one master login across the organization. This improves both usability and security, although it can be complicated to set up. Last, you can work with a provider to limit access to the login page to only a pre-approved list of users, which would require the use of a virtual private network (VPN).",
                 "There are other steps you can take to make your CMS more difficult to attack. Many CMS platforms will support third-party applications that can help strengthen their security. For example, [[WordPress]](links.wfence.web), one of the world's most popular CMS platforms, supports WordFence, a third-party intrusion detection and prevention system.",
@@ -2893,12 +2893,12 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Monitor your analytics and traffic.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Monitor your analytics and traffic.", 
+              "content": [
                 "If you’re concerned about attacks from a particular region or country, you can use analytics, the data that your website collects, to track sources of traffic. A spike in usage from a particular country may be a red flag, as well as sudden changes in the source of traffic or the sites that are referring traffic to yours.",
                 "Additionally, you should monitor search terms that bring users to your site. Negative or threatening search terms that drive traffic to your site can be an indicator of an ongoing campaign against your organization’s work or reputation. Working with a security provider, you may be able to use these search terms to identify the source of these attacks, as well. A reputable provider can also show you how to monitor particular users of your site that are linked to regions, countries, or Internet connections that you have identified as risky."
               ]
-            },
+            }
           ]
       }
     },
@@ -2910,16 +2910,16 @@ var en_rs = { // contains all evaluation content
             "It’s easy to overlook office security risks because, as humans, we naturally fall into patterns of behavior. If we routinely leave our laptop on our desk at the end of the day, for example, we may see this action as normal and not risky. Taking another look at our daily patterns of behavior can help us see which of these actions are actually leaving us at risk. And installing a basic security system can provide an added level of protection for moments we didn’t anticipate in our policies.",
             "Without formal policies, busy professionals are likely to forget an important step, particularly at the end of the day. Instituting clear guidelines and posting them in public spaces (or asking staff to display them at home) can help tired staff members follow best practices.",
             "Though digital threats are critical, it’s important not to overlook other sources of sensitive information. These can often come from unpredictable places, such as the trash your office discards or the printed documents your staff bring home. Implementing a shredding policy within your office can reduce the chance that printed materials will inadvertently leave your possession."
-          ], // explanation of what this means
+          ],
           "eg": [
             "ADE Worldwide’s headquarters is in a busy office building in Washington, DC. Though the building requires individuals to sign a logbook for entry, there is little oversight once someone enters the offices themselves. After a report that an office is burglarized on a lower floor, ADE management institutes a clean desk policy for staff to secure valuable items at the end of the day. Anyone entering the office during the work day will also need to show ID and verify their identity with the office administrator who sits by the entrance.",
             "Meanwhile, the ADE Worldwide offices in Kolkata, India, move to a new location near a high-traffic intersection. One weekday evening, a man on a motorbike threatens an ADE employee for their work on water rights, then speeds away. In response, ADE managers in Kolkata conduct a last person out exercise to make sure their staff is better protected when leaving the office at the end of the day. Ultimately, they put together a series of steps, including requiring staff members to exit the office in pairs.",
             "At ADE Worldwide’s European headquarters in Berlin, the company that manages the offices promised that all documents placed in a secure lockbox would be shredded. Later, the company reports that it accidentally threw several lockboxes’ worth of material into the building’s recycling bins. To ensure more control over sensitive documents, ADE management institutes a shredding policy for the Berlin office, with the hope that they can eventually institute this policy throughout the organization."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": { 
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
               "title": "",
               "content": [
@@ -2927,22 +2927,22 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Establish an entrance policy.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Establish an entrance policy.", 
+              "content": [ 
                 "Whether your organization has offices in secure buildings, co-working spaces, or staff members’ homes, you can implement a “last line of defense” entrance policy to control access to your office space. Implementing a mandatory identification policy can add an extra hurdle to your schedule but allows you to keep a clear record of who enters your space. While requiring proper identification won’t stop a dedicated attacker, it may deter low-level opportunistic threats or people who are testing your defenses. If your staff works outside of the office and holds in-person meetings, consider extending this policy so individuals must show an ID before a face-to-face meeting (which ideally should not take place in an employee’s home office, but rather a public space).",
                 "Make sure that all policies match the culture of your organization. Your staff and visitors are less likely to follow a policy that doesn’t match your values. For example, if you are a community-based organization with a communal office, you may want to consider an entrance policy that reflects your mission. In that case, you could assign a color code to help categorize visitors. For organizations in areas where official ID is rare, consider requiring an escort after the guest has been verified face-to-face by someone in your organization.",
                 "If you choose a more relaxed entry policy, you may want to tighten your cybersecurity policies, such as requiring office devices to screen lock after a short period of time. There may also be an area of your office that you choose to leave “off-limits” to the public, such as a storage room or internal meeting rooms."
               ]
             },
             {
-              "title": "Establish a “clean desk” policy.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Establish a “clean desk” policy.", 
+              "content": [ 
                 "At the end of a busy work day, it is tempting to leave devices, paperwork, and files on our desks for the next day. While convenient, this leaves an easy target for attackers who gain entry during off-hours. Institute a clean desk policy that requires staff members to secure their devices and paperwork in a locked space before leaving for the day. This same policy should apply across offices, even if staff members work from home. It may be useful to print a reminder checklist for staff members to leave on their desk as a visual cue."
               ]
             }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
               "title": "",
               "content": [
@@ -2950,15 +2950,15 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Conduct a “last person out” exercise.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Conduct a “last person out” exercise.", 
+              "content": [ 
                 "To measure whether your organization’s clean desk policy is as effective as it could be, conduct a “last person out” exercise. If you have multiple offices, you may need to ask staff members across your different regions to help. If they work from home, they can conduct this test themselves. When the last person in the office leaves for the day, designate a staff member to enter the office shortly afterward and note what’s been left in the open and what’s been properly secured.",
                 "This exercise is not designed to “name and shame” anyone who might be neglecting the rules. Rather, it’s intended to note any missed opportunities that need to be incorporated into your clean desk policy. For example, you may need to develop special rules for the last person who leaves the office and post them prominently in a public place. For staff working remotely, they can use printouts to remind them of any necessary steps."
               ]
             },
             {
-              "title": "Create a minimum viable security system.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Create a minimum viable security system.", 
+              "content": [
                 "Physical security systems can be highly complex, involving video and audio monitoring, entry cards, and visitor registration. If you don’t currently have a security system, however, you don’t need to start with the most advanced option. Instead, you can work with a security provider to implement a low-cost solution using basic equipment such as a dedicated smartphone or streaming camera. As your threat level increases or you increase your budget, you can work with a provider to install or implement a more elaborate solution.",
                 "Remember that video monitoring systems may not be appropriate for every organization. If you choose to use a video system, make sure to use systems that balance the need for security with the need for privacy, such as [[Haven]](links.gproj.haven) by the Guardian Project. Video feeds should be encrypted to protect your organization further. Both [[Surveillance Station]](links.synology.station) by Synology and [[Haicam]](links.haicam.web) can support encrypted video.",
                 "Organizations that use video-based security systems should remember that video surveillance has an effect on your staff and visitors. Workers should always know where cameras are placed and you should designate a \"no camera\" zone where staff can congregate without being recorded."
@@ -2966,7 +2966,7 @@ var en_rs = { // contains all evaluation content
             }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
               "title": "",
               "content": [
@@ -2974,11 +2974,11 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Make sure your staff shreds all sensitive documents.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Make sure your staff shreds all sensitive documents.", 
+              "content": [ 
                 "Implementing an inter-office document shredding policy reduces the amount of printed material that an outsider can access from your operations. Using a mandatory shredding policy will help your staff incorporate the practice into their workflow. (Don’t forget to recycle non-sensitive paper.) Buy individual “cross-cut” shredding machines for each desk and station them closer to staff than trash cans. If staff members work remotely or from home, make sure they have a shredder and are complying with the policy as well."
               ]
-            },
+            }
           ]
       }
     },
@@ -2989,15 +2989,15 @@ var en_rs = { // contains all evaluation content
           "why": [
             "Security threats facing civil society organizations aren’t restricted to physical or digital attacks. Legal challenges can force organizations to divulge sensitive information, slow down or stop projects, or simply spend time and money responding to frivolous lawsuits. Consulting with a lawyer familiar with your country’s law is a good first step in protecting your organization from these challenges.",
             "Proactively managing data before a legal challenge better equips your organization to quarantine data that may be needed in the event of a lawsuit. Before archiving or relocating employee information, however, explain clearly to your staff when and how their data may be accessed and used."
-          ], // explanation of what this means
+          ],
           "eg": [
             "ADE Worldwide runs a one-person office in Guatemala that works with local farmers to better manage their water usage. As an environmental advocacy organization in a region where powerful interests own vast amounts of land, ADE understands that this office may be the target of a legal challenge. To help prepare, ADE management asks the staff member there, alongside the organization’s legal counsel, to review and archive sensitive data in the system.",
             "A local landowner threatens to sue the organization for defamation he claims he experienced thanks to its water sustainability campaigns. The attorneys in ADE’s Mexico City regional headquarters say they believe they can handle the potential lawsuit themselves, but quickly realize they must bring on local representation in Guatemala to better understand and comply with local laws and requirements."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": { 
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
               "title":"",
               "content":[
@@ -3005,22 +3005,22 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Educate yourself about civil society law in your country and region.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Educate yourself about civil society law in your country and region.", 
+              "content": [ 
                 "Law can be highly complicated, but your staff  can learn the basics. An excellent resource (apart from a lawyer in your area) is the [[International Center for Not-For-Profit Law]](links.icnl.web), which has an online library with case studies from around the world, as well as reports and resources for nearly every nation. ",
                 "It is also important to become familiar with how (well) the relevant laws are enforced."
               ]
             },
             {
-              "title": "Meet with a lawyer.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Meet with a lawyer.", 
+              "content": [ 
                 "While this may seem like an obvious suggestion, finding a qualified lawyer in your area may be challenging. If you’re able to meet with a lawyer to discuss your organization, make sure to discuss key areas of concern about legal liability. If you aren’t able to meet with a lawyer, you may have better luck consulting with a free clinic at a local law school or a legal scholar or researcher. Many lawyers may be willing to work with a civil society organization pro bono, but that may not always be the case.",
-                "A good resource for finding qualified lawyers in your region is the [[International Bar Association]](links.iba.web), which advocates for lawyers worldwide.",
+                "A good resource for finding qualified lawyers in your region is the [[International Bar Association]](links.iba.web), which advocates for lawyers worldwide."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
               "title": "",
               "content": [
@@ -3028,21 +3028,21 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Identify and archive data.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Identify and archive data.", 
+              "content": [
                 "Though legal systems vary around the world, most lawsuits include a “discovery” period, in which lawyers may request documents pertaining to their case. While discovery was once mainly focused on paper records, lawyers may now request vast amounts of electronic information that may be useful to their case, including emails, instant messages, and even messages on collaboration platforms such as Slack.",
-                "While some of this information may be used for legitimate legal purposes, so-called “nuisance” or frivolous lawsuits can also force organizations to disclose sensitive information as part of discovery. One way to prepare for such lawsuits is to identify concerning keywords within electronic communication that would be targeted in a lawsuit. From there, with your lawyer’s advice, you can archive or “quarantine” this information in a secure location, such as off-line storage devices or encrypted cloud storage.",
+                "While some of this information may be used for legitimate legal purposes, so-called “nuisance” or frivolous lawsuits can also force organizations to disclose sensitive information as part of discovery. One way to prepare for such lawsuits is to identify concerning keywords within electronic communication that would be targeted in a lawsuit. From there, with your lawyer’s advice, you can archive or “quarantine” this information in a secure location, such as off-line storage devices or encrypted cloud storage."
               ]
             },
             {
-              "title": "Establish a data removal policy.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Establish a data removal policy.",
+              "content": [
                 "Not every organization has the resources—either financial or technological—to archive sensitive data. However, most organizations do have the ability to selectively remove or delete emails from staff inboxes. When done properly, this can help  manage the flow of information better within your organization. When abused, however, this power can infringe on your staff’s right to privacy and your ethical responsibility as an employer. For this reason, we recommend that most organizations put into place an easy-to-understand policy around when you will remove data or messages from staff members’ systems and make sure they are familiar with this policy."
               ]
             }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
               "title":"",
               "content": [
@@ -3050,17 +3050,17 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Use an e-discovery platform.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through vast amounts of information using a computer. Your organization can also use these tools, such as [[Google’s G Suite Vault]](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform.",
+              "title": "Use an e-discovery platform.", 
+              "content": [
+                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through vast amounts of information using a computer. Your organization can also use these tools, such as [[Google’s G Suite Vault]](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform."
               ]
             },
             {
-              "title": "Test your defenses with an annual drill.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Test your defenses with an annual drill.",
+              "content": [
                 "Just as you have conducted inter-office exercises to test your physical security and your security policies, you can also conduct a drill to test your response to a legal request. In this drill, you would simulate an outside legal request for particular information. You may even want to work with your lawyer on this. Can your staff locate and secure this information? Does this request expose your organization to a particular legal risk? Does the legal request itself temporarily stop your organization from carrying out its work? Understanding the impact of a lawsuit—even a fictional one—on your organization can help you better prepare for the real-life risk."
               ]
-            },
+            }
           ]
       }
     },
@@ -3071,14 +3071,14 @@ var en_rs = { // contains all evaluation content
           "why": [
             "Encrypted communication can help keep your organization’s messages, data, and activities more secure. Implementing encrypted messaging and collaboration tools also instills the values of compartmentalization, which helps ensure that your organization’s sensitive data are not in a single system.",
             "Encrypted communication is most effective when users understand how best to use advanced settings such as disappearing messages and data retention. You may want to consider formally documenting your organization’s recommendations in your security policy so users can begin using these tools quickly and easily."
-          ], // explanation of what this means
+          ],
           "eg": [
             "ADE Worldwide staff throughout Chile use unencrypted communications to reach each other in a large network of rural offices. These communications include sensitive information such as project details and login credentials for office accounts. When an influential landowner who has opposed ADE’s work takes over a national corporation, ADE managers realize they need to take added steps to keep their communication more secure. As a result, they implement an encrypted messaging service throughout the offices in the country."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": { 
         "below":
-          [ // contains recommendations for this level
+          [
             {
               "title": "",
               "content": [
@@ -3086,29 +3086,29 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Understand the risks of unencrypted communication.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand the risks of unencrypted communication.",
+              "content": [
                 "If your staff members are unfamiliar with cybersecurity, they may have communicated only using unencrypted technology, such as their standard smartphone or email. As a result, they may not understand the amount of information that can be hacked, uncovered through surveillance, or seized through a legal or government request when using unencrypted communication. This is especially true during moments of crisis, when many governments and other groups may increase their surveillance of regular communication channels.",
-                "Educating your staff members on how encryption works is a good first start to introducing this concept. The Electronic Frontier Foundation’s \"[[Communicating with Others]](links.eff.comms)\" in its Surveillance Self-Defense curriculum is useful reading. If you’re using a dedicated mobile phone number for work, consider switching to a  voice-over Internet protocol (VOIP) number that connects via the Internet. You can find such numbers through services such as Google Voice or Skype, allowing you to avoid having to use a country-specific SIM card in your smartphone. Using a VOIP number can also protect you from threats including cell site simulators, also known as [[Stingrays]](links.aclu.stingrays), and vulnerabilities in cellular technology, such as [[SS7]](links.guardian.ss7) attacks.",
+                "Educating your staff members on how encryption works is a good first start to introducing this concept. The Electronic Frontier Foundation’s \"[[Communicating with Others]](links.eff.comms)\" in its Surveillance Self-Defense curriculum is useful reading. If you’re using a dedicated mobile phone number for work, consider switching to a  voice-over Internet protocol (VOIP) number that connects via the Internet. You can find such numbers through services such as Google Voice or Skype, allowing you to avoid having to use a country-specific SIM card in your smartphone. Using a VOIP number can also protect you from threats including cell site simulators, also known as [[Stingrays]](links.aclu.stingrays), and vulnerabilities in cellular technology, such as [[SS7]](links.guardian.ss7) attacks."
               ]
             },
             {
-              "title": "Begin introducing encrypted alternatives.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Begin introducing encrypted alternatives.", 
+              "content": [
                 "To help your staff become accustomed to encrypted communications, you shouldn’t expect them to use this new technology overnight. Instead, introduce encrypted platforms gradually, perhaps over 8 to 10 months, before making them mandatory. You may want to publicly praise staff members who are early adopters. Those who are resistant can become members of a working group dedicated to adopting the tools, making them more likely to use them.",
                 "At the time of writing, a few encrypted communication tools we recommend are the messenger applications [[Signal]](links.signal.web) and [[Wire]](links.wire.web). You may also want to consider a self-hosted workplace messenger like [[Mattermost]](links.mmost.web) or the [[collaboration tool Element]](links.element.web) as an alternative to popular software such as Slack. A technical assistance provider can help you enable any of these tools, or find alternatives.",
                 "If you work in a highly regulated space, such as legal advocacy, you may be required to keep records of your communications. In this case, remember to take screenshots of any encrypted messaging or collaboration tools, especially if the messages are set to disappear."
               ]
             },
             {
-              "title": "Understand when to use which platform.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "At first, your staff members don’t need to use the encrypted platforms for every communication. Instead, reserve the use of encrypted tools only for your most sensitive work. This will also help staff members associate encrypted tools with a higher level of security and privacy that isn’t available with standard tools. "
+              "title": "Understand when to use which platform.",
+              "content": [ 
+                "At first, your staff members don’t need to use the encrypted platforms for every communication. Instead, reserve the use of encrypted tools only for your most sensitive work. This will also help staff members associate encrypted tools with a higher level of security and privacy that isn’t available with standard tools."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [
             {
               "title": "",
               "content": [
@@ -3116,27 +3116,27 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Try out more advanced settings.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Try out more advanced settings.",
+              "content": [ 
                 "Many encrypted tools, including Signal and Wire, have more advanced settings that allow you to choose how long your messages should exist before they auto-delete, as well as removing and archiving data you no longer need or use. Gradually begin to incorporate these more advanced settings into your everyday operations. For example, members of your staff working on a particularly sensitive topic may choose to set their encrypted messages to auto-delete every 24 hours."
               ]
             },
             {
-              "title": "Create a policy for how long to keep messages.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Create a policy for how long to keep messages.", 
+              "content": [ 
                 "Understand that data lingers, even when encrypted. If you don’t need to store months of messages or years of projects on your tools, both encrypted and unencrypted, consider an archiving policy. Many tools allow you to easily export messages to an archive on an alternate storage device. If you’re not sure how to do this, your technical assistance provider can help."
               ]
             },
             {
-              "title": "Provide clear guidelines on communication.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Provide clear guidelines on communication.",
+              "content": [
                 "Encrypted tools are only powerful when used appropriately. Not every work-related topic needs to be discussed on an encrypted tool, but some highly sensitive topics shouldn’t be discussed on unencrypted platforms. To help your staff know which platform to choose for which topic, create clear communications guidelines for your staff . They should understand when to switch from an unecrypted tool such as Mattermost or Slack to an encrypted tool such as Signal. Staff should also understand how to use each of these tools and be able to identify which are encrypted and which are not.",
                 "Additionally, guidelines should incorporate the idea of fragmentation, or spreading your communications across several different platforms. If your organization does all its work on Slack, for example, you risk significant harm if the platform is hacked, breached, or fails. Instead, try to spread your work (and risk) across several different collaboration tools."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
               "title": "",
               "content": [
@@ -3144,17 +3144,17 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Categorize your use by sensitivity.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Categorize your use by sensitivity.",
+              "content": [
                 "You’ve already worked with your staff to understand when to use encrypted tools instead of unencrypted ones. For added security, begin to categorize their use of encrypted tools by the sensitivity of the information or project. For example, you may designate urgent and highly sensitive communications to stay on Signal, but sensitive project work to be conducted only on an encrypted collaborative platform such as Element. Preventing information from gathering in one place makes it more difficult for an adversary to access all your sensitive information at once."
               ]
             },
             {
-              "title": "Try several collaborative tools.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Try several collaborative tools.", 
+              "content": [ 
                 "Your staff is already familiar with the idea of fragmentation, or spreading out their work across several different tools. When working on a highly sensitive project, they can incorporate the idea of fragmentation with encrypted tools as well. In this case, staff members conduct all work on a sensitive project within encrypted tools, but, rather than relying on a single encrypted platform, they spread their work across several collaboration tools. For example, project planning could take place in Element while project brainstorms could take place in Wire. This decreases the amount of information that an attacker could get if they gained access to your messages."
               ]
-            },
+            }
           ]
       }
     },
@@ -3165,29 +3165,29 @@ var en_rs = { // contains all evaluation content
           "why": [
             "Software is the backbone of any organization’s digital work. But using illegal, bootleg, or unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
             "In addition to being vigilant about software, your organization can also be strict about where software comes from, who can install it, and how it works. A technical assistance provider can help you be sure that software comes from legitimate sources and can be changed or altered only by dedicated staff members."
-          ], // explanation of what this means
+          ], 
           "eg": [
             "When ADE Worldwide opens an office in Guam, local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": {
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "You use software every day—web browsers, word processors, and numerous other types. Yet if your organization is using unlicensed, illegal, or bootleg software, you could be putting yourself at risk. While licensed software can be costly, illegal or unlicensed versions of that same software, often downloaded from the Internet, can be weaponized with malware and other threats."
               ]
             },
             {
-              "title": "Apply for discounted licensed software.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Apply for discounted licensed software.",
+              "content": [ 
                 "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [[technology provider TechSoup]](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
               ]
             },
             {
-              "title": "Use free, open-source software.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Use free, open-source software.",
+              "content": [
                 "Many of the most popular paid programs have free, open- source alternatives. We’ve listed a few below. These programs aren’t the right fit for every organization, so do your research before relying on them.",
                 {
                   "type": "ul",
@@ -3199,44 +3199,44 @@ var en_rs = { // contains all evaluation content
                 },
                 "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [ 
                 "You’ve cracked down on your organization’s use of illegal or unlicensed software and found alternatives. Now, you can take steps to protect your work systems from untrusted software, too."
               ]
             },
             {
-              "title": "Be strict about who can install software.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Be strict about who can install software.",
+              "content": [
                 "Working with a technical assistance provider, you can restrict your staff from installing software on their work devices. One of the easiest ways to do this by making sure your staff members are not administrators of their own work devices. Instead, make sure the administrator is a trusted person in the office, preferably with some technical experience. You’ll also want to designate a backup administrator with access in case your primary administrator isn’t unavailable and you need to make changes to a work device.",
                 "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft and Apple. Any software you do download should be digitally signed, although be aware that this is not a guarantee of safety."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [
                 "You are now regulating the type of software used by your organization and you’re ready to further strengthen your security posture. There are several steps you can take."
               ]
             },
             {
-              "title": "Establish a strong policy on the use of personal devices.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Establish a strong policy on the use of personal devices.",
+              "content": [ 
                 "While convenience is important, allowing staff members to connect their personal devices to work networks quickly transforms your office system into the equivalent of an Internet cafe. Instead, establish a strong policy that explicitly states which devices employees may use and where, including when working from home. This reduces the risk that staff will unwittingly connect a compromised device to your network. You may also consider running a separate, less secure WiFi network."
               ]
             },
             {
-              "title": "Take steps to tighten your oversight.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Take steps to tighten your oversight.",
+              "content": [ 
                 "Working with a technical assistance provider, you may want to consider implementing a “zero trust” network, which allows an individual to connect to your internal systems only after they go through an authentication process. One way to do this is through single sign-on, which uses a single password across accounts and devices. Alternatively, you can establish a network administrator role to make sure that all staff log in through a central domain that can track and manage who is connected. Last, consider using device management software to remotely install needed software and wipe work devices as needed."
               ]
-            },
+            }
           ]
       }
     },
@@ -3247,65 +3247,65 @@ var en_rs = { // contains all evaluation content
           "why": [
             "Understanding and enabling data encryption on work devices isn’t as daunting as it may seem. While it’s critical to understand how encryption works (including when services use at-rest encryption), taking steps toward better safeguarding data is within reach for most organizations.",
             "More advanced implementation can include “zero-knowledge” cloud storage and individual encryption of files and folders on specific devices. These can be implemented with the help of a technical assistance provider."
-          ], // explanation of what this means
+          ], 
           "eg": [
             "ADE Worldwide’s office in Zambia is  raided unexpectedly. The intruders seize the office’s two laptops and one desktop computer. Luckily, before the raid, ADE required all devices be full-disk encrypted. Therefore the staff in Zambia is reassured that their data remain safe while the devices are outside of their control."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": {
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "If you associate encryption only with code-breaking and financial transactions, you’re not alone. Most people don’t encrypt any of the digital information they possess. As a result, their data can be easily accessed by an attacker if their computer is lost or stolen,  even if it is secured with a password. Only when a device is fully disk encrypted is your data protected (with some caveats below). Here are two steps to help your organization incorporate encryption into your workflow."
               ]
             },
             {
-              "title": "Turn on full disk encryption on work devices.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Turn on full disk encryption on work devices.",
+              "content": [
                 "Work with a technical assistance provider to enable full disk encryption on any computers that your organization uses for work. This may be time-consuming, especially for busy organizations with little downtime, but can be performed during off hours as needed. Windows computers must be upgraded to at least Windows 10 Pro (which typically costs around US $50) to enable [[BitLocker]](links.ms.bitlocker), the built-in full disk encryption software. Apple computers have access to built-in [[FileVault]](links.apple.filevault) software that can be enabled at any time. Linux computers use [[Luks]](links.redhat.luks), which must be enabled when the operating system is being installed.",
                 "It’s also important to understand how your encryption system works. Much encryption software, including Microsoft’s BitLocker, encrypts data “at rest,” meaning the data are encrypted only when the device is turned off. Some encrypted cloud storage also works this way, only encrypting data when the user is not actively connected to the system. This is important to consider when setting up these systems so there is no misunderstanding about how extensively you have protected your data."
               ]
             },
             {
-              "title": "Consider more secure hard drive alternatives.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Consider more secure hard drive alternatives.", 
+              "content": [ 
                 "Currently, you may store some of your data on external hard drives, which are very portable and convenient. By default, however, most of these devices are not encrypted, leaving your data accessible to anyone who has the drive itself. Consider replacing these devices with more secure alternatives. One option would be to replace external hard drives with hard drives that require physical PIN codes. [[Apricorn]](links.apricorn.web) and [[iStorageUK]](links.istorageuk.web) sell these encrypted drives, which have keypads to enter the codes and access the data within."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "Now that you’ve enabled full disk encryption on your organization’s devices, you can use encrypted options for other types of storage as well. One of the most popular types of storage for many organizations is in the cloud, or storing files and information on servers run by popular services such as Dropbox and Google Drive. These are convenient, affordable storage options, but they aren’t the best choice for storing sensitive information. Here is a safer alternative."
               ]
             },
             {
-              "title": "Use “zero-knowledge” encrypted cloud storage.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Use “zero-knowledge” encrypted cloud storage.", 
+              "content": [ 
                 "For highly sensitive information, consider using a “zero-knowledge” cloud storage provider. This term refers to a cloud storage provider that has no “knowledge” of the files or data you store. They simply provide storage and the encryption functionality necessary to keep your data safe. This means that your organization alone has access to the files and data you store there.",
-                "While this greatly strengthens your ability to store sensitive information, there is also a downside: if you lose or forget your credentials to the service, you won’t be able to access your data. And since the provider doesn’t have access to your data, either, they can’t retrieve it for you. With this knowledge in mind, be selective about the data you choose to store with a zero-knowledge provider, choosing only sensitive data that you have backed up elsewhere. Popular zero-knowledge encrypted cloud storage providers include [[Tresorit]](links.tresorit.web), [[SpiderOak One]](links.soak.web), and the open-source alternative [[NextCloud]](links.nextcloud.web) or [[OwnCloud]](links.ocloud.web).",
+                "While this greatly strengthens your ability to store sensitive information, there is also a downside: if you lose or forget your credentials to the service, you won’t be able to access your data. And since the provider doesn’t have access to your data, either, they can’t retrieve it for you. With this knowledge in mind, be selective about the data you choose to store with a zero-knowledge provider, choosing only sensitive data that you have backed up elsewhere. Popular zero-knowledge encrypted cloud storage providers include [[Tresorit]](links.tresorit.web), [[SpiderOak One]](links.soak.web), and the open-source alternative [[NextCloud]](links.nextcloud.web) or [[OwnCloud]](links.ocloud.web)."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Your organization has made major progress in keeping your sensitive data encrypted and secure. Your staff has enabled full disk encryption on all work devices and uses encrypted cloud storage for additional protection. Now you can take encryption one step further by teaching your staff members to encrypt individual files and data on their work devices. A technical assistance provider can help you incorporate this process into your workflow.",
+              "title": "", 
+              "content": [
+                "Your organization has made major progress in keeping your sensitive data encrypted and secure. Your staff has enabled full disk encryption on all work devices and uses encrypted cloud storage for additional protection. Now you can take encryption one step further by teaching your staff members to encrypt individual files and data on their work devices. A technical assistance provider can help you incorporate this process into your workflow."
               ]
             },
             {
-              "title": "Encrypt sensitive information on your computer", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Encrypt sensitive information on your computer", 
+              "content": [
                 "While we recommend full disk encryption on all devices, it has its limitations. What happens, for example, if a staff member leaves their work laptop unlocked while they use the restroom and someone clicks on a sensitive file on their desktop? For individual files that could pose a risk if they fell into the wrong hands, consider teaching your staff members how to encrypt files and folders. If files are encrypted, individuals will be prompted for a password to open them. You can accomplish this through the use of file encryption software such as [[VeraCrypt]](links.vera.web) or [[Cryptomator]](links.cmator.web). A technical assistance provider can help you get started.",
                 "One important note: when using some types of this software, encrypted files may appear to be missing and not present in file folders or on the desktop. These files only appear when a user opens the appropriate software and enters their password."
               ]
-            },
+            }
           ]
       }
     },
@@ -3318,13 +3318,13 @@ var en_rs = { // contains all evaluation content
             "Just as you wouldn’t store all your valuables in one desk drawer, you don’t want to keep all your sensitive data in one location, system, or platform. Implementing the principles of compartmentalization can help you keep your data safe even if your devices are hacked, attacked, or stolen.",
             "If your organization is heavily research-based, using a dedicated \"research only\" browser can help keep online activities separate. Your staff can also make their work devices—particularly mobile devices—safer by storing data outside of the device itself. These easily implemented steps can contribute to a safer organizational culture.",
             "As threats increase, you may want to consider more advanced options such as a virtual machine or end-point protection, both of which a technical assistance provider can set up."
-          ], // explanation of what this means
+          ], 
           "eg": [
             "ADE Worldwide has offices around the world. In some regions, up-to-date devices are reasonably priced, but in others, it’s difficult to buy affordable new technology. To help staff keep their data more secure, ADE management institutes a work-only account policy, instructing regional IT staff to create user accounts that staff should use on work devices. Only IT personnel have the ability to install software and change settings.",
             "They also require ADE’s research staff to use a dedicated browser on their computer for work-related research, while highly sensitive information is handled only through a virtual machine."
-          ] // example scenario
+          ]
       },
-      "results": { // contains result text for this category
+      "results": { 
         "intro": {
           "title": "",
           "content": [
@@ -3332,17 +3332,17 @@ var en_rs = { // contains all evaluation content
           ]
         },
         "below":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "Understand the connection between personal and professional use.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand the connection between personal and professional use.", 
+              "content": [
                 "Members of your staff wouldn’t have the same conversations at work that they would at home or over dinner with a friend. The same rule of thumb applies when it comes to their digital lives as well. Using the same device for both personal and professional uses magnifies their risk of being targeted at both work and home.",
-                "For example, a staff member who uses their work laptop to play online games may be targeted by hackers who then have access to sensitive work files. By contrast, a staff member who is targeted for their work may find that hackers now have access to their personal files. Educating your staff on the importance of separating these two data streams is important.",
+                "For example, a staff member who uses their work laptop to play online games may be targeted by hackers who then have access to sensitive work files. By contrast, a staff member who is targeted for their work may find that hackers now have access to their personal files. Educating your staff on the importance of separating these two data streams is important."
               ]
             },
             {
-              "title": "Implement the right solution for your organization.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Implement the right solution for your organization.", 
+              "content": [
                 "The right solution to help your staff compartmentalize their data depends on a variety of different factors, including your budget, technical ability, and the availability of computers and smartphones in your region. Possible solutions, sorted by price and complexity, include:",
                 {
                   "type": "ul",
@@ -3354,56 +3354,56 @@ var en_rs = { // contains all evaluation content
                 },
                 "You will want to work with a technical assistance provider on all of these options to customize these strategies for your organization."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "Your staff is familiar with the concept of compartmentalization, and you've taken some initial steps to keep your organization’s work and personal data separate. Now, you can implement a few more changes to further strengthen that boundary.",
+              "title": "", 
+              "content": [ 
+                "Your staff is familiar with the concept of compartmentalization, and you've taken some initial steps to keep your organization’s work and personal data separate. Now, you can implement a few more changes to further strengthen that boundary."
               ]
             },
             {
-              "title": "Use a dedicated browser for different types of work.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Use a dedicated browser for different types of work.",
+              "content": [
                 "Even within your work device, you can further compartmentalize your online footprint. One easy way to do this is to use a different browser for different types of work. This reduces the chances that an attacker can compromise one single browser and access all your staff’s search history and other data."
               ]
             },
             {
-              "title": "Store less information on work devices.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Store less information on work devices.", 
+              "content": [ 
                 "Rather than storing files locally on work devices, implement ways for your staff to store their data on encrypted cloud or external storage. This lessens the risk of an attacker being able to steal a device and access all the data stored within it. We would also recommend you work with your technical assistance provider to set up a remote wipe policy, which allows you to remotely erase work accounts on staff devices if they are lost, stolen, or compromised.",
                 "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these can sometimes be compromised by bad actors. Using your native keyboard when entering information into your work device is preferable."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [
                 "You’ve made great progress on helping your staff compartmentalize their personal and professional lives. Now, your goal should be full compartmentalization, so there is very little data left for outside adversaries to locate. You will need to work with a technical assistance provider on these next steps."
               ]
             },
             {
-              "title": "Use a virtual machine.", // title of this recommendation
-              "content": [ // explanation of this recommendation
-                "If you have access to high-speed Internet, your staff can use software such as [[VMWare]](links.vmware.virtualization) or [[Microsoft Hypervisor]](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization.",
+              "title": "Use a virtual machine.", 
+              "content": [
+                "If you have access to high-speed Internet, your staff can use software such as [[VMWare]](links.vmware.virtualization) or [[Microsoft Hypervisor]](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization."
               ]
             },
             {
-              "title": "Implement biometrics, if appropriate.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Implement biometrics, if appropriate.",
+              "content": [
                 "Many organizations rely on passwords as the first line of defense for work devices. This is, in part, because organizations based in the United States have higher legal defenses against disclosing their passwords to government authorities. In other parts of the world, however, biometric solutions (such as scanning a fingerprint) may be more secure and less vulnerable to challenges from law enforcement and governments. If that is the case in your region, a biometric solution may be a good fit for accessing work devices. Many biometric password systems also allow administrators to maintain an active log of devices that are currently connected to their network."
               ]
             },
             {
-              "title": "Incorporate end-point security solutions.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Incorporate end-point security solutions.",
+              "content": [
                 "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [[Microsoft Defender for Endpoint]](links.ms.defender) and [[Bitdefender GravityZone Ultra Security Suite]](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [[this resource from SANS]](links.sans.endpoint)."
               ]
-            },
+            }
           ]
       }
     },
@@ -3414,86 +3414,86 @@ var en_rs = { // contains all evaluation content
           "why": [
             "Passwords allow us to access the hundreds of services we use online each day. Because we juggle so many passwords, it’s important that we keep them organized, secure, and easily managed. Implementing a password manager may be logistically complicated depending on your organization’s size but immediately makes your accounts and staff safer.",
             "Combining a password manager with two-factor authentication is a relatively painless way to greatly improve your security footprint. Adding additional steps, such as a physical security key or even SSO functionality, can take your security one step further."
-          ], // explanation of what this means
+          ],
           "eg": [
             "A few years ago, ADE Worldwide required all staff to start using two-factor authentication alongside password managers for work accounts. When a third-party social media platform they use is compromised, staff are able to easily update their passwords with a new password generated by their password manager."
-          ] // example scenario
+          ]
       },
-      "results": { // contains result text for this category
+      "results": {
         "below":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [ 
                 "Passwords are like your house keys: something you use every day that can be easily stolen. Unlike house keys, however, many people use the same password for many different accounts—the equivalent of using the same key for your home, office, car, and desk drawer. Luckily, just as you can take steps to secure your locks, you can also take steps to strengthen your passwords and online accounts."
               ]
             },
             {
-              "title": "Understand how passwords are compromised online.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand how passwords are compromised online.", 
+              "content": [
                 "Passwords are valuable to people interested in accessing your organization’s information online. They can include attackers looking to compromise your organization or cybercriminals looking to steal or sell data. Most online services— such as email and social media platforms—will eventually be compromised. When this happens, attackers sell and trade passwords until they are gradually released on the public Internet.",
                 "Sooner or later, staff members will suffer from a breach that exposes at least one of their passwords. If they use that password across several different accounts, they increase their risk and the risk to your organization. You can detect whether your current passwords have been breached by using the website [[Have I Been Pwned]](links.hibp.web)."
               ]
             },
             {
-              "title": "Establish a password policy across your organization.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Establish a password policy across your organization.",
+              "content": [
                 "When given the option, most people will choose basic or easy-to-remember passwords that are easily cracked. To make your organization’s passwords stronger, consider establishing a password policy. It should govern what your organization defines as a strong password or passphrase, how staff can generate passwords (we recommend a password manager for this purpose), where passwords should be stored (again, a password manager is our preference), and other rules governing password-related security, such as how to handle security questions on a work account."
               ]
             },
             {
-              "title": "Enable a password manager.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Enable a password manager.",
+              "content": [ 
                 "Every online service your staff members use needs a unique password. Unfortunately, with many of us managing hundreds of different online services, it’s virtually impossible to remember so many unique passwords. A password management tool—also known as a password manager—can help organize our passwords, store them securely, and allow us to generate random, stronger passwords for our services. Some password managers can even share passwords with your staff for accounts that they all use regularly.",
                 "Popular and easy-to-use password managers for staff include [[1Password Business]](links.1pass.biz) ([[which offers 50% discount for NGOs]](links.1pass.discount)), [[LastPass Enterprise]](links.lpass.web), [[Dashlane]](links.dlane.web), [[KeePassxc]](links.kpassxc.web), [[Keeper]](links.keeper.web), and [[Bitwarden]](links.bwarden.web). A technical assistance provider can help you determine the right password manager for your organization."
               ]
             },
             {
-              "title": "Require two-factor authentication.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Require two-factor authentication.", 
+              "content": [
                 "Just as we can strengthen our home security by adding an alarm system and other measures, we can strengthen our online accounts in the event that someone does gain access to our passwords. This process is known as two-factor or multi-factor authentication and requires something you know (your password) in combination with something you have (an authentication code or tool).",
                 "We recommend enabling two-factor authentication for every online service that your organization uses. Using a site such as twofactorauth.org, in combination with an outside security provider, can help your staff  enable two-factor authentication quickly and efficiently on most services."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "Your organization has taken steps to strengthen your password processes. With minimal effort, you can further improve your security footing."
               ]
             },
             {
-              "title": "Use an authenticator app or token.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Use an authenticator app or token.",
+              "content": [
                 "When first enabled, most two-factor authentication services use SMS, or text, messages to send the codes your staff  will need to access their accounts. However, because SMS messages are easily intercepted and manipulated, this isn’t the most secure way to send authentication codes. Instead, we recommend switching from SMS to either an authenticator app that will run on your staff ’s smartphones or, for an even more secure solution, a hardware token that plugs into the physical computer’s USB port. We recommend [[Authy]](links.authy.web), [[Google Authenticator]](links.google.auth), and [[Microsoft Authenticator]](links.ms.auth). Reputable hardware tokens include [[Yubikey]](links.yubico.key), [[Solo Key]](links.solo.key), and [[Titan Key]](links.titan.key)."
               ]
             },
             {
-              "title": "Strengthen your password policies.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Strengthen your password policies.", 
+              "content": [
                 "Even the strongest password policies have to work with your staff’s workflow. Review your existing policies and determine areas that can be improved and made stronger and clearer. For example, how should staff handle a situation when they are locked out of their account or lack the needed two-factor authentication credentials? Clarifying these steps can help reduce risk, particularly when staff are traveling, of inadvertently allowing an attacker into your system.",
                 "You will also want to take a look at your organization’s password policies across work devices. For example, local administrators on your work devices should be able to reset passwords themselves at regular intervals, such as every 180 days. A technical assistance provider can help you walk through your existing policies and find areas for improvement."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [ 
                 "Instituting password managers and enabling two-factor authentication on individual accounts will greatly improve your organization’s security. Working with a technical assistance provider, you can take these efforts one step further through an organization-wide setup. Find out more below."
               ]
             },
             {
-              "title": "Use single sign-on throughout your organization.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Use single sign-on throughout your organization.",
+              "content": [
                 "By instituting a comprehensive or single sign-on (SSO) system, you’re improving both your staff’s workflow and their security. SSO requires your staff to use the same username, password, and two-factor authentication for all accounts they use for work. The system also gives an administrator greater control over security preferences, as well as the ability to more closely monitor staff usage of work accounts.",
                 "SSO can be complicated to set up, especially for a large organization with established security protocols, but a technical assistance provider can help. We recommend SSO systems [[Duo]](links.duo.web) and [[Okta]](links.okta.web). The [[Advanced Protection Program from Google]](links.google.applan) can help establish a similar system for high-risk users. Just remember that to be effective, all accounts within your organization that require a log-in need to be governed by SSO.",
                 "The reason that SSO is more secure than using hundreds of different accounts is because it lowers your “attack surface.” Rather than having several different accounts and passwords for an attacker to target, SSO puts all your accounts behind a single gate, usually with a high level of protection. Most SSO providers also require two-factor authentication for an added layer of security, as well as oversight by an administrator who can deactivate accounts as needed."
               ]
-            },
+            }
           ]
       }
     },
@@ -3503,57 +3503,57 @@ var en_rs = { // contains all evaluation content
       "general": {
           "why": [
             "By not updating our software and operating systems, we are leaving ourselves vulnerable to unnecessary risks. Luckily, updates don’t have to be time-consuming and annoying. Enabling automatic updates, establishing master administrator accounts for manual updates, or even pushing updates to devices can all be done with a little help from a technical assistance provider. "
-          ], // explanation of what this means
+          ],
           "eg": [
             "The ADE Worldwide finance staff  consists of three members and a manager based in Washington, DC. As busy professionals, they are juggling financial oversight of a major global nonprofit. When they see a pop-up alert on their devices reminding them to update their accounting software, they generally ignore the notification and continue working. Unfortunately, a security flaw in their accounting software poses a risk to their systems unless it is updated, so ADE management requires the staff to enable automatic updates on their software moving forward. Then, they add that requirement to their updates policy to ensure staff continue following this best practice."
-          ] // example scenario
+          ]
       },
-      "results": { // contains result text for this category
+      "results": {
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "The software that organizations rely on for their work relies on updates to run smoothly and securely. Yet for many office workers, pop-up boxes asking to install updates are an annoyance to be ignored, not a vital part of their workflow. Luckily, you can take steps to make updates a more regular part of your organization’s technology use."
               ]
             },
             {
-              "title": "Make sure that staff enable automatic updates.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Make sure that staff enable automatic updates.",
+              "content": [
                 "One of the most effective and least time-consuming ways to update software is to automate the process. Most software allows users to select an automatic update option, which will force the software to install available updates and restart as needed. We would recommend making sure that all staff members enable this option on all available software and send an email to their supervisors confirming they have done so."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "Your staff has enabled automatic updates on their software, which is a key step toward a more secure workflow. But what happens if you have many different work devices, all running different versions of different software platforms? It’s easy for employees to overlook a particular piece of software, leaving the organization vulnerable. Here’s how to respond."
               ]
             },
             {
-              "title": "Manually install updates as needed.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Manually install updates as needed.", 
+              "content": [ 
                 "If you’re concerned that your staff may be overlooking essential updates on their systems, work with a technical assistance provider to create a master administrator account on all work devices. Then, when the devices are not being used, such as after work hours, manually install all updates as needed using the administrator account."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [
                 "When your organization is growing or spreading across several offices in different regions or countries, it may no longer be feasible for IT staff to manually install updates or to rely on your employees to enable automatic updates. Instead, you may want to consider:"
               ]
             },
             {
-              "title": "Pushing updates as needed to work devices.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Pushing updates as needed to work devices.",
+              "content": [
                 "For large organizations with several offices, using device management software can allow your IT department to “push” updates to work devices without having to be physically present in the office. This can ensure that critical updates reach work devices around the world while giving your organization more hands-on management of software and security. Apple supplies [[their own device management software]](links.apple.management), while Google provides a [[similar service]](links.google.management) through their G Suite platform. You may be able to use an open source alternative such as [[Miradore]](links.miradore.web).",
                 "You can also configure your internal systems to prevent access to users who are running older versions of operating systems and software."
               ]
-            },
+            }
           ]
       }
     },
@@ -3563,80 +3563,80 @@ var en_rs = { // contains all evaluation content
       "general": {
           "why": [
             "Disasters and crises aren’t always predictable. That’s why we recommend that your organization invest time now in creating plans to make sure you can continue operating even when situations drastically change. This type of planning isn’t limited to natural disasters, either, as illness, conflict, or simply a flooded office can all derail your staff’s ability to work effectively."
-          ], // explanation of what this means
+          ], 
           "eg": [
             "ADE Worldwide works with local farming communities in rural parts of Colorado, Utah, and Wyoming. During wildfire season, it’s not uncommon for staff to temporarily relocate from their offices to safer locations away from zones that are susceptible to the fires. After a few years of this cycle, ADE management realizes they need to better support these offices during these seasonal crises. They implement an incident response plan and alternate communication channels to be used when fires break out."
-          ] // example scenario
+          ]
       },
-      "results": { // contains result text for this category
+      "results": { 
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [
                 "None of us want to experience a device theft, fire, flood, natural disaster, or pandemic. But crises do happen, and organizations that prioritize planning and continuity are better prepared when disaster strikes. To get started, we recommend the following step."
               ]
             },
             {
-              "title": "Conduct a drill to plan for worst-case scenarios.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Conduct a drill to plan for worst-case scenarios.", 
+              "content": [
                 "There's no better time to plan for a crisis than before it takes place. A drill can help you do so. The level of complexity is up to you, but you should focus on how your organization would respond to a single threat, such as an Internet shutdown, inability to get into the office, or a natural disaster. Working with your managers, assess how your organization would respond to such a threat, making sure to identify any weaknesses or vulnerabilities that come up during the drill."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [ 
                 "Once you have a sense of the risks that your organization faces, you can begin to plan for crises and disasters. Ensuring that your plans are documented and accessible to your staff is your top priority, followed by communicating during a difficult moment."
               ]
             },
             {
-              "title": "Create incident response and \"rainy day\" plans.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Create incident response and \"rainy day\" plans.",
+              "content": [
                 "In a crisis, individuals tend to perform better when they can follow a clear, step-by-step checklist. Take time now to create incident response plans for particular threats, such as a natural disaster or Internet outage. From there, you can create a “rainy day” plan that allows you to keep working even in difficult conditions. A security provider can help you with this planning phase."
               ]
             },
             {
-              "title": "Set up an alternate communication channel.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Set up an alternate communication channel.", 
+              "content": [
                 "In an emergency, the normal communication channels that your organization relies on, such as Slack and email, may not be available. Consider creating an account with a different service, such as encrypted email provider [[ProtonMail]](links.pmail.web) or encrypted messenger [[Threema]](links.3ma.web), to use during a crisis. Make sure to practice logging in and using these accounts to communicate during drills every three to six months."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [
                 "Now that you have plans in place for individual crises, spend time focusing on what your staff needs to continue their work during a difficult moment. This can include technical solutions as well as support for their emotional well-being and stress level."
               ]
             },
             {
-              "title": "Develop a modified work schedule for crises.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Develop a modified work schedule for crises.", 
+              "content": [ 
                 "During stressful moments, understand that your staff may not perform at the same level as they would normally. Consider requiring fewer work days each week to avoid burnout and provide resources for their emotional well-being. Investing in your staff demonstrates solidarity during a difficult time, improves organizational security, and encourages staff to take much-needed breaks."
               ]
             },
             {
-              "title": "Introduce alternatives to physical meetings.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Introduce alternatives to physical meetings.",
+              "content": [
                 "When staff can’t meet in person, productivity can sometimes dip. While using popular videoconferencing platforms is ideal for standard meetings, consider a more secure and end-to-end encrypted alternative for sensitive staff  meetings, such as [[Cisco Webex]](links.cisco.webex), Zoom or Signal."
               ]
             },
             {
-              "title": "Try a secure collaborative platform.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Try a secure collaborative platform.", 
+              "content": [ 
                 "Slack and other collaboration tools are useful for everyday office communications and nonsensitive information and projects. For more sensitive projects, consider an encrypted collaboration platform such as Mattermost, Element or Semaphor. These platforms sometimes have a slightly steeper learning curve and may require technical assistance to set up, but they provide a much higher degree of security."
               ]
             },
             {
-              "title": "Develop remote work guidelines.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Develop remote work guidelines.", 
+              "content": [
                 "When staff are using work devices outside of the office, consider putting together easy-to-follow guidelines on remote work. Consult with a technical assistance provider to determine the level of access a staff member should have to their work device. For example, most organizations will want to restrict staff from installing personal software on their work devices."
               ]
-            },
+            }
           ]
       }
     },
@@ -3646,73 +3646,73 @@ var en_rs = { // contains all evaluation content
       "general": {
           "why": [
             "Increasingly, we rely on third-party services such as social media platforms and cloud-based software for much of our workflow. And while these tools can be tremendously useful for our work, they also carry significant risks and drawbacks. Understanding how to manage third-party services properly can keep your organization safer and your staff more informed about how they should carry out their work."
-          ], // explanation of what this means
+          ],
           "eg": [
             "Staff at the ADE Worldwide office in Honduras are outspoken about the threat facing the small farming communities they represent. This has caught the attention of several vocal landowners, who feel that the organization is biased in its advocacy. As a result, ADE experiences a wave of online harassment to its Honduran-linked social media accounts. To help avoid any further risks to their staff, ADE management in Honduras enables two-factor authentication across their social media channels and removes personal information about staff from the website."
-          ] // example scenario
+          ] 
       },
-      "results": { // contains result text for this category
+      "results": { 
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [
                 "Every day, organizations rely on third-party services and platforms to get work done, from social media services such as Twitter and Facebook to software-as-a-service (SaaS) tools such as Adobe Creative Suite and Salesforce. Yet third-party services can also be entry points for misinformation, disruption, and cyberattacks. This is a particular risk for social media platforms, which have become frequent targets for manipulation and harassment."
               ]
             },
             {
-              "title": "Create a public and private organizational account on social media platforms.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Create a public and private organizational account on social media platforms.",
+              "content": [
                 "On social media, verification is essential. An account that claims to represent your organization can sow misinformation, mislead your community, and discredit your efforts. To help prevent this risk, create both a public and private account for your organization. If your public account is compromised or attacked, your private account can issue public statements and clarifications. Most social media platforms allow dual accounts, although Facebook may be more restrictive due to its “real name” policy, which requires users to use a verifiable name.",
                 "Nonetheless, Facebook has extended some special permissions for certain types of accounts, such as [[accounts belonging to journalists]](links.fb.journos).",
                 "In addition to dual accounts, you will want to make sure that two-factor authentication and other security features are enabled on all third-party accounts, as well as making sure your staff understands privacy settings on social media, such as turning off location data."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [
                 "Now that you’ve taken steps to decrease misinformation risks, you can further lock down your social media accounts to prevent unauthorized access or takeover. Here are two steps to help with that process."
               ]
             },
             {
-              "title": "Verify your organization on social media.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Verify your organization on social media.", 
+              "content": [ 
                 "Apply for the checkmark verification on all official social media accounts used by your organization. This requires an application process with the individual social media platforms, but indicates a level of trust and authenticity to the public."
               ]
             },
             {
-              "title": "Make sure you have several administrators.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Make sure you have several administrators.",
+              "content": [ 
                 "All official social media accounts should have several staff members with the highest level credentials. If one user leaves the organization, the remaining ones can reset access to the account and make other changes as needed. Additionally, all high-level users should use two-factor authentication on their accounts, which may require a shared authentication setup process. A technical assistance provider can help you do so using the quick response (QR) code the platform provided during setup.",
                 "If your staff uses social media management tools such as TweetDeck, Hootsuite, or Sprout, make sure they use a work-administered account for all work-related social media profiles.",
                 "It’s also wise to institute an offboarding process for departing staff who manage social media for your organization, including changing passwords upon their departure."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "Your organization has made good progress in securing your accounts, including enabling two-factor authentication and establishing multiple administrators. Here are two additional steps to further secure third-party services."
               ]
             },
             {
-              "title": "Make sure you can delete or decommission your account.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Make sure you can delete or decommission your account.",
+              "content": [ 
                 "When a staff member leaves your organization or temporarily becomes unavailable, it’s important to be able to access and decommission any third-party services they may have used. While this is important for all services, it’s particularly critical for social media platforms, which can often contain sensitive communications or interoffice messaging. Ensuring that staff members have needed login credentials and other access can help reduce the risks of leaving these accounts unattended."
               ]
             },
             {
-              "title": "Use defensive tactics against doxxing.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Use defensive tactics against doxxing.", 
+              "content": [
                 "Doxxing, or the practice of releasing personally identifiable information on the Internet, can be personally and professionally challenging. Luckily, there are several anti-doxxing measures your organization can take to lessen this risk. These include proactively searching the names of your staff on popular search engines and removing the names of staff members from data brokerage sites using services such as [[Abine DeleteMe]](links.deleteme.web) and [[Norton LifeLock]](links.lifelock.web).",
-                "Other defensive measures you can take to strengthen staff accounts include establishing trusted backup access to third-party accounts in case of a staff member’s illness, imprisonment, or death, and claiming similar-sounding social media account names using a service such as [[DNSTwist]](links.dnstwist.web).",
+                "Other defensive measures you can take to strengthen staff accounts include establishing trusted backup access to third-party accounts in case of a staff member’s illness, imprisonment, or death, and claiming similar-sounding social media account names using a service such as [[DNSTwist]](links.dnstwist.web)."
               ]
-            },
+            }
           ]
       }
     },
@@ -3722,24 +3722,24 @@ var en_rs = { // contains all evaluation content
       "general": {
           "why": [
             "A VPN enables us to have a greater degree of privacy as we do our work online. Yet selecting and implementing the right VPN isn't always the easiest decision. Work with a technical assistance provider to determine which VPN service is right for you and to better understand the advantages and disadvantages of using this software."
-          ], // explanation of what this means
+          ],
           "eg": [
             "The ADE Worldwide office in Berlin often conducts sensitive research into land rights and property records around the world. The research department often uses Tor when browsing sensitive topics, while the entire office uses a specific VPN.",
             "Eventually, managers in the Berlin office realize they need even more control over their browsing data and decide to build their own VPN using Google’s Outline service with the help of a local technical assistance provider."
-          ] // example scenario
+          ]
       },
-      "results": { // contains result text for this category
+      "results": {
         "below":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "",
+              "content": [
                 "Your organization may have considered a virtual private network (VPN), but was unsure about which to choose. Alternatively, perhaps this is the first time you’ve ever heard of a VPN. Either way, VPN usage is becoming more popular across the web due to concerns over data privacy and protection. In general, we recommend your organization use a VPN. Here's how to get started."
               ]
             },
             {
-              "title": "Understand the advantages and disadvantages of VPN usage.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand the advantages and disadvantages of VPN usage.", 
+              "content": [
                 "When you browse the Internet without a VPN, your Internet service provider (ISP) can see all the websites you visit, as well as the date and time you visit them. Increasingly, the websites themselves also track high levels of your data as you browse.",
                 "When you use a VPN, you are blurring some of the information that your ISP can collect, as well as some information websites track. You are giving that information to your VPN provider, who is encrypting your connection to the Internet.",
                 "Depending on your VPN provider, this could be safer, riskier, or as risky as giving your data to your ISP. Generally, if you choose a reputable paid VPN provider, your data are more secure than browsing without a VPN. And if you pay for your VPN under your organization’s name, you will have added privacy—even more so if you pay for the service using an alias.",
@@ -3747,57 +3747,57 @@ var en_rs = { // contains all evaluation content
               ]
             },
             {
-              "title": "Evaluate your budget and choose a VPN accordingly.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Evaluate your budget and choose a VPN accordingly.", 
+              "content": [
                 "VPNs come in all varieties and price points. Luckily, most VPNs are reasonably priced. We discourage most organizations from relying on an entirely free VPN because of concerns about your data security and privacy. There are a small number of trusted free alternatives, including [[Psiphon]](links.psiphon.web), [[Lantern]](links.lantern.web), and [[BitMask]](links.bmask.web). Many VPN companies, including [[Tunnel Bear]](links.tbear.web) and [[Mullvad]](links.mvad.web), also provide free annual subscriptions to deserving organizations, but these are best left for groups with little to no financial resources. You can consult with a technical assistance provider for advice on choosing a VPN and read articles like [[this New York Times Wirecutter guide]](links.nyt.vpns) for more details."
               ]
             },
             {
-              "title": "Understand the difference between “incognito mode” and VPN usage.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand the difference between “incognito mode” and VPN usage.", 
+              "content": [
                 "Despite some disclaimers within the browser, incognito or private browsing mode remains confusing to many Internet users. This mode opens a new window in your browser that does not save your web searches or site visits. While this may seem like your browsing history is fully secure, your ISP can still track the sites you visit, although your browser does not save your history. A VPN, by contrast, prevents your ISP from collecting that data but may collect that data itself.",
                 "While incognito or private browsing mode prevents in-browser tracking by websites, using a VPN alone does not. Understanding these distinctions is important for your staff as they choose which steps to take during their everyday work."
               ]
-            },
+            }
           ],
         "ok":
-          [ // contains recommendations for this level
+          [
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "Your organization understands the advantages and disadvantages of VPN services and has chosen a service that works for your needs. If you’re using a standard commercial VPN, there may be other, slightly more complex options that could improve your security."
               ]
             },
             {
-              "title": "Consider a more technical alternative.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Consider a more technical alternative.",
+              "content": [
                 "Creating your own VPN can be technically complicated but allows you to better control your own data and privacy. Rather than relying on a commercial provider, a build-your-own VPN allows you to better customize a specific tool to meet your security needs.",
                 "Google offers [[a service called Outline]](links.google.outline) which allows organizations to build their own VPN for approximately US $10 a month. Outline works well for most contexts, including areas where VPN use may be noticed or blocked. (It is not a solution for countries or regions where VPNs are banned.) Alternatively, a slightly more complex option is [[Algo by the security firm Trail of Bits]](links.trailbits.algo), which helps organizations set up their own VPN server.",
                 "While not a VPN, a tool such as [[Firefox DoH]](links.mozilla.doh) can also make your web browsing safer and can be used in conjunction with your existing VPN service. You will probably need to work with a technical assistance provider to enable any of these solutions for your organization."
               ]
-            },
+            }
           ],
         "exceeds":
-          [ // contains recommendations for this level
+          [ 
             {
-              "title": "", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "", 
+              "content": [ 
                 "You’ve invested time, money, and effort into finding the right VPN solution for your organization. Now, you can extend your use of private networks to safeguard access to your website and your online research."
               ]
             },
             {
-              "title": "Create “acceptable” and “block” lists.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Create “acceptable” and “block” lists.", 
+              "content": [
                 "Most VPN services give users the option to generate static Internet protocol (IP) addresses for users. This means that a staff member at your organization can use the same IP address—the identifying information associated with their Internet connection—every time they use that VPN. This allows your administrators to create “acceptable” lists of users from a range of pre-approved IP addresses that can take certain actions, such as visit the back end of your website or your organization’s Intranet. All others would be placed on a “block” list that would not grant them access to these sensitive parts of your system. A technical assistance provider can help you set up such lists with your VPN of choice."
               ]
             },
             {
-              "title": "Understand when to use Tor.", // title of this recommendation
-              "content": [ // explanation of this recommendation
+              "title": "Understand when to use Tor.",
+              "content": [ 
                 "The [[Tor browser]](links.tor.browser) has been a popular choice for journalists, researchers, and advocates who are concerned about their online activities being tracked by ISPs, governments, and other organizations. Tor provides a higher degree of privacy and anonymity than a standard browser or a VPN because it bounces the user’s traffic through a series of servers, making it much more difficult for an adversary to determine where the traffic originated. You can read more about how Tor works at the Tor Project website.",
                 "Many organizations use Tor for sensitive research only, as the browsing experience can be slower than a standard browser and there is a learning curve to use the tool properly. Nonetheless, Tor is a trusted, reputable option for anonymous browsing. Talk to your technical assistance provider about how to incorporate Tor into your workflow."
               ]
-            },
+            }
           ]
       }
     }

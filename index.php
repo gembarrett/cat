@@ -17,19 +17,20 @@ if(isset($_POST['submit'])){
         <link rel="stylesheet" href="assets/css/global.css" />
         <link rel="stylesheet" href="assets/css/granular.css" />
         <link rel="stylesheet" href="assets/css/media.css" />
-        <!-- ONLY NEEDED FOR FONT AWESOME <link href="assets/css/all.css" rel="stylesheet"> -->
         <script src="content/en-content.js"></script>
         <script src="content/links.js"></script>
-
         <script src="assets/js/utils.js"></script>
         <script src="assets/js/init.js"></script>
-
-
         <!-- these may need to be moved further down or refactored -->
         <script src="assets/js/start.js"></script>
         <script src="assets/js/keyboard.js"></script>
         <script src="assets/js/results.js"></script>
         <link rel="manifest" href="/site.webmanifest">
+        
+        <!-- the favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
       </head>
       <body lang="en">
         <div id="head">
@@ -54,68 +55,13 @@ if(isset($_POST['submit'])){
                 </select>
               </ul>
             </div>
-<!--
-            <div id="nav-container">
-                <div id="sNav">
-                    <ul id="nav-main" class="pos2">
-                        <li id="go-toCats">Go to section...</li>
-                        <li class="later">Save &amp; resume later</li>
-                    </ul>
-                    <ul id="nav-cats" class="pos3">
-                        <li class="go-back-1">Back</li>
-                        <li id="go-understand-risk">Understanding Risk</li>
-                        <li id="go-op-sec">Operational Security</li>
-                        <li id="go-devices-accounts">Device and Account Security</li>
-                    </ul>
-                    <ul id="sub-understand-risk" class="pos4">
-                        <li class="go-back-2">Back</li>
-                        <li id="m-your-org">About Your Organization</li>
-                        <li id="m-external-threats">External Threats</li>
-                    </ul>
-                    <ul id="sub-op-sec" class="pos4">
-                        <li class="go-back-2">Back</li>
-                        <li id="m-policy-docs">Policy &amp; Documentation</li>
-                        <li id="m-internal-risks">Internal Risks</li> 
-                        <li id="m-training-support">Staff Training &amp; Support</li>
-                        <li id="m-travel-policy">Travel Policy</li>        
-                        <li id="m-managing-data">Managing Data</li>  
-                        <li id="m-web-security">Website Security</li>  
-                        <li id="m-office-security">Office Policies &amp; Systems</li>  
-                        <li id="m-legal-risks">Legal Risks</li>    
-                    </ul>
-                    <ul id="sub-devices-accounts" class="pos4">
-                        <li class="go-back-2">Back</li>
-                        <li id="m-messaging-collab">Messaging &amp; Collaboration</li>
-                        <li id="m-installing-software">Installing Software</li>                        
-                        <li id="m-data-encryption">Data Encryption</li>  
-                        <li id="m-device-compartmentalization">Compartmentalization</li>  
-                        <li id="m-passwords-authentication">Passwords &amp; Authentication</li>         
-                        <li id="m-system-updates">System Updates</li> 
-                        <li id="m-op-continuity">Operational Continuity</li>
-                        <li id="m-third-party">Third-Party Services</li>
-                        <li id="m-vp-network">VPN</li>                        
-                    </ul>
-                </div>
-                
-                
-                
-                <div id="survey-menu">
-                    <div id="section-trigger">
-                        <p>Go to section...</p>
-                        <img src="assets/images/menu-forward.png" alt="View survey sections"/>
-                    </div>
-                    <hr />
-                    <p class="later">Save &amp; resume later</p>
-                </div>
-            </div>
--->
           </div>
         </div>
         <div id="page">
           <div id="no-js" class="window">
-            <h3>Looks like you've got Javascript disabled</h3>
-            <p>You'll need to enable Javascript in order to use this website. Here's how to do that: <a href="https://enable-javascript.com" title="Find out more about enabling Javascript in your browser">enable-javascript.com</a></p>
-            <p>If your threat model requires you to keep Javascript disabled, you can instead go to <a href="https://github.com/gembarrett/cat" title="View the open-source CAT code at GitHub">CAT's GitHub repository</a> and grab the code to run the whole website offline on your local computer.</p>
+            <h3>Loading - please wait.</h3>
+            <p>If you've been waiting for more than 30 seconds please check that you have Javascript enabled. Here's how to do that: <a href="https://enable-javascript.com" title="Find out more about enabling Javascript in your browser">enable-javascript.com</a></p>
+            <p>If your threat model requires you to keep Javascript disabled, you can instead go to <a href="https://github.com/gembarrett/cat" title="View the open-source CAT code at GitHub">CAT's GitHub repository</a> and grab the code to run the whole website offline using a local web server on your computer.</p>
           </div>
         </div>
         <div id="foot">

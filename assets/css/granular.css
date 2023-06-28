@@ -2,6 +2,7 @@
 .contain-md{
   display: flex;
   flex-direction: row;
+    min-width: 75vw;
 }
 
 .home, .contain-lrg {
@@ -519,11 +520,11 @@ form span {
   padding: 0.25em 0;
     display: flex;
     align-items: flex-start;
-    display:block;
 }
 form input {
   margin-right: 10px;
     margin-top:5px;
+    flex-shrink: 0;
 }
 
 .contain-sidebar {

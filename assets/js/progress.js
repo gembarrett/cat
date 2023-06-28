@@ -158,7 +158,7 @@ function updateProgress(e) {
     updateBar();
 }
     
-function updateBar(){
+function updateBar(fromLink){
     count = 0;
     // first, sort the answers
     currentState.answered.sort();
@@ -183,18 +183,35 @@ function updateBar(){
     currentPage = document.querySelector('.submenu li.selected').id;
     updateButtons(currentPage);
     
-    // if there's answers and the section has been started
-    if (percentage > 0){
-        // update the circle in submenu        
-        sectionStarted(currentPage);
-    }
+        // if there's answers and the section has been started
+        if (percentage > 0){
+            if (fromLink !== true){
+                allSubs = document.querySelectorAll(`.submenu li`);
+                for (sub of allSubs){
+                    // if the sub id matches an element in the answered array
+                    var result = currentState.answered.filter(option => option.startsWith(sub.id));
+                    // add 'started' class
+                    if (result.length > 0){
+                        parent = sub.parentElement.parentElement;
+                        sectionStarted(sub.id, parent);
+                    }
+                }
+            } else {
+                // update the circle in submenu        
+                sectionStarted(currentPage);
+            }
+        }        
 }
 
-function sectionStarted(page){
+function sectionStarted(page, cat){
     // what's the current subcategory
     sub = document.querySelector(`.submenu li#${page}`);
-    // what's the current category
-    cat = document.querySelector(`.submenu div.selected`);
+    
+    if (cat === 'undefined'){
+        // what's the current category
+        var cat = document.querySelector(`.submenu div.selected`);
+    }
+    
     // check if the category has been started
     if (!cat.classList.contains('started')){
         cat.classList.add('started');
