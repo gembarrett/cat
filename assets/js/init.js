@@ -99,7 +99,6 @@ function moveMenu(direction, sub){
                 searchFor = searchFor.join('-');
                 // see if there's a matching class
                 matchingSubcats = document.querySelectorAll(`#nav-subcats .${searchFor}`);
-                console.log(matchingSubcats);
                 if (typeof matchingSubcats === 'object' && matchingSubcats.length > 0){
                     // there are matching subcategories in the mobile menu
                     for (const el of matchingSubcats) {
@@ -352,56 +351,22 @@ function sendEmail(email, link){
 
 function buildMobileMenu(s){
     // get the mobile menu
-    menu = '<div id="nav-container">';
+    menu = '<div id="nav-container"><div id="sNav">';
+    menu += `<ul id="nav-main" class="pos2"><li id="go-to-cats">${textStore.oc.header.mobile.goto}</li><li class="later">${textStore.oc.header.mobile.save}</li></ul>`;
+    menu += `<ul id="nav-cats" class="pos3"><li id="go-back-main">${textStore.oc.header.mobile.back}</li>`;
     
-    menu += `<div id="sNav">
-                    <ul id="nav-main" class="pos2">
-                        <li id="go-to-cats">Go to section...</li>
-                        <li class="later">Save &amp; resume later</li>
-                    </ul>
-                    <ul id="nav-cats" class="pos3">
-                        <li id="go-back-main">Back</li>
-                        <li id="go-to-understand-risk">Understanding Risk</li>
-                        <li id="go-to-op-sec">Operational Security</li>
-                        <li id="go-to-devices-accounts">Device and Account Security</li>
-                    </ul>
-                    <ul id="nav-subcats" class="pos4">
-                        <li id="go-back-cats">Back</li>
-                        <li id="m-your-org" class="go-understand-risk">About Your Organization</li>
-                        <li id="m-external-threats" class="go-understand-risk">External Threats</li>
-                        <li id="m-policy-docs" class="go-op-sec">Policy &amp; Documentation</li>
-                        <li id="m-internal-risks" class="go-op-sec">Internal Risks</li> 
-                        <li id="m-training-support" class="go-op-sec">Staff Training &amp; Support</li>
-                        <li id="m-travel-policy" class="go-op-sec">Travel Policy</li>        
-                        <li id="m-managing-data" class="go-op-sec">Managing Data</li>  
-                        <li id="m-web-security" class="go-op-sec">Website Security</li>  
-                        <li id="m-office-security" class="go-op-sec">Office Policies &amp; Systems</li>  
-                        <li id="m-legal-risks" class="go-op-sec">Legal Risks</li>                        
-                        <li id="m-messaging-collab" class="go-devices-accounts">Messaging &amp; Collaboration</li>
-                        <li id="m-installing-software" class="go-devices-accounts">Installing Software</li> 
-                        <li id="m-data-encryption" class="go-devices-accounts">Data Encryption</li>  
-                        <li id="m-device-compartmentalization" class="go-devices-accounts">Compartmentalization</li>  
-                        <li id="m-passwords-authentication" class="go-devices-accounts">Passwords &amp; Authentication</li>   
-                        <li id="m-system-updates" class="go-devices-accounts">System Updates</li> 
-                        <li id="m-op-continuity" class="go-devices-accounts">Operational Continuity</li>
-                        <li id="m-third-party" class="go-devices-accounts">Third-Party Services</li>
-                        <li id="m-vp-network" class="go-devices-accounts">VPN</li>                  
-                    </ul>
+    submenuli = "";
+    for (const section of sections){
+        // build the ID
+        liid = `go-to-${section.section}`;
+        menu += `<li id=${liid}>${section.title}</li>`;
+        for (const sub of section.subs) {
+            submenuli += `<li id="m-${sub.name}" class="go-${section.section}">${sub.subtitle}</li>`;
+        } 
+    }
+    menu += `</ul><ul id="nav-subcats" class="pos4"><li id="go-back-cats">${textStore.oc.header.mobile.back}</li>${submenuli}</ul></div>`;
 
-                </div>`;
-//    //for each of the main sections
-//    for (var m = 0; m < s.length; m++){
-//        //  build an element for it
-//        menu += `<p id="nav-${s[m].section}">${s[m].title}</p><img src="assets/images/menu-forward.png" alt="View survey sections"/><div id="subs-${s[m].section}">`;
-//        
-//        // for each of the subsections
-//        for (var i=0; i<s[m].subs.length; i++){
-//            menu += `<p id="sub-${s[m].subs[i].name}">${s[m].subs[i].subtitle}</p>`;
-//        }
-//        menu += `</div>`;   
-//    }
-//    menu += '</div>';
-//    // append after menu trigger
+    // append after menu trigger
     document.getElementById('lang-container').insertAdjacentHTML('afterend', menu);
     prepTheMenu();
 }

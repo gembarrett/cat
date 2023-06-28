@@ -1972,6 +1972,11 @@ var en_oc = {
     "title": "Cybersecurity Assessment Tool",
     "subtitle": "Ford Foundation",
     "cta":"Use the tool",
+      "mobile": {
+          "goto": "Go to section...",
+          "save": "Save &amp; resume later",
+          "back": "Back"
+      }
   },
   "intro": {
     "title": "What people on the internet have said about us",
