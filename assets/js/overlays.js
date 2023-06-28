@@ -26,7 +26,6 @@ function checkForEmail(val){
 function openPanel(el){
     // what are we opening
     panelID = el.target.classList;
-    console.log(panelID);
     
     if (panelID.contains('result-email') || panelID.contains('result-generate')){
         // if we're on the results page, the link needs to direct to results page
@@ -67,7 +66,6 @@ function openPanel(el){
 
 function hidePanel(panel){    
 // hide any overlays that are open
-    console.log(panel);
     // if it's the mobile prompt overlay
     if (panel.parentElement.id.endsWith('mobile')){
         // remove it from the DOM altogether to avoid accidentally reopening it

@@ -137,6 +137,9 @@
 
 /* this is where most of the mobile view kicks in */
 @media (max-width:600px){
+    #menu-containers {
+        display: block;
+    }
     #overlay-mobile .inner-panel {
         width: 100%;
         height: 100%;
@@ -267,7 +270,6 @@
         background-color: initial;
         margin-top:0;
     }
-
     .contain-sm {
         width:100vw;
     }

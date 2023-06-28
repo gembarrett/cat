@@ -18,7 +18,6 @@ if(isset($_POST['submit'])){
         <link rel="stylesheet" href="assets/css/granular.css" />
         <link rel="stylesheet" href="assets/css/media.css" />
         <!-- ONLY NEEDED FOR FONT AWESOME <link href="assets/css/all.css" rel="stylesheet"> -->
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="content/en-content.js"></script>
         <script src="content/links.js"></script>
 
@@ -52,12 +51,54 @@ if(isset($_POST['submit'])){
               <ul id="lang-list" class="title">
                 <select name="language">
                   <option value="en">English</option>
-                  <option value="es">Español</option>
                 </select>
               </ul>
             </div>
-            <!-- when other languages are added this will need to be updated -->
+<!--
             <div id="nav-container">
+                <div id="sNav">
+                    <ul id="nav-main" class="pos2">
+                        <li id="go-toCats">Go to section...</li>
+                        <li class="later">Save &amp; resume later</li>
+                    </ul>
+                    <ul id="nav-cats" class="pos3">
+                        <li class="go-back-1">Back</li>
+                        <li id="go-understand-risk">Understanding Risk</li>
+                        <li id="go-op-sec">Operational Security</li>
+                        <li id="go-devices-accounts">Device and Account Security</li>
+                    </ul>
+                    <ul id="sub-understand-risk" class="pos4">
+                        <li class="go-back-2">Back</li>
+                        <li id="m-your-org">About Your Organization</li>
+                        <li id="m-external-threats">External Threats</li>
+                    </ul>
+                    <ul id="sub-op-sec" class="pos4">
+                        <li class="go-back-2">Back</li>
+                        <li id="m-policy-docs">Policy &amp; Documentation</li>
+                        <li id="m-internal-risks">Internal Risks</li> 
+                        <li id="m-training-support">Staff Training &amp; Support</li>
+                        <li id="m-travel-policy">Travel Policy</li>        
+                        <li id="m-managing-data">Managing Data</li>  
+                        <li id="m-web-security">Website Security</li>  
+                        <li id="m-office-security">Office Policies &amp; Systems</li>  
+                        <li id="m-legal-risks">Legal Risks</li>    
+                    </ul>
+                    <ul id="sub-devices-accounts" class="pos4">
+                        <li class="go-back-2">Back</li>
+                        <li id="m-messaging-collab">Messaging &amp; Collaboration</li>
+                        <li id="m-installing-software">Installing Software</li>                        
+                        <li id="m-data-encryption">Data Encryption</li>  
+                        <li id="m-device-compartmentalization">Compartmentalization</li>  
+                        <li id="m-passwords-authentication">Passwords &amp; Authentication</li>         
+                        <li id="m-system-updates">System Updates</li> 
+                        <li id="m-op-continuity">Operational Continuity</li>
+                        <li id="m-third-party">Third-Party Services</li>
+                        <li id="m-vp-network">VPN</li>                        
+                    </ul>
+                </div>
+                
+                
+                
                 <div id="survey-menu">
                     <div id="section-trigger">
                         <p>Go to section...</p>
@@ -67,6 +108,7 @@ if(isset($_POST['submit'])){
                     <p class="later">Save &amp; resume later</p>
                 </div>
             </div>
+-->
           </div>
         </div>
         <div id="page">
@@ -112,6 +154,7 @@ if(isset($_POST['submit'])){
         <script src="assets/js/overlays.js"></script>
         <script src="assets/js/translation.js"></script>
         <script src="assets/js/progress.js"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </body>
       <?php
   } else {

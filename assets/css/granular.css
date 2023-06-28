@@ -33,45 +33,7 @@
   padding-right: 2em;
   margin-right: 4em;
 }
-/*
-.trio p {
-  flex: 2 0 60%;
-}
-.trio h1 {
-  flex: 1 0 15%;
-}
-#trio {
-  display: flex;
-  flex-direction: row;
-}
-.trio-col {
-  width: 33.33333%;
-}
-.trio-col span {
-  display: block;
-}
-.trio-col a {
-  color: inherit;
-}
-.trio-col a:focus {
-  border: 0;
-}
-.trio-col a:active:focus {
-  display: block;
-  border: 0;
-  color: inherit;
-}
-.trio-col img {
-  width: 100%;
-  display: block;
-}
-.trio-col h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 2.4em;
-  padding: 0.5em 1em 1em;
-  line-height: 1.2em;
-} */
+
 #hero {
   flex-direction: column;
   margin-top:5em;
@@ -557,6 +519,7 @@ form span {
   padding: 0.25em 0;
     display: flex;
     align-items: flex-start;
+    display:block;
 }
 form input {
   margin-right: 10px;
@@ -819,4 +782,80 @@ show prev
 #intro-p span {
     margin:0;
     padding:0;
+}
+
+
+/* mobile menu styles */
+
+#nav-container {
+    overflow-x: hidden;
+}
+
+#menu-containers {
+    display: none;
+}
+
+#sNav ul {
+    position: absolute;
+    background-color: #dad9cf;
+    width:100%;
+    margin:0;
+    list-style: none;
+    padding:0;
+}
+
+#sNav li {
+    padding:1em 2em;
+    border-bottom:1px solid rgba(0,0,0,.2);
+}
+
+.pos0 {
+    left: -200vw
+}
+
+.pos1 {
+    left:-100vw;
+}
+
+.pos2 {
+    left:0vw;
+}
+
+.pos3 {
+    left:100vw;
+}
+.pos4 {
+    left:200vw;
+}
+
+#nav-subcats li {
+    display:none;
+}
+#nav-subcats li.show {
+    display: inherit;
+}
+
+#sNav li[id^="go-to"]::after {
+    content: "";
+    background-image: url('../images/menu-forward.png');
+}
+#sNav li[id^="go-back"]::before {
+    content: "";
+    background-image: url('../images/menu-back.png');
+    margin-right: 10px;
+}
+#sNav li[id^="go-to"] {
+    display: flex;
+    justify-content: space-between;
+}
+#sNav li[id^="go-back"] {
+        display: flex;
+    justify-content: initial;
+}
+#sNav li[id^="go-back"]::before, #sNav li[id^="go-to"]::after {
+    display: block;
+    height: 16px;
+    width:16px;
+    background-size: cover;
+    margin-top:5px;
 }
