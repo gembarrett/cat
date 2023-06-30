@@ -11,7 +11,7 @@ Each file should contain the following:
 ### Survey content structure
 The survey has three sections, each of which contains subsections, questions and answers. The structure of a section and its child subsections is described below, using an example from the Understanding Risk section to demonstrate:
 
-```
+```json
 "section": "understand-risk"    // each section has a two-word hyphenated reference that is used through the code
 "title": "Understanding Risk",  // the title is used through the display
     "subs": [   // the subs array contains multiple data objects containing the section's subsections
@@ -40,7 +40,7 @@ Content for Results & Recommendations is structured a little differently, in tha
 * reusables: this contains the text that is used repeatedly to introduce the below/ok/exceeds content, and the points threshold for that result level
 * content: this contains the results and recommendations for each result level of each subsection. The structure is demonstrated below using an example also from the Understanding Risk section:
 
-```
+```json
       "your-org":{  // uses the same two-word reference as the subsection object did
           "section": "Understanding Risk",  // the section's display title
           "title": "About Your Organization",   // the subsection's display title
