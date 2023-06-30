@@ -111,6 +111,22 @@ function changeBackground(sectionID) {
     }
 }
 
+function showOptionals(el){
+    console.log(el);
+        // was this a trigger answer
+    if (el.attributes.ifyes !== undefined){
+        // if yes, does the fieldset already have the right class
+        if (el.closest('fieldset.showOptional') === null){
+            el.closest('fieldset').classList.add('showOptional');
+        } // if it's a trigger answer and the class is already there then do nothing
+    } else {
+        // if no, does the class need to be removed from the fieldset  
+        if (el.closest('fieldset.showOptional') !== null) {
+            el.closest('fieldset').classList.remove('showOptional'); 
+        } // if it's not a trigger and there's no class nearby then do nothing
+    }
+}
+
 // when a radio button is selected
 function updateProgress(e) {
     // when there's an answer, we need to know:
@@ -118,18 +134,7 @@ function updateProgress(e) {
         // was the answer already selected
         // was there aleady an answer for that question which needs to be replaced
     
-    // was this a trigger answer
-    if (e.target.attributes.ifyes !== undefined){
-        // if yes, does the fieldset already have the right class
-        if (e.target.closest('fieldset.showOptional') === null){
-            e.target.closest('fieldset').classList.add('showOptional');
-        } // if it's a trigger answer and the class is already there then do nothing
-    } else {
-        // if no, does the class need to be removed from the fieldset  
-        if (e.target.closest('fieldset.showOptional') !== null) {
-            e.target.closest('fieldset').classList.remove('showOptional'); 
-        } // if it's not a trigger and there's no class nearby then do nothing
-    }
+    showOptionals(e.target);
         
     // has this question been answered before?
     newAnswerCheck = isNewAnswer(e.target); // returns either true or the matching answers
@@ -172,7 +177,6 @@ function updateProgress(e) {
 }
     
 function updateBar(fromLink){
-    console.log('updating the bar');
     count = 0;
     // first, sort the answers
     currentState.answered.sort();
@@ -180,6 +184,7 @@ function updateBar(fromLink){
     for (var i=0; i<currentState.answered.length; i++){
         // if answer should be counted (it's from an uncounted, required question)
         if (countThis(i) && !currentState.answered[i].endsWith('-o')){
+            console.log('counting this');
             count++;
         } else {
             // don't count this question

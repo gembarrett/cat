@@ -90,8 +90,8 @@ function buildAnswers(r, type, req, aArr){
   var answers = "";
   for (var a = 0; a< aArr.length; a++){
     id = r +`-`+ a;
-//    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + (req === "true" ? `required>` : `>`);
-    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + (aArr[a].ifyes === true ? `ifyes="true">` : `>`);
+//    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + ;
+    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + (req === "true" ? `required ` : ``) + (aArr[a].ifyes === true ? `ifyes="true">` : `>`);
     answers += `<label for="${id}">${aArr[a].aText}</label></span>`;
   }
   return answers;

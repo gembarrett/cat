@@ -77,6 +77,7 @@ function doThePreselections(){
                 // updateProgress(e) happens
             // check the button
             element.checked = true;
+            showOptionals(element);
             // push it to the answered array
             currentState.answered.push(isRequired(element));
         } else {

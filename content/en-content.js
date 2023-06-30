@@ -449,7 +449,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] Does your security policy cover any aspect of cybersecurity, such as safe use of mobile devices or computers?",
+            "q": "Does your security policy cover any aspect of cybersecurity, such as safe use of mobile devices or computers?",
             "area": "docs",
             "required": "false",
             "type": "radio",
@@ -477,7 +477,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] When was the last time you updated or reviewed your security policies?",
+            "q": "When was the last time you updated or reviewed your security policies?",
             "area": "docs",
             "required": "false",
             "type": "radio",
@@ -505,7 +505,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] How often do you believe your staff members are following your security policies?",
+            "q": "How often do you believe your staff members are following your security policies?",
             "area": "docs",
             "required": "false",
             "type": "radio",
@@ -709,7 +709,7 @@ var en_qs = [
               ]
             },
             {
-              "q": "[If yes] How often do these groups in your organization receive cybersecurity training?",
+              "q": "How often do these groups in your organization receive cybersecurity training?",
               "area": "training",
               "required": "false",
               "type": "radio",
@@ -741,7 +741,7 @@ var en_qs = [
               ]
             },
             {
-              "q": "[If yes] Do new staff members at your organization receive cybersecurity training (onboarding)?",
+              "q": "Do new staff members at your organization receive cybersecurity training (onboarding)?",
               "area": "training",
               "required": "false",
               "type": "radio",
@@ -853,7 +853,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] What risks are covered in your travel security-related policy?",
+            "q": "What risks are covered in your travel security-related policy?",
             "area": "travel",
             "required": "false",
             "type": "radio",
@@ -1006,7 +1006,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] How concerned are you that your website will become a target for people who want to do harm to your organization?",
+            "q": "How concerned are you that your website will become a target for people who want to do harm to your organization?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1030,7 +1030,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] Does your organization share information of public interest on your website that could upset groups that disagree with you?",
+            "q": "Does your organization share information of public interest on your website that could upset groups that disagree with you?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1058,7 +1058,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] If someone hacked your organization’s website, what types of information could they get?",
+            "q": "If someone hacked your organization’s website, what types of information could they get?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1086,7 +1086,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] What is your process for keeping a regularly updated backup of your website?",
+            "q": "What is your process for keeping a regularly updated backup of your website?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1118,7 +1118,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] Try typing your organization’s website into a browser address bar starting with 'http://' and then with 'https://'. What happens?",
+            "q": "Try typing your organization’s website into a browser address bar starting with 'http://' and then with 'https://'. What happens?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1600,7 +1600,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "[If yes] Do your staff members also use their password managers to generate new passwords?",
+            "q": "Do your staff members also use their password managers to generate new passwords?",
             "area": "auth",
             "required": "false",
             "type": "radio",
