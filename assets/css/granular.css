@@ -860,3 +860,12 @@ show prev
     background-size: cover;
     margin-top:5px;
 }
+
+fieldset:not(.required) {
+    display:none;
+}
+
+/* only include sections that have optional questions */
+.policy-docs fieldset.required.showOptional ~ fieldset:not(.required), .training-support fieldset.required.showOptional ~ fieldset:not(.required), .travel-policy fieldset.required.showOptional ~ fieldset:not(.required), .web-security fieldset.required.showOptional ~ fieldset:not(.required), .passwords-authentication fieldset.required.showOptional ~ fieldset:not(.required){
+    display:block;
+}

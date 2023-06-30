@@ -67,7 +67,7 @@ function buildElements(el){
   var element = "";
   for (var e=0; e< el.length; e++){
     var ref = el[e].trigger +`-`+e;
-    element += `<fieldset>`;
+    element += `<fieldset `+(el[e].reqd === "true" ? `class="required">` : `>`);
     element += `<legend>`+counter+`. `+el[e].qText;
 
     // is there error text to be included here
@@ -90,7 +90,8 @@ function buildAnswers(r, type, req, aArr){
   var answers = "";
   for (var a = 0; a< aArr.length; a++){
     id = r +`-`+ a;
-    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + (req === "true" ? `required>` : `>`);
+//    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + (req === "true" ? `required>` : `>`);
+    answers += `<span><input type="${type}" data-pts="${aArr[a].pts}" id="${id}" name="${r}" ` + (aArr[a].ifyes === true ? `ifyes="true">` : `>`);
     answers += `<label for="${id}">${aArr[a].aText}</label></span>`;
   }
   return answers;

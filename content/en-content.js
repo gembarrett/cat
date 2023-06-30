@@ -431,7 +431,8 @@ var en_qs = [
             "answers": [
               {
                 "a": "We have a formal documented policy.",
-                "pts": 0
+                "pts": 0,
+                "ifyes": true
               },
               {
                 "a": "We discuss policies but do not document them.",
@@ -679,15 +680,19 @@ var en_qs = [
               "answers": [
                 {
                   "a": "Staff only",
-                  "pts": 10
+                  "pts": 10,
+                    "ifyes": true
                 },
                 {
                   "a": "Staff, volunteers and contractors",
-                  "pts": 0
+                  "pts": 0,
+                    "ifyes": true
                 },
                 {
                   "a": "Staff, volunteers and contractors, and any individual or organization we work with frequently",
-                  "pts": 0
+                  "pts": 0,
+                    "ifyes": true
+    
                 },
                 {
                   "a": "No one receives cybersecurity training.",
@@ -825,11 +830,13 @@ var en_qs = [
             "answers": [
               {
                 "a": "Yes, and we mostly follow these policies.",
-                "pts": 0
+                "pts": 0,
+                "ifyes": true
               },
               {
                 "a": "Yes, but we do not always follow these policies.",
-                "pts": 5
+                "pts": 5,
+                "ifyes": true
               },
               {
                 "a": "No, we do not have travel safety policies.",
@@ -989,7 +996,8 @@ var en_qs = [
             "answers": [
               {
                 "a": "Yes",
-                "pts": 0
+                "pts": 0,
+                "ifyes": true
               },
               {
                 "a": "No",
@@ -1573,11 +1581,13 @@ var en_qs = [
             "answers": [
               {
                 "a": "Yes, everyone does.",
-                "pts": 0
+                "pts": 0,
+                "ifyes": true
               },
               {
                 "a": "Yes, some people do.",
-                "pts": 5
+                "pts": 5,
+                "ifyes": true
               },
               {
                 "a": "No, no one does.",

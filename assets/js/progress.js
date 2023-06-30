@@ -117,6 +117,19 @@ function updateProgress(e) {
         // which answer was selected (for results processing)
         // was the answer already selected
         // was there aleady an answer for that question which needs to be replaced
+    
+    // was this a trigger answer
+    if (e.target.attributes.ifyes !== undefined){
+        // if yes, does the fieldset already have the right class
+        if (e.target.closest('fieldset.showOptional') === null){
+            e.target.closest('fieldset').classList.add('showOptional');
+        } // if it's a trigger answer and the class is already there then do nothing
+    } else {
+        // if no, does the class need to be removed from the fieldset  
+        if (e.target.closest('fieldset.showOptional') !== null) {
+            e.target.closest('fieldset').classList.remove('showOptional'); 
+        } // if it's not a trigger and there's no class nearby then do nothing
+    }
         
     // has this question been answered before?
     newAnswerCheck = isNewAnswer(e.target); // returns either true or the matching answers
@@ -159,6 +172,7 @@ function updateProgress(e) {
 }
     
 function updateBar(fromLink){
+    console.log('updating the bar');
     count = 0;
     // first, sort the answers
     currentState.answered.sort();
