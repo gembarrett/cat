@@ -29,7 +29,7 @@ In the survey, the questions are numbered sequentially, including optional quest
 a) adding nested numbering to the optional questions (e.g. 17a, 17b, etc.), or
 b) removing the numbering altogether
 
-### Additional tasks
+## Additional tasks
 As of EOD June 30th, the following tasks remain for future development of the Cybersecurity Assessment Tool (CAT):
 * update the Results & Recommendations content - current gaps are being filled with lorem ipsum placeholder text
 * replacing any remaining hard-coded values
