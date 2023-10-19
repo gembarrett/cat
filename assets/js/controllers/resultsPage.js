@@ -20,7 +20,6 @@ controllers.resultsPage = function(data, params){
 
       // for each of the categories
       for (const rr in tally){
-          console.log('tallying answers');
         // check each of the answers
         for (var ans=0; ans<currentState.answered.length; ans++){
             // get the subsection

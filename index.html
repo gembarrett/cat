@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!--REMOVE THIS & ALL PHP CODE IN PROD -->
-<?php
-require 'config.php';
-
-if(isset($_POST['submit'])){
-  if($_POST['username'] == $username && $_POST['password'] == $password){
-    ?>
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,20 +95,5 @@ if(isset($_POST['submit'])){
         <script src="assets/js/progress.js"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </body>
-      <?php
-  } else {
-    echo "Nope.";
-  }
-} else {
-  ?>
-  <form method="post">
-    <h1 style='font-family: sans-serif'>Log in</h1>
-    <p style='font-family: sans-serif'>Username: <input type="text" name="username" /></p>
-    <p style='font-family: sans-serif'>Password: <input type="password" name="password" /></p>
-    <input type="submit" name="submit" value="submit" />
-  </form>
-  <?php
-}
-
-?>
+      
 </html>

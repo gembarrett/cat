@@ -112,7 +112,6 @@ function changeBackground(sectionID) {
 }
 
 function showOptionals(el){
-    console.log(el);
         // was this a trigger answer
     if (el.attributes.ifyes !== undefined){
         // if yes, does the fieldset already have the right class
@@ -184,7 +183,6 @@ function updateBar(fromLink){
     for (var i=0; i<currentState.answered.length; i++){
         // if answer should be counted (it's from an uncounted, required question)
         if (countThis(i) && !currentState.answered[i].endsWith('-o')){
-            console.log('counting this');
             count++;
         } else {
             // don't count this question

@@ -15,7 +15,7 @@ templates.team = function(data){
     const rando = team[Math.floor(Math.random() * team.length)];
     // add img, span name and p for that element
     teamContent += `<div class="person">
-                      <img src="/assets/images/`+rando.ref+`.png" />
+                      <img src="./assets/images/`+rando.ref+`.png" />
                       <p><span class="person-name">`+rando.name+`</span>`+rando.text+`</p>
                     </div>`;
     // remove ref from array
