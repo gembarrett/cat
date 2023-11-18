@@ -8,7 +8,7 @@ var en_qs = [
           "subtitle": "About Your Organization",
           "questions": [
             {
-              "q": "How would you best describe your approach to cybersecurity?",
+              "q": "How would you best describe your organization’s approach to cybersecurity?",
               "area": "risks",
               "required": "true",
               "type": "radio",
@@ -36,7 +36,7 @@ var en_qs = [
               ]
             },
             {
-              "q": "What is the mood when cybersecurity comes up in conversation?",
+              "q": "What is the mood when cybersecurity comes up at your organization?",
               "area": "risks",
               "required": "true",
               "type": "radio",
@@ -64,7 +64,7 @@ var en_qs = [
               ]
             },
             {
-              "q": "On average, how eager are your staff members to keep your organization secure?",
+              "q": "In general, how eager are your staff members to keep your organization secure?",
               "area": "risks",
               "required": "true",
               "type": "radio",
@@ -88,7 +88,7 @@ var en_qs = [
               ]
             },
             {
-              "q":"Does your organization (or the communities you work with) face potential backlash from groups who disagree with you?",
+              "q":"Does your organization (or the communities you work with) face potential backlash from groups who disagree with your work?",
               "area": "risks",
               "required": "true",
               "type": "radio",
@@ -226,7 +226,7 @@ var en_qs = [
               ]
             },
             {
-              "q": "How often do you consider cybersecurity when you make decisions about internal workflow and processes?",
+              "q": "How often does your organization consider cybersecurity when you make decisions about internal workflow and processes?",
               "area": "risks",
               "required": "true",
               "type": "radio",
@@ -449,7 +449,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "Does your security policy cover any aspect of cybersecurity, such as safe use of mobile devices or computers?",
+            "q": "Does your organization’s security policy cover any aspect of cybersecurity, such as safe use of mobile devices or computers?",
             "area": "docs",
             "required": "false",
             "type": "radio",
@@ -477,7 +477,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "When was the last time you updated or reviewed your security policies?",
+            "q": "When was the last time your organization updated or reviewed your security policies?",
             "area": "docs",
             "required": "false",
             "type": "radio",
@@ -539,7 +539,7 @@ var en_qs = [
         "subtitle": "Internal Risks",
         "questions": [
           {
-            "q": "How many times in the past year have you identified problems with your organization’s security?",
+            "q": "How many times in the past year have your staff members identified problems with your organization’s security?",
             "area": "i-risks",
             "required": "true",
             "type": "radio",
@@ -591,7 +591,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "Do you have a policy for removing access to data after a staff member leaves your organization?",
+            "q": "Does your organization have a policy for removing access to data after a staff member leaves your organization?",
             "area": "i-risks",
             "required": "true",
             "type": "radio",
@@ -853,7 +853,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "What risks are covered in your travel security-related policy?",
+            "q": "What risks are covered in your organization’s travel security-related policy?",
             "area": "travel",
             "required": "false",
             "type": "radio",
@@ -1006,7 +1006,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "How concerned are you that your website will become a target for people who want to do harm to your organization?",
+            "q": "How concerned are you that your website will become a target for groups who disagree with your organization?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1030,7 +1030,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "Does your organization share information of public interest on your website that could upset groups that disagree with you?",
+            "q": "Does your organization share information of public interest on your website that could upset groups that disagree with your organization?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1086,7 +1086,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "What is your process for keeping a regularly updated backup of your website?",
+            "q": "What is your organization’s process for keeping a regularly updated backup of your website?",
             "area": "web",
             "required": "false",
             "type": "radio",
@@ -1232,7 +1232,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "Do you have a process for closing up at the end of the day in all your offices?",
+            "q": "Does your organization have a process for closing up at the end of the day in all your offices?",
             "area": "office",
             "required": "true",
             "type": "radio",
@@ -1280,7 +1280,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "Do you have a process for throwing away printed information?",
+            "q": "Does your organization have a process for throwing away printed information?",
             "area": "office",
             "required": "true",
             "type": "radio",
@@ -1314,7 +1314,7 @@ var en_qs = [
         "subtitle": "Legal Risks",
         "questions": [
           {
-            "q": "Are you concerned about legal requests for your organization’s internal documents?",
+            "q": "Is your organization concerned about legal requests for internal documents?",
             "area": "legal",
             "required": "true",
             "type": "radio",
@@ -1518,7 +1518,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "Do you have a process for acquiring, maintaining, and disposing of hardware and devices that include security procedures (e.g., erasing devices between uses)?",
+            "q": "Does your organization have a process for acquiring, maintaining, and disposing of hardware and devices that includes security procedures (e.g., erasing devices between uses)?",
             "area": "encryption",
             "required": "true",
             "type": "radio",
@@ -1822,7 +1822,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "Do you use non-business platforms (e.g. Facebook Messenger, WeTransfer, Instagram) to share or receive sensitive information?",
+            "q": "Does your organization use non-business platforms (e.g. Facebook Messenger, WeTransfer, Instagram) to share or receive sensitive information?",
             "area": "services",
             "required": "true",
             "type": "radio",
@@ -1846,7 +1846,7 @@ var en_qs = [
             ]
           },
           {
-            "q": "When you upgrade or stop using a third-party service, is there a process for turning it off or deleting accounts?",
+            "q": "When your organization upgrades or stops using a third-party service, is there a process for turning it off or deleting accounts?",
             "area": "services",
             "required": "true",
             "type": "radio",
@@ -1992,7 +1992,7 @@ var en_oc = {
     "title": "What people on the internet have said about us",
     "content": [
       "COVID-19 has fundamentally changed the way we live and work. This includes using technology more than ever before, raising the already important issue of cybersecurity within civil society organizations. However, finding where to begin and understanding the best way to tackle this topic can feel daunting for even the best-resourced organizations. That’s why we have created this tool.",
-      "The Ford Foundation’s Cybersecurity Assessment Tool (CAT) is designed to measure the maturity, resiliency, and strength of an organization’s cybersecurity efforts. We have created this questionnaire with busy nontechnical grant makers, grantee partners, civil society organizations, and nonprofits in mind, and we hope it helps shine some light on a recommended path forward for any organization undertaking a cybersecurity journey. The tool is designed to be taken as a survey in one sitting. However, it may require information from several members of your staff, including operations staff or decision makers. We initially created the questionnaire to help BUILD’s grantee partners, and we’re now making a beta version available for public use."
+      "The Ford Foundation’s Cybersecurity Assessment Tool (CAT) is designed to measure the maturity, resiliency, and strength of an organization’s cybersecurity efforts. We have created this questionnaire with busy nontechnical grant makers, grantee partners, civil society organizations, and nonprofits in mind, and we hope it helps shine some light on a recommended path forward for any organization undertaking a cybersecurity journey. The tool is designed to be taken as a survey in one 60-90-minute sitting. However, it may require information from several members of your staff, including operations staff or decision makers. We initially created the questionnaire to help BUILD’s grantee partners, and we’re now making a beta version available for public use."
     ]
   },
   "process": {
@@ -2020,32 +2020,32 @@ var en_oc = {
       {
         "ref":"grooten",
         "name": "Martijn Grooten",
-        "text": " worked as an academic mathematician before finding himself with a job at a security company almost 14 years ago. He has a broad interest in security and was the editor of Virus Bulletin for almost six years. He is a regular public speaker and writer and currently works as a security consultant with a particular focus on helping vulnerable groups and people. He is a fellow of the Civilsphere Project and a special advisor to the Coalition Against Stalkerware."
+        "text": "Expert in malware and email security"
       },
       {
         "ref": "hansen",
         "name": "Matt Hansen",
-        "text": "’s work has appeared in the Los Angeles Times, The Week, Chicago Tribune, Baltimore Sun, the San Francisco Chronicle, and KQED-FM. He has also written for organizations including the Committee to Protect Journalists, the Robin Hood Foundation, Smart Design, the Museum of the Moving Image, and Spaceship Media. Matt assists with digital and physical safety training for news and nonprofit clients with GJS, a training provider for high-risk environments."
+        "text": "Writer and editor"
       },
       {
         "ref": "mitchell",
         "name": "Matt Mitchell",
-        "text": " is a tech fellow working with the BUILD and Technology and Society teams to develop cybersecurity training, technical assistance, and safety and security measures for the foundation’s grantee partners. Matt is a hacker and expert on counter surveillance and cybersecurity."
+        "text": "Senior Cybersecurity Program Manager, Ford Foundation"
       },
       {
         "ref": "nguyen",
         "name": "Trinh Nguyen",
-        "text": " is a holistic security and movement building trainer, currently serving as the head of operations for Team CommUNITY at ARTICLE 19. Trinh has over 15 years of training experience, previously working on campaigns for reproductive justice, anti-oppression, Internet freedom, and pro-democracy efforts in Vietnam. As a movement building trainer, she incorporates capacity building and cybersecurity tactics to help diverse grassroots pro-democracy and human rights movements achieve digital resiliency and organizational security."
+        "text": "Holistic security and movement building trainer"
       },
       {
         "ref": "sandvik",
         "name": "Runa Sandvik",
-        "text": " works on digital security for journalists and other high-risk people. Her work builds upon experience from her time at The New York Times, Freedom of the Press Foundation, and The Tor Project. She is a board member of the Norwegian Online News Association and tweets as @runasand."
+        "text": "Founder, Granitt"
       },
       {
         "ref": "tich",
         "name": "Laura Tich",
-        "text": " is an information security analyst and cybersecurity trainer with expertise in network security and open source intelligence. She is an advocate for Internet freedom and has worked on various projects around digital security for journalists and civil society organizations across Africa. She is a founder of SheHacks_KE, a community of women cybersecurity professionals and enthusiasts in Kenya. The community empowers women in cybersecurity by facilitating free training workshops and providing mentorship."
+        "text": "Founder, SheHacks_KE"
       }
     ]
   },
@@ -2143,7 +2143,11 @@ var en_oc = {
     ]
   },
     "results": {
-        "intro": "This assessment was completed on [[date]]. Here is how you scored in each section:",
+        "intro": [
+            "You have completed our survey—congratulations! We hope that our questions led to some fruitful discussions between you and your staff members, and that this process has allowed you all a chance to reflect on your cybersecurity practices. Below you’ll see how your organization scored in our survey, as well as receive tailored recommendations on how you and your organization can improve your security further.",
+            "There’s a significant amount of text below, so if you’ve just completed the survey, you might want to save a link to these answers, email them to yourself, or print out the whole series so you can take your time reviewing details at a later date."
+        ],
+        "date": "This assessment was completed on [[date]].",
         "feedback": {
             "title": "Help Us Make The Cybersecurity Assessment Tool Better!",
             "btn": "Give feedback"
@@ -2161,7 +2165,7 @@ var en_oc = {
 
 // this is old recommendations text - replace when updated text available
 var en_rs = { 
-  "title": "Results and Recommendations",
+  "title": "Results &amp; Recommendations",
   "reusables": {
     "below": {
       "title": "Below",
@@ -2201,13 +2205,25 @@ var en_rs = {
                   {
                       "title": "Determine your threat model.",
                       "content": [
-                          "Tellus molestie nunc non blandit massa. Sagittis nisl rhoncus mattis rhoncus urna neque. Dignissim suspendisse in est ante in nibh mauris. Amet venenatis urna cursus eget nunc. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Vestibulum lorem sed risus ultricies tristique. Mattis rhoncus urna neque viverra justo nec. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Eget egestas purus viverra accumsan in. Arcu vitae elementum curabitur vitae."
+                          "When thinking about the risks that your organization faces in the digital world, it’s helpful to think about all the risks that confront you and your staff members outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the offline world, such as risks posed by groups who disagree with your organization, natural disasters, and legal actions.",
+                          "Documenting and analyzing your risk is known in cybersecurity as “threat modeling,”a process which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [[here]](links.eff.tmodel). Access Now Helpdesk offers an easy-to-follow guide to threat models with examples [[here]](links.an.tmodel)."
                       ]
                   },
                   {
                       "title": "Create a risk matrix.",
                       "content": [
-                          "Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Sed elementum tempus egestas sed sed risus pretium quam. Consequat mauris nunc congue nisi vitae suscipit. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Sed risus ultricies tristique nulla aliquet enim tortor. Scelerisque fermentum dui faucibus in ornare. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Leo vel fringilla est ullamcorper. Justo donec enim diam vulputate ut. Tortor at risus viverra adipiscing."
+                          "Every organization’s risks are unique, and the context in which you work will help you better map out which risks are both most likely and most dangerous for your staff. It’s helpful to think about risks to your organization’s security based on the likelihood and the impact of particular threats. Just because an event is likely doesn’t mean it deserves your full attention. There may be less frequent threats that could have significantly more of an impact on your organization. For example, some threats—such as physical damage to your phone—may be highly likely but not very effective or dangerous. Other threats, such as a cyberattack, may be much less likely but very dangerous.",
+                          "You can map these risks using a tool called a “risk matrix,” which represents your different threats on a chart with likelihood on one axis and impact on the other.",
+                          "Here's an example.",
+                          {
+                              "type": "table",
+                              "rows": [
+                                ["", "Low Likelihood", "High Likelihood"],
+                                ["Low Consequence", "Printer is stolen from your office", "Physical damage to your phone"],
+                                ["High Consequence", "Cyberattack", "Phishing attack on your email account"]
+                              ]
+                            },
+                          "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [[here]](links.eff.matrix). Tactical Tech’s Holistic Security offers [[additional reading]](links.ttech.matrices) on these matrices."
                       ]
                   }
               ],
@@ -2251,7 +2267,7 @@ var en_rs = {
                       "title": "Determine your threat model.",
                       "content": [
                           "When thinking about the risks that face your organization in the digital world, it’s helpful to think about all the risks that your staff  faces outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the “offline” world, such as risks posed by governments, law enforcement, criminal groups, and lawsuits.",
-                          "Documenting and analyzing your risk is a process known in cybersecurity as “threat modeling.”, which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [[here]](links.eff.tmodel). Access Now Helpdesk offers an easy guide to threat models with examples [[here]](links.an.tmodel)."
+                          "Documenting and analyzing your risk is a process known in cybersecurity as “threat modeling.”, which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [[here]](links.eff.tmodel). Access Now Helpdesk offers an easy-to-follow guide to threat models with examples [[here]](links.an.tmodel)."
                       ]
                   },
                   {

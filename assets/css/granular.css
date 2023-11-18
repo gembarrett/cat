@@ -123,9 +123,6 @@
 .person img {
   max-width: 160px;
 }
-.person span {
-  display: inline;
-}
 
 /* Legal section */
 #legal ul {

@@ -1,10 +1,10 @@
 templates.resultsTemplate = function(data, params){
     var currentDate = dateStamp();
-    var dateString = dataToPass.ui.results.intro;
+    var introContent = parseContent(data.ui.results.intro);
+    var dateString = dataToPass.ui.results.date;
     currentDate = dateString.replace('[[date]]', currentDate);
 
-    var intro = `<h1>${data.recs.title}</h1><img src="assets/images/CAT-collage-results.png" /><p>${currentDate}</p>`;
-    
+    var intro = `<h1>${data.recs.title}</h1><img src="assets/images/CAT-collage-results.png" />${introContent}<p>${dateString}</p>`;
     
     var buttons = `<button class="later result-generate">${dataToPass.ui.results.save.btns[0]}</button><button class="later result-email">${dataToPass.ui.results.save.btns[1]}</button><button class="result-print">${dataToPass.ui.results.save.btns[2]}</button>`;
     
