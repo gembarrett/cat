@@ -2054,7 +2054,7 @@ var en_oc = {
       "content":{ 
             "resume": {
               "title": "Save and resume later",
-              "content": ["Please copy the link below and save it in a safe place. You can use this link any time within 30 days to resume answering questions on the form.","Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."]
+              "content": ["Use this link to resume your CAT session. Copy the link below and save it in a safe place!"]
             },
            "result": {
                "title": "Save your results and recommendations",
@@ -2062,16 +2062,16 @@ var en_oc = {
            },
            "email": {
                "title": "Email your results",
-               "content": "Enter an email address below to access your results on our website. Your email will not be stored."
+               "content": "Want us to email this link to you? Enter your email below."
            }
       },
         "cta": "Copy link",
         "placeholder": "No link available."
     },
     "email": {
-      "content": "Want to email this link? Enter your email below.",
+      "content": "Want us to email this link to you? Enter your email below. This CAT SESSION will expire in 30 DAYS. Without the link, the data you have entered cannot be retrieved, and you will have to start from the beginning.",
       "placeholder": "Enter your email here",
-      "cta": "Email link",
+      "cta": "Send link",
         "subject": "Link to the Cybersecurity Assessment Tool",
         "body": "Here is the link to the Cybersecurity Assessment Tool (CAT): "
     }
@@ -2228,10 +2228,28 @@ var en_rs = {
                   }
               ],
               "ok": [
-                  {
+                {
                       "title": "Develop an incident response plan.",
                       "content": [
-                          "Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Duis tristique sollicitudin nibh sit amet commodo nulla. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Ut enim blandit volutpat maecenas. Elit ullamcorper dignissim cras tincidunt lobortis. Eget nullam non nisi est sit amet facilisis magna etiam. Accumsan sit amet nulla facilisi morbi. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Lacus sed viverra tellus in hac habitasse platea. Aliquam eleifend mi in nulla. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tempor id eu nisl nunc mi ipsum faucibus vitae. Iaculis eu non diam phasellus vestibulum lorem. Faucibus in ornare quam viverra orci sagittis eu volutpat. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor."
+                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [[NIST Cybersecurity]](links.nist.framework), ISO 27001, and the [[MITRE ATT&amp;CK Matrix]](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
+                          {
+                              "type": "table",
+                              "rows": [
+                                ["If an attacker...", "How would you respond..."],
+                                ["sent a malicious link and a staff member clicked on it", ""],
+                                ["hacked your organization’s social media accounts", ""],
+                                ["hacked your organization’s email accounts", ""],
+                                ["hacked your organization’s laptops or phones", ""],
+                                ["hacked or defaced your organization’s website", ""],
+                                ["tricked your organization by impersonating a donor or funder", ""],
+                                ["gained access to your organization’s data", ""],
+                                ["harassed a staff member online", ""],
+                                ["disrupted your organization’s internal communications", ""],
+                                ["stole one of your organization’s laptops or phones", ""]
+                              ]
+                          },
+                          "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a third-party security provider who can help develop solutions to these threats.",
+                          "We have also developed [[an incident response plan questionnaire]](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
                       ]
                   }
               ],
@@ -2292,24 +2310,24 @@ var en_rs = {
                   {
                       "title": "Develop an incident response plan.",
                       "content": [
-                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [[NIST Cybersecurity]](links.nist.framework), ISO 27001, and the [[MITRE ATT&CK Matrix]](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
+                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [[NIST Cybersecurity]](links.nist.framework), ISO 27001, and the [[MITRE ATT&amp;CK Matrix]](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
                           {
                               "type": "table",
                               "rows": [
                                 ["If an attacker...", "How would you respond..."],
-                                ["...sent a malicious link that was clicked on", ""],
-                                ["...hacked our social media", ""],
-                                ["...hacked our email account", ""],
-                                ["...hacked our laptops/phones", ""],
-                                ["...hacked or defaced our website", ""],
-                                ["...tricked our organization by impersonating donors/funders", ""],
-                                ["...found/discovered our data", ""],
-                                ["...harassed a member of our staff online.", ""],
-                                ["...disrupted our internal communications", ""],
-                                ["...may have stolen our laptops or devices", ""]
+                                ["sent a malicious link and a staff member clicked on it", ""],
+                                ["hacked your organization’s social media accounts", ""],
+                                ["hacked your organization’s email accounts", ""],
+                                ["hacked your organization’s laptops or phones", ""],
+                                ["hacked or defaced your organization’s website", ""],
+                                ["tricked your organization by impersonating a donor or funder", ""],
+                                ["gained access to your organization’s data", ""],
+                                ["harassed a staff member online", ""],
+                                ["disrupted your organization’s internal communications", ""],
+                                ["stole one of your organization’s laptops or phones", ""]
                               ]
                           },
-                          "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a security provider who can help develop solutions to these threats.",
+                          "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a third-party security provider who can help develop solutions to these threats.",
                           "We have also developed [[an incident response plan questionnaire]](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
                       ]
                   },
