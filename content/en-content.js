@@ -2173,7 +2173,7 @@ var en_rs = {
       "threshold": 10
     },
     "ok": {
-      "title": "Reasonable",
+      "title": "Ok",
       "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization's cybersecurity even more.",
       "threshold": 5
     },
@@ -2185,7 +2185,9 @@ var en_rs = {
     "general": {
       "what": "What We Recommend",
       "why": "Why We Recommend This", 
-      "eg": "A Real World Example"
+      "eg": "A Real World Example",
+        "you": "What You Can Do",
+        "third": "What a Third-Party Security Provider Can Help You Do"
     }
   },
   "content": {
@@ -2194,71 +2196,123 @@ var en_rs = {
           "title": "About Your Organization",
           "general": {
               "why": [
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque sit amet porttitor eget dolor. Elementum tempus egestas sed sed risus pretium. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Et ligula ullamcorper malesuada proin libero. Non arcu risus quis varius quam quisque id. Elementum sagittis vitae et leo. Adipiscing tristique risus nec feugiat in fermentum. Id interdum velit laoreet id donec ultrices. Viverra suspendisse potenti nullam ac tortor vitae purus. Eget mi proin sed libero enim sed faucibus turpis in. A diam maecenas sed enim ut. Vel fringilla est ullamcorper eget nulla facilisi etiam. At risus viverra adipiscing at in tellus integer feugiat scelerisque. Vestibulum sed arcu non odio euismod. Semper feugiat nibh sed pulvinar proin. A erat nam at lectus urna duis convallis. Venenatis urna cursus eget nunc. Nibh ipsum consequat nisl vel pretium lectus quam id. Gravida neque convallis a cras semper auctor neque."
+                  "Understanding your risk is critical to keeping your organization safe. All good safety and security planning begins with a thorough understanding of the possible threats we face. Investing time and effort into better understanding your threat model will make reducing your risk much easier in the future. Remember also that threats evolve, so you may need to update your threat model as your organization and the landscape around you change.",
+                  "Once you have developed policies, plans, and documentation, consider a tabletop exercise. Just remember to encourage an open, nonjudgmental space; learning about security vulnerabilities doesn’t require individual finger-pointing or blame.",
+                  "When—not if—a real incident occurs, it can be scary, stressful, and chaotic. Following these best practices increases the likelihood of best possible outcomes. And don’t forget that you will need to assign at least one member of your staff to oversee the cybersecurity effort within your organization."
               ],
               "eg": [
-                  "Lacinia quis vel eros donec ac. Tortor pretium viverra suspendisse potenti nullam. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. Velit dignissim sodales ut eu sem integer. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nibh nisl condimentum id venenatis. Convallis posuere morbi leo urna molestie at. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Nunc id cursus metus aliquam. Quis blandit turpis cursus in hac. Vitae sapien pellentesque habitant morbi tristique senectus et. Id ornare arcu odio ut sem. Euismod in pellentesque massa placerat. Mi eget mauris pharetra et ultrices. Habitant morbi tristique senectus et. Malesuada fames ac turpis egestas integer eget aliquet."
+                  "ADE Worldwide is a civil society organization that helps train farmers and agricultural workers around the world to use water sustainably while advocating for better global environmental policy.",
+                  "ADE sees itself as a nonpartisan, nonpolitical agricultural advisor. After its website is hacked and defaced, however, ADE realizes it needs to conduct a threat model analysis to better understand the risks the group faces around the world.",
+                  "This process helps it realize that the likelihood of these digital attacks is high for groups working on similar issues. While ADE staff members don’t see their mission as controversial, they realize their own organization’s risk profile is high due to the effectiveness and publicity of their work. As a result, they develop an incident response plan and checklist for physical and cybersecurity incidents.",
+                  "The ADE staff decides to proactively lead a series of tabletop exercises talking through how they would respond in the event of a security incident. As a result, when the frontline staff receive some verbal threats from regional groups, they are prepared with a plan to manage any potential risk."
               ]
           },
           "results": {
-              "below": [
-                  {
-                      "title": "Determine your threat model.",
-                      "content": [
-                          "When thinking about the risks that your organization faces in the digital world, it’s helpful to think about all the risks that confront you and your staff members outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the offline world, such as risks posed by groups who disagree with your organization, natural disasters, and legal actions.",
-                          "Documenting and analyzing your risk is known in cybersecurity as “threat modeling,”a process which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [[here]](links.eff.tmodel). Access Now Helpdesk offers an easy-to-follow guide to threat models with examples [[here]](links.an.tmodel)."
-                      ]
-                  },
-                  {
-                      "title": "Create a risk matrix.",
-                      "content": [
-                          "Every organization’s risks are unique, and the context in which you work will help you better map out which risks are both most likely and most dangerous for your staff. It’s helpful to think about risks to your organization’s security based on the likelihood and the impact of particular threats. Just because an event is likely doesn’t mean it deserves your full attention. There may be less frequent threats that could have significantly more of an impact on your organization. For example, some threats—such as physical damage to your phone—may be highly likely but not very effective or dangerous. Other threats, such as a cyberattack, may be much less likely but very dangerous.",
-                          "You can map these risks using a tool called a “risk matrix,” which represents your different threats on a chart with likelihood on one axis and impact on the other.",
-                          "Here's an example.",
-                          {
-                              "type": "table",
-                              "rows": [
-                                ["", "Low Likelihood", "High Likelihood"],
-                                ["Low Consequence", "Printer is stolen from your office", "Physical damage to your phone"],
-                                ["High Consequence", "Cyberattack", "Phishing attack on your email account"]
+              "below": {
+                  "you": [
+                      {
+                          "title": "Determine your threat model.",
+                          "content": [
+                              "When thinking about the risks that your organization faces in the digital world, it’s helpful to think about all the risks that confront you and your staff members outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the offline world, such as risks posed by groups who disagree with your organization, natural disasters, and legal actions.",
+                              "Documenting and analyzing your risk is known in cybersecurity as “threat modeling,”a process which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [[here]](links.eff.tmodel). Access Now Helpdesk offers an easy-to-follow guide to threat models with examples [[here]](links.an.tmodel)."
+                          ]
+                      },
+                      {
+                          "title": "Create a risk matrix.",
+                          "content": [
+                              "Every organization’s risks are unique, and the context in which you work will help you better map out which risks are both most likely and most dangerous for your staff. It’s helpful to think about risks to your organization’s security based on the likelihood and the impact of particular threats. Just because an event is likely doesn’t mean it deserves your full attention. There may be less frequent threats that could have significantly more of an impact on your organization. For example, some threats—such as physical damage to your phone—may be highly likely but not very effective or dangerous. Other threats, such as a cyberattack, may be much less likely but very dangerous.",
+                              "You can map these risks using a tool called a “risk matrix,” which represents your different threats on a chart with likelihood on one axis and impact on the other.",
+                              "Here's an example.",
+                              {
+                                  "type": "table",
+                                  "rows": [
+                                    ["", "Low Likelihood", "High Likelihood"],
+                                    ["Low Consequence", "Printer is stolen from your office", "Physical damage to your phone"],
+                                    ["High Consequence", "Cyberattack", "Phishing attack on your email account"]
+                                  ]
+                                },
+                              "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [[here]](links.eff.matrix). Tactical Tech’s Holistic Security offers [[additional reading]](links.ttech.matrices) on these matrices."
+                          ]
+                      }
+                  ]   
+              },
+              "ok": {
+                  "you": [
+                    {
+                          "title": "Develop an incident response plan.",
+                          "content": [
+                              "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [[NIST Cybersecurity]](links.nist.framework), ISO 27001, and the [[MITRE ATT&amp;CK Matrix]](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
+                              {
+                                  "type": "table",
+                                  "rows": [
+                                    ["If an attacker...", "How would you respond..."],
+                                    ["sent a malicious link and a staff member clicked on it", ""],
+                                    ["hacked your organization’s social media accounts", ""],
+                                    ["hacked your organization’s email accounts", ""],
+                                    ["hacked your organization’s laptops or phones", ""],
+                                    ["hacked or defaced your organization’s website", ""],
+                                    ["tricked your organization by impersonating a donor or funder", ""],
+                                    ["gained access to your organization’s data", ""],
+                                    ["harassed a staff member online", ""],
+                                    ["disrupted your organization’s internal communications", ""],
+                                    ["stole one of your organization’s laptops or phones", ""]
+                                  ]
+                              },
+                              "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a third-party security provider who can help develop solutions to these threats.",
+                              "We have also developed [[an incident response plan questionnaire]](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
+                          ]
+                      }
+                  ],
+                  "third": [
+                      {
+                          "title": "Understand how incident response phases work together.",
+                          "content": [
+                              "In cybersecurity, we generally use four stages to respond to an incident:",
+                              {
+                                  "type": "ol",
+                                  "items": [
+                                    "Prepare",
+                                    "Detect",
+                                    "Contain, eradicate and recover",
+                                    "Process and learn"
+                                  ]
+                              },
+                              [
+                                  {
+                                    "type": "title",
+                                    "heading": "Prepare:",
+                                    "content": 'The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps you and your staff members can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:'
+                                  },
+                                  {
+                                      "type": "ul",
+                                      "items": [
+                                          
+                                      ]
+                                  }
                               ]
-                            },
-                          "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [[here]](links.eff.matrix). Tactical Tech’s Holistic Security offers [[additional reading]](links.ttech.matrices) on these matrices."
-                      ]
-                  }
-              ],
-              "ok": [
-                {
-                      "title": "Develop an incident response plan.",
-                      "content": [
-                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [[NIST Cybersecurity]](links.nist.framework), ISO 27001, and the [[MITRE ATT&amp;CK Matrix]](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
-                          {
-                              "type": "table",
-                              "rows": [
-                                ["If an attacker...", "How would you respond..."],
-                                ["sent a malicious link and a staff member clicked on it", ""],
-                                ["hacked your organization’s social media accounts", ""],
-                                ["hacked your organization’s email accounts", ""],
-                                ["hacked your organization’s laptops or phones", ""],
-                                ["hacked or defaced your organization’s website", ""],
-                                ["tricked your organization by impersonating a donor or funder", ""],
-                                ["gained access to your organization’s data", ""],
-                                ["harassed a staff member online", ""],
-                                ["disrupted your organization’s internal communications", ""],
-                                ["stole one of your organization’s laptops or phones", ""]
-                              ]
-                          },
-                          "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a third-party security provider who can help develop solutions to these threats.",
-                          "We have also developed [[an incident response plan questionnaire]](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
-                      ]
-                  }
-              ],
+                          ]
+                      }
+                  ]
+              },
               "exceeds": [
                   {
                       "title": "Run a tabletop exercise.",
                       "content": [
-                          "Aliquam vestibulum morbi blandit cursus. Id volutpat lacus laoreet non curabitur gravida. Id porta nibh venenatis cras sed felis eget velit. Vulputate odio ut enim blandit volutpat maecenas. Nam at lectus urna duis. Etiam erat velit scelerisque in dictum non consectetur a. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Varius quam quisque id diam vel. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Quis commodo odio aenean sed. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Semper auctor neque vitae tempus quam pellentesque nec nam. Eleifend donec pretium vulputate sapien nec. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Lacinia at quis risus sed vulputate odio ut enim blandit. Sed vulputate odio ut enim. Urna molestie at elementum eu. Nam libero justo laoreet sit amet."
-                      ]                      
+                          "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff members don’t need to be physically gathered around a table to complete one. During such an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
+                          "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [[MITRE Corp.’s guidelines on tabletop exercises]](links.mitre.tabletop).",
+                          {
+                              "type": "ul",
+                              "items": [
+                                    "Determine what you would like to test (usually by choosing one of your top identified threats).",
+                                    "Designate a group leader to run the exercise.",
+                                    "Create a plausible storyline that includes the threat for which you want to test your response.",
+                                    "Gather the staff members that would be responsible for managing this threat.",
+                                    "Walk these staff members through the scenario and ask for their responses, step by step.",
+                                    "Document gaps, concerns, and weak points in the threat response."
+                                ]
+                          },
+                          "You can use the knowledge gained from a tabletop exercise to identify areas of concern and begin to develop strategies to reduce those risks."
+                      ]
                   }
               ]
           }
