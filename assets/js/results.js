@@ -89,14 +89,14 @@ function getRecsContent(el){
 }
 
 function dateStamp(){
-  // get the current date
-  var today = new Date();
-  // start creating the date stamp
-  var fullDate = today.getDate();
-  var options = {month:'long'};
-  fullDate += ' ' + new Intl.DateTimeFormat('en-UK', options).format(today);
-  fullDate += ' ' + today.getFullYear();
-  return fullDate;
+    let today = new Date();
+    const options = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }
+    today = today.toLocaleDateString('en-US', options);  
+    return today;
 }
 
 function clearData(){

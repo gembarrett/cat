@@ -2163,23 +2163,22 @@ var en_oc = {
     }
 };
 
-// this is old recommendations text - replace when updated text available
 var en_rs = { 
   "title": "Results &amp; Recommendations",
   "reusables": {
     "below": {
       "title": "Below",
-      "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity.",
+      "content": "Your organization has scored [[score]] points in the [[section]] category. This puts it below our recommended security level for civil society organizations. Don’t worry! We’ve put together some recommendations to improve your organization’s cybersecurity.",
       "threshold": 10
     },
     "ok": {
       "title": "Ok",
-      "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization's cybersecurity even more.",
+      "content": "Your organization has scored [[score]] points in the [[section]] category. This means it has a reasonable level of security in this area. Good job! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more.",
       "threshold": 5
     },
     "exceeds": {
       "title": "Exceeds",
-      "content": "Your organization has scored as [[level]] level of security in the [[section]] category. This means it has a high level of security in this area. Good work! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more.",
+      "content": "Your organization has scored [[score]] points in the [[section]] category. This means it has a healthy level of security in this area. Good work! There are still areas for improvement, so we’ve put together some recommendations to improve your organization’s cybersecurity even more.",
       "threshold": 0
     },
     "general": {
@@ -2231,7 +2230,7 @@ var en_rs = {
                                     ["High Consequence", "Cyberattack", "Phishing attack on your email account"]
                                   ]
                                 },
-                              "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [[here]](links.eff.matrix). Tactical Tech’s Holistic Security offers [[additional reading]](links.ttech.matrices) on these matrices."
+                              "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a useful model for a risk matrix in its threat modeling guide, which you can access [[here]](links.eff.matrix). Tactical Tech’s Holistic Security offers [[additional reading]](links.ttech.matrices) on these matrices."
                           ]
                       }
                   ]   
@@ -2277,44 +2276,106 @@ var en_rs = {
                                     "Process and learn"
                                   ]
                               },
-                              [
-                                  {
+                              "Here is a breakdown of each phase in more detail.",
+                              {
+                                  "type": "title",
+                                  "heading": "Prepare:",
+                                  "content": `The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps you and your staff members can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:`
+                              },
+                              {
+                                  "type": "ul",
+                                  "items": [
+                                    "How many devices do we have?",
+                                    "Which are the most important?",
+                                    "How do we keep those devices updated and safe?",
+                                    "Do we have internal policies and a crisis communications plan from our departments that are easy to follow in a digital crisis?",
+                                    "Can we come up with a main checklist of actions to follow during a crisis? During an incident, panic often clouds our best thinking and a checklist will help."
+                                  ]
+                              },
+                              {
                                     "type": "title",
-                                    "heading": "Prepare:",
-                                    "content": 'The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps you and your staff members can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:'
-                                  },
-                                  {
-                                      "type": "ul",
-                                      "items": [
-                                          
-                                      ]
-                                  }
-                              ]
+                                    "heading": "Detect:",
+                                    "content": "This phase occurs when your organization identifies what is happening and plans a path forward. To do this, consider the following steps:",   
+                              },
+                              {
+                                  "type": "ul",
+                                  "items": [
+                                      "As best you can, identify an incident while it’s occurring or shortly after it has occurred",
+                                      "Collect everything you can about the incident as soon as possible, while minimizing the ongoing harm done. This can include steps such as:",
+                                      [
+                                            "Log dates and times",
+                                            "Capture screenshots",
+                                            "Record suspicious websites and links",
+                                            "Stop using the device",
+                                            "Disconnect the device from the Internet (but don’t turn it off)."
+                                      ],
+                                      "Make sure to notify your internal teams about the incident, but don’t forget that cybersecurity attacks can affect other organizations, too. If outside groups are affected, you should inform them as soon as possible."
+                                  ]
+                              },
+                              {
+                                  "type": "title",
+                                  "heading": "Contain, Eradicate and Recover:",
+                                  "content": "This stage is actually made up of three steps.",
+                              },
+                              {
+                                  "type": "ol",
+                                  "items": [
+                                      "In the first “containment” step, your staff can identify the cause and scope of the incident and take steps to stop or block immediate harm.",
+                                      "In the second “eradicate” step, your staff can fully stop the incident and remove any discovered threats from your system.",
+                                      "In the third “recovery” step, your staff can bring operations back online to their pre-incident state and address any remaining damage." 
+                                  ]
+                              },
+                              {
+                                  "type": "title",
+                                  "heading": "Process and Learn:",
+                                  "content": "This phase isn’t about blaming others, but rather reviewing how each phase unfolded and evaluating how your organization can improve the process and your future response."
+                              }
                           ]
+                      },
+                      {
+                          "title": "Find a third-party security provider that you can afford.",
+                          "content": [
+                              "Now that you have an understanding of the risks and threats facing your organization, you can begin to think about how to respond to those threats. This is when many people feel uncertain, especially if they don’t have a background in technology or security. Luckily, there are third-party security providers who can help. When vetting a security provider, we recommend asking a series of questions to determine whether they are a good fit for your organization. We feel the most important ones are:",
+                              {
+                                "type": "ul",
+                                  "items": [
+                                      "Why do you do this work?", 
+                                      "Are you familiar with our region, culture, or language?",
+                                      "Do you work with Civil Society Organizations (CSOs) or Non-Governmental Organizations (NGOs)? If so, what is the difference between your approach to this work and the work of your other clients?", 
+                                      "Have you worked with a group of our size before? Can you tell us more about this work?",
+                                      "Have you worked on incidents or issues that are similar to ours in the past? Please provide a case study.",
+                                      "How many clients are you currently working with? What percentage of your time will go to our organization?",
+                                      "What is your understanding of the risks we face?"
+                                  ]
+                            },
+                              "A third-party security provider can’t fix all your organization’s challenges on their own. Understand that you will need a designated member of staff who will manage this work and act as a liaison between your organization and the security provider."
+                        ]
                       }
                   ]
               },
-              "exceeds": [
-                  {
-                      "title": "Run a tabletop exercise.",
-                      "content": [
-                          "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff members don’t need to be physically gathered around a table to complete one. During such an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
-                          "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [[MITRE Corp.’s guidelines on tabletop exercises]](links.mitre.tabletop).",
-                          {
-                              "type": "ul",
-                              "items": [
-                                    "Determine what you would like to test (usually by choosing one of your top identified threats).",
-                                    "Designate a group leader to run the exercise.",
-                                    "Create a plausible storyline that includes the threat for which you want to test your response.",
-                                    "Gather the staff members that would be responsible for managing this threat.",
-                                    "Walk these staff members through the scenario and ask for their responses, step by step.",
-                                    "Document gaps, concerns, and weak points in the threat response."
-                                ]
-                          },
-                          "You can use the knowledge gained from a tabletop exercise to identify areas of concern and begin to develop strategies to reduce those risks."
-                      ]
-                  }
-              ]
+              "exceeds": {
+                  "you": [
+                      {
+                          "title": "Run a tabletop exercise.",
+                          "content": [
+                              "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff members don’t need to be physically gathered around a table to complete one. During such an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
+                              "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [[MITRE Corp.’s guidelines on tabletop exercises]](links.mitre.tabletop)",
+                              {
+                                  "type": "ul",
+                                  "items": [
+                                        "Determine what you would like to test (usually by choosing one of your top identified threats).",
+                                        "Designate a group leader to run the exercise.",
+                                        "Create a plausible storyline that includes the threat for which you want to test your response.",
+                                        "Gather the staff members that would be responsible for managing this threat.",
+                                        "Walk these staff members through the scenario and ask for their responses, step by step.",
+                                        "Document gaps, concerns, and weak points in the threat response."
+                                    ]
+                              },
+                              "You can use the knowledge gained from a tabletop exercise to identify areas of concern and begin to develop strategies to reduce those risks."
+                          ]
+                      }
+                ]
+              }
           }
       },
       "external-threats":{
