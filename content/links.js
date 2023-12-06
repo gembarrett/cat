@@ -504,6 +504,9 @@ var links = {
     "player": {
       "en": "https://www.vmware.com/products/workstation-player.html"
     },
+      "fusion": {
+          "en": "https://www.vmware.com/products/fusion.html"
+      },
     "virtualization": {
       "en":"https://www.infoq.com/articles/virtualization-saas/"
     }

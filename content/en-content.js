@@ -2552,89 +2552,92 @@ var en_rs = {
             "Once you have a policy in place within your organization, you might be hesitant to make any changes and upset the status quo. Remember, though, that policies and road maps must adapt to changing threats to be effective. Designating certain staff members to keep these documents updated can help reduce unexpected risks in the future."
           ],
           "eg": [
-            "ADE Worldwide is growing quickly. What started as an organization with headquarters in Washington, DC, and a single field office in Latin America has quickly expanded to other locations around the world. Now that the organization is growing, more ADE staff members are reporting possible security challenges. Luckily, no security challenge has escalated into an incident, but management is growing concerned with the organization’s existing security policy.",
+            "ADE Worldwide is growing quickly. What started as an organization with headquarters in Washington, DC, and a single field office in Latin America has quickly expanded to other locations around the world. Now that the organization is growing, more ADE staff members are reporting security challenges. Luckily, no security challenge has escalated into an incident, but management is growing concerned with the organization’s existing security policy.",
             "To help close this gap, the executive management team conducts a policy review session. They find that their current security policy has notable gaps but accurately reflects how the majority of staff handles cybersecurity. They realize they need to do more to make security a key part of the organization’s workflow. In response, they patch the gaps by moving security goals from their road map to their policy, making these steps a reality.",
             "Then, they take steps to ensure that more of the staff complies with the newly revised policy. These include starting every staff meeting with a recognition of staff members who have demonstrated good security practices, while asking those falling behind to take part in a tabletop exercise that will demonstrate firsthand the risks of ignoring the new policy.",
-            "When they add a new field office in Thailand, they realize their policies need to be updated to reflect this new region. The CEO of ADE creates a working group to make changes to the policy, monitor threats across the offices and update policies at least once a year."
+            "When they add a new field office in Asia, they realize their policies need to be updated to reflect this new region. The CEO of ADE creates a working group to make changes to the policy, monitor threats across the offices and update policies at least once a year."
           ]
       },
       "results": {
-        "below": 
-          [ 
-            {
-              "title": "Document your security policy and your future road map.", 
-              "content": [
-                "As an established civil society organization, you probably have strategic documents, policies, and plans to help you reach your key goals. Now that you’re focusing on strengthening your cybersecurity, it’s time to develop a security policy and road map, too.",
-                "A security policy explains your day-to-day cybersecurity operations currently. A security road map, on the other hand, is a more aspirational document that states your medium- and long-term goals for your cybersecurity policy.",
-                "Luckily, this doesn’t have to be too daunting. While some organizations may have a series of complex security policies and plans, you can get started with something much simpler. The key steps to a successfully documenting a security policy are:",
+        "below": {
+            "you": [ 
                 {
-                  "type": "ul",
-                  "items": [
-                    "Document whatever steps more than 80 percent of your staff currently take to face cybersecurity threats.",
-                    "Conduct an honest assessment of your current approach toward cybersecurity threats."
+                  "title": "Document your organization’s security policy and future road map.", 
+                  "content": [
+                    "As an established civil society organization, you probably have strategic documents, policies, and plans to help you reach your key goals. Now that you’re focusing on strengthening your cybersecurity, it’s time to develop a security policy and road map, too.",
+                    "A security policy explains your day-to-day cybersecurity operations currently. A security road map, on the other hand, is a more aspirational document that states your medium- and long-term goals for your cybersecurity policy.",
+                    "Luckily, this process doesn’t have to be too daunting. While some organizations may have a series of complex security policies and plans, you can get started with something much simpler. The key steps to a successfully creating a security policy are:",
+                    {
+                      "type": "ul",
+                      "items": [
+                        "Document whatever steps more than 80 percent of your staff currently take to face cybersecurity threats.",
+                        "Conduct an honest assessment of your current approach toward cybersecurity threats."
+                      ]
+                    },
+                    "The more honest your policy, the more your organization can improve. If you are fully honest, you should be able to find room for improvement within your organization. For example, you may find that only some of your staff members use a cybersecurity tool you’ve purchased. Once you’ve taken a look at your policy and identified gaps, you can start to put together a security road map.",
+                    "The key steps to developing a security road map are:",
+                    {
+                      "type": "ul",
+                      "items": [
+                        "Understand and define your key threats and risks (see the Risk Analysis and Threat Assessment section).",
+                        "Compare your existing policy against key threats to identify what is missing in your security approach.",
+                        "Document what you would like to implement in the future to improve your security approach."
+                      ]
+                    },
+                    "When you’re ready to create your first security policy, you can use the [[SOAP tool]](links.soap.tool) or the [[SANS templates]](links.sans.templates) to generate a policy through a series of step-by-step questions.",
+                    "Remember that your security policy is a living document—try to update it with new guidelines based on changing threats at least once per year."
                   ]
-                },
-                "The more honest your policy, the more your organization can improve. If you are fully honest, you should be able to find room for improvement within your organization. For example, you may find that only some of your staff members use a cybersecurity tool you’ve purchased. Once you’ve taken a look at your policy and identified gaps, you can start to put together a security road map.",
-                "The key steps to developing a security road map are:",
+                }
+]
+        },
+        "ok": {
+            "you": [
                 {
-                  "type": "ul",
-                  "items": [
-                    "Understand and define your key threats and risks (see Risk Analysis and Threat Assessment).",
-                    "Compare your existing policy against the key threats to identify what is missing in your security approach",
-                    "Document what you would like to implement in the future to improve your security approach."
+                  "title": "Gently enforce the rules.",
+                  "content": [ 
+                    "You’ve invested time and resources into creating a security policy and road map for your organization. But despite your best efforts, you notice that some staff members aren’t always following the rules. This is common, especially in organizations where security isn’t a key component of staff culture.",
+                    "Don’t worry; integrating “security thinking” into an organization is possible, if time-consuming. One of the most effective ways to get staff members thinking about security is to gradually introduce security concepts into your organization’s everyday workflow until they become part of everyone’s routine.",
+                    "Here is one strategy to help your staff incorporate your security policies into day-to-day operations.",
+                    {
+                      "type": "ol",
+                      "items": [
+                        "Determine an effective way to measure staff compliance in the areas that you want to improve.",
+                        "Gather your executive team and ask them to identify the individuals who aren’t complying with much of your security policy.",
+                        "Deputize those staff members for simple tasks, such as ensuring that their colleagues are following a basic requirement of your security policy.",
+                        "Reward positive behavior change, especially among staff members who previously were not compliant, with praise and other motivators. Be empathetic.",
+                        "Don’t punish slow or lax compliance. Technology can be intimidating to many people and may have a steep learning curve. After a certain publicly announced date or time, cut off services (such as emails, logins, etc.) for users who don’t comply. Other services, such as two-factor authentication, can simply be made mandatory. Be prepared to provide additional support when this happens.",
+                        "You could also consider giving different levels of access based on a person’s security compliance, for example by giving access to sensitive data only to those who have enabled two-factor authentication.",
+                        "Run a tabletop exercise with staff members so they can better understand the risks of not following policy.",
+                        "Share news and updates about other organizations that have been targets of cybersecurity attacks as teachable moments for your staff. This may require you to emphasize how similar threats could face your organization.",
+                        "Begin again with the measurement phase."
+                      ]
+                    },
+                    "If results are slow, don’t worry. Organizational change can sometimes take a year or more to fully take place. Keep working at this process steadily over time."
                   ]
-                },
-                "When you’re ready to create your first security policy, you can use the highly useful [[SOAP tool]](links.soap.tool) or the [[SANS templates]](links.sans.templates) to generate a policy through a series of step-by-step questions.",
-                "Remember that your security policy is a living document—try to update it with new guidelines based on changing threats at least once per year."
-              ]
-            }
-          ],
-        "ok":
-          [
-            {
-              "title": "Gently enforce the rules.",
-              "content": [ 
-                "You’ve invested time and resources into creating a security policy and road map for your organization. But despite your best efforts, you notice that some staff members aren’t always following the rules. This is common, especially in organizations where security isn’t a key component of staff  culture.",
-                "Don’t worry; integrating “security thinking” into an organization is possible, if time-consuming. One of the most effective ways to get the staff  thinking about security is to gradually introduce security concepts into your everyday workflow until they become part of your staff’s routine.",
-                "Here is one strategy to help your staff incorporate your security policies into their operations.",
-                {
-                  "type": "ol",
-                  "items": [
-                    "Determine an effective way to measure staff compliance in the areas that you want to improve.",
-                    "Gather your executive team and ask them to identify the weakest links in your organization (individuals who aren’t complying with much of your security policy) as well as possible challenges or roadblocks.",
-                    "Deputize those weakest links for simple tasks, such as ensuring that their colleagues are following a basic requirement of your security policy.",
-                    "Reward positive behavior change, especially among staff members who previously were not compliant, with praise and other motivators. Be empathetic.",
-                    "Don’t punish slow or lax compliance. Technology can be intimidating to many people and may have a steep learning curve. After a certain publicly announced date or time, cut off services (such as emails, logins, etc.) for users who don’t comply. Other services, such as two-factor authentication, can simply be made mandatory. Be prepared to provide additional support when this happens.",
-                    "Run a tabletop exercise with your staff so they can better understand the risks of not following policy.",
-                    "Share news and updates on other organizations that have been targets of cybersecurity attacks as teachable moments for your staff. This may require you to emphasize how similar threats could face your organization.",
-                    "Begin again with the measurement phase."
-                  ]
-                },
-                "If results are slow, don’t worry. Organizational change can sometimes take a year or more to fully take place. Keep working at this process steadily over time.",
-                "You could also consider giving different levels of access based on their security compliance, for example by giving access to sensitive data to those who have enabled two-factor authentication."
-              ]
-            }
-          ],
-        "exceeds":
-          [ 
+                }
+            ]
+        },
+        "exceeds": {
+          "you": [ 
             {
               "title": "Keep your policy and road map updated.",
               "content": [
-                "Your organization has strong security policies and procedures, and your staff members understand the importance of security in their everyday work. It’s important to remember, though, that even the strongest security policy and road map will become outdated and obsolete as technology and threats evolve.",
-                "To help, we recommend you think of your security policy and road map as ‘living” documents that need to be updated regularly to meet new risks and threats. Keeping these documents updated doesn’t require an extensive commitment, but it does require regular check-ins.",
+                "Your organization has strong security policies and procedures, and staff members understand the importance of security in their everyday work. It’s important to remember, though, that even the strongest security policy and road map will become outdated and obsolete as technology and threats evolve.",
+                "To help, we recommend you think of your security policy and road map as ‘living’ documents that need to be updated regularly to meet new risks and threats. Keeping these documents updated doesn’t require an extensive commitment, but it does require regular check-ins.",
                 "Here is one strategy to keep policies and road maps up to date by creating a governance structure for cybersecurity within your organization.",
                 {
                   "type": "ol",
                   "items": [
                     "Create a working group to investigate new threats, risks, and tools as they appear. This group may want to meet as frequently as monthly or quarterly or as infrequently as once or twice a year.",
-                    "Develop criteria for including new software and systems into your workflow. Before adding a new piece of software or online tool, the working group should consider whether that decision fits with your existing security policy or road map.",
+                    "Develop criteria for including new software and systems into your workflow. Before adding a new piece of software or online tool, the working group should consider whether that decision fits with your organization’s existing security policy or road map.",
                     "Designate a staff member to be responsible for updating the policy based on feedback from your working group."
                   ]
                 },
-                "Remember that outside forces should cause your security policy to change, just as your organizational goals and approaches change, to meet new challenges."
+                "Remember that external events should cause your security policy to change in order to meet new challenges, just as your organizational goals and approaches change, too."
               ]
             }
           ]
+        }
       }
     },
     "internal-risks": {
@@ -2643,76 +2646,79 @@ var en_rs = {
       "general": {
           "why": [
             "Knowledge is power. By equipping your staff members with a checklist that allows them to identify cybersecurity risks, you’re empowering them to take action and increase their awareness. This step also provides you with a useful record of your staff’s overall level of cybersecurity.",
-            "Once you’ve implemented a “do it yourself” checklist, remember that even the most dedicated staff member can make a mistake. Having a technical solution that allows your organization to access work devices can create a safety net for unpredictable moments or staff accidents, but you must balance this against your staff’s right to privacy."
+            "Once you’ve implemented a “do it yourself” checklist, remember that even the most dedicated staff member can make a mistake. Having a technical solution that allows your organization to access work devices can create a safety net for unpredictable events or staff accidents, but you must balance this against your staff’s right to privacy."
           ], 
           "eg": [
-            "Whenever a new person started at ADE Worldwide, managers sent them lots of information in an employee handbook. Included in it were guidelines on how to maintain their work devices for maximum cybersecurity.",
-            "Upon closer inspection, managers found about half of the staff followed the guidelines. Busy schedules, impending deadlines, and the pressures of the work were keeping staff from taking the necessary steps to keep their devices safe.",
-            "Rather than impose penalties on their staff, ADE managers asked all staff members to conduct a check-up on their devices and discuss their results with their supervisors. This allows staff  members to tighten their security without feeling judged or censured by leadership.",
-            "Not long after adopting the checklist, ADE was able to partner with Papua Water Rights, a two-person advocacy group in Papua New Guinea. This was a major breakthrough for ADE as it has never been able to have a presence in Oceania before. While extremely effective, Papua Water Rights has fewer resources than ADE and must balance security needs with limited time and capacity. To help, they put together a detailed and mandatory checklist focused on keeping their devices safe. This is particularly important because they can’t afford to replace devices that may be compromised."
+            "Whenever a new person starts at ADE Worldwide, managers send them lots of information in an employee handbook, including guidelines on how to maintain their work devices for maximum cybersecurity.",
+            "Upon closer inspection, managers find that about half of the staff follow these guidelines. Busy schedules, impending deadlines, and the pressures of the work are keeping staff from taking the necessary steps to keep their devices safe.",
+            "Rather than impose penalties on their staff, ADE managers ask all staff members to conduct a check-up on their devices and discuss their results with their supervisors. This allows staff members to tighten their security without feeling judged or censured by leadership.",
+            "Not long after adopting the checklist, ADE is able to partner with Oceania Water Rights, a two-person advocacy group in the Pacific region. This is a major breakthrough for ADE as it has never been able to have a presence in Oceania before. While extremely effective, Oceania Water Rights has fewer resources than ADE and must therefore balance security needs with limited time and capacity. To help, they put together a detailed and mandatory checklist focused on keeping their devices safe. This is particularly important because they can’t afford to replace devices that may be compromised."
           ] 
       },
       "results": { 
-        "below":
-          [ 
-            {
-              "title": "Do a check-up on your organization’s cybersecurity.", 
-              "content": [ 
-                "Your staff members are vital to the mission of your organization. But sometimes, intentionally or unintentionally, their decisions and actions can put your organization at risk. This is especially true in today’s digital world, where a wrong click or a missed security setting can leave the entire staff vulnerable.",
-                "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow; such a checklist should be part of the onboarding process of any new staff member. Here are suggestions for Windows devices, and here are suggestions for Mac devices. Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can then be stored in their employee file."
+        "below": {
+              "you": [ 
+                {
+                  "title": "Do a check-up on your organization’s cybersecurity.", 
+                  "content": [ 
+                    "Your staff members are vital to the mission of your organization. But sometimes, intentionally or unintentionally, their decisions and actions can put your organization at risk. This is especially true in today’s digital world, where a wrong click or a missed security setting can leave the entire staff vulnerable.",
+                    "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow. Such a checklist should be part of the onboarding process of any new staff member. Here are [[suggestions for Windows devices]](links.carbide.windows), and here are [[suggestions for Mac devices]](links.carbide.mac). Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can also be stored in their employee file."
+                  ]
+                }
               ]
-            }
-          ],
-        "ok": 
-          [ 
+        },
+        "ok": {
+          "you": [ 
             {
               "title": "Add clear language to employment agreements.", 
               "content": [ 
                 "Your staff members are proactive about monitoring their cybersecurity and understand the importance of complying with your organization’s security policy. They may periodically meet with supervisors to discuss their cybersecurity and complete required security checklists.",
-                "You can start to incorporate cybersecurity into their job description. This helps emphasize that security is not just a part of their workflow but also a core responsibility for them as a member of your organization.One effective way to do this is to ensure that employment agreements have language about privacy and security that is clear, truthful, and easy to understand. We recommend including language about:",
+                "You can start to incorporate cybersecurity into their job description. This helps emphasize that security is not just a part of their workflow but also one of their core responsibilities as a member of your organization.One effective way to do this is to ensure that employment agreements have language about privacy and security that is clear, truthful, and easy to understand. We recommend including language about:",
                 [
                     {
                       "type": "title",
                       "heading": "Data:",
-                        "content": "What responsibilities do staff members have with your organization’s data, and vice versa? Which categories of data can particular staff members access and which can they not access?"
+                        "content": "what responsibilities do staff members have with your organization’s data, and vice versa? Which categories of data can particular staff members access and which can they not access?"
                     },
                     {
                       "type": "title",
                       "heading": "Terms of use:",
-                        "content": "What legal arrangements govern your staff members’ use of technology, particularly any software, hardware, or systems that your organization owns?"
+                        "content": "what legal arrangements govern your staff members’ use of technology, particularly any software, hardware, or systems that your organization owns?"
                     },
                     {
                       "type": "title",
                       "heading": "Acceptable use policy:",
-                        "content": "When staff members access your organization’s internal systems, what policies and guidelines must they follow?"
+                        "content": "when staff members access your organization’s internal systems, what policies and guidelines must they follow?"
                     },
                     {
                       "type": "title",
                       "heading": "Onboarding policy:",
-                        "content": "How are staff members expected to learn about and use your organization’s technology when they join the organization?"
+                        "content": "how are staff members expected to learn about and use your organization’s technology when they join the organization?"
                     },
                     {
                       "type": "title",
                       "heading": "Offboarding policy:",
-                        "content": "What steps need to take place when a staff member leaves your organization?"
+                        "content": "what steps need to take place when a staff member leaves your organization?"
                     }
                   ],
                 "You may want to enlist a lawyer to help you draft this language. There may also be other sections that apply directly to your situation. Just remember: the goal here is to be clear and informative, not to overwhelm your staff with legalese. Try to keep employment agreements to one page if possible, including a checklist, and make sure they are signed by the staff members and supervisors."
               ]
             }
-          ],
-        "exceeds": 
-          [ 
+          ]
+        },
+        "exceeds":{ 
+          "third":[ 
             {
               "title": "Consider device management systems.", 
               "content": [
                 "Your staff regularly checks in with management about cybersecurity risks and has read and reviewed the cybersecurity requirements in their employment agreements.",
-                "Even the most informed and engaged staff members can still make mistakes, however.That’s why we recommend finding a method for managing devices that is consistent with your organization’s values and goals. For example, software known as “device management” platforms can allow organizations to manage work devices remotely. While the convenience and increased security of device management tools is an advantage, remember that you must always balance security with a level of privacy for your staff.",
+                "Even the most informed and engaged staff members can still make mistakes, however. That’s why we recommend finding a method for managing devices that is consistent with your organization’s values and goals. For example, software known as “device management” platforms can allow organizations to manage work devices remotely. While the convenience and increased security of device management tools is an advantage, remember that you must always balance security (and control) with your staff’s right to privacy.",
                 "Device management software includes tools such as G Suite’s Google Devices, Apple’s Mobile Device Management, and [[Prey]](links.prey.web), which allow tracking and remote data erasure on devices, and solutions from companies including IBM, Citrix, and VMWare.",
-                "A technical provider can also help you use these tools to force organization-owned devices to “comply” with security policies or restrict the ability for your staff to install their own software or change settings."
+                "A third-party technical provider can also help you use these tools to force devices owned by your organization to comply with security policies or restrict the ability for your staff to install their own software or change settings."
               ]
             }
           ]
+        }
       }
     },
     "training-support": {
@@ -2726,29 +2732,29 @@ var en_rs = {
           ],
           "eg": [
             "Staff members at ADE Worldwide pride themselves on a “can-do” approach. If they don’t know the answer to a problem, they will seek out the resources necessary to solve it on their own.",
-            "As a result, they  hesitate to admit when they lack sufficient knowledge to fix a problem, including improving their security footprint. ADE managers realize the only way to ensure that everyone moves forward with needed security updates is to require all staff to meet the same level of cybersecurity training, giving them permission to ask for help as needed without embarrassment.",
+            "As a result, they hesitate to admit when they lack sufficient knowledge to fix a problem, including improving their cybersecurity practices. ADE managers realize the only way to ensure that everyone moves forward with needed security updates is to require all staff to meet the same level of cybersecurity training, giving them permission to ask for help as needed without embarrassment.",
             "Once the initial training is over, there’s little time to invest on refreshers. That’s why ADE managers then start “Learning Lunches” every two weeks, when each office holds a refresher training over the lunch hour on Wednesdays. This provides staff with an interactive opportunity to practice their skills in an open, conversational setting with little pressure, but also reminds them of the importance of keeping their skills sharp.",
-            "Even with these initiatives, though, managers notice that staff are still struggling to implement some of the lessons. Since ADE has a global staff working across different time zones, it isn’t feasible to have a single point of contact to answer questions and troubleshoot. To help, ADE’s management institute a learning management system with all the content from earlier training sessions so staff can look up resources and lessons at any time of day on any device."
+            "Even with these initiatives, though, managers notice that staff are still struggling to implement some of the lessons. Since ADE has a global staff working across different time zones, it isn’t feasible to have a single point of contact to answer questions and troubleshoot. To help, ADE’s management institutes a learning management system with all the content from earlier training sessions so staff can look up resources and lessons at any time of day on any device."
           ] 
       },
       "results": { 
-        "below":
-          [ 
+        "below":{
+          "you": [ 
             {
               "title": "Set expectations for security knowledge.", 
               "content": [ 
-                "Your staff members are passionate, driven, motivated, and hard-working. They may be experts in fields such as human rights law and voting advocacy. Most likely, however, they are not cybersecurity experts. And while it’s easy to assume that most people have a basic level of experience with technology, that’s not always the case.",
+                "Your staff members are passionate, driven, motivated, and hard-working. They may be experts in fields such as law and advocacy. Most likely, however, they are not cybersecurity experts. And while it’s easy to assume that most people have a basic level of experience with technology, that’s not always the case.",
                 "Instead of assuming that your staff understands the basics of cybersecurity, assume that you are starting with a blank slate. From here, you can take a series of effective steps:",
                 [
                     {
                       "type": "title",
                       "heading": "Familiarize yourself with cybersecurity basics.",
-                        "content": "Excellent resources to get started include the Electronic Frontier Foundation’s [[Surveillance Self-Defense curriculum]](links.eff.ssd) and the [[Data Detox Kit]](links.ttech.detox) from Tactical Tech."
+                        "content": "Excellent resources to get started include the Electronic Frontier Foundation’s [[Surveillance Self-Defense curriculum]](links.eff.ssd) and the [[Data Detox Kit]](links.ttech.detox) from Tactical Tech. For work in the field, we also like [[the Totem Project]](links.totem.web)"
                     },
                     {
                       "type": "title",
                       "heading": "Begin training.",
-                        "content": "Work with a cybersecurity provider, as needed, to conduct introductory “digital best practices” training for your staff."
+                        "content": "Work with a third-party cybersecurity provider, as needed, to conduct introductory “digital best practices” training for your staff."
                     },
                     {
                       "type": "title",
@@ -2759,20 +2765,22 @@ var en_rs = {
                 "Starting with introductory knowledge can ensure that all staff members are on an equal footing."
               ]
             }
-          ],
-        "ok":
-          [ 
+          ]
+        },
+        "ok": {
+          "you": [ 
             {
               "title": "Introduce training in small bites.", 
               "content": [ 
                 "Your staff members are busy professionals. It’s important to remember that they will forget most of the content that they hear, read, or watch during training.",
-                "That’s why repetition of key points in “small bites” is one of the most effective learning strategies for hard-working staffs. Begin by identifying the most critical behaviors, actions, and tools you need your staff to understand and implement.",
-                "Then gradually introduce training sessions into your organization’s workflow. Perhaps an hour once a month is dedicated to reviewing cybersecurity basics, or maybe a weekly lunch break is converted into a practice session. Day-long training will disrupt workflow and lead to tired, overwhelmed staff members. Use smaller, bite-sized training sessions instead to keep material fresh and approachable."
+                "That’s why repetition of key points in “small bites” is one of the most effective learning strategies for hard-working staff members. Begin by identifying the most critical behaviors, actions, and tools you need your staff to understand and implement.",
+                "Then gradually introduce training sessions into your organization’s workflow. Perhaps an hour once a month is dedicated to reviewing cybersecurity basics, or maybe a weekly lunch break is converted into a practice session. Day-long training will disrupt workflows and lead to tired, overwhelmed staff members. Use smaller, bite-sized training sessions instead to keep materials fresh and approachable."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds": {
+          "third": [ 
             {
               "title": "Create a knowledge base.", 
               "content": [ 
@@ -2780,34 +2788,37 @@ var en_rs = {
                 "A good interim solution can be a basic online quiz accompanied by a 2- to 3-minute recap video to test the staff’s knowledge and refresh their memories.",
                 "Alternatively, digital tools for learning—sometimes known as learning management systems, or LMS—are widely available. We like open-source options such as [[Moodle]](links.moodle.web) and [[ILIAS]](links.ilias.web) or commercial versions such as [[LearnDash]](links.learndash.web) (built for the content management system WordPress) or [[Docebo]](links.docebo.web).",
                 "You may also want to consider a third-party learning platform like [[Totem Project]](links.totem.web) to help your staff practice their cybersecurity skills.",
-                "You may need to work with a technical assistance provider to implement this tool, but the effort can pay dividends. A well-designed LMS can help you capture not only cybersecurity lessons but also help your staff answer time-sensitive questions without having to track down an instructor. Most LMS platforms provide a scoring mechanism, too, so you can map your staff’s progress."
+                "You may need to work with a third-party technical assistance provider to implement this tool, but the effort can pay dividends. A well-designed LMS can help you capture not only cybersecurity lessons but also help your staff answer time-sensitive questions without having to track down an instructor. Most LMS platforms provide a scoring mechanism, too, so you can map your staff’s progress."
               ]
             }
           ]
+        }
       }
     },
     "travel-policy": {
           "section": "Operational Security",
-      "title": "Travel Security",
+      "title": "Travel Policy",
       "general": {
           "why": [
-            "Organizations that don’t plan for risks in the field leave themselves vulnerable to surprises. Having an open conversation with your staff about travel security can encourage an important dialogue about risk within your organization and may even highlight some vulnerabilities you hadn’t noticed previously. You can then use those findings to help create policies to mitigate travel risks."
+            "Organizations that don’t plan for risks in the field leave themselves vulnerable to surprises. Talking to your staff about travel security can encourage important dialogue about risk within your organization and may even highlight some vulnerabilities you hadn’t noticed previously. You can then use those findings to help create policies to mitigate travel risks."
           ], 
           "eg": [
             "ADE Worldwide now has offices in nearly every region of the world. Staff often travel to meet colleagues overseas, attend large conferences, or oversee fieldwork. While staff have a basic understanding of how to stay safe while traveling, ADE realizes it hasn’t done its due diligence regarding travel security as an organization. As a result, it institutes a series of organizational open meetings to collect feedback about travel risks, then begins the process of drafting a formal travel security policy.",
-            "One part of the new policy governs the use of work devices outside the office. Field staff at ADE Worldwide work in rural areas with farmers and agricultural workers, often in tough conditions. When headquarters staff travel into the field, they bring their work devices to take photographs, notes, and record data. After a series of devices were lost on a recent field visit, ADE management now requires all travelers to upload their data to an encrypted cloud storage provider, accessing only the files they absolutely need while on the road.",
-            "When the majority of ADE’s staff needs to work remotely full-time due to the global pandemic, they use these travel policies to govern their work devices."
+            "One part of the new policy governs the use of work devices outside the office. Field staff at ADE Worldwide work in rural areas with farmers and agricultural workers, often in tough conditions. When headquarters staff travel into the field, they bring their work devices to take photographs, capture notes, and record data. After a series of devices were lost on a recent field visit, ADE management now requires all travelers to upload their data to an encrypted cloud storage provider before they leave and access only the files they absolutely need while on the road.",
+            "When the majority of ADE’s staff needs to work remotely full-time due to a global pandemic, they use these travel policies to govern their work devices."
           ] 
       },
       "results": { 
-        "below":
-          [ 
+        "below": {
+          "you": [ 
             {
               "title": "Understand the risks.", 
               "content": [
-                "Travel is an exciting opportunity for staff to advance your organization’s mission. When your staff members travel, however, they are temporarily removed from the regular security habits they use at home or the office. This poses risks when they are carrying work devices or accessing sensitive information. Even losing their personal devices can cause a threat to your organization’s work."
+                "Travel is an exciting opportunity for staff to advance your organization’s mission. When your staff members travel, however, they are temporarily removed from the regular security routines and habits they use at home or the office. This poses risks when they are carrying work devices or accessing sensitive information. Even losing their personal devices can cause a threat to your organization’s work."
               ]
-            },
+            }
+          ],
+        "third":[
             {
               "title": "Develop travel security policies.",
               "content": [ 
@@ -2830,46 +2841,48 @@ var en_rs = {
             {
               "title": "Create a checklist to maintain your travel devices.", 
               "content": [ 
-                "Traveling with a digital device can often bring a higher level of risk. If your organization plans to use work devices while traveling, you should plan to take proactive steps to stay safe. Consider developing checklists to guide your staff through the necessary steps to keep their devices safe. These steps should include plans to:",
+                "Traveling with a digital device that you use for work can often bring a higher level of risk. If your organization plans to use work devices while traveling, you should plan to take proactive steps to stay safe. Consider developing checklists to guide your staff through the necessary steps to keep their devices safe. These steps should include plans to:",
                 {
                   "type": "ul",
                   "items": [
                     "Safely back up your data outside of the device",
                     "Safely clean (or wipe) the device before and after travel",
                     "Install and update necessary apps and software before travel",
-                    "Remove any apps or software that may be controversial or illegal in the destination country or region",
+                    "Remove any apps or software that may not be permitted in the destination country or region",
                     "Determine what type of data is stored on the device or can be accessed from apps and accounts on the device"
                   ]
                 },
                 "Again, you may benefit from the guidance of a security provider for your specific context and travel plans."
               ]
             }
-          ],
-        "ok":
-          [ 
+          ]
+        },
+        "ok":{
+          "third":[ 
             {
               "title": "Incorporate cloud storage.",
               "content": [ 
                 "Your staff members understand the risks posed by travel, and you’ve briefed them on your organization’s policies governing work travel. You may have even chosen to use dedicated travel-specific devices for your staff.",
-                "Now, you can enhance the precautions that your staff members take when they travel. One of the most effective ways to protect against device theft or damage while traveling is to store data in the cloud. While there are many cloud storage services to consider, we recommend using encrypted ones when traveling. These services include [[SpiderOak One]](links.soak.web), a US-based provider, and [[Tresorit]](links.tresorit.web), a Swiss provider. Self-hosted solutions include [[NextCloud]](links.nextcloud.web) and [[OwnCloud]](links.ocloud.web). Alternatively, you may use a tool such as [[Cryptomator]](links.cmator.web) to encrypt your files locally and store them in your nonencrypted cloud storage service, such as Dropbox or Google Drive. (Files on Google Drive and other popular services are encrypted but can be accessed by the cloud storage provider in response to legal requests.)",
-                "You may need a security provider to help with this process and to select the right cloud service for you."
-              ]
-            }
-          ],
-        "exceeds": 
-          [ 
-            {
-              "title": "Source travel-specific devices and develop a policy for their use.", 
-              "content": [ 
-                "You’ve made good progress on keeping your staff and your data safe during work-related travel. To further improve your travel security, you should consider using dedicated travel-specific devices. This will require both an investment of time and money, as well as the creation of new policies around the safe use of these devices. Used effectively, however, travel devices can greatly reduce risk, even if they fall into the wrong hands.",
-                "Rather than having staff use their personal or work devices while traveling, consider using dedicated travel devices instead.",
-                "To start, you will want to identify the types of devices that your staff members use in the field. If they typically need a laptop while traveling, consider a reliable but inexpensive alternative like a [[Chromebook]](links.google.cbook).",
-                "Once you’ve identified the types of devices appropriate for your organization, you will need to develop a clear policy and process for handling travel devices before, during, and after their use. This will likely include a “pre-flight” process to prepare the device and a return check-in with the staff  member who used the device to learn about any challenges they may have had in the field. You will also need to wipe the device clean before and after travel.",
-                "Each of these device management phases can be time-consuming, so they should be spelled out in detail and written down. You may want to work with a security provider to implement this process smoothly.",
-                "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [[VMWare Work Station Player]](links.vmware.player) (Linux/PC), Fusion (Mac), or [[VirtualBox]](links.vbox.web). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a provider whether this is a good option for you."
+                "Now, you can enhance the precautions that your staff members take when they travel. One of the most effective ways to protect against device theft or damage while traveling is to store data in the cloud. While there are many cloud storage services to consider, we recommend using encrypted ones when traveling. These services include [[Tresorit]](links.tresorit.web), a Swiss provider, and self-hosted solutions such as [[NextCloud]](links.nextcloud.web) and [[OwnCloud]](links.ocloud.web). Alternatively, you may use a tool such as Cryptomator to encrypt your files locally and store them in your nonencrypted cloud storage service, such as Dropbox or Google Drive. (Files on Google Drive and other popular services are encrypted but can be accessed by the cloud storage provider if compelled by a court.)",
+                "You may need a third-party security provider to help with this process and to select and set up the right cloud service for you."
               ]
             }
           ]
+        },
+        "exceeds": {
+          "third":[ 
+            {
+              "title": "Source travel-specific devices and develop a policy for their use.", 
+              "content": [ 
+                "You’ve made good progress on keeping your staff and your data safe during work-related travel. To further improve your travel security, you should consider having staff use dedicated travel-specific devices rather than their personal or work devices. This will require both an investment of time and money, as well as the creation of new policies around the safe use of these devices. Used effectively, however, travel devices can greatly reduce risk, even if they fall into the wrong hands.",
+                "To start, you will want to identify the types of devices that your staff members use in the field. For example, if they typically need a laptop while traveling, consider a reliable but inexpensive alternative like a [[Chromebook]](links.google.cbook).",
+                "Once you’ve identified the types of devices appropriate for your organization, you will need to develop a clear policy and process for handling travel devices before, during, and after their use. This will likely include a “pre-flight” process to prepare the device, followed by a return check-in with the staff member who used the device to learn about any challenges they may have had in the field. You will also need to wipe the device clean before and after travel.",
+                "Each of these device management phases can be time-consuming, so they should be spelled out in detail and written down. You may want to work with a security provider to implement this process smoothly.",
+                "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [[VMWare Work Station Player]](links.vmware.player) (Linux/PC), [[VMWare Fusion]](links.vmware.fusion) (Mac), or [[VirtualBox]](links.vbox.web) (Linux/PC/Mac). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a third-party provider whether this is a good option for you."
+              ]
+            }
+          ]
+        }
       }
     },
     "managing-data": {
