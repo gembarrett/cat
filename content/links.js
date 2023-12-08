@@ -191,7 +191,7 @@ var links = {
       "en": "https://projectshield.withgoogle.com/landing"
     },
     "rlimits": {
-      "en": "https://cloud.google.com/solutions/rate-limiting-strategies-techniques"
+      "en": "https://cloud.google.com/architecture/infra-reliability-guide/traffic-load"
     },
     "vault": {
       "en": "https://gsuite.google.com/products/vault/"
