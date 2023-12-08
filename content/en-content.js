@@ -3181,17 +3181,17 @@ var en_rs = {
       "title": "Legal Risks",
       "general": {
           "why": [
-            "Security threats facing civil society organizations aren’t restricted to physical or digital attacks. Legal challenges can force organizations to divulge sensitive information, slow down or stop projects, or simply spend time and money responding to frivolous lawsuits. Consulting with a lawyer familiar with your country’s law is a good first step in protecting your organization from these challenges.",
+            "Security threats facing civil society organizations aren’t restricted to physical or digital attacks. Legal challenges can force organizations to divulge sensitive information, slow down or stop projects, or simply spend time and money responding to frivolous lawsuits. Consulting with a lawyer familiar with your region’s legal system is a good first step in protecting your organization from these challenges.",
             "Proactively managing data before a legal challenge better equips your organization to quarantine data that may be needed in the event of a lawsuit. Before archiving or relocating employee information, however, explain clearly to your staff when and how their data may be accessed and used."
           ],
           "eg": [
-            "ADE Worldwide runs a one-person office in Guatemala that works with local farmers to better manage their water usage. As an environmental advocacy organization in a region where powerful interests own vast amounts of land, ADE understands that this office may be the target of a legal challenge. To help prepare, ADE management asks the staff member there, alongside the organization’s legal counsel, to review and archive sensitive data in the system.",
-            "A local landowner threatens to sue the organization for defamation he claims he experienced thanks to its water sustainability campaigns. The attorneys in ADE’s Mexico City regional headquarters say they believe they can handle the potential lawsuit themselves, but quickly realize they must bring on local representation in Guatemala to better understand and comply with local laws and requirements."
+            "ADE Worldwide runs an office in Latin America that works with local farmers to better manage their water usage. As an environmental advocacy organization in a region where powerful interests own vast amounts of land, ADE understands that this office may be the target of a legal challenge. To help prepare, ADE management asks the staff member there, alongside the organization’s legal counsel, to review and archive sensitive data in the system.",
+            "A local business person threatens to sue the organization for defamation he claims he experienced thanks to its water sustainability campaigns. The attorneys in ADE’s Washington, DC headquarters say they believe they can handle the potential lawsuit themselves, but quickly realize they must bring on local representation in Latin America to better understand and comply with local laws and requirements."
           ] 
       },
       "results": { 
-        "below":
-          [ 
+        "below":{
+          "you": [ 
             {
               "title":"",
               "content":[
@@ -3201,8 +3201,7 @@ var en_rs = {
             {
               "title": "Educate yourself about civil society law in your country and region.", 
               "content": [ 
-                "Law can be highly complicated, but your staff  can learn the basics. An excellent resource (apart from a lawyer in your area) is the [[International Center for Not-For-Profit Law]](links.icnl.web), which has an online library with case studies from around the world, as well as reports and resources for nearly every nation. ",
-                "It is also important to become familiar with how (well) the relevant laws are enforced."
+                "Law can be highly complicated, but your staff can learn the basics. An excellent resource (apart from a lawyer in your area) is the [[International Center for Not-For-Profit Law]](links.icnl.web), which has an online library with case studies from around the world, as well as reports and resources for nearly every nation. "
               ]
             },
             {
@@ -3212,20 +3211,21 @@ var en_rs = {
                 "A good resource for finding qualified lawyers in your region is the [[International Bar Association]](links.iba.web), which advocates for lawyers worldwide."
               ]
             }
-          ],
-        "ok":
-          [ 
+          ]
+        },
+        "ok": {
+          "you": [ 
             {
               "title": "",
               "content": [
-                "You’ve met with a lawyer to discuss legal risks to your organization, and perhaps you now have a lawyer on retainer for emergencies. Even with these steps, you still face some legal vulnerabilities that you can reduce using cybersecurity principles. Here’s how."
+                "You or someone from our organization has met with a lawyer to discuss legal risks to your organization, and perhaps you now have a lawyer on retainer for emergencies. Even with these steps, your organization still faces some legal vulnerabilities that you can reduce using cybersecurity principles. Here’s how."
               ]
             },
             {
               "title": "Identify and archive data.", 
               "content": [
                 "Though legal systems vary around the world, most lawsuits include a “discovery” period, in which lawyers may request documents pertaining to their case. While discovery was once mainly focused on paper records, lawyers may now request vast amounts of electronic information that may be useful to their case, including emails, instant messages, and even messages on collaboration platforms such as Slack.",
-                "While some of this information may be used for legitimate legal purposes, so-called “nuisance” or frivolous lawsuits can also force organizations to disclose sensitive information as part of discovery. One way to prepare for such lawsuits is to identify concerning keywords within electronic communication that would be targeted in a lawsuit. From there, with your lawyer’s advice, you can archive or “quarantine” this information in a secure location, such as off-line storage devices or encrypted cloud storage."
+                "While some of this information may be used for legitimate legal purposes, so-called “nuisance,” or frivolous, lawsuits can also force organizations to disclose sensitive information as part of discovery. One way to prepare for such lawsuits is to identify concerning keywords within electronic communication that would be targeted in a lawsuit. From there, with your lawyer’s advice, you can archive or “quarantine” this information in a secure location, such as off-line storage devices or encrypted cloud storage."
               ]
             },
             {
@@ -3234,9 +3234,10 @@ var en_rs = {
                 "Not every organization has the resources—either financial or technological—to archive sensitive data. However, most organizations do have the ability to selectively remove or delete emails from staff inboxes. When done properly, this can help  manage the flow of information better within your organization. When abused, however, this power can infringe on your staff’s right to privacy and your ethical responsibility as an employer. For this reason, we recommend that most organizations put into place an easy-to-understand policy around when you will remove data or messages from staff members’ systems and make sure they are familiar with this policy."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds":{
+          "third": [ 
             {
               "title":"",
               "content": [
@@ -3246,7 +3247,7 @@ var en_rs = {
             {
               "title": "Use an e-discovery platform.", 
               "content": [
-                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through vast amounts of information using a computer. Your organization can also use these tools, such as [[Google’s G Suite Vault]](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform."
+                "With the legal discovery process now encompassing a vast array of data, many lawyers have begun using e-discovery tools that allow them to search through large amounts of information using a computer. Your organization can also use these tools, such as  [[Google’s G Suite Vault]](links.google.vault), to search your own data for additional keywords, terms, and documents that should be removed and archived. These may include documents and attachments from volunteers, temporary staff, or vendors who have access to your system. Working with a lawyer, identify sensitive information and store it within the e-discovery platform."
               ]
             },
             {
@@ -3256,6 +3257,7 @@ var en_rs = {
               ]
             }
           ]
+        }
       }
     },
     "messaging-collab": {
@@ -3509,14 +3511,14 @@ var en_rs = {
       }
     },
       "device-compartmentalization": {
-          "section": "Device and Account Security",
-      "title": "Device Compartmentalization",
+          "section": "Device &amp; Account Security",
+      "title": "Compartmentalization",
       "general": {
           "why": [
-            "Compartmentalization can take many different forms, depending on your organization and your mission.",
-            "Just as you wouldn’t store all your valuables in one desk drawer, you don’t want to keep all your sensitive data in one location, system, or platform. Implementing the principles of compartmentalization can help you keep your data safe even if your devices are hacked, attacked, or stolen.",
-            "If your organization is heavily research-based, using a dedicated \"research only\" browser can help keep online activities separate. Your staff can also make their work devices—particularly mobile devices—safer by storing data outside of the device itself. These easily implemented steps can contribute to a safer organizational culture.",
-            "As threats increase, you may want to consider more advanced options such as a virtual machine or end-point protection, both of which a technical assistance provider can set up."
+            `Compartmentalization can take many different forms, depending on your organization and your mission.`,
+            `Just as you wouldn’t store all your valuables in one desk drawer, you don’t want to keep all your sensitive data in one location, system, or platform. Implementing the principles of compartmentalization can help you keep your data safe even if your devices are hacked, attacked, or stolen.`,
+            `If your organization is heavily research-based, using a dedicated “research only” browser can help keep online activities separate. Your staff can also make their work devices—particularly mobile devices—safer by storing data outside of the device itself. These easily implemented steps can contribute to a safer organizational culture.`,
+            `As threats increase, you may want to consider more advanced options such as a virtual machine or end-point protection, both of which a third-party technical assistance provider can help set up.`
           ], 
           "eg": [
             "ADE Worldwide has offices around the world. In some regions, up-to-date devices are reasonably priced, but in others, it’s difficult to buy affordable new technology. To help staff keep their data more secure, ADE management institutes a work-only account policy, instructing regional IT staff to create user accounts that staff should use on work devices. Only IT personnel have the ability to install software and change settings.",
@@ -3524,21 +3526,23 @@ var en_rs = {
           ]
       },
       "results": { 
-        "intro": {
-          "title": "",
-          "content": [
-            "You may already be familiar with the need for fragmentation, or spreading your data across several different platforms. Another related best practice is compartmentalization, which means using several different devices or services to lessen your risk. If your staff primarily uses the same device at both work and home, or relies entirely on Google’s G Suite for your work, you should consider compartmentalizing your organization’s workflow further. Here are a few ways to do so."
-          ]
-        },
-        "below":
-          [
+        "below":{
+          "you": [
+            {
+              "title": "",
+              "content": [
+                  "You may already be familiar with the need for fragmentation, or spreading your data across several different platforms. Another related best practice is compartmentalization, which means using several different devices or services to lessen your risk. If your staff primarily uses the same device at both work and home, or relies entirely on Google’s G Suite for your work, you should consider compartmentalizing your organization’s workflow further. Here are a few ways to do so."
+              ]
+            },
             {
               "title": "Understand the connection between personal and professional use.", 
               "content": [
                 "Members of your staff wouldn’t have the same conversations at work that they would at home or over dinner with a friend. The same rule of thumb applies when it comes to their digital lives as well. Using the same device for both personal and professional uses magnifies their risk of being targeted at both work and home.",
                 "For example, a staff member who uses their work laptop to play online games may be targeted by hackers who then have access to sensitive work files. By contrast, a staff member who is targeted for their work may find that hackers now have access to their personal files. Educating your staff on the importance of separating these two data streams is important."
               ]
-            },
+            }
+          ],
+            "third": [
             {
               "title": "Implement the right solution for your organization.", 
               "content": [
@@ -3551,12 +3555,13 @@ var en_rs = {
                     "Use a USB or external hard drive to load a separate operating system on staff computers. (Less expensive, most complex)"
                   ]
                 },
-                "You will want to work with a technical assistance provider on all of these options to customize these strategies for your organization."
+                "You will want to work with a third-party technical assistance provider on all of these options to customize these strategies for your organization."
               ]
             }
-          ],
-        "ok":
-          [ 
+          ]
+        },
+        "ok":{
+          "you": [ 
             {
               "title": "", 
               "content": [ 
@@ -3573,37 +3578,38 @@ var en_rs = {
               "title": "Store less information on work devices.", 
               "content": [ 
                 "Rather than storing files locally on work devices, implement ways for your staff to store their data on encrypted cloud or external storage. This lessens the risk of an attacker being able to steal a device and access all the data stored within it. We would also recommend you work with your technical assistance provider to set up a remote wipe policy, which allows you to remotely erase work accounts on staff devices if they are lost, stolen, or compromised.",
-                "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these can sometimes be compromised by bad actors. Using your native keyboard when entering information into your work device is preferable."
+                "In addition to data storage, be wary of plugins, or small pieces of code added to the programs that you use on your work device. For example, some users rely on third-party keyboards to type in other languages or to use icons and other graphics in their messaging. Unfortunately, these third-party keyboards can sometimes sell your usage data to other companies. Using your native keyboard when entering information into your work device is preferable."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds":{
+          "third": [ 
             {
               "title": "", 
               "content": [
-                "You’ve made great progress on helping your staff compartmentalize their personal and professional lives. Now, your goal should be full compartmentalization, so there is very little data left for outside adversaries to locate. You will need to work with a technical assistance provider on these next steps."
+                "You’ve made great progress on helping your staff compartmentalize their personal and professional lives. Now, your goal should be full compartmentalization, so there is very little data left for outside adversaries to locate. You will need to work with a third-party technical assistance provider on these next steps."
               ]
             },
             {
               "title": "Use a virtual machine.", 
               "content": [
-                "If you have access to high-speed Internet, your staff can use software such as [[VMWare]](links.vmware.virtualization) or [[Microsoft Hypervisor]](links.ms.hyperv) to virtually access another machine through their own. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization."
+                "If you have access to high-speed Internet, your staff can use software such as [[VMWare]](links.vmware.virtualization) or [[Microsoft Hypervisor]](links.ms.hyperv) to virtually access another machine through their own computers. This allows them to do their work without leaving much traceable data on their work devices. All their work is instead saved on a shared drive, so if their device is electronically compromised or physically stolen, there is little to no risk of exposing sensitive information. This is a technical solution that requires maintaining and updating your work devices, so it may not be appropriate for every organization."
               ]
             },
             {
               "title": "Implement biometrics, if appropriate.",
               "content": [
-                "Many organizations rely on passwords as the first line of defense for work devices. This is, in part, because organizations based in the United States have higher legal defenses against disclosing their passwords to government authorities. In other parts of the world, however, biometric solutions (such as scanning a fingerprint) may be more secure and less vulnerable to challenges from law enforcement and governments. If that is the case in your region, a biometric solution may be a good fit for accessing work devices. Many biometric password systems also allow administrators to maintain an active log of devices that are currently connected to their network."
+                "Many organizations rely on passwords as the first line of defense for work devices. Depending on your threat model and organizational culture, a biometric solution may be an even better fit for accessing work devices. Many biometric password systems also allow administrators to maintain an active log of devices that are currently connected to their network. Consult your third-party technical assistance provider and weigh the advantages and disadvantages."
               ]
             },
             {
-              "title": "Incorporate end-point security solutions.",
+              "title": "Incorporate endpoint security solutions.",
               "content": [
-                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? End-point security solutions, including [[Microsoft Defender for Endpoint]](links.ms.defender) and [[Bitdefender GravityZone Ultra Security Suite]](links.bitdefender.gzultra), monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can  disconnect them automatically from the network. You can read more about end-point security in [[this resource from SANS]](links.sans.endpoint)."
+                "Organizations of many different sizes frequently have firewalls set up to protect them from outside threats. But what happens when the threat comes from within via a hacked or compromised work device? Endpoint security solutions, including [[Microsoft Defender for Endpoint]](links.ms.defender) and [[Bitdefender GravityZone Ultra Security Suite]](links.bitdefender.gzultra),monitor the actual devices connected to the network. If these software packages detect abnormal or disruptive behavior from any of these devices, they can disconnect them from the network automatically. You can read more about end-point security in [[this resource from SANS]](links.sans.endpoint)."
               ]
             }
-          ]
+          ]}
       }
     },
     "passwords-authentication": {
