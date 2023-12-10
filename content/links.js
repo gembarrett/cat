@@ -9,7 +9,7 @@ var links = {
   },
   "2fa": {
     "web": {
-      "en": "http://twofactorauth.org"
+      "en": "https://2fa.directory/"
     }
   },
   "3ma": {
@@ -75,6 +75,11 @@ var links = {
       "en": "https://bitwarden.com/"
     }
   },
+    "canva": {
+        "web": {
+            "en":"https://www.canva.com/"
+        }
+    },
   "cat": {
     "irplan": {
       "en": "https://docs.google.com/document/d/1wf4il1JI5Bm7kI2JVo1diUv-v4A_a6Fk59NeNtrgoiA/edit?usp=sharing"
@@ -374,6 +379,11 @@ var links = {
       "en": "https://www.perspectiveapi.com/#/home"
     }
   },
+    "pixlr": {
+        "web": {
+            "en":"https://pixlr.com/"
+        }
+    },
   "pmail": {
     "web": {
       "en": "https://protonmail.com/"
@@ -432,6 +442,11 @@ var links = {
       "en": "https://solokeys.com/"
     }
   },
+    "sumopaint": {
+        "web": {
+            "en": "https://www.sumopaint.com/"
+        }
+    },
   "synology": {
     "station": {
       "en": "https://www.synology.com/en-us/surveillance"

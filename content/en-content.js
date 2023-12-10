@@ -3364,62 +3364,64 @@ var en_rs = {
       "title": "Installing software",
       "general": {
           "why": [
-            "Software is the backbone of any organization’s digital work. But using illegal, bootleg, or unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
-            "In addition to being vigilant about software, your organization can also be strict about where software comes from, who can install it, and how it works. A technical assistance provider can help you be sure that software comes from legitimate sources and can be changed or altered only by dedicated staff members."
+            "Software is the backbone of any organization’s digital work. But using unlicensed software can open your organization up to unnecessary risk. With free, open-source alternatives, as well as discounted licenses available for nonprofits, don’t take the risk of inadvertently bringing malware onto your work devices.",
+            "In addition to being vigilant about software, your organization can also be strict about where software comes from, who can install it, and how it works. A third-party technical assistance provider can help you be sure that software comes from legitimate sources and can be changed or altered only by dedicated staff members."
           ], 
           "eg": [
-            "When ADE Worldwide opens an office in Guam, local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
+            "When ADE Worldwide opens an office in a new and remote location, the local staff struggle to find software they can afford for their small, two-person operation. To help them avoid having to use bootleg software, ADE negotiates with a regional software vendor for a series of discounted licenses. Then, to help keep key software updated, ADE IT staff install a device management system to push needed updates even from thousands of miles away."
           ] 
       },
       "results": {
-        "below":
-          [ 
+        "below": {
+          "you": [ 
             {
               "title": "", 
               "content": [ 
-                "You use software every day—web browsers, word processors, and numerous other types. Yet if your organization is using unlicensed, illegal, or bootleg software, you could be putting yourself at risk. While licensed software can be costly, illegal or unlicensed versions of that same software, often downloaded from the Internet, can be weaponized with malware and other threats."
+                "You use software every day—web browsers, word processors, and numerous other types. Yet if your organization is using unlicensed software, you could be putting yourself at risk. While licensed software can be costly, unlicensed versions of that same software, often downloaded from the Internet outside of approved sources or marketplaces, can be weaponized with malware and other threats."
               ]
             },
             {
               "title": "Apply for discounted licensed software.",
               "content": [ 
-                "Depending on your nonprofit status in your country, you may qualify for nonprofit discounts on popular commercial programs such as Microsoft Office. For example, the [[technology provider TechSoup]](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
+                "Depending on your nonprofit status in your region, you may qualify for discounts on popular commercial programs such as Microsoft Office. For example, the [[technology provider TechSoup]](links.techsoup.web) provides deeply discounted software licenses to registered nonprofit groups. Some major software retailers also provide discounts. Make sure to confirm whether you qualify for such discounts based on your organization’s current legal status or type of work."
               ]
             },
             {
               "title": "Use free, open-source software.",
               "content": [
-                "Many of the most popular paid programs have free, open- source alternatives. We’ve listed a few below. These programs aren’t the right fit for every organization, so do your research before relying on them.",
+                "Many of the most popular paid programs have free, open-source alternatives. We’ve listed a few below. These programs aren’t the right fit for every organization, so do your research before relying on them.",
                 {
                   "type": "ul",
                   "items": [
                     "Microsoft Office can be replaced with [[OpenOffice]](links.apache.oofice) or [[LibreOffice]](links.libre.office)",
-                    "Adobe Photoshop can be replaced with Canva (available with a nonprofit license), Sumopaint, and Pixlr",
+                    "Adobe Photoshop can be replaced with [[Canva]](links.canva.web) (available with a nonprofit license), [[Sumopaint]](links.sumopaint.web), and [[Pixlr]](links.pixlr.web)",
                     "Microsoft Outlook can be replaced with [[Mozilla Thunderbird]](links.mozilla.tbird)"
                   ]
                 },
-                "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. And because open-source programs are often maintained by a small staff , they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
+                "While open-source software is often free and convenient, there are some caveats. Be sure to download open-source software only from trusted sources. Because open-source programs are often maintained by a small staff, they may not be as user-friendly as commercial programs and may not be updated as often or at all. Use caution."
               ]
             }
-          ],
-        "ok":
-          [ 
+          ]
+        },
+        "ok":{
+          "you":[ 
             {
               "title": "",
               "content": [ 
-                "You’ve cracked down on your organization’s use of illegal or unlicensed software and found alternatives. Now, you can take steps to protect your work systems from untrusted software, too."
+                "You’ve cracked down on your organization’s use of unlicensed software and found alternatives. Now, you can take steps to protect your work systems from untrusted software, too."
               ]
             },
             {
               "title": "Be strict about who can install software.",
               "content": [
-                "Working with a technical assistance provider, you can restrict your staff from installing software on their work devices. One of the easiest ways to do this by making sure your staff members are not administrators of their own work devices. Instead, make sure the administrator is a trusted person in the office, preferably with some technical experience. You’ll also want to designate a backup administrator with access in case your primary administrator isn’t unavailable and you need to make changes to a work device.",
-                "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft and Apple. Any software you do download should be digitally signed, although be aware that this is not a guarantee of safety."
+                "Working with a third-party technical assistance provider, you can restrict your staff from installing software on their work devices. One of the easiest ways to do this is by making sure your staff members are not administrators of their own work devices. Instead, make sure the administrator is a trusted person in the office, preferably someone with some technical experience. You’ll also want to designate a backup administrator with access in case your primary administrator isn’t available and you need to make changes to a work device.",
+                "In consultation with your technical provider, you may want to also consider restricting your organization’s software to only what is available in official stores from your operating system, such as Microsoft, Apple, and Google. Any software you do download should be digitally signed, although be aware that this is not an absolute guarantee of safety."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds":{
+          "you": [ 
             {
               "title": "",
               "content": [
@@ -3429,16 +3431,19 @@ var en_rs = {
             {
               "title": "Establish a strong policy on the use of personal devices.",
               "content": [ 
-                "While convenience is important, allowing staff members to connect their personal devices to work networks quickly transforms your office system into the equivalent of an Internet cafe. Instead, establish a strong policy that explicitly states which devices employees may use and where, including when working from home. This reduces the risk that staff will unwittingly connect a compromised device to your network. You may also consider running a separate, less secure WiFi network."
+                "While convenience is important, allowing staff members to connect their personal devices to work networks quickly transforms your office system into the equivalent of an Internet cafe. Instead, establish a strong policy that explicitly states which devices employees may use and where, including when working from home. This reduces the risk that staff will unwittingly connect a compromised device to your network. You may also consider running a separate, less secure WiFi network in your office for guests or non-approved devices."
               ]
-            },
+            }
+          ],
+          "third": [
             {
               "title": "Take steps to tighten your oversight.",
               "content": [ 
-                "Working with a technical assistance provider, you may want to consider implementing a “zero trust” network, which allows an individual to connect to your internal systems only after they go through an authentication process. One way to do this is through single sign-on, which uses a single password across accounts and devices. Alternatively, you can establish a network administrator role to make sure that all staff log in through a central domain that can track and manage who is connected. Last, consider using device management software to remotely install needed software and wipe work devices as needed."
+                "Working with a third-party technical assistance provider, you may want to consider implementing a “zero trust” network, which allows an individual to connect to your internal systems only after they go through an authentication process. One way to do this is through single sign-on, which uses a single password across accounts and devices. Alternatively, you can establish a network administrator role to make sure that all staff log in through a central domain that can track and manage who is connected. Last, consider using device management software to remotely install needed software and wipe work devices as needed."
               ]
             }
           ]
+        }
       }
     },
     "data-encryption": {
@@ -3446,68 +3451,73 @@ var en_rs = {
       "title": "Data Encryption",
       "general": {
           "why": [
-            "Understanding and enabling data encryption on work devices isn’t as daunting as it may seem. While it’s critical to understand how encryption works (including when services use at-rest encryption), taking steps toward better safeguarding data is within reach for most organizations.",
-            "More advanced implementation can include “zero-knowledge” cloud storage and individual encryption of files and folders on specific devices. These can be implemented with the help of a technical assistance provider."
+            "Understanding and enabling data encryption on work devices isn’t as daunting as it may seem. While it’s critical to understand how encryption works (including when services use at-rest encryption), taking steps to better safeguard data is within reach for most organizations.",
+            "More advanced implementation can include “zero-knowledge” cloud storage and individual encryption of files and folders on specific devices. These can be implemented with the help of a third-party technical assistance provider."
           ], 
           "eg": [
-            "ADE Worldwide’s office in Zambia is  raided unexpectedly. The intruders seize the office’s two laptops and one desktop computer. Luckily, before the raid, ADE required all devices be full-disk encrypted. Therefore the staff in Zambia is reassured that their data remain safe while the devices are outside of their control."
+            "ADE Worldwide’s office in Southern Africa is broken into unexpectedly. The intruders seize the office’s two laptops and one desktop computer. Luckily, before the burglary, ADE required all devices be full-disk encrypted. Therefore the regional staff is reassured that their data remain safe while the devices are outside of their control."
           ] 
       },
       "results": {
-        "below":
-          [ 
+        "below":{
+          "third":[ 
             {
               "title": "", 
               "content": [ 
-                "If you associate encryption only with code-breaking and financial transactions, you’re not alone. Most people don’t encrypt any of the digital information they possess. As a result, their data can be easily accessed by an attacker if their computer is lost or stolen,  even if it is secured with a password. Only when a device is fully disk encrypted is your data protected (with some caveats below). Here are two steps to help your organization incorporate encryption into your workflow."
+                "If you associate encryption only with code-breaking and financial transactions, you’re not alone. Most people don’t encrypt any of the digital information they possess. As a result, their data can be easily accessed by an attacker if their computer is lost or stolen,  even if it is secured with a password. Only when a device is fully disk encrypted is your data protected (with some caveats below).",
+                  "Here are two steps to help your organization incorporate encryption into your workflow."
               ]
             },
             {
               "title": "Turn on full disk encryption on work devices.",
               "content": [
-                "Work with a technical assistance provider to enable full disk encryption on any computers that your organization uses for work. This may be time-consuming, especially for busy organizations with little downtime, but can be performed during off hours as needed. Windows computers must be upgraded to at least Windows 10 Pro (which typically costs around US $50) to enable [[BitLocker]](links.ms.bitlocker), the built-in full disk encryption software. Apple computers have access to built-in [[FileVault]](links.apple.filevault) software that can be enabled at any time. Linux computers use [[Luks]](links.redhat.luks), which must be enabled when the operating system is being installed.",
-                "It’s also important to understand how your encryption system works. Much encryption software, including Microsoft’s BitLocker, encrypts data “at rest,” meaning the data are encrypted only when the device is turned off. Some encrypted cloud storage also works this way, only encrypting data when the user is not actively connected to the system. This is important to consider when setting up these systems so there is no misunderstanding about how extensively you have protected your data."
+                "Work with a third-party technical assistance provider to enable full disk encryption on any computers that your organization uses for work. This may be time-consuming, especially for busy organizations with little downtime, but can be performed during off hours as needed.",
+                  "Windows computers must be upgraded to at least Windows 10 Pro (which typically costs around US $50) to enable [[BitLocker]](links.ms.bitlocker), the built-in full disk encryption software. Apple computers have access to built-in [[FileVault]](links.apple.filevault) software that can be enabled at any time. Linux computers use [[Luks]](links.redhat.luks), which must be enabled when the operating system is being installed. Luckily, most Apple and Android phones made in the last few years ship with encryption turned on automatically for their files and storage.",
+                  "It’s also important to understand how your encryption system works. Much encryption software, including Microsoft’s BitLocker, encrypts data “at rest,” meaning the data are encrypted only when the device is turned off or locked. Some encrypted cloud storage also works this way, only encrypting data when the user is not actively connected to the system. This is important to consider when setting up these systems so there is no misunderstanding about how extensively you have protected your data."
               ]
             },
             {
               "title": "Consider more secure hard drive alternatives.", 
               "content": [ 
-                "Currently, you may store some of your data on external hard drives, which are very portable and convenient. By default, however, most of these devices are not encrypted, leaving your data accessible to anyone who has the drive itself. Consider replacing these devices with more secure alternatives. One option would be to replace external hard drives with hard drives that require physical PIN codes. [[Apricorn]](links.apricorn.web) and [[iStorageUK]](links.istorageuk.web) sell these encrypted drives, which have keypads to enter the codes and access the data within."
+                "Currently, you may store some of your data on external hard drives, which are very portable and convenient. By default, however, most of these devices are not encrypted, leaving your data accessible to anyone who has the physical drive itself. Consider replacing these devices with more secure alternatives. One option would be to replace external hard drives with hard drives that require physical PIN codes. [[Apricorn]](links.apricorn.web) and [[iStorageUK]](links.istorageuk.web) sell these encrypted drives, which have keypads to enter the codes and access the data within."
               ]
             }
-          ],
-        "ok":
-          [
+          ]
+        },
+        "ok":{
+          "you":[
             {
               "title": "", 
               "content": [ 
-                "Now that you’ve enabled full disk encryption on your organization’s devices, you can use encrypted options for other types of storage as well. One of the most popular types of storage for many organizations is in the cloud, or storing files and information on servers run by popular services such as Dropbox and Google Drive. These are convenient, affordable storage options, but they aren’t the best choice for storing sensitive information. Here is a safer alternative."
+                "Now that you’ve enabled full disk encryption on your organization’s devices, you can use encrypted options for other types of storage as well. One of the most popular types of storage for many organizations is in the cloud, which includes storing files and information on servers run by popular services such as Dropbox and Google Drive. These are convenient, affordable storage options, but they aren’t the best choice for storing sensitive information. Here is a safer alternative."
               ]
             },
             {
               "title": "Use “zero-knowledge” encrypted cloud storage.", 
               "content": [ 
                 "For highly sensitive information, consider using a “zero-knowledge” cloud storage provider. This term refers to a cloud storage provider that has no “knowledge” of the files or data you store. They simply provide storage and the encryption functionality necessary to keep your data safe. This means that your organization alone has access to the files and data you store there.",
-                "While this greatly strengthens your ability to store sensitive information, there is also a downside: if you lose or forget your credentials to the service, you won’t be able to access your data. And since the provider doesn’t have access to your data, either, they can’t retrieve it for you. With this knowledge in mind, be selective about the data you choose to store with a zero-knowledge provider, choosing only sensitive data that you have backed up elsewhere. Popular zero-knowledge encrypted cloud storage providers include [[Tresorit]](links.tresorit.web), [[SpiderOak One]](links.soak.web), and the open-source alternative [[NextCloud]](links.nextcloud.web) or [[OwnCloud]](links.ocloud.web)."
+                "While this greatly strengthens your ability to store sensitive information, there is also a downside: if you lose or forget your credentials to the service, you won’t be able to access your data. And since the provider doesn’t have access to your data, either, they can’t retrieve it for you. With this knowledge in mind, be selective about the data you choose to store with a zero-knowledge provider, choosing only sensitive data that you have backed up elsewhere. Popular zero-knowledge encrypted cloud storage providers include [[Tresorit]](links.tresorit.web) and the open-source alternative [[NextCloud]](links.nextcloud.web) or [[OwnCloud]](links.ocloud.web)."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds":{
+          "third": [ 
             {
               "title": "", 
               "content": [
-                "Your organization has made major progress in keeping your sensitive data encrypted and secure. Your staff has enabled full disk encryption on all work devices and uses encrypted cloud storage for additional protection. Now you can take encryption one step further by teaching your staff members to encrypt individual files and data on their work devices. A technical assistance provider can help you incorporate this process into your workflow."
+                "Your organization has made major progress in keeping your sensitive data encrypted and secure. Your staff has enabled full disk encryption on all work devices and uses encrypted cloud storage for additional protection. Now you can take encryption one step further by teaching your staff members to encrypt individual files and data on their work devices. A third-party technical assistance provider can help you incorporate this process into your workflow."
               ]
             },
             {
-              "title": "Encrypt sensitive information on your computer", 
+              "title": "Encrypt sensitive information on your computer.", 
               "content": [
-                "While we recommend full disk encryption on all devices, it has its limitations. What happens, for example, if a staff member leaves their work laptop unlocked while they use the restroom and someone clicks on a sensitive file on their desktop? For individual files that could pose a risk if they fell into the wrong hands, consider teaching your staff members how to encrypt files and folders. If files are encrypted, individuals will be prompted for a password to open them. You can accomplish this through the use of file encryption software such as [[VeraCrypt]](links.vera.web) or [[Cryptomator]](links.cmator.web). A technical assistance provider can help you get started.",
+                "While we recommend full disk encryption on all devices, it has its limitations. What happens, for example, if a staff member leaves their work laptop unlocked while they use the restroom and someone clicks on a sensitive file on their desktop? For individual files that could pose a risk if they fell into the wrong hands, consider having staff members learn how to add an additional layer of encryption to select files and folders. If files are encrypted this way, individuals will be prompted for a password to open them. You can accomplish this through the use of file encryption software such as [[VeraCrypt]](links.vera.web) or [[Cryptomator]](links.cmator.web). A technical assistance provider can help you get started.",
                 "One important note: when using some types of this software, encrypted files may appear to be missing and not present in file folders or on the desktop. These files only appear when a user opens the appropriate software and enters their password."
               ]
             }
           ]
+        }
       }
     },
       "device-compartmentalization": {
@@ -3621,12 +3631,12 @@ var en_rs = {
             "Combining a password manager with two-factor authentication is a relatively painless way to greatly improve your security footprint. Adding additional steps, such as a physical security key or even SSO functionality, can take your security one step further."
           ],
           "eg": [
-            "A few years ago, ADE Worldwide required all staff to start using two-factor authentication alongside password managers for work accounts. When a third-party social media platform they use is compromised, staff are able to easily update their passwords with a new password generated by their password manager."
+            "A few years ago, ADE Worldwide required all staff to start using two-factor authentication alongside password managers for work accounts. When a third-party social media platform they use is compromised, staff are able to easily update their passwords with a new password generated by their password manager while still being protected by the two-factor authentication that’s still in place."
           ]
       },
       "results": {
-        "below":
-          [
+        "below":{
+          "you": [
             {
               "title": "",
               "content": [ 
@@ -3636,33 +3646,34 @@ var en_rs = {
             {
               "title": "Understand how passwords are compromised online.", 
               "content": [
-                "Passwords are valuable to people interested in accessing your organization’s information online. They can include attackers looking to compromise your organization or cybercriminals looking to steal or sell data. Most online services— such as email and social media platforms—will eventually be compromised. When this happens, attackers sell and trade passwords until they are gradually released on the public Internet.",
+                "Passwords are valuable to people interested in accessing your organization’s information online. They can include attackers looking to compromise your organization or cybercriminals looking to steal or sell data. Most online services—such as email and social media platforms—will eventually be compromised. When this happens, attackers sell and trade passwords until they are gradually released on the public Internet.",
                 "Sooner or later, staff members will suffer from a breach that exposes at least one of their passwords. If they use that password across several different accounts, they increase their risk and the risk to your organization. You can detect whether your current passwords have been breached by using the website [[Have I Been Pwned]](links.hibp.web)."
               ]
             },
             {
               "title": "Establish a password policy across your organization.",
               "content": [
-                "When given the option, most people will choose basic or easy-to-remember passwords that are easily cracked. To make your organization’s passwords stronger, consider establishing a password policy. It should govern what your organization defines as a strong password or passphrase, how staff can generate passwords (we recommend a password manager for this purpose), where passwords should be stored (again, a password manager is our preference), and other rules governing password-related security, such as how to handle security questions on a work account."
+                "When given the option, most people will choose basic or easy-to-remember passwords that are easily cracked. To make your organization’s passwords stronger, consider establishing a password policy. This policy should explain what your organization defines as a strong password or passphrase, how staff can generate passwords (we recommend a password manager for this purpose), where passwords should be stored (again, a password manager is our preference), and other rules governing password-related security, such as how to handle security questions on a work account."
               ]
             },
             {
               "title": "Enable a password manager.",
               "content": [ 
                 "Every online service your staff members use needs a unique password. Unfortunately, with many of us managing hundreds of different online services, it’s virtually impossible to remember so many unique passwords. A password management tool—also known as a password manager—can help organize our passwords, store them securely, and allow us to generate random, stronger passwords for our services. Some password managers can even share passwords with your staff for accounts that they all use regularly.",
-                "Popular and easy-to-use password managers for staff include [[1Password Business]](links.1pass.biz) ([[which offers 50% discount for NGOs]](links.1pass.discount)), [[LastPass Enterprise]](links.lpass.web), [[Dashlane]](links.dlane.web), [[KeePassxc]](links.kpassxc.web), [[Keeper]](links.keeper.web), and [[Bitwarden]](links.bwarden.web). A technical assistance provider can help you determine the right password manager for your organization."
+                "Popular and easy-to-use password managers for staff include [[1Password Business]](links.1pass.biz) ([[which offers 50% discount for NGOs]](links.1pass.discount)), [[LastPass Enterprise]](links.lpass.web), [[Dashlane]](links.dlane.web), [[KeePassXC]](links.kpassxc.web), [[Keeper]](links.keeper.web), and [[Bitwarden]](links.bwarden.web). A third-party technical assistance provider can help you determine the right password manager for your organization."
               ]
             },
             {
               "title": "Require two-factor authentication.", 
               "content": [
                 "Just as we can strengthen our home security by adding an alarm system and other measures, we can strengthen our online accounts in the event that someone does gain access to our passwords. This process is known as two-factor or multi-factor authentication and requires something you know (your password) in combination with something you have (an authentication code or tool).",
-                "We recommend enabling two-factor authentication for every online service that your organization uses. Using a site such as twofactorauth.org, in combination with an outside security provider, can help your staff  enable two-factor authentication quickly and efficiently on most services."
+                "We recommend enabling two-factor authentication for every online service that your organization uses. Using a site such as [[2fa.directory]](links.2fa.web), in combination with a third-party security provider, can help your staff enable two-factor authentication quickly and efficiently on most services."
               ]
             }
-          ],
-        "ok":
-          [ 
+          ]
+        },
+        "ok": {
+          "you":[ 
             {
               "title": "", 
               "content": [ 
@@ -3672,23 +3683,24 @@ var en_rs = {
             {
               "title": "Use an authenticator app or token.",
               "content": [
-                "When first enabled, most two-factor authentication services use SMS, or text, messages to send the codes your staff  will need to access their accounts. However, because SMS messages are easily intercepted and manipulated, this isn’t the most secure way to send authentication codes. Instead, we recommend switching from SMS to either an authenticator app that will run on your staff ’s smartphones or, for an even more secure solution, a hardware token that plugs into the physical computer’s USB port. We recommend [[Authy]](links.authy.web), [[Google Authenticator]](links.google.auth), and [[Microsoft Authenticator]](links.ms.auth). Reputable hardware tokens include [[Yubikey]](links.yubico.key), [[Solo Key]](links.solo.key), and [[Titan Key]](links.titan.key)."
+                "When first enabled, most two-factor authentication services use SMS, or text, messages to send the codes your staff will need to access their accounts. However, because SMS messages are easily intercepted and manipulated, this isn’t the most secure way to send authentication codes. Instead, we recommend switching from SMS to either an authenticator app that will run on staff smartphones or, for an even more secure solution, a hardware token that plugs into the physical computer’s USB port. We recommend [[Authy]](links.authy.web), [[Google Authenticator]](links.google.auth), and [[Microsoft Authenticator]](links.ms.auth). Reputable hardware tokens include [[Yubikey]](links.yubico.key), [[Solo Key]](links.solo.key), and [[Titan Key]](links.titan.key)."
               ]
             },
             {
               "title": "Strengthen your password policies.", 
               "content": [
-                "Even the strongest password policies have to work with your staff’s workflow. Review your existing policies and determine areas that can be improved and made stronger and clearer. For example, how should staff handle a situation when they are locked out of their account or lack the needed two-factor authentication credentials? Clarifying these steps can help reduce risk, particularly when staff are traveling, of inadvertently allowing an attacker into your system.",
-                "You will also want to take a look at your organization’s password policies across work devices. For example, local administrators on your work devices should be able to reset passwords themselves at regular intervals, such as every 180 days. A technical assistance provider can help you walk through your existing policies and find areas for improvement."
+                "Even the strongest password policies have to be compatible with your staff’s workflow. Review your existing policies and determine areas that can be improved and made stronger and clearer. For example, how should staff handle a situation when they are locked out of their account or lack the needed two-factor authentication credentials? Clarifying these steps can help reduce the risk of inadvertently allowing an attacker into your system, particularly when staff are traveling.",
+                "You will also want to take a look at your organization’s password policies across work devices. For example, local administrators on your work devices should be able to reset passwords themselves at regular intervals, such as every 180 days. A third-party technical assistance provider can help you walk through your organization’s existing policies and find areas for improvement."
               ]
             }
-          ],
-        "exceeds":
-          [
+          ]
+        },
+        "exceeds":{
+          "third":[
             {
               "title": "",
               "content": [ 
-                "Instituting password managers and enabling two-factor authentication on individual accounts will greatly improve your organization’s security. Working with a technical assistance provider, you can take these efforts one step further through an organization-wide setup. Find out more below."
+                "Instituting password managers and enabling two-factor authentication on individual accounts will greatly improve your organization’s security. Working with a third-party technical assistance provider, you can take these efforts one step further through an organization-wide setup. Find out more below."
               ]
             },
             {
@@ -3700,6 +3712,7 @@ var en_rs = {
               ]
             }
           ]
+        }
       }
     },
     "system-updates": {
