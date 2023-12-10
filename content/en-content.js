@@ -421,7 +421,7 @@ var en_qs = [
     "subs": [
       {
       "name": "policy-docs",
-        "subtitle": "Policy & Documentation",
+        "subtitle": "Policy &amp; Documentation",
         "questions": [
           {
             "q": "Does your organization have a formal or informal security policy?",
@@ -670,7 +670,7 @@ var en_qs = [
       },
       {
         "name":"training-support",
-        "subtitle": "Staff Training & Support",
+        "subtitle": "Staff Training and Support",
         "questions": [
             {
               "q": "Which groups within your organization currently receive cybersecurity training?",
@@ -1141,7 +1141,7 @@ var en_qs = [
       },
       {
         "name":"office-security",
-        "subtitle": "Office Policies & Systems",
+        "subtitle": "Office Policies &amp; Systems",
         "questions": [
           {
             "q": "Does your organization have a policy that controls who enters your offices?",
@@ -1343,11 +1343,11 @@ var en_qs = [
   },
   {
     "section": "devices-accounts",
-    "title": "Device & Account Security",
+    "title": "Device &amp; Account Security",
     "subs": [
       {
         "name":"messaging-collab",
-        "subtitle": "Messaging & Collaboration",
+        "subtitle": "Messaging and Collaboration",
         "questions": [
           {
             "q": "How do your staff members message each other one-on-one or talk casually? Select the option that applies most often within your organization.",
@@ -1571,7 +1571,7 @@ var en_qs = [
       },
       {
         "name":"passwords-authentication",
-        "subtitle": "Passwords & Authentication",
+        "subtitle": "Passwords &amp; Authentication",
         "questions": [
           {
             "q": "Do your staff members store their passwords in a password manager?",
@@ -1897,7 +1897,7 @@ var en_qs = [
       },
       {
         "name":"vp-network",
-        "subtitle": "VPN",
+        "subtitle": "Virtual Private Network (VPN)",
         "questions": [
           {
             "q": "Do your staff members use a VPN (virtual private network) when connecting to the Internet?",
@@ -2182,7 +2182,6 @@ var en_rs = {
       "threshold": 0
     },
     "general": {
-      "what": "What We Recommend",
       "why": "Why We Recommend This", 
       "eg": "A Real World Example",
         "you": "What You Can Do",
@@ -2429,7 +2428,9 @@ var en_rs = {
                   "you":[
                       {
                           "title": "",
-                          "content": "Your organization is being proactive about protecting your staff from online harassment, abuse, and hacking. Here are two additional steps you can take to lessen this risk further:"
+                          "content": [
+                              "Your organization is being proactive about protecting your staff from online harassment, abuse, and hacking. Here are two additional steps you can take to lessen this risk further:"
+                          ]
                       },
                       {
                           "title": "Monitor and remove personal information online.",

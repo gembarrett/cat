@@ -7,14 +7,36 @@ function generateRecommendation(result, rec, res, gen, prog, first){
     heading = `<h2>${result.title}</h2>`;
     
     resContent = '';
-      for (var i = 0; i < res.length; i ++) {
-        if (res[i].title !== "") {
-          resContent += `<h4>${res[i].title}</h4>`;
+    
+    if (Array.isArray(res.you)){
+        resContent += `<h3>${gen.you}</h3>`;
+        resDisplay = createResDisplay(res.you, gen, result.general);
+    }
+
+    if (Array.isArray(res.third)){
+        resContent += `<h3>${gen.third}</h3>`;
+        resDisplay = createResDisplay(res.third, gen, result.general);
+    }
+
+    
+    if (thisCat === first){
+        divInfo = `class="result r-${thisCat} active"`;
+    } else {
+        divInfo = `class="result r-${thisCat}"`;
+    }
+    
+    return `<div ${divInfo}>`+section+heading+`<p class="score">${thisScore}</p>`+resDisplay+`</div>`;
+}
+
+function createResDisplay(who, generic, additional){
+    for (var i = 0; i < who.length; i ++) {
+        if (who[i].title !== "") {
+          resContent += `<h4>${who[i].title}</h4>`;
         }
-        for (const text in res[i].content) {
-            thisRec = res[i].content[text];
+        for (const text in who[i].content) {
+            thisRec = who[i].content[text];
             // each item inside content
-                
+
             // check if it's an array of objects
             if (Array.isArray(thisRec)){
                 resContent += `<div class="extra-recs">`;
@@ -27,28 +49,21 @@ function generateRecommendation(result, rec, res, gen, prog, first){
                 resContent += getRecsContent(thisRec);
             }
         }
-        general = `<h3>${gen.why}</h3>`;
-          
-        for (var y = 0; y < result.general.why.length; y++) {
-            checkedText = findReplaceLinks(result.general.why[y]);
+        general = `<h3>${generic.why}</h3>`;
+
+        for (var y = 0; y < additional.why.length; y++) {
+            checkedText = findReplaceLinks(additional.why[y]);
             general += `<p>${checkedText}</p>`;
         }
-        general += `<div class="rec-example"><h3>${gen.eg}</h3>`;
-          
-        for (var eg = 0; eg < result.general.eg.length; eg++) {
-            checkedText = findReplaceLinks(result.general.eg[eg]);
+        general += `<div class="rec-example"><h3>${generic.eg}</h3>`;
+
+        for (var eg = 0; eg < additional.eg.length; eg++) {
+            checkedText = findReplaceLinks(additional.eg[eg]);
             general += `<p>${checkedText}</p>`;
         }
         general += `</div>`;
-      }
-    
-    if (thisCat === first){
-        divInfo = `class="result r-${thisCat} active"`;
-    } else {
-        divInfo = `class="result r-${thisCat}"`;
-    }
-    
-    return `<div ${divInfo}>`+section+heading+`<p class="score">${thisScore}</p>`+`<h3>${gen.what}</h3>`+resContent+general+`</div>`;
+  }
+    return resContent+general;
 }
 
 function getRecsContent(el){
