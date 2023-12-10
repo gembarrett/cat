@@ -2383,163 +2383,71 @@ var en_rs = {
           "title": "External Threats",
           "general": {
               "why": [ 
-                  "Understanding your risk is critical to keeping your organization safe. All good safety and security planning begins with a thorough understanding of the possible threats we face. Investing time and effort into better understanding your threat model will make reducing your risk much easier in the future. Remember also that threats evolve, so you may need to update your threat model as your organization and the landscape around you change.",
-                  "Once you have developed policies, plans, and documentation, consider a tabletop exercise. Just remember to encourage an open, nonjudgmental space; learning about security vulnerabilities doesn’t require individual finger-pointing or blame.",
-                  "When—not if—a real incident occurs, it can be scary, stressful, and chaotic. Following these best practices increases the likelihood of best possible outcomes. And don’t forget that you will need to assign at least one member of your staff  to oversee the cybersecurity effort within your organization."
+                  "Digital risks can quickly accelerate into actual physical risks. Understanding how to detect, track, and mitigate these types of risks can help keep your staff safe. This may require a greater degree of vigilance on your part than normal, but implementing a set of policies and incorporating some tools into your workflow can help enormously."
               ],
               "eg": [
-                  "ADE Worldwide is a civil society organization that helps train farmers and agricultural workers around the world to use water sustainably while advocating for better global environmental policy. The group’s advocacy for water rights has upset powerful landowners in several nations.",
-                  "ADE sees itself as a nonpartisan, nonpolitical agricultural advisor. After its website is hacked and defaced, however, ADE realizes it needs to conduct a threat model analysis to better understand the risks the group faces around the world.",
-                  "This process helps it realize that the likelihood of these digital attacks is high for groups working on similar issues. While ADE staff members don’t see their mission as controversial, they realize their own organization’s risk profile is high due to the effectiveness and publicity of their work. As a result, they develop an incident response plan and checklist for physical or cybersecurity incidents.",
-                  "The ADE staff decides to proactively lead a series of tabletop exercises talking through how they would respond in the event of a security incident. As a result, when the field staff receive some verbal threats from regional landowners, they are prepared with a plan to manage any potential risk."
+                  "The ADE Worldwide office in Eastern Europe has become the target of a local smear campaign by an industrialist whose company has been dumping chemicals into agricultural water supplies. The wealthy magnate claims that ADE is a shell company created to secretly investigate him. As an independent nonprofit, ADE objects, but not before a gang of online trolls begins harassing local ADE workers.",
+                  "To manage the harassment campaign, ADE institutes a harassment policy, requiring staff to report any personal or professional online abuse. Then, to help predict the spread of the harassment, ADE implements several tools that allow it to closely track social media campaigns. Finally, the IT staff reviews the site for the Eastern Europe office and removes any personally identifiable information about the staff there."
               ]
           },
           "results": {
-              "below": [
-                  {
-                      "title": "Determine your threat model.",
-                      "content": [
-                          "When thinking about the risks that face your organization in the digital world, it’s helpful to think about all the risks that your staff  faces outside of cybersecurity, including physical, legal, and organizational challenges. After all, many digital threats begin in the “offline” world, such as risks posed by governments, law enforcement, criminal groups, and lawsuits.",
-                          "Documenting and analyzing your risk is a process known in cybersecurity as “threat modeling.”, which allows you to focus on the threats that are most feasible and realistic. If you’re just getting started with cybersecurity for your organization—or refreshing your approach after an attack—start with your threat model. This process will not only identify cybersecurity risks but also help you find vulnerabilities across your organization. The Electronic Frontier Foundation provides a step-by-step guide on threat modeling [[here]](links.eff.tmodel). Access Now Helpdesk offers an easy-to-follow guide to threat models with examples [[here]](links.an.tmodel)."
-                      ]
-                  },
-                  {
-                      "title": "Create a risk matrix.",
-                      "content": [
-                          "Every organization’s risks are unique, and the context in which you work will help you better map out which risks are both most likely and most dangerous for your staff . It’s helpful to think about risks to your organization’s security based on the likelihood and the impact of particular threats. Just because an event is likely doesn’t mean it deserves your full attention. There may be less frequent threats that could have significantly more of an impact on your organization. For example, some threats—such as physical damage to your phone—may be highly likely but not very effective or dangerous. Other threats, such as a corporate-sponsored cyberattack, may be much less likely but very dangerous.",
-                          "You can map these risks using a tool called a “risk matrix,” which represents your different threats on a chart with likelihood on one axis and impact on the other.",
-                          "Here's an example.",
-                          {
-                              "type": "table",
-                              "rows": [
-                                ["", "Low Likelihood", "High Likelihood"],
-                                ["Low Consequence", "Printer is stolen from your office", "Physical damage to your phone"],
-                                ["High Consequence", "Corporate-sponsored cyberattack", "Phishing attack on your email account"]
-                              ]
-                            },
-                          "This is very helpful for members of your organization to quickly see which risks are both most likely and most dangerous. The Electronic Frontier Foundation has a good model for a risk matrix in its threat modeling guide, which you can access [[here]](links.eff.matrix). Tactical Tech’s Holistic Security offers [[additional reading]](links.ttech.matrices) on these matrices."
-                      ]
-                  }
-              ],
-              "ok": [
-                  {
-                      "title": "Develop an incident response plan.",
-                      "content": [
-                          "Working with your staff, develop a basic incident response plan. To do this, ask yourself what steps you would take if a particular threat occurred. Cybersecurity professionals often use risk frameworks, such as SANS Incident Response, [[NIST Cybersecurity]](links.nist.framework), ISO 27001, and the [[MITRE ATT&amp;CK Matrix]](links.mitre.matrix), to identify common threats and determine the best way to respond. These advanced frameworks may not be relevant to your organization's needs at this point, but the basic framework below can help you begin to plan those steps.",
-                          {
-                              "type": "table",
-                              "rows": [
-                                ["If an attacker...", "How would you respond..."],
-                                ["sent a malicious link and a staff member clicked on it", ""],
-                                ["hacked your organization’s social media accounts", ""],
-                                ["hacked your organization’s email accounts", ""],
-                                ["hacked your organization’s laptops or phones", ""],
-                                ["hacked or defaced your organization’s website", ""],
-                                ["tricked your organization by impersonating a donor or funder", ""],
-                                ["gained access to your organization’s data", ""],
-                                ["harassed a staff member online", ""],
-                                ["disrupted your organization’s internal communications", ""],
-                                ["stole one of your organization’s laptops or phones", ""]
-                              ]
-                          },
-                          "Don’t worry if you don’t have all the answers. Fill in as much information as you can. This step will be very useful when working with a third-party security provider who can help develop solutions to these threats.",
-                          "We have also developed [[an incident response plan questionnaire]](links.cat.irplan) to help guide your team in putting together an incident-specific plan."
-                      ]
-                  },
-                  {
-                      "title": "Understand how incident response phases work together.", 
-                      "content": [ 
-                        "In cybersecurity, you can think of four stages to respond to an incident: prepare, detect, contain/eradicate/recover, and then process/learn.", 
-                        [ 
-                            {
-                              "type": "title",
-                              "heading": "Prepare:",
-                                "content": "The quote “Chance favors the prepared mind” is credited to Louis Pasteur. With that in mind, there are steps your staff can take before an incident to improve your organization’s resiliency. One of them is to ask yourself the following questions:"
-                            },
-                            {
-                              "type": "ul",
-                              "items": [
-                                "How many devices do we have?",
-                                "Which are the most important?",
-                                "How do we keep those devices updated and safe?",
-                                "Do we have internal policies and a crisis communications plan from our departments that are easy to follow in a digital crisis?",
-                                "Can we come up with a master checklist to follow during a crisis? During an incident, panic often clouds our best thinking and a checklist will help."]
-                            },
-                            {
-                              "type": "title",
-                              "heading": "Detect:",
-                                "content": "This phase occurs when your organization identifies what is happening and plans a path forward. To do this, consider the following steps:"
-                            },
-                            {
-                              "type": "ul",
-                              "items": [
-                                "As best you can, identify an incident while it’s occurring or shortly after it has occurred",
-                                "Collect everything you can about the incident as soon as possible. Log dates and times, capture screenshots, record suspicious websites and links, stop using the device, and disconnect the device from the Internet (but don’t turn it off).",
-                                "Make sure to notify your internal teams about the incident, but don’t forget that cybersecurity attacks can affect other organizations, too. If outside groups are affected, you should inform them as soon as possible."
-                              ]
-                            },
-                            {
-                              "type": "title",
-                              "heading": "Contain/Eradicate/Recover:",
-                                "content": "This stage is actually made up of three steps."
-                            },
-                            {
-                              "type": "ul",
-                              "items": [
-                                "In the first “containment” step, your staff can identify the cause and scope of the incident and take steps to stop or block immediate harm.",
-                                "In the second “eradicate” step, your staff can fully stop the incident and remove any discovered threats from your system.",
-                                "In the third “recovery” step, your staff can bring operations back online to their pre-incident state and address any remaining damage."
-                              ]
-                            },
-                            {
-                              "type": "title",
-                              "heading": "Process/Learn:",
-                                "content": "This phase isn’t about blaming others, but rather reviewing how each phase unfolded and evaluating how your organization can improve the process and your future response."
-                            }
-                        ]
-                      ]
-                  },
-                  {
-                      "title": "Find a security provider that you can afford.",
-                      "content": [ 
-                            "Now that you have an understanding of the risks and threats facing your organization, you can begin to think about how to respond to those threats. This is when many people feel uncertain, especially if they don’t have a background in technology or security. Luckily, there are security providers who can help. When vetting a security provider, we recommend asking a series of questions to determine whether they are a good fit for your organization. We feel the most important ones are:",
-                            {
-                              "type": "ul",
-                              "items": [
-                                "Why do you do this work?",
-                                "Are you familiar with our region, culture, or language?",
-                                "Do you work with CSOs/NGOs? If so, what is the difference between your approach to this work and the work of your other clients?",
-                                "Have you worked with a group of my size before? Can you tell me more about this work?",
-                                "Have you worked on incidents or issues that are similar to ours in the past? Please provide a case study.",
-                                "How many clients are you currently working with? What percentage of your time will go to me?",
-                                "What is your understanding of the risks we face?"
-                              ]
-                            },
-                            "A security provider can’t fix all your organization’s challenges on their own. Understand that you will need a designated person on your staff  who will manage this work and act as a liaison between your organization and the security provider."
-                        ]
-                  }
-              ],
-              "exceeds": [
-                  {
-                      "title": "Run a tabletop exercise.",
-                      "content": [
-                          "It’s important to test your thinking about security by putting your organization through a simulated test. In the cybersecurity world, we call one of these tests a “tabletop exercise,” although your staff  doesn’t need to be physically gathered around a table to complete one. During an exercise, you can discuss how your organization would handle a hypothetical threat, step by step, and what areas still need to be improved. One idea is to write out scenarios of different incidents on index cards, drop them all in a box, and then schedule a few hours on your organization’s calendar to pull a few cards out to start the exercise.",
-                          "When you’re ready for your first tabletop exercise, here are key steps to get started. Some cybersecurity providers incorporate the [[MITRE Corp.’s guidelines on tabletop exercises]](links.mitre.tabletop).",
-                          {
-                              "type": "ul",
-                              "items": [
-                                "Determine what you would like to test (usually by choosing one of your top identified threats).",
-                                "Designate a group leader to run the exercise.",
-                                "Create a plausible storyline that includes the threat you want to test your response to.",
-                                "Gather the staff that would be responsible for managing this threat.",
-                                "Walk the staff  through the scenario and ask for their responses, step by step.",
-                                "Document gaps, concerns, and weak points in the threat response."
-                              ]
-                          },
-                          "You can use the knowledge gained from a tabletop exercise to identify areas of concern and begin to develop strategies to reduce those risks."
-                      ]                      
-                  }
-              ]
+              "below": {
+                  "you":[
+                      {
+                          "title": "",
+                          "content": [
+                              "Online harassment, cyberbullying, and even website hacking can all escalate into real-world physical threats or high-level cyberattacks. Though it’s tempting to disregard these events as an upsetting cost of being active online, they can pose a greater threat than you might expect. Here’s how to begin to mitigate some of those risks:"
+                          ]
+                      },
+                      {
+                          "title": "Create a threat and harassment policy.",
+                          "content": [
+                              "Before an online harassment campaign escalates into violence, consider establishing an organization-wide threat and harassment policy. For example, your organization’s policy could state that any staff member who is harassed online in their personal or work life must report the incident to their supervisors. Even a single report should heighten the state of alert within the office for at least one week and cause a series of carefully documented security measures. At a minimum, organizations should capture the evidence of the harassment through screenshots, log the time and date the harassment occurred, and report the abuse to the platform used by the harassers.",
+                              "You may also want to consider reporting harassment to the harasser’s ISP. Although they aren’t always obligated to act, ISPs may have the power to temporarily ban or block a customer who is violating their terms of service. Last, while not always possible, consider allowing staff members to keep their work social media profiles private, which can help reduce attacks."
+                          ]
+                      }
+                  ]
+               },
+              "ok": {
+                  "you":[
+                      {
+                          "title": "",
+                          "content": [
+                              "You’ve taken some important steps to protect your staff from online harassment, abuse, and hacking. But there are additional steps you can take to anticipate and avoid future risks."
+                          ]
+                      },
+                      {
+                          "title": "Take steps to reduce emerging threats.",
+                          "content": [
+                              "Staying ahead of potential adversaries can help your staff avoid distressing and stressful cyberattacks. Google and other search engines offer alerts for sensitive information that appears online, such as the last name of staff members and their home address. Other commercial services, such as [[TalkWalker]](links.twalker.web) and [[Mention]](links.mention.web), can search social media for concerning keywords. [[ChangeTower]](links.ctower.web) allows users to track changes to Wikipedia pages and other sites that can often be a precursor to harassment.",
+                              "Although we recommend caution with LinkedIn, it can also be used as a research tool to see who is viewing staff member profiles. Within the organization, consider making specific staff information anonymous (such as using their first name and last initial) and removing headshots and other staff images."
+                          ]
+                      }
+                  ]
+                },
+              "exceeds": {
+                  "you":[
+                      {
+                          "title": "",
+                          "content": "Your organization is being proactive about protecting your staff from online harassment, abuse, and hacking. Here are two additional steps you can take to lessen this risk further:"
+                      },
+                      {
+                          "title": "Monitor and remove personal information online.",
+                          "content": [
+                              "If you are concerned that your staff members have personally identifiable information online, you can work with commercial providers to temporarily remove this information. Services include [[Abine DeleteMe]](links.deleteme.web), [[Reputation Defender]](links.repdef.web), and [[Norton LifeLock]](links.lifelock.web), although it is important to note that they primarily scrub data from US-based marketing and sales databases.",
+                                "Staff may also want to consider creating virtual phone numbers for work purposes rather than using their personal phone numbers, including setting up online accounts and using messenger services such as WhatsApp. Google Voice and Skype can both provide virtual phone numbers."
+                          ]
+                      }
+                  ],
+                  "third": [
+                      {
+                          "title": "Watch for warning signs.",
+                          "content": [
+                              "Staying proactive about online threats can help organizations respond more quickly when their projects or staff are targeted online. Content moderation tools including [[Perspective API]](links.perapi.web) and [[The Coral Project]](links.coral.web) can use artificial intelligence (AI) to track and score comments left on your organization’s blog or website. Tools such as [[CrowdTangle]](links.ctangle.web), [[SMAT (Social Media Analysis Toolkit)]](links.smat.kit), [[Privacy Party]](links.bparty.web), and [[Babel Street]](links.babelst.web) can help your organization monitor social media for misinformation campaigns about your work. A provider like [[Tall Poppy]](links.tpoppy.web) may be able to help you manage online harassment. And you can work with a third-party technical assistance provider to analyze your web traffic for anomalies, such as harassers who are not hiding their real identities or are sending lots of referral traffic to your site from noted troll sites such as 8chan."
+                          ]
+                      }
+                  ]
+             }
           }
       },
     "policy-docs": {
@@ -3717,22 +3625,22 @@ var en_rs = {
     },
     "system-updates": {
           "section": "Device and Account Security",
-      "title": "Updates",
+      "title": "System Updates",
       "general": {
           "why": [
-            "By not updating our software and operating systems, we are leaving ourselves vulnerable to unnecessary risks. Luckily, updates don’t have to be time-consuming and annoying. Enabling automatic updates, establishing master administrator accounts for manual updates, or even pushing updates to devices can all be done with a little help from a technical assistance provider. "
+            "By not updating our software and operating systems, we are leaving ourselves vulnerable to unnecessary risks. Luckily, updates don’t have to be time-consuming and annoying. Enabling automatic updates, establishing main administrator accounts for manual updates, or even pushing updates to devices can all be done with a little help from a third-party technical assistance provider."
           ],
           "eg": [
-            "The ADE Worldwide finance staff  consists of three members and a manager based in Washington, DC. As busy professionals, they are juggling financial oversight of a major global nonprofit. When they see a pop-up alert on their devices reminding them to update their accounting software, they generally ignore the notification and continue working. Unfortunately, a security flaw in their accounting software poses a risk to their systems unless it is updated, so ADE management requires the staff to enable automatic updates on their software moving forward. Then, they add that requirement to their updates policy to ensure staff continue following this best practice."
+            "The ADE Worldwide finance staff consists of three members and a manager based in Washington, DC. As busy professionals, they focus on financial oversight of a major global nonprofit. When they see a pop-up alert on their devices reminding them to update their accounting software, they generally ignore the notification and continue working. Unfortunately, a security flaw in their accounting software poses a risk to their systems unless it is updated, so ADE management requires the staff to enable automatic updates on their software moving forward. Then, they add that requirement to their updates policy to ensure staff continue following this best practice."
           ]
       },
       "results": {
-        "below":
-          [ 
+        "below":{
+          "you":[ 
             {
               "title": "", 
               "content": [ 
-                "The software that organizations rely on for their work relies on updates to run smoothly and securely. Yet for many office workers, pop-up boxes asking to install updates are an annoyance to be ignored, not a vital part of their workflow. Luckily, you can take steps to make updates a more regular part of your organization’s technology use."
+                "The software that organizations use for their work relies on updates to run smoothly and securely. Yet for many people, pop-up boxes asking to install updates are an annoyance to be ignored, not a vital part of their workflow. Luckily, you can take steps to make updates a more regular part of your organization’s technology use."
               ]
             },
             {
@@ -3741,38 +3649,41 @@ var en_rs = {
                 "One of the most effective and least time-consuming ways to update software is to automate the process. Most software allows users to select an automatic update option, which will force the software to install available updates and restart as needed. We would recommend making sure that all staff members enable this option on all available software and send an email to their supervisors confirming they have done so."
               ]
             }
-          ],
-        "ok":
-          [ 
+          ]
+        },
+        "ok":{
+          "third":[ 
             {
               "title": "", 
               "content": [ 
-                "Your staff has enabled automatic updates on their software, which is a key step toward a more secure workflow. But what happens if you have many different work devices, all running different versions of different software platforms? It’s easy for employees to overlook a particular piece of software, leaving the organization vulnerable. Here’s how to respond."
+                "Your staff has enabled automatic updates on their software, which is a key step toward a more secure workflow. But what happens if your organization have many different work devices, all running different versions of different software platforms? It’s easy for a staff member to overlook a particular piece of software, leaving the organization vulnerable. Here’s how to respond."
               ]
             },
             {
               "title": "Manually install updates as needed.", 
               "content": [ 
-                "If you’re concerned that your staff may be overlooking essential updates on their systems, work with a technical assistance provider to create a master administrator account on all work devices. Then, when the devices are not being used, such as after work hours, manually install all updates as needed using the administrator account."
+                "If you’re concerned that your staff may be overlooking essential updates on their systems, work with a third-party technical assistance provider to create a main administrator account on all work devices. Then, when the devices are not being used, such as after work hours, manually install all updates as needed using the administrator account."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds":{
+          "third":[ 
             {
               "title": "", 
               "content": [
-                "When your organization is growing or spreading across several offices in different regions or countries, it may no longer be feasible for IT staff to manually install updates or to rely on your employees to enable automatic updates. Instead, you may want to consider:"
+                "When your organization is growing—or operating across several offices in different regions or countries—it may no longer be feasible for IT staff to manually install updates or to rely on your employees to enable automatic updates. Instead, you may want to consider:"
               ]
             },
             {
               "title": "Pushing updates as needed to work devices.",
               "content": [
-                "For large organizations with several offices, using device management software can allow your IT department to “push” updates to work devices without having to be physically present in the office. This can ensure that critical updates reach work devices around the world while giving your organization more hands-on management of software and security. Apple supplies [[their own device management software]](links.apple.management), while Google provides a [[similar service]](links.google.management) through their G Suite platform. You may be able to use an open source alternative such as [[Miradore]](links.miradore.web).",
+                "For large organizations with several offices, using device management software can allow your IT department to “push” updates to work devices without having to be physically present in the office. This can ensure that critical updates reach work devices around the world while giving your organization more hands-on management of software and security. Apple supplies [[their own device management software]](links.apple.management), while Google provides a [[similar service]](links.google.management) through their G Suite platform. You may be able to use an [[open source alternative such as Miradore]](links.miradore.web).",
                 "You can also configure your internal systems to prevent access to users who are running older versions of operating systems and software."
               ]
             }
           ]
+        }
       }
     },
     "op-continuity": {
@@ -3783,12 +3694,12 @@ var en_rs = {
             "Disasters and crises aren’t always predictable. That’s why we recommend that your organization invest time now in creating plans to make sure you can continue operating even when situations drastically change. This type of planning isn’t limited to natural disasters, either, as illness, conflict, or simply a flooded office can all derail your staff’s ability to work effectively."
           ], 
           "eg": [
-            "ADE Worldwide works with local farming communities in rural parts of Colorado, Utah, and Wyoming. During wildfire season, it’s not uncommon for staff to temporarily relocate from their offices to safer locations away from zones that are susceptible to the fires. After a few years of this cycle, ADE management realizes they need to better support these offices during these seasonal crises. They implement an incident response plan and alternate communication channels to be used when fires break out."
+            "ADE Worldwide works with local farming communities in rural parts of the United States. During wildfire season, it’s not uncommon for staff to temporarily relocate from their offices to safer locations away from zones that are susceptible to the fires. After a few years of this cycle, ADE management realizes they need to better support these offices during these seasonal crises. They implement an incident response plan and alternate communication channels to be used when fires break out."
           ]
       },
       "results": { 
-        "below":
-          [ 
+        "below":{
+          "you":[ 
             {
               "title": "", 
               "content": [
@@ -3798,37 +3709,41 @@ var en_rs = {
             {
               "title": "Conduct a drill to plan for worst-case scenarios.", 
               "content": [
-                "There's no better time to plan for a crisis than before it takes place. A drill can help you do so. The level of complexity is up to you, but you should focus on how your organization would respond to a single threat, such as an Internet shutdown, inability to get into the office, or a natural disaster. Working with your managers, assess how your organization would respond to such a threat, making sure to identify any weaknesses or vulnerabilities that come up during the drill."
+                "There's no better time to plan for a crisis than before it takes place. A drill can help you do so. The level of complexity of this drill is up to you, but you should focus on how your organization would respond to a single threat, such as an Internet outage, inability to get into the office, or a natural disaster. Working with your managers, assess how your organization would respond to such a threat, making sure to identify any weaknesses or vulnerabilities that come up during the drill."
               ]
             }
-          ],
-        "ok":
-          [
+          ]
+        },
+        "ok":{
+          "you":[
             {
               "title": "",
               "content": [ 
-                "Once you have a sense of the risks that your organization faces, you can begin to plan for crises and disasters. Ensuring that your plans are documented and accessible to your staff is your top priority, followed by communicating during a difficult moment."
+                "Once you have a sense of the risks that your organization faces, you can begin to plan for crises and disasters. Ensuring that your organization’s plans are documented and accessible to your staff is your top priority, followed by communicating during a difficult moment."
               ]
             },
             {
-              "title": "Create incident response and \"rainy day\" plans.",
+              "title": `Create incident response and "rainy day" plans.`,
               "content": [
-                "In a crisis, individuals tend to perform better when they can follow a clear, step-by-step checklist. Take time now to create incident response plans for particular threats, such as a natural disaster or Internet outage. From there, you can create a “rainy day” plan that allows you to keep working even in difficult conditions. A security provider can help you with this planning phase."
+                "In a crisis, individuals tend to perform better when they can follow a clear, step-by-step checklist. Take time now to create incident response plans for particular threats, such as a natural disaster or Internet outage. From there, you can create a “rainy day” plan that allows you to keep working even in difficult conditions. A third-party security provider can help you with this planning phase."
               ]
-            },
+            }
+          ],
+            "third": [
             {
               "title": "Set up an alternate communication channel.", 
               "content": [
                 "In an emergency, the normal communication channels that your organization relies on, such as Slack and email, may not be available. Consider creating an account with a different service, such as encrypted email provider [[ProtonMail]](links.pmail.web) or encrypted messenger [[Threema]](links.3ma.web), to use during a crisis. Make sure to practice logging in and using these accounts to communicate during drills every three to six months."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds":{
+          "you":[ 
             {
               "title": "", 
               "content": [
-                "Now that you have plans in place for individual crises, spend time focusing on what your staff needs to continue their work during a difficult moment. This can include technical solutions as well as support for their emotional well-being and stress level."
+                "Now that your organization has plans in place for individual crises, spend time focusing on what your staff needs to continue their work during a difficult moment. This can include technical solutions as well as support for their emotional well-being and stress level."
               ]
             },
             {
@@ -3842,11 +3757,13 @@ var en_rs = {
               "content": [
                 "When staff can’t meet in person, productivity can sometimes dip. While using popular videoconferencing platforms is ideal for standard meetings, consider a more secure and end-to-end encrypted alternative for sensitive staff  meetings, such as [[Cisco Webex]](links.cisco.webex), Zoom or Signal."
               ]
-            },
+            }
+          ],
+          "third":[
             {
               "title": "Try a secure collaborative platform.", 
               "content": [ 
-                "Slack and other collaboration tools are useful for everyday office communications and nonsensitive information and projects. For more sensitive projects, consider an encrypted collaboration platform such as Mattermost, Element or Semaphor. These platforms sometimes have a slightly steeper learning curve and may require technical assistance to set up, but they provide a much higher degree of security."
+                "Slack and other collaboration tools are useful for everyday office communications and nonsensitive information and projects. For more sensitive projects, consider an encrypted collaboration platform such as [[Mattermost]](links.mmost.web) or [[Element]](links.element.web). These platforms sometimes have a slightly steeper learning curve and may require technical assistance to set up, but they provide a much higher degree of security."
               ]
             },
             {
@@ -3856,6 +3773,7 @@ var en_rs = {
               ]
             }
           ]
+        }
       }
     },
     "third-party": {
@@ -3866,29 +3784,29 @@ var en_rs = {
             "Increasingly, we rely on third-party services such as social media platforms and cloud-based software for much of our workflow. And while these tools can be tremendously useful for our work, they also carry significant risks and drawbacks. Understanding how to manage third-party services properly can keep your organization safer and your staff more informed about how they should carry out their work."
           ],
           "eg": [
-            "Staff at the ADE Worldwide office in Honduras are outspoken about the threat facing the small farming communities they represent. This has caught the attention of several vocal landowners, who feel that the organization is biased in its advocacy. As a result, ADE experiences a wave of online harassment to its Honduran-linked social media accounts. To help avoid any further risks to their staff, ADE management in Honduras enables two-factor authentication across their social media channels and removes personal information about staff from the website."
+            "Staff at the ADE Worldwide office in Central America are outspoken about the threat facing the small farming communities they represent. This has caught the attention of several vocal business people, who feel that the organization is biased in its advocacy. As a result, ADE experiences a wave of online harassment to its Central America-linked social media accounts. To help avoid any further risks to their staff, ADE management there enables two-factor authentication across their social media channels and removes personal information about staff from the website."
           ] 
       },
       "results": { 
-        "below":
-          [ 
+        "below":{
+          "you":[ 
             {
               "title": "",
               "content": [
-                "Every day, organizations rely on third-party services and platforms to get work done, from social media services such as Twitter and Facebook to software-as-a-service (SaaS) tools such as Adobe Creative Suite and Salesforce. Yet third-party services can also be entry points for misinformation, disruption, and cyberattacks. This is a particular risk for social media platforms, which have become frequent targets for manipulation and harassment."
+                "Every day, organizations rely on third-party services and platforms to get work done, from social media services such as X/Twitter and Facebook to software-as-a-service (SaaS) tools such as Adobe Creative Suite and Salesforce. Yet third-party services can also be entry points for misinformation, disruption, and cyberattacks. This is a particular risk for social media platforms, which have become frequent targets for manipulation and harassment."
               ]
             },
             {
               "title": "Create a public and private organizational account on social media platforms.",
               "content": [
-                "On social media, verification is essential. An account that claims to represent your organization can sow misinformation, mislead your community, and discredit your efforts. To help prevent this risk, create both a public and private account for your organization. If your public account is compromised or attacked, your private account can issue public statements and clarifications. Most social media platforms allow dual accounts, although Facebook may be more restrictive due to its “real name” policy, which requires users to use a verifiable name.",
-                "Nonetheless, Facebook has extended some special permissions for certain types of accounts, such as [[accounts belonging to journalists]](links.fb.journos).",
+                "On social media, verification is essential. An account that claims to represent your organization can sow misinformation, mislead your community, and discredit your efforts. To help prevent this risk, create both a public and private account for your organization. If your public account is compromised or attacked, your private account can issue public statements and clarifications. Most social media platforms allow dual accounts, although Facebook may be more restrictive due to its “real name” policy, which requires users to use a verifiable name. Nonetheless, Facebook has extended some special permissions for certain types of accounts, such as [[accounts belonging to journalists]](links.fb.journos).",
                 "In addition to dual accounts, you will want to make sure that two-factor authentication and other security features are enabled on all third-party accounts, as well as making sure your staff understands privacy settings on social media, such as turning off location data."
               ]
             }
-          ],
-        "ok":
-          [
+          ]
+        },
+        "ok":{
+          "you":[
             {
               "title": "",
               "content": [
@@ -3898,20 +3816,21 @@ var en_rs = {
             {
               "title": "Verify your organization on social media.", 
               "content": [ 
-                "Apply for the checkmark verification on all official social media accounts used by your organization. This requires an application process with the individual social media platforms, but indicates a level of trust and authenticity to the public."
+                "Apply for the checkmark verification on all official social media accounts used by your organization. This requires an application process with the individual social media platforms but indicates a level of trust and authenticity to the public."
               ]
             },
             {
               "title": "Make sure you have several administrators.",
               "content": [ 
-                "All official social media accounts should have several staff members with the highest level credentials. If one user leaves the organization, the remaining ones can reset access to the account and make other changes as needed. Additionally, all high-level users should use two-factor authentication on their accounts, which may require a shared authentication setup process. A technical assistance provider can help you do so using the quick response (QR) code the platform provided during setup.",
+                "All official social media accounts should have several staff members with access to the highest level credentials. If one user leaves the organization, the remaining ones can reset access to the account and make other changes as needed. Additionally, all high-level users should use two-factor authentication on their accounts, which may require a shared authentication setup process. A third-party technical assistance provider can help you do so using the quick response (QR) code the platform provided during setup.",
                 "If your staff uses social media management tools such as TweetDeck, Hootsuite, or Sprout, make sure they use a work-administered account for all work-related social media profiles.",
                 "It’s also wise to institute an offboarding process for departing staff who manage social media for your organization, including changing passwords upon their departure."
               ]
             }
-          ],
-        "exceeds":
-          [
+          ]
+        },
+        "exceeds":{
+          "you":[
             {
               "title": "", 
               "content": [ 
@@ -3923,15 +3842,18 @@ var en_rs = {
               "content": [ 
                 "When a staff member leaves your organization or temporarily becomes unavailable, it’s important to be able to access and decommission any third-party services they may have used. While this is important for all services, it’s particularly critical for social media platforms, which can often contain sensitive communications or interoffice messaging. Ensuring that staff members have needed login credentials and other access can help reduce the risks of leaving these accounts unattended."
               ]
-            },
+            }
+          ],
+        "third":[
             {
               "title": "Use defensive tactics against doxxing.", 
               "content": [
                 "Doxxing, or the practice of releasing personally identifiable information on the Internet, can be personally and professionally challenging. Luckily, there are several anti-doxxing measures your organization can take to lessen this risk. These include proactively searching the names of your staff on popular search engines and removing the names of staff members from data brokerage sites using services such as [[Abine DeleteMe]](links.deleteme.web) and [[Norton LifeLock]](links.lifelock.web).",
-                "Other defensive measures you can take to strengthen staff accounts include establishing trusted backup access to third-party accounts in case of a staff member’s illness, imprisonment, or death, and claiming similar-sounding social media account names using a service such as [[DNSTwist]](links.dnstwist.web)."
+                "Other defensive measures you can take to strengthen staff accounts include establishing trusted backup access to third-party accounts in case of a staff member’s illness or death and claiming similar-sounding social media account names using a service such as [[DNSTwist]](links.dnstwist.web)."
               ]
             }
           ]
+        }
       }
     },
     "vp-network": {
@@ -3942,44 +3864,48 @@ var en_rs = {
             "A VPN enables us to have a greater degree of privacy as we do our work online. Yet selecting and implementing the right VPN isn't always the easiest decision. Work with a technical assistance provider to determine which VPN service is right for you and to better understand the advantages and disadvantages of using this software."
           ],
           "eg": [
-            "The ADE Worldwide office in Berlin often conducts sensitive research into land rights and property records around the world. The research department often uses Tor when browsing sensitive topics, while the entire office uses a specific VPN.",
-            "Eventually, managers in the Berlin office realize they need even more control over their browsing data and decide to build their own VPN using Google’s Outline service with the help of a local technical assistance provider."
+            "The ADE Worldwide office in Europe often conducts sensitive research into land rights and property records around the world. The research department uses Tor when browsing sensitive topics, while the entire office uses a specific VPN.",
+            "Eventually, managers in that office realize they need even more control over their browsing data and decide to build their own VPN using Google’s Outline service with the help of a local technical assistance provider."
           ]
       },
       "results": {
-        "below":
-          [ 
+        "below":{
+          "you":[ 
             {
               "title": "",
               "content": [
-                "Your organization may have considered a virtual private network (VPN), but was unsure about which to choose. Alternatively, perhaps this is the first time you’ve ever heard of a VPN. Either way, VPN usage is becoming more popular across the web due to concerns over data privacy and protection. In general, we recommend your organization use a VPN. Here's how to get started."
+                "Your organization may have considered a virtual private network (VPN) but was unsure about which to choose. Or perhaps this is the first time you’ve ever heard of a VPN. Either way, VPN usage is becoming more popular across the web due to concerns over data privacy and protection. In general, we recommend your organization use a VPN. Here's how to get started."
               ]
             },
             {
+              "title": `Understand the difference between “incognito mode” and VPN usage.`, 
+              "content": [
+                "Despite some disclaimers within the browser, incognito or private browsing mode remains confusing to many Internet users. This mode opens a new window in your browser that does not save your web searches or site visits. While this may seem like your browsing history is fully secure, your internet service provider (ISP) can still track the sites you visit, although your browser does not save your history. A VPN, by contrast, prevents your ISP from collecting that data but may collect that data itself.",
+                "While incognito or private browsing mode prevents in-browser tracking by websites, using a VPN alone does not, so it’s best to use the two together if you want to browse “privately.” Understanding these distinctions is important for your staff as they choose which steps to take during their everyday work."
+              ]
+            }
+          ],
+        "third":[
+            {
               "title": "Understand the advantages and disadvantages of VPN usage.", 
               "content": [
-                "When you browse the Internet without a VPN, your Internet service provider (ISP) can see all the websites you visit, as well as the date and time you visit them. Increasingly, the websites themselves also track high levels of your data as you browse.",
-                "When you use a VPN, you are blurring some of the information that your ISP can collect, as well as some information websites track. You are giving that information to your VPN provider, who is encrypting your connection to the Internet.",
-                "Depending on your VPN provider, this could be safer, riskier, or as risky as giving your data to your ISP. Generally, if you choose a reputable paid VPN provider, your data are more secure than browsing without a VPN. And if you pay for your VPN under your organization’s name, you will have added privacy—even more so if you pay for the service using an alias.",
-                "Your technical assistance provider can help you with this step. It is also important to note that some countries and regions have made VPN usage illegal, so be aware of your local restrictions before selecting a service. You can read more about VPN use in this article from Consumer Reports."
+                  "When you browse the Internet without a VPN, your Internet service provider (ISP) can see all the websites you visit, as well as the date and time you visit them. Increasingly, the websites themselves also track high levels of your data as you browse.",
+                  "When you use a VPN, you are blurring some of the information that your ISP can collect, as well as some information websites track. You are giving that information to your VPN provider instead, which is encrypting your connection to the Internet.",
+                  "Depending on your VPN provider, this could be safer, riskier, or just as risky as giving your data to your ISP. Generally, if you choose a reputable paid VPN provider, your data are more secure than browsing without a VPN. And if you pay for your VPN under your organization’s name, you will have added privacy—even more so if you pay for the service using an alias.",
+                  "Your third-party technical assistance provider can help you with this step. It is also important to note that VPN usage is not possible in some countries, so be aware of your local restrictions before selecting a service. You can read more about VPN use in [[this article from Consumer Reports.]](links.creports.vpns)."
               ]
             },
             {
               "title": "Evaluate your budget and choose a VPN accordingly.", 
               "content": [
-                "VPNs come in all varieties and price points. Luckily, most VPNs are reasonably priced. We discourage most organizations from relying on an entirely free VPN because of concerns about your data security and privacy. There are a small number of trusted free alternatives, including [[Psiphon]](links.psiphon.web), [[Lantern]](links.lantern.web), and [[BitMask]](links.bmask.web). Many VPN companies, including [[Tunnel Bear]](links.tbear.web) and [[Mullvad]](links.mvad.web), also provide free annual subscriptions to deserving organizations, but these are best left for groups with little to no financial resources. You can consult with a technical assistance provider for advice on choosing a VPN and read articles like [[this New York Times Wirecutter guide]](links.nyt.vpns) for more details."
-              ]
-            },
-            {
-              "title": "Understand the difference between “incognito mode” and VPN usage.", 
-              "content": [
-                "Despite some disclaimers within the browser, incognito or private browsing mode remains confusing to many Internet users. This mode opens a new window in your browser that does not save your web searches or site visits. While this may seem like your browsing history is fully secure, your ISP can still track the sites you visit, although your browser does not save your history. A VPN, by contrast, prevents your ISP from collecting that data but may collect that data itself.",
-                "While incognito or private browsing mode prevents in-browser tracking by websites, using a VPN alone does not. Understanding these distinctions is important for your staff as they choose which steps to take during their everyday work."
+                "VPNs come in all varieties and price points. Luckily, most VPNs are reasonably priced. We discourage most organizations from relying on an entirely free VPN because of concerns about your data security and privacy. However, there are a small number of trusted free alternatives, including [[Psiphon]](links.psiphon.web), [[Lantern]](links.lantern.web), and [[BitMask]](links.bmask.web).",
+                  "Many VPN companies, including [[Tunnel Bear]](links.tbear.web) and [[Mullvad]](links.mvad.web) provide free annual subscriptions to deserving organizations, but these are best left for groups with little to no financial resources. You can consult with a third-party technical assistance provider for advice on choosing a VPN and read articles like [[this New York Times Wirecutter guide]](links.nyt.vpns) for more details.",
               ]
             }
-          ],
-        "ok":
-          [
+          ]
+        },
+        "ok":{
+          "third":[
             {
               "title": "", 
               "content": [ 
@@ -3989,14 +3915,15 @@ var en_rs = {
             {
               "title": "Consider a more technical alternative.",
               "content": [
-                "Creating your own VPN can be technically complicated but allows you to better control your own data and privacy. Rather than relying on a commercial provider, a build-your-own VPN allows you to better customize a specific tool to meet your security needs.",
-                "Google offers [[a service called Outline]](links.google.outline) which allows organizations to build their own VPN for approximately US $10 a month. Outline works well for most contexts, including areas where VPN use may be noticed or blocked. (It is not a solution for countries or regions where VPNs are banned.) Alternatively, a slightly more complex option is [[Algo by the security firm Trail of Bits]](links.trailbits.algo), which helps organizations set up their own VPN server.",
-                "While not a VPN, a tool such as [[Firefox DoH]](links.mozilla.doh) can also make your web browsing safer and can be used in conjunction with your existing VPN service. You will probably need to work with a technical assistance provider to enable any of these solutions for your organization."
+                "Creating your own VPN can be technically complicated but allows you to better control your data and privacy. Rather than relying on a commercial provider, a build-your-own VPN allows you to better customize a specific tool to meet your security needs.",
+                "Google offers [[a service called Outline]](links.google.outline) which allows organizations to build their own VPN for approximately US $10 a month. Outline works well for most contexts, but it is not a solution for countries or regions where VPNs do not function. Alternatively, a slightly more complex option is [[Algo by the security firm Trail of Bits]](links.trailbits.algo), which helps organizations set up their own VPN server.",
+                "While not a VPN, a tool such as [[Firefox DoH]](links.mozilla.doh) can also make your web browsing safer and can be used in conjunction with your existing VPN service. You will probably need to work with a third-party technical assistance provider to enable any of these solutions for your organization."
               ]
             }
-          ],
-        "exceeds":
-          [ 
+          ]
+        },
+        "exceeds":{
+          "third":[ 
             {
               "title": "", 
               "content": [ 
@@ -4006,17 +3933,18 @@ var en_rs = {
             {
               "title": "Create “acceptable” and “block” lists.", 
               "content": [
-                "Most VPN services give users the option to generate static Internet protocol (IP) addresses for users. This means that a staff member at your organization can use the same IP address—the identifying information associated with their Internet connection—every time they use that VPN. This allows your administrators to create “acceptable” lists of users from a range of pre-approved IP addresses that can take certain actions, such as visit the back end of your website or your organization’s Intranet. All others would be placed on a “block” list that would not grant them access to these sensitive parts of your system. A technical assistance provider can help you set up such lists with your VPN of choice."
+                "Most VPN services give users the option to generate static Internet protocol (IP) addresses for users. This means that a staff member at your organization can use the same IP address—the identifying information associated with their Internet connection—every time they use that VPN. This allows your administrators to create “acceptable” lists of users from a range of pre-approved IP addresses that can take certain actions, such as visit the back end of your website or your organization’s Intranet. All others would be placed on a “block” list that would not grant them access to these sensitive parts of your system. A third-party technical assistance provider can help you set up such lists with your VPN of choice."
               ]
             },
             {
               "title": "Understand when to use Tor.",
               "content": [ 
-                "The [[Tor browser]](links.tor.browser) has been a popular choice for journalists, researchers, and advocates who are concerned about their online activities being tracked by ISPs, governments, and other organizations. Tor provides a higher degree of privacy and anonymity than a standard browser or a VPN because it bounces the user’s traffic through a series of servers, making it much more difficult for an adversary to determine where the traffic originated. You can read more about how Tor works at the Tor Project website.",
-                "Many organizations use Tor for sensitive research only, as the browsing experience can be slower than a standard browser and there is a learning curve to use the tool properly. Nonetheless, Tor is a trusted, reputable option for anonymous browsing. Talk to your technical assistance provider about how to incorporate Tor into your workflow."
+                "The [[Tor browser]](links.tor.browser) has been a popular choice for journalists and  researchers who are concerned about their online activities being tracked by ISPs and other organizations. Tor provides a higher degree of privacy and anonymity than a standard browser or a VPN because it bounces the user’s traffic through a series of servers, making it much more difficult for an adversary to determine where the traffic originated. You can read more about how Tor works at the [[Tor Project website]](links.tor.proj).",
+                "Many organizations use Tor for sensitive research only, as the browsing experience can be slower than a standard browser and there is a learning curve to use the tool properly. Nonetheless, Tor is a trusted, reputable option for anonymous browsing. Talk to your third-party technical assistance provider about how to incorporate Tor into your workflow."
               ]
             }
           ]
+        }
       }
     }
   }

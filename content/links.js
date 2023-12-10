@@ -67,7 +67,7 @@ var links = {
   },
   "bparty": {
     "web": {
-      "en": "https://www.blockpartyapp.com/"
+      "en": "https://www.blockpartyapp.com/privacy-party/"
     }
   },
   "bwarden": {
@@ -475,6 +475,9 @@ var links = {
   "tor": {
     "browser": {
       "en": "https://tb-manual.torproject.org/about/"
+    },
+    "proj": {
+      "en": "https://torproject.org/"
     }
   },
   "tpoppy": {
