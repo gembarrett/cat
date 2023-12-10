@@ -6,7 +6,7 @@ templates.resultsTemplate = function(data, params){
     currentDate = dateString.replace('[[date]]', currentDate);
 
     var intro = `<h1>${data.recs.title}</h1><img src="assets/images/CAT-collage-results.png" />`;
-    intro += `${introContent}<p>${dateString}</p>`;
+    intro += `${introContent}<p>${currentDate}</p>`;
     
     var buttons = `<button class="later result-generate">${dataToPass.ui.results.save.btns[0]}</button><button class="later result-email">${dataToPass.ui.results.save.btns[1]}</button><button class="result-print">${dataToPass.ui.results.save.btns[2]}</button>`;
     
@@ -20,7 +20,8 @@ templates.resultsTemplate = function(data, params){
         
         // if the submenu doesn't include the current section heading, add it, plus the overview bar
         if (!submenu.includes(data.recs.content[item].section)){
-            shortRef = data.recs.content[item].section.toLowerCase().replaceAll(' ', '-');
+                shortRef = data.recs.content[item].section.toLowerCase().replace('&amp;', 'and').replaceAll(' ', '-');
+            
             if (shortRef === firstElement){
                 liInfo = `id="r-${shortRef}" class="selected"`;
             } else {

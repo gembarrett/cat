@@ -1,6 +1,6 @@
 function generateRecommendation(result, rec, res, gen, prog, first, score){
     
-    thisCat = result.section.toLowerCase().replaceAll(' ', '-');
+    thisCat = result.section.toLowerCase().replace('&amp;', 'and').replaceAll(' ', '-');
     thisScore = rec.content.replace('[[score]]', '<span>'+ score +'</span>');    
     thisScore = thisScore.replace('[[section]]', result.title);
     
