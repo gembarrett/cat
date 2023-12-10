@@ -1,6 +1,9 @@
-function generateRecommendation(result, rec, res, gen, prog, first){
+function generateRecommendation(result, rec, res, gen, prog, first, score){
+    
+    console.log(score);
+    
     thisCat = result.section.toLowerCase().replaceAll(' ', '-');
-    thisScore = rec.content.replace('[[level]]', '<span>'+ rec.title.toLowerCase()+'</span>');    
+    thisScore = rec.content.replace('[[score]]', '<span>'+ score +'</span>');    
     thisScore = thisScore.replace('[[section]]', result.title);
     
     section = `<h4 class="section">${result.section}</h4><progress value="${prog}" max="30"></progress>`;
@@ -17,7 +20,6 @@ function generateRecommendation(result, rec, res, gen, prog, first){
         resContent += `<h3>${gen.third}</h3>`;
         resDisplay = createResDisplay(res.third, gen, result.general);
     }
-
     
     if (thisCat === first){
         divInfo = `class="result r-${thisCat} active"`;

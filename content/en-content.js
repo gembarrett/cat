@@ -3170,7 +3170,7 @@ var en_rs = {
       }
     },
     "messaging-collab": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "Messaging and Collaboration",
       "general": {
           "why": [
@@ -3269,7 +3269,7 @@ var en_rs = {
       }
     },
     "installing-software": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "Installing software",
       "general": {
           "why": [
@@ -3356,7 +3356,7 @@ var en_rs = {
       }
     },
     "data-encryption": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "Data Encryption",
       "general": {
           "why": [
@@ -3532,7 +3532,7 @@ var en_rs = {
       }
     },
     "passwords-authentication": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "Password Management and Authentication",
       "general": {
           "why": [
@@ -3625,7 +3625,7 @@ var en_rs = {
       }
     },
     "system-updates": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "System Updates",
       "general": {
           "why": [
@@ -3688,7 +3688,7 @@ var en_rs = {
       }
     },
     "op-continuity": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "Operational Continuity",
       "general": {
           "why": [
@@ -3778,7 +3778,7 @@ var en_rs = {
       }
     },
     "third-party": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "Third-Party Services",
       "general": {
           "why": [
@@ -3858,7 +3858,7 @@ var en_rs = {
       }
     },
     "vp-network": {
-          "section": "Device and Account Security",
+          "section": "Device &amp; Account Security",
       "title": "Virtual Private Network (VPN)",
       "general": {
           "why": [

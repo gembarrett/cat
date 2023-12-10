@@ -44,9 +44,10 @@ templates.resultsTemplate = function(data, params){
      } else {
         console.log('Something is wrong with '+item);
       }
+          resScore = data.tally[item];
         overview += `<progress value="${progValue}" max="30"></progress></div>`;
         
-        answers += generateRecommendation(data.recs.content[item], recLevel, reslevel, data.recs.reusables.general, progValue, firstElement);
+        answers += generateRecommendation(data.recs.content[item], recLevel, reslevel, data.recs.reusables.general, progValue, firstElement, resScore);
     }
     
     submenu += `</ul>`;
