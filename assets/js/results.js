@@ -73,8 +73,19 @@ function getRecsContent(el){
     } else if (el.type === "ul" || el.type === "ol"){
         list = `<${el.type}>`;
         for (var pt = 0; pt < el.items.length; pt++) {
-            checkedPoint = findReplaceLinks(el.items[pt]);
-            list += `<li>${checkedPoint}</li>`;
+            // check for a nested list here
+            if (Array.isArray(el.items[pt])){
+                // only accepting unordered lists for nesting
+                list += `<ul>`;
+                for (var npt = 0; npt < el.items[pt].length; npt++){
+                    checkedPoint = findReplaceLinks(el.items[pt][npt]);
+                    list += `<li>${checkedPoint}</li>`;
+                }
+                list += `</ul>`;
+            } else {
+                checkedPoint = findReplaceLinks(el.items[pt]);
+                list += `<li>${checkedPoint}</li>`;                
+            }
         }
         list += `</${el.type}>`;
         return list;
@@ -94,9 +105,9 @@ function getRecsContent(el){
         table += `</tbody></table>`;
         return table;
     } else if (el.type === "title") {
-        highlight = `<h4>${el.heading}</h4>`;
+        highlight = `<div class="x-rec"><h4>${el.heading}</h4>`;
         checkedContent = findReplaceLinks(el.content);
-        highlight += `<p>${checkedContent}</p>`;
+        highlight += `<p>${checkedContent}</p></div>`;
         return highlight;
     } else {
         console.log(el);

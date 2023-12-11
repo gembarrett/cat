@@ -1984,7 +1984,7 @@ var en_oc = {
     "cta":"Use the tool",
       "mobile": {
           "goto": "Go to section...",
-          "save": "Save &amp; resume later",
+          "save": "Save and Resume Later",
           "back": "Back"
       }
   },
@@ -2053,25 +2053,28 @@ var en_oc = {
     "copy": {
       "content":{ 
             "resume": {
-              "title": "Save and resume later",
+                "label": "Save and Resume Later",
+              "title": "Save &amp; resume later",
               "content": ["Use this link to resume your CAT session. Copy the link below and save it in a safe place!"]
             },
            "result": {
                "title": "Save your results and recommendations",
-               "content": "Please copy the link below and save it in a safe place. You can use this link any time within 30 days to access your results."
+               "content": "Please copy the link below and save it in a safe place. You can use this link any time within the next 30 days to resume answering questions on the form.",
+               "disclaimer": "Without the link, the data you have entered cannot be retrieved, and you will have to start filling out the form at the beginning."
            },
            "email": {
-               "title": "Email your results",
-               "content": "Want us to email this link to you? Enter your email below."
+               "title": "Email Your Results and Recommendations",
+               "content": "Enter your email below to access your results on our website. It will be stored for the next 30 days."
            }
       },
         "cta": "Copy link",
         "placeholder": "No link available."
     },
     "email": {
-      "content": "Want us to email this link to you? Enter your email below. This CAT SESSION will expire in 30 DAYS. Without the link, the data you have entered cannot be retrieved, and you will have to start from the beginning.",
+      "content": "Want us to email this link to you? Enter your email below.",
+        "disclaimer": "This CAT SESSION will expire in 30 DAYS. Without the link, the data you have entered cannot be retrieved, and you will have to start from the beginning.",
       "placeholder": "Enter your email here",
-      "cta": "Send link",
+      "cta": "Email link",
         "subject": "Link to the Cybersecurity Assessment Tool",
         "body": "Here is the link to the Cybersecurity Assessment Tool (CAT): "
     }

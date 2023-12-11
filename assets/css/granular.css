@@ -371,6 +371,16 @@ table th {
 tbody tr td:first-child {
     font-weight: bold;
 }
+.r-understanding-risk tbody tr td:first-child {
+    font-weight: normal;
+    width: 50%;
+    padding-right: 1em;
+}
+
+.r-understanding-risk tbody tr td {
+    border-bottom: 1px solid grey;
+}
+
 .rec-example {
     background-color: #fff8cc;
     padding:0.5em 1.5em;
@@ -378,6 +388,18 @@ tbody tr td:first-child {
 .extra-recs {
   border: 2px solid #6b60bf;
   padding: 0.5em 1.5em;
+}
+
+.x-rec h4, .x-rec p {
+    display: inline;
+}
+
+.x-rec {
+    padding: 1em 0;
+}
+
+.x-rec h4 {
+    padding-right: 10px;
 }
 
 .right-col {

@@ -103,13 +103,13 @@ var content = "";
 var cats = buildSectionMenu(menuData);
 content += `<div class="contain-md"><div class="left-col add-shadow submenu">`+cats+`</div>`;
 // Right column needs to contain all the questions
-var counter = 1; // not keen on this being a global variable but it'll do for now
+var counter = 1; // not keen on this being a global variable
 var survey = buildSurvey(questionData);
 var progressElement = `<div class="progressBar"><progress id="survey-progress" max="`+currentState.totalQs+`" value="0"></progress><label for="survey-progress">`+additionalData.survey.ux.nav.progress[0]+`<span>0</span>%`+additionalData.survey.ux.nav.progress[1]+`</label></div>`;
 var progressButtons = `<div id="progressButtons" class="first-start"><button class="back">`+additionalData.survey.ux.nav.prev+`</button><button class="forward">`+additionalData.survey.ux.nav.next+`</button><button class="submit">`+additionalData.survey.ux.nav.submit+`</button></div>`;
 
 // TODO: split things up so that the submenu and questions are compiled in separate template files
-    content += `<div class="right-col"><div class="overlap-col"><button class="later save-btn add-shadow">`+additionalData.save.copy.content.resume.title+`</button><div class="rhombus r top"></div><div class="rhombus l mid"></div><div class="rhombus r base"></div></div>`;
+    content += `<div class="right-col"><div class="overlap-col"><button class="later save-btn add-shadow">`+additionalData.save.copy.content.resume.label+`</button><div class="rhombus r top"></div><div class="rhombus l mid"></div><div class="rhombus r base"></div></div>`;
     content += `<div class="contain-survey add-shadow"><form>`+survey+`</form>`;
     content += progressButtons+progressElement+`</div></div>`;
 
