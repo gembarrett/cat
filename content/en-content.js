@@ -2183,7 +2183,7 @@ var en_rs = {
     },
     "general": {
       "why": "Why We Recommend This", 
-      "eg": "A Real World Example",
+      "eg": "A Fictional Example",
         "you": "What You Can Do",
         "third": "What a Third-Party Security Provider Can Help You Do"
     }
@@ -2453,7 +2453,7 @@ var en_rs = {
       },
     "policy-docs": {
         "section": "Operational Security",
-      "title": "Documentation and Policy",
+      "title": "Policy and Documentation",
       "general": {
           "why": [
             "Before you can upgrade your security, you need to have the fundamentals in place. Putting together a security policy and road map for your organization can help you be proactive about your security while also preparing for worst-case scenarios.",
@@ -2551,7 +2551,7 @@ var en_rs = {
     },
     "internal-risks": {
           "section": "Operational Security",
-      "title": "Internal Risks (Intentional or Unintentional)",
+      "title": "Internal Risks",
       "general": {
           "why": [
             "Knowledge is power. By equipping your staff members with a checklist that allows them to identify cybersecurity risks, you’re empowering them to take action and increase their awareness. This step also provides you with a useful record of your staff’s overall level of cybersecurity.",
@@ -2823,13 +2823,7 @@ var en_rs = {
                       "heading": "Understand the connection between retention and protection.",
                         "content": 'Remember this rule of thumb when it comes to managing your data: “if it’s not there, they can’t steal it." For example, if your colleague doesn’t need 10 years’ worth of tax data on their laptop, find a safer place to store that information. Consider whether everyone in your organization needs access to a decade’s worth of emails or the entire staff directory and regularly delete data they don’t need any more. Determining which data is valuable and requires additional protection will help you take appropriate next steps.'
                     },
-                    {
-                      "type": "title",
-                      "heading": "Conduct a data categorization exercise.",
-                        "content": "If you are working with a technical assistance provider, you may be able to conduct this exercise on your internal system. If not, you can also conduct a tabletop version of this exercise with your staff. Consider a blunt but effective measure: list the key data sources within your organization and determine who actually needs access to them. These could include email archives, staff directories, financial records, and project details. To access this data moving forward, staff  members need to specifically request the data they need. You can then determine whether they should be granted access permanently, for a 30-day window, or even for a supervised 24-hour block of time."
-                    }
-                ],
-                "While these steps may seem challenging, changing the status quo around data access within your organization can greatly reduce the risk that a genuine mistake can lead to a data breach."
+                ]
               ]
             }
           ],
@@ -3893,7 +3887,7 @@ var en_rs = {
                   "When you browse the Internet without a VPN, your Internet service provider (ISP) can see all the websites you visit, as well as the date and time you visit them. Increasingly, the websites themselves also track high levels of your data as you browse.",
                   "When you use a VPN, you are blurring some of the information that your ISP can collect, as well as some information websites track. You are giving that information to your VPN provider instead, which is encrypting your connection to the Internet.",
                   "Depending on your VPN provider, this could be safer, riskier, or just as risky as giving your data to your ISP. Generally, if you choose a reputable paid VPN provider, your data are more secure than browsing without a VPN. And if you pay for your VPN under your organization’s name, you will have added privacy—even more so if you pay for the service using an alias.",
-                  "Your third-party technical assistance provider can help you with this step. It is also important to note that VPN usage is not possible in some countries, so be aware of your local restrictions before selecting a service. You can read more about VPN use in [[this article from Consumer Reports.]](links.creports.vpns)."
+                  "Your third-party technical assistance provider can help you with this step. It is also important to note that VPN usage is not possible in some countries, so be aware of your local restrictions before selecting a service. You can read more about VPN use in [[this article from Consumer Reports]](links.creports.vpns)."
               ]
             },
             {

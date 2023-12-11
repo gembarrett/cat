@@ -72,9 +72,9 @@ function getRecsContent(el){
         return `<p>${el}</p>`;
     } else if (el.type === "ul" || el.type === "ol"){
         list = `<${el.type}>`;
-        for (var pt = 0; pt < el.items; pt++) {
+        for (var pt = 0; pt < el.items.length; pt++) {
             checkedPoint = findReplaceLinks(el.items[pt]);
-            list += `<li>${point}</li>`;
+            list += `<li>${checkedPoint}</li>`;
         }
         list += `</${el.type}>`;
         return list;
