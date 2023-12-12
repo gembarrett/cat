@@ -2447,7 +2447,7 @@ var en_rs = {
                       {
                           "title": "Watch for warning signs.",
                           "content": [
-                              "Staying proactive about online threats can help organizations respond more quickly when their projects or staff are targeted online. Content moderation tools including [[Perspective API]](links.perapi.web) and [[The Coral Project]](links.coral.web) can use artificial intelligence (AI) to track and score comments left on your organization’s blog or website. Tools such as [[CrowdTangle]](links.ctangle.web), [[SMAT (Social Media Analysis Toolkit)]](links.smat.kit), [[Privacy Party]](links.bparty.web), and [[Babel Street]](links.babelst.web) can help your organization monitor social media for misinformation campaigns about your work. A provider like [[Tall Poppy]](links.tpoppy.web) may be able to help you manage online harassment. And you can work with a third-party technical assistance provider to analyze your web traffic for anomalies, such as harassers who are not hiding their real identities or are sending lots of referral traffic to your site from noted troll sites such as 8chan."
+                              "Staying proactive about online threats can help organizations respond more quickly when their projects or staff are targeted online. Content moderation tools including [[Perspective API]](links.perapi.web) and [[The Coral Project]](links.coral.web) can use artificial intelligence (AI) to track and score comments left on your organization’s blog or website. Tools such as [[CrowdTangle]](links.ctangle.web), [[Privacy Party]](links.bparty.web), and [[Babel Street]](links.babelst.web) can help your organization monitor social media for misinformation campaigns about your work. A provider like [[Tall Poppy]](links.tpoppy.web) may be able to help you manage online harassment. And you can work with a third-party technical assistance provider to analyze your web traffic for anomalies, such as harassers who are not hiding their real identities or are sending lots of referral traffic to your site from noted troll sites such as 8chan."
                           ]
                       }
                   ]
@@ -2574,7 +2574,7 @@ var en_rs = {
                   "title": "Do a check-up on your organization’s cybersecurity.", 
                   "content": [ 
                     "Your staff members are vital to the mission of your organization. But sometimes, intentionally or unintentionally, their decisions and actions can put your organization at risk. This is especially true in today’s digital world, where a wrong click or a missed security setting can leave the entire staff vulnerable.",
-                    "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow. Such a checklist should be part of the onboarding process of any new staff member. Here are [[suggestions for Windows devices]](links.carbide.windows), and here are [[suggestions for Mac devices]](links.carbide.mac). Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can also be stored in their employee file."
+                    "One of the easiest ways of checking up on your cybersecurity is to assemble a basic checklist of security settings that your staff members can follow. Such a checklist should be part of the onboarding process of any new staff member. Once they have completed the checklist, they can sign a certificate of completion that indicates they have taken basic steps toward compliance. Their supervisor can then also sign off that they have completed the checklist. These documents can also be stored in their employee file."
                   ]
                 }
               ]
@@ -2790,7 +2790,7 @@ var en_rs = {
                 "To start, you will want to identify the types of devices that your staff members use in the field. For example, if they typically need a laptop while traveling, consider a reliable but inexpensive alternative like a [[Chromebook]](links.google.cbook).",
                 "Once you’ve identified the types of devices appropriate for your organization, you will need to develop a clear policy and process for handling travel devices before, during, and after their use. This will likely include a “pre-flight” process to prepare the device, followed by a return check-in with the staff member who used the device to learn about any challenges they may have had in the field. You will also need to wipe the device clean before and after travel.",
                 "Each of these device management phases can be time-consuming, so they should be spelled out in detail and written down. You may want to work with a security provider to implement this process smoothly.",
-                "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [[VMWare Work Station Player]](links.vmware.player) (Linux/PC), [[VMWare Fusion]](links.vmware.fusion) (Mac), or [[VirtualBox]](links.vbox.web) (Linux/PC/Mac). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a third-party provider whether this is a good option for you."
+                "Alternatively, you can ask a security provider to help you set up a “virtual machine.” This allows you to use your work computer to access another separate device through a web browser and software such as [[VMWare Work Station Player]](links.vmware.player) (Linux/PC) or [[VMWare Fusion]](links.vmware.fusion) (Mac). This will require an Internet connection, so it may not be suitable for every type of field travel. Ask a third-party provider whether this is a good option for you."
               ]
             }
           ]
@@ -2819,7 +2819,7 @@ var en_rs = {
               "content": [ 
                 "Data are the lifeblood of our digital systems. Your organization’s data contain incredible amounts of information—some trivial (such as your lunchtime calendar reminder) and some vital (such as the names and home addresses of your staff).",
                 "Many people across organizations have access to tremendous amounts of data, often more than they realistically need to do their jobs properly. An attacker, however, can do significant damage when they gain such access. One effective way to reduce your digital risk is to also reduce access to unnecessary data within your organization.",
-                "If you’re just getting started managing your data, it’s helpful to take two steps upfront.",
+                "If you’re just getting started managing your data, it’s helpful to take two steps upfront. While these steps may seem challenging, changing the status quo around data access within your organization can greatly reduce the risk that a genuine mistake leads to a data breach.",
                 [
                     {
                       "type": "title",
@@ -2835,8 +2835,7 @@ var en_rs = {
                     "title": "Conduct a data categorization exercise.",
                     "content": [
                         "If you are working with a third-party technical assistance provider, they can help conduct a full data categorization exercise on your internal systems. If not, you can also conduct a simpler version of the exercise with your staff yourself.",
-                        "Consider a blunt but effective measure: list the key data sources within your organization and determine who actually needs access to them. These could include email archives, staff directories, financial records, and project details. To access this data moving forward, staff members need to specifically request the data they need. You can then determine whether they should be granted access permanently, for a 30-day window, or even for a supervised 24-hour block of time.",
-                        "While these steps may seem challenging, changing the status quo around data access within your organization can greatly reduce the risk that a genuine mistake leads to a data breach."
+                        "Consider a blunt but effective measure: list the key data sources within your organization and determine who actually needs access to them. These could include email archives, staff directories, financial records, and project details. To access this data moving forward, staff members need to specifically request the data they need. You can then determine whether they should be granted access permanently, for a 30-day window, or even for a supervised 24-hour block of time."
                     ],
                 }
             ]

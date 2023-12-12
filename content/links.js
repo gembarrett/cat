@@ -167,7 +167,7 @@ var links = {
       "en": "https://sec.eff.org/materials/threat-modeling-activity-handout-for-learners"
     },
     "ssd": {
-      "en": "https://ssd.eff.org/en/taxonomy/term/362/"
+      "en": "https://ssd.eff.org/"
     },
     "comms": {
       "en": "https://ssd.eff.org/en/module/communicating-others"
@@ -422,11 +422,6 @@ var links = {
       "en": "http://signal.org"
     }
   },
-  "smat": {
-    "kit": {
-      "en": "https://social-media-analysis-toolkit.herokuapp.com/"
-    }
-  },
   "soak": {
     "web": {
       "en": "https://spideroak.com/one/"
@@ -506,11 +501,6 @@ var links = {
   "twalker": {
     "web": {
       "en": "https://www.talkwalker.com/"
-    }
-  },
-  "vbox": {
-    "web": {
-      "en": "https://www.virtualbox.org/"
     }
   },
   "vera": {
