@@ -295,7 +295,7 @@ var en_qs = [
                 "answers": [
                   {
                     "a": "Yes, one or more staff members have had their private information published online.",
-                    "pts": 50
+                    "pts": 15
                   },
                   {
                     "a": "No, no one has had their private information published online.",
@@ -303,7 +303,7 @@ var en_qs = [
                   },
                   {
                     "a": "We don’t know.",
-                    "pts": 15
+                    "pts": 5
                   }
                 ]
               },
@@ -315,7 +315,7 @@ var en_qs = [
                 "answers": [
                   {
                     "a": "Yes, one or more staff members have been harassed online.",
-                    "pts": 60
+                    "pts": 15
                   },
                   {
                     "a": "No, no one has been harassed online.",
@@ -323,7 +323,7 @@ var en_qs = [
                   },
                   {
                     "a": "We don’t know.",
-                    "pts": 15
+                    "pts": 5
                   }
                 ]
               },
@@ -335,7 +335,7 @@ var en_qs = [
                 "answers": [
                   {
                     "a": "Yes, one or more staff members have been physically harassed.",
-                    "pts": 70
+                    "pts": 15
                   },
                   {
                     "a": "No, no one has been physically harassed.",
@@ -343,7 +343,7 @@ var en_qs = [
                   },
                   {
                     "a": "We don’t know.",
-                    "pts": 15
+                    "pts": 5
                   }
                 ]
               },
@@ -355,7 +355,7 @@ var en_qs = [
                 "answers": [
                   {
                     "a": "Yes, one or more staff members have been impersonated online. ",
-                    "pts": 20
+                    "pts": 15
                   },
                   {
                     "a": "No, no one has been impersonated online.",
@@ -363,7 +363,7 @@ var en_qs = [
                   },
                   {
                     "a": "We don’t know.",
-                    "pts": 15
+                    "pts": 5
                   }
                 ]
               },
@@ -375,7 +375,7 @@ var en_qs = [
                 "answers": [
                   {
                     "a": "Yes",
-                    "pts": 20
+                    "pts": 15
                   },
                   {
                     "a": "No",
@@ -383,7 +383,7 @@ var en_qs = [
                   },
                   {
                     "a": "We don't know.",
-                    "pts": 15
+                    "pts": 5
                   },
                   {
                     "a": "We don’t have a website.",
@@ -399,7 +399,7 @@ var en_qs = [
                 "answers": [
                   {
                     "a": "Yes",
-                    "pts": 20
+                    "pts": 15
                   },
                   {
                     "a": "No",
@@ -407,7 +407,7 @@ var en_qs = [
                   },
                   {
                     "a": "We don't know.",
-                    "pts": 15
+                    "pts": 5
                   }
                 ]
               }
@@ -1447,7 +1447,7 @@ var en_qs = [
             "answers": [
               {
                 "a": "Our staff members buy software from an online marketplace (app store, retailer, etc.).",
-                "pts": 5
+                "pts": 0
               },
               {
                 "a": "We share software with another organization.",
@@ -1563,7 +1563,7 @@ var en_qs = [
               },
               {
                 "a": "We don’t know.",
-                "pts": 15
+                "pts": 5
               }
             ]
           }
@@ -1699,7 +1699,7 @@ var en_qs = [
               },
               {
                 "a": "Yes, we have a contingency plan, but it’s not documented.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "No, we do not have a contingency plan.",
@@ -1723,7 +1723,7 @@ var en_qs = [
               },
               {
                 "a": "We have a verbal plan but no document.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "We do not have a contingency plan for such a situation.",
@@ -1747,15 +1747,15 @@ var en_qs = [
               },
               {
                 "a": "We could start over because our data is stored in the cloud.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "We have some printed documents and materials that we might be able to use to recover.",
-                "pts": 15
+                "pts": 10
               },
               {
                 "a": "This would be catastrophic because we do not have any backups of our data.",
-                "pts": 20
+                "pts": 15
               },
               {
                 "a": "We don’t know.",
@@ -1781,15 +1781,15 @@ var en_qs = [
               },
               {
                 "a": "Yes, we track them in a document but it is not up to date.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "Yes, we have a verbal list but we do not have a document.",
-                "pts": 15
+                "pts": 10
               },
               {
                 "a": "No, we do not track them.",
-                "pts": 20
+                "pts": 15
               },
               {
                 "a": "We don’t know.",
@@ -1809,15 +1809,15 @@ var en_qs = [
               },
               {
                 "a": "No, we have no document but we have a verbal understanding.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "No, we do not have any guidelines for using these services.",
-                "pts": 20
+                "pts": 15
               },
               {
                 "a": "We don’t know.",
-                "pts": 20
+                "pts": 15
               }
             ]
           },
@@ -1829,11 +1829,11 @@ var en_qs = [
             "answers": [
               {
                 "a": "Yes, we often share or receive sensitive information via non-business platforms.",
-                "pts": 20
+                "pts": 15
               },
               {
                 "a": "Yes, we sometimes share or receive sensitive information via non-business platforms.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "No, we rarely share or receive sensitive information via non-business platforms.",
@@ -1857,11 +1857,11 @@ var en_qs = [
               },
               {
                 "a": "Yes, we have a verbal process but no document.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "No, we do not have a process.",
-                "pts": 20
+                "pts": 10
               },
               {
                 "a": "We don’t know.",
@@ -1881,11 +1881,11 @@ var en_qs = [
               },
               {
                 "a": "Yes, we have a verbal process but no document.",
-                "pts": 10
+                "pts": 5
               },
               {
                 "a": "No, we do not have a process.",
-                "pts": 20
+                "pts": 10
               },
               {
                 "a": "We don’t know.",
