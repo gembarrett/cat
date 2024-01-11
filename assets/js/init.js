@@ -7,9 +7,17 @@ var controllers = {};
 var views = {};
 var bodyLang = "en";
 var textStore = {
-  qs : window[bodyLang+"_qs"],
-    rs : window[bodyLang+"_rs"],
-  oc : window[bodyLang+"_oc"]
+  qs : {},
+    rs : {},
+  oc : {}
+}
+
+async function loadContentFromJSON(lang) {
+    const response = await fetch(`${thisEnv}/content/${lang}-content.json`);
+    const json = await response.json();
+        textStore.qs = json.qs;
+        textStore.rs = json.rs;
+        textStore.oc = json.oc;
 }
 
 function updateLang(language) {
@@ -41,16 +49,16 @@ function setUpMenu() {
   });
 }
 
-function toggleMenu(order) {
-  var menu = document.querySelector('#lang-container');
-  if (order === "c") {
-    document.querySelector('#lang-trigger').classList.remove('dim');
-    menu.classList.add('close');
-  } else {
-    document.querySelector('#lang-trigger').classList.toggle('dim');
-    menu.classList.toggle('close');
-  }
-}
+//function toggleMenu(order) {
+//  var menu = document.querySelector('#lang-container');
+//  if (order === "c") {
+//    document.querySelector('#lang-trigger').classList.remove('dim');
+//    menu.classList.add('close');
+//  } else {
+//    document.querySelector('#lang-trigger').classList.toggle('dim');
+//    menu.classList.toggle('close');
+//  }
+//}
 
 function moveMenu(direction, sub){
     // if we're going back a menu
@@ -173,16 +181,20 @@ function toggleMenu(el){
     resetMenu();
 }
 
+
 window.onload = function(){
-  document.querySelector('#no-js').remove();
-  window.addEventListener(
-      "hashchange",
-      function(){utils.router()}
-  );
-//  setUpMenu();
-    buildMobileMenu(sections);
-    buildCatRefLib();
-    utils.router();
+    // TODO: replace with noscript
+    document.querySelector('#no-js').remove();
+    loadContentFromJSON('en').then(()=>{
+        buildMobileMenu(sections);        
+        window.addEventListener(
+              "hashchange",
+              function(){utils.router()}
+        );
+        //  setUpMenu();
+        buildCatRefLib();
+        utils.router();    
+    });
 };
 
 function addSaveResumeEventListeners(){

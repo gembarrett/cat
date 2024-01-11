@@ -1,5 +1,5 @@
 {
-    "en_qs": [
+    "qs": [
         {
             "section": "understand-risk",
             "title": "Understanding Risk",
@@ -1932,7 +1932,7 @@
             ]
         }
     ],
-    "en_oc": {
+    "oc": {
         "footer": {
             "links": [
                 "Assessment",
@@ -2169,7 +2169,7 @@
             }
         }
     },
-    "en_rs": {
+    "rs": {
         "title": "Results &amp; Recommendations",
         "reusables": {
             "below": {
