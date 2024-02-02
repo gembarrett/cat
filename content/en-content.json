@@ -823,7 +823,7 @@
                     "subtitle": "Travel Policy",
                     "questions": [
                         {
-                            "q": "Does your organization have security-related policies in place for travel",
+                            "q": "Does your organization have security-related policies in place for travel?",
                             "area": "travel",
                             "required": "true",
                             "type": "radio",

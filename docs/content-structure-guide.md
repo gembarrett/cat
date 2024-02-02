@@ -90,10 +90,9 @@ Links to external websites which are referenced in the results text should be st
 
 
 ## ‘Do Not Localize’ list
-Any text that is inside < > tags should not be localised. For example, <span>Example text</span> - the word “span” can be ignored, but “Example text” should be localised. In addition, the following keys should be ignored when localising JSON content.
 
-Within *_qs, ignore any values with the following keys:
-* section (e.g. “understand-risk”)
+Within the “qs” section, ignore any values with the following keys:
+
 * subs > name (e.g. “your-org”)
 * subs > questions > area (e.g. “risks”)
 * subs > questions > required (e.g. “true”)
@@ -101,14 +100,22 @@ Within *_qs, ignore any values with the following keys:
 * subs > questions > answers > pts (e.g. 0)
 * subs > questions > answers > ifyes (e.g. true)
 
-Within *_oc, ignore any values with the following keys:
-* languages > name (e.g. “Portuguese")
-* languages > code (e.g. “en”)
-* process > content > type (e.g. “ol”)
-* team > content > ref (e.g. “grooten”)
-* users > content > type (e.g. “ul”)
-* legal > type (e.g. “ul”)
+Within “oc", ignore any values with the following keys:
 
-Within *_rs, ignore any values with the following keys:
-* reusables > below/ok/exceeds > threshold (e.g. 5)
-* results > below/ok/exceeds > content > type (e.g. table)
+languages > name (e.g. “Portuguese”) (languages > display should still be translated)
+languages > code (e.g. “en”)
+process > content > type (e.g. “ol”)
+team > content > ref (e.g. “grooten”)
+users > content > type (e.g. “ul”)
+legal > type (e.g. “ul”)
+
+Within “rs", ignore any values with the following keys:
+
+reusables > below/ok/exceeds > threshold (e.g. 5)
+results > below/ok/exceeds > content > type (e.g. table)
+
+In addition:
+Any text that is inside HTML < > tags should be ignored. For example, the word <span> can be ignored, but the text around it should be localised. 
+Variables and links should also be ignored, and these can be identified by the double square brackets, e.g. [[score]], which are sometimes followed by text which looks like: (links.etc.etc) - again, text that is before and after these variables and links should be localised.
+
+A general rule of thumb that might help: if the value starts with a lowercase letter then it should be ignored. Two exceptions to this rule: when the key is named “content”, or “rows” (both occur in the “rs” section), these should be localised.
