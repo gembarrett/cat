@@ -1933,6 +1933,14 @@
         }
     ],
     "oc": {
+        "default": {
+            "metaHead": "CAT: Cybersecurity Assessment Tool",
+            "404MetaHead":"Page not found - CAT: Cybersecurity Assessment Tool",
+            "loading": "Loading - please wait.",
+            "jsPrompt":"If you've been waiting for more than 30 seconds please check that you have Javascript enabled. Here's how to do that: <a href=\"https://enable-javascript.com\" title=\"Find out more about enabling Javascript in your browser\">enable-javascript.com",
+            "repoPrompt": "If your threat model requires you to keep Javascript disabled, you can instead go to <a href=\"https://github.com/gembarrett/cat\" title=\"View the open-source CAT code at GitHub\">CAT's GitHub repository</a> and grab the code to run the whole website offline using a local web server on your computer."
+        },
+        "tweets": ["NGOs, learn how you can protect your work &amp; your staff by using our new, FREE Cybersecurity Assessment Tool! Developed by <a href=\"https://twitter.com/FordFoundation?ref_src=twsrc%5Etfw\">@FordFoundation</a> BUILD team&#39;s own Matt Mitchell. <a href=\"https://t.co/rH1W9WrFPd\">https://t.co/rH1W9WrFPd</a></p>&mdash; Kathy Reich (@kdreich) <a href=\"https://twitter.com/kdreich/status/1329486658035720192?ref_src=twsrc%5Etfw\">November 19, 2020</a>", "Proud to have worked with <a href=\"https://twitter.com/geminiimatt?ref_src=twsrc%5Etfw\">@geminiimatt</a> and the <a href=\"https://twitter.com/FordFoundation?ref_src=twsrc%5Etfw\">@FordFoundation</a> on the creation of a cybersecurity assessment tool for NGOs. Congrats on the launch! <a href=\"https://t.co/mWE3557Iu5\">https://t.co/mWE3557Iu5</a></p>&mdash; Runa Sandvik (@runasand) <a href=\"https://twitter.com/runasand/status/1329584094724939777?ref_src=twsrc%5Etfw\">November 20, 2020</a>"],
         "footer": {
             "links": [
                 "Assessment",
@@ -2120,7 +2128,9 @@
                         "You are ",
                         " complete."
                     ],
-                    "incomplete": "You need to complete all questions to submit."
+                    "incomplete": "You need to complete all questions to submit.",
+                    "snapshotAlert": "Sorry, CAT can\'t access your clipboard right now",
+                    "snapshotError": "Not enough completed answers to create link."
                 }
             }
         },
