@@ -2129,7 +2129,7 @@
                         " complete."
                     ],
                     "incomplete": "You need to complete all questions to submit.",
-                    "snapshotAlert": "Sorry, CAT can\'t access your clipboard right now",
+                    "snapshotAlert": "Sorry, CAT can't access your clipboard right now",
                     "snapshotError": "Not enough completed answers to create link."
                 }
             }
